@@ -3,13 +3,60 @@
 import { useEffect, useState } from "react";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { site } from "@/lib/calculators/site";
+import { focusRing } from "@/components/ui/layout-utils";
 
+/**
+ * FORK-VS-SHARED, answered in writing (deferred to phase 6 by P1-G).
+ *
+ * ADOPTION DECLINED, this wave: packages/web-shared/leads/MiniCapture.tsx.
+ * Four reasons a reviewer can test, in order of weight:
+ *
+ * 1. PROP SIGNATURE. The kit component requires `siteConfig: MiniCaptureConfig`
+ *    and `submitLead: MiniCaptureSubmitFn` at every call site (:122-123, both
+ *    non-optional). This file's signature is FROZEN for this wave by the W6
+ *    contract, because W2 (`components/blog/InlineMiniLeadForm.tsx`) and W4
+ *    (`CalcResultCta` on the three calculator pages) both mount it
+ *    concurrently. Adding two required props is the one change the contract
+ *    forbids.
+ * 2. BEHAVIOUR, NOT STYLE. The kit component is gated on
+ *    `NEXT_PUBLIC_MINIFORMS_MULTISTEP` (`leads/capture-steps.ts:152`) and with
+ *    the flag on it splits into a two-step flow with a role SELECT whose
+ *    options come from `leadForm.roleOptions`. This form posts
+ *    `role: "Other"` and asks four fields on one step. That is a funnel
+ *    change, measured in leads per week, not a restyle, and the owner ruling
+ *    for this wave is restructure and restyle only.
+ * 3. LOCKED ANALYTICS. Its header declares the event names and props LOCKED
+ *    because deploy-watch queries on other sites depend on them
+ *    (`leads/MiniCapture.tsx:11-14`). Pointing a nineteenth site at them is a
+ *    shared-surface decision, and `packages/web-shared/**` is a manager
+ *    carve-out (trap 12).
+ * 4. THE PACKAGE LOCK. W6 must show zero changes to any line matching
+ *    `formId|data-cta|leadConsent|redirectOnSuccess|submitLabel|name=|
+ *    enquiry_ref` in this file. A swap rewrites all of them.
+ *
+ * RECOMMENDATION TO THE MANAGER: do the swap, but as its own commit after the
+ * port, with the flag OFF so the rendered flow is unchanged, and read leads per
+ * week either side. The helpers in `leads/capture-steps.ts` are ALREADY adopted
+ * on this site (`isSafeReturnPath` on /thank-you, `buildThankYouUrl` in
+ * LeadForm), so the shared validation layer is in use even where the component
+ * is not. `DetailsForm` and `BookingPicker` have no kit equivalent at all
+ * (`packages/web-shared/leads/` holds MiniCapture, CalcResultCta,
+ * MobileToolSlot, ResultGateModal and capture-steps, and nothing else), so for
+ * those two there is nothing to adopt and the fork question does not arise.
+ *
+ * Phase 1's `focusRing` swap is VERIFIED present on all four form files
+ * (imported from `@/components/ui/layout-utils` and composed into each input
+ * recipe), so nothing here was re-applied.
+ *
+ * `site.leadConsentText` below is FROZEN (T19) and byte-identical to
+ * Property's. Not touched.
+ */
 type Status = "idle" | "loading" | "success" | "error";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation border border-[var(--border)] bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-[var(--muted)] shadow-sm focus:border-[var(--brand-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)] transition-colors";
+  `mt-1 w-full min-h-12 touch-manipulation border border-[var(--border)] bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-[var(--muted)] shadow-sm focus:border-[var(--brand-primary)] ${focusRing} transition-colors`;
 
 export function MiniCapture({
   formId,
@@ -159,6 +206,12 @@ export function MiniCapture({
           <div className="sm:col-span-2">
             <button
               type="submit"
+              /* M1a: button-level id on the enquiry submit. This is the one
+                 enquiry form on the site with no useFormTracking, so it is the
+                 one that gains information (W6 §6). Goal is "form", the only
+                 goal value the estate uses. */
+              data-cta="mini_capture_submit"
+              data-cta-goal="form"
               disabled={status === "loading"}
               className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[var(--brand-primary)] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
             >

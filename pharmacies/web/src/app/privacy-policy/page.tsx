@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY, focusRing } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 const company = siteConfig.company;
 
@@ -23,18 +24,60 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * CHROME ONLY. Every sentence of the legal copy on this page is the pre-port
+ * copy, byte for byte: structure, components, classes and typography move onto
+ * the kit and no sentence changes. The owner-ruled rows (cookie policy vs
+ * AdSense, the retention months) are LEFT AS IS, and the retention figure is
+ * still read from `siteConfig.company.enquiryRetentionMonths` rather than
+ * restated here.
+ *
+ * ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, replacing
+ * src/components/ui/Breadcrumb.tsx, which W3 retires this phase. Same single
+ * BreadcrumbList block per URL (exactly one, as before), but built through
+ * `serialize()` (:86) rather than a bare JSON.stringify, so a `</script>`
+ * inside a crumb label cannot terminate the script tag. `siteUrl` is required
+ * by the kit component (:18) because the JSON-LD needs absolute URLs; the
+ * local one read it from lib/schema.ts, a manager carve-out.
+ * ADOPTED: packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`, a
+ * structural section label whose word is lifted from this route's own h1, so
+ * no copy is authored.
+ *
+ * The only substantive change: every inline link carried a raw `#0f3a4a` hex
+ * utility bypassing the ramp phase 1 minted, and not one of them had a focus
+ * ring. They now read the ramp (primary-700 `#177392`, 5.38:1 on white, PASS)
+ * and the site's `--focus-ring` recipe. This page paints no dark ground and
+ * carries no `.ground-dark`, so the ring resolves to the light value.
+ *
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx. Its
+ * docblock (:5-13) scopes it to the three token-gated post-submit pages and
+ * states it deliberately carries no breadcrumb; this route is indexed and has
+ * a trail, and SlimHero has no slot above its eyebrow (:52-57) for one.
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx. It
+ * is a Radix single-open accordion (:45); collapsing legal text a reader must
+ * be able to find with ctrl-F is a regression, whatever `alwaysRenderAnswers`
+ * does for the schema. This page emits no FAQPage JSON-LD either.
+ * ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx and
+ * marketing/WhatToExpectCard.tsx. A lead-capture surface on a privacy policy is
+ * wrong on its own terms, and WhatToExpectCard's defaults publish a fee line
+ * this site never promises (:22-27).
+ */
+const legalLink = `font-medium text-primary-700 underline underline-offset-2 rounded ${focusRing}`;
+
 export default function PrivacyPolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
+        siteUrl={siteConfig.url}
         items={[
           { label: "Home", href: "/" },
           { label: "Privacy policy" },
         ]}
       />
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-neutral-500">Last updated: 15 July 2026</p>
-      <div className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
+      <Eyebrow>Privacy</Eyebrow>
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">Privacy policy</h1>
+      <p className="mt-4 text-sm text-slate-500">Last updated: 15 July 2026</p>
+      <div className="mt-8 space-y-6 text-base leading-relaxed text-slate-600">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
           &quot;we&quot;, &quot;us&quot; and &quot;our&quot;, collects, uses and protects your personal information
@@ -43,7 +86,7 @@ export default function PrivacyPolicyPage() {
           Act 2018.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">1. Who we are (data controller)</h2>
+        <h2 className="text-xl font-semibold text-slate-900">1. Who we are (data controller)</h2>
         <p>
           The data controller responsible for your personal data is {company.legalName}, which trades as{" "}
           {siteConfig.name}:
@@ -56,10 +99,10 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           If you have any questions about this policy or wish to exercise your rights, please contact us through our{" "}
-          <Link href="/contact" className="text-[#0f3a4a] underline">contact page</Link>.
+          <Link href="/contact" className={legalLink}>contact page</Link>.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">2. What information we collect</h2>
+        <h2 className="text-xl font-semibold text-slate-900">2. What information we collect</h2>
         <p>We collect the following personal information through the Site:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
@@ -75,7 +118,7 @@ export default function PrivacyPolicyPage() {
             <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages
             viewed, device and browser type, and an approximate country derived from your IP address). Our hosting
             provider may also log technical request data for security and performance. See our{" "}
-            <Link href="/cookie-policy" className="text-[#0f3a4a] underline">cookie policy</Link> for detail.
+            <Link href="/cookie-policy" className={legalLink}>cookie policy</Link> for detail.
           </li>
         </ul>
         <p>
@@ -83,7 +126,7 @@ export default function PrivacyPolicyPage() {
           it, but if you do not, we will not be able to respond to your enquiry.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">3. Why we use your information</h2>
+        <h2 className="text-xl font-semibold text-slate-900">3. Why we use your information</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>To respond to your enquiry:</strong> to deal with your enquiry and to share it with regulated firms in our specialist partner network, so that they can respond and, if you
@@ -95,7 +138,7 @@ export default function PrivacyPolicyPage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-semibold text-neutral-900">4. Our lawful basis</h2>
+        <h2 className="text-xl font-semibold text-slate-900">4. Our lawful basis</h2>
         <p>
           When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f)
           of the UK GDPR) to handle it and to share it with regulated firms from our specialist partner
@@ -113,7 +156,7 @@ export default function PrivacyPolicyPage() {
           specifically measuring and improving the Site and keeping it secure and protected against misuse.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">5. Who we share your information with</h2>
+        <h2 className="text-xl font-semibold text-slate-900">5. Who we share your information with</h2>
         <p>
           When you submit an enquiry, we share information about you and your enquiry with regulated firms
           from our <strong>specialist partner network</strong>, so that they can contact you and provide the
@@ -170,13 +213,13 @@ export default function PrivacyPolicyPage() {
         </p>
         <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">6. How long we keep your information</h2>
+        <h2 className="text-xl font-semibold text-slate-900">6. How long we keep your information</h2>
         <p>
           We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your
           enquiry, after which it is deleted. Our records of what you were shown and any consent you gave are kept for up to six years, under access controls, so that we can demonstrate the lawful basis for using it.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">7. Your rights</h2>
+        <h2 className="text-xl font-semibold text-slate-900">7. Your rights</h2>
         <p>Under UK data protection law you have the right to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Access</strong> the personal data we hold about you.</li>
@@ -191,7 +234,7 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           To exercise any of these rights, please contact us through our{" "}
-          <Link href="/contact" className="text-[#0f3a4a] underline">contact page</Link>. We will respond within one
+          <Link href="/contact" className={legalLink}>contact page</Link>. We will respond within one
           month.
         </p>
         <p>
@@ -201,21 +244,21 @@ export default function PrivacyPolicyPage() {
             href="https://ico.org.uk/make-a-complaint/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0f3a4a] underline"
+            className={legalLink}
           >
             ico.org.uk/make-a-complaint
           </a>
           . We would, however, welcome the chance to address your concerns first.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">8. Cookies and analytics</h2>
+        <h2 className="text-xl font-semibold text-slate-900">8. Cookies and analytics</h2>
         <p>
           We use cookies and similar technologies for analytics, so we can understand how the Site is used and
           improve it. For full details of what we use and how to manage or opt out, please see our{" "}
-          <Link href="/cookie-policy" className="text-[#0f3a4a] underline">cookie policy</Link>.
+          <Link href="/cookie-policy" className={legalLink}>cookie policy</Link>.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">9. How we protect your data and international transfers</h2>
+        <h2 className="text-xl font-semibold text-slate-900">9. How we protect your data and international transfers</h2>
         <p>
           Form submissions are stored securely and access is restricted to authorised staff only. Some of our service
           providers (for example, Vercel) are based outside the UK and EEA. Where data is transferred
@@ -223,17 +266,17 @@ export default function PrivacyPolicyPage() {
           Framework or Standard Contractual Clauses.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">10. Changes to this policy</h2>
+        <h2 className="text-xl font-semibold text-slate-900">10. Changes to this policy</h2>
         <p>
           We may update this privacy policy from time to time. The &quot;Last updated&quot; date at the top of this
           page shows when it was last revised. We encourage you to review this policy periodically.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">11. Contact us</h2>
+        <h2 className="text-xl font-semibold text-slate-900">11. Contact us</h2>
         <p>
           If you have any questions about this privacy policy or how we handle your data, please contact us through
           our{" "}
-          <Link href="/contact" className="text-[#0f3a4a] underline">contact page</Link>.
+          <Link href="/contact" className={legalLink}>contact page</Link>.
         </p>
       </div>
     </div>

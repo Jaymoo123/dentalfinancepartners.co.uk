@@ -68,15 +68,15 @@ on startups-tech. Never report row 6 empty as a pass without that sentence. Rows
 
 ## PACKAGE TABLE
 
-| pkg | scope | model | depends on | runs with |
-|---|---|---|---|---|
-| **P1-A** | tokens: `globals.css`, `layout.tsx` font/noscript, `package.json` | Sonnet | nothing | **ALONE, FIRST** |
-| **P1-B** | `components/ui/layout-utils.ts` → kit re-export | Sonnet | P1-A | P1-D, P1-E |
-| **P1-C** | kit `PageShell` + `SiteHeader` + `SiteFooter` + nav; `ConsentToggle`; `StickyCTA` re-mount | **Opus** | P1-A, P1-B, P1-E | last of the builders |
-| **P1-D** | `neutral-*` → `slate-*` in 26 files | Sonnet | nothing | P1-B, P1-E |
-| **P1-E** | `components/layout/PharmaciesBackdrop.tsx` (new) | **Opus** | P1-A | P1-B, P1-D |
-| **P1-F** | `src/tests/focus-ring.test.ts` (new) | Sonnet | P1-B, and P1-C for a clean run | after P1-C |
-| **R1** | adversarial review of the rendered DOM | **Opus** | all | after the manager's build |
+| pkg | scope | model | depends on | runs with | status | result |
+|---|---|---|---|---|---|---|
+| **P1-A** | tokens: `globals.css`, `layout.tsx` font/noscript, `package.json` | Sonnet | nothing | **ALONE, FIRST** | **DONE** | brand ramp pinned at the 950 step, button-ground trio, focus ring, motion layer and glow channels declared; webfont moved to `<html>` |
+| **P1-B** | `components/ui/layout-utils.ts` → kit re-export | Sonnet | P1-A | P1-D, P1-E | **DONE** | kit re-exports adopted for every symbol with a consumer, `linkArrow` deleted, every recipe ends `outline-[var(--focus-ring)]` |
+| **P1-C** | kit `PageShell` + `SiteHeader` + `SiteFooter` + nav; `ConsentToggle`; `StickyCTA` re-mount | **Opus** | P1-A, P1-B, P1-E | last of the builders | **DONE** | kit shell mounted, `ConsentToggle` created new, all three CTA triples preserved on 55/55 routes; R1 found a skip-link cascade loss and a thin footer, both closed by G2/G1 |
+| **P1-D** | `neutral-*` → `slate-*` in 26 files | Sonnet | nothing | P1-B, P1-E | **DONE** | 444 occurrences swapped, mechanical, same numeric step, zero other changes proven by diff |
+| **P1-E** | `components/layout/PharmaciesBackdrop.tsx` (new) | **Opus** | P1-A | P1-B, P1-D | **DONE** | dispensary-shelf motif SVG, zero JS, zero overflow at any width; R1 called the render graph-paper-like, not shelving (cosmetic) |
+| **P1-F** | `src/tests/focus-ring.test.ts` (new) | Sonnet | P1-B, and P1-C for a clean run | after P1-C | **DONE** | ring-guard test built, corpus walk plus guards-the-guard assertion |
+| **R1** | adversarial review of the rendered DOM | **Opus** | all | after the manager's build | **DONE** | 2 blockers, 5 serious, 5 minor found; all closed or handed off, see Close block below |
 
 Every package: **Do NOT launch subagents.** Builders never build and never run a server
 (T1); the manager does. Every git command from the monorepo ROOT (T3). Receipt at
@@ -894,3 +894,29 @@ P1-A tokens          (ALONE, FIRST: globals.css + layout.tsx font/noscript + pac
 5. **Button corners.** The shared button recipe gives a very slight 4px rounding; this
    site's buttons are square today. One line either way. We recommend adopting the shared
    one. Agree?
+
+---
+
+## Close (2026-10-07, manager)
+
+**What landed.** All six phase-1 packages (P1-A through P1-F) plus the adversarial review
+R1 are done. The kit brand ramp, button trio, focus-ring mechanism, grey-ramp swap, the kit
+chrome (`PageShell`/`SiteHeader`/`SiteFooter`), a new `ConsentToggle`, a new
+`PharmaciesBackdrop`, and a ring-guard test are all in the tree. Phases 2 through 6 were then
+built as one concurrent wave on the owner's instruction, so this phase's tag,
+`port-pharmacies-phase1`, lands on the same wave commit as `phase2`..`phase6` (commit: see
+tags port-pharmacies-phase1..phase6).
+
+**Gate result.** `tsc` clean. `vitest` 7 files / 72 tests green. Dependency closure OK. Build
+green, 72 static pages, `BUILD_ID LsrdJDbZT1Ws9SYqZ_m_c`. Full gate table and the four-marker
+thermometer are recorded in `docs/pharmacies/STATE.md`'s 2026-10-07 wave section (they are a
+whole-port measurement taken after the wave, not a phase-1-only number).
+
+**Residuals pending review.** R1 found 2 blockers and 5 serious findings. Both blockers and
+three of the five serious findings are closed (G1/G2/G3 gap-fix receipts); one serious finding
+(S2, the unlayered-rule count) is restated honestly rather than fixed (6 rules are inherited
+from the kit, intentional, zero are authored by this site); one (S3, the inherited
+`line-height: 1.2` beating the hero's own leading utility) is a documented handoff, not an
+edit, so the owner can choose either rhythm later. R2, R3 and the wave verification V1 are
+running now and have not reported back; see `docs/pharmacies/STATE.md`'s "Review results
+(pending)" placeholder.

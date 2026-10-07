@@ -64,6 +64,26 @@ export function buildWebsiteJsonLd() {
   });
 }
 
+// K9: FAQ answers in src/data/pharmacies-hubs.ts are authored HTML (5 of 61
+// carry <a> cross-references); src/data/pharmacies-services.ts carries none
+// today but is the same shape by rule. `acceptedAnswer.text` must be TEXT, so
+// every answer is stripped and the five entities an HTML answer can legally
+// carry are decoded, once here rather than at each call site.
+// ponytail: regex, not a parser. These are authored strings in two data files,
+// not user input; swap in an HTML parser if answers ever come from outside.
+function toPlainText(html: string) {
+  return html
+    .replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -71,8 +91,44 @@ export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      acceptedAnswer: { "@type": "Answer", text: toPlainText(faq.answer) },
     })),
+  });
+}
+
+/**
+ * BlogPosting for a blog article. No post in content/blog carries a `schema:`
+ * frontmatter field (W2 verified 0 of 22), so before this every post shipped
+ * FAQPage and HowTo but no Article markup at all.
+ *
+ * `headline` takes the SAME field the visible <h1> renders (`post.h1`, which
+ * lib/blog.ts already defaults to `title`), so the two cannot disagree: on
+ * startups-tech the headline drifted from the <h1> on 19 of 32 posts because
+ * the builder read `title` while the template rendered `h1`.
+ *
+ * `author` and `publisher` both point at the canonical Organization node from
+ * buildOrganizationJsonLd rather than a bare name string: this site publishes
+ * no person author and inventing one is a claim.
+ */
+export function buildBlogPostingJsonLd(opts: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+}) {
+  const org = { "@type": "Organization", "@id": `${siteConfig.url}#organization` };
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: opts.headline,
+    description: opts.description,
+    url: opts.url,
+    datePublished: opts.datePublished,
+    dateModified: opts.dateModified,
+    author: org,
+    publisher: org,
+    mainEntityOfPage: { "@type": "WebPage", "@id": opts.url },
   });
 }
 

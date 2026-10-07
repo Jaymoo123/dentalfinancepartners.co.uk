@@ -22,6 +22,53 @@ FIRST, in this order, before anything else:
    eight ported, four uplifted, and points at the corrected §9.1. Trust
    `git tag -l 'port-*'` over any prose, including this line.
 
+## CORRECTED 2026-10-07. Read this block, then skip to "WHICH SITE IS NEXT" below
+
+**Next site is `care`.** After care: `wills-probate` + `divorce-finances` as one package
+(shared legal shape). After that: `digital-agency` (design-only exclusion lifted). `ashfield`
+stays excluded (own locked design, family E, owner ruling). This replaces every earlier
+"next site" line in this file, including the hospitality/pharmacies/care/digital-agency order
+quoted further down from the 2026-09-29 update; that line is now stale.
+
+**Ported-site status, derived from `git tag -l 'port-*'` today, twelve sites:**
+
+| site | phases | uplift | pushed/live |
+|---|---|---|---|
+| generalist | tagged phase1-6 | passes §9.1 without one | live 2026-09-16 |
+| solicitors | tagged phase0-6 | passes §9.1 without one | live, `153e5017` 2026-09-24 |
+| dentists | tagged | passes §9.1 without one | live 2026-09-16 |
+| medical | tagged | passes §9.1 without one | live 2026-09-16 |
+| crypto | tagged phase0-6 | done, `7dfe04b3` (only tagged uplift) | live 2026-09-16 |
+| charities | tagged | done, `ba7b184a`, untagged | live 2026-09-16 |
+| contractors-ir35 | tagged | done, `569d3304`, untagged | live 2026-09-16 |
+| construction-cis | tagged | done, `48312e2c`, untagged | live 2026-09-16 |
+| ecommerce | tagged | done | built, not deployed, owner has not walked |
+| hospitality | tagged | done | built, not deployed, owner walk pending |
+| startups-tech | tagged | done (walked twice, approved) | built, not deployed |
+| pharmacies | phases 0-6 built in one wave today (2026-10-07); reviews R2/R3 and wave verification V1 running | uplift planned, in progress | built locally, not deployed; **tags pending, see `docs/pharmacies/STATE.md` pickup block** |
+
+## WHAT THE PHARMACIES PORT CHANGED IN THE METHOD (2026-10-07)
+
+- **Phase 0 ran as five concurrent audit packages plus three disjoint fixers plus one
+  recheck**, same shape as before, nine agents total.
+- **Phases 1 to 6 were built as ONE concurrent wave**, on the owner's instruction
+  (ultracode-style parallelism). The playbook already allowed non-sequential phases within
+  one site; this is that allowance used in full. All six phase tags land together on the
+  wave commit once it is tagged, rather than one tag per phase on separate commits.
+- **The uplift's own section 0, run against the already-built wave, deleted two of the four
+  packages the session plan had budgeted** (tokens/motion and homepage), because phase 1
+  (P1-A) and W5 had already landed that work inside the wave. Re-measure before planning an
+  uplift against a wave port; do not assume the uplift package shapes from earlier,
+  sequential ports still apply.
+- **The four capture surfaces (SpecialistWidget, DeepScrollModal, ReturningBar, StickyCTA)
+  are now part of every port, by owner decision**, built with Property's suppression rules
+  (one offer per page-load session, 30-day per-topic suppress, session-dismissible bar) and a
+  **mutual-exclusion rule between surfaces**: R2 found three surfaces able to publish one
+  offer at once on the same page, which the suppression rules alone did not prevent.
+- **The lead-kit gap sweep over the five earlier ported-but-incomplete sites (crypto,
+  charities, ecommerce, hospitality, startups-tech) runs AFTER the new ports** (care, the
+  legal pair, digital-agency), one layer at a time. It has not started.
+
 STATE OF PLAY. **Eight sites are ported, and four of those eight have also had the design
 uplift.** Ported: generalist, solicitors, dentists, medical, construction-cis,
 contractors-ir35, charities and crypto. All phases built, independently reviewed, gap-fixed
@@ -180,12 +227,40 @@ a STATE.md contradicting its tags. Derive it:
    sequencing rules.
 3. Confirm with the owner in one plain-language message before you start.
 
-**Eight sites remain**, derived as: 18 site directories, minus the 8 tagged as ported,
-minus Property (the reference, never a port target), minus ashfield (family E,
-owner-locked, excluded from Track 1). That leaves **digital-agency, wills-probate,
-divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce**. (The previous
-handoff said "ten remain" with seven ported; it was counting ashfield and one other as
-targets. Re-derive rather than subtracting from the old number.)
+**As of 2026-10-07: four sites remain after pharmacies closes** (care, wills-probate,
+divorce-finances, digital-agency), and the owner has already ruled the order (see the
+corrected block near the top of this file): **care next, then wills-probate +
+divorce-finances as one package, then digital-agency.** Ashfield stays excluded. This is the
+current, owner-confirmed order; re-derive the remaining-site count from `git tag -l 'port-*'`
+rather than trusting this line once pharmacies' tags land.
+
+### Care-specific pickup notes (derived from `docs/care/STATE.md`, 2026-10-07)
+
+- Storage prefix **`carf`, FROZEN** (set at scaffold time; never change after first deploy).
+- Vercel project id `prj_PvJWStLGoG8bvzCQPLafY4nuMQAa`. Live at `www.carehometax.co.uk`
+  since 2026-07-16, brand locked.
+- **Two rounds of parity work exist uncommitted/undeployed**, both local only:
+  - 2026-09-28 phase 0 parity (lead kit on `/services`, header CTA, `StickyCTA`, `<main>`
+    landmark, webfont, focus ring, firm-voice copy fixes, AdSense wiring) — built, not
+    deployed, **not committed by that agent**.
+  - 2026-09-27/28 Leads-250 Wave 1 + S5 close (2 new hubs, 13 new posts, schema/claims
+    fixes, render fixes) — committed locally, deploy **held by the owner**, still not
+    deployed.
+- A same-day independent lead-kit check on the LIVE site (2026-09-28) found care is the
+  best-written site in the kit and the worst-disclosed at the point of sale: the entity
+  block sits below the FAQ and below the lead form on the homepage, the only site where a
+  visitor can submit before being told the enquiry goes to a third party; "Free call" eyebrow
+  on 14 pages plus `/book` and `/complete`; `/llms-full.txt` disagrees with `llms.txt`; the
+  24-hour promise appears about 55 times but no nurture email or SMS mentions it; nurture
+  runs 25 days not 11.
+- **Open owner items, record and bundle, do not act unasked:** homepage H1 "Accountants for
+  UK care providers"; blog CTA H2 and `/services` tier "Advisory" wording; terms page says
+  "formal engagements... engagement letters" and never mentions the partner network; two
+  live posts flagged (`fnc-chc-la-fee-mix-accounting` "seek advice";
+  `cqc-registration-costs-and-finance-guide` overlaps the newer set-up post).
+- Zero kit-design imports today (pre-port state); the 2026-09-28/09-29 work above was lead-kit
+  and parity, not a Property-standard design port. Treat all of it as pre-port baseline to
+  read in phase 0, not as port work already done.
 
 Selection principle: **`digital-agency` is the outlier at 90 routes and 306 posts, and its
 bottleneck is indexing, not design - leave it late.** `wills-probate` and

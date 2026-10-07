@@ -1841,3 +1841,66 @@ contractors-ir35, a reported set of `focus-visible` contrast rows was proven an 
 the element, four rows being one element at four widths whose scrim is a sibling absolute
 div rather than an ancestor, so background resolution fell back to white and reported 1.00
 where the real composite is about 7.0.
+
+## 2026-10-07, pharmacies: one-day port, phases 1 to 6 as one wave
+
+Entries are the manager's own observations from the session; receipts are under
+`docs/pharmacies/_port/`.
+
+- **Phases 1 to 6 ran as ONE concurrent wave on the owner's instruction and it held,
+  because every package had an `ls`-verified disjoint OWNS set and `layout.tsx` was
+  handed serially (P1-A font region, P1-C chrome region, W7 capture region).** Eleven
+  builders, three gap-fixers and one schema agent edited the same site tree at once with
+  zero merge conflicts (`grep -rl '^<<<<<<<' pharmacies/web/src` = 0 at every checkpoint).
+  The price is that the phase tags land together on the wave commit; the playbook allows
+  non-sequential phases, STATE.md must say so. RULE: concurrency is safe exactly as far as
+  the OWNS sets are disjoint; the one shared file is serialised by hand.
+- **An agent ran `git stash` and `git stash pop` mid-wave to "isolate a diff" while three
+  other agents were writing.** The tree survived (`git stash list` = 0, no conflict
+  markers, `tsc` clean, 51 changed paths intact) because the pop happened within seconds
+  and untracked files are never stashed. It was luck, not design. RULE: every brief says
+  "no git state changes"; add "`git stash` included, it reverts the whole working tree"
+  in so many words. T-H9 already names it; agents did not read it as covering stash.
+- **Agents sit idle for ever waiting on a backgrounded `browser_check.mjs`.** The Bash
+  tool moves the 8 to 10 minute run to background past its timeout; the agent then
+  "waits for the monitor" and never re-reads the `--out` file. Three times in one day
+  (P0-D, P0-G, V-P1). RULE: brief the agent to poll the `--out` JSON every 60 s and read
+  it when it lands; when it stalls, send it a message naming the file and its size.
+- **The ring guard copied from contractors-ir35 counted a code comment as an offender**
+  (`StickyCTA.tsx:31`, a comment describing the old hex ring). Same defect class as the
+  section 9.1 gate's 2026-09-14 correction. RULE: every scanner strips block and line
+  comments before matching, and its mutation proof covers both directions (hex ring in
+  markup caught, same string in a comment not caught). `pharmacies/web/src/tests/focus-ring.test.ts`.
+- **The guards-the-guard assertion assumed some `.tsx` inlines the ring token literally.**
+  A fully compliant site goes through the `focusRing` recipe and inlines nothing, so the
+  assertion could never pass. Rewritten to assert the recipe file carries the token and at
+  least one `.tsx` imports the recipe.
+- **Uplift section 0 deleted half the uplift plan**, exactly as T-H12 says: tokens, motion
+  layer, glow channels, `tw-animate-css`, `.story-numeral`, noscript release and the
+  homepage band depth had all landed inside phases 1 and 5. The surviving gap was one
+  shape repeated: thin hubs and detail templates with no band rhythm and no eyebrow
+  (`/blog` 1 section, `/calculators` 1 section vs generalist 5). RULE stands: measure on
+  the built wave before writing uplift packages.
+- **Plan files guessed the storage prefix (`phfp`); the site uses `pfp`** (`layout.tsx`
+  AnalyticsProvider). Two plan documents carried it wrong before P0-E read the source.
+  RULE: the prefix is read from `layout.tsx`, never derived from the site name.
+- **Phase 0 found all three calculators handing a user a wrong number** (Class 2 NIC
+  abolished April 2024 still deducted, SDLT charged on goodwill, FP34 gap ignoring the lag
+  input), each pinned by a passing unit test, one of them logged against the site in July
+  and never fixed. `docs/pharmacies/_port/P0A_CLAIMS_LEDGER.md` rule G. Section 2.1's
+  "a test is not evidence" is now four sites deep.
+- **The kit chrome's defaults shipped two dead links on first mount** (`/locations` in
+  `companyItems`, `/landlord-tax` as `resourcesHref`), and the kit footer emits
+  `/calculators` unconditionally with no prop to suppress it. P1-C set every prop
+  explicitly; the gate's "0 internal 404s" row is what catches a port that does not.
+- **R2 found three capture surfaces publishing one offer at the same moment** (deep-scroll
+  modal, sticky bar, open widget panel at 1440, 80% down a post) and the sticky bar
+  growing to 188px at 390 when its personalised heading wrapped. Property has no
+  cross-surface gate (`Property/web/src/app/layout.tsx:144-146`). pharmacies now hides the
+  bar and launcher while the modal is open, refuses the modal while the widget panel is
+  up, and gates the personalised copy on `min-width: 640px`, with 11 exclusion tests.
+  RULE for every port that mounts all four surfaces (owner decision 2026-10-07): the
+  exclusion table is part of W7's acceptance, measured at 390 and 1440.
+- **Agent count: about 60 for the whole port in one session**, against the standing
+  estimate of 36 to 40 over two days. The owner lifted the spend cap for this programme
+  ("be like ultracode"); the saving was wall-clock, not agents.

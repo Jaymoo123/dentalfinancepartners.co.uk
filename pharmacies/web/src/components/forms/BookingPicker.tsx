@@ -13,16 +13,17 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
-// ponytail: brand-token chips — border uses CSS var so it adapts if brand tokens shift
+// ponytail: brand-token chips, border uses CSS var so it adapts if brand tokens shift
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center border px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
+  `flex min-h-12 touch-manipulation flex-col items-center justify-center border px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 ${focusRing}`;
 const chipIdle =
-  "border-neutral-300 bg-white text-neutral-900 hover:border-[var(--brand-primary)] hover:bg-neutral-50";
+  "border-slate-300 bg-white text-slate-900 hover:border-[var(--brand-primary)] hover:bg-slate-50";
 const chipSelected =
   "border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white";
 
@@ -75,9 +76,8 @@ export default function BookingPicker({ token }: { token: string }) {
 
   if (status === "done") {
     return (
-      <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-        <p className="text-lg font-bold text-neutral-900">Callback booked</p>
-        <p className="mt-2 text-base text-neutral-700">
+      <NoticeCard tone="primary" title="Callback booked">
+        <p className="text-base text-slate-700">
           {confirmedLabel ? (
             <>
               We have you down for <strong>{confirmedLabel}</strong>.
@@ -88,31 +88,31 @@ export default function BookingPicker({ token }: { token: string }) {
           A pharmacy finance specialist will call you then. If your plans change, just reply to any of our
           messages.
         </p>
-        <p className="mt-3 text-sm text-neutral-500">
+        <p className="mt-3 text-sm text-slate-600">
           The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "expired") {
     return (
-      <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
-        <p className="text-base text-neutral-600">
+      <NoticeCard tone="slate">
+        <p className="text-base text-slate-600">
           This booking link has expired. No problem, you can still reach us through the contact
           form and we will arrange your review.
         </p>
         <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
           Go to the contact form
         </Link>
-      </div>
+      </NoticeCard>
     );
   }
 
   return (
     <div className="text-left">
-      <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+      <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
         1. Pick a day
       </p>
       <div className="grid grid-cols-5 gap-1 sm:gap-2">
@@ -132,7 +132,7 @@ export default function BookingPicker({ token }: { token: string }) {
         ))}
       </div>
 
-      <p className="mb-3 mt-6 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+      <p className="mb-3 mt-6 text-sm font-semibold uppercase tracking-wide text-slate-500">
         2. Pick a time that suits you
       </p>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
@@ -164,7 +164,7 @@ export default function BookingPicker({ token }: { token: string }) {
             Something went wrong saving your slot. Please try again.
           </p>
         )}
-        <p className="mt-3 text-xs text-neutral-500">
+        <p className="mt-3 text-xs text-slate-500">
           No obligation. A pharmacy finance specialist will call you in your chosen window.
         </p>
       </div>

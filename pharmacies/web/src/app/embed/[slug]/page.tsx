@@ -32,12 +32,25 @@ export default async function CalculatorEmbedPage({ params }: Props) {
 
   return (
     <div className="bg-white p-3 sm:p-4">
+      {/* Visually-hidden h1 (owner decision, 2026-10-07, P0-B #10). This
+          document is a real page a partner's iframe fetches on its own URL and
+          an assistive reader can land on it directly, so it needs a top-level
+          heading; showing one would put a second title above the widget's own
+          name inside a partner's layout, which the embed exists not to do. The
+          string is the tool name, already published. No chrome, no form, no
+          capture here: locked rule 18 holds. */}
+      <h1 className="sr-only">{tool.name}</h1>
       <CalculatorClient slug={tool.slug} variant="embed" />
       <div className="mt-3 text-center">
         <a
           href={`${site.url}/calculators/${tool.slug}?utm_source=partner-embed&utm_medium=iframe&utm_campaign=${tool.slug}`}
           target="_blank"
           rel="noopener"
+          // NEW segmentation on the partner surface: the only control on the
+          // embed, and the only measure of what the embed sends back.
+          data-cta="embed_attribution"
+          data-cta-placement="embed"
+          data-cta-goal="tool"
           className="text-xs text-[var(--muted)] transition-colors hover:text-[var(--brand-primary)]"
         >
           Powered by <span className="font-bold text-[var(--ink)]">{site.name}</span> &middot; specialist UK pharmacy accountants

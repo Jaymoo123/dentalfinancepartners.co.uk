@@ -1,40 +1,410 @@
+/* MOTION-LAYER TABLE, for U4: what @import "globals-standard.css" below makes
+   available on this site now that it did not before. Phase 1 MOUNTS NONE of
+   this (no .eyebrow-rule, .tick-draw, [data-glow], .num-glow, .hero-reveal,
+   .marquee-*, .related-card consumer exists in src today); recorded so the
+   next phase knows the mechanism is already live via the import below.
+     .eyebrow-rule        Eyebrow mark draw-in (scaleX 0->1), gated [data-draw="off"], released by the <noscript> rule in layout.tsx
+     .tick-draw           DrawnTickList per-mark stroke-dashoffset draw, same [data-draw="off"] gate
+     [data-glow="on"] > *  card-glow: one-shot border/shadow pulse, staggered nth-child(2)/(3)/(4), for ScrollGlowGroup
+     .num-glow (num-glow keyframe)  staggered light-up for stat/number lists
+     .hero-reveal / .hero-reveal-delay   fadeInUp entrance
+     .marquee-track / .marquee-viewport  vertical looping marquee
+     .related-card         hover/focus-within glow, keyed off --brand-glow* below
+   All colour in the above is read from --brand-glow / -deep / -edge / -faint,
+   declared in :root below at this site's brand hue. See the A7 comment
+   further down for the proof no Property emerald leaks through. */
+
 /* Tailwind source("..") scans from src/ relative to this file. */
 @import "tailwindcss" source("..");
 /* Kit components live outside src/, which source("..") excludes, so without this line every utility used only inside packages/web-shared compiles to nothing. */
 @source "../../../../packages/web-shared";
+/* Required by globals-standard.css below (its own header comment, "not bundled by this file"): drives the [data-glow]/[data-draw] entrance utilities and tw-animate-css's own animate-* utilities. */
+@import "tw-animate-css";
+/* A7: imported rather than locally re-declared. This file's only
+   Property-specific values are four `rgb(var(--brand-glow*, <R G B>))` CSS
+   variable FALLBACKS, each read only when the named custom property is
+   UNDECLARED on the element. This site declares all four (--brand-glow,
+   --brand-glow-deep, --brand-glow-edge, --brand-glow-faint) below at its own
+   brand-hue steps, so every one of those fallback branches is unreachable.
+
+   The checkable proof is the DECLARATION, not an absence (hospitality R1 G4):
+   `grep -c "16 185 129" packages/web-shared/design/globals-standard.css`
+   returns 7 lines / 9 occurrences, all `var(--brand-glow*, 16 185 129)`
+   fallback arguments, and a minifier never deletes a fallback argument. So
+   the assertion is that the four declarations below exist in the built CSS
+   and that `outline-emerald` and the emerald triplet are absent from the
+   rendered DOM, not "0 occurrences in the built CSS". */
+@import "@accounting-network/web-shared/design/globals-standard.css";
 /* Article bodies here carry class="prose" and the homepage uses .section-label, neither of which had any rule, so without this line those pages render unstyled. */
 @import "../../../../packages/site-styles/prose-standard.css";
 
-:root {
-  --background: #ffffff;
-  --surface: #f8fafc;
-  --surface-elevated: #ffffff;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --muted: #475569;
-  --border: #e2e8f0;
+/* G2 FIX (R1 B1 / V1 B1): deliberate unlayered exception, kit skip link focus
+   utility trap. Tailwind v4 cascade-layer order is base < components <
+   utilities regardless of source order, so the rule below ALWAYS lost to the
+   kit's hardcoded `focus:bg-primary-600` (packages/web-shared/design/chrome/
+   PageShell.tsx), which Tailwind puts in @layer utilities. Moved out of
+   @layer components (where A5 originally placed it) to here, unlayered,
+   after the @import "tailwindcss" line: an unlayered author rule outranks
+   every layer, including utilities. Scoped tightly to the one selector so
+   nothing else escapes layering. Rendered white-on-#0f3a4a = 12.18:1. */
+a[href="#main"]:focus { background-color: var(--color-primary-950); }
 
-  /* Canonical brand tokens for @accounting-network/web-shared components. */
-  --brand-primary: #0f3a4a;
-  --brand-primary-strong: #0f3a4a;
-  --brand-on-primary: #ffffff;
-  --calc-result-accent: #88cde7; /* kit calculator headline on slate-900: brand #0f3a4a 1.47 -> same-hue 300-step tint #88cde7 10.14 */
+/* ===========================================================================
+   PRIMARY RAMP - brand #0f3a4a, LOCKED at the 950 step (owner ruling 1: never
+   shift a designer-set colour).
+
+   Method, reproducible, not eyeballed: #0f3a4a in OKLCH is
+   oklch(0.3273 0.0538 -133.00). Tailwind's cyan ramp is the shape donor
+   (nearest hue family): take each cyan step's L and C, hold the hue fixed at
+   -133.00 degrees, convert back to sRGB. #0f3a4a lands on the 950 step, not
+   600: re-deriving L 0.327 at the scaled chroma returns #0f3a4a to the byte,
+   and cyan-950's own chroma (0.0541) and hue (-130.3) sit within rounding of
+   the brand's.
+
+   That fact drives every other decision in this phase: the brand hex here is
+   a NEAR-BLACK, so primary-600 is NOT the brand colour, it is a mid teal the
+   kit will paint on surfaces this site has never shown.
+
+   Contrast (sRGB, white #ffffff, slate-900 #0f172a):
+     100 #d3f7ff  1.13 / 15.74
+     400 #45cdff  1.84 / 9.72
+     500 #30b2e0  2.45 / 7.29
+     600 #1c8fb6  3.71 / 4.81
+     700 #177392  5.38 / 3.32
+     800 #185d76  7.33 / 2.44
+     900 #164e63  9.11 / 1.96
+     950 #0f3a4a 12.18 / 1.47  <- the brand hex, unchanged
+
+   Item 11 (playbook §8), one ratio three verdicts, all measured against
+   white: 3:1 graphic floor PASS (12.18), 4.5:1 text floor PASS (12.18), 4.5:1
+   ground-under-white-text floor PASS (12.18, white on #0f3a4a is the same
+   pair). --brand-primary-text and --brand-primary-ground are therefore NOT
+   declared: one brand value carries all three roles.
+
+   The slate-900 figure is a different, already-answered question: #0f3a4a on
+   slate-900 is 1.47, FAILING both floors. That is exactly the surface
+   --calc-result-accent exists for, already declared below at #88cde7
+   (10.14). Any brand-coloured TEXT a later phase puts on a dark ground must
+   use the 300/400 step, not the brand hex. =========================================================================== */
+@theme {
+  --color-primary-50:  #edfdff;
+  --color-primary-100: #d3f7ff;
+  --color-primary-200: #acefff;
+  --color-primary-300: #77e2ff;
+  --color-primary-400: #45cdff;
+  --color-primary-500: #30b2e0;
+  --color-primary-600: #1c8fb6;
+  --color-primary-700: #177392;
+  --color-primary-800: #185d76;
+  --color-primary-900: #164e63;
+  --color-primary-950: #0f3a4a; /* THE BRAND HEX, unchanged. 12.18 on white */
+
+  /* Undeclared, every calc() in globals-standard.css is invalid and the kit
+     buttons collapse to a 9999px pill (the generalist port shipped that
+     defect; see Medical/web/src/app/globals.css:93-98). 0rem preserves this
+     site's shipped square button shape exactly: layout-utils.ts carries no
+     rounded-* class today. Adopting the kit btnPrimary in P1-B brings
+     rounded-xl = calc(0rem + 4px) = 4px, a small deliberate shape change,
+     recorded rather than left to ride silently. */
+  --radius: 0rem;
 }
 
-body {
-  background: var(--background);
-  color: var(--ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+@theme inline {
+  /* A8: font alias. @theme inline emits --font-sans on :root (<html>). A
+     custom property whose value contains var() resolves at COMPUTED-VALUE
+     TIME on the element that declares it, so --font-plus-jakarta must exist
+     on :root for this to resolve - hence the variable class moves to <html>
+     in layout.tsx (see that file). */
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* font-mono: alias the stack, load no second webfont. The face here is
+     Plus Jakarta Sans, not Geist, so GeistMono is not the automatic answer
+     (owner question Q4). */
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 }
 
-/* Blog bodies embed raw <table> markup with no wrapper, and
-   prose-standard.css sets `.prose table { width: 100% }` without constraining
-   it below the viewport: the closures post measured scrollWidth 562 at a real
-   390 emulation. Scope the fix here rather than in the shared package (out of
-   this site's edit boundary): the table becomes its own scroll container
-   instead of widening the page. */
-.prose table:not(.not-prose *) {
-  display: block;
-  overflow-x: auto;
-  max-width: 100%;
+@layer base {
+  :root {
+    --background: #ffffff;
+    --surface: #f8fafc;
+    --surface-elevated: #ffffff;
+    --ink: #0f172a;
+    --ink-soft: #334155;
+    --muted: #475569;
+    --border: #e2e8f0;
+
+    /* Canonical brand tokens for @accounting-network/web-shared components.
+       No --brand-primary-text / --brand-primary-ground override: see the
+       ramp comment above, the one brand hex already clears all three
+       floors. */
+    --brand-primary: #0f3a4a;
+    --brand-primary-strong: #0f3a4a;
+    --brand-on-primary: #ffffff;
+    --calc-result-accent: #88cde7; /* kit calculator headline on slate-900: brand #0f3a4a 1.47 -> same-hue 300-step tint #88cde7 10.14. KEEP, do not repoint. */
+
+    /* A7: swap surface the kit sheet documents, so the card-glow/num-glow/
+       related-card rules it ships key off this site's brand hue rather than
+       Property's emerald fallback. Channels are steps already declared in
+       the @theme block above; no new colour enters. RGB triplets because the
+       kit's rgb(var(--token) / alpha) syntax cannot take a hex custom
+       property. The brand 950 step is deliberately NOT used here: at 12.18
+       on white it reads as grime, not glow. */
+    --brand-glow:       48 178 224;  /* primary-500 #30b2e0 */
+    --brand-glow-deep:  28 143 182;  /* primary-600 #1c8fb6 */
+    --brand-glow-edge:  69 205 255;  /* primary-400 #45cdff */
+    --brand-glow-faint: 211 247 255; /* primary-100 #d3f7ff */
+
+    /* A3: button ground trio. Must be declared, and the reason is the
+       inverse of every prior port: the kit's btnPrimaryBase falls back to
+       --color-primary-600 #1c8fb6, whose white label is 3.71, FAILING the
+       4.5 floor. Leaving the trio undeclared would break contrast AND
+       repaint every live button from near-black teal to mid teal. Hover and
+       active are derived on the brand's own hue line (the site uses
+       hover:opacity-90 / active:opacity-80 today, so there is no hex to
+       adopt) - two darker steps of the brand, no new hue. */
+    --btn-ground: #0f3a4a;        /* 950, the brand hex. white label 12.18, PASS */
+    --btn-ground-hover: #0a3342;  /* same hue, L 0.300. 13.48 */
+    --btn-ground-active: #072f3d; /* same hue, L 0.285. 14.20 */
+
+    /* ---------------------------------------------------------------------
+       FOCUS RING, two-valued (A4). --kit-focus-ring must NOT be written as
+       var(--focus-ring): a custom property whose value is a var() reference
+       resolves at computed-value time on the DECLARING element and would
+       freeze at the light value (hospitality globals.css, same comment).
+       Both point at the ground tokens directly.
+
+       Rule for this port, addressed to phases 2-6: any section that paints a
+       dark ground carries .ground-dark, and the phase that paints the
+       ground owns the class. R1's blocker B1 on a sibling site came from
+       declaring this and never mounting it. Phase 1 mounts it twice: the
+       `footer` element rule below, and .ground-dark on the StickyCTA bar
+       (P1-C) - the kit SiteFooter renders a bare <footer> on bg-slate-900
+       with no className prop, so the class cannot be attached there and an
+       element rule is used instead. Brand on slate-900 is 1.47; white is
+       15+, so the rebind moves the footer ring to white.
+       --------------------------------------------------------------------- */
+    --focus-ring-on-light: var(--color-primary-950); /* #0f3a4a, 12.18 on white */
+    --focus-ring-on-brand: #ffffff;
+
+    --focus-ring: var(--focus-ring-on-light);
+
+    /* Opts the SHARED KIT's own ring into the mechanism above; see the note
+       above the light value for why this is not var(--focus-ring). */
+    --kit-focus-ring: var(--focus-ring-on-light);
+
+    /* A9: warning/info semantics. Amber and orange ARE available here,
+       unlike hospitality: the brand family is teal/cyan (hue -133), so an
+       amber chip cannot read as brand decoration. Declared here only; phase
+       1 mounts neither.
+
+       Measured white-label ratios, stated so a later phase does not ship a
+       sub-floor chip: amber-600 #d97706 is 3.35, UNDER the 4.5 text floor,
+       so white text on --warning-ground must use amber-700 #b45309 (4.92)
+       instead. sky-600 #0284c7 is 4.07, same caveat.
+
+       Collision: sky-600 sits 0.3 L from --color-primary-600, so
+       informational notes on this site use slate or a border, never sky. */
+    --warning-ground: #d97706;   /* amber-600 */
+    --warning-on-ground: #ffffff;
+    --info-ground: #0284c7;      /* sky-600 */
+    --info-on-ground: #ffffff;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--ink);
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  /* A5: the kit skip link's ground. packages/web-shared/design/chrome/
+     PageShell.tsx hardcodes focus:bg-primary-600 focus:text-white on the
+     skip link and exposes no prop to override it. White on primary-600
+     #1c8fb6 measures 3.71, under the 4.5 text floor. The brand 950 step
+     carries white at 12.18. One selector, no kit edit.
+     G2: the actual rule moved out of this layer — see the unlayered
+     exception above the @theme block. @layer components always loses to
+     Tailwind's @layer utilities, so a copy here would be dead weight. */
+
+  /* G4 (R2 S1/S3): rebinds the focus ring for anything painted on a dark
+     ground. This used to be opt-in only (`.ground-dark`, hand-added by the
+     site on the element that paints the fill) - but the kit paints
+     bg-slate-900 directly on TestimonialsSection, LeadCTAPanel,
+     BlogSidebarCta, WhatToExpectCard, StickyCTA and ProcessTimeline with no
+     className prop to carry `.ground-dark`, so 6 route families shipped a
+     dark band with no rebind and a ring measuring 1.46-1.56 on it (R2 S1,
+     S3). The rule now keys off the GROUND UTILITY CLASS itself, so any
+     element painted with a dark ground - by the kit or by the site, with or
+     without `.ground-dark` on it - scopes the ring tokens automatically.
+     `.ground-dark` stays as a harmless explicit alias (site code still
+     writes it alongside bg-primary-950/bg-primary-800 in src/).
+
+     Selector list verified two ways: the built CSS
+     (.next/static/css/*.css) emits bg-slate-900, bg-primary-950 and
+     bg-primary-800 and nothing darker from primary/slate; and the kit
+     sources under packages/web-shared/design paint only bg-slate-900 as a
+     dark ground (SiteFooter, LeadCTAPanel, TestimonialsSection,
+     BlogSidebarCta, WhatToExpectCard, StickyCTA, SlimHero default,
+     ProcessTimeline's active step). bg-primary-900 and bg-slate-950 are not
+     emitted anywhere in this build and are not referenced by any kit or
+     site source, so they are deliberately left out - add them here if a
+     future phase ever paints one. Tailwind v4 does not rewrite or purge
+     class selectors written in an author stylesheet (it only scans source
+     files to decide which utilities to GENERATE), so these selectors are
+     stable across builds as long as the build keeps emitting the utility.
+
+     Put `.ground-dark` on the SECTION that paints the dark fill, never on
+     the control, because the ring lands on the ground two pixels outside
+     the control (every kit ring recipe carries outline-offset-2). Custom
+     properties inherit, so a dark ground that contains a light-ground card
+     with focusable children needs the reset below it, not a bare wrap. */
+  .ground-dark,
+  .bg-slate-900,
+  .bg-primary-950,
+  .bg-primary-800 {
+    --focus-ring: var(--focus-ring-on-brand);
+    --kit-focus-ring: var(--focus-ring-on-brand);
+  }
+
+  /* Caveat from the rule above: LeadCTAPanel's dark variant
+     (packages/web-shared/design/marketing/LeadCTAPanel.tsx:103,189) renders
+     a `bg-white` form card INSIDE its `bg-slate-900` section. Custom
+     properties inherit, so without this reset the card's inputs/submit
+     button would inherit --focus-ring-on-brand (white) and paint a white
+     ring on a white card - invisible, worse than the bug this file fixes.
+     Walking the cascade: section has class `bg-slate-900` -> matches the
+     block above -> --focus-ring/--kit-focus-ring = white, inherited down
+     to the white card's children; this rule re-matches on `.bg-white`
+     (the card itself) and rebinds both back to --focus-ring-on-light
+     (brand navy), which the card's focusable children then inherit instead.
+     `.bg-slate-50` carries no equivalent reset: grepped every kit and site
+     use of it and none sits inside a dark-painted ancestor (it is always
+     its own full-bleed light section), so there is no light-on-white case
+     for it to guard against today.
+
+     G5 (R4 N2): the reset above shipped unscoped and matched the FOCUSABLE
+     ITSELF, not just a card around it. 15 white CTA links across 14 routes
+     are `<a class="... bg-white">` painted DIRECTLY on bg-primary-950
+     (page.tsx:371,513; services/[slug]:125; for/[slug]:106), so they
+     re-bound their own ring to the brand navy and painted navy-on-navy at
+     ratio 1.00 - worse than the UA outline this file replaced. The ring
+     lands 2px OUTSIDE the control, i.e. on the band's ground, so a white
+     control on a dark band must keep the dark-band (white) ring; only a
+     light CONTAINER changes the ground its children's rings land on.
+     `:not(a):not(button)` is the whole scope needed and is checked, not
+     assumed: grepped every solid `bg-white` (excluding `bg-white/*` opacity
+     tints) in packages/web-shared/design and pharmacies/web/src - every
+     focusable one is an `<a>`/`<Link>` or a `<button>`; no input, select,
+     textarea, summary or label carries it. Inputs are deliberately NOT
+     excluded: a white input is its own white ground, so it must keep the
+     navy ring, which is exactly what matching it here gives. */
+  .ground-dark .bg-white:not(a):not(button),
+  .bg-slate-900 .bg-white:not(a):not(button),
+  .bg-primary-950 .bg-white:not(a):not(button),
+  .bg-primary-800 .bg-white:not(a):not(button) {
+    --focus-ring: var(--focus-ring-on-light);
+    --kit-focus-ring: var(--focus-ring-on-light);
+  }
+
+  /* The kit SiteFooter renders a bare <footer> on bg-slate-900
+     (packages/web-shared/design/chrome/SiteFooter.tsx) with no className
+     prop, so .ground-dark cannot be attached there; bound by this element
+     rule instead. Custom properties inherit, and the kit's own focusRing
+     recipe reads --kit-focus-ring at the focused element via var(), so a
+     declaration on this ancestor element is enough to rebind every ring
+     inside it; layer order does not matter here because no Tailwind utility
+     sets these two properties, only this rule does. Brand on slate-900
+     measures 1.47; white on slate-900 measures 15+, so the rebind moves the
+     footer ring to white. */
+  footer {
+    --focus-ring: var(--focus-ring-on-brand);
+    --kit-focus-ring: var(--focus-ring-on-brand);
+  }
+
+  /* G5 (R2/R3/R4 S1): the ring token had no DEFAULT consumer. A focusable
+     only got a ring if its className happened to carry the `focusRing`
+     recipe, so every prose link that was authored without it fell through to
+     the UA 1px `outline-style:auto` in rgb(16,16,16) - 1.56 on
+     bg-primary-950. R4 re-measured 10 of them: three inline citations in the
+     homepage NHS-contract band (page.tsx:482,493,503) and seven source /
+     OGL / "Download CSV" links in the two research heroes. Appending the
+     recipe to those ten strings fixes those ten and leaves the eleventh,
+     written next week, broken again - and three of the ten sit in a file
+     outside this task's edit boundary. So bind the token once, at the
+     element level, which closes every present and future case:
+
+       ratio = --focus-ring vs the band's ground, which the rules above
+       already resolve per ground. On bg-primary-950 [15,58,74] the token is
+       --focus-ring-on-brand #fff = 12.17. Was 1.56.
+
+     Specificity is deliberately the lowest thing that can work, (0,1,1):
+     every `focus-visible:outline-*` utility (0,2,0) in @layer utilities
+     still wins on the controls that carry the recipe - and declares the
+     same token with the same width and offset, so nothing repaints - and
+     the handful of controls pairing `focus:outline-none` with their own
+     ring (StickyCTA's close button, BlogListWithSearch's inputs) also keep
+     their own treatment. `:focus-visible`, not `:focus`, so mouse and touch
+     see no change. */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  /* 2026-09-28 parity fix (brief D7, A11: this site's only intentional
+     unlayered author rule, now layered). Blog post bodies embed raw <table>
+     markup with no wrapper, and prose-standard.css sets `.prose table {
+     width: 100% }` without constraining it below the viewport: the closures
+     post measured scrollWidth 562 at a real 390 emulation. Scope the fix
+     here rather than in the shared package (out of this site's edit
+     boundary): the table becomes its own scroll container instead of
+     widening the page. */
+  .prose table:not(.not-prose *) {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  /* W5 D4: NumberedReasons (packages/web-shared/design/marketing/
+     NumberedReasons.tsx:62,69) emits .story-numeral / .story-numeral-rule and
+     flips data-draw on the wrapper, but the rule set lives in PER-SITE
+     globals.css (Property :653-680, ecommerce, crypto), not in the shared
+     globals-standard.css, so the band's motion was inert here. Ported from
+     Property with this site's ramp substituted for emerald.
+
+     The lit state is the resting state, so a reduced-motion visitor and a
+     no-JS visitor both get the finished numeral: everything that moves,
+     including the undrawn [data-draw="off"] state, is inside the
+     prefers-reduced-motion: no-preference query. primary-700 #177392 (5.38 on
+     white, 5.1 on slate-50) rather than primary-600, which measures 3.55 on
+     slate-50 and misses the 4.5 text floor. */
+  .story-numeral {
+    color: var(--color-primary-700);
+    text-shadow: 0 0 18px rgb(var(--brand-glow) / 0.45);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .story-numeral {
+      transition:
+        color 520ms ease-out,
+        text-shadow 520ms ease-out;
+    }
+
+    .story-numeral-rule {
+      transform-origin: left center;
+      transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* slate-200: the numeral is present and legible before it lights, so the
+       section never reads as half-rendered while it is off screen. */
+    [data-draw="off"] .story-numeral {
+      color: var(--color-slate-200, oklch(0.929 0.013 255.508));
+      text-shadow: 0 0 0 rgb(var(--brand-glow) / 0);
+    }
+
+    [data-draw="off"] .story-numeral-rule {
+      transform: scaleX(0);
+    }
+  }
 }

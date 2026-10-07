@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 
 export default function Error({
   error,
@@ -33,11 +33,11 @@ export default function Error({
           </div>
         </div>
 
-        <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
+        <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
           Something went wrong
         </h1>
 
-        <p className="mt-4 text-lg text-neutral-600">
+        <p className="mt-4 text-lg text-slate-600">
           We encountered an unexpected error. This has been logged and we will look into it.
         </p>
 
@@ -53,15 +53,15 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center border border-neutral-300 bg-white px-7 py-3.5 text-sm font-medium text-neutral-900 tracking-wide transition-colors hover:bg-neutral-50"
+            className="inline-flex items-center justify-center border border-slate-300 bg-white px-7 py-3.5 text-sm font-medium text-slate-900 tracking-wide transition-colors hover:bg-slate-50"
           >
             Go home
           </Link>
         </div>
 
-        <p className="mt-8 text-sm text-neutral-500">
+        <p className="mt-8 text-sm text-slate-500">
           If this keeps happening, please{" "}
-          <Link href="/contact" className="font-semibold text-[#0f3a4a] hover:opacity-70">
+          <Link href="/contact" className={`font-semibold text-primary-700 hover:opacity-70 ${focusRing}`}>
             get in touch
           </Link>
           .

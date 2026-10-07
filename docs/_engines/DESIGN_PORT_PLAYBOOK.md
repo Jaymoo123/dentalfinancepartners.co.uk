@@ -2,23 +2,31 @@
 
 ## STOP. Read this screen before anything else. (2026-09-13)
 
-**ELEVEN sites are fully ported** (generalist, solicitors, dentists, medical,
-construction-cis, contractors-ir35, charities, crypto, and as of 2026-09-29 startups-tech,
-ecommerce and hospitality), tagged. Derive the list from `git tag -l 'port-*'`, which is what
-that count came from. **The first eight went LIVE 2026-09-16** (`9e43db45`, plus Property with
-the header fix), header measured on every live domain; **startups-tech, ecommerce and
-hospitality are built and tagged but NOT deployed** (owner walk pending on ecommerce and
-hospitality). **Five sites remain**: digital-agency, pharmacies, care, wills-probate,
-divorce-finances.
-**Re-derived 2026-09-23 and still correct**, by kit-import count rather than by prose: the eight
-ported sites import `web-shared/design` in 13 to 48 files each, the eight remaining in **zero**.
-Property imports zero too, because it is the standard the kit was cut from, not a site awaiting a
-port. **Traffic split, 28 days to 2026-09-23: the ported nine carry 96.2% of estate impressions and
-97.8% of clicks; the six launched sites still on the old design carry 3.8% and 2.2%**, and the other
-two (wills-probate, divorce-finances) are unlaunched and earn nothing. The expensive half of this
-programme is done. Derive that
-list yourself (`git tag -l 'port-*'` against the rollout doc); this line has gone stale
-twice, which is the same defect as a STATE.md contradicting its tags.
+**Count derived 2026-10-07 from `git tag -l 'port-*'`, the only source of truth; do not
+trust any prose count, including this one, without re-running that command.** Today it
+resolves to twelve sites tagged: generalist, solicitors, dentists, medical, crypto,
+charities, construction-cis, contractors-ir35, ecommerce, hospitality, startups-tech, and
+pharmacies (phase 0 tagged today, phases 1 to 6 built and under review). Derive the
+remaining-site list the same way: diff the estate site list against that tag output, never
+read it from prose here.
+
+**Deploy status (verified 2026-10-07 via the Vercel API, see
+docs/pharmacies/_port/PHASE0_PACKAGES.md):** the first eight ported sites went live
+2026-09-16 (`9e43db45`); Solicitors is live at `153e5017` (2026-09-24, its STATE.md "not
+deployed" line was stale); startups-tech, ecommerce and hospitality are built and tagged
+but NOT deployed (owner walk pending on ecommerce and hospitality); pharmacies is built
+locally and NOT deployed. Deploy is owner-triggered only.
+
+**Traffic split, 28 days to 2026-09-23 (dated, historical):** the ported sites carried
+96.2% of estate impressions and 97.8% of clicks.
+
+**Owner decisions, 2026-10-07:**
+- Remaining queue order: care, then wills-probate + divorce-finances as one package, then
+  digital-agency (design-only exclusion lifted); ashfield stays excluded (own locked design).
+- Every site gets all four capture surfaces (SpecialistWidget, DeepScrollModal, ReturningBar,
+  StickyCTA) with Property's suppression rules.
+- A lead-kit gap sweep across the five ported-but-incomplete sites (crypto, charities,
+  ecommerce, hospitality, startups-tech) runs after the new ports, one layer at a time.
 
 **FOUR OF THE EIGHT HAVE ALSO HAD THE DESIGN UPLIFT** (2026-09-14): crypto `7dfe04b3`,
 charities `ba7b184a`, contractors-ir35 `569d3304`, construction-cis `48312e2c`. Only

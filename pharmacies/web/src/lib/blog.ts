@@ -73,9 +73,13 @@ export function getRelatedPosts(
   const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
   const relatedPosts: BlogPost[] = [];
 
+  // W2 2026-10-07: the `limit` cut used to happen BEFORE the sort, inside this
+  // loop, so "related" was the first N files in readdir (alphabetical) order
+  // and the sort that follows could only reorder those N. Zero consumers until
+  // this wave, so it never showed. Collect every sibling in the category,
+  // sort, then cut. Exported shape unchanged (W5 imports getAllPosts, not
+  // this).
   for (const file of files) {
-    if (relatedPosts.length >= limit) break;
-
     const filePath = path.join(postsDirectory, file);
     const raw = fs.readFileSync(filePath, "utf8");
     const { data } = matter(raw);
@@ -88,9 +92,9 @@ export function getRelatedPosts(
     relatedPosts.push(parsePostFile(filePath));
   }
 
-  return relatedPosts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  return relatedPosts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
 }
 
 export function slugifyCategory(category: string): string {
