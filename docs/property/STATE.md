@@ -13,6 +13,53 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: design port phases including the 0.22a/b/c review passes, claims fixes, header CTA fix, favicons).
 
+## 2026-10-07 Google index + commercial-query forensic (READ-ONLY diagnosis, nothing changed, nothing deployed)
+
+**Plan written same day, NOT built, NOT deployed:** `docs/property/COMMERCIAL_RECOVERY_PLAN_2026-10-07.md` (six owner facts, five decisions, two frozen-page sign-offs pending). Investigation reports and data: `docs/property/commercial_recovery_2026-10-07/`. Key reframe: 90 percent of in-niche commercial demand (14,100 of 15,600 a month) belongs to the three /services pages, which Google has not fetched since 5 to 6 Aug and which have no crawlable header link; city demand is under 700 a month in total.
+
+Owner asked why Property leads feel stuck despite rising traffic, why ~20 September pages are not indexed, and why the indexed count fell (his read 422 to 402). Everything below is from pulls made on 2026-10-07: full URL Inspection sweep of all 888 sitemap URLs plus the 5 redirected city posts (diffed against the 2026-09-26 sweep in `gsc_url_inspection`), Search Console API page+date and query+page+date for 2026-06-09 to 2026-10-05, a crawl of all 888 URLs, Vercel production deploy list, DataForSEO SERP + backlink summaries, and read-only git. Two Opus agents did the commercial-rank and May-corpus forensics; their claims were spot-verified against git before being recorded here.
+
+**Leads, for the record:** rolling 30 = 65 vs 67 vs 71 for the two prior 30-day windows; weekly since 13 Jul 19,16,16,18,21,12,19,13,22,11,16,14 (mean 16, slope minus 0.3 a week). Flat with a sag, not a drop. Advisory share ~60 percent throughout. The feeling of decline is real on the Google commercial side, not in the lead count.
+
+### What Google is actually doing (facts)
+
+| Fact | Evidence |
+|---|---|
+| 387 of 888 sitemap URLs indexed today; 365 on 26 Sep. Churn, not growth: 49 lost, 71 gained | sweep diff |
+| Distinct pages with Google impressions per week: 508 (w/c 17 Aug) down to 390 (w/c 28 Sep) while clicks rose 289 to 360 | gsc_page by week |
+| 472 "Crawled, currently not indexed": 191 last fetched in May, 247 in July, only 13 since August | sweep |
+| Indexed pages re-fetched every 32 days (median); unindexed 98 days | sweep |
+| Google fetched 16 to 72 of our URLs a week. Trough of 16 a week for the two weeks after 24 Aug; 72 in w/c 28 Sep | lastCrawl dates |
+| Of 147 fetches after 24 Aug (to 26 Sep), 142 were refreshes of already-indexed pages | sweep |
+| September wave (23 posts, live 2 Sep): 9 indexed, 4 discovered-never-fetched, 10 "unknown to Google" after 5 weeks. Sitemap carries them (Google downloaded it 5 Oct), 3 to 184 live pages link to each | sweep, sitemap fetched as Googlebot, crawl |
+| /services/* money pages last fetched 5 to 6 Aug: Google holds the pre-redesign version | sweep |
+| City 301s: Manchester and Birmingham processed 25 and 31 Aug; London and Bristol old posts STILL indexed with self canonical, Google has not fetched them since 25/31 Jul | sweep |
+| /blog/property-accountant-services hub was 301-shadowed to one blog post from April to 22 Aug (`0b397d08`); Google still records it as a redirect, last fetched 29 May. The incorporation hub (191 links in) is itself not indexed; all hubs are linked only from blog pages, not from nav or home | sweep, git, crawl |
+| 130 pages visible in Aug stopped appearing by late Sep: all Mar to May posts, median 7 impressions and position 8 when visible, 112 of them "crawled not indexed", none re-fetched before eviction | gsc_page, sweep |
+| Index rate by fetch window (blog): fetched before 9 Jul 0 to 2 percent; 9 to 25 Jul 35 percent; 4 Aug onward 93 to 98 percent | sweep |
+| Authority: 54 referring domains, DataForSEO rank 124. Top-10 competitors range 63 to 1,155 domains, several at rank 68 to 140. Not the gap | DataForSEO 2026-10-07 |
+| Google SERP for "property accountant" is career intent (salary, jobs). Winnable commercial queries are city-plus-service | DataForSEO SERP |
+
+### The whys, pinned
+
+1. **Google commercial went to zero because of one deliberate commit pair on 5 Aug** (`bbfe04378` + `c31b02d7b`), not the redesign, not the consent notice, not deploy churn (each ruled out with evidence; redesign commits changed only Tailwind classes, consent notice was an in-flow paragraph, impressions rose through the churn). Four effects: (a) the three biggest "property accountant" impression earners were noindexed as career intent (309 of 739 commercial impressions in w/c 10 Aug, zero clicks, correct call); (b) five city posts holding the phrase in title and H1 were deleted and 301'd to /locations/* URLs that had THEMSELVES been 301 sources to those posts since 10 April (`LOCATION_TO_BLOG`), so the new canonicals had zero history: Manchester 9 to 10 as a post, 17 to 27 as a location page on the same query; drops landed city by city (w/c 24 Aug, 31 Aug, 7 Sep) as Google processed each redirect; (c) the shared location title lost exact match ("Property Accountant Leeds" to "Property Accountant in Leeds") and the city LocalBusiness node lost PostalAddress, priceRange and openingHoursSpecification; this is the only change that reached the untouched Leeds page, and "rental accountant leeds" went 8.6 to 14.0 the following week while non-city-service Leeds queries did not move; (d) three surviving commercial titles were rewritten away from the phrase on purpose. Unexplained: from w/c 21 Sep Leeds lost most impressions while Bristol gained (35 to 343) with no Property commit 16 to 27 Sep; reads as Google choosing one of six near-identical city pages.
+2. **The September pages are not indexed because Google never fetched them.** Google's fetch allocation for this host was at its lowest (16 a week) exactly when they shipped, right after 31 production deploys in 10 days and the redesign. After 24 Aug Google spent its fetches refreshing pages it already indexed and stopped exploring. The hubs that link to the new posts have not been fetched since May (and are not indexed), so the sitemap was the only path, and Google works a sitemap at its own pace. The sitemap lastmod fix (`b226ff38`, live 28 Sep) did not drive the late-Sep fetch surge (only 3 of 105 fetched pages had a fresh dateModified); the surge coincides with deploys calming to 1 to 4 a week. Nine of the 23 are now in; the rest are queued, not rejected.
+3. **The "422 to 402" is long-tail eviction, not loss of good pages.** Google holds a provisional copy of pages it fetched once in May or July, keeps the ones that earn impressions, and evicts the rest without re-fetching. The 130 evicted pages had median 7 impressions. New pages since July are all indexed (Jul 26/26, Aug 76/76, Sep 9/9 of those fetched) and are inside the same trial window; expect some of the August wave to be shed over the next quarter unless they earn search demand.
+4. **Content attributes do not separate indexed from unindexed May posts.** Measured on 450 May posts: tables, worked examples, statute citations, external links, FAQ count, title crowding, inlinks, boilerplate share, opening-sentence pattern, word count: all flat or reversed once last-fetch date is held constant. Eight demand-matched pairs read by hand: unindexed page better in 3, indexed better in 2, indistinguishable in 3. The Opus waves are shorter and less cited than the May import and are 100 percent indexed. The decisive variable is whether Google has re-fetched the page since August (May posts: 96 of 102 re-fetched are indexed, 14 of 352 not re-fetched). Direction of causation is NOT settled: Google re-fetches what it already values, so "re-fetched" may be effect not cause. The one test that settles it is below.
+5. **The commercial hub was dead for four months** (April to 22 Aug) through a middleware slug clash, so the 61 commercial city posts had no indexed hub above them while they were being evaluated; 27 of them were among the evicted pages.
+
+### Ruled out (with the check that ruled it out)
+Lead delivery, spam, duplicates, form errors, device mix, timing (09-29 trace). Twilio outage (owner ruling: not a volume factor). TTFB (p50 124 to 137 ms, flat). HTML weight (blog median 229 KB, no change signal). robots.txt (all allow; the 15 Aug change removed only the `host` line). Canonicals (888 of 888 self). Noindex (none in sitemap). Sitemap (888 URLs, correct, served to Googlebot). Redesign template on positions (only class names changed). Consent notice as interstitial (in-flow paragraph, timing wrong both ways). Authority gap (comparable to several top-10 competitors). Thinness of location pages (2.3k words, more structure than the posts).
+
+### Open questions and the tests that would close them (no action taken)
+- Causation on item 4: request indexing on 20 matched May posts (10 strongest content, 10 weakest). Crawl-led predicts both index at the same rate; quality-led predicts a split. Needs owner go; it is a Search Console action, harmless and reversible.
+- Whether the September wave completes on its own: re-run the sweep in 2 weeks; 9 of 23 today, trend is up.
+- Whether London and Bristol 301s get processed: re-inspect the two old post URLs in 2 weeks.
+- Leeds-to-Bristol impression swap from w/c 21 Sep: not attributable to anything in the repo.
+
+### Method, for re-running
+Sweep: URL Inspection API via `agents.utils.gsc_client_oauth.GSCClient`, one client per thread (the shared httplib2 handle crashes under threads), 4 threads, ~45 min for 893 URLs. Existing `optimisation_engine.snapshot.index_coverage` does the same at ~12 s per URL. Diff against `gsc_url_inspection` rows by `checked_at`. Search Console pulls: page+date and query+page+date with `dimensionFilterGroups` on query contains "accountant". Pages-with-impressions-per-week from the page+date pull is the fastest index-size proxy and needs no inspection quota.
+
 ## 2026-09-30 Lead decline trace (READ-ONLY diagnosis, nothing changed, nothing deployed)
 
 Owner asked why Property leads felt lower. Traced deploy by deploy (Vercel prod deploy times mapped to the last commit before each). Leads table starts 2026-03-30; sessions from 2026-06-05.
