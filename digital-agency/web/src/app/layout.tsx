@@ -62,10 +62,6 @@ export const metadata: Metadata = {
       ...(niche.seo.search_console_verification?.pinterest
         ? { "p:domain_verify": niche.seo.search_console_verification.pinterest }
         : {}),
-      // Server-rendered so the AdSense crawler finds it. The ad loader itself is
-      // client-side behind the consent gate, which is why the snippet method of
-      // site verification fails: the crawler reads raw HTML and never runs it.
-      "google-adsense-account": "ca-pub-3756285576371279",
     },
   },
   openGraph: {
@@ -120,10 +116,7 @@ export default function RootLayout({
             posture="opt-out"
             noTrackPrefixes={["/admin", "/embed"]}
           >
-            <ConsentedScripts
-              gaMeasurementId={niche.seo.google_analytics_id || undefined}
-              adsenseClientId="ca-pub-3756285576371279"
-            />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id || undefined} />
             <IntentProvider>
               <PageShell>{children}</PageShell>
               {/* Personalisation overlays (outside PageShell so z-index stacks above it) */}

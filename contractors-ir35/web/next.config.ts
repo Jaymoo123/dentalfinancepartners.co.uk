@@ -20,9 +20,7 @@ const nextConfig: NextConfig = {
     // embedPrefix: "embed" allows /embed/* to be framed in third-party iframes
     // (SEC-03 fix: without this, buildSecurityHeaders emits X-Frame-Options DENY
     // site-wide, which blocks the embed pages from working in iframe contexts).
-    // ads: true widens frame-src/script-src/connect-src for AdSense, per
-    // 2026-09-28 parity brief section 6 ("set up every site for AdSense").
-    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 

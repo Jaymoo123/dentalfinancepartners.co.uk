@@ -75,13 +75,10 @@ export const metadata: Metadata = {
   verification: {
     google: niche.seo.search_console_verification?.google || undefined,
     yandex: niche.seo.search_console_verification?.yandex || undefined,
-    // Server-rendered so the AdSense crawler finds it (owner 2026-09-28: set up
-    // every site for AdSense). Solicitors carries the same literal client id.
     other: {
       ...(niche.seo.search_console_verification?.bing
         ? { "msvalidate.01": niche.seo.search_console_verification.bing }
         : {}),
-      "google-adsense-account": "ca-pub-3756285576371279",
     },
   },
   openGraph: {
@@ -137,10 +134,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             posture="opt-out"
             noTrackPrefixes={["/admin"]}
           >
-            <ConsentedScripts
-              gaMeasurementId={niche.seo.google_analytics_id}
-              adsenseClientId="ca-pub-3756285576371279"
-            />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             {/* Chrome = the shared kit. PageShell also supplies the skip
                 link, the single main landmark (which used to be hand-rolled
                 here) and the chrome bypass, so partner iframes get no header

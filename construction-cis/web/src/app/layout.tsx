@@ -41,10 +41,6 @@ export const metadata: Metadata = {
       ...(niche.seo.search_console_verification?.bing
         ? { "msvalidate.01": niche.seo.search_console_verification.bing }
         : {}),
-      // Server-rendered so the AdSense crawler finds it. The ad loader itself
-      // is client-side behind the consent gate, which is why the snippet
-      // method of site verification fails (Solicitors pattern, 7edc7fd3).
-      "google-adsense-account": "ca-pub-3756285576371279",
     },
   },
   openGraph: {
@@ -96,10 +92,7 @@ export default function RootLayout({
             siteKey={niche.content_strategy.site_key}
             siteName={niche.display_name}
           >
-            <ConsentedScripts
-              gaMeasurementId={niche.seo.google_analytics_id}
-              adsenseClientId="ca-pub-3756285576371279"
-            />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             <IntentProvider>
               <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
               <ReturningBar />

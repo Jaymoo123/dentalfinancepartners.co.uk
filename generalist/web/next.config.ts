@@ -96,9 +96,8 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
-      // ads: true widens frame-src for AdSense. Solicitors and Generalist only —
       // Property stays frame-src 'none' for its Mediavine Journey application.
-      ...buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" }),
+      ...buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" }),
       {
         // Post-submit surfaces echo back what the visitor just sent us and
         // carry a lead token in the URL. Keep them out of shared and browser

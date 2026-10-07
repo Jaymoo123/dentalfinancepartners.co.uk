@@ -65,10 +65,9 @@ const nextConfig: NextConfig = {
   async headers() {
     // embedPrefix: "embed" adds frame-ancestors exception for /embed/* pages
     // so partner sites can iframe our calculators.
-    // ads: true widens frame-src for AdSense. Solicitors and Generalist only —
     // Property stays frame-src 'none' so its Mediavine Journey application is
     // not complicated by a competing network.
-    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 

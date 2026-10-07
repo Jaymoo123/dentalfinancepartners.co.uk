@@ -42,9 +42,6 @@ export const metadata: Metadata = {
       ...(niche.seo.search_console_verification?.bing
         ? { "msvalidate.01": niche.seo.search_console_verification.bing }
         : {}),
-      // Server-rendered so the AdSense crawler finds it; the ad loader itself
-      // is client-side behind the consent gate (Solicitors pattern, 7edc7fd3).
-      "google-adsense-account": "ca-pub-3756285576371279",
     },
   },
   openGraph: {
@@ -92,10 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             posture="opt-out"
             noTrackPrefixes={["/admin"]}
           >
-            <ConsentedScripts
-              gaMeasurementId={niche.seo.google_analytics_id}
-              adsenseClientId="ca-pub-3756285576371279"
-            />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             <SiteNav />
             {children}
             <SiteFooter />

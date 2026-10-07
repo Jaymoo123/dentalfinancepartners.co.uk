@@ -47,7 +47,6 @@ export const metadata: Metadata = {
   verification: {
     google: niche.seo.google_site_verification,
   },
-  other: { "google-adsense-account": "ca-pub-3756285576371279" },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
@@ -107,10 +106,7 @@ export default function RootLayout({
             posture="opt-out"
             noTrackPrefixes={["/admin", "/embed"]}
           >
-            <ConsentedScripts
-              gaMeasurementId={niche.seo.google_analytics_id}
-              adsenseClientId="ca-pub-3756285576371279"
-            />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             <IntentProvider>
               <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
               <ReturningBar />

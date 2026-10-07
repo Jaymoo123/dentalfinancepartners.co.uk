@@ -30,13 +30,11 @@ const nextConfig: NextConfig = {
     ];
   },
   // Phase 0 2026-09-28: this site had no security headers at all (no CSP).
-  // AdSense (owner 2026-09-28 ruling: set up every site for it) needs
   // frame-src widened for the ad iframe, so this adds the shared builder
-  // directly with ads: true rather than a locked-down block first, same
   // shape as Solicitors/next.config.ts. embedPrefix: "embed" for
   // /embed/[slug] (partner-site calculator iframes).
   async headers() {
-    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 

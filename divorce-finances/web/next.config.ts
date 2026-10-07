@@ -20,8 +20,7 @@ const nextConfig: NextConfig = {
     // SEC-03: embedPrefix opens frame-ancestors for /embed/* so third-party
     // sites can iframe calculators. Without this, buildSecurityHeaders emits
     // X-Frame-Options DENY + frame-ancestors 'none' everywhere, breaking embeds.
-    // ads: true widens frame-src for AdSense, per the Solicitors/Generalist pattern (7edc7fd3).
-    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 

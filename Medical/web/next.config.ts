@@ -36,10 +36,8 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
-    // ads: true widens frame-src for AdSense (owner 2026-09-28: set up every
-    // site for AdSense). embedPrefix: "embed" adds frame-ancestors exception
     // so third-party sites can iframe our calculators.
-    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 

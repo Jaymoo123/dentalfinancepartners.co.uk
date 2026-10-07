@@ -17,9 +17,7 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
-    // ads: true widens frame-src for AdSense (owner 2026-09-28: set up every
-    // site for AdSense). Solicitors carries the same flag.
-    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
   async redirects() {
     return [

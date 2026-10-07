@@ -34,8 +34,7 @@ const nextConfig: NextConfig = {
     // headers at all (research finding I4). Added now, same shape as
     // Solicitors' (commit 7edc7fd3): embedPrefix "embed" for the /embed/*
     // calculator iframe, ads:true widens frame-src/script-src/connect-src for
-    // AdSense (section 6, owner ruling "set up every site for AdSense").
-    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
+    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
 };
 

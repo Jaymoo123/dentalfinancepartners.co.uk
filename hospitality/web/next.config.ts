@@ -21,9 +21,8 @@ const nextConfig: NextConfig = {
     // ga derives from whether a measurement id is configured, so the region1
     // connect-src (UK/EU GA4 traffic) turns on the moment the plumbing agent
     // fills niche.seo.google_analytics_id, with no second edit here.
-    // ads: true for the estate AdSense rollout (owner 2026-09-28); no /embed
     // routes on this site.
-    return buildSecurityHeaders({ ga: Boolean(niche.seo.google_analytics_id), supabase: true, ads: true });
+    return buildSecurityHeaders({ ga: Boolean(niche.seo.google_analytics_id), supabase: true });
   },
   async redirects() {
     // Estate audit 2026-07: permanent 308 redirect apex->www.
