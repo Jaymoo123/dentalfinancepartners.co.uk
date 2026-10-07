@@ -149,7 +149,7 @@ faqs:
 
 <section class="tariff-update-slot" aria-label="Latest Drug Tariff changes">
 <h2>Drug Tariff changes: latest update</h2>
-<p><em>As at: July 2026. This slot is refreshed monthly. Check the <a href="https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/drug-tariff" rel="noopener noreferrer">NHSBSA Drug Tariff portal</a> for the current edition and any concessions in force this month. Live prices and concession lists are not reproduced here.</em></p>
+<p><em>As at: July 2026. Check the <a href="https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/drug-tariff" rel="noopener noreferrer">NHSBSA Drug Tariff portal</a> for the current edition and any concessions in force this month. Live prices and concession lists are not reproduced here.</em></p>
 
 <p>The July 2026 edition of the Drug Tariff is now available at the NHSBSA portal. As with every monthly edition, Category M reimbursement prices have been reviewed and a number of lines revised upwards or downwards relative to June. Concession prices for drugs in short supply this month are also listed in the current edition.</p>
 

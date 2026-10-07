@@ -72,9 +72,11 @@ export const pharmacyFp34CashFlowEstimator: GenericTool = {
     const settlementAmount = monthlyClaimValue; // full settlement (advance already received)
     // Net cash received at settlement = full claim minus advance already paid
     const settlementNet = settlementAmount - advanceAmount;
-    // Working-capital gap = cost of funding before advance is received
-    // Illustrative: the gap is the portion of monthly costs not covered by the advance
-    const workingCapitalGap = monthlyClaimValue - advanceAmount;
+    // Monthly shortfall = the part of each month's claim the advance does not cover.
+    const monthlyShortfall = monthlyClaimValue - advanceAmount;
+    // Working-capital gap = that shortfall accumulated across the months you wait for
+    // settlement, which is what the explainer describes (HP 7: roughly a two-month lag).
+    const workingCapitalGap = monthlyShortfall * lag;
 
     // Build a 6-month illustrative timeline
     // Month 1: submit claim, receive advance for M1
@@ -86,6 +88,10 @@ export const pharmacyFp34CashFlowEstimator: GenericTool = {
       {
         label: `Full settlement (arrives month +${lag})`,
         value: gbp(settlementAmount),
+      },
+      {
+        label: "Monthly shortfall while you wait",
+        value: gbp(monthlyShortfall),
       },
       {
         label: "Working-capital gap to bridge",
@@ -119,10 +125,10 @@ export const pharmacyFp34CashFlowEstimator: GenericTool = {
         label: "Working-capital gap to bridge",
         value: gbp(workingCapitalGap),
         sub: `${gbp(monthlyClaimValue)} monthly claim value, ${pct(advancePct * 100, 0)} advance on account, ${lag}-month lag`,
-        tone: workingCapitalGap > monthlyClaimValue * 0.6 ? "warn" : "default",
+        tone: monthlyShortfall > monthlyClaimValue * 0.6 ? "warn" : "default",
       },
       rows,
-      note: `This is an illustrative model of the NHSBSA FP34 payment cycle (see nhsbsa.nhs.uk/submitting-prescriptions). The advance-on-account percentage and payment timing vary by pharmacy and period. Category M clawbacks and Drug Tariff adjustments can change the final settlement figure retrospectively. The working-capital gap shown is the portion of monthly claim value not covered by the advance while you wait for full settlement. Steady-state monthly cash receipts (advance plus prior settlement net) settle at ${gbp(steadyStateCash)}. Speak to us about structuring a cash-flow facility to cover the gap.`,
+      note: `This is an illustrative model of the NHSBSA FP34 payment cycle (see nhsbsa.nhs.uk/submitting-prescriptions). The advance-on-account percentage and payment timing vary by pharmacy and period. Category M clawbacks and Drug Tariff adjustments can change the final settlement figure retrospectively. The working-capital gap shown is the portion of monthly claim value not covered by the advance, accumulated across the ${lag} month${lag === 1 ? "" : "s"} you wait for full settlement. Steady-state monthly cash receipts (advance plus prior settlement net) settle at ${gbp(steadyStateCash)}. Speak to us about structuring a cash-flow facility to cover the gap.`,
     };
   },
   explainer: {

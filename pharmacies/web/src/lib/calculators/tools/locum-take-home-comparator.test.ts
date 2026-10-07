@@ -6,7 +6,7 @@ import { locumTakeHomeComparator } from "./locum-take-home-comparator";
  *
  * Tax constants (from contractors-ir35/web/src/lib/calculators/tax2026.ts):
  *   PA £12,570 | basic rate 20% on £37,700 | higher 40% | CT 19%/25% marginal
- *   Class 2 £3.45/wk | Class 4 6% (£12,570–£50,270) / 2% above
+ *   Class 2 nil (credited at nil cost above the SPT from 6 Apr 2024) | Class 4 6% (£12,570–£50,270) / 2% above
  *   Dividend rates HP 28: 10.75% / 35.75% / 39.35%, £500 allowance
  *   Employer NIC HP 25: 15% above £5,000
  */
@@ -33,18 +33,24 @@ describe("locumTakeHomeComparator", () => {
     expect(nic4Row?.value).toBe("−£2,669");
   });
 
-  it("sole trader: class 2 NIC figure", () => {
-    // 3.45 * 52 = 179.40 → gbp "£179"
+  it("sole trader: no Class 2 NIC row (abolished for profitable traders, 6 Apr 2024)", () => {
     const result = locumTakeHomeComparator.compute(BASE);
-    const nic2Row = result.rows?.find((r) => r.label === "Class 2 NIC (£3.45/week)");
-    expect(nic2Row?.value).toBe("−£179");
+    const nic2Row = result.rows?.find((r) => r.label.includes("Class 2"));
+    expect(nic2Row).toBeUndefined();
+    expect(result.note).not.toContain("Class 2 NIC at £3.45");
   });
 
   it("sole trader: net take-home", () => {
-    // net = 70600 - 15672 - 179.40 - 2668.60 = 70600 - 15672 - 2848 = £52,080
+    // Hand-derived, no Class 2 charge:
+    //   profit            = 73,600 - 3,000            = 70,600.00
+    //   income tax        = 7,540.00 + 8,132.00       = 15,672.00
+    //   Class 4 main      = 37,700 * 0.06             =  2,262.00
+    //   Class 4 upper     = (70,600 - 50,270) * 0.02  =    406.60
+    //   net = 70,600 - 15,672 - 2,262 - 406.60        = 52,259.40 → gbp "£52,259"
+    // (was £52,080 while the £179.40 Class 2 charge was wrongly deducted)
     const result = locumTakeHomeComparator.compute(BASE);
     const stRow = result.rows?.find((r) => r.label === "Sole trader net take-home");
-    expect(stRow?.value).toBe("£52,080");
+    expect(stRow?.value).toBe("£52,259");
   });
 
   it("limited company: corporation tax in marginal band", () => {
@@ -95,7 +101,7 @@ describe("locumTakeHomeComparator", () => {
   });
 
   it("zero income: sole trader take-home is clamped to zero", () => {
-    // profit=0, tax=0, class2=£179 → without clamp would be negative; tool clamps to £0
+    // profit=0, tax=0, Class 4=£0 → £0; the clamp also holds if any fixed charge returns
     const result = locumTakeHomeComparator.compute({
       dayRate: 0,
       daysPerWeek: 5,

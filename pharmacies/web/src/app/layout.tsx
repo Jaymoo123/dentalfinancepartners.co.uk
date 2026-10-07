@@ -4,10 +4,9 @@ import "./globals.css";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { StickyCTA } from "@/components/ui/StickyCTA";
+import { PageShell } from "@/components/layout/PageShell";
 import { niche } from "@/config/niche-loader";
+import { buildOrganizationJsonLd } from "@/lib/schema";
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
@@ -15,7 +14,6 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 const siteUrl = `https://${niche.domain}`;
-const organizationJsonLd = { "@context": "https://schema.org", "@type": ["ProfessionalService","AccountingService"], "@id": `${siteUrl}#organization`, name: niche.display_name, url: siteUrl, description: niche.description, logo: `${siteUrl}/api/og`, areaServed: "GB" };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: niche.seo.theme_color };
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -29,15 +27,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-GB">
-      <head><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} /></head>
+      <head><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }} /></head>
       <body className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}>
         <ConsentProvider>
           <AnalyticsProvider siteKey={niche.content_strategy.site_key} siteName={niche.display_name} storagePrefix="pfp" posture="opt-out" noTrackPrefixes={["/admin"]}>
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} adsenseClientId="ca-pub-3756285576371279" />
-            <SiteHeader />
-            <main id="main">{children}</main>
-            <SiteFooter />
-            <StickyCTA />
+            <PageShell>{children}</PageShell>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

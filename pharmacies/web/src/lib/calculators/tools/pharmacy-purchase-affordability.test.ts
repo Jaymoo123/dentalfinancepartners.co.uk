@@ -5,7 +5,8 @@ import { pharmacyPurchaseAffordability } from "./pharmacy-purchase-affordability
  * Hand-computed golden values — all assertions verified against the formula:
  *  - Monthly repayment: annuity PMT(r/12, 12*years, -loan)
  *  - CT: HP 27 (19% ≤ £50k, 25% ≥ £250k, marginal relief 3/200 in between)
- *  - SDLT: gov.uk non-residential bands (0% ≤ £150k, 2% £150k–£250k, 5% > £250k)
+ *  - SDLT: gov.uk non-residential bands (0% ≤ £150k, 2% £150k–£250k, 5% > £250k),
+ *    charged on the premises (property) element only, never on goodwill or the NHS contract
  *  - Share duty: 0.5% of price (HP 12)
  */
 
@@ -23,25 +24,47 @@ describe("pharmacyPurchaseAffordability", () => {
     });
     const monthly = result.rows?.find((r) => r.label === "Monthly repayment (estimated)");
     const cover = result.rows?.find((r) => r.label === "Post-tax cash cover ratio");
-    const sdlt = result.rows?.find((r) => r.label === "Asset deal: SDLT non-residential (est.)");
+    const sdlt = result.rows?.find((r) => r.label === "Asset deal: SDLT on the premises element (est.)");
     const shareDuty = result.rows?.find((r) => r.label === "Share deal: stamp duty (0.5%)");
     expect(monthly?.value).toBe("£1,000");       // 120000/120
     expect(cover?.value).toBe("2.02x");           // 24300/12000 = 2.025 → toFixed(2) = "2.02" (JS banker rounding)
-    expect(sdlt?.value).toBe("£0");              // price=150k is exactly the zero band boundary
+    expect(sdlt?.value).toBe("£0");              // no premisesValue entered (leasehold default 0)
     expect(shareDuty?.value).toBe("£750");        // 150000*0.005
   });
 
-  it("SDLT bands: price above £250k triggers 5% band", () => {
-    // price=400000: 2%*(250k-150k) + 5%*(400k-250k) = 2000+7500 = £9,500
-    // share duty: 400000*0.005 = £2,000
+  it("SDLT is nil on a leasehold deal: £400k price, no premises in the price", () => {
+    // Hand-derived: premisesValue = 0 → SDLT = £0 (goodwill and the NHS contract are outside SDLT).
+    // Share duty is still on the whole consideration: 400,000 * 0.005 = £2,000.
+    // (was £9,500 while SDLT was wrongly charged on the whole £400k price)
+    const result = pharmacyPurchaseAffordability.compute({
+      purchasePrice: 400_000,
+      deposit: 400_000,
+      loanTermYears: 20,
+      annualInterestRate: 5,
+      projectedAnnualProfit: 0,
+      premisesValue: 0,
+    });
+    const sdltLeasehold = result.rows?.find(
+      (r) => r.label === "Asset deal: SDLT on the premises element (est.)",
+    );
+    expect(sdltLeasehold?.value).toBe("£0");
+  });
+
+  it("SDLT bands: £400k premises element triggers the 5% band", () => {
+    // Hand-derived on the premises figure, not the price:
+    //   band 2: (250,000 - 150,000) * 0.02 = 2,000
+    //   band 3: (400,000 - 250,000) * 0.05 = 7,500
+    //   SDLT = 2,000 + 7,500 = £9,500
+    // share duty: 400,000 * 0.005 = £2,000
     const result = pharmacyPurchaseAffordability.compute({
       purchasePrice: 400_000,
       deposit: 400_000, // fully cash — no loan, monthly = £0
       loanTermYears: 20,
       annualInterestRate: 5,
       projectedAnnualProfit: 0,
+      premisesValue: 400_000,
     });
-    const sdlt = result.rows?.find((r) => r.label === "Asset deal: SDLT non-residential (est.)");
+    const sdlt = result.rows?.find((r) => r.label === "Asset deal: SDLT on the premises element (est.)");
     const shareDuty = result.rows?.find((r) => r.label === "Share deal: stamp duty (0.5%)");
     expect(sdlt?.value).toBe("£9,500");
     expect(shareDuty?.value).toBe("£2,000");
@@ -90,16 +113,17 @@ describe("pharmacyPurchaseAffordability", () => {
     expect(ct?.value).toBe("£12,150");
   });
 
-  it("SDLT only 2% band: price £200k", () => {
-    // SDLT on 200k: 2%*(200k-150k) = 2%*50k = £1,000; share duty: 200k*0.005 = £1,000
+  it("SDLT only 2% band: £200k premises element", () => {
+    // SDLT on 200k premises: 2%*(200k-150k) = 2%*50k = £1,000; share duty: 200k*0.005 = £1,000
     const result = pharmacyPurchaseAffordability.compute({
       purchasePrice: 200_000,
       deposit: 200_000,
       loanTermYears: 20,
       annualInterestRate: 0,
       projectedAnnualProfit: 0,
+      premisesValue: 200_000,
     });
-    const sdlt = result.rows?.find((r) => r.label === "Asset deal: SDLT non-residential (est.)");
+    const sdlt = result.rows?.find((r) => r.label === "Asset deal: SDLT on the premises element (est.)");
     const shareDuty = result.rows?.find((r) => r.label === "Share deal: stamp duty (0.5%)");
     expect(sdlt?.value).toBe("£1,000");
     expect(shareDuty?.value).toBe("£1,000");

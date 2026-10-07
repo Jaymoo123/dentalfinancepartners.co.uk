@@ -23,7 +23,7 @@ export default function AboutPage() {
           <p>We are specialist accountants for UK community pharmacy businesses: independent owners, buyers and sellers, pharmacy groups, and locum pharmacists.</p>
           <p>Community pharmacies operate under a set of financial rules that differ from most small businesses: NHS Drug Tariff payments, dispensing contractor reconciliation, FP34 claims, VAT retail scheme apportionment, and goodwill-heavy transactions at purchase or sale.</p>
           <p>We handle purchase accounting, sale and CGT planning, pharmacy valuation support, NHS payment reconciliation, VAT retail schemes, payroll for dispensing and retail staff, incorporation and structure, and benchmarking against sector margins.</p>
-          <p>We work on a fixed-fee basis and reply within one working day.</p>
+          <p>We work on a fixed-fee basis and reply within 24 hours.</p>
         </div>
         <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>

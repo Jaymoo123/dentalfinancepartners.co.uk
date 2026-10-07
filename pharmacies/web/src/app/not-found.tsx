@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, sectionY } from "@/components/ui/layout-utils";
+import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
+
+// A 404 inherits the layout's canonical/JSON-LD/meta by default, which makes
+// it look like a real indexable page (P0B #12/#6). noindex is enough here;
+// no canonical is needed on a page that doesn't exist.
+export const metadata: Metadata = CONSOLE_NOINDEX_META;
 
 export default function NotFound() {
   return (

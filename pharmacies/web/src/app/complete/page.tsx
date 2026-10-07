@@ -5,6 +5,7 @@ import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/l
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
 import DetailsForm from "@/components/forms/DetailsForm";
+import { siteConfig } from "@/config/site";
 
 /**
  * "Complete your details" page, linked from a nurture email as
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
   title: "Complete your details",
   description: "Add the last detail we need to arrange your free pharmacy finance review.",
   robots: { index: false, follow: false },
+  alternates: { canonical: `${siteConfig.url}/complete` },
 };
 
 /** Shared "needs the personal link" fallback, cloned from /book. */

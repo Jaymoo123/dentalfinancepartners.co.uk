@@ -33,9 +33,10 @@ const CT_LOWER = 50_000;
 const CT_UPPER = 250_000;
 const CT_MARGINAL_FRACTION = 3 / 200; // marginal relief standard fraction
 
-// Class 2 NIC 2026/27 (sole trader, self-employed)
-// £3.45/week (gov.uk/self-employed-national-insurance-rates)
-const CLASS2_WEEKLY = 3.45;
+// Class 2 NIC: not charged for 2026/27. From 6 April 2024 a self-employed person with
+// profits above the Small Profits Threshold is treated as having paid Class 2 at nil cost
+// (the NI credit is given with no charge); below the SPT it is voluntary only.
+// gov.uk/self-employed-national-insurance-rates
 
 // ---- Tax primitives (mirrors tax2026.ts, no cross-package import) ----
 
@@ -82,11 +83,10 @@ function corporationTax(profit: number): number {
   return profit * CT_MAIN_RATE - CT_MARGINAL_FRACTION * (CT_UPPER - profit);
 }
 
-/** Sole-trader take-home: income - expenses = profit; income tax + Class 2 + Class 4 NIC. */
+/** Sole-trader take-home: income - expenses = profit; income tax + Class 4 NIC. */
 function soleTraderTakeHome(annualIncome: number, expenses: number): {
   profit: number;
   incomeTax: number;
-  class2NIC: number;
   class4NIC: number;
   netTakeHome: number;
 } {
@@ -94,17 +94,16 @@ function soleTraderTakeHome(annualIncome: number, expenses: number): {
   const pa = personalAllowanceFor(profit);
   const taxable = Math.max(0, profit - pa);
   const tax = incomeTaxOnSalary(taxable, pa);
-  // Class 2 NIC: £3.45/week × 52 (if profit above Small Profits Threshold £6,845 2026/27)
-  // ponytail: Class 2 SPT check omitted — at locum day rates profit is always above threshold
-  const class2 = CLASS2_WEEKLY * 52;
+  // No Class 2 NIC: above the Small Profits Threshold it is credited at nil cost (see above),
+  // and at locum day rates profit is always above that threshold.
   // Class 4 NIC (2026/27): 6% on profits between the primary threshold and upper limit, 2% above
   // gov.uk/self-employed-national-insurance-rates (2026/27: 6% on lower band → confirmed 6% from 2024)
   // ponytail: using 6% / 2% as gov.uk 2026/27 self-employed rates
   const class4Main = Math.min(Math.max(profit - NI_PRIMARY_THRESHOLD, 0), NI_UPPER_EARNINGS_LIMIT - NI_PRIMARY_THRESHOLD) * 0.06;
   const class4Upper = Math.max(profit - NI_UPPER_EARNINGS_LIMIT, 0) * 0.02;
-  const totalNIC = class2 + class4Main + class4Upper;
+  const totalNIC = class4Main + class4Upper;
   const netTakeHome = Math.max(0, profit - tax - totalNIC);
-  return { profit, incomeTax: tax, class2NIC: class2, class4NIC: class4Main + class4Upper, netTakeHome };
+  return { profit, incomeTax: tax, class4NIC: class4Main + class4Upper, netTakeHome };
 }
 
 /** Limited company (single director, no Employment Allowance, all profit as dividends). HP 27, 28. */
@@ -261,7 +260,6 @@ export const locumTakeHomeComparator: GenericTool = {
         { label: "--- Sole trader (self-employed) ---", value: "" },
         { label: "Self-employment profit", value: gbp(st.profit) },
         { label: "Income tax", value: `−${gbp(st.incomeTax)}` },
-        { label: "Class 2 NIC (£3.45/week)", value: `−${gbp(st.class2NIC)}` },
         { label: "Class 4 NIC (6% / 2%)", value: `−${gbp(st.class4NIC)}` },
         { label: "Sole trader net take-home", value: gbp(st.netTakeHome), strong: true },
         { label: "--- Limited company (outside IR35 only) ---", value: "" },
@@ -282,7 +280,7 @@ export const locumTakeHomeComparator: GenericTool = {
           strong: true,
         },
       ],
-      note: "STATUS WARNING (ESM4270): HMRC has a locum-pharmacist-specific employment status page (ESM4270) and its position is restrictive. Self-employed status depends on the actual working arrangements, including control, substitution rights and financial risk. Many locum pharmacist engagements do not meet the tests, and \"everyone does it self-employed\" is not a defence. Where a locum works through their own limited company and the client is a medium or large pharmacy group, IR35 off-payroll rules (Chapter 10) apply and the limited company figure above is NOT available. Check your status at HMRC's CEST tool before drawing conclusions from this comparison (gov.uk/guidance/check-employment-status-for-tax). Limited company uses 2026/27 corporation tax (19% / 25%) and dividend rates (10.75% / 35.75% / 39.35%, £500 allowance). Sole trader uses Class 2 NIC at £3.45/week and Class 4 NIC at 6% (£12,570-£50,270) / 2% above. Umbrella uses £1,200/year illustrative margin.",
+      note: "STATUS WARNING (ESM4270): HMRC has a locum-pharmacist-specific employment status page (ESM4270) and its position is restrictive. Self-employed status depends on the actual working arrangements, including control, substitution rights and financial risk. Many locum pharmacist engagements do not meet the tests, and \"everyone does it self-employed\" is not a defence. Where a locum works through their own limited company and the client is a medium or large pharmacy group, IR35 off-payroll rules (Chapter 10) apply and the limited company figure above is NOT available. Check your status at HMRC's CEST tool before drawing conclusions from this comparison (gov.uk/guidance/check-employment-status-for-tax). Limited company uses 2026/27 corporation tax (19% / 25%) and dividend rates (10.75% / 35.75% / 39.35%, £500 allowance). Sole trader uses Class 4 NIC at 6% (£12,570-£50,270) / 2% above; Class 2 NIC is not charged where profits exceed the Small Profits Threshold. Umbrella uses £1,200/year illustrative margin.",
     };
   },
   explainer: {

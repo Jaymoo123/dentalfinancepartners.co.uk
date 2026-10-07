@@ -55,7 +55,7 @@ export default async function CalculatorToolPage({ params }: Props) {
         />
       )}
 
-      <main>
+      <div>
         <section className="bg-[var(--brand-primary)] py-12 sm:py-16">
           <div className="mx-auto max-w-4xl px-6">
             <nav className="text-sm text-white/70">
@@ -104,7 +104,7 @@ export default async function CalculatorToolPage({ params }: Props) {
                 result, so the footer duplicate goes. */}
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

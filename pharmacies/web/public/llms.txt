@@ -34,7 +34,7 @@ Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI referred
 ## Free calculators and tools
 
 - [All calculators](https://www.pharmacytax.co.uk/calculators?utm_source=chatgpt&utm_medium=llms)
-- [Pharmacy purchase affordability calculator](https://www.pharmacytax.co.uk/calculators/pharmacy-purchase-affordability?utm_source=chatgpt&utm_medium=llms): Models the affordable purchase price for a community pharmacy based on EBITDA, debt service, and working capital.
+- [Pharmacy purchase affordability calculator](https://www.pharmacytax.co.uk/calculators/pharmacy-purchase-affordability?utm_source=chatgpt&utm_medium=llms): Takes an agreed purchase price, deposit and loan terms and returns the estimated monthly repayment, the post-tax cash cover ratio, and the stamp duty or SDLT cost of a share deal against an asset deal.
 - [NHS FP34 cash flow estimator](https://www.pharmacytax.co.uk/calculators/pharmacy-fp34-cash-flow-estimator?utm_source=chatgpt&utm_medium=llms): Models the two-month NHSBSA payment lag on prescription income and its working-capital impact.
 - [Locum take-home comparator](https://www.pharmacytax.co.uk/calculators/locum-take-home-comparator?utm_source=chatgpt&utm_medium=llms): Compares sole-trader versus limited-company take-home for a locum pharmacist at a given day rate.
 
@@ -73,7 +73,7 @@ These figures are verified against primary sources (HMRC, NHSBSA, legislation.go
 
 ## Contact
 
-Use the contact form at https://www.pharmacytax.co.uk/contact. Specialist advice for pharmacy owners and buyers. Reply within one working day.
+Use the contact form at https://www.pharmacytax.co.uk/contact. Specialist advice for pharmacy owners and buyers. Reply within 24 hours.
 
 ## Full index
 

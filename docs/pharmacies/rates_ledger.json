@@ -232,5 +232,50 @@
     "applies_from": "2024-04-06",
     "source_url": "https://www.gov.uk/tax-on-dividends",
     "verified_at": "2026-07-14"
+  },
+  {
+    "key": "personal_allowance",
+    "value": "12570",
+    "unit": "£/year",
+    "note": "income tax personal allowance 2026/27; tapered by £1 for every £2 of income over £100,000. Used by the locum take-home comparator",
+    "applies_from": "2021-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "personal_allowance_taper_threshold",
+    "value": "100000",
+    "unit": "£/year",
+    "note": "income above which the personal allowance tapers away (nil at £125,140); used by the locum take-home comparator",
+    "applies_from": "2010-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "additional_rate_threshold",
+    "value": "125140",
+    "unit": "£/year",
+    "note": "gross income at which the 45% additional rate starts 2026/27; also the point at which the personal allowance is fully tapered",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "ni_upper_earnings_limit",
+    "value": "50270",
+    "unit": "£/year",
+    "note": "NI upper earnings limit 2026/27; employee Class 1 drops from 8% to 2% above it and self-employed Class 4 from 6% to 2%",
+    "applies_from": "2022-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "class2_nic_charge",
+    "value": "0",
+    "unit": "£/year",
+    "note": "Class 2 NIC is not charged. From 6 Apr 2024 a self-employed person with profits above the Small Profits Threshold is treated as having paid Class 2 at nil cost; below the SPT it is voluntary only (£3.45/week). Replaces the £3.45 x 52 charge wrongly deducted by the locum take-home comparator (corrected 2026-10-07)",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+    "verified_at": "2026-07-14"
   }
 ]

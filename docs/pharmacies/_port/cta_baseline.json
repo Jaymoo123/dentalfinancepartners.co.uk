@@ -1,0 +1,1647 @@
+{
+  "ts": "2026-10-07T09:36:20.649Z",
+  "site": "pharmacies",
+  "base": "http://localhost:3111",
+  "sha": "981a604e",
+  "served_title": "Pharmacy Tax | Specialist Accountants for UK Pharmacy Owners",
+  "purpose": "Pre-port data-cta TRIPLE snapshot. sweep_baseline.json records counts; a count cannot detect trap 22, where the same button keeps its count but flips its goal or placement on cutover and splits the live funnel. Diff this file after every phase touching chrome or CTAs.",
+  "routes": 55,
+  "scanned": 55,
+  "non_interactive_ctas": [],
+  "distinct_triples": {
+    "header_contact|header|null|data-cta": {
+      "count": 55,
+      "example_routes": [
+        "/",
+        "/for",
+        "/calculators",
+        "/about",
+        "/contact"
+      ],
+      "hrefs": [
+        "/contact"
+      ]
+    },
+    "sticky_cta|sticky|null|data-cta": {
+      "count": 55,
+      "example_routes": [
+        "/",
+        "/for",
+        "/calculators",
+        "/about",
+        "/contact"
+      ],
+      "hrefs": [
+        "/contact"
+      ]
+    },
+    "sticky_cta_close|sticky|null|data-cta": {
+      "count": 55,
+      "example_routes": [
+        "/",
+        "/for",
+        "/calculators",
+        "/about",
+        "/contact"
+      ],
+      "hrefs": []
+    }
+  },
+  "per_route": {
+    "/": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/about": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/contact": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research/pharmacy-density-and-workload-index": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research/pharmacy-openings-closures-index": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/cookie-policy": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/terms": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/privacy-policy": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/pharmacy-purchase-accounting": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/pharmacy-sale-cgt-badr": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/pharmacy-valuation-goodwill": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/nhs-payment-reconciliation-fp34": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/pharmacy-vat-retail-schemes": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/pharmacy-payroll-workforce": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/pharmacy-incorporation-structure": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/pharmacy-benchmarking-margin": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/pharmacy-owners": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/buying-a-pharmacy": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/selling-a-pharmacy": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/pharmacy-groups": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/pharmacy-purchase-affordability": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/locum-pharmacists": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/pharmacy-fp34-cash-flow-estimator": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/locum-take-home-comparator": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/selling-a-pharmacy": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/locum-pharmacists": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/vat-and-retail-schemes": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income/pharmacy-closures-independents-vs-multiples": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income/pharmacy-dispensing-workload-and-density": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy/cost-of-buying-a-pharmacy-investment": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income/how-do-pharmacies-make-money": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/locum-pharmacists/locum-pharmacist-expenses-self-assessment": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/selling-a-pharmacy/pharmacy-exit-planning-timeline": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy/pharmacy-business-loans-finance-mechanics": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy/reading-a-pharmacy-sale-listing": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy/pharmacy-financial-due-diligence": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/locum-pharmacists/are-locum-pharmacists-self-employed": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/vat-and-retail-schemes/do-pharmacies-pay-vat": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income/category-m-clawbacks-explained": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income/drug-tariff-changes-explained": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy/buying-a-pharmacy-uk-checklist": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/locum-pharmacists/locum-pharmacist-limited-company-vs-umbrella": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income/how-fp34-payment-cycle-works": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/nhs-contract-and-income/pharmacy-first-income-accounting": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy/first-time-pharmacy-buyer-finance": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/selling-a-pharmacy/pharmacy-goodwill-what-its-worth": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/selling-a-pharmacy/preparing-a-pharmacy-for-sale": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/buying-a-pharmacy/share-vs-asset-purchase-pharmacy": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/vat-and-retail-schemes/vat-on-private-services-pharmacy-first": {
+      "count": 3,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_contact",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": null,
+          "href": "/contact"
+        },
+        {
+          "tag": "button",
+          "id": "sticky_cta_close",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": null
+        },
+        {
+          "tag": "a",
+          "id": "sticky_cta",
+          "attrName": "data-cta",
+          "placement": "sticky",
+          "goal": null,
+          "href": "/contact"
+        }
+      ]
+    }
+  }
+}

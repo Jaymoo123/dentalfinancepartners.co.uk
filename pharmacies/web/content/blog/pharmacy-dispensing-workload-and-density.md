@@ -39,7 +39,7 @@ faqs:
 
 <ul>
   <li>Items dispensed per pharmacy rose from 7,225.8 to 9,834.9 a year, an increase of 36.1%.</li>
-  <li>The number of dispensing pharmacies fell from 11,764 to 10,382, a decrease of 11.7%.</li>
+  <li>The number of pharmacies actively dispensing in the month fell from 11,764 to 10,382, a decrease of 11.7%.</li>
   <li>Total items dispensed nationally rose from 85,004,185 to 102,105,642, an increase of roughly 20%.</li>
 </ul>
 
@@ -96,7 +96,7 @@ faqs:
   </tbody>
 </table>
 
-<p>England as a whole sits at 18.11 pharmacies per 100,000 population, from 10,617 pharmacies and 58,620,101 people.<sup><a href="#ref-2">2</a></sup> The gap between the densest and thinnest regions, North East and Yorkshire at 20.9 against the South East at 14.99, is roughly 39%. A pharmacy in the South East is, on average, operating in a market with substantially fewer nearby competitor sites per resident than one in the North East and Yorkshire, which changes the catchment size and footfall assumptions behind local workload, not just the national trend.</p>
+<p>England as a whole sits at 18.11 pharmacies per 100,000 population, from the 10,617 registered pharmacy contractors on NHSBSA Contractor Details (a wider count than the 10,382 actively dispensing in a single month above) and 58,620,101 people.<sup><a href="#ref-2">2</a></sup> The gap between the densest and thinnest regions, North East and Yorkshire at 20.9 against the South East at 14.99, is roughly 39%. A pharmacy in the South East is, on average, operating in a market with substantially fewer nearby competitor sites per resident than one in the North East and Yorkshire, which changes the catchment size and footfall assumptions behind local workload, not just the national trend.</p>
 
 <h2>Why workload is rising faster than total volume alone would explain</h2>
 

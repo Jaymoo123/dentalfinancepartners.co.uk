@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import BookingPicker from "@/components/forms/BookingPicker";
+import { siteConfig } from "@/config/site";
 
 /**
  * Standalone booking page, linked from every nurture SMS/email as
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
   title: "Book your free review",
   description: "Pick a time for your free pharmacy finance review call.",
   robots: { index: false, follow: false },
+  alternates: { canonical: `${siteConfig.url}/book` },
 };
 
 export default async function BookPage({

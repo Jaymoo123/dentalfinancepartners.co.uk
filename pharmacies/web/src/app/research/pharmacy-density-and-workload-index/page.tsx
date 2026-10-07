@@ -64,7 +64,7 @@ export default function PharmacyDensityWorkloadIndexPage() {
   const workloadAnnualData = workload.annual_march_snapshot.map((r) => ({ tick: String(r.year), value: r.items_per_pharmacy }));
 
   return (
-    <main>
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetLd }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqLd }} />
 
@@ -163,10 +163,10 @@ export default function PharmacyDensityWorkloadIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs text-neutral-400">
+          <p className="mt-4 text-xs text-neutral-500">
             Source: {density.source.name} ({density.source.resource_title}), NHS Business Services Authority; {density.population_source.name}, Office for National Statistics. Both Open Government Licence v3.0. Pulled {density.pull_date}.
           </p>
-          <p className="mt-2 text-xs text-neutral-400">
+          <p className="mt-2 text-xs text-neutral-500">
             NHS regions combine ONS Regions of England as follows: Midlands = East Midlands + West Midlands; North East and Yorkshire = North East + Yorkshire and The Humber. The other five NHS regions map 1:1 to an ONS region. Wales, Scotland, Northern Ireland and the Crown Dependencies (Jersey, Guernsey, Isle of Man, Alderney) are excluded from the England totals but appear in the underlying contractor list; coverage there is limited and treated as a guide only by NHSBSA. Counts exclude appliance-only accounts and private controlled-drug accounts.
           </p>
         </div>
@@ -218,10 +218,10 @@ export default function PharmacyDensityWorkloadIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs text-neutral-400">
+          <p className="mt-4 text-xs text-neutral-500">
             Source: {workload.source.name} ({workload.source.resource_title}), NHS Business Services Authority. Licence: Open Government Licence v3.0. Pulled {workload.pull_date}.
           </p>
-          <p className="mt-2 text-xs text-neutral-400">{workload.methodology}</p>
+          <p className="mt-2 text-xs text-neutral-500">{workload.methodology}</p>
         </div>
       </section>
 
@@ -312,6 +312,6 @@ export default function PharmacyDensityWorkloadIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

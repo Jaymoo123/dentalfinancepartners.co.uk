@@ -49,13 +49,13 @@ export interface AnnualSnapshotRow {
 
 export interface ChFormationsMonth {
   month: string;
-  "47730": number;
+  count: number;
   union: number;
 }
 
 export interface ChFormationsYear {
   year: number;
-  "47730": number;
+  count: number;
   union: number;
 }
 

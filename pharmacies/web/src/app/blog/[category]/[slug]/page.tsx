@@ -74,7 +74,7 @@ export default async function BlogPostPage({ params }: Props) {
   const bodySplit = splitAtSecondH2(post.contentHtml);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       {post.schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
       )}
@@ -142,6 +142,11 @@ export default async function BlogPostPage({ params }: Props) {
           <LeadForm redirectOnSuccess={false} />
         </div>
       </div>
-    </main>
+      {/* ponytail: content is raw HTML (dangerouslySetInnerHTML), so anchor
+          targets (headings, footnote #ref-N list items) can't take a
+          Tailwind class directly; this scoped rule gives every in-article
+          jump target the same scroll-mt-24 offset. */}
+      <style>{`.prose [id] { scroll-margin-top: 6rem; }`}</style>
+    </div>
   );
 }

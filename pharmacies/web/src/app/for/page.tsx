@@ -4,13 +4,13 @@ import { siteConfig } from "@/config/site";
 import { pharmacyHubs } from "@/data/pharmacies-hubs";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 export const metadata: Metadata = {
-  title: "Who We Help | Pharmacy Tax",
+  title: "Who We Help",
   description: "Specialist accounting for pharmacy owners, buyers, sellers, pharmacy groups, and locum pharmacists.",
   alternates: { canonical: `${siteConfig.url}/for` },
 };
 export default function ForIndexPage() {
   return (
-    <main className={`${siteContainerLg} py-16`}>
+    <div className={`${siteContainerLg} py-16`}>
       <h1 className="text-3xl font-bold tracking-tight text-neutral-900">Who we help</h1>
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {pharmacyHubs.map((hub) => (
@@ -20,6 +20,6 @@ export default function ForIndexPage() {
           </Link>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

@@ -1,0 +1,471 @@
+{
+  "/|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/pharmacy-openings-closures-index|mobile": [
+    "p \"Source: Pharmacy Openings and Closures -\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "a \"Pharmacy Openings and Closures - May 202\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Error: <rect> attribute y: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Error: <rect> attribute height: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/pharmacy-density-and-workload-index|mobile": [
+    "p \"Source: NHSBSA Contractor Details (Contr\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"NHS regions combine ONS Regions of Engla\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \"(indexed to 100 at first year shown)\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: NHSBSA Pharmacy and Appliance Co\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"For each year, the March DISPENSING_DATA\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/about|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/privacy-policy|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/terms|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-purchase-accounting|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-sale-cgt-badr|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-valuation-goodwill|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/nhs-payment-reconciliation-fp34|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-vat-retail-schemes|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-payroll-workforce|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-incorporation-structure|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-benchmarking-margin|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-owners|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/buying-a-pharmacy|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/selling-a-pharmacy|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-groups|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/locum-pharmacists|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-purchase-affordability|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-fp34-cash-flow-estimator|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/locum-take-home-comparator|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/buying-a-pharmacy|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/locum-pharmacists|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/selling-a-pharmacy|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/vat-and-retail-schemes|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/blog/nhs-contract-and-income/pharmacy-closures-independents-vs-multiples|mobile": [
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income/category-m-clawbacks-explained|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/pharmacy-openings-closures-index|tablet": [
+    "p \"Source: Pharmacy Openings and Closures -\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "a \"Pharmacy Openings and Closures - May 202\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Error: <rect> attribute y: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Error: <rect> attribute height: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/pharmacy-density-and-workload-index|tablet": [
+    "p \"Source: NHSBSA Contractor Details (Contr\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"NHS regions combine ONS Regions of Engla\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \"(indexed to 100 at first year shown)\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: NHSBSA Pharmacy and Appliance Co\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"For each year, the March DISPENSING_DATA\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/about|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/privacy-policy|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/terms|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-purchase-accounting|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-sale-cgt-badr|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-valuation-goodwill|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/nhs-payment-reconciliation-fp34|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-vat-retail-schemes|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-payroll-workforce|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-incorporation-structure|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-benchmarking-margin|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-owners|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/buying-a-pharmacy|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/selling-a-pharmacy|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-groups|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/locum-pharmacists|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-purchase-affordability|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-fp34-cash-flow-estimator|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/locum-take-home-comparator|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/buying-a-pharmacy|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/locum-pharmacists|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/selling-a-pharmacy|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/vat-and-retail-schemes|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income/pharmacy-closures-independents-vs-multiples|tablet": [
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income/category-m-clawbacks-explained|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "console: Connecting to 'https://csi.gstatic.com/csi?v=2&s=pagead&action=csi_pagead&dmc=32&top=1&puid=1~muxwoit1&c=6841430258183393&e=95396000%2C122881329%2C122880836%2C1 [https://pagead2.googlesyndication.com/pagead/js/r20261005/r20190131/rum_fy2021.js]"
+  ],
+  "/blog|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/pharmacy-openings-closures-index|laptop": [
+    "p \"Source: Pharmacy Openings and Closures -\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "a \"Pharmacy Openings and Closures - May 202\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Error: <rect> attribute y: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Error: <rect> attribute height: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/pharmacy-density-and-workload-index|laptop": [
+    "p \"Source: NHSBSA Contractor Details (Contr\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"NHS regions combine ONS Regions of Engla\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \"(indexed to 100 at first year shown)\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: NHSBSA Pharmacy and Appliance Co\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"For each year, the March DISPENSING_DATA\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/about|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/privacy-policy|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/terms|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-purchase-accounting|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-sale-cgt-badr|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-valuation-goodwill|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/nhs-payment-reconciliation-fp34|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-vat-retail-schemes|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/services/pharmacy-payroll-workforce|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-incorporation-structure|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-benchmarking-margin|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-owners|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/buying-a-pharmacy|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/selling-a-pharmacy|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-groups|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/locum-pharmacists|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-purchase-affordability|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-fp34-cash-flow-estimator|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/locum-take-home-comparator|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/buying-a-pharmacy|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/locum-pharmacists|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/selling-a-pharmacy|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/vat-and-retail-schemes|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income/pharmacy-closures-independents-vs-multiples|laptop": [
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income/category-m-clawbacks-explained|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/pharmacy-openings-closures-index|desktop": [
+    "console: Error: <rect> attribute y: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Error: <rect> attribute height: Expected length, \"NaN\". [http://localhost:3111/research/pharmacy-openings-closures-index]",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/research/pharmacy-density-and-workload-index|desktop": [
+    "p \"Source: NHSBSA Contractor Details (Contr\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"NHS regions combine ONS Regions of Engla\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \"(indexed to 100 at first year shown)\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: NHSBSA Pharmacy and Appliance Co\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"For each year, the March DISPENSING_DATA\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/about|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/privacy-policy|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/terms|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-purchase-accounting|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-sale-cgt-badr|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-valuation-goodwill|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/nhs-payment-reconciliation-fp34|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-vat-retail-schemes|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-payroll-workforce|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-incorporation-structure|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/pharmacy-benchmarking-margin|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-owners|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/buying-a-pharmacy|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/selling-a-pharmacy|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pharmacy-groups|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/locum-pharmacists|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-purchase-affordability|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/pharmacy-fp34-cash-flow-estimator|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/locum-take-home-comparator|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/buying-a-pharmacy|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/locum-pharmacists|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/selling-a-pharmacy|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/vat-and-retail-schemes|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income/pharmacy-closures-independents-vs-multiples|desktop": [
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/nhs-contract-and-income/category-m-clawbacks-explained|desktop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ]
+}

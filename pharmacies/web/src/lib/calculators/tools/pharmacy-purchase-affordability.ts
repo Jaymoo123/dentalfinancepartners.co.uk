@@ -80,7 +80,15 @@ export const pharmacyPurchaseAffordability: GenericTool = {
       default: 6.5,
       min: 0,
       step: 0.1,
-      help: "The rate quoted by the lender. Commercial pharmacy finance rates in 2026 have varied between approximately 5% and 8% depending on lender, term and loan-to-value.",
+      help: "The rate quoted by the lender. The rate you are offered depends on lender, term and loan-to-value.",
+    },
+    {
+      id: "premisesValue",
+      label: "Premises (property) value included in the price (£)",
+      type: "currency",
+      default: 0,
+      min: 0,
+      help: "The part of the price that buys land or buildings. Leave at 0 for a leasehold pharmacy, where no property is being bought. SDLT is charged on this figure only, never on goodwill or the NHS contract.",
     },
     {
       id: "projectedAnnualProfit",
@@ -97,6 +105,8 @@ export const pharmacyPurchaseAffordability: GenericTool = {
     const termYears = Math.max(1, Number(v.loanTermYears));
     const rate = Math.max(0, Number(v.annualInterestRate)) / 100;
     const profit = Math.max(0, Number(v.projectedAnnualProfit));
+    // SDLT is charged on land and buildings only (HP 12), never on goodwill or the NHS contract.
+    const premisesValue = Math.min(price, Math.max(0, Number(v.premisesValue) || 0));
 
     const loanAmount = Math.max(0, price - deposit);
     const monthly = loanAmount > 0 ? monthlyRepayment(loanAmount, rate, termYears) : 0;
@@ -106,7 +116,7 @@ export const pharmacyPurchaseAffordability: GenericTool = {
     const postTaxProfit = profit - ct;
     const coverRatio = annualRepayment > 0 ? postTaxProfit / annualRepayment : 0;
 
-    const sdlt = sdltNonResidential(price);
+    const sdlt = sdltNonResidential(premisesValue);
     const shareDuty = stampDutyShares(price);
     const dutyDiff = sdlt - shareDuty;
 
@@ -139,11 +149,12 @@ export const pharmacyPurchaseAffordability: GenericTool = {
         { label: "Post-tax profit available", value: gbp(postTaxProfit) },
         { label: "Post-tax cash cover ratio", value: `${coverRatio.toFixed(2)}x`, strong: true },
         { label: "--- Acquisition tax comparison ---", value: "" },
+        { label: "Premises (property) value in the price", value: gbp(premisesValue) },
         { label: "Share deal: stamp duty (0.5%)", value: gbp(shareDuty) },
-        { label: "Asset deal: SDLT non-residential (est.)", value: gbp(sdlt), strong: true },
-        { label: "SDLT premium over share duty", value: gbp(dutyDiff) },
+        { label: "Asset deal: SDLT on the premises element (est.)", value: gbp(sdlt), strong: true },
+        { label: "SDLT less share duty (difference)", value: gbp(dutyDiff) },
       ],
-      note: `This is a scenario estimate, not a financial projection. Corporation tax uses the 2026/27 rates (19% up to £50,000 profits, 25% above £250,000, marginal relief in between) and assumes a single company with no associated companies. SDLT applies the non-residential bands (0% to £150,000, 2% from £150,001 to £250,000, 5% above). A share deal attracts 0.5% stamp duty on the share consideration but inherits the company's full history. ${complexityNote} Speak to us before signing heads of terms.`,
+      note: `This is a scenario estimate, not a financial projection. Corporation tax uses the 2026/27 rates (19% up to £50,000 profits, 25% above £250,000, marginal relief in between) and assumes a single company with no associated companies. SDLT applies the non-residential bands (0% to £150,000, 2% from £150,001 to £250,000, 5% above) to the premises figure you entered only, because goodwill and the NHS contract are outside SDLT; on a leasehold deal with no property that figure is nil. A share deal attracts 0.5% stamp duty on the share consideration but inherits the company's full history. ${complexityNote} Speak to us before signing heads of terms.`,
     };
   },
   explainer: {

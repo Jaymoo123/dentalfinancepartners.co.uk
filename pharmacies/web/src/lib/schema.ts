@@ -33,7 +33,6 @@ export function buildOrganizationJsonLd() {
         addressCountry: "GB",
       },
       areaServedCountry: "United Kingdom",
-      priceRange: "££",
       knowsAbout: [
         "pharmacy acquisition",
         "NHS contract economics",

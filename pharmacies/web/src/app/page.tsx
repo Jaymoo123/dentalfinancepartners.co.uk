@@ -7,7 +7,7 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { pharmacyHubs } from "@/data/pharmacies-hubs";
-import { buildFaqJsonLd, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { ArrowRight, ShieldCheck, Quote } from "lucide-react";
 
@@ -236,10 +236,6 @@ const faqs: { question: string; answer: string }[] = [
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildWebsiteJsonLd() }}

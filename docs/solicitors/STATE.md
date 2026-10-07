@@ -225,7 +225,9 @@ Roughly 140 files changed across `Solicitors/`. NOTHING DEPLOYED.
 
 **Where it stands, 2026-09-11.** ALL SIX PHASES ARE BUILT, REVIEWED AND TAGGED
 (`port-solicitors-phase0` through `port-solicitors-phase6`). NOTHING IS DEPLOYED and production
-still serves `18b4f25f`, the old design. There is no build work left. What remains is the
+still serves `18b4f25f`, the old design. There is no build work left.
+
+Correction 2026-10-07: production is at `153e5017` (Vercel API, deployed 2026-09-24); the site IS live post-port. The line above is stale. What remains is the
 owner's: the twelve outstanding decisions listed in the phase 6 entry below, an owner walk on a
 dev server, and ONE owner-triggered cutover deploy from a clean worktree at a pushed SHA, which
 knowingly re-baselines roughly 41 `monitored_pages` rows. The highest-stakes open item is the

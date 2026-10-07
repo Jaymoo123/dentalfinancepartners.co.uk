@@ -57,7 +57,7 @@ All figures verified against primary sources (gov.uk, HMRC, legislation.gov.uk):
 ## Calculators and tools
 
 - Calculators index: https://${niche.domain}/calculators
-- Pharmacy purchase affordability calculator: https://${niche.domain}/calculators/pharmacy-purchase-affordability (affordable purchase price from EBITDA, debt service, and working capital)
+- Pharmacy purchase affordability calculator: https://${niche.domain}/calculators/pharmacy-purchase-affordability (monthly loan repayment, post-tax cash cover ratio, and share-deal against asset-deal acquisition tax, from an agreed purchase price)
 - NHS FP34 cash flow estimator: https://${niche.domain}/calculators/pharmacy-fp34-cash-flow-estimator (models the roughly two-month NHSBSA payment lag on prescription income)
 - Locum take-home comparator: https://${niche.domain}/calculators/locum-take-home-comparator (sole trader vs limited company at a given day rate)
 
@@ -83,7 +83,7 @@ Sitemap: https://${niche.domain}/sitemap.xml
 
 ## Contact
 
-Use the contact form at https://${niche.domain}/contact. No phone lines or walk-ins; every enquiry gets a specialist reply within one working day.
+Use the contact form at https://${niche.domain}/contact. No phone lines or walk-ins; every enquiry gets a specialist reply within 24 hours.
 
 Below is a flat, machine-readable dump of every published blog post.
 

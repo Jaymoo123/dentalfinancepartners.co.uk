@@ -7,13 +7,13 @@ import { pharmacyServices } from "@/data/pharmacies-services";
 import { serviceTiers } from "@/config/service-tiers";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 export const metadata: Metadata = {
-  title: "Services | Pharmacy Tax",
-  description: "Specialist pharmacy accounting services: purchase accounting, sale and CGT, valuation, NHS reconciliation, VAT retail schemes, payroll, incorporation, and benchmarking.",
+  title: "Services",
+  description: "Specialist pharmacy accounting services: purchase accounting, sale and CGT, valuation, NHS reconciliation, VAT retail schemes, payroll, incorporation.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };
 export default function ServicesPage() {
   return (
-    <main className={`${siteContainerLg} py-16`}>
+    <div className={`${siteContainerLg} py-16`}>
       <h1 className="text-3xl font-bold tracking-tight text-neutral-900">Services</h1>
 
       <section className="mt-12">
@@ -56,6 +56,6 @@ export default function ServicesPage() {
         </div>
       </div>
     </section>
-    </main>
+    </div>
   );
 }

@@ -61,13 +61,16 @@ export default function PharmacyOpeningsClosuresIndexPage() {
 
   const chAnnualData = ch.annual
     .filter((r) => r.year >= 2016)
-    .map((r) => ({ tick: String(r.year), value: r["47730"] }));
+    .map((r) => ({
+      tick: String(r.year),
+      value: r.count ?? 0,
+    }));
 
   const seasonalityMax = Math.max(...ch.seasonality.map((s) => s.avgCount));
   const topSeasonMonth = ch.seasonality.reduce((a, b) => (b.avgCount > a.avgCount ? b : a));
 
   return (
-    <main>
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetLd }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqLd }} />
       {/* Hero */}
@@ -197,7 +200,7 @@ export default function PharmacyOpeningsClosuresIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs text-neutral-400">
+          <p className="mt-4 text-xs text-neutral-500">
             Source:{" "}
             <a href={meta.sources.nhsbsa_openings_closures.url} className="underline" target="_blank" rel="noopener noreferrer">
               {meta.sources.nhsbsa_openings_closures.resource}
@@ -271,7 +274,7 @@ export default function PharmacyOpeningsClosuresIndexPage() {
             ))}
           </div>
 
-          <p className="mt-8 text-xs text-neutral-400">
+          <p className="mt-8 text-xs text-neutral-500">
             Source: Companies House Advanced Search API, SIC 47730. Licence: Open Government Licence v3.0. Incorporation counts pulled {meta.sources.companies_house.pullDate}; active/dissolved totals pulled {ch.activeCompanies.asOf}.
           </p>
         </div>
@@ -396,6 +399,6 @@ export default function PharmacyOpeningsClosuresIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
