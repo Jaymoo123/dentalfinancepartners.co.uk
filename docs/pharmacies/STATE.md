@@ -11,14 +11,14 @@ server for this port runs on port **3111**.
 | phase | tag | commit |
 |---|---|---|
 | 0 | `port-pharmacies-phase0` | `d2f6677fe` |
-| 1 | `port-pharmacies-phase1` | see tag |
-| 2 | `port-pharmacies-phase2` | see tag |
-| 3 | `port-pharmacies-phase3` | see tag |
-| 4 | `port-pharmacies-phase4` | see tag |
-| 5 | `port-pharmacies-phase5` | see tag |
-| 6 | `port-pharmacies-phase6` | see tag |
-| uplift | `port-pharmacies-uplift` | see tag |
-| complete | `port-pharmacies-complete` | see tag |
+| 1 | `port-pharmacies-phase1` | `8b25aaa60` |
+| 2 | `port-pharmacies-phase2` | `8b25aaa60` |
+| 3 | `port-pharmacies-phase3` | `8b25aaa60` |
+| 4 | `port-pharmacies-phase4` | `8b25aaa60` |
+| 5 | `port-pharmacies-phase5` | `8b25aaa60` |
+| 6 | `port-pharmacies-phase6` | `8b25aaa60` |
+| uplift | `port-pharmacies-uplift` | `8b25aaa60` |
+| complete | `port-pharmacies-complete` | `8b25aaa60` |
 
 ## 2026-10-07 design port, phases 1 to 6 (one wave) plus phase 0 close
 
