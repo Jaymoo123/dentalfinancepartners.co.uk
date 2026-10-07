@@ -410,8 +410,8 @@ export default function PropertyAccountantPage() {
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
               Whether it is a refurbishment to classify, a sale to time or a portfolio to restructure, a free
-              consultation shows you what your current setup is costing you and quotes a fixed fee in
-              writing to fix it.
+              consultation shows you what your current setup is costing you and gives you a clear quote to
+              fix it.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link

@@ -67,14 +67,14 @@ const TOPIC_HOOKS: Partial<Record<TopicKey, [string, string, string]>> = {
   portfolio: [
     "Curious how your portfolio is really performing? There's a tool that lays it out.",
     "Want me to pull up the portfolio profitability calculator for you?",
-    "A specialist can stress-test your portfolio numbers with you, free first call, shall I arrange one?",
+    "A specialist can stress-test your portfolio numbers with you, free call, shall I arrange one?",
   ],
 };
 
 const GENERIC: [string, string, string] = [
   "Anything I can help you find? I can point you to the right calculator or a quick answer.",
   "Want a hand with anything? Happy to dig out the right tool for you.",
-  "If you'd rather just ask a person, a free first call with a specialist is the quickest way, want me to set one up?",
+  "If you'd rather just ask a person, a free call with a specialist is the quickest way, want me to set one up?",
 ];
 
 const COMBO_S24_INC: [string, string, string] = [
@@ -107,7 +107,7 @@ function topicGeneric(t: TopicKey, i: 0 | 1 | 2): string {
   return [
     `Looking into ${n}? I can point you to the right tool or a quick answer.`,
     `Want a hand with ${n}? Happy to dig out exactly what you need.`,
-    `A free first call with a specialist is the quickest way to get ${n} sorted, want me to set one up?`,
+    `A free call with a specialist is the quickest way to get ${n} sorted, want me to set one up?`,
   ][i];
 }
 
