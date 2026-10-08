@@ -13,6 +13,16 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: design port phases including the 0.22a/b/c review passes, claims fixes, header CTA fix, favicons).
 
+## PICKUP 2026-10-08: commercial-page demand is the next session's job
+
+Owner, 2026-10-08: "I desperately want to get more high intent visitors to the commercial pages." The diagnosis and the plan already exist; the next session executes, it does not re-diagnose.
+
+- **Start from** `docs/property/COMMERCIAL_RECOVERY_PLAN_2026-10-07.md`: section 6 holds the six owner facts (F1 to F6), five decisions (D1 to D5) and two frozen-page sign-offs (S1, S2) that gate WP0 and WP1. Nothing in that plan is built. Step 1 of its sequence is the owner answering section 6.
+- **What this session adds to that plan:** commercial-entry sessions have been flat at 40 to 55 a week since mid-July while blog entries doubled; AI referrals fell from about 20 a week to 12 to 13; Google entries rose 60% but only about 10 a week land on commercial pages; Google-referred visitors convert at half the July rate (1.37% to 0.72%). The service pages are the demand owners (section 1 of the plan: 14,100 of 15,600 monthly in-niche searches) and Google has not fetched them since 5 to 6 Aug. None of this is new to the plan; it confirms it from the lead side.
+- **Branch state to carry:** `claude/website-estate-access-gdk8ei` holds four unpushed commits (hero CTAs back to `/contact`, widget 12s auto-open, estate friction-ping guard, this STATE entry). GitHub refused the push from the cloud session (app not installed for the org); the owner chose not to reconnect yet. Pull it from the laptop clone or push once access is restored. Not deployed.
+- **Access the next session needs:** GitHub write (push and PRs); Vercel re-authorised for the `sitenudge-projects` team (every Property/Vercel call 403s without it); fresh Search Console via `scripts/_fresh_gsc_bing_pull.py` (stored `gsc_query_data` is sampled, never SUM it); Supabase connector as now.
+- **Rules that bind this work:** rewrite-only, never collapse pages; no Google Business Profile; deploy is owner-triggered from the laptop; one branch per work package so each read is attributable; nothing that emails the owner without asking.
+
 ## 2026-10-08 Lead-flow forensic and the three-batch restore (BUILT on `claude/website-estate-access-gdk8ei`, NOT deployed)
 
 Owner asked, from his phone, why Property leads slumped and whether a single revert would fix it. Read-only pass over `leads`, `web_sessions`, `web_events` (UK leads, the console's `leads_uk` filter), the pre-port build `8d4aaf1d` against the live tree, and live browser checks with no form submitted. Full working in the session; the facts that matter for the record:
