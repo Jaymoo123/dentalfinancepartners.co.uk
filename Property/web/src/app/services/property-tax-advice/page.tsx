@@ -459,7 +459,7 @@ export default function PropertyTaxAdvicePage() {
                   rule forbids: a hero secondary sends the reader to something
                   they can do, not to a list of questions. */}
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"

@@ -108,12 +108,12 @@ export default function AboutPage() {
               Specialist property accountants working exclusively with UK landlords and buy-to-let investors.
             </p>
             {/* The hero had no ask at all: a reader convinced by the first
-                screen had to scroll the whole page to act. Points at the panel
-                on this page rather than /contact, so the enquiry is taken where
-                the reader already is. */}
+                screen had to scroll the whole page to act. Points at /contact
+                (restored from #book); the panel at the foot still takes the
+                enquiry on this page. */}
             <div className="mt-6 sm:mt-8">
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="about_hero_book"
                 data-cta-placement="hero"
                 className={`${btnPrimary} bg-emerald-600 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}

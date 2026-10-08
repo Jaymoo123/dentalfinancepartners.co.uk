@@ -319,11 +319,11 @@ export default function Section24Page() {
               and 47% rates.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              {/* Both CTAs now stay on the page. The primary was /contact, a
-                  generic form on another route; the secondary sent the reader to
-                  a calculator before they had read a line of why it matters. */}
+              {/* The primary points at /contact (restored from #book). The
+                  secondary sent the reader to a calculator before they had read
+                  a line of why it matters. */}
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"

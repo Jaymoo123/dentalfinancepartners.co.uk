@@ -291,7 +291,7 @@
         },
         "hero_primary": {
           "label": "Book free consultation",
-          "href": "#book"
+          "href": "/contact"
         },
         "hero_secondary": {
           "label": "Try free calculators",

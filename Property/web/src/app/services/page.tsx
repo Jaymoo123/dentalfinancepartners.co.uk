@@ -235,7 +235,7 @@ export default function ServicesPage() {
               within 24 hours.
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="services_hero_book"
               data-cta-placement="hero"
               data-cta-goal="form"

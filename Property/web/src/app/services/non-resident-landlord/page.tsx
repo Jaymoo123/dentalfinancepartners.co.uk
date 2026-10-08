@@ -362,7 +362,7 @@ export default function NonResidentLandlordPage() {
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"

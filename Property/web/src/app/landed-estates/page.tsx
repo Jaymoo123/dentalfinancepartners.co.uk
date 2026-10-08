@@ -174,7 +174,7 @@ export default function LandedEstatesPage() {
         }
         primary={
           <Link
-            href="#book"
+            href="/contact"
             data-cta="estates_hero_book"
             data-cta-placement="hero"
             data-cta-goal="form"

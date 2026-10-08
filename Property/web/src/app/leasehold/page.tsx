@@ -204,7 +204,7 @@ export default function LeaseholdPage() {
         }
         primary={
           <Link
-            href="#book"
+            href="/contact"
             data-cta="leasehold_hero_book"
             data-cta-placement="hero"
             data-cta-goal="form"

@@ -540,10 +540,9 @@ export default function MakingTaxDigitalLandlordsPage() {
               At £30,000 you are in from April 2027. Missing the rhythm costs points, then £200, then interest.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              {/* Both CTAs now stay on the page. The primary was /contact, a
-                  generic form on another route. */}
+              {/* The primary points at /contact (restored from #book). */}
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"

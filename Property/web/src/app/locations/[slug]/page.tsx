@@ -962,7 +962,7 @@ export default async function LocationPage({ params }: Props) {
                 of your portfolio, so we will talk that through rather than quote blind.
               </p>
               <div className="mt-6">
-                <Link href="#book" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
+                <Link href="/contact" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
                   Book your free consultation
                 </Link>
               </div>
