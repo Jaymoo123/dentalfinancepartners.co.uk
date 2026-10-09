@@ -63,7 +63,12 @@ export interface NicheConfig {
     publisher_logo_url: string;
   };
   contact: {
+    /** Internal routing only (nurture reply-to fallback); never rendered. */
     email: string;
+    /** The address shown on the site (owner, 2026-10-09). */
+    public_email?: string;
+    /** The number shown on the site: the SMS nurture sender for now, a
+     *  call-receiving number later (owner, 2026-10-09). */
     phone: string;
   };
   navigation: Array<{

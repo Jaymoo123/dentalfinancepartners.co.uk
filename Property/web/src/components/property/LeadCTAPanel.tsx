@@ -4,6 +4,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { Eyebrow } from "@/components/ui/page-blocks";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { niche } from "@/config/niche-loader";
 
 type ProofPoint = { title: string; detail: string };
 
@@ -161,6 +162,41 @@ function PanelBody({
         {footnote && (
           <p className={`mt-6 max-w-md text-sm leading-relaxed ${dark ? "text-slate-400" : "text-slate-500"}`}>
             {footnote}
+          </p>
+        )}
+        {/* The contact block slot (blueprint section 3.1 item 12, ruling R27).
+            The number is the SMS nurture sender until a call-receiving number
+            exists, so it is offered to text or call and nothing promises that
+            a person answers the phone. Hours and address are added here when
+            F2 and F6 arrive, not before. */}
+        {(niche.contact.phone || niche.contact.public_email) && (
+          <p className={`mt-6 max-w-md text-sm leading-relaxed ${dark ? "text-slate-300" : "text-slate-600"}`}>
+            Rather not fill in a form?{" "}
+            {niche.contact.phone ? (
+              <>
+                Text or call{" "}
+                <a
+                  href={`tel:${niche.contact.phone.replace(/\s+/g, "")}`}
+                  data-cta="panel_phone"
+                  data-cta-placement="lead_panel"
+                  className={`font-bold underline-offset-2 hover:underline ${dark ? "text-white" : "text-slate-900"}`}
+                >
+                  {niche.contact.phone}
+                </a>
+              </>
+            ) : null}
+            {niche.contact.phone && niche.contact.public_email ? " or email " : null}
+            {niche.contact.public_email ? (
+              <a
+                href={`mailto:${niche.contact.public_email}`}
+                data-cta="panel_email"
+                data-cta-placement="lead_panel"
+                className={`font-bold underline-offset-2 hover:underline ${dark ? "text-white" : "text-slate-900"}`}
+              >
+                {niche.contact.public_email}
+              </a>
+            ) : null}
+            .
           </p>
         )}
       </div>
