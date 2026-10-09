@@ -51,7 +51,7 @@ def build(slug: str, draft: str) -> str:
     report = (BRIEFS / f"VERIFY_{slug}_{draft}.md").read_text(encoding="utf-8")
     merge = BRIEFS / f"MERGE_{slug}.md"
     opening = next((s for s in new.sections if s["level"] == 1), {"text": ""})["text"]
-    cov = next((s for s in sentences(new.main_text) if re.search(r"\bUK\b", s) and sum(1 for c in ("London", "Manchester", "Birmingham", "Leeds", "Bristol") if c in s) >= 3), "(coverage sentence not found)")
+    cov = next((s for s in sentences(new.main_text) if re.search(r"\b(UK|United Kingdom)\b", s) and re.search(r"video call|phone|email|remote|wherever|anywhere", s, re.I)), "(coverage sentence not found)")
     L = []
     L.append(f"# Review pack: `/services/{slug}` ({draft}, 2026-10-09)\n")
     L.append("Read §1 first; if those lines are right the page is mostly right. Reply with numbers from §7 or \"approved\" with the SHA at the end.\n")

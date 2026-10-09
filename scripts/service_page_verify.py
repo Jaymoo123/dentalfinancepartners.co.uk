@@ -559,8 +559,10 @@ def run_checks(page: Page, slug: str, *, assignment: dict, gsc_rows: list[dict],
     # 6 Coverage floor (placement-aware)
     q = []
     fee_sections = " ".join(s["text"] for s in page.sections if re.search(r"\bfee|\bcost", s["heading"], re.I))
+    # The coverage sentence: national reach plus the remote channels. The five city
+    # links are check 13's job (they live in "Where we work", not here; owner 2026-10-09).
     cov_sentence = next((s for s in sentences(page.main_text)
-                         if re.search(r"\bUK\b", s) and sum(1 for c in ("London", "Manchester", "Birmingham", "Leeds", "Bristol") if c in s) >= 3), "")
+                         if re.search(r"\b(UK|United Kingdom)\b", s) and re.search(r"video call|phone|email|remote|wherever|anywhere", s, re.I)), "")
     placed, total = 0, 0
     for pl, field in (("title", "metaTitle"), ("h1", "h1"), ("h2", "h2s"), ("faq", "faqs")):
         for r in assignment.get(pl, []):
@@ -587,7 +589,7 @@ def run_checks(page: Page, slug: str, *, assignment: dict, gsc_rows: list[dict],
     if cov_sentence:
         placed += len(cs_rows)
     elif cs_rows:
-        q.append(f"no coverage sentence found (a sentence naming the UK and at least three of the five cities); {len(cs_rows)} coverage_statement rows unserved")
+        q.append(f"no coverage sentence found (a sentence naming the UK and the remote channels); {len(cs_rows)} coverage_statement rows unserved")
     leaks = []
     for r in assignment["__others__"]:
         if r.get("phrase_family") == "brand":
