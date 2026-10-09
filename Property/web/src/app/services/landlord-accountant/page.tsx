@@ -369,8 +369,7 @@ export default function LandlordAccountantPage() {
                 phone, video and email, and no portal is verified for this firm. */}
             <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
               Landlords across the UK use us without ever visiting an office: everything runs by video call,
-              phone and email, and our city pages for Leeds, Manchester, Birmingham, London and Bristol explain how
-              we work locally in each.
+              phone and email, wherever you and your properties are.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link

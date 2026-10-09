@@ -428,8 +428,7 @@ export default function PropertyAccountantPage() {
             </p>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
               We work with landlords and investors across the UK by video call, phone and email, so where you or
-              your properties are makes no difference to the service; our London, Manchester, Birmingham, Leeds
-              and Bristol pages describe how that works in each city.
+              your properties are makes no difference to the service.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
