@@ -271,6 +271,7 @@ Scope note (2026-10-09, from `house_positions.md` section 4, which outranks the 
 
 ## 11. Log (one line per deploy or decision, newest first)
 
+- 2026-10-09 21:27 UTC: estate-console production deploy `dpl_G5W3rADqrsD9bJRTNzf3vsQBVYcz` at `2ef35cd0c` (owner said "Yes"): PDF test panel gone from the dashboard, plus the 28 Sep shared-kit change that had been waiting. Property not deployed (freeze to 2026-10-23).
 - 2026-10-09 evening: paid-PDF test removed from code (routes, library, tests, console panel, privacy and terms sections); prod flag off; RLS on `session_events` and `tiktok_creatives`; drops pending in migration 20261009000001. Not deployed (freeze).
 - 2026-10-09 19:58 UTC: STATE.md restructured into orientation plus live detail; closed history archived verbatim.
 - 2026-10-09 15:16 UTC: production deploy `dpl_43fZDSzN6hVK4U3Y4QzcTdYYJkNq` at `cfe95629` (sitemap lastmod on the four changed static pages; homepage H1, WebPage name and description to the R26 brand form). Sitemap resubmitted, IndexNow sent.
