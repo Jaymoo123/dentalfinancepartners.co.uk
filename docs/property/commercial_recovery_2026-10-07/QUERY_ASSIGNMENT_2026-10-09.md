@@ -141,7 +141,7 @@ Brand ("property tax partners") stays with the homepage, outside the coverage fl
 5. **City vs audience clashes**: CGT London, CGT advice Manchester, letting agents Leicester (90), self assessment Bristol followed the city rule; non-resident landlord London followed the non-resident rule (client is abroad). Confirm both.
 6. **Generic cost queries (2,480/mo)** ("how much do accountants charge", "how much will an accountant cost", "accountant fee") excluded as not property. Alternative: property-accountant fees section.
 7. **Generic "accountant in [city]"** treated as city forms per the Bristol example, putting Luton (720), Belfast (590), Newport, Nuneaton on WP4. Confirm.
-8. **Commercial property (40/mo) and development (180/mo)**: no own page; placed in property-accountant body. Or log as page gaps?
+8. **Commercial property (40/mo) and development (180/mo)**: no own page; placed in property-accountant body. Or log as page gaps? **Ruled 2026-10-09 (blueprint R21):** commercial property stays in the property-accountant body (the firm names commercial property owners); the two development rows are moved to `exclude` in the CSV because the firm does not name development work.
 9. **"Property incorporation tax advice" (77)**: given to `/for/moving-property-into-a-limited-company`; alternative `/incorporation`.
 10. **"What does a specialist property accountant do?"**: used as FAQ though QRY_C tagged it career. Confirm.
 11. **"Property tax accounting" / "property accounting" (156)**: firm search or how-to; placed in body, not headings.
