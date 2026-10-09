@@ -15,9 +15,10 @@ of killing it:
      since the deploy date, against the 15 sessions / 4 leads per 28 days baseline.
 
 Environment: GSC_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS;
-DATAFORSEO_B64 (base64 of login:password); SUPABASE_ACCESS_TOKEN (and the
+DATAFORSEO_B64 (base64 of login:password) or DATAFORSEO_API_LOGIN and
+DATAFORSEO_API_PASSWORD; SUPABASE_ACCESS_TOKEN (and the
 project URL the register script uses). Run from the repo root:
-    python scripts/wp1_read.py --deploy-date 2026-10-13 --label D14
+    python scripts/wp1_read.py --deploy-date 2026-10-09 --label D14
 """
 from __future__ import annotations
 
@@ -111,8 +112,11 @@ def read_serps(out: list[str]) -> dict:
     out += section("3. Live Google UK SERPs (DataForSEO), our best position and djh.co.uk")
     res = {}
     b64 = os.environ.get("DATAFORSEO_B64")
+    if not b64 and os.environ.get("DATAFORSEO_API_LOGIN") and os.environ.get("DATAFORSEO_API_PASSWORD"):
+        import base64
+        b64 = base64.b64encode(f"{os.environ['DATAFORSEO_API_LOGIN']}:{os.environ['DATAFORSEO_API_PASSWORD']}".encode()).decode()
     if not b64:
-        out.append("Not available: DATAFORSEO_B64 not set")
+        out.append("Not available: DATAFORSEO_B64 (or DATAFORSEO_API_LOGIN and DATAFORSEO_API_PASSWORD) not set")
         return res
     try:
         import httpx

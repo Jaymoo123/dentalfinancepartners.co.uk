@@ -25,7 +25,7 @@ It is the owner's standing instructions on how to communicate, decide, execute,
 verify, ship and tidy up, and it holds the incidents that produced each rule.
 This file is deliberately short; `standard_terms` is the single source of truth.
 
-The five that are most often missed, so they are also stated here:
+The six that are most often missed, so they are also stated here:
 
 1. **Answer like he is the CEO.** Recommendation in the first three lines, one
    decision at the end. Depth belongs in reports, not in status updates.

@@ -487,7 +487,7 @@ em-dash (template-level, every page, pre-existing).
 ---
 
 
-<!-- old STATE.md lines 696-2138 -->
+<!-- old STATE.md lines 696-2137 -->
 ## 0.23 Consent-wording conversion incident — DIAGNOSED + REVERTED ESTATE-WIDE 2026-08-24
 
 **Symptom (owner, 2026-08-24):** website leads collapsed (Fri 0 / Sat 0 / Sun 2 / Mon 0
