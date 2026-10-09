@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProcessTimeline } from "@/components/property/ProcessTimeline";
-import { StatsCounter } from "@/components/property/StatsCounter";
-import { TestimonialsSection } from "@/components/property/TestimonialsSection";
-import { siteStats } from "@/lib/site-stats";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
@@ -15,26 +12,20 @@ import { siteConfig } from "@/config/site";
 import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { relatedItemsFromLinks } from "@/lib/blog";
-import { CoverageCards, type CoverageItem } from "@/components/property/CoverageCards";
-import { PromptMarquee, type Prompt } from "@/components/property/PromptMarquee";
 import { TaxYearGap } from "@/components/property/TaxYearGap";
-import {
-  BookOpen,
-  Building2,
-  CalendarClock,
-  Compass,
-  FileText,
-  Hammer,
-  Home,
-  MonitorCheck,
-  Network,
-  Percent,
-  Receipt,
-  Users,
-} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { Building2, Compass, FileText, MonitorCheck, Receipt, Store } from "lucide-react";
 
 const PAGE_PATH = "/services/property-accountant";
 
+/**
+ * 2026-10-09 (WP1-services): the title, H1 and descriptions below move to the
+ * plural "Property accountants ... UK" form set by
+ * docs/property/commercial_recovery_2026-10-07/SERVICE_PAGES_BLUEPRINT_2026-10-09.md
+ * §3.2 (owner rulings R2 and R3: the homepage gives up "property accountants
+ * UK" to this page). That is a new assignment from the same collision method
+ * the note below describes, not the designer's retitle, which stays not adopted.
+ */
 /**
  * Ours, kept whole (carve-out 5). The designer retitled this page to
  * "Property Accountant | Landlords, Portfolios & SPVs" without sight of the
@@ -47,9 +38,9 @@ const PAGE_PATH = "/services/property-accountant";
  * hreflang and the twitter card are ours too: their version has neither.
  */
 export const metadata: Metadata = {
-  title: "Property Accountant for UK Landlords and Investors",
+  title: "Property Accountants for UK Landlords and Investors",
   description:
-    "A property accountant for UK landlords and investors: rental accounts, Self Assessment, SPV company accounts, MTD quarterly filing and year-round tax planning.",
+    "Specialist property accountants for UK landlords, investors and property companies: rental accounts, company accounts and MTD filing. Free first call.",
   alternates: {
     canonical: `${siteConfig.url}${PAGE_PATH}`,
     languages: {
@@ -58,186 +49,187 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Property Accountant for UK Landlords and Investors",
+    title: "Property Accountants for UK Landlords and Investors",
     description:
-      "Rental accounts, Self Assessment, SPV company accounts, MTD filing and planning, handled by accountants who work on property every day.",
+      "Rental accounts, company accounts, MTD filing and tax planning from accountants who work only on property. Free first call.",
     url: `${siteConfig.url}${PAGE_PATH}`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Property Accountant for UK Landlords and Investors",
-    description:
-      "Rental accounts, Self Assessment, SPV company accounts, MTD filing and planning for UK property.",
+    title: "Property Accountants for UK Landlords and Investors",
+    description: "Rental accounts, company accounts, MTD filing and tax planning for UK property.",
   },
 };
 
+type Service = {
+  title: string;
+  icon: LucideIcon;
+  definition: string;
+  lines: Array<{ label: string; text: string }>;
+};
+
 /**
- * The reader's own situation, in the first person. Same job as Triggers on the
- * advice page and Our clients on the non-resident page: a described client type
- * gets skimmed, a sentence you would say out loud stops you.
- *
- * Keep this EVEN in length — the marquee zigzags on index, and an odd set shows
- * a seam where the loop joins.
+ * The "What we do" list. Each title is an H3 on the page AND an Offer name in
+ * hasOfferCatalog below, built from this one array so copy and schema cannot
+ * drift (blueprint §3.1 item 5; verify check 5).
  */
-const clientPrompts: Prompt[] = [
+const services: Service[] = [
   {
-    tag: "My accountant does everything",
-    text: "He does my brother's restaurant too. I have never been asked about a Form 17.",
-    icon: Users,
-  },
-  {
-    tag: "I have just bought my third",
-    text: "The return stopped being something I could do myself somewhere around the second one.",
-    icon: Home,
-  },
-  {
-    tag: "I refurbished a flat last year",
-    text: "Nobody told me which of it was a repair and which was capital until the bill arrived.",
-    icon: Hammer,
-  },
-  {
-    tag: "Some are personal, some are in a company",
-    text: "Two SPVs and four in my own name, and nobody is looking at the whole picture.",
-    icon: Network,
-  },
-  {
-    tag: "MTD is coming at me",
-    text: "I keep hearing about quarterly filing and I do not know if it applies to me.",
-    icon: MonitorCheck,
-  },
-  {
-    tag: "I am thinking about selling one",
-    text: "An offer is on the table and I have no idea what I actually keep after tax.",
-    icon: Receipt,
-  },
-];
-
-const coverage: CoverageItem[] = [
-  {
-    title: "Rental accounts and bookkeeping",
-    icon: BookOpen,
-    body: "Property-by-property income and expense records, so you can see which flat actually makes money rather than one blended figure for the portfolio. Bank feeds, agent statements and service charge accounts reconciled, with the capital and revenue split done properly at the point of entry rather than guessed at in January.",
-  },
-  {
-    title: "Self Assessment for rental income",
+    title: "Rental accounts and Self Assessment",
     icon: FileText,
-    body: "The property pages of your tax return, prepared with the finance cost restriction applied correctly, allowable expenses claimed in full, and jointly held property split the way your ownership and any Form 17 election actually require. Payments on account checked so you are not overpaying HMRC a year in advance.",
+    definition:
+      "We prepare your rental accounts property by property, then complete the property pages of your Self Assessment return from them.",
+    lines: [
+      { label: "What you get", text: "a profit figure for each property, so you can see which one carries the rest." },
+      {
+        label: "What we check",
+        text: "the finance cost restriction applied correctly, every expense claimed, and joint ownership split the way the property is actually owned.",
+      },
+    ],
   },
   {
-    title: "Company accounts for property SPVs",
+    title: "Property company and SPV accounts",
     icon: Building2,
-    body: "Statutory accounts and CT600 corporation tax returns for buy-to-let limited companies, including directors' loan account tracking, intercompany balances in group structures, and the profit extraction mix that leaves you with the most after tax.",
+    definition:
+      "We prepare and file the year-end accounts and corporation tax return for a property company, often called an SPV (special purpose vehicle).",
+    lines: [
+      {
+        label: "What you get",
+        text: "accounts filed on time, a director's loan account that reconciles, and a plan for drawing money out.",
+      },
+      {
+        label: "Why it differs",
+        // house_positions.md §4: companies deduct finance costs in full; the restriction is for individuals.
+        text: "a company deducts its mortgage interest in full, so its planning differs from property held personally.",
+      },
+    ],
   },
   {
-    title: "Making Tax Digital",
+    title: "Making Tax Digital quarterly filing",
     icon: MonitorCheck,
-    body: "Quarterly updates under MTD for Income Tax, which applies to qualifying property and self-employment income over £50,000 from April 2026, over £30,000 from April 2027 and over £20,000 from April 2028. Software chosen and set up around how you already record rents, not the other way round.",
+    definition:
+      "We keep your records in Making Tax Digital (MTD) software and send HMRC your quarterly updates and your year-end return.",
+    lines: [
+      {
+        label: "When it applies",
+        // house_positions.md §3: £50,000 from 6 April 2026, £30,000 from April 2027, £20,000 from April 2028.
+        text: "from 6 April 2026 if your qualifying income is over £50,000, from April 2027 over £30,000, and from April 2028 over £20,000.",
+      },
+      {
+        label: "What we do",
+        text: "choose and set up the software, then file each quarter.",
+      },
+      {
+        label: "Who is outside it",
+        // house_positions.md §3: limited companies are outside MTD for ITSA.
+        text: "limited companies, which carry on filing annual company returns.",
+      },
+    ],
   },
   {
-    title: "Capital gains and disposals",
+    title: "Capital gains tax on sales",
     icon: Receipt,
-    body: "The 60-day CGT return after a residential disposal, base cost reconstructed from purchase and improvement records, private residence and lettings relief where they apply, and disposal timing modelled before you accept an offer rather than after completion.",
+    definition:
+      "We calculate and report the capital gains tax on a sale, with the figure ready before you accept an offer.",
+    lines: [
+      {
+        label: "The deadline",
+        // house_positions.md §5: UK residents report and pay within 60 days of completion where CGT is due.
+        text: "if you live in the UK and tax is due on a residential sale, you report and pay within 60 days of completion.",
+      },
+      {
+        label: "What we check",
+        text: "the base cost from purchase and improvement records, and any relief for a former home.",
+      },
+    ],
   },
   {
-    title: "Structure and planning",
+    title: "Incorporation and structuring advice",
     icon: Compass,
-    body: "Whether to hold personally or in a company, whether incorporation relief is realistically available and claimed in time, how capital allowances land now that the writing down allowance is 14% with a 40% first year allowance on main pool spend, and what your portfolio does at the point it passes to the next generation.",
-  },
-];
-
-const audiences = [
-  {
-    scale: "1 to 3 properties",
-    title: "You bought a flat and the return stopped being simple",
-    body: "The first return you did yourself. Then a remortgage arrangement fee, a boiler replacement that might be capital, a void period and a tenant deposit dispute all landed in the same year, and the finance cost restriction turned a modest profit into a tax bill you did not expect. This is the point where the fee usually pays for itself in claimed expenses alone.",
-  },
-  {
-    scale: "4 to 15 properties",
-    title: "You run a portfolio and need numbers you can act on",
-    body: "You want to know yield and net profit per property, which mortgage to fix next, and whether the next purchase should sit personally or in a company. You also want the compliance to be a non-event: quarterly MTD updates filed, the return in well before the deadline, no January panic.",
-  },
-  {
-    scale: "Limited company and SPV",
-    title: "You hold property through a company",
-    body: "Statutory accounts, corporation tax, Companies House filing, directors' loan account discipline and a profit extraction plan. Dividend rates rose to 10.75%, 35.75% and 39.35% from 6 April 2026, which changes the salary and dividend mix that used to be automatic.",
+    definition:
+      "We tell you whether your property should sit in your own name, a limited company or both, and we cost a move before you make it.",
+    lines: [
+      {
+        label: "What we model",
+        text: "the capital gains tax and stamp duty a transfer can trigger, against the yearly saving.",
+      },
+      {
+        label: "What has changed",
+        // house_positions.md §5: incorporation relief must be claimed for transfers on or after 6 April 2026.
+        text: "incorporation relief, which can defer the gain for a genuine property business, now has to be claimed for transfers from 6 April 2026.",
+      },
+    ],
   },
   {
-    scale: "Investor, mixed holdings",
-    title: "Property is one part of a wider position",
-    body: "Residential, commercial units, a development project, maybe shares and a pension alongside. You need someone who can see the whole tax position, including how a disposal in one part of the portfolio interacts with the annual exempt amount, business asset disposal relief at 18% from 6 April 2026, and the inheritance tax thresholds now frozen to 5 April 2031.",
-  },
-];
-
-const whySpecialist: CoverageItem[] = [
-  {
-    title: "The finance cost restriction is a rate change, not a footnote",
-    icon: Percent,
-    body: "Mortgage interest on residential lettings held personally is relieved as a basic rate tax reducer, currently 20%, rising to 22% from April 2027 alongside the new separate property income rates of 22%, 42% and 47%, which leaves higher-rate landlords no better off. A generalist who deducts interest as an ordinary expense produces a return that is wrong on its face. Getting the calculation right also means spotting the years where the reducer is capped by the profit or income limits and carried forward.",
-  },
-  {
-    title: "Capital versus revenue is where the money sits",
-    icon: Hammer,
-    body: "A new kitchen of a similar standard is usually a repair. An extension is not. Replacing single glazing with double glazing follows the current standard rule. Deciding these correctly, and documenting why, is the difference between a deduction now, a deduction on sale, and an enquiry you cannot support.",
-  },
-  {
-    title: "Property has its own deadlines",
-    icon: CalendarClock,
-    body: "A 60-day CGT return after a residential disposal. ATED returns each April for company-held residential property above the threshold. The non-resident landlord scheme. Quarterly MTD updates from April 2026. These sit outside the ordinary Self Assessment calendar and are easy to miss if property is not what you look at all day.",
-  },
-  {
-    title: "Structure decisions compound",
-    icon: Network,
-    body: "Incorporating, adding a spouse to the title, moving to a group, taking money out as a directors' loan repayment rather than a dividend: each one is cheap to plan and expensive to unwind. A specialist tells you the cost of the option you are about to take before you take it.",
+    title: "Commercial property accounts",
+    icon: Store,
+    definition:
+      "We also act as a commercial property accountant for owners of shops, offices and industrial units.",
+    lines: [
+      {
+        label: "What differs",
+        text: "capital allowances, which residential lets mostly cannot claim, are often available on the fixtures in a commercial building.",
+      },
+      {
+        label: "Mixed holdings",
+        text: "flats and commercial units owned together are handled in one set of figures.",
+      },
+    ],
   },
 ];
 
 const feeDrivers = [
   {
-    title: "How many properties you hold",
-    body: "The count, and how much movement there is across them in a year.",
+    title: "How many properties you own",
+    body: "More properties means more rent and costs to record, and usually more changes across the year.",
   },
   {
-    title: "Personally, in a company, or both",
-    body: "A mixed structure means two sets of filings and the interaction between them.",
+    title: "Personal, company or both",
+    body: "Each structure has its own filings, and holding both means two sets of returns and the planning between them.",
   },
   {
-    title: "Bookkeeping through the year, or a year end return",
-    body: "Whether we keep the records as you go or pick them up once a year.",
+    title: "Records kept as you go, or once a year",
+    body: "We can keep your books through the year, or work from your own records at the year end.",
   },
   {
-    title: "Whether MTD quarterly filing applies",
-    body: "Four submissions a year plus the year end, once you are inside the thresholds.",
+    title: "Whether Making Tax Digital applies",
+    body: "Quarterly updates add four submissions a year to the year-end work.",
   },
 ];
 
 const onboarding = [
   {
     n: "01",
-    title: "Free consultation",
-    body: "Tell us what you own, how it is held, and what you want to do next. We say plainly whether you need what we do. If your position is a single property and a simple return you can file yourself, we will tell you that.",
+    title: "Talk it through",
+    body: "Describe your properties, who owns them and what you want to change, and one of our accountants goes through it with you on a free call. If your affairs are simple enough to handle yourself, we will say so.",
   },
   {
     n: "02",
-    title: "A fixed quote and a scope you can read",
-    body: "You get a written engagement letter setting out exactly what is included, what is not, and what it costs for the year. No hourly billing, no surprise invoices for a phone call.",
+    title: "Agree the fee",
+    body: "We set the scope, then quote a fixed fee for your approval before any work starts. If you already have an accountant, we ask them for professional clearance and collect your past returns and records, so nothing carried forward is lost.",
   },
   {
     n: "03",
-    title: "Onboarding and clearance",
-    body: "Identity checks, HMRC authorisation, and professional clearance from your existing accountant if you have one. We collect prior year returns, computations and capital allowance records so nothing carried forward is lost in the handover.",
-  },
-  {
-    n: "04",
+    // 2026-10-09 (WP1-services): "questions answered inside 24 hours" is removed
+    // from this step. Blueprint §3.1 item 9 and the answer-pattern spec §4 keep
+    // the 24-hour line in the shared components only (LeadCTAPanel proof strip,
+    // site-stats) until F5 confirms or removes it; it is not repeated in body
+    // copy. The owner question recorded below is still open.
     // Ours, kept: "inside 24 hours". The designer changed this to "inside one
     // working day" without comment, which is a different service promise, and
     // their own LeadCTAPanel on this page still proves "24-hour response", as
     // does siteStats. Raised as an owner question rather than changed here.
-    title: "The year runs",
-    body: "Records kept current, quarterly filings where MTD applies, questions answered inside 24 hours, and a planning conversation before your year end rather than after it, while the decisions can still change the outcome.",
+    title: "Run the year",
+    body: "We keep the records current, file quarterly updates where MTD applies, deal with HMRC and Companies House, and book a planning conversation before your year end.",
   },
 ];
 
+/**
+ * 2026-10-09 (WP1-services): the explainer post is added and the cost post
+ * relabelled, both by their real titles, per blueprint §3.2 "Links out". The
+ * other seven entries are unchanged.
+ */
 /**
  * Ours, restored whole. Their layout deletes this section, and with it eight
  * curated deep links spanning four blog clusters. These seven pages are the only
@@ -247,12 +239,16 @@ const onboarding = [
  */
 const feedingPosts = [
   {
+    href: "/blog/property-accountant-services/what-does-a-property-accountant-do",
+    label: "What Does a Property Accountant Do? Services and Scope for UK Landlords",
+  },
+  {
     href: "/blog/property-accountant-services/how-to-choose-a-property-accountant",
     label: "How to choose a property accountant",
   },
   {
     href: "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
-    label: "What a property accountant costs",
+    label: "How Much Does a Property Accountant Cost: UK Pricing Guide 2026",
   },
   {
     href: "/blog/property-accountant-services/change-landlord-accountants",
@@ -280,66 +276,78 @@ const feedingPosts = [
   },
 ];
 
+const cities = [
+  { href: "/locations/london", label: "London" },
+  { href: "/locations/manchester", label: "Manchester" },
+  { href: "/locations/birmingham", label: "Birmingham" },
+  { href: "/locations/leeds", label: "Leeds" },
+  { href: "/locations/bristol", label: "Bristol" },
+];
+
 const faqs: FaqEntry[] = [
   {
     question: "What does a property accountant do?",
     answer:
-      "A property accountant handles the accounting and tax for people who own rental or investment property: rental accounts, the property pages of your Self Assessment return, company accounts and corporation tax for buy-to-let SPVs, quarterly MTD filing, the 60-day capital gains return on residential disposals, and planning around structure, purchases and sales. The core difference from a general accountant is that the property rules are the whole job rather than one client type among fifty.",
+      "A property accountant prepares the accounts and tax returns for rental and investment property and plans the tax around them. For you that means rental accounts, the property pages of your Self Assessment return, company accounts if you use a limited company, Making Tax Digital updates, the capital gains return when you sell, and advice on how to hold the next purchase. We do all of it, and nothing outside property.",
+  },
+  {
+    question: "What does a specialist property accountant do?",
+    answer:
+      "A specialist property accountant does the same work as any accountant for a landlord, but sees enough property cases to catch what a generalist misses. Typical examples are a refurbishment claimed as a repair when part of it was an improvement, a joint ownership split that does not match the paperwork, or a sale reported late. We work only on property, so these are everyday questions for us.",
+  },
+  {
+    question: "Do landlords need an accountant?",
+    answer:
+      "No law says a landlord must use an accountant, and you can file your own return. Most landlords bring one in when the tax stops being simple: a second or third property, a limited company, a property owned with someone else, or a sale. At that point the rules start to interact, mistakes are harder to spot yourself, and we can show you on the first call what we would do differently.",
   },
   {
     question: "Do I need a property accountant for one buy-to-let?",
+    // house_positions.md §3: MTD for ITSA from 6 April 2026 above £50,000 of qualifying income.
     answer:
-      "Not necessarily. If you have one property, no mortgage complications and straightforward expenses, the return is manageable on your own. The point at which help usually pays for itself is a residential mortgage in your own name at higher rate tax, a refurbishment where the capital and revenue split is unclear, joint ownership, a sale, or the arrival of MTD quarterly filing. Our free consultation is a fair way to find out which side of that line you are on.",
+      "Often not. A single let with no mortgage and routine costs is a return many owners manage alone. Three things usually change that: a mortgage while you pay higher rate tax, because the interest restriction then costs real money; a refurbishment that mixes repairs with improvements; or qualifying income above £50,000, which brings quarterly Making Tax Digital filing from April 2026. The first call will show which side of that line you are on.",
   },
   {
     question: "What is the difference between a property accountant and a regular accountant?",
     answer:
-      "Scope and depth. A regular accountant can prepare a compliant tax return. A property accountant works with the finance cost restriction, private residence and lettings relief, incorporation relief under section 162, capital allowances on commercial and communal areas, ATED, the non-resident landlord scheme, and stamp duty surcharges every week rather than occasionally. Section 162 is a good example of why that matters: for transfers on or after 6 April 2026 the relief is no longer automatic and has to be claimed, by the first anniversary of the 31 January following the tax year of the transfer, and the old election to disapply it has been repealed. Property-specific reliefs are usually missed by volume rather than incompetence: nobody claims what they have not seen before.",
+      "The difference is depth on property rules, not the ability to file a return. A regular accountant can prepare a correct return from what you hand over. A property accountant also checks what you have not thought to mention: how the interest restriction applies, whether costs are repairs or improvements, how joint ownership is split, and what a sale or a move into a company will cost. Because we only do property, we raise those questions before you ask.",
   },
   {
     question: "How much does a property accountant cost?",
     answer:
-      "It depends on how many properties you hold, whether they sit personally or in a company, whether you need bookkeeping or only a year end return, and whether MTD quarterly filing applies. We quote a fixed annual fee after the consultation so you know the figure before you commit to anything. Our guide to property accountant fees sets out the ranges you should expect across the market.",
-  },
-  {
-    question: "Do I need a property accountant near me?",
-    answer:
-      "Location matters much less than it used to. Records arrive digitally, HMRC filing is online, and meetings work as well by video as across a desk. What matters is whether the firm actually works on property. We act for landlords across the UK, from single flats to portfolios of forty, and the tax rules are the same in Leeds as they are in London. If you want a face-to-face meeting, we can arrange one.",
+      "It depends on how many properties you own, whether they are held personally, in a company or both, whether we keep your books through the year, and whether Making Tax Digital applies. We quote a fixed fee once we know those four things, and you approve it before any work starts. Our guide to property accountant fees shows what firms across the market charge and what each level should include.",
   },
   {
     question: "Can you take over from my current accountant mid-year?",
     answer:
-      "Yes. We write for professional clearance, collect your prior year accounts, computations and any carried forward losses or capital allowance pools, and pick up from where they stopped. There is no need to wait for a year end, and switching does not restart anything with HMRC. Most handovers complete inside two weeks.",
+      "You can, and there is no need to wait for the year end. We contact your current accountant for professional clearance, collect your past returns, workings and any losses or allowances carried forward, and continue from where they stopped. Changing accountant does not reset anything with HMRC, and we explain at the start what the handover involves in your case.",
   },
   {
     question: "Do you handle both personally held property and limited companies?",
     answer:
-      "Yes, and the two together is common. A typical portfolio has older properties held personally and newer purchases in an SPV. We prepare the Self Assessment side and the company accounts and corporation tax side, and treat them as one position when planning, because the decision about where the next purchase goes depends on both.",
+      "Yes, and it is a common mix: older properties in your own name and newer purchases in a company. We prepare your Self Assessment return as well as the company accounts and corporation tax return, and we plan them together, because where the next purchase goes and how you take money out of the company both depend on the whole picture.",
   },
   {
     question: "Will you tell me whether to incorporate?",
+    // house_positions.md §5 (CGT on transfer, incorporation relief) and §1 (SDLT on transfer).
     answer:
-      "We will model it and give you a straight answer. Incorporation triggers capital gains tax and stamp duty on the same day, and those upfront costs need recovering out of annual savings. For a higher rate taxpayer with heavy mortgage interest and a long holding horizon it often works. For a basic rate taxpayer, a low-geared portfolio, or a sale within five years, it usually does not. You can model your own position with our incorporation cost calculator first.",
+      "Yes. We model your numbers and give you a straight answer, including when it is no. Moving property into a company usually triggers capital gains tax and stamp duty at the point of transfer, so the yearly saving has to repay that cost first. It tends to suit a higher rate landlord with large mortgages who plans to hold for many years, and rarely suits a basic rate landlord or someone selling soon.",
   },
   {
     question: "How does Making Tax Digital change what you do for me?",
+    // house_positions.md §3: £50,000 from 6 April 2026, £30,000 from April 2027, £20,000 from April 2028.
     answer:
-      "From April 2026, qualifying property and self-employment income over £50,000 moves to quarterly digital updates, with the threshold dropping to £30,000 from April 2027 and £20,000 from April 2028. In practice that means records have to be kept current through the year rather than reconstructed in December, and four submissions plus a final declaration replace one return. We set the software up, keep the records live, and file the quarters.",
+      "It replaces one annual return with quarterly digital updates plus a year-end return. It applies from 6 April 2026 if your qualifying income is over £50,000, from April 2027 over £30,000 and from April 2028 over £20,000. We choose and set up the software, keep your records current through the year, and file each quarter, so nothing has to be rebuilt in a rush in January.",
   },
   {
     question: "What records do you need from me?",
     answer:
-      "Rent received, agent statements, mortgage interest certificates, insurance, repairs and maintenance invoices, service charge and ground rent demands, professional fees, and completion statements for any purchase or sale. For companies, add the bank statements and anything paid personally on the company's behalf. If your records are currently a folder of photographs, that is workable, and getting them into a usable system is part of onboarding.",
+      "We need whatever shows money in and out: rent statements from your agent or bank, mortgage interest statements, insurance, repair and maintenance invoices, service charge and ground rent bills, and the completion statement for anything you bought or sold. For a company, add its bank statements and anything you paid personally on its behalf. If your records are a box of receipts, we can work with that and set up something better.",
   },
   {
     question: "Do you work with non-resident landlords?",
+    // house_positions.md §5: non-UK residents file the 60-day return for every UK land disposal, tax due or not.
     answer:
-      "Yes. Non-resident landlords have their own scheme for tax deducted at source, their own approval process for receiving rent gross, and a capital gains position that catches disposals of UK property regardless of where you live. It is a distinct piece of work, and our non-resident landlord service covers it in detail.",
-  },
-  {
-    question: "What happens if HMRC opens an enquiry?",
-    answer:
-      "We handle the correspondence, assemble the supporting records, and deal with HMRC directly on your behalf. Most property enquiries turn on the capital and revenue split, the ownership share used on jointly held property, or undeclared rent from earlier years. Where earlier years are the issue, a disclosure through the Let Property Campaign usually produces a far better penalty outcome than waiting to be found.",
+      "Yes. If you live abroad and let property in the UK, your rent normally falls under the Non-Resident Landlord Scheme, and any UK property you sell has to be reported within 60 days whether or not tax is due. We handle the UK returns and the scheme approvals for you, and our non-resident landlord service covers that work in more detail.",
   },
 ];
 
@@ -348,39 +356,42 @@ const faqs: FaqEntry[] = [
  * service markup on the site: hasOfferCatalog is the machine-readable list of
  * what the service includes, built from the six coverage items so a copy edit
  * cannot drift from the schema. BreadcrumbList comes from <Breadcrumb>.
+ *
+ * 2026-10-09 (WP1-services): built from `services` (the "What we do" H3s),
+ * name equal to the H1, provider by @id only, areaServed as the Country
+ * "United Kingdom" (blueprint §3.1 schema). The provider @id keeps the form the
+ * layout's Organization node actually emits (`${siteConfig.url}#organization`),
+ * so the reference resolves.
  */
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": `${siteConfig.url}${PAGE_PATH}#service`,
-  name: "Property accountancy for UK landlords and investors",
+  name: "Property accountants for UK landlords and investors",
   serviceType: "Property accountant",
   description:
-    "Accounting and tax for UK landlords and property investors: rental accounts, Self Assessment, limited company and SPV accounts, Making Tax Digital filing, capital gains reporting and structure planning.",
+    "Accounting and tax for UK landlords, property investors and property companies: rental accounts and Self Assessment, company and SPV accounts, Making Tax Digital filing, capital gains tax on sales, incorporation advice and commercial property accounts.",
   url: `${siteConfig.url}${PAGE_PATH}`,
-  provider: {
-    "@type": "Organization",
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    url: siteConfig.url,
-  },
+  provider: { "@id": `${siteConfig.url}#organization` },
   areaServed: {
     "@type": "Country",
-    name: "GB",
+    name: "United Kingdom",
   },
   audience: {
     "@type": "Audience",
-    audienceType: "UK landlords and property investors",
+    audienceType: "UK landlords, property investors and property companies",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Property accountancy services",
-    itemListElement: coverage.map((item) => ({
+    itemListElement: services.map((item) => ({
       "@type": "Offer",
-      itemOffered: { "@type": "Service", name: item.title },
+      name: item.title,
     })),
   },
 };
+
+const h2 = "text-2xl font-bold text-slate-900 sm:text-4xl";
 
 export default function PropertyAccountantPage() {
   return (
@@ -406,12 +417,19 @@ export default function PropertyAccountantPage() {
               ]}
             />
             <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-6xl">
-              A property accountant for UK landlords and investors
+              Property accountants for UK landlords and investors
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
-              Whether it is a refurbishment to classify, a sale to time or a portfolio to restructure, a free
-              consultation shows you what your current setup is costing you and gives you a clear quote to
-              fix it.
+              We are property accountants for landlords, investors and owners of property companies anywhere in
+              the UK. We prepare rental accounts, Self Assessment returns, company accounts and Making Tax
+              Digital filings, and plan the tax that goes with them, because property is the only work we do. We
+              work remotely from our registered office in Shipley, West Yorkshire. The first call is free, and we
+              quote a fixed fee for you to approve before any work starts.
+            </p>
+            <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
+              We work with landlords and investors across the UK by video call, phone and email, so where you or
+              your properties are makes no difference to the service; our London, Manchester, Birmingham, Leeds
+              and Bristol pages describe how that works in each city.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
@@ -436,319 +454,413 @@ export default function PropertyAccountantPage() {
         </div>
       </section>
 
-      {/* Stats strip, same treatment as the homepage: white with a hairline, so it
-          reads as a break from the navy hero rather than a section of its own. */}
-      <section className="border-b border-slate-200 bg-white py-5 sm:py-7">
-        <div className={siteContainerLg}>
-          <StatsCounter stats={siteStats} />
-        </div>
-      </section>
-
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>The gap</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
-              Your tax bill is decided before the return is filed
-            </h2>
-            <Prose>
-              <p>
-                Most landlord tax bills are decided long before the return is filed. They are decided by how a
-                refurbishment was categorised, whose name the property sits in, whether the mortgage interest was
-                put through as a deduction or a tax reducer, and whether anyone modelled the sale before contracts
-                were exchanged. By the time a general practice accountant is typing figures into the property pages
-                in January, most of those decisions have already been made for you.
-              </p>
-              <p>
-                A specialist property accountant closes that gap. The compliance still has to be right, and it will
-                be, but the value sits in the twelve months before it: knowing which costs are deductible when,
-                which structure your next purchase belongs in, and what a disposal actually leaves you with after
-                tax.
-              </p>
-            </Prose>
-            <TaxYearGap />
-          </div>
-        </div>
-      </section>
-
-      {/* Self-identification before the service inventory: the reader confirms
-          "this is me" before being asked to care what is included. slate-50 so
-          the marquee's white cards read against it. */}
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-            <div>
-              <Eyebrow>Sound familiar</Eyebrow>
-              <h2 className="text-2xl font-bold text-slate-900 text-balance sm:text-4xl">
-                Most people arrive here saying one of these
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-slate-600 sm:mt-6 sm:text-lg">
-                None of them is unusual, and none of them is a problem a generalist sees often enough to have a
-                routine for. All of them are ordinary weeks here.
-              </p>
-              <Link
-                href="#book"
-                data-cta="prompts_book"
-                data-cta-placement="sound_familiar"
-                data-cta-goal="form"
-                className={`${btnPrimary} mt-6 w-full sm:mt-8 sm:w-auto`}
-              >
-                Book a consultation
-              </Link>
-            </div>
-            <PromptMarquee prompts={clientPrompts} />
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>Fit</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Who this is for</h2>
-            <Prose>
-              <p>
-                If your situation is narrower than the general service, we have work built specifically around it:{" "}
-                <InlineLink href="/services/landlord-accountant">accounts and returns for landlords</InlineLink>,
-                standalone{" "}
-                <InlineLink href="/services/property-tax-advice">property tax advice</InlineLink> where you only
-                need a decision modelled, and the{" "}
-                <InlineLink href="/services/non-resident-landlord">non-resident landlord service</InlineLink> if you
-                live outside the UK.
-              </p>
-            </Prose>
-            <div className="mt-8 sm:mt-10 grid gap-5 sm:gap-6 md:grid-cols-2">
-              {audiences.map((a) => (
-                <div key={a.scale} className="rounded-xl bg-slate-50 p-6 sm:p-8">
-                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">{a.scale}</p>
-                  <h3 className="mt-2 text-base sm:text-lg font-bold text-slate-900">{a.title}</h3>
-                  <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{a.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="included" className="scroll-mt-24 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>What is included</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">What a property accountant covers</h2>
-            <p className="mt-4 text-sm sm:text-base text-slate-700">
-              Six areas of work. Most clients take all of them, some take one.
+          <Eyebrow>The work</Eyebrow>
+          <h2 id="what-a-property-accountant-does-for-you" className={h2}>
+            What a property accountant does for you
+          </h2>
+          <Prose>
+            <p>
+              A property accountant keeps the records, prepares the returns and plans the tax for people who own
+              rental and investment property, and we do all three as one service. In the UK the job is called a
+              property accountant; in the US you will see real estate accountants doing the same work. Most people
+              use several of the six services below.
             </p>
-            <Prose>
-              <p>
-                Rates and thresholds change every year, and several change again in April 2026 and April 2027. The
-                current position across income tax, stamp duty, capital gains and corporation tax is set out on our{" "}
-                <InlineLink href="/property-tax-rates">property tax rates page</InlineLink>, and the mechanics of
-                how the tax itself works are covered in our{" "}
-                <InlineLink href="/landlord-tax">landlord tax guide</InlineLink>.
-              </p>
-            </Prose>
-            <CoverageCards items={coverage} tone="white" />
+          </Prose>
+          <div className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 md:grid-cols-2">
+            {services.map((item) => (
+              <div key={item.title} className="flex flex-col rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100">
+                  <item.icon aria-hidden className="h-5 w-5" strokeWidth={1.75} />
+                </span>
+                <h3 className="mt-4 text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
+                <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{item.definition}</p>
+                <ul className="mt-4 space-y-2 border-t border-slate-200 pt-4 text-sm leading-relaxed text-slate-700">
+                  {item.lines.map((line) => (
+                    <li key={line.label}>
+                      <span className="font-semibold text-slate-900">{line.label}:</span> {line.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
-            <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
-              <p className="text-base font-bold text-slate-900 sm:text-lg">
-                Not sure which of these you actually need? That is what the first call is for.
-              </p>
-              <Link
-                href="#book"
-                data-cta="included_book"
-                data-cta-placement="what_is_included"
-                data-cta-goal="form"
-                className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
-              >
-                Book a consultation
-              </Link>
-            </div>
+          <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+            <p className="text-base font-bold text-slate-900 sm:text-lg">
+              Describe your properties and how they are owned, and the first call will pin down which of these
+              you need.
+            </p>
+            <Link
+              href="#book"
+              data-cta="included_book"
+              data-cta-placement="what_is_included"
+              data-cta-goal="form"
+              className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+            >
+              Book a consultation
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>The difference</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
-              Why a specialist property accountant rather than a general one
-            </h2>
-            <p className="mt-4 text-sm sm:text-base text-slate-700">
-              Nothing here is exotic. It is simply what you see when property is the only thing on the desk.
+          <Eyebrow>The difference</Eyebrow>
+          <h2 id="specialist-property-accountants-not-a-general-practice" className={h2}>
+            Specialist property accountants, not a general practice
+          </h2>
+          <Prose>
+            <p>
+              We are specialist property accountants: we work on property accounts and property tax and nothing
+              else, and we do not take on restaurants, retailers or consultants. A general practice can file a
+              correct return from what it is given. The gap is in the questions it does not ask, because a firm
+              that sees a few landlords a year rarely meets the same property problem twice.
             </p>
-            <CoverageCards items={whySpecialist} />
+            <p>
+              Plenty of firms call themselves property specialist accountants. When comparing accountants that
+              specialise in property, these are the four points worth testing, and the ones we raise first.
+            </p>
+          </Prose>
+          <ul className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 md:grid-cols-2">
+            <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
+              <span className="block font-bold text-slate-900">Mortgage interest</span>
+              {/* house_positions.md §4: interest earns a basic rate credit, capped by three limits, excess carried forward. */}
+              On property you own personally, the interest is not deducted from rent. It earns a basic rate tax
+              credit instead, which is capped in some years and carried forward. We track both each year, and our{" "}
+              <InlineLink href="/section-24">Section 24 guide</InlineLink> explains the rule.
+            </li>
+            <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
+              <span className="block font-bold text-slate-900">Repairs or improvements</span>
+              A like-for-like replacement is usually a repair you claim now; an extension is an improvement that
+              only counts on a sale. Each cost is classed as the money is spent, with the reasons kept on file.
+            </li>
+            <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
+              <span className="block font-bold text-slate-900">Joint ownership</span>
+              Joint owners are taxed on a default split unless an election changes it, and the election has to
+              match who really owns what. We check that the returns, the election and the title agree.
+            </li>
+            <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
+              <span className="block font-bold text-slate-900">Deadlines outside the tax return</span>
+              {/* house_positions.md §5 (60-day CGT return) and §3 (MTD quarterly updates). */}
+              A sale with tax to pay has its own 60-day return, and quarterly MTD updates sit outside the January
+              deadline. Those dates are tracked for you, and the{" "}
+              <InlineLink href="/landlord-tax">landlord tax guide</InlineLink> sets out the full calendar.
+            </li>
+          </ul>
 
-            <div className="mt-10 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
-              <p className="text-base font-bold text-slate-900 sm:text-lg">
-                Every client here is a landlord, investor or developer. Nothing else.
-              </p>
-              <Link
-                href="#book"
-                data-cta="difference_book"
-                data-cta-placement="the_difference"
-                data-cta-goal="form"
-                className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
-              >
-                Book a consultation
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Proof after the difference argument, before the process. */}
-      <TestimonialsSection description="Anonymised feedback from landlords and investors across every portfolio size." />
-
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>Getting started</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
-              How working together starts
-            </h2>
-            <ProcessTimeline steps={onboarding} />
+          <div className="mt-10 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+            <p className="text-base font-bold text-slate-900 sm:text-lg">
+              Not sure your current accountant checks these? Bring your last return to the first call and we will
+              tell you what we would look at.
+            </p>
+            <Link
+              href="#book"
+              data-cta="difference_book"
+              data-cta-placement="the_difference"
+              data-cta-goal="form"
+              className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+            >
+              Book a consultation
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>Fees</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">What it costs</h2>
-            <Prose>
-              <p>
-                Fees are fixed and quoted for the year, not billed by the hour, and the figure depends on the shape
-                of the work rather than a tier you pick off a page. We quote after the consultation, in writing,
-                before you commit to anything, and the quote holds for the year.
-              </p>
-              <p>
-                For an honest picture of what firms across the market charge, and what should and should not be
-                included at each level, read our guide to{" "}
-                <InlineLink href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">
-                  property accountant fees
-                </InlineLink>
-                .
-              </p>
-            </Prose>
+          <Eyebrow>Planning</Eyebrow>
+          <h2 id="property-tax-accountant-the-planning-side" className={h2}>
+            Property tax accountant: the planning side
+          </h2>
+          <Prose>
+            <p>
+              As your property tax accountant we plan the tax as well as report it, and the accounts and the
+              planning are one engagement, not two. Good property tax accounting starts before the return: most of
+              the bill is set by decisions made during the year, and by January they are history. We do not wait
+              for you to ask.
+            </p>
+            {/* Worked example. house_positions.md §4: 20% basic rate credit for 2026/27, rising to 22% from
+                2027/28; §7: property income rates 22/42/47% from 2027/28, so the higher rate wedge stays 20 points.
+                Arithmetic: £18,000 x 40% = £7,200; x 20% = £3,600; 2027/28: x 42% = £7,560, x 22% = £3,960,
+                gap £3,600 both years. */}
+            <p>
+              Here is what that means in numbers. A higher rate landlord pays £18,000 of mortgage interest on flats
+              held in their own name. If that interest could still be deducted, it would save £7,200 at 40%; the
+              basic rate credit gives £3,600 for 2026/27, so the restriction costs £3,600 a year. From 2027/28 the
+              credit rises to 22% and the higher rate on property income to 42%, and the gap stays the same.
+            </p>
+            <p>
+              That is why we model where the next purchase should sit before it is bought. Accounting for property
+              tax this way covers sales and gifts too, while there is still time to change the outcome.
+            </p>
+          </Prose>
+          <TaxYearGap />
+        </div>
+      </section>
 
-            {/* DECISION I is open: the designer asked for a fee figure across six
-                sessions and never received one, and their standing rule is never
-                to invent a price. So the section names what moves the number and
-                stops, with no placeholder and no stub. If a figure is supplied it
-                belongs immediately below this grid, as a third card row or a
-                single "typical range" line above the two ends. */}
-            <div className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 md:grid-cols-2">
-              {feeDrivers.map((driver) => (
-                <div key={driver.title} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-7">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900">{driver.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-700">{driver.body}</p>
-                </div>
-              ))}
-            </div>
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Investors</Eyebrow>
+          <h2 id="accountants-for-property-investors-and-investment-portfolios" className={h2}>
+            Accountants for property investors and investment portfolios
+          </h2>
+          <Prose>
+            <p>
+              We act as accountants for property investors once one or two lets have become a portfolio, when the
+              question shifts from whether the return is right to which property is earning its keep. As your
+              property portfolio accountant we produce figures for each property alongside the tax figures, so a
+              flat that loses money every year stops hiding inside the total.
+            </p>
+            <p>
+              Multi-property portfolio accounting is mostly about records: rent, interest and costs tracked per
+              property and per owner, refinancing followed so you know what the borrowing paid for, and the same
+              ledger feeding your quarterly MTD updates. Our guide to{" "}
+              <InlineLink href="/blog/portfolio-management/property-portfolio-accounting-tracking-profitability">
+                tracking profitability by property
+              </InlineLink>{" "}
+              shows how that works.
+            </p>
+            <p>
+              Many investors end up with property in their own name and in one or more companies. We act as
+              accountants for property company structures as well as for the individual, and plan the two
+              together. That joined up view is what property investment accountants should give a portfolio of
+              any size.
+            </p>
+          </Prose>
+        </div>
+      </section>
 
-            <div className="mt-6 grid gap-5 sm:gap-6 md:grid-cols-2">
-              <div className="rounded-xl border-l-2 border-emerald-500 bg-white p-6 ring-1 ring-slate-200/70 sm:p-7">
-                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-800">The simple end</p>
-                <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                  One property, clean records, an annual return and nothing else moving.
-                </p>
-              </div>
-              <div className="rounded-xl border-l-2 border-slate-300 bg-white p-6 ring-1 ring-slate-200/70 sm:p-7">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">The other end</p>
-                <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                  Ten properties split across personal ownership and two SPVs, with quarterly filing and monthly
-                  management reporting.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
-              <p className="text-base font-bold text-slate-900 sm:text-lg">
-                Want your number? Tell us the shape of the portfolio and we will quote it.
-              </p>
-              <Link
-                href="#book"
-                data-cta="fees_book"
-                data-cta-placement="fees"
-                data-cta-goal="form"
-                className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
-              >
-                Book a consultation
-              </Link>
-            </div>
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Fit</Eyebrow>
+          <h2 id="who-we-work-with" className={h2}>
+            Who we work with
+          </h2>
+          <Prose>
+            <p>
+              We work with landlords, property investors, commercial property owners and property companies, from
+              a single buy-to-let in your own name to a portfolio run through a limited company. Our accounting
+              services for property owners share one core, and these pages cover the commonest situations.
+            </p>
+          </Prose>
+          <ul className="mt-6 space-y-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+            <li>
+              <InlineLink href="/for/first-time-and-accidental-landlords">First-time and accidental landlords</InlineLink>
+              : you let a flat you once lived in or inherited, and the return has stopped being simple.
+            </li>
+            <li>
+              <InlineLink href="/for/property-spv-set-up">Setting up a property company</InlineLink>: you are
+              buying through a new SPV and want it right from the first purchase.
+            </li>
+            <li>
+              <InlineLink href="/for/moving-property-into-a-limited-company">
+                Moving property into a limited company
+              </InlineLink>
+              : you want the cost of incorporating worked out before you commit.
+            </li>
+            <li>
+              <InlineLink href="/for/selling-a-buy-to-let">Selling a buy-to-let</InlineLink>: an offer is on the
+              table and you want to know what you keep after tax.
+            </li>
+            <li>
+              <InlineLink href="/for/non-resident-landlords">Non-resident landlords</InlineLink>: you live abroad
+              and let property here, and our{" "}
+              <InlineLink href="/services/non-resident-landlord">non-resident landlord service</InlineLink> handles
+              the scheme and the UK returns.
+            </li>
+          </ul>
+          <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+            <p className="text-base font-bold text-slate-900 sm:text-lg">
+              If none of these quite fits, describe your position on the first call and you will get a straight
+              answer on whether we are the right firm.
+            </p>
+            <Link
+              href="#book"
+              data-cta="prompts_book"
+              data-cta-placement="sound_familiar"
+              data-cta-goal="form"
+              className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+            >
+              Book a consultation
+            </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Getting started</Eyebrow>
+          <h2 id="how-it-works" className={h2}>
+            How it works
+          </h2>
+          <p className="mt-4 text-sm sm:text-base text-slate-700">
+            It works in three stages, and the opening conversation is free.
+          </p>
+          <ProcessTimeline steps={onboarding} />
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Fees</Eyebrow>
+          <h2 id="how-our-fees-work" className={h2}>
+            How our fees work
+          </h2>
+          <Prose>
+            <p>
+              We charge fixed fees, quoted upfront, and you approve the fee before any work starts. There is no
+              hourly billing; the figure depends on the four things below, not a package picked from a list.
+            </p>
+          </Prose>
+
+          {/* DECISION I is open: the designer asked for a fee figure across six
+              sessions and never received one, and their standing rule is never
+              to invent a price. So the section names what moves the number and
+              stops, with no placeholder and no stub. If a figure is supplied it
+              belongs immediately below this grid, as a third card row or a
+              single "typical range" line above the two ends. */}
+          <div className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 md:grid-cols-2">
+            {feeDrivers.map((driver) => (
+              <div key={driver.title} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-7">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900">{driver.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">{driver.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <Prose>
+            <p>
+              If your circumstances change during the year, you hear about any extra fee before it is charged. For what
+              firms across the market charge and what each level should include, read our guide to{" "}
+              <InlineLink href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">
+                property accountant fees
+              </InlineLink>
+              .
+            </p>
+          </Prose>
+
+          <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+            <p className="text-base font-bold text-slate-900 sm:text-lg">
+              Send us an outline of what you own and how it is held, and we will come back with your fee.
+            </p>
+            <Link
+              href="#book"
+              data-cta="fees_book"
+              data-cta-placement="fees"
+              data-cta-goal="form"
+              className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+            >
+              Book a consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <FaqSection title="Questions people ask" faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Further reading</Eyebrow>
+          <h2 id="related-guides-and-services" className={h2}>
+            Related guides and services
+          </h2>
+          <Prose>
+            <p>
+              These guides go further into the subjects on this page: the{" "}
+              <InlineLink href="/landlord-tax">guide to landlord tax</InlineLink>, the{" "}
+              <InlineLink href="/section-24">finance cost restriction</InlineLink> in full,{" "}
+              <InlineLink href="/making-tax-digital-landlords">Making Tax Digital for landlords</InlineLink>,{" "}
+              <InlineLink href="/incorporation">incorporation</InlineLink>, and this year&apos;s{" "}
+              <InlineLink href="/property-tax-rates">property tax rates</InlineLink>.
+            </p>
+            <p>
+              Two sibling services cover narrower needs. For a single decision that needs modelling on its own,
+              such as a sale, a restructure or an inheritance question, see{" "}
+              <InlineLink href="/services/property-tax-advice">property tax advice from specialist advisors</InlineLink>;
+              for rental returns and accounts without the wider planning, see{" "}
+              <InlineLink href="/services/landlord-accountant">landlord accountants for UK rental income</InlineLink>.
+            </p>
+          </Prose>
+          <RelatedArticles className="mt-8" items={relatedItemsFromLinks(feedingPosts)} />
         </div>
       </section>
 
       <section id="free-tools" className="scroll-mt-24 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>Free tools</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Work out your own numbers first</h2>
-            <p className="mt-4 text-sm sm:text-base text-slate-700">
-              Free, and the figures are yours to take to any adviser.
-            </p>
-            <Prose>
-              <p>
-                If incorporation is the decision in front of you, our{" "}
-                <InlineLink href="/incorporation">incorporation feasibility analysis</InlineLink> models it properly
-                rather than in outline.
-              </p>
-            </Prose>
-            <div className="mt-8 sm:mt-10">
-              <CalculatorTabs />
-            </div>
-            {/* OWNER DECISION 2026-08-23: the tabs are the only calculator
-                surface this page carries. Both the 2x2 CalculatorLinkCards
-                module and the "Or open any of them on its own page" link list
-                that briefly replaced it are gone, asked for twice and
-                reaffirmed.
-
-                Know what that costs before restoring anything here.
-                `CalculatorTabs` renders <button role="tab">, not anchors, so
-                this page now emits ZERO in-body links to any /calculators/<slug>
-                page. That is the page-authored topical equity carve-out 5
-                protects and `calculator-tabs-crawl-path.test.ts` guards; this
-                route is listed in that test's OWNER_REMOVED_INBODY_LINKS with
-                the same reasoning. /calculators/mtd-checker is the one to watch:
-                it already takes zero in-body links from all 760 blog posts
-                (STRUCTURE_VS_COMPETITORS_2026-08-17.md:142). Reachability is
-                unaffected (SiteFooter ships per-tool links site-wide), so
-                nothing is orphaned. */}
+          <Eyebrow>Free tools</Eyebrow>
+          <h2 id="work-out-your-own-numbers-first" className={h2}>
+            Work out your own numbers first
+          </h2>
+          <p className="mt-4 text-sm sm:text-base text-slate-700">
+            Our free calculators give you a first number on the mortgage interest restriction, the cost of
+            incorporating, whether Making Tax Digital applies to you and profit per property. Bring the result to
+            the first call.
+          </p>
+          <div className="mt-8 sm:mt-10">
+            <CalculatorTabs />
           </div>
+          {/* OWNER DECISION 2026-08-23: the tabs are the only calculator
+              surface this page carries. Both the 2x2 CalculatorLinkCards
+              module and the "Or open any of them on its own page" link list
+              that briefly replaced it are gone, asked for twice and
+              reaffirmed.
+
+              Know what that costs before restoring anything here.
+              `CalculatorTabs` renders <button role="tab">, not anchors, so
+              this page now emits ZERO in-body links to any /calculators/<slug>
+              page. That is the page-authored topical equity carve-out 5
+              protects and `calculator-tabs-crawl-path.test.ts` guards; this
+              route is listed in that test's OWNER_REMOVED_INBODY_LINKS with
+              the same reasoning. /calculators/mtd-checker is the one to watch:
+              it already takes zero in-body links from all 760 blog posts
+              (STRUCTURE_VS_COMPETITORS_2026-08-17.md:142). Reachability is
+              unaffected (SiteFooter ships per-tool links site-wide), so
+              nothing is orphaned. */}
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Coverage</Eyebrow>
+          <h2 id="where-we-work" className={h2}>
+            Where we work
+          </h2>
+          <Prose>
+            <p>
+              We work with clients anywhere in the UK from one team, and five city pages describe local work:
+            </p>
+          </Prose>
+          <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm sm:text-base">
+            {cities.map((city) => (
+              <li key={city.href}>
+                <InlineLink href={city.href}>{city.label}</InlineLink>
+              </li>
+            ))}
+          </ul>
+          <Prose>
+            <p>
+              Wherever you are, the service, the accountants you deal with and the way we agree fees stay the same.
+              If you live outside the UK and let property here, the same applies, with the extra non-resident
+              filings handled for you.
+            </p>
+          </Prose>
         </div>
       </section>
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Talk to a property accountant about your portfolio"
-          description="A free consultation, a straight answer about whether you need us, and a fixed written quote if you do."
+          description="A free consultation, a straight answer about whether you need us, and a fixed fee quoted before any work starts if you do."
           proofPoints={[
-            { title: "Property-only specialists", detail: "Landlords, investors and developers, nothing else" },
-            { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },
-            { title: "24-hour response", detail: "Usually the same working day" },
+            { title: "Property-only specialists", detail: "Landlords, investors and property companies" },
+            { title: "Fixed fees, quoted upfront", detail: "You approve the fee before any work starts" },
+            { title: "A free first call", detail: "No obligation, and we say so if you do not need us" },
           ]}
           footnote="No obligation and no hard sell. If you do not need us, we will tell you."
         />
       </div>
-
-      <FaqSection
-        title="What landlords ask before they engage us"
-        faqs={faqs}
-        className="bg-white py-12 sm:py-16 lg:py-20"
-      />
-
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>Related reading</Eyebrow>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">More on choosing and working with one</h2>
-            <RelatedArticles className="mt-8" items={relatedItemsFromLinks(feedingPosts)} />
-          </div>
-        </div>
-      </section>
     </>
   );
 }
