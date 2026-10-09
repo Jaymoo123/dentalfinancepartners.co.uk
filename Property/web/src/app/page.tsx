@@ -27,8 +27,9 @@ import { Eyebrow, InlineLink } from "@/components/ui/page-blocks";
 export const metadata: Metadata = {
   // 2026-10-09, blueprint R3 and R26 (owner sign-off S1): the homepage gives up
   // "property accountants UK" to /services/property-accountant and carries the
-  // brand umbrella. The layout template appends " | Property Tax Partners".
-  title: "Accountants and Tax Advisers for UK Landlords and Investors",
+  // brand umbrella. The layout's title template does NOT apply to the root
+  // page (same segment as the layout), so the brand is in the string here.
+  title: "Property Tax Partners | Accountants for UK Landlords and Investors",
   description:
     // Ours (c218d7a6): shortened to fit the SERP snippet.
     "Specialist property accountants for UK landlords and investors. Section 24, MTD, incorporation and CGT planning. Fixed fees and free calculators.",
