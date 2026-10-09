@@ -2,6 +2,8 @@
 
 Scope: Property only (www.propertytaxpartners.co.uk, `Property/web`, Property's own Vercel project). No edits to `packages/web-shared` (the port system on the other sites is running against it). Nothing in this plan is built or deployed until the owner says go. Evidence for every claim is in `docs/property/commercial_recovery_2026-10-07/` (seven agent reports plus data) and in the 2026-10-07 entry of `docs/property/STATE.md`.
 
+**Superseded for WP1 on 2026-10-09.** The three service pages are now specified in `commercial_recovery_2026-10-07/SERVICE_PAGES_BLUEPRINT_2026-10-09.md`, which carries the owner's rulings of 2026-10-08 and 2026-10-09, the fresh Search Console, Bing and SERP reads, the query assignment and the gated order of work. Where this plan and the blueprint differ, the blueprint wins. Sections 1 to 3 and 6 to 8 here remain the background evidence.
+
 ## 0. Summary
 
 The commercial demand this site can win on Google is national, not local. Of about 15,600 monthly UK searches for hiring a property or landlord accountant, 14,100 (90 percent) belong to three pages: `/services/property-accountant`, `/services/landlord-accountant` and `/services/property-tax-advice`. Those three pages took 8, 27 and 187 impressions in the last 56 days and Google has not fetched them since 5 to 6 August. The city pages, which got all the attention in August, address under 700 searches a month between them.
