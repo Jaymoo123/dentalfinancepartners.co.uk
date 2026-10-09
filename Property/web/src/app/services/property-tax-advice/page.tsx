@@ -118,7 +118,7 @@ const services: ServiceItem[] = [
       {
         label: "The deadline",
         // house_positions.md §5 (60-day reporting where tax is due)
-        text: "where tax is due, you report and pay within 60 days of completion.",
+        text: "where tax is due, the return and the payment are both due 60 days after completion.",
       },
     ],
   },
@@ -442,7 +442,7 @@ const faqs: FaqEntry[] = [
     question: "Do you give advice on incorporation?",
     // house_positions.md §5 (incorporation relief must be claimed for transfers on or after 6 April 2026)
     answer:
-      "Yes, it is one of the questions we are asked most. We model the capital gains tax and stamp duty on moving the properties against the yearly saving, and show the year you would break even. Incorporation relief can defer the gain where your letting amounts to a business, but for transfers from 6 April 2026 it has to be claimed. Our buy-to-let incorporation guide explains the test and has a calculator for a first number.",
+      "Yes, it is one of the questions we are asked most. We model the capital gains tax and the stamp duty cost of moving the properties against the yearly saving, and show the year you would break even. Incorporation relief can defer the gain where your letting amounts to a business, but for transfers from 6 April 2026 it has to be claimed. Our buy-to-let incorporation guide explains the test and has a calculator for a first number.",
   },
   {
     question: "Is a property tax specialist worth it for a small portfolio?",
@@ -703,7 +703,7 @@ export default function PropertyTaxAdvicePage() {
             <p className={bodyText}>
               You need a property tax advisor when a decision is still open, and an accountant when a return is due.
               An accountant reports what has happened. We change what happens next, which is why a buy-to-let tax
-              advisor earns their keep before a purchase, a sale or a move into a company.
+              advisor earns their keep before a purchase, a disposal or an incorporation.
             </p>
             <div className="mt-8 overflow-x-auto rounded-xl bg-white p-5 ring-1 ring-slate-200/70 sm:p-6">
               <table className="w-full min-w-[32rem] border-collapse text-sm">
@@ -1018,7 +1018,7 @@ export default function PropertyTaxAdvicePage() {
           be ruled out and two ids cost one element. */}
       <div id="faqs" className="scroll-mt-24">
         <div id="faq" className="scroll-mt-24">
-          <FaqSection title="Questions about a consultation" faqs={faqs} />
+          <FaqSection title="Questions about a consultation" faqs={faqs} headingId="questions-about-a-consultation" />
         </div>
       </div>
 
@@ -1059,6 +1059,7 @@ export default function PropertyTaxAdvicePage() {
           the verify script's AI-tell list (check 10). */}
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
+          headingId="get-advice"
           title="Get specialist advice from a property tax adviser on the decision in front of you"
           description="Tell us the decision you are weighing up. We will scope the question, quote a fixed fee, and tell you up front if you do not need us."
           proofPoints={[

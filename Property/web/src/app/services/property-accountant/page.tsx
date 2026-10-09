@@ -293,7 +293,7 @@ const faqs: FaqEntry[] = [
   {
     question: "What does a specialist property accountant do?",
     answer:
-      "A specialist property accountant does the same work as any accountant for a landlord, but sees enough property cases to catch what a generalist misses. Typical examples are a refurbishment claimed as a repair when part of it was an improvement, a joint ownership split that does not match the paperwork, or a sale reported late. We work only on property, so these are everyday questions for us.",
+      "A specialist does the same work as any accountant for a landlord, but sees enough property cases to catch what a generalist misses. Typical examples are a refurbishment claimed as a repair when part of it was an improvement, a joint ownership split that does not match the paperwork, or a sale reported late. We work only on property, so these are everyday questions for us.",
   },
   {
     question: "Do landlords need an accountant?",
@@ -307,7 +307,7 @@ const faqs: FaqEntry[] = [
       "Often not. A single let with no mortgage and routine costs is a return many owners manage alone. Three things usually change that: a mortgage while you pay higher rate tax, because the interest restriction then costs real money; a refurbishment that mixes repairs with improvements; or qualifying income above £50,000, which brings quarterly Making Tax Digital filing from April 2026. The first call will show which side of that line you are on.",
   },
   {
-    question: "What is the difference between a property accountant and a regular accountant?",
+    question: "How is a property accountant different from a regular accountant?",
     answer:
       "The difference is depth on property rules, not the ability to file a return. A regular accountant can prepare a correct return from what you hand over. A property accountant also checks what you have not thought to mention: how the interest restriction applies, whether costs are repairs or improvements, how joint ownership is split, and what a sale or a move into a company will cost. Because we only do property, we raise those questions before you ask.",
   },
@@ -513,7 +513,7 @@ export default function PropertyAccountantPage() {
           </h2>
           <Prose>
             <p>
-              We are specialist property accountants: we work on property accounts and property tax and nothing
+              We are specialists: we work on property accounts and property tax and nothing
               else, and we do not take on restaurants, retailers or consultants. A general practice can file a
               correct return from what it is given. The gap is in the questions it does not ask, because a firm
               that sees a few landlords a year rarely meets the same property problem twice.
@@ -758,7 +758,7 @@ export default function PropertyAccountantPage() {
         </div>
       </section>
 
-      <FaqSection title="Questions people ask" faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+      <FaqSection title="Questions people ask" faqs={faqs} headingId="questions-people-ask" className="bg-white py-12 sm:py-16 lg:py-20" />
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
@@ -851,7 +851,8 @@ export default function PropertyAccountantPage() {
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
-          title="Talk to a property accountant about your portfolio"
+          headingId="talk-to-us"
+          title="Talk to us about your portfolio"
           description="A free consultation, a straight answer about whether you need us, and a fixed fee quoted before any work starts if you do."
           proofPoints={[
             { title: "Property-only specialists", detail: "Landlords, investors and property companies" },

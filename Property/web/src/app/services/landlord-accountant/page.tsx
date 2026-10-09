@@ -716,7 +716,7 @@ export default function LandlordAccountantPage() {
       {/* `FaqSection` renders its own H2 and takes no id for it, so the
           anchor sits on the wrapper as before. */}
       <div id="faqs" className="scroll-mt-24">
-        <FaqSection title="Questions landlords ask" faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+        <FaqSection title="Questions landlords ask" faqs={faqs} headingId="questions-landlords-ask" className="bg-white py-12 sm:py-16 lg:py-20" />
       </div>
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
@@ -768,6 +768,7 @@ export default function LandlordAccountantPage() {
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
+          headingId="speak-to-us"
           title="Speak to an accountant about your rental income"
           description="Tell us about your rental income: what you own and how it is held. We will look at what the current set-up is costing you, then quote a fixed fee."
           proofPoints={[

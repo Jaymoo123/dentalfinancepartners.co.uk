@@ -283,9 +283,19 @@ class Page:
         """Page copy for the deferred-facts check: main text minus the shared
         claim-carrying components (blueprint 12.2 check 8). With exclude_faq the
         FAQ section is dropped too (the register probe measures body copy)."""
-        keep = [s["text"] for s in self.sections if not SHARED_CLAIM_SECTIONS.search(s["heading"])
+        keep = [s["text"] for s in self.sections if not self.is_shared_section(s)
                 and not (exclude_faq and re.search(r"\bquestions?\b|\bfaq\b", s["heading"], re.I))]
         return " ".join(keep)
+
+    @staticmethod
+    def is_shared_section(s: dict) -> bool:
+        """A section rendered by a shared component: matched by heading, or by
+        the lead form's own boilerplate inside it (the panel's heading is page
+        copy and changes per page, the form under it does not)."""
+        if SHARED_CLAIM_SECTIONS.search(s["heading"]):
+            return True
+        t = s["text"]
+        return ("Full name" in t and "privacy policy" in t.lower()) or "Request callback" in t
 
 
 def _flatten_nodes(blocks) -> list[dict]:
@@ -608,7 +618,7 @@ def run_checks(page: Page, slug: str, *, assignment: dict, gsc_rows: list[dict],
             if label.startswith("pound figure") and not FEE_CONTEXT.search(ctx):
                 continue
             q.append(f"{label}: \"...{_ws(ctx)}...\" (under: {section_of(page, _ws(ctx)[:30])})")
-    excluded = [s["heading"] for s in page.sections if SHARED_CLAIM_SECTIONS.search(s["heading"])]
+    excluded = [s["heading"] for s in page.sections if page.is_shared_section(s)]
     rep.add(8, "Deferred facts (R7) in page copy", "BLOCK" if q else "PASS",
             f"{len(q)} hits; sections excluded as shared components: {', '.join(excluded) or 'none'}", q)
 
