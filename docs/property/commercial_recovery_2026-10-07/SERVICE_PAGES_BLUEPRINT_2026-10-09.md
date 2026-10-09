@@ -36,6 +36,19 @@ Google already treats the site as relevant for "property accountant" and its fam
 | R11 | Nothing new that emails, pings or interrupts the owner. The reads in §9 are run and written to this folder, not mailed. | `standard_terms` §7 |
 | R12 | `packages/web-shared` is not edited for this work. Every change is under `Property/`. If a shared component blocks something, wrap or override it in Property. | 7 Oct plan scope line |
 | R13 | Honest target: top 5 on the two head terms within a quarter from on-page work. Number 1 depends on the deferred facts and on off-site authority (domain rank 124, 53 referring domains, against 80 to 1,527 for the winners). Do not promise #1 in any doc or read. | fresh read 2026-10-09 |
+| R14 | Tax-advice page: title carries both "property tax advice" and "specialist" ("Property Tax Advice \| Specialist Property Tax Advisers UK \| Property Tax Partners" or the Bing-clean variant); H1 is "Property tax advice". The URL phrase and the ChatGPT citation stay intact. | owner 2026-10-09, assignment Q1 |
+| R15 | "Landlord tax advice" and "tax advice for landlords" (351 impressions, currently on `/landlord-tax` at 74 to 89) belong to `/services/property-tax-advice`. Advice intent goes to the advice page; the guide keeps the explainer queries. | owner 2026-10-09, Q2 |
+| R16 | City districts (Headingley, Horsforth, Erdington, Westminster, Camden, EC1, Farringdon, Tower Hamlets, Hornchurch, Wallington) belong to the parent city page's coverage, not to WP4. | owner 2026-10-09, Q3 |
+| R17 | West Midlands is named in the Birmingham page's coverage sentence; Cannock is not named anywhere. Neither goes to WP4. | owner 2026-10-09, Q4 |
+| R18 | When a city form and an audience form collide ("capital gains tax accountant london", "accountant for letting agents leicester"), the city page wins. The one exception is the non-resident landlord, whose client is abroad: those forms go to `/services/non-resident-landlord`. | owner 2026-10-09, Q5 |
+| R19 | Generic cost queries with no property word ("how much do accountants charge", 2,480 a month) are excluded. They are not this niche. | owner 2026-10-09, Q6 |
+| R20 | Generic "accountant in <city>" queries are city forms. Cities with no page go to the WP4 list ranked by Search Console impressions, not by volume (Luton's 720 a month is generic accountancy demand, not ours). | owner 2026-10-09, Q7 |
+| R21 | Commercial property and development accountancy get one sentence in the property-accountant body, and only if `house_positions.md` or the firm's services list says the firm does that work. Logged as a page gap in §11, not built. | owner 2026-10-09, Q8 |
+| R22 | "Property incorporation tax advice" belongs to `/for/moving-property-into-a-limited-company`, not to the `/incorporation` guide. Hire intent goes to the audience page. | owner 2026-10-09, Q9 |
+| R23 | "What does a specialist property accountant do?" is a FAQ on the property-accountant page (it is a People Also Ask entry) even though the 7 Oct universe tagged it career. | owner 2026-10-09, Q10 |
+| R24 | "Property tax accounting" and "property accounting" forms live in body copy only, never in a heading. | owner 2026-10-09, Q11 |
+| R25 | The hire-intent filter includes "tax advice", "accountancy" and "tax expert". | owner 2026-10-09, Q12 |
+| R26 | The homepage title is brand plus what the firm is, with no query target: "Property Tax Partners \| Specialist Accountants and Tax Advisers for UK Landlords and Property Investors" (shortened to fit 60 characters in the title tag, full form in the H1 or opening). The homepage keeps brand queries only. | owner 2026-10-09, Q13 |
 
 ## 2. What the data established (the facts the build rests on)
 
@@ -64,7 +77,7 @@ The shared shape, then the per-page tables. The teardown (`TEARDOWN_2026-10-09.m
 8. **How our fees work** (H2): the fees section slot. Until F3: how fees are set, what drives them, that a figure is given before any work starts, no numbers. When F3 arrives: the band or "from" figure goes here and nowhere else.
 9. **Why a specialist** (H2): the firm's specialism statement, taken from `entity.firm` wording (D3 ruling: "We work only on property tax"), the Section 24 / MTD / incorporation / CGT competence in one paragraph each with a link to the pillar guide. No "every client is..." claim, no "24-hour guarantee".
 10. **Questions people ask** (H2): the FAQ, 8 to 12 items, each question phrased as the People Also Ask entry it answers, each answer 40 to 90 words, answer first. The visible list and the `FAQPage` schema must be identical strings. Questions assigned to this page in `PAA_2026-10-09.csv` and the `faq` rows of the assignment table.
-11. **Related guides** (H2): 4 to 6 links to the pillar guides and the strongest posts in the family, by their real titles. These are the page's outbound equity.
+11. **Related guides** (H2): 4 to 6 links to the pillar guides and the strongest posts in the family, by their real titles. These are the page's outbound equity. The same section carries one sentence linking the two sibling service pages by their H1s ("If your question is about the tax rather than the accounts, see our property tax advice service"), so the three pages form a closed set for Google and for a reader who landed on the wrong one.
 12. **Contact block slot**: the `LeadCTAPanel` that already closes the page (id `book`), unchanged. The phone, hours and address lines are added here when F1, F2 and F6 arrive, not before.
 13. **Local coverage** (short H2 or a sentence in the opening): links to the five `/locations/<city>` pages by city name. This is the only place a city is named on a service page.
 
@@ -148,13 +161,13 @@ Each step names what must be true before the next starts. One branch for the who
 1. **Confirm inputs are current.** If more than 14 days have passed since 2026-10-09, re-pull Search Console (`agents/utils/gsc_client_oauth.py` with `GSC_SERVICE_ACCOUNT_JSON` in the environment) and re-run the 12 SERPs. Record the date in this document's header.
 2. **Freeze the assignment table.** The owner has approved the families (R2); the per-query CSV is the working truth. Any new query found at step 1 is added with an owner and a placement before writing starts.
 3. **Bing veto.** Run `scripts/_bing_veto_audit_2026_08_05.py` (usage in the audit §5) over every proposed title and H1 for the three pages and the give-up pages. A veto blocks the string; choose the next natural variant.
-4. **Research pack per page** (REWRITE_PROGRAM §9.5): the assignment rows for the page, the PAA questions, the teardown rows for the page's term, `house_positions.md`, the current page's rendered copy, the chatGPT-cited sentences for the tax-advice page.
-5. **Write** (R9): one Opus or Fable agent per page, in parallel, batch size 1. Output is the full route file, copy and schema, preserving everything the audit §6 lists. No em-dashes in copy. Every number cites a `house_positions.md` section.
-6. **QA, two tracks, both Opus, blocking** (REWRITE_PROGRAM §9.9): factual against house positions and against the deferred-facts rule (any phone, hours, price, body or named-person claim fails the page); editorial (no cross-page sameness, no AI tells, no pipeline artefacts, every FAQ question matches its schema string, every H3 matches its offer name).
-7. **Coverage floor** (`track2_query_coverage.py`, run against the assignment table's `placement` column, R5). A page fails if any `title`/`h1`/`h2`/`faq` row for it is absent; `coverage_statement` rows pass on the coverage sentence; `exclude` rows must be absent.
+4. **Language pass, once for the cluster** (REWRITE_PROGRAM §9.11, §12.1 below): measure the teardown's top-10 pages and our owner-approved copy, write `ANSWER_PATTERN_SPEC_services_2026-10.md`. Nothing is written until this exists; it is what the editorial checks are run against.
+5. **Research pack per page** (REWRITE_PROGRAM §9.5): the assignment rows for the page, the PAA questions, the teardown rows for the page's term, `house_positions.md`, the current page's rendered copy, the answer-pattern spec, the chatGPT-cited sentences for the tax-advice page, the §5 link sentences that will point at the page (so the page answers what the anchors promise).
+6. **Write** (R9): one Opus or Fable agent per page, in parallel, batch size 1. Output is the full route file, copy and schema, preserving everything the audit §6 lists. No em-dashes in copy. Every number cites a `house_positions.md` section.
+7. **Verify, the §12 harness, looped.** Deterministic layer (§12.2) on the built HTML, then the contextual reviews (§12.3), then the deterministic layer again after fixes. Maximum three loops per page; anything still open goes to the owner as a question in the review pack (§12.5), never accepted silently. The coverage floor (R5: against the assignment table's `placement` column, not literal presence) and the equity-preservation check are part of the deterministic layer.
 8. **Site wiring:** header links server-rendered (WP1.1), the give-up pages' body links (§4, links only at this step, no title changes yet per R6), the 30-plus links in (§5), `llms.txt` and `llms-full.txt` lines (audit §4), the services index page's cards if their copy references the old titles.
-9. **Build gates, in this order, all green before a human read:** `npx tsc --noEmit -p Property/web/tsconfig.json`; `cd Property/web && npx vitest run`; `npm run build` in `Property/web`; the no-JS render check (`curl -s <page> | grep` for the H1, every FAQ question, the services list and the header links); the JSON-LD parse check (the audit names the script); `python scripts/check_dependency_closure.py`; `python scripts/predeploy_gate.py` (the audit names its flags); the link audit script. Every command and its expected output is listed in the audit §5.
-10. **Human read:** the owner walks the three pages and the header locally or on screenshots (desktop 1280, phone 390). Build nothing further until he approves.
+9. **Build gates, in this order, all green before a human read** (the §12.2 harness report is the first of them): `npx tsc --noEmit -p Property/web/tsconfig.json`; `cd Property/web && npx vitest run`; `npm run build` in `Property/web`; the no-JS render check (`curl -s <page> | grep` for the H1, every FAQ question, the services list and the header links); the JSON-LD parse check (the audit names the script); `python scripts/check_dependency_closure.py`; `python scripts/predeploy_gate.py` (the audit names its flags); the link audit script. Every command and its expected output is listed in the audit §5.
+10. **Human read:** the owner receives the review pack (§12.5) per page: the sixteen lines, the section diffs, the open reviewer disagreements, the link sentences, and screenshots (desktop 1280, phone 390). Build nothing further until he approves.
 11. **Deploy** (R10): the owner deploys once from the laptop. Then, in this order, the same day: request indexing for the three service pages and the homepage via Search Console (manual, or `agents/utils/gsc_client_oauth.py` has the Indexing scope); IndexNow drain for the changed URLs; the `site_flags` and `monitored_pages` SQL the 7 Oct plan's DONE_E lists (owner-run); record the deploy SHA and time in `docs/property/STATE.md`.
 12. **Wait.** No further Property deploys for 14 days unless something is broken. The September crawl trough followed 31 deploys in ten days.
 13. **Day 14 read** (§9). If the three pages have been fetched and appear for the family phrases, execute §4's title changes on the Belfast and Manchester posts and the city pages (R6), one deploy, then wait again.
@@ -182,6 +195,9 @@ Each step names what must be true before the next starts. One branch for the who
 | Shared component change leaks to other sites | R12: nothing in `packages/web-shared`. |
 | The deferred facts never arrive | The pages work without them (top-5 target). The fees section and contact block are built as slots so adding them later is a copy change, not a rewrite. |
 | CI noise | One push per milestone; `content-quality-check.yml` runs on every push and emails on failure; run the gates locally first. |
+| Fee queries move to a page with no fee figure | Without F3 the fees section says how fees are set and that a figure is given before work starts, with no number. "Landlord accountant fees" and its family (150 impressions) may stay on the cost blog post, which keeps its informational copy. Expected, not a failure; the week-4 read records it. The fee queries move when F3 arrives. |
+| Blog posts published during the 14-day window are deploys | Each laptop publish is a deploy of the whole branch. Either batch the posts before the launch deploy or accept the deploys and list them in the day-14 read so the crawl pattern can be read against them. Owner's call at step 11. |
+| Reviewer taste replaces the spec | §12: every editorial judgement is made against the written answer-pattern spec with quotes, by two reviewers who do not see each other, and only their disagreements reach the owner. |
 
 ## 9. Reads (what "worked" means, written down before the deploy)
 
@@ -210,3 +226,94 @@ Every page is a committed file: `git revert` the deploy commit, redeploy, reques
 | D4 and D5 of the 7 Oct plan (move the 12 off-topic posts out of the hub; the request-indexing test) | owner | WP2, not this package |
 | Manchester post's redirect state | the audit | whether it is touched in §4 |
 | Cities with demand and no page | week-4 read | WP4 |
+| Commercial property and development accountancy: no page, 220 searches a month (R21) | owner | whether a page is wanted later; one body sentence now if the firm does the work |
+| Register targets for hire-intent service pages (Appendix F measured the SDLT guide cluster, not this one) | step 4 language pass | the numbers in §12.1 |
+
+## 12. Verification harness (how we know the writing is right, not just present)
+
+Owner, 2026-10-09: "a valid, potentially dynamic way that we can verify that the work that has been done is accurate and it's what we want whilst taking the wider context of the page / portion of it... writing style, language etc." The engine's existing floors (REWRITE_PROGRAM §4, §9.9) check facts, links, arithmetic and phrase coverage on `.md` posts. They do not check whether a sentence belongs where it sits, whether the page sounds like the firm, or whether a section earns its place. And the three service pages are `.tsx` route files, not `.md`, so none of the existing scripts read them. This section closes both gaps. Four layers, in this order, each one re-runnable on every draft (that is the "dynamic"): a written spec of what we want, a deterministic script on the rendered page, two independent contextual reviews against the spec, and a review pack that makes the owner's read cheap.
+
+### 12.1 The spec: what "what we want" means, written down first
+
+`ANSWER_PATTERN_SPEC_services_2026-10.md`, one page, produced at step 4 of §6 by the language pass (REWRITE_PROGRAM §9.11), before any page is written. It has four parts.
+
+1. **Measured targets.** The probe in §12.2 (check 14) is run over the teardown's top-10 pages for the 12 head terms (strip nav, header, footer) and over our own pages that the owner has signed off (homepage, `/about`, the three current service pages, the two frozen pages S1 and S2). It reports words, mean sentence length, Flesch reading ease, share of question-form headings, "you/your" per 1,000 words, "we/our" per 1,000 words, statute references per 1,000 words, jargon nouns per 1,000 words, numbers per 1,000 words, paragraphs over 80 words. The spec records the winners' median and our current number side by side and sets the target as a range, not a point. Interim targets until measured, from Appendix F of `STRUCTURE_VS_COMPETITORS_2026-08-17.md` (the SDLT guide cluster, so a floor not a fit): 1,300 to 2,000 words, "you/your" at or above 25 per 1,000, "we/our" 8 to 12 per 1,000, statute references at or below 2 per 1,000 on a service page (the guides carry the depth), question headings 20 to 35 percent.
+2. **Answer patterns with examples.** For each of: opening a section (answer first or context first), turning a question into a heading, where the number goes, handling "it depends", handing off to the call, what the winners leave out. One real winner sentence, one of ours on the same point, and the rewrite rule. Quoted, never paraphrased.
+3. **Owner-voice examples.** Twelve sentences from copy the owner wrote or approved in the 23 Aug review passes (STATE.md 0.22a to 0.22c name the files) and from `/about`. These define "sounds like us". The reviewer in §12.3 compares against these, not against taste.
+4. **Do-not-copy list.** Winner habits we reject by ruling: aggregate ratings we cannot back, "24-hour response" style guarantees, "every client gets a named partner" claims, fee figures (R7), local-pack bait, any sentence that only exists for a query (R5).
+
+### 12.2 Deterministic layer: `scripts/service_page_verify.py` (to build, stdlib only)
+
+Input is the rendered page, not the source: `Property/web/.next/server/app/services/<slug>.html` after `npm run build` (the file Google and a no-JS reader get), with `--url http://localhost:3000/services/<slug>` as the alternative. It extracts the same fields dict `track2_query_coverage.load_page_fields` produces (title, description, h1, h2s, h3s, faq questions and answers, body text, internal hrefs, JSON-LD) so the existing matcher and `qa_verdict.py` can be reused with the extracted text passed in. Output: `VERIFY_<slug>_<timestamp>.md` with one row per check, PASS / WARN / BLOCK, and for every WARN or BLOCK the offending sentence quoted with the heading it sits under. BLOCK stops the loop; WARN goes to the review pack. The checks, numbered so a reviewer can cite them:
+
+| # | Check | Rule | Verdict |
+|---|---|---|---|
+| 1 | Title | 50 to 60 characters, family head phrase present, brand last, passes the Bing veto list from step 3 | BLOCK |
+| 2 | H1 | exactly one, no pipe, equals the assignment table's `h1` phrase in natural form | BLOCK |
+| 3 | Heading hierarchy | H2 then H3, no skipped levels, every H2 has an `id`, the ids match the anchors in `llms.txt` lines | BLOCK |
+| 4 | FAQ parity | visible questions and answers are byte-identical to the `FAQPage` schema strings; 8 to 12 items; each answer 40 to 90 words | BLOCK |
+| 5 | Offer parity | each "What we do" H3 is byte-identical to a `hasOfferCatalog` offer name; same count; no `price` field | BLOCK |
+| 6 | Coverage floor (R5) | every assignment row with placement `title`, `h1`, `h2`, `faq`, `fees_section` matches in that field (existing matcher, numbers literal); `body` rows match anywhere; `coverage_statement` rows pass on the coverage sentence; `exclude` and `city_page` rows for other pages are absent as strings | BLOCK |
+| 7 | Equity preservation (§9.9 check 5) | every query the page had any impression for in `GSC_FRESH_2026-10-09_hire_intent_90d.csv` still matches somewhere; names each one that stopped | BLOCK |
+| 8 | Deferred facts (R7) | regex for phone-number shapes, `£` followed by digits, "open", "Mon", "9am" style hours, "guarantee", "within 24 hours", "every client", "ICAEW"/"ACCA"/"CIOT" membership claims, a person's name not in `house_positions.md` | BLOCK |
+| 9 | Stuffing | no family phrase or its variants above 6 occurrences per 1,000 words; no phrase from the assignment table more than twice in one paragraph; "near me", "uk" appearing more than once outside the title | BLOCK |
+| 10 | AI tells and house style | em-dash (U+2014) anywhere; the lexicon ("delve", "navigate the complexities", "in today's", "it's important to note", "whether you're ... or ...", "look no further", "seamless", "tailored solutions", "unlock", "elevate", "robust", "leverage", rule-of-three triplets ending a paragraph, a paragraph that opens with a rhetorical question and answers it with "The answer is"); count and quote | BLOCK on em-dash, WARN otherwise |
+| 11 | Cross-page sameness | shared 8-word sequences between the three service pages, and between each service page and the five city pages and the services index; list each shared sequence; more than 3 shared sequences between any pair is a BLOCK | BLOCK |
+| 12 | Cross-surface consistency | the service names in the "What we do" H3s, the services index cards, the homepage services section, the header labels, the city pages' service lists and `llms.txt` agree (the H3 is the canonical string; the others may be shorter but must be a prefix or the same words) | WARN |
+| 13 | Links | every internal href resolves (`track2_link_audit.py` logic); every `#anchor` exists; the two sibling service pages and the five city pages are linked once each; at least 4 pillar-guide links; no link in the opening paragraph | BLOCK |
+| 14 | Register probe | the measures in §12.1 part 1 for this page against the spec's ranges; outside the range is WARN, not BLOCK (a spec is a target; the reviewer decides) | WARN |
+| 15 | Section weight | words per H2 section; any section under 60 or over 350 words of body; any paragraph over 80 words; a section whose first sentence does not contain a verb from its heading's subject (crude "answers its heading" test) | WARN |
+| 16 | No-JS render | H1, opening paragraph, every FAQ question, every H3 and the header's three service links present in the static HTML with no script execution (grep on the file, not a browser) | BLOCK |
+| 17 | JSON-LD | parses; one graph; `Service.@id` and `provider.@id` resolve to nodes that exist (`/#organization` on the homepage build); no `LocalBusiness`, no `aggregateRating`; `BreadcrumbList` unchanged from the snapshot | BLOCK |
+| 18 | Cited sentences (tax-advice page only) | each sentence in `BING_G_chatgpt_entries.csv`'s cited set is present verbatim, or its fact is present in the same section (a listed fact map, one row per sentence, approved at step 4) | BLOCK |
+| 19 | Length | body words excluding FAQ between 1,600 and 2,400 (§3.1) | WARN |
+| 20 | Diff against snapshot | the list of facts (numbers, named services, named audiences, linked guides) present in `snapshots_2026-10-09/<slug>.html.gz` and absent from the new page, so nothing is lost silently; the writer must mark each as dropped-on-purpose with a reason or restore it | WARN, BLOCK if unmarked |
+
+Self-test: the script carries a `--selftest` that runs every check against the 9 Oct snapshots and must report the known state (for example, check 16 passes today for the FAQ but fails for the header links, which is the WP1.1 reason). A check that cannot tell the old page from the new one is not a check.
+
+### 12.3 Contextual layer: section-in-page review, two readers, fixed questions, quotes not scores
+
+The thing the owner is asking for, and the thing a checklist cannot do: is this sentence right here, in this page, for this reader. Two Opus or Fable reviewers per page, run in parallel, neither sees the other's output, neither sees the writer's notes. Each gets the whole rendered page, the spec (§12.1), the research pack, the assignment rows, and the 9 Oct snapshot of the old page. Each answers the fixed questions below, section by section, with quotes. A reviewer may not answer with a score or an adjective; every finding is a quoted sentence plus the rule or spec line it breaks plus the proposed replacement sentence. Findings are typed BLOCK (fact, claim, ruling breach), FIX (clear improvement with a replacement) or NOTE (judgement, for the owner).
+
+Per section, in reading order, with the section's heading and its position in the page stated:
+
+1. Does the first sentence answer what the heading promises? Quote the heading and the first sentence. If not, write the sentence that would.
+2. Which one sentence in this section could be deleted with no loss to the reader? Name it, or state "none" and why. (Forces the padding question every time.)
+3. Does any sentence here repeat a point made elsewhere on the page? Quote both and say which should go.
+4. Does any sentence exist for a query rather than a reader? Quote it, name the query from the assignment table, and either rewrite it so it reads as prose or move the phrase to the coverage statement.
+5. Does this section contradict the opening paragraph, the FAQ, the schema, `house_positions.md`, or the old page's facts (§12.2 check 20 list)? Quote both sides.
+6. Would the firm say this? Compare against the owner-voice examples in the spec: quote the nearest owner sentence and say whether this one matches its register (direct address, plain nouns, one claim per sentence, no hedging stack).
+7. What does the reader still not know at the end of the section that the heading implied they would? One line.
+8. Is the section in the right place? If a reader who just finished the previous section would not ask this question next, say where it belongs.
+
+Per page, after the sections:
+
+9. The reader walk, three personas, each one paragraph: a first-time landlord with one flat; an eight-property owner deciding on a company; an accidental landlord about to sell. For each: where on the page they would stop reading, what they would click, what they could not find, whether they would book the call.
+10. The ten-second read: title, H1, opening paragraph, H2 list, first FAQ. Does a person who reads only those know what the page offers, for whom, and what to do next?
+11. Register verdict against the spec's measured targets and the probe output (§12.2 check 14), with the three sentences that most pull the page away from the target quoted.
+12. One sentence: the single change that would most improve the page.
+
+Resolution: the two reviewers' outputs are merged by a third agent into one list. Items both raised are applied by the writer. Items one raised and the other did not are the disagreements: BLOCK-typed ones are applied, FIX-typed ones are applied unless the writer objects with a reason, NOTE-typed ones go to the owner in the review pack untouched. A finding is closed only when the deterministic layer re-runs green on the fixed file. This is the §9.9 adversarial pass, made specific to sections and made to produce replacements rather than opinions.
+
+### 12.4 Verdict persistence (so an edit after the review cannot ship unreviewed)
+
+`qa_verdict.py` keys a verdict to the reviewed file's sha256 and `predeploy_gate.py` blocks a deploy when the file has changed since. The same mechanism is used here with the route file (`Property/web/src/app/services/<slug>/page.tsx`) as the keyed file. Batch name `WP1-services`. The gate's `--qa-batch WP1-services` flag then makes any post-review edit, including a one-word change by hand, re-run the loop. If `qa_verdict.py` rejects a non-`.md` path, the audit §5 names the one-line change (the path check) and it is made under `scripts/`, not worked around.
+
+### 12.5 The review pack: making the owner's read cheap and complete
+
+Per page, `REVIEW_<slug>_<date>.md`, in this order, written so it can be read on a phone:
+
+1. **The sixteen lines**: title, H1, opening paragraph, the coverage sentence, each H2 with its first sentence, the FAQ questions, the call-to-action lines. If these are right the page is mostly right.
+2. **Old versus new by section**: for each H2, the old section's first and last sentence and the new section's, plus the §12.2 check 20 list of facts dropped and the reason for each.
+3. **What the harness flagged and was left** (every WARN from the last run, with the quote and why it stands).
+4. **Reviewer disagreements** (the NOTE items from §12.3), each with the two positions and the quoted sentence.
+5. **The link sentences** pointing at this page from §5, before and after text, grouped by source type.
+6. **Screenshots**, 390 and 1280, full page.
+7. **The questions**, if any: numbered, one line each, with the recommended answer first, so the owner can reply with numbers.
+
+The owner's approval is per page, in writing, against a named SHA of the route file. A later edit invalidates it (§12.4).
+
+### 12.6 What this costs and what it does not need
+
+The script is a day's work and runs in seconds; the two reviews are two Opus calls per page per loop, at most six per page; the language pass is one Opus call over about 20 fetched pages plus the probe. It needs no new service, no monitor, no email (R11). It does not replace the owner's read; it makes the read a list of decisions rather than a proofread.
+
