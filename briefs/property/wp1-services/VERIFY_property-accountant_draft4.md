@@ -1,7 +1,7 @@
 # Verify `/services/property-accountant`
 
 Source: `/home/user/dentalfinancepartners.co.uk/Property/web/.next/server/app/services/property-accountant.html`  
-Run: 2026-10-09 11:32 UTC  
+Run: 2026-10-09 11:36 UTC  
 Result: **0 BLOCK, 5 WARN** over 20 checks
 
 | # | Check | Verdict | Detail |
@@ -11,7 +11,7 @@ Result: **0 BLOCK, 5 WARN** over 20 checks
 | 3 | Heading hierarchy | PASS | 12 H2, 32 H3; 0 H2 without an id |
 | 4 | FAQ parity (visible == schema) | PASS | 12 items, 0 answers absent from HTML |
 | 5 | Offer parity (H3 == hasOfferCatalog) | PASS | 6 offers, 32 H3 |
-| 6 | Coverage floor (assignment placements, R5) | PASS | 60/60 rows placed; coverage sentence found; 0 leaks |
+| 6 | Coverage floor (assignment placements, R5) | PASS | 56/56 rows placed; coverage sentence found; 0 leaks |
 | 7 | Equity preservation (pre-rewrite GSC queries still match) | PASS | 1 queries had impressions; 0 lost |
 | 8 | Deferred facts (R7) in page copy | PASS | 0 hits; sections excluded as shared components: Work out your own numbers first, Talk to us about your portfolio |
 | 9 | Stuffing | PASS | 0 blocks, 0 warnings |
@@ -19,12 +19,12 @@ Result: **0 BLOCK, 5 WARN** over 20 checks
 | 11 | Cross-page sameness (8-grams) | WARN | against 9 pages |
 | 12 | Cross-surface consistency (offer names) | WARN | 12 mismatches |
 | 13 | Links | PASS | 43 body links, 0 unresolved |
-| 14 | Register probe | WARN | words 1990; sentence_len 21.2; flesch 58.0; question_headings_pct 27.3; you_per_1k 36.7; we_per_1k 27.1; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 16.1 |
+| 14 | Register probe | WARN | words 1967; sentence_len 21.2; flesch 57.9; question_headings_pct 27.3; you_per_1k 36.6; we_per_1k 26.9; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 16.3 |
 | 15 | Section weight | WARN | 4 notes |
 | 16 | No-JS render | PASS | 99 header links in HTML |
 | 17 | JSON-LD | PASS | AccountingService x1, ImageObject x1, PostalAddress x1, Country x2, Organization x1, PropertyValue x1, Service x1, Audience x1, OfferCatalog x1, Offer x6, FAQPage x1, Question x12, Answer x12, BreadcrumbList x1, ListItem x3 |
 | 18 | Cited sentences (ChatGPT) | PASS | not applicable to this page |
-| 19 | Length (body words excluding FAQ) | PASS | 2368 words (3278 incl. FAQ) |
+| 19 | Length (body words excluding FAQ) | PASS | 2345 words (3255 incl. FAQ) |
 | 20 | Diff against snapshot (facts dropped) | WARN | 72 items in the snapshot and not here (no --dropped file: WARN only) |
 
 ## Quotes (what to fix, where)
@@ -50,10 +50,10 @@ Result: **0 BLOCK, 5 WARN** over 20 checks
 - offer "Commercial property accounts" not named on /
 
 **14. Register probe (WARN)**
-- flesch = 58.0 (target 45 to 55)
+- flesch = 57.9 (target 45 to 55)
 
 **15. Section weight (WARN)**
-- section "What a property accountant does for you" has 515 words
+- section "What a property accountant does for you" has 492 words
 - section "Questions people ask" has 912 words
 - first sentence shares no term with its heading "Questions people ask": "What does a property accountant do?"
 - section "Where we work" has 31 words

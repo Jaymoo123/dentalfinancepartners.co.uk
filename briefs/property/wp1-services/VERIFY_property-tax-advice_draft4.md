@@ -1,7 +1,7 @@
 # Verify `/services/property-tax-advice`
 
 Source: `/home/user/dentalfinancepartners.co.uk/Property/web/.next/server/app/services/property-tax-advice.html`  
-Run: 2026-10-09 11:32 UTC  
+Run: 2026-10-09 11:36 UTC  
 Result: **0 BLOCK, 7 WARN** over 20 checks
 
 | # | Check | Verdict | Detail |

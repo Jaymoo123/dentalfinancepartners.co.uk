@@ -64,11 +64,11 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - offer "Commercial property accounts" not named on /services
 - offer "Commercial property accounts" not named on /
 
-| 14 | Register probe | WARN | words 1990; sentence_len 21.2; flesch 58.0; question_headings_pct 27.3; you_per_1k 36.7; we_per_1k 27.1; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 16.1 |
-- flesch = 58.0 (target 45 to 55)
+| 14 | Register probe | WARN | words 1967; sentence_len 21.2; flesch 57.9; question_headings_pct 27.3; you_per_1k 36.6; we_per_1k 26.9; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 16.3 |
+- flesch = 57.9 (target 45 to 55)
 
 | 15 | Section weight | WARN | 4 notes |
-- section "What a property accountant does for you" has 515 words
+- section "What a property accountant does for you" has 492 words
 - section "Questions people ask" has 912 words
 - first sentence shares no term with its heading "Questions people ask": "What does a property accountant do?"
 - section "Where we work" has 31 words

@@ -497,8 +497,7 @@ export default function PropertyAccountantPage() {
           <Prose>
             <p>
               A property accountant keeps the records, prepares the returns and plans the tax for people who own
-              rental and investment property, and we do all three as one service. In the UK the job is called a
-              property accountant; in the US you will see real estate accountants doing the same work. Most people
+              rental and investment property, and we do all three as one service.  Most people
               use several of the six services below.
             </p>
           </Prose>
@@ -553,7 +552,7 @@ export default function PropertyAccountantPage() {
               that sees a few landlords a year rarely meets the same property problem twice.
             </p>
             <p>
-              If you are comparing property specialist accountants, test them on these four points. They are the
+              If you are comparing specialist property accountants, test them on these four points. They are the
               ones we raise first.
             </p>
           </Prose>
@@ -615,8 +614,7 @@ export default function PropertyAccountantPage() {
           <Prose>
             <p>
               As your property tax accountant we plan the tax as well as report it, and the accounts and the
-              planning are one engagement, not two. Good property tax accounting starts before the return: most of
-              the bill is set by decisions made during the year, and by January they are history. We do not wait
+              planning are one engagement, not two. The property tax accounting that matters happens before the return: most of the bill is set by decisions made during the year, and by January they are history. We do not wait
               for you to ask.
             </p>
             {/* Worked example. house_positions.md §4: 20% basic rate credit for 2026/27, rising to 22% from
@@ -678,9 +676,7 @@ export default function PropertyAccountantPage() {
           <Prose>
             <p>
               We work with landlords, property investors, commercial property owners and property companies, from
-              a single buy-to-let in your own name to a portfolio run through a limited company. Our accounting
-              services for property owners are the same at every size, and the pages below go deeper on six
-              common situations.
+              a single buy-to-let in your own name to a portfolio run through a limited company. Our accounting services for property owners do not change with size; the pages below go deeper on six common situations.
             </p>
           </Prose>
           <ul className="mt-6 space-y-3 text-sm leading-relaxed text-slate-700 sm:text-base">
