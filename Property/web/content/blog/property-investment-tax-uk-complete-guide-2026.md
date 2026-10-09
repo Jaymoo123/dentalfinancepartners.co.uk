@@ -250,4 +250,4 @@ howToSteps:
 
 <h2>Getting specialist support</h2>
 
-<p>Property tax rules are dense and they keep moving: the April 2027 property rates, the Section 24 reducer rising to 22%, and the rolling Making Tax Digital deadlines all land within the next two years. A specialist property accountant can help you sequence the buy, hold, sell and pass-on decisions across the portfolio lifecycle and keep your reporting compliant as the rules change. Use the buttons on this page to start a conversation about your portfolio.</p>
+<p>Property tax rules are dense and they keep moving: the April 2027 property rates, the Section 24 reducer rising to 22%, and the rolling Making Tax Digital deadlines all land within the next two years. An <a href="/services/property-accountant">accountant for property investors</a> can help you sequence the buy, hold, sell and pass-on decisions across the portfolio lifecycle and keep your reporting compliant as the rules change. Use the buttons on this page to start a conversation about your portfolio.</p>

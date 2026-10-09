@@ -1210,7 +1210,8 @@ export default function MakingTaxDigitalLandlordsPage() {
             <Prose>
               <p>
                 Most landlords who come to us want the quarterly cycle to stop being their problem. Once you
-                authorise us as your agent, we file for you and you send us data once a quarter.
+                authorise us as your agent, we file for you and you send us data once a quarter, as part of our
+                wider <InlineLink href="/services/property-accountant">property accountancy service</InlineLink>.
               </p>
             </Prose>
             {/* Icon cards with the one-time staggered glow. This is the right
@@ -1237,8 +1238,9 @@ export default function MakingTaxDigitalLandlordsPage() {
             </h2>
             <Prose>
               <p>
-                Any competent accountant can file a quarterly update. The value is in what surrounds it, and the five
-                situations below are the ones that turn up on property returns and almost nowhere else.
+                Any competent accountant can file a quarterly update. The value{" "}
+                <InlineLink href="/services/landlord-accountant">a specialist accountant for landlords</InlineLink> adds
+                is in what surrounds it, and the five situations below are the ones that turn up on property returns and almost nowhere else.
               </p>
             </Prose>
 

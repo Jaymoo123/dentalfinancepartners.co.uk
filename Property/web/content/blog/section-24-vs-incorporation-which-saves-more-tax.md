@@ -205,7 +205,7 @@ faqs:
 
 <p>The figures in this guide are illustrations of the mechanics. The decision that matters is the one run on your own portfolio, with your real marginal rate, your actual finance costs, the latent gain on each property, and the transfer costs to get into a company. A saving that looks transformative on retained profit can evaporate once you net off CGT and SDLT on an appreciated portfolio, just as it can be compelling on a freshly bought, highly geared one.</p>
 
-<p>Model your specific position before committing, or speak to a specialist who can look at the whole picture: income tax exposure now, transfer costs to incorporate, the extraction plan, and your eventual exit. That full-picture analysis is what separates a sound structure from an expensive mistake, and it is exactly the conversation worth having before you move a single property.</p>
+<p>Model your specific position before committing, or <a href="/services/property-tax-advice">speak to a specialist</a> who can look at the whole picture: income tax exposure now, transfer costs to incorporate, the extraction plan, and your eventual exit. That full-picture analysis is what separates a sound structure from an expensive mistake, and it is exactly the conversation worth having before you move a single property.</p>
 
 <h2>Related reading</h2>
 

@@ -102,7 +102,7 @@ imageCredit:
 </ul>
 <p>Total qualifying expenditure is £135,000, comfortably inside the £1 million AIA cap. The investor can claim the full £135,000 as a deduction against the profits of the period. If the business is run through a limited company, that removes £135,000 from taxable profit; at the 25% main rate of corporation tax the relief is worth £33,750 in tax. If the investor is an individual higher-rate taxpayer, the £135,000 deduction reduces income taxed at 40%, a relief of £54,000. The point of the example is mechanical, not a promise of outcome: the AIA converts a capital outlay into an immediate, full deduction, and the cash value depends on the rate of tax that profit would otherwise have borne.</p>
 <aside>
-<p>Not sure how much of a commercial fit-out or HMO conversion qualifies in your situation? A specialist property accountant can scope the claim before you file. <a href="/contact">Speak to our team</a> about your portfolio.</p>
+<p>Not sure how much of a commercial fit-out or HMO conversion qualifies in your situation? A specialist property accountant can <a href="/services/property-accountant">scope the claim before you file</a>. <a href="/contact">Speak to our team</a> about your portfolio.</p>
 </aside>
 
 <h2>Accounting periods and the pro-rated cap</h2>

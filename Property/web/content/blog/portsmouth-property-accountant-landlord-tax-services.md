@@ -45,7 +45,7 @@ faqs:
 
 <h2>What a specialist property accountant does for Portsmouth landlords</h2>
 
-<p>A property specialist focuses on the issues that recur for landlords rather than the general bookkeeping a high-street firm handles. For Portsmouth investors that typically includes:</p>
+<p>A <a href="/services/property-accountant">property-focused accountant</a> focuses on the issues that recur for landlords rather than the general bookkeeping a high-street firm handles. For Portsmouth investors that typically includes:</p>
 
 <ul>
   <li>Calculating rental profit correctly, with proper treatment of allowable costs and the repair-versus-improvement distinction that matters so much on older terraced stock.</li>

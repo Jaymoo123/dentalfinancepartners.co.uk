@@ -149,7 +149,7 @@ faqs:
 
 <h2>When Professional Support Earns Its Fee</h2>
 
-<p>Software handles the mechanics. It does not replace tax planning judgment. The situations where a property accountant typically adds material value alongside the software:</p>
+<p>Software handles the mechanics. It does not replace tax planning judgment. The situations where <a href="/services/landlord-accountant">an accountant who files for landlords</a> typically adds material value alongside the software:</p>
 
 <ul>
 <li>Mixed portfolios (BTL + HMO + commercial + holiday let) where each property type has different MTD treatment</li>

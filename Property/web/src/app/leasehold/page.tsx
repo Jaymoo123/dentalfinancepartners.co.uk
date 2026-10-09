@@ -355,7 +355,10 @@ export default function LeaseholdPage() {
             section. */}
         <PremiumStack />
         <p>
-          Costs sit on top of the premium. You pay your own legal and valuation fees and, because the section
+          Costs sit on top of the premium, and so does the tax: the stamp duty on the premium and its effect on
+          your eventual gain are questions a{" "}
+          <InlineLink href="/services/property-tax-advice">property tax adviser</InlineLink> can settle before you
+          serve notice. You pay your own legal and valuation fees and, because the section
           60 costs repeal in the 2024 Act is not in force, the freeholder&apos;s reasonable legal and valuation
           costs as well. A realistic all-in figure is commonly 1.3 to 1.8 times the headline premium. An
           individual flat extension typically runs 6 to 12 months, collective enfranchisement 9 to 18 months.

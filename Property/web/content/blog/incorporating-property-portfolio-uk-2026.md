@@ -155,7 +155,7 @@ faqs:
 <aside><p>The gap between a badly modelled SDLT route and a well modelled one on the worked example above is £73,000 versus, on a partnership-eligible portfolio, potentially nil. This is the one number worth paying for advice on before a single property moves. Scroll down to send us your portfolio schedule for a route review.</p></aside>
 
 <h3>A note on multi-owner demergers</h3>
-<p>Portfolios owned by several unconnected parties who want to separate into individual companies raise a different set of rules, including reconstruction reliefs and SDLT group relief with its three-year claw-back under FA 2003 Schedule 7 para 3. That is a demerger, not an incorporation, and it is out of scope here. If that is your position, take advice specific to it rather than following this sequence.</p>
+<p>Portfolios owned by several unconnected parties who want to separate into individual companies raise a different set of rules, including reconstruction reliefs and SDLT group relief with its three-year claw-back under FA 2003 Schedule 7 para 3. That is a demerger, not an incorporation, and it is out of scope here. If that is your position, take <a href="/services/property-tax-advice">advice specific to it</a> rather than following this sequence.</p>
 
 <h2>Step 5: Arrange company finance and lender consents</h2>
 <p>Finance, not tax, is the step that most often stalls an incorporation. Personal buy-to-let mortgages are lending to <em>you</em>, and they cannot follow the property into a company; they are redeemed on completion and replaced with limited company buy-to-let facilities. That means:</p>

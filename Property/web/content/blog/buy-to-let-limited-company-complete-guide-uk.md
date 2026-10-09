@@ -187,7 +187,7 @@ faqs:
 
 <h3>SDLT Schedule 15 partnership route</h3>
 
-<p>Where the existing structure is a true partnership (a property partnership registered with HMRC, with a formal partnership agreement, joint bank account, joint marketing, etc.) for at least one year before incorporation, SDLT Schedule 15 provides a connected-persons relief that can reduce or eliminate the SDLT charge on transfer to a partnership-owned company. The detail is technical and HMRC challenges aggressive use of this route. Take specialist advice before relying on it.</p>
+<p>Where the existing structure is a true partnership (a property partnership registered with HMRC, with a formal partnership agreement, joint bank account, joint marketing, etc.) for at least one year before incorporation, SDLT Schedule 15 provides a connected-persons relief that can reduce or eliminate the SDLT charge on transfer to a partnership-owned company. The detail is technical and HMRC challenges aggressive use of this route. <a href="/services/property-tax-advice">Take specialist advice</a> before relying on it.</p>
 
 <h3>Mortgage refinancing</h3>
 

@@ -89,7 +89,7 @@ howToSteps:
 <li><strong>Student accommodation.</strong> Purpose-built or converted student housing is residential for the structures and buildings allowance and generally for income tax, despite its business-like operation.</li>
 </ul>
 
-<p>If you are unsure whether a let is genuinely non-residential, that question is worth settling before you file, not after an enquiry. A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> will pin the classification down against the actual use and lease terms.</p>
+<p>If you are unsure whether a let is genuinely non-residential, that question is worth settling before you file, not after an enquiry. A <a href="/services/property-accountant">specialist who works on commercial lettings</a> will pin the classification down against the actual use and lease terms.</p>
 
 <h2>Mixed-use property: where the residential part comes back inside Section 24</h2>
 

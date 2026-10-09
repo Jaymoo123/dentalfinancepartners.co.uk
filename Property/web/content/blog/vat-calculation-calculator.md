@@ -114,7 +114,7 @@ imageCredit:
 <h2>Final Thoughts</h2>
 <p>A VAT calculation calculator is a useful tool, but it is only as good as the method you apply. For straightforward standard-rated supplies, a simple calculator works fine. For property businesses with mixed supplies, partial exemption, or retail schemes, you need a calculator that reflects the correct HMRC rules.</p>
 
-<p>Understanding the distinction between taxable and exempt supplies, the de minimis limit, and the annual adjustment process will help you use any VAT calculation calculator accurately. If in doubt, consult a specialist property accountant who deals with VAT on property every day.</p>
+<p>Understanding the distinction between taxable and exempt supplies, the de minimis limit, and the annual adjustment process will help you use any VAT calculation calculator accurately. If in doubt, consult a <a href="/services/property-accountant">specialist property accountant who deals with VAT</a> on property every day.</p>
 
 <h2>Sources</h2>
 <ol>

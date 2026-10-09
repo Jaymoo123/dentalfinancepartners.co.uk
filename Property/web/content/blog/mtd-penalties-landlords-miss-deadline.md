@@ -182,7 +182,7 @@ faqs:
 
 <h2>How to avoid penalties altogether</h2>
 
-<p>None of this is hard to avoid once the routine is in place. Keep your property income and expense records up to date monthly rather than reconstructing them in a quarterly rush. Use MTD-compatible software that tracks the deadlines for you. Set calendar reminders a fortnight before each quarter is due, and file a week early so a last-minute glitch never becomes a missed deadline. Many landlords simply hand the quarterly cycle and the year-end final declaration to <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">a property accountant</a>, who manages both together and absorbs the compliance burden.</p>
+<p>None of this is hard to avoid once the routine is in place. Keep your property income and expense records up to date monthly rather than reconstructing them in a quarterly rush. Use MTD-compatible software that tracks the deadlines for you. Set calendar reminders a fortnight before each quarter is due, and file a week early so a last-minute glitch never becomes a missed deadline. Many landlords simply hand the quarterly cycle and the year-end final declaration to <a href="/services/landlord-accountant">a landlord accountant</a>, who manages both together and absorbs the compliance burden.</p>
 
 <h2>Where this fits with the rest of the cluster</h2>
 

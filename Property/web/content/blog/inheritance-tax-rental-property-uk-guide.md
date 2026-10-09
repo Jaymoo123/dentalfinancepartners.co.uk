@@ -202,7 +202,7 @@ faqs:
 
 <p>For BTL property, GROB applies if you transfer legal title to children but continue to collect the rent yourself, or if you transfer to family members but keep using the property personally. Effective gifting requires you to genuinely lose access to both the income and the capital.</p>
 
-<p>Pre-Owned Asset Tax (POAT) is the parallel income tax charge where GROB technically does not apply but you still benefit. Specialist advice is essential before any large-scale lifetime gift.</p>
+<p>Pre-Owned Asset Tax (POAT) is the parallel income tax charge where GROB technically does not apply but you still benefit. <a href="/services/property-tax-advice">Specialist advice</a> is essential before any large-scale lifetime gift.</p>
 
 <h2>What to do now</h2>
 

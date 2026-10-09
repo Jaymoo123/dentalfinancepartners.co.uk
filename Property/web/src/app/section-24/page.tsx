@@ -363,7 +363,8 @@ export default function Section24Page() {
               <p className="mt-4 text-base leading-relaxed text-slate-600 sm:mt-6 sm:text-lg">
                 Section 24 taxes your rental income before your mortgage interest, then hands back relief at 20%.
                 Most landlords felt the bill rise without ever being told why, or whether theirs was even calculated
-                correctly.
+                correctly, which is the first thing a{" "}
+                <InlineLink href="/services/landlord-accountant">landlord accountant</InlineLink> checks.
               </p>
               <p className="mt-6 text-base font-bold leading-relaxed text-slate-900 text-balance sm:text-lg">
                 If one of these is the sentence going round your head, it is worth putting a number on it.
@@ -1043,8 +1044,9 @@ export default function Section24Page() {
             </div>
 
             <p className="mt-8 text-sm sm:text-base leading-relaxed text-slate-700">
-              A generalist accountant will file your return correctly. The difference here is that we look at the
-              structure behind the return, which is where the money on a leveraged portfolio actually is. Most
+              A generalist accountant will file your return correctly. The difference when you use a{" "}
+              <InlineLink href="/services/property-accountant">specialist property accountant</InlineLink> like us is
+              that we look at the structure behind the return, which is where the money on a leveraged portfolio actually is. Most
               portfolios we review have at least one of these open: interest in the wrong box, an unequal ownership
               split never documented, or an incorporation decision made on rules of thumb rather than numbers.
             </p>

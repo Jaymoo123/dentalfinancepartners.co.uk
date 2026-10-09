@@ -81,7 +81,7 @@ reviewedAt: "2026-08-20"
 <li><strong>Keep the submission.</strong> You will need those figures again when you declare the same gain on your tax return.</li>
 </ul>
 
-<p>If an accountant files for you, ask to see the calculation before it goes in, because the return is submitted under your name and the responsibility for it stays with you.</p>
+<p>If a <a href="/services/property-accountant">capital gains tax accountant</a> files for you, ask to see the calculation before it goes in, because the return is submitted under your name and the responsibility for it stays with you.</p>
 
 <h2>How do you pay capital gains tax to HMRC?</h2>
 

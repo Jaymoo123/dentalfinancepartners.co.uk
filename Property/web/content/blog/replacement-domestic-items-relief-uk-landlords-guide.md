@@ -276,4 +276,4 @@ faqs:
 <li>A company structure where the relief runs through corporation tax instead</li>
 </ul>
 
-<p>If you want a second pair of eyes on how a relief like this fits your wider position, a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can review your replacement spend and allocate it correctly. The form below routes through to the team that handles this work.</p>
+<p>If you want a second pair of eyes on how a relief like this fits your wider position, a <a href="/services/landlord-accountant">landlord tax accountant</a> can review your replacement spend and allocate it correctly. The form below routes through to the team that handles this work.</p>

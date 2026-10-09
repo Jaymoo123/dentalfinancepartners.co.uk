@@ -22,7 +22,7 @@ import {
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { getAllPosts, getCategorySlug, categoryDisplayName } from "@/lib/blog";
 import { ArrowRight, BarChart3, Briefcase, Building2, CalendarClock, Check } from "lucide-react";
-import { Eyebrow } from "@/components/ui/page-blocks";
+import { Eyebrow, InlineLink } from "@/components/ui/page-blocks";
 
 export const metadata: Metadata = {
   title: "Property Accountants UK | Specialist Landlord Tax Advice",
@@ -276,7 +276,13 @@ export default function HomePage() {
               What a property accountant does for landlords
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Property-only focus means we understand Section 24, MTD, incorporation, and CGT inside out, at every scale from individual landlords with a single flat to large portfolio owners.
+              Property-only focus means we understand Section 24, MTD, incorporation, and CGT inside out, at every
+              scale, from{" "}
+              <InlineLink href="/services/landlord-accountant">individual landlords with a single flat</InlineLink> to{" "}
+              <InlineLink href="/services/property-accountant">large portfolio owners</InlineLink>. If you only need
+              one decision modelled,{" "}
+              <InlineLink href="/services/property-tax-advice">one-off property tax advice</InlineLink> is a separate
+              service.
             </p>
           </div>
           <div className="grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">

@@ -217,6 +217,6 @@ faqs:
 
 <h2>How a property accountant keeps the calendar on track</h2>
 
-<p>The 2026/27 year layers a quarterly MTD rhythm on top of the annual Self Assessment spine, with the 60-day CGT clock and the company cycle running independently. The practical risk is not any single date but the way several can collide, most obviously around 31 January. A specialist property accounting team handles the diary, the software, the quarterly filings and the cash-flow modelling so the deadlines stop being something you chase.</p>
+<p>The 2026/27 year layers a quarterly MTD rhythm on top of the annual Self Assessment spine, with the 60-day CGT clock and the company cycle running independently. The practical risk is not any single date but the way several can collide, most obviously around 31 January. A <a href="/services/landlord-accountant">specialist landlord accounting team</a> handles the diary, the software, the quarterly filings and the cash-flow modelling so the deadlines stop being something you chase.</p>
 
 <p>If you are choosing who to work with, our guides on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> and <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant actually does</a> set out what good looks like. To talk through your own 2026/27 timetable, use the enquiry form on this page and a property specialist will be in touch.</p>

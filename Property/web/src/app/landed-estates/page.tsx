@@ -415,8 +415,9 @@ export default function LandedEstatesPage() {
             defensive, which is what the closing sentence already claims. */}
         <OutOfScope />
         <p>
-          We work alongside those advisers rather than replacing them. What we do is the inheritance tax and
-          capital tax position on the land, the buildings and the structures that hold them.
+          We work alongside those advisers rather than replacing them. What{" "}
+          <InlineLink href="/services/property-tax-advice">our advisory work</InlineLink> covers is the inheritance
+          tax and capital tax position on the land, the buildings and the structures that hold them.
         </p>
       </TopicSection>
 

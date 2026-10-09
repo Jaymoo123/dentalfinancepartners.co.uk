@@ -162,7 +162,7 @@ faqs:
 
 <p>Outright gifts of UK property start a 7-year PET clock. If the donor survives 7 years, the gift falls entirely outside the estate. Taper relief reduces the effective IHT rate for gifts made 3 to 7 years before death.</p>
 
-<p>The CGT cost of gifting is a significant consideration. The gift is a disposal at market value (TCGA 1992 s.17) and CGT applies on the gain at 24% for residential property. For a landlord who bought 15 years ago at a fraction of current value, the CGT on a gift can exceed the IHT saving on the same property. Careful modelling with a tax adviser is essential before proceeding.</p>
+<p>The CGT cost of gifting is a significant consideration. The gift is a disposal at market value (TCGA 1992 s.17) and CGT applies on the gain at 24% for residential property. For a landlord who bought 15 years ago at a fraction of current value, the CGT on a gift can exceed the IHT saving on the same property. Careful <a href="/services/property-tax-advice">modelling with a tax adviser</a> is essential before proceeding.</p>
 
 <h3>Life assurance in trust</h3>
 

@@ -108,7 +108,7 @@ faqs:
 
 <h2>What a Glasgow Property Accountant Actually Does</h2>
 
-<p>Beyond preparing accounts and returns, a specialist brings the Scottish and UK-wide rules together into one coherent position. Typical areas of work include:</p>
+<p>Beyond preparing accounts and returns, <a href="/services/property-tax-advice">specialist advice</a> brings the Scottish and UK-wide rules together into one coherent position. Typical areas of work include:</p>
 
 <ul>
 <li>Structuring purchases with LBTT and ADS in mind, so the acquisition cost is understood before you commit</li>

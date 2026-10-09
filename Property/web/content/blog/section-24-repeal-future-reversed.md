@@ -139,7 +139,7 @@ faqs:
 
 <h2>The bottom line</h2>
 
-<p>Section 24 is fully in force, the 20% reducer rises to 22% from April 2027 rather than disappearing, and no party has committed to repeal. The leveraged landlords who fare best are the ones who stop waiting and start structuring: testing incorporation on real numbers, using pension contributions to manage adjusted net income, and aligning ownership with the lower-rate spouse where it is genuine. If you would like a specialist to model your specific position, including the incorporation trade-off and the April 2027 transition, our property tax team can talk it through.</p>
+<p>Section 24 is fully in force, the 20% reducer rises to 22% from April 2027 rather than disappearing, and no party has committed to repeal. The leveraged landlords who fare best are the ones who stop waiting and start structuring: testing incorporation on real numbers, using pension contributions to manage adjusted net income, and aligning ownership with the lower-rate spouse where it is genuine. If you would like a specialist to model your specific position, including the incorporation trade-off and the April 2027 transition, our <a href="/services/property-tax-advice">property tax advice team</a> can talk it through.</p>
 
 <h2>Related reading</h2>
 

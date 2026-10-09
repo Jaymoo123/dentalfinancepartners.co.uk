@@ -49,7 +49,7 @@ faqs:
 <li><strong>HMO licensing and Article 4</strong> · citywide additional licensing plus planning restrictions on new small HMOs in named wards.</li>
 </ul>
 
-<p>Each of these interacts with the others. Incorporating to soften Section 24, for example, has stamp duty and capital gains consequences, and changes how MTD applies. That is the case for joined-up advice from someone who works with property all day rather than as a sideline.</p>
+<p>Each of these interacts with the others. Incorporating to soften Section 24, for example, has stamp duty and capital gains consequences, and changes how MTD applies. That is the case for joined-up advice from <a href="/services/property-accountant">an accountant who works with property all day</a> rather than as a sideline.</p>
 
 <h2>Section 24 Planning for Coventry Buy-to-Let</h2>
 

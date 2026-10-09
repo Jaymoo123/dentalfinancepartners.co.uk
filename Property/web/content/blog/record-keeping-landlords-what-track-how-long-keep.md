@@ -254,4 +254,4 @@ faqs:
 <li>You are facing an HMRC enquiry and need missing records reconstructed and presented properly</li>
 </ul>
 
-<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can set up the system, separate revenue from capital correctly, and make sure every allowable expense is captured while the records stay compliant. If any of the triggers above apply, the form below routes to a specialist who handles property landlords.</p>
+<p><a href="/services/landlord-accountant">An accountant who works with landlords</a> can set up the system, separate revenue from capital correctly, and make sure every allowable expense is captured while the records stay compliant. If any of the triggers above apply, the form below routes to a specialist who handles property landlords.</p>
