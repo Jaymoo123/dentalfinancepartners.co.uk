@@ -33,7 +33,7 @@ Format: `- <canonical URL> | <reason> | signoff: none`
 - https://www.propertytaxpartners.co.uk/calculators/mtd-checker | calculator | signoff: none
 
 ## Component-level sign-offs (apply to every page that embeds the component)
-- PremiumCalculator (capital-gains-premium, incorporation-premium, section-24-premium) | paid PDF offer block below the revealed result, flag-gated via site_flags.calc_pdf_offer | signoff: owner 2026-09-14, scoped: the PdfOffer block only; calculator logic, result gate and lead form untouched (plan in docs/property/STATE.md 2026-09-14)
+<!-- 2026-10-09: the PremiumCalculator paid-PDF offer sign-off (flag site_flags.calc_pdf_offer) was retired with the test; the offer UI went 2026-09-27 and the routes, library, console panel and legal-page sections on 2026-10-09 (owner ruling). -->
 
 <!-- Slugs corrected 2026-08-05: four entries previously omitted the -calculator suffix and matched no live route (audit amendment A8). -->
 

@@ -211,10 +211,10 @@ Decisions only he can make, oldest first where it matters. Ask them in plain lan
 8. **Request indexing on the 20 May posts** that match the crawled-not-indexed pattern (Search Console action, reversible, needs his go).
 9. **One-form-per-page rule** for Solicitors, Dentists and Generalist blog posts.
 10. **Incorporation cluster (Phase D)** was deferred to after the SDLT 28-day reads; the re-check is overdue.
-11. **`site_flags.calc_pdf_offer.enabled` is still `true` in prod** (read 2026-10-09: price 29, Stripe link, updated 2026-09-14) although the offer code was removed on 2026-09-27. One SQL statement sets it false; the unreachable PDF API routes under `api/calc/pdf-offer` can go after that. His call to run it.
+11. **Paid-PDF test teardown, last step**: the code, console panel and legal-page sections are gone from the branch and the prod flag is off (2026-10-09). Four DROP statements (view `vw_calc_pdf_test`, tables `calc_pdf_requests`, `site_flags`, `tiktok_creatives`) are in `supabase/migrations/20261009000001_remove_paid_pdf_test_rls_session_events.sql` and still need running from the Supabase SQL editor; the connector held them for a confirmation it could not surface. Related owner call: the test's console panel had replaced the old "Sites (last 7 days)" table on the console home page; removing the panel does not bring the table back.
 12. **ISR fallback size**: the blog once crossed the 19.07 MB ceiling and was worked around with `VERCEL_BYPASS_FALLBACK_OVERSIZED_ERROR=1`. A structural fix (lazy post loading or split routes) is the inter-wave item before it recurs.
 13. **CGT at 21%** in a shared calculator and the "Property Accountants UK" wordmark: raised 2026-10-09, not actioned.
-14. **Security**: the Supabase advisor reports row-level security disabled on `public.session_events` (about 16,900 rows) and `public.tiktok_creatives`, so both are readable with the anon key; the fix is `ENABLE ROW LEVEL SECURITY` plus policies, not applied. Vercel advisories unread. `.cache/admin_keys.txt` and 145 other `.cache` files are tracked in git although `.cache/` is gitignored (not opened; may hold secrets). The Search Console service-account key should be rotated when convenient.
+14. **Security**: row-level security switched on for `public.session_events` and `public.tiktok_creatives` on 2026-10-09 (owner ruling; no policies, so service role only). Vercel advisories unread. `.cache/admin_keys.txt` and 145 other `.cache` files are tracked in git although `.cache/` is gitignored (not opened; may hold secrets). The Search Console service-account key should be rotated when convenient.
 16. **`web_events` partitions** stop at `web_events_2026_08`; `web_events_default` holds about 629,000 rows, so September and October events are landing in the default partition. Reads still work; the monthly partition job needs a look.
 15. **Pending follow-ups from June**: de-stale `2027-property-income-tax-rates-landlords-uk`; the SDLT 15 to 17 percent sweep queued for after the rewrite programme (his 2026-06-01 steer: fix on touch).
 
@@ -271,6 +271,7 @@ Scope note (2026-10-09, from `house_positions.md` section 4, which outranks the 
 
 ## 11. Log (one line per deploy or decision, newest first)
 
+- 2026-10-09 evening: paid-PDF test removed from code (routes, library, tests, console panel, privacy and terms sections); prod flag off; RLS on `session_events` and `tiktok_creatives`; drops pending in migration 20261009000001. Not deployed (freeze).
 - 2026-10-09 19:58 UTC: STATE.md restructured into orientation plus live detail; closed history archived verbatim.
 - 2026-10-09 15:16 UTC: production deploy `dpl_43fZDSzN6hVK4U3Y4QzcTdYYJkNq` at `cfe95629` (sitemap lastmod on the four changed static pages; homepage H1, WebPage name and description to the R26 brand form). Sitemap resubmitted, IndexNow sent.
 - 2026-10-09 12:58 UTC: production deploy `dpl_CpSH2UYxan7UK4oEm7EWE96exTyZ` at `0d649aaf` (homepage title carries the brand).
