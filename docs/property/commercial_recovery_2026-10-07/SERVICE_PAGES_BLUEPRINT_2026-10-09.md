@@ -108,7 +108,7 @@ The shared shape, then the per-page tables. The teardown (`TEARDOWN_2026-10-09.m
 Length: 1,600 to 2,400 words of body copy excluding the FAQ, which is shorter than today's 4,700 to 4,900 words of file content. The winners are not long; they are specific. Cut, do not pad.
 
 Schema per page (one JSON-LD graph, built where the page builds it today, see the audit §1):
-- `Service` with `@id` `<page-url>#service`, `name` equal to the H1, `serviceType`, `provider` `{ "@id": "<site>/#organization" }`, `areaServed` `{ "@type": "Country", "name": "United Kingdom" }`, `hasOfferCatalog` with one `Offer` per "What we do" item, names identical to the H3s, no prices until F3.
+- `Service` with `@id` `<page-url>#service`, `name` equal to the H1, `serviceType`, `provider` `{ "@id": "<site-url>#organization" }` (no slash before the hash: that is the form `lib/schema.ts` emits for the Organization node, so the reference resolves), `areaServed` `{ "@type": "Country", "name": "United Kingdom" }`, `hasOfferCatalog` with one `Offer` per "What we do" item (an `Offer` carrying `name`, or `itemOffered` with a nested `Service`; both pass the harness), names identical to the H3s, no prices until F3.
 - `FAQPage` with the visible questions, identical strings.
 - `BreadcrumbList` as today.
 - `Organization` is referenced, not redefined, on these pages. `telephone` and `openingHoursSpecification` are added to the organization node (homepage) when F1 and F2 arrive.

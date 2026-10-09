@@ -82,7 +82,8 @@ DEFERRED_PATTERNS = [
     (r"\blandlords only\b|\bentire practice\b|\bonly work with landlords\b", "landlords-only claim"),
     (r"\b(?:ICAEW|ACCA|CIOT|ATT|AAT|STEP)\b", "professional-body claim"),
 ]
-STATUTE_RE = re.compile(r"\b(?:s\.\s?\d+[A-Z]?|section\s+\d+[A-Z]?|sch(?:edule)?\.?\s+\d+|FA\s?\d{4}|ITTOIA|TCGA|ITA\s?2007|IHTA|CTA\s?20\d\d|para(?:graph)?\s+\d+)\b", re.I)
+# "Section 24" is the name landlords use for the finance-cost restriction (the site's own guide is /section-24), so it is not a citation.
+STATUTE_RE = re.compile(r"\b(?:s\.\s?\d+[A-Z]?|section\s+(?!24\b)\d+[A-Z]?|sch(?:edule)?\.?\s+\d+|FA\s?\d{4}|ITTOIA|TCGA|ITA\s?2007|IHTA|CTA\s?20\d\d|para(?:graph)?\s+\d+)\b", re.I)
 JARGON = ("chargeable", "disposal", "reducer", "mandation", "apportion", "enveloped", "relievable", "quantum",
           "consideration", "notifiable", "allowable", "deductible", "domicile", "situs", "remittance")
 SPEC_FILE = DOCS / "REGISTER_TARGETS_2026-10.json"  # measured targets (spec section 1); used when present
@@ -756,7 +757,14 @@ def run_checks(page: Page, slug: str, *, assignment: dict, gsc_rows: list[dict],
         q.append("LocalBusiness on a service page")
     if any("aggregateRating" in n for n in page.nodes):
         q.append("aggregateRating present (no reviews back it)")
-    svc = [n for n in page.nodes if n.get("@type") == "Service"]
+    nested = set()
+    for n in page.nodes:
+        cat = n.get("hasOfferCatalog") if isinstance(n, dict) else None
+        for it in (cat or {}).get("itemListElement", []) or []:
+            io = it.get("itemOffered") if isinstance(it, dict) else None
+            if isinstance(io, dict):
+                nested.add(id(io))
+    svc = [n for n in page.nodes if n.get("@type") == "Service" and id(n) not in nested]
     if not svc:
         q.append("no Service node")
     for n in svc:

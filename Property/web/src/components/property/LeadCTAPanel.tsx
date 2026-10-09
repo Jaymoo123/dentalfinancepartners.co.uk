@@ -28,6 +28,7 @@ export function LeadCTAPanel({
   contained = false,
   ground = "slate",
   redirectOnSuccess = true,
+  headingId,
 }: {
   eyebrow?: string;
   title: string;
@@ -57,6 +58,8 @@ export function LeadCTAPanel({
    * page offers the slot picker at the highest-intent moment.
    */
   redirectOnSuccess?: boolean;
+  /** Stable anchor on the panel's H2 (the section usually carries id="book" itself). */
+  headingId?: string;
 }) {
   if (contained) {
     return (
@@ -72,6 +75,7 @@ export function LeadCTAPanel({
               submitLabel={submitLabel}
               footnote={footnote}
               redirectOnSuccess={redirectOnSuccess}
+              headingId={headingId}
             />
           </div>
         </div>
@@ -93,6 +97,7 @@ export function LeadCTAPanel({
           submitLabel={submitLabel}
           footnote={footnote}
           redirectOnSuccess={redirectOnSuccess}
+          headingId={headingId}
         />
       </div>
     </section>
@@ -119,6 +124,7 @@ function PanelBody({
   footnote,
   redirectOnSuccess,
   dark = false,
+  headingId,
 }: {
   eyebrow: string;
   title: string;
@@ -129,12 +135,13 @@ function PanelBody({
   footnote?: ReactNode;
   redirectOnSuccess: boolean;
   dark?: boolean;
+  headingId?: string;
 }) {
   return (
     <div className="grid items-start gap-8 sm:gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
       <div>
         <Eyebrow onDark={dark}>{eyebrow}</Eyebrow>
-        <h2 className={`text-2xl font-bold sm:text-4xl ${dark ? "text-white" : "text-slate-900"}`}>{title}</h2>
+        <h2 id={headingId} className={`text-2xl font-bold sm:text-4xl ${dark ? "text-white" : "text-slate-900"}`}>{title}</h2>
         <p
           className={`mt-4 text-lg leading-relaxed sm:mt-6 sm:text-xl ${dark ? "text-slate-200" : "text-slate-600"}`}
         >
