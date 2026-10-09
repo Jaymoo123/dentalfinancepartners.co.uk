@@ -11,6 +11,15 @@ exceptions: security warnings, irreversible-action confirmations and multi-step
 sequences drop out of caveman compression, and code, commits and PRs are always
 written normally.
 
+**Start here for any Property task, in this order:** (1) the `standard_terms`
+skill, (2) `docs/property/STATE.md` sections 0 to 8 (the orientation: what the
+site is, where everything lives, the rules, access, how to ship, what is in
+flight, what the owner still has to decide), (3) only then the doc the task
+needs, as section 0 of STATE.md directs. Every other site follows the same
+shape: `docs/<site>/STATE.md` is its single living state doc. In a cloud
+session the memory store and the laptop-only scripts are absent; STATE.md
+section 4 says what you have instead.
+
 **Load the `standard_terms` skill before starting any non-trivial task here.**
 It is the owner's standing instructions on how to communicate, decide, execute,
 verify, ship and tidy up, and it holds the incidents that produced each rule.
