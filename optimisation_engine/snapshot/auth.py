@@ -31,7 +31,14 @@ def get_credentials():
     from google.oauth2.credentials import Credentials
     from google_auth_oauthlib.flow import InstalledAppFlow
 
-    creds = None
+    # Cloud sessions carry a service-account key in the environment instead of
+    # a laptop token; same resolution as agents/utils/gsc_client_oauth.py.
+    from agents.utils.gsc_client_oauth import service_account_credentials
+
+    creds = service_account_credentials(SCOPES)
+    if creds is not None:
+        return creds
+
     if TOKEN_FILE.exists():
         creds = Credentials.from_authorized_user_file(str(TOKEN_FILE), SCOPES)
 

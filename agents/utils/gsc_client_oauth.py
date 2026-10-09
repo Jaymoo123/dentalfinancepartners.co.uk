@@ -18,6 +18,28 @@ TOKEN_FILE = 'secrets/gsc_token.pickle'
 CREDENTIALS_FILE = 'secrets/gsc_credentials.json'
 
 
+def service_account_credentials(scopes):
+    """Service-account credentials when the environment carries them, else None.
+
+    Cloud sessions have no browser for the OAuth consent and no laptop token, so
+    they read the key from GSC_SERVICE_ACCOUNT_JSON (the key file's contents) or
+    GOOGLE_APPLICATION_CREDENTIALS (a path). The laptop sets neither and keeps
+    the OAuth token path below unchanged.
+    """
+    import json
+    from google.oauth2 import service_account
+
+    raw = os.environ.get('GSC_SERVICE_ACCOUNT_JSON')
+    if raw:
+        return service_account.Credentials.from_service_account_info(
+            json.loads(raw), scopes=scopes)
+    path = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
+    if path and os.path.exists(path):
+        return service_account.Credentials.from_service_account_file(
+            path, scopes=scopes)
+    return None
+
+
 class GSCClient:
     """
     Google Search Console API client using OAuth.
@@ -33,8 +55,11 @@ class GSCClient:
     def _authenticate(self):
         """Authenticate using OAuth flow."""
         
-        creds = None
-        
+        creds = service_account_credentials(SCOPES)
+        if creds is not None:
+            self.service = build('searchconsole', 'v1', credentials=creds)
+            return
+
         # Load existing token if available
         if os.path.exists(TOKEN_FILE):
             with open(TOKEN_FILE, 'rb') as token:
