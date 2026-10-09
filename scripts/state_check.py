@@ -123,6 +123,8 @@ KNOWN_SCHEMA_DRIFT = {
         "renamed to blog_topics_agency_legacy_20260520",
     "20260517000001_create_blog_topics_generalist.sql":
         "renamed to blog_topics_generalist_legacy_20260520",
+    "20260914000001_calc_pdf_offer.sql":
+        "paid-PDF test removed 2026-10-09 (owner ruling); objects dropped by 20261009000001",
 }
 # the seven near-identical medical topic migrations from 2026-03-30, same reason
 KNOWN_SCHEMA_DRIFT.update({
