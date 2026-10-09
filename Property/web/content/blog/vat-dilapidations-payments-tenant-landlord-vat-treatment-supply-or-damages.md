@@ -127,7 +127,7 @@ editorialNote: "Bucket A applied page. Lease-end-specific applied page sitting d
 
 <aside>
 <p>Want a second opinion on a live settlement?</p>
-<p>If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a <a href="/services/property-accountant">VAT-aware property accountant</a> before signing typically pays for itself many times over. We work with landlords and tenants on both sides of the table.</p>
+<p>If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a <a href="/services/property-accountant">property accountant who handles commercial property</a> before signing typically pays for itself many times over. We work with landlords and tenants on both sides of the table.</p>
 </aside>
 
 <h2>The OTT Cross-Cut: Why the Option to Tax Only Sometimes Matters</h2>

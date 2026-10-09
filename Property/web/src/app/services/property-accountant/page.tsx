@@ -258,6 +258,8 @@ const onboarding = [
  * sentence, where that sentence reads badly out of context. Applied here
  * rather than in the shared helper; the list itself is unchanged.
  */
+// 2026-10-09: cut from nine cards to six (owner: "cut to 6"); the MTD guide, MTD software
+// and Self Assessment filing posts are still linked from the "What we do" items.
 const feedingPosts: Array<{ href: string; label: string; excerpt?: string }> = [
   {
     href: "/blog/property-accountant-services/what-does-a-property-accountant-do",
@@ -281,22 +283,8 @@ const feedingPosts: Array<{ href: string; label: string; excerpt?: string }> = [
     label: "Finance costs and the interest restriction",
   },
   {
-    href: "/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline",
-    label: "MTD for landlords from April 2026",
-  },
-  {
-    href: "/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026",
-    label: "MTD software compared",
-  },
-  {
     href: "/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk",
     label: "Buy-to-let limited companies in full",
-  },
-  {
-    href: "/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide",
-    label: "Filing a landlord Self Assessment return",
-    excerpt:
-      "How to file a landlord's Self Assessment return step by step, including the property pages and what to add in a year you sell.",
   },
 ];
 

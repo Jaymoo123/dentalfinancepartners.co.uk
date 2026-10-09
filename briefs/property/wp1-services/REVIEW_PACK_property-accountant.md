@@ -1,4 +1,4 @@
-# Review pack: `/services/property-accountant` (draft3, 2026-10-09)
+# Review pack: `/services/property-accountant` (draft4, 2026-10-09)
 
 Read §1 first; if those lines are right the page is mostly right. Reply with numbers from §7 or "approved" with the SHA at the end.
 
@@ -47,8 +47,8 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 | 11 | Cross-page sameness (8-grams) | WARN | against 9 pages |
 - 1 shared 8-word sequences with /services/property-tax-advice: and we quote it as a fixed fee
 - 1 shared 8-word sequences with /locations/london: we work with landlords and investors across the
-- 3 shared 8-word sequences with /locations/birmingham: take over from my current accountant mid year; you take over from my current accountant mid; can you take over from my current accountant
-- 3 shared 8-word sequences with /locations/bristol: take over from my current accountant mid year; you take over from my current accountant mid; can you take over from my current accountant
+- 3 shared 8-word sequences with /locations/birmingham: take over from my current accountant mid year; can you take over from my current accountant; you take over from my current accountant mid
+- 3 shared 8-word sequences with /locations/bristol: take over from my current accountant mid year; can you take over from my current accountant; you take over from my current accountant mid
 
 | 12 | Cross-surface consistency (offer names) | WARN | 12 mismatches |
 - offer "Rental accounts and Self Assessment" not named on /services
@@ -64,8 +64,8 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - offer "Commercial property accounts" not named on /services
 - offer "Commercial property accounts" not named on /
 
-| 14 | Register probe | WARN | words 2061; sentence_len 21.2; flesch 57.8; question_headings_pct 25.5; you_per_1k 35.9; we_per_1k 26.2; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 17.0 |
-- flesch = 57.8 (target 45 to 55)
+| 14 | Register probe | WARN | words 1990; sentence_len 21.2; flesch 58.0; question_headings_pct 27.3; you_per_1k 36.7; we_per_1k 27.1; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 16.1 |
+- flesch = 58.0 (target 45 to 55)
 
 | 15 | Section weight | WARN | 4 notes |
 - section "What a property accountant does for you" has 515 words
@@ -73,9 +73,7 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - first sentence shares no term with its heading "Questions people ask": "What does a property accountant do?"
 - section "Where we work" has 31 words
 
-| 19 | Length (body words excluding FAQ) | WARN | 2440 words (3350 incl. FAQ) |
-
-| 20 | Diff against snapshot (facts dropped) | WARN | 66 items in the snapshot and not here (no --dropped file: WARN only) |
+| 20 | Diff against snapshot (facts dropped) | WARN | 72 items in the snapshot and not here (no --dropped file: WARN only) |
 - number: 04
 - number: 10.75%
 - number: 100
@@ -107,16 +105,16 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - H3: Capital versus revenue is where the money sits
 - H3: Company accounts for property SPVs
 - H3: Do I need a property accountant near me?
+- H3: Filing a landlord Self Assessment return
 - H3: Free consultation
 - H3: How many properties you hold
+- H3: MTD for landlords from April 2026
+- H3: MTD software compared
 - H3: Making Tax Digital
 - H3: Onboarding and clearance
 - H3: Personally, in a company, or both
 - H3: Property has its own deadlines
-- H3: Property is one part of a wider position
-- H3: Rental accounts and bookkeeping
-- H3: Self Assessment for rental income
-- ... 26 more
+- ... 32 more
 
 ## 4. Reviewer disagreements (NOTE items for you)
 
@@ -162,7 +160,7 @@ NOTE items, plus the two held-back FIX items and the one claim that needs a hous
 | 34 | `content/blog/coventry-property-accountant.md:52` | post (new N) | yes | That is the case for joined-up advice from someone who works with property all day rather than as a sideline. | That is the case for joined-up advice from [an accountant who works with property all day] rather than as a sideline. | /services/property-accountant | D |
 | 35 | `content/blog/portsmouth-property-accountant-landlord-tax-services.md:48` | post (new N) | yes | A property specialist focuses on the issues that recur for landlords rather than the general bookkeeping a high-street firm handles. | A [property-focused accountant] focuses on the issues that recur for landlords rather than the general bookkeeping a high-street firm handles. | /services/property-accountant | D |
 | 36 | `content/blog/why-luton-landlords-need-specialist-property-accountant-2026.md:39` | post (new N) | yes | For most landlords in 2026 the honest answer leans towards specialist expertise. | For most landlords in 2026 the honest answer leans towards [specialist property accountancy]. | /services/property-accountant | V |
-| 41 | `content/blog/vat-calculation-calculator.md:117` | post (new N) | yes | If in doubt, consult a specialist property accountant who deals with VAT on property every day. | If in doubt, consult a [specialist property accountant who deals with VAT] on property every day. | /services/property-accountant | V |
+| 41 | `content/blog/vat-calculation-calculator.md:117` | post (new N) | yes | If in doubt, consult a specialist property accountant who deals with VAT on property every day. | If in doubt, consult a [specialist property accountant] on property every day. | /services/property-accountant | V |
 | 43 | `content/blog/how-to-calculate-section-24-tax-credit-step-by-step.md:182` | post (repoint R) | yes | That modelling is where a specialist property accountant earns their keep, and it is rarely as clear-cut as portfolio landlords assume. | That modelling is where a [specialist property accountant] earns their keep, and it is rarely as clear-cut as portfolio landlords assume. | /services/property-accountant | E |
 | 44 | `content/blog/section-24-tax-credit-20-percent-basic-rate-relief.md:163` | post (repoint R) | yes | Our complete guide to buy-to-let limited companies sets out the trade-offs, and if you would rather have the numbers run for your own situation, that is exactly the kind of work a property accountant does. | Our complete guide to buy-to-let limited companies sets out the trade-offs, and if you would rather have the numbers run for your own situation, that is exactly the kind of work [our property accountancy service] does. | /services/property-accountant | V |
 | 50 | `content/blog/section-24-interest-only-mortgage-tax-planning.md:272` | post (new N) | yes | A specialist property accountant can model the interest-only and repayment paths against your actual income, test whether incorporation or ownership splitting pays for itself, and make sure your records are MTD-ready before the relevant threshold catches you. | A specialist property accountant can [model the interest-only and repayment paths] against your actual income, test whether incorporation or ownership splitting pays for itself, and make sure your records are MTD-ready before the relevant threshold catches you. | /services/property-accountant | D |
@@ -176,7 +174,7 @@ NOTE items, plus the two held-back FIX items and the one claim that needs a hous
 | 84 | `content/blog/commercial-property-tax-landlords-rates-reliefs-allowances.md:199` | post (repoint R) | yes | A specialist property accountant brings the heads together into one plan. | An [accountant who works on commercial property every week] brings the heads together into one plan. | /services/property-accountant | D |
 | 85 | `content/blog/section-24-commercial-property-complete-guide.md:92` | post (repoint R) | yes | A specialist property accountant will pin the classification down against the actual use and lease terms. | A [specialist who works on commercial lettings] will pin the classification down against the actual use and lease terms. | /services/property-accountant | D |
 | 86 | `content/blog/integral-features-capital-allowances.md:171` | post (new N) | yes | A property accountant experienced in capital allowances can identify the qualifying expenditure, allocate it defensibly across the shell, structure, integral features and plant, and prepare the documentation HMRC expects. | A [property accountant experienced in capital allowances] can identify the qualifying expenditure, allocate it defensibly across the shell, structure, integral features and plant, and prepare the documentation HMRC expects. | /services/property-accountant | V |
-| 87 | `content/blog/vat-dilapidations-payments-tenant-landlord-vat-treatment-supply-or-damages.md:130` | post (new N) | yes | If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a VAT-aware property accountant before signing typically pays for itself many times over. | If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a [VAT-aware property accountant] before signing typically pays for itself many times over. | /services/property-accountant | V |
+| 87 | `content/blog/vat-dilapidations-payments-tenant-landlord-vat-treatment-supply-or-damages.md:130` | post (new N) | yes | If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a VAT-aware property accountant before signing typically pays for itself many times over. | If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a [property accountant who handles commercial property] before signing typically pays for itself many times over. | /services/property-accountant | V |
 | 90 | `content/blog/budgeting-voids-repairs-rental-cash-flow.md:177` | post (new N) | yes | Cash flow, Section 24 and the repair-versus-improvement line are where a specialist property accountant earns their place: modelling true post-tax cash across a portfolio, getting the deductions right, and testing whether incorporation actually helps your specific position rather than assuming it does. | Cash flow, Section 24 and the repair-versus-improvement line are where a [specialist property accountant] earns their place: modelling true post-tax cash across a portfolio, getting the deductions right, and testing whether incorporation actually helps your specific position rather than assuming it does. | /services/property-accountant | E |
 | 91 | `content/blog/refinancing-rental-property-when-does-it-make-financial-sense.md:62` | post (repoint R) | yes | This is exactly the kind of apportionment a property accountant handles routinely, and getting it documented at the time saves a painful reconstruction later. | This is exactly the kind of apportionment a [property accountant] handles routinely, and getting it documented at the time saves a painful reconstruction later. | /services/property-accountant | E |
 

@@ -1,4 +1,4 @@
-# Review pack: `/services/property-tax-advice` (draft3, 2026-10-09)
+# Review pack: `/services/property-tax-advice` (draft4, 2026-10-09)
 
 Read §1 first; if those lines are right the page is mostly right. Reply with numbers from §7 or "approved" with the SHA at the end.
 

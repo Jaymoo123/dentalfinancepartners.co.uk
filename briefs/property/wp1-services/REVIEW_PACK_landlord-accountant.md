@@ -1,4 +1,4 @@
-# Review pack: `/services/landlord-accountant` (draft3, 2026-10-09)
+# Review pack: `/services/landlord-accountant` (draft4, 2026-10-09)
 
 Read §1 first; if those lines are right the page is mostly right. Reply with numbers from §7 or "approved" with the SHA at the end.
 
@@ -7,8 +7,8 @@ Read §1 first; if those lines are right the page is mostly right. Reply with nu
 - **Title:** Landlord Accountant for UK Rental Income and Buy to Let | Property Tax Partners
 - **Meta description:** Landlord accountants for UK rental income: Self Assessment, Section 24, MTD quarterly filing, buy-to-let and portfolio accounts. Free first call.
 - **H1:** Landlord accountants for UK rental income
-- **Opening:** We are landlord accountants for anyone with rental income in the UK, from one flat to a portfolio, held personally or through a company. We prepare the accounts and tax return, work through the mortgage interest restriction, file quarterly Making Tax Digital (MTD) updates and keep company accounts in order. We also tell you what the bill will be before it arrives. The first call is free, our fees are fixed and quoted upfront, and you approve the fee before work starts. Landlords across the UK use us without ever visiting an office: everything runs by video call, phone and email, wherever you and your properties are. Book a consultation Try the free calculators What we do
-- **Coverage sentence:** Landlords across the UK use us without ever visiting an office: everything runs by video call, phone and email, wherever you and your properties are.
+- **Opening:** We are landlord accountants for anyone with rental income in the UK, from one flat to a portfolio, held personally or through a company. We prepare the accounts and tax return, work through the mortgage interest restriction, file quarterly Making Tax Digital (MTD) updates and keep company accounts in order. We also tell you what the bill will be before it arrives. The first call is free, our fees are fixed and quoted upfront, and you approve the fee before work starts. Landlords across the UK use us by video call, phone and email, wherever you and your properties are. Book a consultation Try the free calculators What we do
+- **Coverage sentence:** Landlords across the UK use us by video call, phone and email, wherever you and your properties are.
 - **H2 What a landlord accountant does for you** · A landlord accountant does the filing and the thinking: we keep the returns right and say, before the year ends, what would lower the bill.
 - **H2 Landlord tax accountant: the Section 24 and MTD side** · As landlord tax accountants, we handle the two rules that change a landlord's year most: the mortgage interest restriction, which moves the bill, and quarterly reporting under Making Tax Digital, which moves the paperwork.
 - **H2 Accountants for landlords with one property or a portfolio** · We act as accountants for landlords with a single let and for landlords with twenty, and the work changes shape as you grow.
@@ -58,9 +58,9 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - offer "Undeclared rental income disclosures" not named on /services
 - offer "Undeclared rental income disclosures" not named on /
 
-| 14 | Register probe | WARN | words 2134; sentence_len 21.8; flesch 59.9; question_headings_pct 30.0; you_per_1k 40.3; we_per_1k 27.2; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 24.8 |
-- flesch = 59.9 (target 45 to 55)
-- you_per_1k = 40.3 (target 28 to 40)
+| 14 | Register probe | WARN | words 2127; sentence_len 21.7; flesch 60.2; question_headings_pct 30.0; you_per_1k 40.4; we_per_1k 27.3; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 24.9 |
+- flesch = 60.2 (target 45 to 55)
+- you_per_1k = 40.4 (target 28 to 40)
 
 | 15 | Section weight | WARN | 6 notes |
 - section "What a landlord accountant does for you" has 365 words
@@ -70,7 +70,7 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - paragraph of 81 words: "Landlord accountant fees depend on three things: how many properties you have, h..."
 - paragraph of 89 words: "Four things decide it: your tax band, the size of your mortgage interest, whethe..."
 
-| 19 | Length (body words excluding FAQ) | WARN | 2485 words (3451 incl. FAQ) |
+| 19 | Length (body words excluding FAQ) | WARN | 2478 words (3444 incl. FAQ) |
 
 | 20 | Diff against snapshot (facts dropped) | WARN | 62 items in the snapshot and not here (no --dropped file: WARN only) |
 - number: 04
