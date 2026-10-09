@@ -185,7 +185,7 @@ Filled from the assignment table's "give up" list. Rule for each: title and H1 r
 
 | Page | Phrase it gives up | What it keeps | Change |
 |---|---|---|---|
-| homepage `/` | "property accountants uk", "uk property accountants" | brand, umbrella | DONE 2026-10-09: title tag is now "Accountants and Tax Advisers for UK Landlords and Investors" plus the brand suffix (R3, R26); the OG and Twitter titles match; the services-section links to the three pages are in (R28). |
+| homepage `/` | "property accountants uk", "uk property accountants" | brand, umbrella | DONE 2026-10-09: title tag is now "Accountants and Tax Advisers for UK Landlords and Investors" plus the brand suffix (R3, R26); the OG and Twitter titles match; the services-section links to the three pages are in (R28). Afternoon sweep: the H1, the WebPage schema name and the meta description still carried "Property accountants for UK landlords and investors", the exact H1 of the property-accountant page; all three now carry the R26 full form. The sitemap gave the homepage and the three service pages no lastmod; the real date 2026-10-09 is now recorded for those four only. Both await the owner's deploy. |
 | `/locations/bristol` | "property accountant", "property tax accountant near me", "property specialist accountant" | "accountant in bristol", "property accountant bristol" | title "Property Accountant in Bristol | ..." (already), body link to owner |
 | `/locations/birmingham` | "property accountants", "buy to let accountants", "accountants for buy-to-let landlords" | "property accountant birmingham", "west midlands" | body link to owner |
 | `/locations/manchester`, `/locations/leeds` | national forms | city forms | body link to owner |

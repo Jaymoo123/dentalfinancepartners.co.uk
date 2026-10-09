@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   title: "Property Tax Partners | Accountants for UK Landlords and Investors",
   description:
     // Ours (c218d7a6): shortened to fit the SERP snippet.
-    "Specialist property accountants for UK landlords and investors. Section 24, MTD, incorporation and CGT planning. Fixed fees and free calculators.",
+    "Specialist accountants and tax advisers for UK landlords and property investors. Section 24, MTD, incorporation, CGT. Fixed fees and free calculators.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: `${siteConfig.name} | Accountants and Tax Advisers for UK Landlords and Investors`,
@@ -192,7 +192,7 @@ export default function HomePage() {
     "@type": "WebPage",
     "@id": `${siteConfig.url}#webpage`,
     url: siteConfig.url,
-    name: "Property accountants for UK landlords and investors",
+    name: "Specialist accountants and tax advisers for UK landlords and property investors",
     isPartOf: { "@id": `${siteConfig.url}#website` },
     about: { "@id": `${siteConfig.url}#organization` },
     primaryImageOfPage: { "@type": "ImageObject", url: `${siteConfig.url}${siteConfig.publisherLogoUrl}` },
@@ -227,8 +227,11 @@ export default function HomePage() {
               </span>
               MTD is now live for landlords
             </div>
+            {/* 2026-10-09, blueprint R26: the H1 carries the full brand form and no
+                query target. "Property accountants for UK landlords and investors" is
+                now the H1 of /services/property-accountant and must not be repeated here. */}
             <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
-              Property accountants for UK landlords and investors
+              Specialist accountants and tax advisers for UK landlords and property investors
             </h1>
             <p className="mt-4 sm:mt-6 text-base leading-relaxed text-white/90 sm:text-lg lg:text-xl max-w-3xl">
               Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation, our property tax specialists do this work every day. Property tax sorted, your way, with ease.
