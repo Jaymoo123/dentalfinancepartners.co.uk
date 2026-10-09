@@ -47,11 +47,12 @@ const pageUrl = `${siteConfig.url}${PAGE_PATH}`;
    Property Tax Advisors UK" renders with two pipes once the layout template adds
    the brand, and service_page_verify.py check 1 blocks a second pipe. Keeping the
    live string also keeps what ChatGPT has indexed. Descriptions rewritten to the
-   pack's meta description, cut to 140-155 characters. */
+   pack's meta description, cut to 140-155 characters. Second pass (merge row 1):
+   "One-off" restored and "timing" dropped to make room. */
 export const metadata: Metadata = {
   title: "Property Tax Advice from Specialist Advisors",
   description:
-    "Specialist property tax advice for UK landlords: incorporation, CGT timing, Section 24, stamp duty, IHT, HMRC enquiries. Written advice, free first call.",
+    "Specialist property tax advice for UK landlords: incorporation, CGT, Section 24, stamp duty, IHT, HMRC enquiries. One-off written advice, free first call.",
   alternates: {
     canonical: pageUrl,
     languages: {
@@ -101,7 +102,8 @@ const services: ServiceItem[] = [
     lines: [
       {
         label: "What we model",
-        text: "the stamp duty and capital gains tax a move triggers, against the yearly saving.",
+        // house_positions.md §5 (s.162 incorporation relief needs a letting business, not passive investment)
+        text: "the stamp duty and capital gains tax a move triggers, against the yearly saving. First we test whether your letting counts as a business, because incorporation relief depends on it. If the numbers do not work, we say so and the properties stay where they are.",
       },
     ],
   },
@@ -113,12 +115,18 @@ const services: ServiceItem[] = [
     lines: [
       {
         label: "Gifts count",
-        text: "a gift to family is taxed as if you had sold, so the bill can arrive with no cash to pay it.",
+        // house_positions.md §5 (spouse and civil partner transfers are no gain, no loss, s.58)
+        text: "a gift to anyone except your spouse or civil partner is taxed as if you had sold it at market value, so the bill can arrive with no cash to pay it.",
       },
       {
         label: "The deadline",
         // house_positions.md §5 (60-day reporting where tax is due)
         text: "where tax is due, the return and the payment are both due 60 days after completion.",
+      },
+      {
+        label: "If you once lived there",
+        // house_positions.md §5 (PRR s.222 to 226; final 9 months always qualify where it was once a main residence)
+        text: "we work out how much of the gain main residence relief still covers, including your last nine months of ownership.",
       },
     ],
   },
@@ -141,6 +149,11 @@ const services: ServiceItem[] = [
           </>
         ),
       },
+      {
+        label: "Near £100,000 of income",
+        // house_positions.md §4 (rental profit added to total income before the credit; £1 of allowance lost per £2 over £100,000)
+        text: "we check the personal allowance taper as well, because rental profit counts towards it before the credit.",
+      },
     ],
   },
   {
@@ -152,6 +165,10 @@ const services: ServiceItem[] = [
       {
         label: "What we check",
         text: "whether the higher rates for additional homes apply, and what a transfer into a company would cost.",
+      },
+      {
+        label: "What you get",
+        text: "the stamp duty on each way of buying, before you are committed to one.",
       },
     ],
   },
@@ -171,6 +188,10 @@ const services: ServiceItem[] = [
         // house_positions.md §9 (unused pension funds in IHT scope from 6 April 2027)
         text: "unused pensions join the estate from April 2027.",
       },
+      {
+        label: "What it covers",
+        text: "a gifting order, and a clear view of what your executors will face.",
+      },
     ],
   },
   {
@@ -180,7 +201,11 @@ const services: ServiceItem[] = [
     icon: FileWarning,
     lines: [
       { label: "The usual route", text: "the Let Property Campaign, for undeclared rent." },
-      { label: "Why timing matters", text: "telling HMRC first generally costs less than being found." },
+      {
+        label: "Commercial rent",
+        // house_positions.md §27.6 (LPC is for residential landlords; non-residential uses general voluntary disclosure)
+        text: "the campaign covers residential lets only, so undeclared commercial rent goes through HMRC's general disclosure route, and we prepare that instead.",
+      },
     ],
   },
 ];
@@ -200,6 +225,8 @@ const services: ServiceItem[] = [
    something to cut. The six situations, and the substance of each detail,
    survive below in the first person; the quoted `text` lines do not. The array
    stays even so the marquee can come back without a seam. */
+/* 2026-10-09 second pass (merge rows 12 to 14): three prompts reworded, none
+   removed; the array stays at six. */
 const triggerPrompts: Array<{ tag: string; detail: string; icon: LucideIcon }> = [
   {
     tag: "You are about to buy or sell",
@@ -213,12 +240,12 @@ const triggerPrompts: Array<{ tag: string; detail: string; icon: LucideIcon }> =
   },
   {
     tag: "HMRC has written to you",
-    detail: "What you say first shapes the whole enquiry, so we settle your position before you reply.",
+    detail: "The letter has a reply date. We check the figures behind it before you answer.",
     icon: FileWarning,
   },
   {
     tag: "You are restructuring",
-    detail: "Moving property between spouses or into a company touches four taxes at once; we model them together.",
+    detail: "Moving property between spouses or into a company touches capital gains tax, stamp duty, income tax and inheritance tax at once; we model them together.",
     icon: ArrowLeftRight,
   },
   {
@@ -227,7 +254,7 @@ const triggerPrompts: Array<{ tag: string; detail: string; icon: LucideIcon }> =
     icon: Landmark,
   },
   {
-    tag: "Someone has sold you a scheme",
+    tag: "Someone has offered you a scheme",
     detail: "We check a proposed structure before you commit money, and say where it holds and where it fails.",
     icon: ShieldQuestion,
   },
@@ -249,7 +276,7 @@ const engagement = [
   {
     n: "01",
     title: "A free scoping call",
-    body: "We talk through the decision, the properties and your income. If you do not need a consultation, we say so there and then.",
+    body: "We talk through the decision, the properties and your income. If you do not need advice, we say so there and then.",
   },
   {
     n: "02",
@@ -259,7 +286,7 @@ const engagement = [
   {
     n: "03",
     title: "Modelling and the written note",
-    body: "We run the options on your figures and send a note with each one costed and our recommendation, then a call so you can push back.",
+    body: "We run the options on your figures and send a note with each one costed and our recommendation.",
   },
 ];
 
@@ -286,7 +313,9 @@ const advisorOrAccountant: Array<[string, string, string]> = [
    asset disposal relief (does not apply to investment property, §5) and employer
    national insurance; the answer-pattern spec leaves rate sets to
    /property-tax-rates, which this section links. Added: the incorporation
-   relief claim (§5). */
+   relief claim (§5). Second pass (merge rows 31 and 32): the MTD row is removed
+   (compliance, not one of the six offers; the MTD guide and checker carry it)
+   and the 20-point gap is left to the worked example and the April 2027 FAQ. */
 const changes: Array<[string, string, string]> = [
   // house_positions.md §7 (22/42/47 from 6 April 2027; England, Wales and NI; Scotland carved out)
   [
@@ -297,14 +326,8 @@ const changes: Array<[string, string, string]> = [
   // house_positions.md §4 and §7 (reducer at the 22% property basic rate; higher-rate wedge stays 20 points)
   [
     "Tax credit for mortgage interest",
-    "Rises from 20% to 22%, matching the new basic rate, so the higher-rate gap stays at 20 points",
+    "Rises from 20% to 22%, matching the new basic rate",
     "6 April 2027",
-  ],
-  // house_positions.md §3 (£50,000 from April 2026, £30,000 from April 2027, £20,000 from April 2028)
-  [
-    "Making Tax Digital for landlords",
-    "Quarterly updates for qualifying income over £50,000, then over £30,000, then over £20,000",
-    "April 2026, 2027, 2028",
   ],
   // house_positions.md §5 (section 162 relief must be claimed for transfers on or after 6 April 2026)
   [
@@ -376,15 +399,15 @@ const backgroundReading = [
 const relatedGuides = [
   {
     href: "/landlord-tax",
-    label: "Landlord tax explained: what UK landlords pay in 2026/27",
+    label: "Landlord tax explained: what you pay on UK rental property in 2026/27",
   },
   {
     href: "/section-24",
-    label: "Mortgage interest relief for landlords, explained",
+    label: "Section 24 explained: mortgage interest relief for landlords",
   },
   {
     href: "/incorporation",
-    label: "Should I incorporate my buy-to-let?",
+    label: "Should you incorporate your buy-to-let portfolio?",
   },
   {
     href: "/making-tax-digital-landlords",
@@ -420,12 +443,12 @@ const faqs: FaqEntry[] = [
   {
     question: "Do I have to switch accountants to get advice from you?",
     answer:
-      "No, you keep your accountant. A consultation is a standalone piece of work. Many of the landlords we advise stay with their existing accountant for the annual return and come to us only for the decision that sits outside it. We write the note so your accountant can act on it directly, and we will talk them through it if that helps.",
+      "No, you keep your accountant. The advice is a standalone piece of work. Many of the landlords we advise stay with their existing accountant for the annual return and come to us only for the decision that sits outside it. We write the note so your accountant can act on it directly, and we will talk them through it if that helps.",
   },
   {
     question: "What does a property tax consultation cost?",
     answer:
-      "It depends on the question, and we quote before we start. The fee turns on how many properties are involved, how they are owned, how many taxes the decision touches and how much modelling it needs. A single sale is a small job; a portfolio split across spouses and a company is a large one. The first call is free, and you approve a fixed fee before any work begins.",
+      "The first call is free; the advice after it is a fixed fee we quote before we start. A single sale is a small job; a portfolio split across spouses and a company is a large one, and the quote reflects that. Nothing starts until you approve the fee, and the free call commits you to nothing.",
   },
   {
     question: "What should I bring to the first call?",
@@ -473,6 +496,18 @@ const faqs: FaqEntry[] = [
       "Yes, and it happens often. Leaving things as they are is a proper recommendation, and once the numbers are run it is the right one for many landlords. We would rather tell you that on a free call than sell you a restructure that costs more than it saves. If your current setup is already the right one, the note says so and shows you why.",
   },
 ];
+
+/* 2026-10-09 second pass (merge row 34): the visible incorporation answer links
+   the guide. `faqs` stays plain text and feeds the FAQPage schema unchanged; the
+   visible copy differs only by the anchor tag, so the text is identical. */
+const INCORPORATION_GUIDE = "buy-to-let incorporation guide";
+const visibleFaqs: FaqEntry[] = faqs.map((f) => ({
+  ...f,
+  answer: f.answer.replace(
+    INCORPORATION_GUIDE,
+    `<a href="/incorporation" class="font-semibold underline underline-offset-2 text-emerald-700">${INCORPORATION_GUIDE}</a>`,
+  ),
+}));
 
 /**
  * Ours, kept (carve-out 5). Their version emits FAQPage only. BreadcrumbList
@@ -555,7 +590,8 @@ export default function PropertyTaxAdvicePage() {
               Whether you are deciding how to own a property, when to sell it or whether to incorporate, a free
               consultation scopes the question, quotes a fixed fee, and tells you if you do not need us. We work only
               on property tax: bring us one decision, from a purchase or gift to an HMRC letter, and we cost each
-              option before you commit. Your accounts stay where they are, and we work by video call across the UK.
+              option before you commit. Your accounts stay where they are, and we advise landlords and investors anywhere
+              in the UK by video call.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               {/* The secondary CTA pointed at the FAQ, which the designer's own
@@ -617,7 +653,8 @@ export default function PropertyTaxAdvicePage() {
               If what you actually need is someone to run the annual return, the rental schedules, the company accounts
               and the quarterly Making Tax Digital submissions, that is a different service and it lives on our{" "}
               <InlineLink href="/services/property-accountant">property accountant page</InlineLink>. Plenty of people
-              use both. Plenty use only one.
+              use both. If you hold property in your own name and only need the returns, our{" "}
+              <InlineLink href="/services/landlord-accountant">landlord accountant service</InlineLink> covers that.
             </p>
           </div>
         </div>
@@ -664,7 +701,8 @@ export default function PropertyTaxAdvicePage() {
             </h2>
             <p className={bodyText}>
               As property tax specialists we see six moments again and again, each cheaper to get right before than to
-              unpick after. You do not need a property tax expert for every question, but you do for these.
+              unpick after. These six are where a property tax expert earns the fee; for most other questions the
+              calculators below, or your own accountant, may be enough.
             </p>
             <ul className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-3">
               {triggerPrompts.map((t) => (
@@ -678,7 +716,7 @@ export default function PropertyTaxAdvicePage() {
               ))}
             </ul>
             <p className="mt-8 text-base font-bold leading-relaxed text-slate-900 text-balance sm:text-lg">
-              A landlord tax specialist is worth most before the event, so call while it is still a choice.
+              As landlord tax specialists we are worth most before the event, so call while it is still a choice.
             </p>
             <Link
               href="#book"
@@ -702,18 +740,18 @@ export default function PropertyTaxAdvicePage() {
             </h2>
             <p className={bodyText}>
               You need a property tax advisor when a decision is still open, and an accountant when a return is due.
-              An accountant reports what has happened. We change what happens next, which is why a buy-to-let tax
-              advisor earns their keep before a purchase, a disposal or an incorporation.
+              An accountant who only files your returns reports what has happened. We change what happens next, so the
+              time to call a buy-to-let tax advisor is before a purchase, a disposal or an incorporation.
             </p>
             <div className="mt-8 overflow-x-auto rounded-xl bg-white p-5 ring-1 ring-slate-200/70 sm:p-6">
               <table className="w-full min-w-[32rem] border-collapse text-sm">
-                <caption className="sr-only">A property accountant compared with a property tax advisor</caption>
+                <caption className="sr-only">An accountant who only files your returns compared with a property tax advisor</caption>
                 <thead>
                   <tr className="border-b-2 border-slate-300 text-left">
                     <th className="py-2 pr-4 font-bold text-slate-900">
                       <span className="sr-only">Area</span>
                     </th>
-                    <th className="py-2 pr-4 font-bold text-slate-900">A property accountant</th>
+                    <th className="py-2 pr-4 font-bold text-slate-900">An accountant who only files your returns</th>
                     <th className="py-2 font-bold text-emerald-800">A property tax advisor</th>
                   </tr>
                 </thead>
@@ -730,9 +768,6 @@ export default function PropertyTaxAdvicePage() {
                 </tbody>
               </table>
             </div>
-            <p className={bodyText}>
-              Many landlords keep their accountant and use us only for the decision.
-            </p>
             <Link
               href="#book"
               data-cta="comparison_book"
@@ -754,8 +789,8 @@ export default function PropertyTaxAdvicePage() {
               Property tax consultants for HMRC enquiries and disclosures
             </h2>
             <p className={bodyText}>
-              We act as property tax consultants when HMRC is already involved: a nudge letter about rental income, a
-              formal enquiry into a return, or a disclosure you would rather make before anyone asks.
+              We act as property tax consultants once HMRC is involved. That covers a nudge letter about rental income,
+              a formal enquiry into a return, or a disclosure you would rather make before anyone asks.
             </p>
             <p className={bodyText}>
               When an enquiry opens, HMRC asks for records and explanations. We read the letter with you, work out
@@ -816,12 +851,19 @@ export default function PropertyTaxAdvicePage() {
                 <InlineLink href="/services/non-resident-landlord">non-resident landlord service</InlineLink>.
               </li>
               <li>
-                Small landlords with one or two properties, where our small landlord tax advice often ends in &ldquo;change
-                nothing&rdquo;.
+                Small landlords with one or two properties, including{" "}
+                <InlineLink href="/for/first-time-and-accidental-landlords">
+                  first-time and accidental landlords
+                </InlineLink>
+                , where our small landlord tax advice often ends in &ldquo;change nothing&rdquo;.
+              </li>
+              <li>
+                Families <InlineLink href="/for/gifting-property-to-family">gifting property</InlineLink> or dealing
+                with an <InlineLink href="/for/inherited-property">inherited property</InlineLink>.
               </li>
             </ul>
             <p className={bodyText}>
-              We work only on property tax. We do not advise trading businesses or payroll.
+              We do not serve restaurants, retailers or consultants.
             </p>
           </div>
         </div>
@@ -834,7 +876,7 @@ export default function PropertyTaxAdvicePage() {
             <h2 id="how-an-engagement-works" className={h2}>
               How an engagement works
             </h2>
-            <p className={bodyText}>An engagement works in three steps, and the first one costs nothing.</p>
+            <p className={bodyText}>Three steps, and the first costs nothing.</p>
             <ProcessTimeline steps={engagement} />
             <p className={bodyText}>
               We can carry the plan out if you want us to. Nothing ties you to us afterwards.
@@ -872,7 +914,6 @@ export default function PropertyTaxAdvicePage() {
               >
                 Book a consultation
               </Link>
-              <p className="text-sm text-slate-400">The first call is free and commits you to nothing.</p>
             </div>
           </div>
         </div>
@@ -888,13 +929,12 @@ export default function PropertyTaxAdvicePage() {
               What advice costs
             </h2>
             <p className={bodyText}>
-              What advice costs depends on the question, and we quote it as a fixed fee before any work begins. How much
-              property tax consultants charge turns on four things: how many properties, how they are owned, how many
+              What advice costs depends on the question, and we quote it as a fixed fee before any work begins. What we
+              charge as property tax consultants turns on four things: how many properties, how they are owned, how many
               taxes the decision touches, and how much modelling it takes.
             </p>
             <p className={bodyText}>
-              Timing the sale of one flat is a small job; restructuring a portfolio across two spouses and a company is a
-              large one. We do not bill by the hour and there is no retainer. If the question changes, we tell you
+              We do not bill by the hour and there is no retainer. If the question changes, we tell you
               before any extra fee applies.
             </p>
           </div>
@@ -941,17 +981,16 @@ export default function PropertyTaxAdvicePage() {
               The rules your advice has to work around in 2026/27
             </h2>
             <p className={bodyText}>
-              The rules your advice has to work around are moving, and several changes already in law land by April
-              2028. We advise on the rules as they will stand.
+              We advise on the rules as they will stand, and several changes already in law land between April 2026
+              and April 2028.
             </p>
             {/* Worked example. house_positions.md §4 (credit at 20% for 2026/27, 22% from 2027/28) and §7
                 (property income at 40% then 42% for a higher-rate landlord; wedge stays 20 points).
                 £12,000 x 20% = £2,400; £12,000 x 22% = £2,640. */}
             <p className={bodyText}>
-              Take a higher-rate landlord paying £12,000 a year in mortgage interest. In 2026/27 the interest earns a
-              20% tax credit, worth £2,400, against rent taxed at 40%. From 2027/28 the credit is 22%, worth £2,640,
-              against rent taxed at 42%. The gap between relief and rate stays at 20 points; what rises is the tax on
-              the profit itself.
+              Take a higher-rate landlord with £12,000 of mortgage interest. In 2026/27 the credit is 20%, worth
+              £2,400, against rent taxed at 40%. From 2027/28 it is 22%, worth £2,640, against 42%. The 20-point gap
+              holds; what rises is the tax on the profit.
             </p>
 
             <div className="mt-8 overflow-x-auto rounded-xl bg-white p-5 sm:p-6">
@@ -981,7 +1020,7 @@ export default function PropertyTaxAdvicePage() {
             </div>
             <p className={bodyText}>
               Our <InlineLink href="/property-tax-rates">property tax rates reference</InlineLink> carries every rate
-              and threshold if you want the detail before a call.
+              and threshold.
             </p>
 
             {/* Carve-out 5. Their re-layout deleted this box and all eight blog
@@ -995,9 +1034,6 @@ export default function PropertyTaxAdvicePage() {
                 (see the note on `backgroundReading`). */}
             <div className="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:mt-10 sm:p-8">
               <h3 className="text-base font-bold text-slate-900 sm:text-lg">Background reading before you book</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base">
-                Our guides on the questions consultations most often turn on.
-              </p>
               <RelatedArticles
                 className="mt-5"
                 items={backgroundReading.map(({ href, label }) => ({ href, title: label }))}
@@ -1018,7 +1054,12 @@ export default function PropertyTaxAdvicePage() {
           be ruled out and two ids cost one element. */}
       <div id="faqs" className="scroll-mt-24">
         <div id="faq" className="scroll-mt-24">
-          <FaqSection title="Questions about a consultation" faqs={faqs} headingId="questions-about-a-consultation" />
+          <FaqSection
+            title="Questions about a consultation"
+            faqs={visibleFaqs}
+            html
+            headingId="questions-about-a-consultation"
+          />
         </div>
       </div>
 
@@ -1040,9 +1081,34 @@ export default function PropertyTaxAdvicePage() {
               ))}
             </ul>
             <p className={bodyText}>
-              For the yearly returns and accounts rather than one decision, see our{" "}
-              <InlineLink href="/services/landlord-accountant">landlord accountants for UK rental income</InlineLink>,
-              or the property accountant service linked near the top of this page.
+              For the yearly returns and accounts rather than one decision, see our landlord accountants for UK rental
+              income, or property accountants for UK landlords and investors for accounts and planning together.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Local coverage (blueprint 3.1 items 4 and 13): the one sentence that
+          serves the "near me" and stacked-UK rows without the strings, and the
+          only place on the page a city is named. 2026-10-09 second pass (merge
+          rows 37 and 38): moved above the #book panel so the panel closes the page. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div>
+            <Eyebrow>Coverage</Eyebrow>
+            <h2 id="where-we-work" className={h2}>
+              Where we work
+            </h2>
+            <p className={bodyText}>
+              Every part of the UK is covered from one place, so your postcode makes no difference to
+              the service; our pages for <InlineLink href="/locations/london">London</InlineLink>,{" "}
+              <InlineLink href="/locations/manchester">Manchester</InlineLink>,{" "}
+              <InlineLink href="/locations/birmingham">Birmingham</InlineLink>,{" "}
+              <InlineLink href="/locations/leeds">Leeds</InlineLink> and{" "}
+              <InlineLink href="/locations/bristol">Bristol</InlineLink> describe the local work.
+            </p>
+            <p className={bodyText}>
+              Where Scotland or Wales has its own version of a tax, such as stamp duty, we advise on that version.
             </p>
           </div>
         </div>
@@ -1070,32 +1136,6 @@ export default function PropertyTaxAdvicePage() {
           footnote="No obligation and no hard sell. If your position is already right, we will say so."
         />
       </div>
-
-      {/* Local coverage (blueprint 3.1 items 4 and 13): the one sentence that
-          serves the "near me" and stacked-UK rows without the strings, and the
-          only place on the page a city is named. */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div>
-            <Eyebrow>Coverage</Eyebrow>
-            <h2 id="where-we-work" className={h2}>
-              Where we work
-            </h2>
-            <p className={bodyText}>
-              We advise landlords anywhere in the UK by video call and phone, so your postcode makes no difference to
-              the service; our pages for <InlineLink href="/locations/london">London</InlineLink>,{" "}
-              <InlineLink href="/locations/manchester">Manchester</InlineLink>,{" "}
-              <InlineLink href="/locations/birmingham">Birmingham</InlineLink>,{" "}
-              <InlineLink href="/locations/leeds">Leeds</InlineLink> and{" "}
-              <InlineLink href="/locations/bristol">Bristol</InlineLink> describe the local work.
-            </p>
-            <p className={bodyText}>
-              Each consultation runs the same way wherever you are: a free call, a fixed quote, then the note. Where
-              Scotland or Wales has its own version of a tax, such as stamp duty, we advise on that version.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

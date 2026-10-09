@@ -80,7 +80,7 @@ DEFERRED_PATTERNS = [
     (r"\bfixed annual fee\b", "fee wording outside the allowed form"),
     (r"\bin writing\b", "fee-in-writing claim"),
     (r"\blandlords only\b|\bentire practice\b|\bonly work with landlords\b", "landlords-only claim"),
-    (r"\b(?:ICAEW|ACCA|CIOT|ATT|AAT|STEP)\b", "professional-body claim"),
+    (r"(?-i:\b(?:ICAEW|ACCA|CIOT|ATT|AAT|STEP)\b)", "professional-body claim"),  # case-sensitive: "step by step" is not STEP
 ]
 # "Section 24" is the name landlords use for the finance-cost restriction (the site's own guide is /section-24), so it is not a citation.
 STATUTE_RE = re.compile(r"\b(?:s\.\s?\d+[A-Z]?|section\s+(?!24\b)\d+[A-Z]?|sch(?:edule)?\.?\s+\d+|FA\s?\d{4}|ITTOIA|TCGA|ITA\s?2007|IHTA|CTA\s?20\d\d|para(?:graph)?\s+\d+)\b", re.I)
@@ -665,9 +665,14 @@ def run_checks(page: Page, slug: str, *, assignment: dict, gsc_rows: list[dict],
 
     # 11 Cross-page sameness
     q = []
-    mine = ngrams(page.copy_scope_text())
+    # Related-guide lists repeat the guides' real titles on every page that links
+    # them; that is a list of names, not copied prose, so it is left out here.
+    def sameness_text(pg: Page) -> str:
+        return " ".join(s["text"] for s in pg.sections if not pg.is_shared_section(s)
+                        and not re.search(r"related guides|background reading", s["heading"], re.I))
+    mine = ngrams(sameness_text(page))
     for label, other in {**siblings, **other_pages}.items():
-        shared = mine & ngrams(other.copy_scope_text())
+        shared = mine & ngrams(sameness_text(other))
         if shared:
             ex = "; ".join(" ".join(g) for g in list(shared)[:3])
             q.append(f"{len(shared)} shared 8-word sequences with {label}: {ex}")

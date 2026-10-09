@@ -25,6 +25,11 @@ import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 const RENT = 50_000;
 const COSTS = 8_000;
 const INTEREST = 18_000;
+// house_positions.md §4, §7, §21.4: the /section-24 worked example's £40,000
+// salary. It sits below the £50,270 band ceiling, but with £42,000 of property
+// profit on top the whole £18,000 interest slice is taxed at 40% (42% from
+// 2027/28) against a 20% (22%) credit, which is what the caption states.
+const SALARY = 40_000;
 
 const KEPT = RENT - COSTS - INTEREST; // 24,000 — the cash that actually lands
 const TAXED = RENT - COSTS; // 42,000 — the profit the return declares
@@ -45,7 +50,8 @@ export function Section24Wedge() {
         One landlord, one year
       </figcaption>
       <p className="mt-1 text-xs leading-relaxed text-slate-500">
-        {fmtGBP(RENT)} of rent, {fmtGBP(COSTS)} of running costs, {fmtGBP(INTEREST)} of mortgage interest.
+        {fmtGBP(RENT)} of rent, {fmtGBP(COSTS)} of running costs, {fmtGBP(INTEREST)} of mortgage interest, on top
+        of a {fmtGBP(SALARY)} salary.
       </p>
 
       <div className="mt-6 space-y-5">

@@ -12,7 +12,7 @@ import { siteConfig } from "@/config/site";
 import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { relatedItemsFromLinks } from "@/lib/blog";
-import { TaxYearGap } from "@/components/property/TaxYearGap";
+import type { ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
 import { Building2, Compass, FileText, MonitorCheck, Receipt, Store } from "lucide-react";
 
@@ -66,7 +66,9 @@ type Service = {
   title: string;
   icon: LucideIcon;
   definition: string;
-  lines: Array<{ label: string; text: string }>;
+  /** ReactNode so a line can carry an inline guide link; the Offer names come
+   *  from `title` only, so a link here cannot reach hasOfferCatalog. */
+  lines: Array<{ label: string; text: ReactNode }>;
 };
 
 /**
@@ -101,7 +103,7 @@ const services: Service[] = [
       {
         label: "Why it differs",
         // house_positions.md §4: companies deduct finance costs in full; the restriction is for individuals.
-        text: "a company deducts its mortgage interest in full, so its planning differs from property held personally.",
+        text: "a company deducts its mortgage interest in full, which changes where your next purchase should sit.",
       },
     ],
   },
@@ -113,8 +115,15 @@ const services: Service[] = [
     lines: [
       {
         label: "When it applies",
-        // house_positions.md §3: £50,000 from 6 April 2026, £30,000 from April 2027, £20,000 from April 2028.
-        text: "from 6 April 2026 if your qualifying income is over £50,000, from April 2027 over £30,000, and from April 2028 over £20,000.",
+        // house_positions.md §3: £50,000 from 6 April 2026, then lowered to £30,000 from April 2027 and
+        // £20,000 from April 2028 ("lower each April to 2028").
+        text: (
+          <>
+            from April 2026 once your qualifying income passes £50,000, with the threshold lowered each April to
+            2028; our <InlineLink href="/making-tax-digital-landlords">Making Tax Digital guide</InlineLink> has
+            the steps.
+          </>
+        ),
       },
       {
         label: "What we do",
@@ -156,8 +165,14 @@ const services: Service[] = [
       },
       {
         label: "What has changed",
-        // house_positions.md §5: incorporation relief must be claimed for transfers on or after 6 April 2026.
-        text: "incorporation relief, which can defer the gain for a genuine property business, now has to be claimed for transfers from 6 April 2026.",
+        // house_positions.md §5: incorporation relief (s.162) must be claimed for transfers on or after 6 April 2026.
+        text: (
+          <>
+            incorporation relief, which can defer the gain for a genuine property business, now has to be claimed
+            for transfers from 6 April 2026, and our <InlineLink href="/incorporation">incorporation guide</InlineLink>{" "}
+            explains when it is available.
+          </>
+        ),
       },
     ],
   },
@@ -207,7 +222,7 @@ const onboarding = [
   {
     n: "02",
     title: "Agree the fee",
-    body: "We set the scope, then quote a fixed fee for your approval before any work starts. If you already have an accountant, we ask them for professional clearance and collect your past returns and records, so nothing carried forward is lost.",
+    body: "We set the scope, then quote a fixed fee for your approval before any work starts.",
   },
   {
     n: "03",
@@ -237,7 +252,13 @@ const onboarding = [
  * (docs/Property/STRUCTURE_VS_COMPETITORS_2026-08-17.md:128-142), and the wave
  * brief that built this page required "4-8 relevant existing blog posts in-body".
  */
-const feedingPosts = [
+/**
+ * 2026-10-09 (WP1-services, merge rows 27 and 28): an optional `excerpt`
+ * replaces the card text `relatedItemsFromLinks` takes from a post's first
+ * sentence, where that sentence reads badly out of context. Applied here
+ * rather than in the shared helper; the list itself is unchanged.
+ */
+const feedingPosts: Array<{ href: string; label: string; excerpt?: string }> = [
   {
     href: "/blog/property-accountant-services/what-does-a-property-accountant-do",
     label: "What Does a Property Accountant Do? Services and Scope for UK Landlords",
@@ -249,6 +270,7 @@ const feedingPosts = [
   {
     href: "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
     label: "How Much Does a Property Accountant Cost: UK Pricing Guide 2026",
+    excerpt: "What firms across the market charge for property accounting, and what each level of fee should include.",
   },
   {
     href: "/blog/property-accountant-services/change-landlord-accountants",
@@ -273,8 +295,14 @@ const feedingPosts = [
   {
     href: "/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide",
     label: "Filing a landlord Self Assessment return",
+    excerpt:
+      "How to file a landlord's Self Assessment return step by step, including the property pages and what to add in a year you sell.",
   },
 ];
+
+const relatedItems = relatedItemsFromLinks(feedingPosts).map((item, i) =>
+  feedingPosts[i].excerpt ? { ...item, excerpt: feedingPosts[i].excerpt } : item,
+);
 
 const cities = [
   { href: "/locations/london", label: "London" },
@@ -284,6 +312,12 @@ const cities = [
   { href: "/locations/bristol", label: "Bristol" },
 ];
 
+/**
+ * `faqs` feeds the FAQPage schema as plain text. The visible list is the same
+ * array with one answer's service name turned into a link (merge row 26):
+ * `buildFaqPageJsonLd` does not strip tags, so the schema never gets the HTML,
+ * and the words are identical in both (verify check 4).
+ */
 const faqs: FaqEntry[] = [
   {
     question: "What does a property accountant do?",
@@ -298,18 +332,19 @@ const faqs: FaqEntry[] = [
   {
     question: "Do landlords need an accountant?",
     answer:
-      "No law says a landlord must use an accountant, and you can file your own return. Most landlords bring one in when the tax stops being simple: a second or third property, a limited company, a property owned with someone else, or a sale. At that point the rules start to interact, mistakes are harder to spot yourself, and we can show you on the first call what we would do differently.",
+      "No law says a landlord must use an accountant, and you can file your own return. The usual point to bring one in is when the tax stops being simple: a second or third property, a limited company, a property owned with someone else, or a sale. At that point the rules start to interact, and mistakes are harder to spot yourself.",
   },
   {
     question: "Do I need a property accountant for one buy-to-let?",
-    // house_positions.md §3: MTD for ITSA from 6 April 2026 above £50,000 of qualifying income.
+    // house_positions.md §3: MTD for ITSA above £50,000 of qualifying income from 6 April 2026, £30,000 from
+    // 6 April 2027 and £20,000 from 6 April 2028.
     answer:
-      "Often not. A single let with no mortgage and routine costs is a return many owners manage alone. Three things usually change that: a mortgage while you pay higher rate tax, because the interest restriction then costs real money; a refurbishment that mixes repairs with improvements; or qualifying income above £50,000, which brings quarterly Making Tax Digital filing from April 2026. The first call will show which side of that line you are on.",
+      "Often not. A single let with no mortgage and routine costs is a return many owners manage alone. Three things usually change that: a mortgage while you pay higher rate tax, because the interest restriction then costs real money; a refurbishment that mixes repairs with improvements; or qualifying income above £50,000 from April 2026, falling to £20,000 by April 2028, which brings quarterly Making Tax Digital filing. The first call will show which side of that line you are on.",
   },
   {
     question: "How is a property accountant different from a regular accountant?",
     answer:
-      "The difference is depth on property rules, not the ability to file a return. A regular accountant can prepare a correct return from what you hand over. A property accountant also checks what you have not thought to mention: how the interest restriction applies, whether costs are repairs or improvements, how joint ownership is split, and what a sale or a move into a company will cost. Because we only do property, we raise those questions before you ask.",
+      "The difference is depth on property rules, not the ability to file a return. A regular accountant can prepare a correct return from what you hand over. A property accountant starts from the property instead: who owns it, how it is financed and what you plan to do next, and that shapes the return, the structure and the timing of any sale. Because we only do property, we raise those questions before you ask.",
   },
   {
     question: "How much does a property accountant cost?",
@@ -350,6 +385,15 @@ const faqs: FaqEntry[] = [
       "Yes. If you live abroad and let property in the UK, your rent normally falls under the Non-Resident Landlord Scheme, and any UK property you sell has to be reported within 60 days whether or not tax is due. We handle the UK returns and the scheme approvals for you, and our non-resident landlord service covers that work in more detail.",
   },
 ];
+
+const NRL_SERVICE = "non-resident landlord service";
+const visibleFaqs: FaqEntry[] = faqs.map((f) => ({
+  ...f,
+  answer: f.answer.replace(
+    NRL_SERVICE,
+    `<a href="/services/non-resident-landlord" class="font-semibold underline underline-offset-2 text-emerald-700">${NRL_SERVICE}</a>`,
+  ),
+}));
 
 /**
  * Ours, restored. Their version emits FAQPage only, which drops the richest
@@ -419,12 +463,15 @@ export default function PropertyAccountantPage() {
             <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-6xl">
               Property accountants for UK landlords and investors
             </h1>
+            {/* 2026-10-09 (WP1-services, merge pass): the registered-office sentence is
+                removed from the opening, departing from pack §3.1 item 3, so the three
+                service-page openings match in shape (R7). The footer and the
+                Organization schema carry the address. */}
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
               We are property accountants for landlords, investors and owners of property companies anywhere in
               the UK. We prepare rental accounts, Self Assessment returns, company accounts and Making Tax
-              Digital filings, and plan the tax that goes with them, because property is the only work we do. We
-              work remotely from our registered office in Shipley, West Yorkshire. The first call is free, and we
-              quote a fixed fee for you to approve before any work starts.
+              Digital filings, and we plan the tax that goes with them. Property is the only work we do. The
+              first call is free, and we quote a fixed fee for you to approve before any work starts.
             </p>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
               We work with landlords and investors across the UK by video call, phone and email, so where you or
@@ -512,22 +559,23 @@ export default function PropertyAccountantPage() {
           </h2>
           <Prose>
             <p>
-              We are specialists: we work on property accounts and property tax and nothing
+              We are accountants that specialise in property: we work on property accounts and property tax and nothing
               else, and we do not take on restaurants, retailers or consultants. A general practice can file a
               correct return from what it is given. The gap is in the questions it does not ask, because a firm
               that sees a few landlords a year rarely meets the same property problem twice.
             </p>
             <p>
-              Plenty of firms call themselves property specialist accountants. When comparing accountants that
-              specialise in property, these are the four points worth testing, and the ones we raise first.
+              If you are comparing property specialist accountants, test them on these four points. They are the
+              ones we raise first.
             </p>
           </Prose>
           <ul className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 md:grid-cols-2">
             <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
               <span className="block font-bold text-slate-900">Mortgage interest</span>
               {/* house_positions.md §4: interest earns a basic rate credit, capped by three limits, excess carried forward. */}
-              On property you own personally, the interest is not deducted from rent. It earns a basic rate tax
-              credit instead, which is capped in some years and carried forward. We track both each year, and our{" "}
+              On homes you let in your own name, the interest is not deducted from rent. It earns a basic rate tax
+              credit instead, which is capped in some years, with the unused part carried forward. We track both
+              each year, and our{" "}
               <InlineLink href="/section-24">Section 24 guide</InlineLink> explains the rule.
             </li>
             <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
@@ -537,14 +585,17 @@ export default function PropertyAccountantPage() {
             </li>
             <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
               <span className="block font-bold text-slate-900">Joint ownership</span>
-              Joint owners are taxed on a default split unless an election changes it, and the election has to
-              match who really owns what. We check that the returns, the election and the title agree.
+              {/* house_positions.md §24.1 (50/50 default and election, spouses and civil partners living
+                  together only) and §24.6 (other co-owners: actual beneficial shares, no election). */}
+              Married couples and civil partners who live together and own jointly are taxed 50/50 unless they
+              elect otherwise, and the election has to match who really owns what. Other co-owners are taxed on
+              their actual shares. We check that the returns, any election and the title agree.
             </li>
             <li className="rounded-xl bg-slate-50 p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200/70 sm:p-8 sm:text-base">
               <span className="block font-bold text-slate-900">Deadlines outside the tax return</span>
               {/* house_positions.md §5 (60-day CGT return) and §3 (MTD quarterly updates). */}
-              A sale with tax to pay has its own 60-day return, and quarterly MTD updates sit outside the January
-              deadline. Those dates are tracked for you, and the{" "}
+              A residential sale with tax to pay has its own 60-day return, and quarterly MTD updates sit outside
+              the January deadline. Those dates are tracked for you, and the{" "}
               <InlineLink href="/landlord-tax">landlord tax guide</InlineLink> sets out the full calendar.
             </li>
           </ul>
@@ -581,28 +632,29 @@ export default function PropertyAccountantPage() {
               for you to ask.
             </p>
             {/* Worked example. house_positions.md §4: 20% basic rate credit for 2026/27, rising to 22% from
-                2027/28; §7: property income rates 22/42/47% from 2027/28, so the higher rate wedge stays 20 points.
+                2027/28; §7: property income rates 22/42/47% from 2027/28 (§7 Scotland carve-out: Scottish taxpayers
+                pay Holyrood rates), so the higher rate wedge stays 20 points; §4: companies deduct finance costs in full.
                 Arithmetic: £18,000 x 40% = £7,200; x 20% = £3,600; 2027/28: x 42% = £7,560, x 22% = £3,960,
                 gap £3,600 both years. */}
             <p>
-              Here is what that means in numbers. A higher rate landlord pays £18,000 of mortgage interest on flats
-              held in their own name. If that interest could still be deducted, it would save £7,200 at 40%; the
-              basic rate credit gives £3,600 for 2026/27, so the restriction costs £3,600 a year. From 2027/28 the
-              credit rises to 22% and the higher rate on property income to 42%, and the gap stays the same.
+              A higher rate landlord pays £18,000 of mortgage interest on flats held in their own name. If that
+              interest could still be deducted, it would save £7,200 at 40%; the basic rate credit gives £3,600 for
+              2026/27, so the restriction costs £3,600 a year. From 2027/28 the credit rises to 22% and the higher
+              rate on property income outside Scotland to 42%, and the gap stays the same. Held in a company, the
+              same interest would be deducted in full.
             </p>
             <p>
-              That is why we model where the next purchase should sit before it is bought. Accounting for property
-              tax this way covers sales and gifts too, while there is still time to change the outcome.
+              That is why we model where the next purchase should sit before it is bought. We plan sales and gifts
+              the same way, while there is still time to change the outcome.
             </p>
           </Prose>
-          <TaxYearGap />
         </div>
       </section>
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Eyebrow>Investors</Eyebrow>
-          <h2 id="accountants-for-property-investors-and-investment-portfolios" className={h2}>
+          <h2 id="accountants-for-property-investors-and-portfolios" className={h2}>
             Accountants for property investors and investment portfolios
           </h2>
           <Prose>
@@ -622,10 +674,8 @@ export default function PropertyAccountantPage() {
               shows how that works.
             </p>
             <p>
-              Many investors end up with property in their own name and in one or more companies. We act as
-              accountants for property company structures as well as for the individual, and plan the two
-              together. That joined up view is what property investment accountants should give a portfolio of
-              any size.
+              Many investors end up with property in their own name and in one or more companies. We act for
+              your companies as well as for you, and plan the two together.
             </p>
           </Prose>
         </div>
@@ -641,7 +691,8 @@ export default function PropertyAccountantPage() {
             <p>
               We work with landlords, property investors, commercial property owners and property companies, from
               a single buy-to-let in your own name to a portfolio run through a limited company. Our accounting
-              services for property owners share one core, and these pages cover the commonest situations.
+              services for property owners are the same at every size, and the pages below go deeper on six
+              common situations.
             </p>
           </Prose>
           <ul className="mt-6 space-y-3 text-sm leading-relaxed text-slate-700 sm:text-base">
@@ -658,6 +709,12 @@ export default function PropertyAccountantPage() {
                 Moving property into a limited company
               </InlineLink>
               : you want the cost of incorporating worked out before you commit.
+            </li>
+            <li>
+              <InlineLink href="/for/property-company-profit-extraction">
+                Accountants for property company directors taking money out
+              </InlineLink>
+              : your company makes a profit and you want it out at the lowest tax.
             </li>
             <li>
               <InlineLink href="/for/selling-a-buy-to-let">Selling a buy-to-let</InlineLink>: an offer is on the
@@ -695,7 +752,7 @@ export default function PropertyAccountantPage() {
             How it works
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-700">
-            It works in three stages, and the opening conversation is free.
+            We work in three stages, and the first call is free.
           </p>
           <ProcessTimeline steps={onboarding} />
         </div>
@@ -709,8 +766,8 @@ export default function PropertyAccountantPage() {
           </h2>
           <Prose>
             <p>
-              We charge fixed fees, quoted upfront, and you approve the fee before any work starts. There is no
-              hourly billing; the figure depends on the four things below, not a package picked from a list.
+              Your fee depends on the four things below, not a package picked from a list, and we quote it as a
+              fixed fee that you approve before any work starts.
             </p>
           </Prose>
 
@@ -757,7 +814,7 @@ export default function PropertyAccountantPage() {
         </div>
       </section>
 
-      <FaqSection title="Questions people ask" faqs={faqs} headingId="questions-people-ask" className="bg-white py-12 sm:py-16 lg:py-20" />
+      <FaqSection title="Questions people ask" faqs={visibleFaqs} html headingId="questions-people-ask" className="bg-white py-12 sm:py-16 lg:py-20" />
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
@@ -782,7 +839,7 @@ export default function PropertyAccountantPage() {
               <InlineLink href="/services/landlord-accountant">landlord accountants for UK rental income</InlineLink>.
             </p>
           </Prose>
-          <RelatedArticles className="mt-8" items={relatedItemsFromLinks(feedingPosts)} />
+          <RelatedArticles className="mt-8" items={relatedItems} />
         </div>
       </section>
 
@@ -828,7 +885,7 @@ export default function PropertyAccountantPage() {
           </h2>
           <Prose>
             <p>
-              We work with clients anywhere in the UK from one team, and five city pages describe local work:
+              Five city pages describe how we work with landlords there:
             </p>
           </Prose>
           <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm sm:text-base">
@@ -840,9 +897,7 @@ export default function PropertyAccountantPage() {
           </ul>
           <Prose>
             <p>
-              Wherever you are, the service, the accountants you deal with and the way we agree fees stay the same.
-              If you live outside the UK and let property here, the same applies, with the extra non-resident
-              filings handled for you.
+              Wherever you are, the service and the way we agree fees stay the same.
             </p>
           </Prose>
         </div>

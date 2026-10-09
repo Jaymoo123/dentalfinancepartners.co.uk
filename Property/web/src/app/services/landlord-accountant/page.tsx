@@ -94,7 +94,8 @@ const services: Offer[] = [
       "We prepare the property pages of your tax return from your rent, costs and mortgage statements, and file it.",
     lines: [
       { label: "Who it suits", text: "One property or twenty, owned alone or jointly." },
-      { label: "What you see", text: "A figure for each property, not only the total." },
+      // house_positions.md §19 (quarterly cycle table): the final declaration is due 31 January after the year end.
+      { label: "Deadline", text: "We file ahead of 31 January, so the payment date is never a surprise." },
     ],
   },
   {
@@ -103,10 +104,8 @@ const services: Offer[] = [
     definition:
       "We work out what relief your mortgage interest really gives you, now that it comes as a tax credit, not a cost.",
     lines: [
-      // house_positions.md §4: the credit is 20% of finance costs for 2026/27.
-      { label: "The catch", text: "The credit is 20% of the interest, so a higher-rate landlord loses half the relief." },
-      // house_positions.md §4 and §7: the credit is given at 22% from 2027/28.
-      { label: "From April 2027", text: "The credit rises to 22%, alongside new rates on property income." },
+      { label: "What you get", text: "The extra tax the rule costs you this year, in pounds, before January." },
+      { label: "What we need", text: "Your lender's annual interest statement for each mortgage." },
     ],
   },
   {
@@ -115,8 +114,12 @@ const services: Offer[] = [
     definition:
       "We keep your records in software HMRC accepts and send each quarterly update, then the year-end return.",
     lines: [
-      // house_positions.md §3: £50,000 from 6 April 2026, £30,000 from 6 April 2027.
-      { label: "Who is in", text: "Rent plus self-employed income over £50,000, then over £30,000 from April 2027." },
+      // house_positions.md §3 and §19.2: the threshold is tested on gross qualifying
+      // income (before expenses); the dates sit in the MTD FAQ below.
+      {
+        label: "Who is in",
+        text: "Landlords whose rent plus self-employed income, before expenses, passes the threshold; the FAQ below gives the dates.",
+      },
       // house_positions.md §3: limited companies are outside MTD for ITSA.
       { label: "Companies", text: "Outside the regime; they file annual accounts instead." },
     ],
@@ -127,9 +130,13 @@ const services: Offer[] = [
     definition:
       "We prepare the accounts and Corporation Tax return for a company that owns rental property, and the director's return with them.",
     lines: [
-      // house_positions.md §4: companies deduct finance costs in full.
-      { label: "Interest", text: "A company takes mortgage interest off its profit in full." },
-      { label: "Drawing money", text: "Salary, dividends or a director's loan, planned before the year ends." },
+      // house_positions.md §21.1: s.455 charge on the company where an overdrawn
+      // director's loan is unpaid 9 months after the year end.
+      {
+        label: "Director's loan",
+        text: "We keep the loan account up to date, because an overdrawn one can bring an extra tax charge on the company.",
+      },
+      { label: "Drawing money", text: "Salary or dividends, planned before the year ends." },
     ],
   },
   {
@@ -138,7 +145,7 @@ const services: Offer[] = [
     definition:
       "We produce a profit and loss for every property you own, next to the single pooled figure your return declares.",
     lines: [
-      { label: "Why it matters", text: "Pooling hides the property that loses money." },
+      { label: "What we need", text: "Rent, costs and mortgage statements for each property, kept apart." },
       { label: "Refinancing", text: "We track where borrowed money went, since that decides what interest counts." },
     ],
   },
@@ -148,7 +155,8 @@ const services: Offer[] = [
     definition:
       "We put earlier years right through HMRC's Let Property Campaign, working out the tax, interest and penalty and making the disclosure.",
     lines: [
-      { label: "Why now", text: "Telling HMRC first costs far less than being found." },
+      // house_positions.md §27.6: the Let Property Campaign excludes companies.
+      { label: "Who it is for", text: "Landlords who let in their own name; a company that under-declared uses a different route." },
       { label: "What we need", text: "Rent and costs for each year that was missed." },
     ],
     link: { href: "/for/rental-income-disclosure", label: "Putting undeclared rental income right" },
@@ -176,6 +184,13 @@ const whoWeWorkWith = [
     body: "You are buying and refinancing, and the question is whether the next purchase belongs in a company.",
     href: "/for/property-spv-set-up",
     linkLabel: "Setting up a property company",
+  },
+  {
+    icon: "building" as const,
+    title: "HMOs and multi-lets",
+    body: "You let a house room by room, so the bills you cover and the licence fee all need claiming correctly.",
+    href: "/for/hmo-and-multi-let-landlords",
+    linkLabel: "HMO and multi-let landlords",
   },
   {
     icon: "alert" as const,
@@ -207,7 +222,7 @@ const onboarding = [
   {
     n: "03",
     title: "Handover, then the year",
-    body: "We ask your old accountant for clearance, get authorised with HMRC as your agent and set your records up for quarterly filing. Then we keep you ahead of each deadline.",
+    body: "We ask your old accountant for clearance, get authorised with HMRC as your agent and, where Making Tax Digital applies to you, set your records up for quarterly filing. Then we keep you ahead of each deadline.",
   },
 ];
 
@@ -219,7 +234,7 @@ const faqs: FaqEntry[] = [
   {
     question: "What does a landlord accountant do?",
     answer:
-      "A landlord accountant prepares your rental accounts and tax return, applies the mortgage interest restriction correctly, and files quarterly Making Tax Digital updates where they apply. If you own through a company, that includes the company accounts and Corporation Tax return. The part that saves money is the advice: who should own what, when to sell, and whether a cost is a repair you can claim now. We do both, and we tell you the bill before it is due.",
+      "A landlord accountant prepares your rental accounts and tax return, applies the mortgage interest restriction correctly, and files quarterly Making Tax Digital updates where they apply. If you own through a company, that includes the company accounts and Corporation Tax return. The part that saves money is the advice: who should own what, when to sell, and whether a cost is a repair you can claim now. We do both, for one flat or a portfolio.",
   },
   {
     question: "Do I need an accountant for one rental property?",
@@ -233,9 +248,10 @@ const faqs: FaqEntry[] = [
   },
   {
     // house_positions.md §5: the 60-day report applies where CGT is due.
+    // §6: the furnished holiday lettings tax regime was abolished.
     question: "What is the difference between a landlord tax accountant and a general accountant?",
     answer:
-      "A landlord tax accountant works on rental property every day; a general practice sees it a few times a year among many other kinds of work. The rules have changed almost every year since the interest restriction arrived: the stamp duty surcharge, the 60-day capital gains report, the end of furnished holiday lets, and now quarterly reporting. A generalist can be competent and still miss one, and the cost sits with you.",
+      "A landlord tax accountant works on rental property every day; a general practice sees it a few times a year among many other kinds of work. The rules have changed almost every year since the interest restriction was announced: the stamp duty surcharge, the 60-day capital gains report, the end of the furnished holiday lettings tax regime, and now quarterly reporting. A generalist can be competent and still miss one, and the cost sits with you.",
   },
   {
     question: "Can you help if I have not declared rental income?",
@@ -247,14 +263,14 @@ const faqs: FaqEntry[] = [
     // (incorporation relief must be claimed for transfers on or after 6 April 2026).
     question: "Should I own property personally or through a limited company?",
     answer:
-      "Four things decide it: your tax band, the size of your mortgage interest, whether you live off the profit, and how long you will keep it all. A company deducts interest in full, but profit you take out is taxed again. Moving property you already own is treated as a sale, so capital gains tax and stamp duty both apply, and incorporation relief must now be claimed for transfers from 6 April 2026. We run both routes first.",
+      "Four things decide it: your tax band, the size of your mortgage interest, whether you live off the profit, and how long you will keep it all. A company deducts interest in full, but profit you take out is taxed again. Moving property you already own is treated as a sale, so capital gains tax and stamp duty both apply, and incorporation relief, which can defer the gain, must now be claimed for transfers from 6 April 2026. We model both routes on your own figures before you decide.",
   },
   {
     // house_positions.md §3: £50,000 from 6 April 2026, £30,000 from 6 April 2027,
     // £20,000 from 6 April 2028; joint owners test their share; companies are outside.
     question: "Do I have to file quarterly under Making Tax Digital?",
     answer:
-      "Yes, if your rental and self-employed income together is over £50,000 before expenses: quarterly updates started from 6 April 2026. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. It is measured on gross income, not profit, and joint owners count only their share. Property held in a limited company is outside the regime. Our MTD checker tells you which year applies to you.",
+      "Yes, if your rental and self-employed income together is over £50,000 before expenses: quarterly updates have applied since 6 April 2026. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. Joint owners count only their share, and property held in a limited company is outside the regime. Our MTD checker tells you which year applies to you.",
   },
   {
     question: "Is there a bad time of year to switch accountants?",
@@ -274,7 +290,7 @@ const faqs: FaqEntry[] = [
   {
     question: "Which accounting services does a buy-to-let investor need for tax returns and compliance?",
     answer:
-      "Most buy-to-let investors need three things from a specialist: a tax return that handles the rental income and the interest restriction correctly, quarterly Making Tax Digital updates once the threshold applies, and company accounts if any property sits in a limited company. Beyond that compliance, use an accountant who advises before you buy, refinance or sell, because that is when the tax is decided. We should be able to say on the first call which you need.",
+      "Most buy-to-let investors need three things from a specialist: a tax return that handles the rental income and the interest restriction correctly, quarterly Making Tax Digital updates once the threshold applies, and company accounts if any property sits in a limited company. Beyond that compliance, use an accountant who advises before you buy, refinance or sell, because that is when the tax is decided. We will tell you on the first call which of these you need.",
   },
   {
     // house_positions.md §4 (20% credit for individuals, full deduction for
@@ -359,9 +375,9 @@ export default function LandlordAccountantPage() {
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
               We are landlord accountants for anyone with rental income in the UK, from one flat to a
               portfolio, held personally or through a company. We prepare the accounts and tax return, work
-              through the mortgage interest restriction, file quarterly Making Tax Digital updates and keep
+              through the mortgage interest restriction, file quarterly Making Tax Digital (MTD) updates and keep
               company accounts in order. We also tell you what the bill will be before it arrives. The first call
-              is free, and the fee is fixed and agreed with you before any work begins.
+              is free, our fees are fixed and quoted upfront, and you approve the fee before work starts.
             </p>
             {/* The coverage statement (blueprint §3.1 item 4, R5): serves every
                 "near me" and "uk" row without the literal strings. "Email" in
@@ -441,18 +457,21 @@ export default function LandlordAccountantPage() {
           <div className="mt-8 grid items-start gap-8 lg:grid-cols-[1.35fr_1fr] lg:gap-12">
             <div className="space-y-4 text-sm sm:text-base leading-relaxed text-slate-700">
               <p>
-                As landlord tax accountants, we spend most of our time on the two rules that move your bill
-                furthest: the mortgage interest restriction and quarterly reporting under Making Tax Digital.
+                As landlord tax accountants, we handle the two rules that change a landlord&apos;s year most: the
+                mortgage interest restriction, which moves the bill, and quarterly reporting under Making Tax
+                Digital, which moves the paperwork.
               </p>
               {/* house_positions.md §4 (basic-rate credit, higher-rate wedge,
-                  allowance taper) and §7 (credit and rates both rise from
-                  6 April 2027, so the wedge is unchanged). The figure beside this
-                  is the /section-24 worked example and carries the numbers. */}
+                  allowance taper, three-part cap) and §7 (credit and rates both
+                  rise from 6 April 2027, so the wedge is unchanged; a basic-rate
+                  landlord sees no wedge). The figure beside this is the
+                  /section-24 worked example and carries the numbers. */}
               <p>
                 Mortgage interest no longer comes off the rent before tax. Individual landlords are taxed on the
                 profit before interest and then given a credit at the basic rate, so a higher-rate taxpayer loses
                 half the relief, and the larger profit can also cost child benefit or part of the personal
-                allowance. The new property income rates from April 2027 raise the credit and the rate together,
+                allowance. If all your income stays inside the basic rate band, the credit usually matches the tax
+                and the rule costs you nothing extra. The new property income rates from April 2027 raise the credit and the rate together,
                 which leaves that gap exactly where it is.
               </p>
               <p>
@@ -513,7 +532,7 @@ export default function LandlordAccountantPage() {
               </p>
               <p>
                 With one property, the job is a correct return and every cost you are entitled to claim, and you
-                may not need an accountant for landlords every year; the questions below say when it starts to pay.
+                may not need an accountant for landlords at all; the questions below say when one starts to pay.
               </p>
               <p>
                 With a portfolio, the harder job is the record. All your UK lets count as one property business,
@@ -544,6 +563,8 @@ export default function LandlordAccountantPage() {
               Whichever way you hold a buy to let (BTL), in your own name, jointly or in a limited company, we do
               the accounts and returns that go with it, and the job is different for each.
             </p>
+            {/* house_positions.md §27.2: an over-claimed relief falls under the
+                Schedule 24 inaccuracy penalties. */}
             <p>
               Held personally, the rent goes on your own return and the interest rule applies. We record the{" "}
               <InlineLink href="/blog/landlord-tax-essentials/jointly-owned-property">ownership split</InlineLink>{" "}
@@ -551,8 +572,8 @@ export default function LandlordAccountantPage() {
               <InlineLink href="/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk">
                 separate repairs from improvements
               </InlineLink>
-              , because a repair filed as an improvement is a claim lost this year, and the reverse adds to the
-              gain when you sell.
+              , because a repair filed as an improvement is a deduction lost this year, and an improvement filed
+              as a repair is a claim HMRC can take back with interest and a penalty.
             </p>
             {/* house_positions.md §4: companies deduct finance costs in full. */}
             <p>
@@ -572,10 +593,12 @@ export default function LandlordAccountantPage() {
               covers the steps.
             </p>
             {/* house_positions.md §5: UK residents report and pay within 60 days
-                of completion where CGT is due. */}
+                of completion where CGT is due; private residence relief covers a
+                former main residence. */}
             <p>
               When you sell, a UK resident who owes capital gains tax has to report and pay it within 60 days of
-              completion. We do the calculation and file the report, and our page on{" "}
+              completion. If the property was once your home, private residence relief can cover part or all of
+              the gain, and we work out how much before you report. We file the return as well, and our page on{" "}
               <InlineLink href="/for/selling-a-buy-to-let">selling a buy-to-let</InlineLink> walks through it.
             </p>
           </Prose>
@@ -590,19 +613,21 @@ export default function LandlordAccountantPage() {
           </h2>
           <Prose>
             <p>
-              We also act as rental property accountant for two groups whose work goes beyond one tax return:
-              property investors, and the letting agents who manage homes for landlords.
+              We also act for two groups whose work goes beyond one tax return: property investors, and the
+              letting agents who manage homes for landlords.
             </p>
+            {/* house_positions.md §28 (trading vs investment) and §1.J
+                (residential vs mixed-use stamp duty). */}
             <p>
-              If you buy to refurbish and sell, mix residential with commercial property, or invest alongside
-              partners, HMRC&apos;s first question is whether you are trading or investing, because the answer
-              decides the tax and the reliefs. We answer it before you buy, check the stamp duty at the outset, and time
+              If you buy to refurbish and sell, HMRC&apos;s first question is whether you are trading or
+              investing, because the answer decides the tax and the reliefs; if you mix residential with
+              commercial property or invest alongside partners, the stamp duty and the ownership split come
+              first. We answer it before you buy, check the stamp duty at the outset, and time
               sales across tax years.
             </p>
             <p>
-              For letting and managing agents, we keep the agency&apos;s own books apart from client money,
-              recognise commission when it is earned, deal with VAT on fees, and run the non-resident landlord
-              scheme where you collect rent for owners abroad. Our page{" "}
+              For letting and managing agents, we keep the agency&apos;s own books apart from client money and
+              run the non-resident landlord scheme for owners abroad. Our page{" "}
               <InlineLink href="/for-letting-agents">for letting agents</InlineLink> shows how we work with an
               agency and its landlords.
             </p>
@@ -661,7 +686,7 @@ export default function LandlordAccountantPage() {
           </h2>
           <Prose>
             <p>
-              It works in three steps, the first of them a free call. If you are moving from another firm,
+              We work in three steps, and the first is a free call. If you are moving from another firm,
               our guide to{" "}
               <InlineLink href="/blog/property-accountant-services/change-landlord-accountants">
                 changing landlord accountants
@@ -686,15 +711,14 @@ export default function LandlordAccountantPage() {
             </p>
             <p>
               Landlord accountant fees depend on three things: how many properties you have, how they are held
-              (personally, jointly or in a limited company), and how tidy your records are. Buy to let accountant
-              fees for one flat with tidy records cover a small job. A buy to let limited company adds accounts
+              (personally, jointly or in a limited company), and how tidy your records are. One flat with tidy
+              records is a small job, and buy to let accountant fees reflect that. A buy to let limited company adds accounts
               and a Corporation Tax return, so the accountant cost is higher. Quarterly filing and one-off work,
               such as a disclosure or an incorporation plan, are quoted separately.
             </p>
             <p>
-              So the cost of an accountant for rental property is set by the work, not by a rate card. You get the
-              figure after the first call and before anything starts, and you are never signing up to an open
-              hourly rate.
+              So the cost of an accountant for rental property is set by the work, not by a rate card. We give you
+              the figure after the first call, and you are never signing up to an open hourly rate.
             </p>
           </Prose>
           <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
