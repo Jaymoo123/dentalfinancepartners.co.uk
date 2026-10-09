@@ -719,7 +719,7 @@ export default function PropertyTaxAdvicePage() {
               As landlord tax specialists we are worth most before the event, so call while it is still a choice.
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="triggers_book"
               data-cta-placement="triggers"
               data-cta-goal="form"
@@ -769,7 +769,7 @@ export default function PropertyTaxAdvicePage() {
               </table>
             </div>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="comparison_book"
               data-cta-placement="comparison_table"
               data-cta-goal="form"
@@ -906,7 +906,7 @@ export default function PropertyTaxAdvicePage() {
                 which is the point the price question turns into a booking. */}
             <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-6">
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="deliverables_book"
                 data-cta-placement="deliverables"
                 data-cta-goal="form"

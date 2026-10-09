@@ -526,7 +526,7 @@ export default function PropertyAccountantPage() {
               you need.
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="included_book"
               data-cta-placement="what_is_included"
               data-cta-goal="form"
@@ -593,7 +593,7 @@ export default function PropertyAccountantPage() {
               tell you what we would look at.
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="difference_book"
               data-cta-placement="the_difference"
               data-cta-goal="form"
@@ -717,7 +717,7 @@ export default function PropertyAccountantPage() {
               answer on whether we are the right firm.
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="prompts_book"
               data-cta-placement="sound_familiar"
               data-cta-goal="form"
@@ -786,7 +786,7 @@ export default function PropertyAccountantPage() {
               Send us an outline of what you own and how it is held, and we will come back with your fee.
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="fees_book"
               data-cta-placement="fees"
               data-cta-goal="form"

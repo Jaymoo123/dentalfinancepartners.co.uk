@@ -503,7 +503,7 @@ export default function LandlordAccountantPage() {
               Want to know what the interest rule is costing you?
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="section24_book"
               data-cta-placement="buy_to_let"
               data-cta-goal="form"
@@ -637,7 +637,7 @@ export default function LandlordAccountantPage() {
               Investor or agent, and not sure which of this applies?
             </p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="agents_book"
               data-cta-placement="letting_agents"
               data-cta-goal="form"
@@ -724,7 +724,7 @@ export default function LandlordAccountantPage() {
           <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
             <p className="text-base font-bold text-slate-900 sm:text-lg">Want a fixed quote for your own properties?</p>
             <Link
-              href="#book"
+              href="/contact"
               data-cta="comparison_book"
               data-cta-placement="fees"
               data-cta-goal="form"

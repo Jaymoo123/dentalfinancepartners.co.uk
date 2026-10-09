@@ -466,7 +466,7 @@ export default function NonResidentLandlordPage() {
                 deadline.
               </p>
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="clients_book"
                 data-cta-placement="our_clients"
                 data-cta-goal="form"
