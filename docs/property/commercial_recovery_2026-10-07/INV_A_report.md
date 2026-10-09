@@ -308,3 +308,13 @@ The five `/locations/*` pages now emit `City` plus the estate-wide `AccountingSe
 
 - `INV_A_inventory.csv`, 90 rows, full per-surface data including meta descriptions, canonicals, robots, inlink source lists and top 5 queries.
 - `INV_A_gsc_inspect.csv` URL Inspection raw. `INV_A_gsc_page.csv` and `INV_A_gsc_pq.csv` Search Console raw. `INV_A_bing.tsv` Bing rollup.
+
+## Addendum 2026-10-09: fresh Search Console pull (service account, unsampled, 10 Jul to 7 Oct)
+
+Pulled from the cloud session with the `phone-gsc-puller` service account (siteFullUser on `sc-domain:propertytaxpartners.co.uk`). Hire-intent rows and every `/services*` row are in `GSC_FRESH_2026-10-09_hire_intent_90d.csv`; the full 12,036-row page+query pull stayed in the session.
+
+- Site, 28 days: 1,365 clicks, 129,557 impressions. 90 days: 3,597 clicks, 355,916 impressions.
+- The three service pages over 90 days: `/services/property-accountant` 1 impression, 0 clicks; `/services/landlord-accountant` 151 impressions, 0 clicks, best position 56 for "landlord accountant"; `/services/property-tax-advice` 209 impressions, 0 clicks, position 71 for "property tax advice". All three: indexed, canonical correct, last crawled 5 to 6 Aug.
+- Hire-intent demand Google actually shows us for, 90 days: "property accountant" 870 impressions (career post 601 at position 25, `/locations/bristol` 142 at 12, Belfast post 46); "property tax accountant" 544 (Manchester and Birmingham location pages, Belfast post, positions 34 to 62); "property accountants near me" 217, "landlord accountant" 167, "landlord tax accountant" 150, "accountants for landlords" 86, "landlord accountants" 122: all served by location pages or the Belfast post at positions 20 to 90, with 0 clicks. Total clicks on the top 30 hire-intent queries: 5.
+- The career post `how-to-become-property-accountant` carries `noindex, follow` and Google read it on 3 Sep ("Excluded by noindex"), yet it still draws 601 impressions for "property accountant": Google is serving the pre-noindex copy. The Manchester city post is "Page with redirect" (crawled 25 Aug). The commercial hub `/blog/property-accountant-services` is still held as a redirect, last crawled 29 May. `/locations` is "Discovered, currently not indexed".
+- Bing and DataForSEO pulls not run: their keys are not in this session's environment.
