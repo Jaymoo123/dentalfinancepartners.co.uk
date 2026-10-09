@@ -108,9 +108,38 @@ Filled from the assignment table's "give up" list. Rule for each: title and H1 r
 | `/for/selling-a-buy-to-let` | "buy to let accountant" | "cgt accountant" | body link to `/services/landlord-accountant` |
 | career post `how-to-become-property-accountant` | nothing to do: noindexed, Google read the tag on 3 Sep; the stale copy clears on its own | | none |
 
-## 5. Links in (the 30-plus per page)
+## 5. Links in (the 30-plus per page, placed naturally)
 
-From the audit §2: the list of candidate source files that are indexed, with the sentence each link sits in. Rules: body text, not a sidebar or footer module; the anchor is the family phrase or a natural variant from the assignment table; one link per source page per owner; the five city pages, the six pillar guides, the `/for/*` pages and the category's indexed posts come first; unindexed posts are not counted toward the 30 (they are linked anyway, cost nothing). Header: WP1.1 renders the dropdown links in the server HTML, which adds a crawlable link on every page; it does not count toward the 30 body links but it is what gets the pages fetched.
+Owner, 2026-10-09: "We also need to think about the other pages that are going to be linking to these pages (naturally)." The link is only worth having if a reader would follow it, so every link is a sentence that belongs in its source page, not a module bolted on. The per-source list (file, indexed or not, the paragraph it sits in, the proposed sentence, the anchor, the owner page) is in `AUDIT_IMPL_2026-10-09.md` §2 and is the working truth; this section is the rules it was built under.
+
+### 5.1 Rules
+
+1. **Body copy only.** A link in a sidebar, footer, "related" module, breadcrumb or the header does not count toward the 30. Those exist or will exist (header, WP1.1) and are what gets the page fetched; the body links are what tell Google what the page is for.
+2. **One link per source page per owner page.** A guide may link to all three service pages if it naturally touches all three subjects, once each. A city page links to all three (its service list) and nothing more.
+3. **The link sits where the subject comes up.** The sentence it lives in must already be about hiring help, fees, what an accountant does, or the service in question. If the source has no such sentence, write one that answers a question the page's reader has at that point ("if you would rather hand this to someone, ...") and place it after the section that raises the need, never in the opening paragraph and never as the last line of the page.
+4. **Anchor text varies.** At most one third of the links to an owner page carry the exact family phrase ("property accountant", "landlord accountant", "property tax advice"). The rest are natural variants from the assignment table's `body` rows ("accountants for landlords", "specialist property accountants") or descriptive phrases ("our landlord accountancy service", "a fixed-fee review of your position"). No two source pages of the same type use the same sentence.
+5. **The anchor matches the destination's intent.** Hire intent anchors go to a service page; "what is Section 24" style anchors go to the guide. A city page's "property accountant in Leeds" anchor stays on the city page (R4) and must not point to the national page.
+6. **Never from a page that gives up a phrase in its title before R6's condition.** The body link is added at step 8 of §6 (it is the mechanism that hands the phrase over); the title change waits for the day-14 read.
+7. **Posts are edited individually.** Each post is its own content file; there is no template edit that counts as a body link. A shared post component that could add a link to all 800 posts in one edit is the opposite of natural and is not used for this (the audit names the component so nobody reaches for it).
+8. **Indexed first.** Order of effort: the five `/locations/<city>` pages, the seven pillar guides, the `/for/*` pages, the services index, the homepage services section, then indexed posts in the family's category in descending Search Console impressions. Unindexed posts are linked when the editor is already in the file, and are not counted.
+9. **The owner reads the sentences.** The 30-plus sentences per page are listed in the audit with before and after text; the human read at step 10 of §6 covers them, not just the three pages.
+
+### 5.2 What "natural" looks like, by source type
+
+| Source type | Where the link goes | Example sentence shape |
+|---|---|---|
+| `/locations/<city>` | the services list and the "how we work with <city> landlords" section | "Our [landlord accountants] handle the self assessment, the Section 24 workings and the company accounts; the Leeds page is about how we work with you locally." |
+| Pillar guide (`/landlord-tax`, `/section-24`, `/incorporation`, `/making-tax-digital-landlords`, `/leasehold`, `/landed-estates`, `/landlord-compliance`) | the "what to do next" or "getting help" section the guide already has, or the paragraph that first says the calculation is hard | "If the numbers above are close, a [specialist property tax adviser] will model both routes before you decide." |
+| `/for/<audience>` | the paragraph that names the service the audience needs | "Most clients in this position use our [fixed-fee landlord accountancy] rather than a general practice." |
+| Services index `/services` | the card copy, already linking; no change beyond the card title if the page title changes | n/a |
+| Homepage | the services section (S2 sign-off given) | the three cards, titles equal to the new H1s |
+| City posts (40) | the paragraph that recommends getting an accountant, which every city post has | "A [property accountant who works UK-wide] will usually be cheaper than a local generalist for a portfolio this size." |
+| Topic posts (Section 24, MTD, CGT, incorporation, SDLT) | the "get advice" paragraph | the family phrase that matches the post's subject, to the matching owner |
+| Career post | none (noindexed) | n/a |
+
+### 5.3 The count
+
+Target 30 body links per owner page from indexed sources. The audit §2 states how many sources exist per owner once the rules above are applied; if fewer than 30 indexed sources exist for an owner (likely for `/services/property-tax-advice`, whose family is smaller), the shortfall is recorded, not padded with forced links. Thirty is a target, not a floor that licenses an unnatural sentence.
 
 ## 6. The order of work, with gates
 
