@@ -1,0 +1,395 @@
+query,monthly_volume,gsc_impressions_90d,gsc_clicks_90d,current_best_page,current_best_position,owner_page,placement,phrase_family,rationale
+property tax partners,,198,44,/about,2.7,/,exclude,brand,"brand; homepage keeps it, excluded from coverage floor"
+accounting for letting agents,,6,0,/services/landlord-accountant,62.2,/for-letting-agents,body,letting agent accountant,"natural variant, weave once"
+letting agent accounting services,,1,0,/locations/bristol,8.0,/for-letting-agents,body,letting agent accountant,"natural variant, weave once"
+hmo accountants,,36,0,/blog/property-accountant-services/birmingham-property-accountant,10.7,/for/hmo-and-multi-let-landlords,body,hmo accountant,"natural variant, weave once"
+student accommodation accountants,,15,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,15.1,/for/hmo-and-multi-let-landlords,body,hmo accountant,"natural variant, weave once"
+tax advice for hmo landlords,,13,0,/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant,45.0,/for/hmo-and-multi-let-landlords,body,hmo accountant,"natural variant, weave once"
+holiday letting tax advice,,1,0,/blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk,24.0,/for/holiday-let-and-serviced-accommodation,body,holiday let / SA accountant,"natural variant, weave once"
+serviced accommodation accountant,10,,,,,/for/holiday-let-and-serviced-accommodation,body,holiday let / SA accountant,"natural variant, weave once"
+mtd accountant near me,20,2,0,/locations/birmingham,10.0,/for/landlord-self-assessment-and-mtd,coverage_statement,mtd / self assessment accountant,not written literally (near me / word order / stacked uk)
+property incorporation tax advice,,77,0,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,86.3,/for/moving-property-into-a-limited-company,body,incorporation tax advice,"natural variant, weave once"
+spv accountant,90,4,0,/for/property-spv-set-up,36.3,/for/property-spv-set-up,body,spv accountant,"natural variant, weave once"
+spv accountants,,2,0,/for/property-spv-set-up,64.0,/for/property-spv-set-up,body,spv accountant,"natural variant, weave once"
+let property campaign accountant cost,30,25,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,20.2,/for/rental-income-disclosure,fees_section,let property campaign accountant,cost/fee query
+let property campaign accountant near me,50,6,0,/locations/birmingham,29.2,/for/rental-income-disclosure,coverage_statement,let property campaign accountant,not written literally (near me / word order / stacked uk)
+let property campaign accountants,,1,0,/for/rental-income-disclosure,3.0,/for/rental-income-disclosure,body,let property campaign accountant,"natural variant, weave once"
+capital gains tax property accountant,,3,0,/blog/property-accountant-services/what-does-a-property-accountant-do,29.3,/for/selling-a-buy-to-let,body,cgt accountant,"natural variant, weave once"
+cgt accountant near me,30,2,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,21.0,/for/selling-a-buy-to-let,coverage_statement,cgt accountant,not written literally (near me / word order / stacked uk)
+capital gains tax specialist near me,50,1,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,29.0,/for/selling-a-buy-to-let,coverage_statement,cgt accountant,not written literally (near me / word order / stacked uk)
+capital gains tax accountant,210,,,,,/for/selling-a-buy-to-let,body,cgt accountant,"natural variant, weave once"
+capital gains tax accountant near me,140,,,,,/for/selling-a-buy-to-let,coverage_statement,cgt accountant,not written literally (near me / word order / stacked uk)
+capital gains tax accountant uk,10,,,,,/for/selling-a-buy-to-let,body,cgt accountant,"natural variant, weave once"
+landed estates accounting,,3,0,/landed-estates,38.0,/landed-estates,body,landed estates accounting,"natural variant, weave once"
+property accountant birmingham,20,116,2,/locations/birmingham,15.3,/locations/birmingham,city_page,city: birmingham,city form
+property accountant erdington,,63,0,/locations/birmingham,11.6,/locations/birmingham,city_page,city: erdington,"city form (erdington is inside birmingham; parent page, see Q)"
+property accountants birmingham,20,,,,,/locations/birmingham,city_page,city: birmingham,city form
+landlord accountant bristol,,75,0,/blog/property-accountant-services/bristol-property-accountant,9.0,/locations/bristol,city_page,city: bristol,city form
+property accountant bristol,10,66,0,/blog/property-accountant-services/bristol-property-accountant,10.2,/locations/bristol,city_page,city: bristol,city form
+property accountants bristol,10,9,0,/blog/property-accountant-services/bristol-property-accountant,9.3,/locations/bristol,city_page,city: bristol,city form
+tax accountant bristol,70,3,0,/locations/bristol,33.7,/locations/bristol,city_page,city: bristol,city form
+accountant in bristol,1300,1,0,/locations/bristol,32.0,/locations/bristol,city_page,city: bristol,city form
+self assessment accountant bristol,10,1,0,/locations/bristol,61.0,/locations/bristol,city_page,city: bristol,city form
+rental accountant headingley,,223,0,/locations/leeds,10.8,/locations/leeds,city_page,city: headingley,"city form (headingley is inside leeds; parent page, see Q)"
+landlord tax advice leeds,,221,0,/blog/property-accountant-services/leeds-property-accountant-specialist-tax-services,12.6,/locations/leeds,city_page,city: leeds,city form
+rental accountant leeds,,203,0,/locations/leeds,12.3,/locations/leeds,city_page,city: leeds,city form
+buy to let accountant leeds,10,190,0,/locations/leeds,22.8,/locations/leeds,city_page,city: leeds,city form
+property accountancy leeds,,190,0,/locations/leeds,15.6,/locations/leeds,city_page,city: leeds,city form
+property accountants leeds,,162,0,/locations/leeds,14.4,/locations/leeds,city_page,city: leeds,city form
+rental accountant horsforth,,12,0,/locations/leeds,14.2,/locations/leeds,city_page,city: horsforth,"city form (horsforth is inside leeds; parent page, see Q)"
+property accountant leeds,,11,2,/locations/leeds,9.0,/locations/leeds,city_page,city: leeds,city form
+tax accountant leeds,70,1,0,/locations/leeds,72.0,/locations/leeds,city_page,city: leeds,city form
+accountants headingley,,1,0,/locations/leeds,11.0,/locations/leeds,city_page,city: headingley,"city form (headingley is inside leeds; parent page, see Q)"
+landlord accountant london,20,85,0,/locations/london,39.1,/locations/london,city_page,city: london,city form
+landlord accountant in london,,76,0,/locations/london,39.8,/locations/london,city_page,city: london,city form
+property tax accountant london,30,46,0,/blog/property-accountant-services/london-property-accountant,22.1,/locations/london,city_page,city: london,city form
+landlord tax accountant london,,43,0,/locations/london,41.0,/locations/london,city_page,city: london,city form
+property accountant westminster,,40,0,/locations/london,61.5,/locations/london,city_page,city: westminster,"city form (westminster is inside london; parent page, see Q)"
+accountants for landlords in london,,37,0,/blog/property-accountant-services/london-property-accountant,24.0,/locations/london,city_page,city: london,city form
+buy to let accountant in london,,33,0,/blog/property-accountant-services/london-property-accountant,9.2,/locations/london,city_page,city: london,city form
+property accountant in london,,32,0,/blog/property-accountant-services/london-property-accountant,13.6,/locations/london,city_page,city: london,city form
+property accountants in london,,32,0,/blog/property-accountant-services/london-property-accountant,23.6,/locations/london,city_page,city: london,city form
+property tax accountant in london,,32,0,/locations/london,43.6,/locations/london,city_page,city: london,city form
+property accountant london,,29,0,/blog/property-accountant-services/london-property-accountant,11.1,/locations/london,city_page,city: london,city form
+property specialist accountant in london,,29,0,/locations/london,41.4,/locations/london,city_page,city: london,city form
+rental property accounting in london,,29,0,/locations/london,30.3,/locations/london,city_page,city: london,city form
+accountant for property in london,,26,0,/blog/property-accountant-services/london-property-accountant,24.0,/locations/london,city_page,city: london,city form
+accountant for landlord london,,20,0,/blog/property-accountant-services/london-property-accountant,24.7,/locations/london,city_page,city: london,city form
+accountant for landlords ec1,,17,0,/blog/property-accountant-services/london-property-accountant,11.7,/locations/london,city_page,city: ec1,"city form (ec1 is inside london; parent page, see Q)"
+london property accountants,,14,0,/blog/property-accountant-services/london-property-accountant,22.6,/locations/london,city_page,city: london,city form
+landlord accountants in london,10,10,0,/blog/property-accountant-services/london-property-accountant,24.7,/locations/london,city_page,city: london,city form
+property accountant camden,,10,0,/locations/london,66.1,/locations/london,city_page,city: camden,"city form (camden is inside london; parent page, see Q)"
+property accountants london,,10,0,/blog/property-accountant-services/london-property-accountant,17.4,/locations/london,city_page,city: london,city form
+property tax specialists in london,,9,0,/locations/london,43.4,/locations/london,city_page,city: london,city form
+landlord accountants london,20,7,0,/blog/property-accountant-services/london-property-accountant,17.7,/locations/london,city_page,city: london,city form
+buy-to-let accountant farringdon,,5,0,/,20.3,/locations/london,city_page,city: farringdon,"city form (farringdon is inside london; parent page, see Q)"
+landlord accountant fees london,,5,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,/locations/london,city_page,city: london,city form
+buy to let accountant wallington,,3,0,/,35.7,/locations/london,city_page,city: wallington,"city form (wallington is inside london; parent page, see Q)"
+landlord accountant wallington,,3,0,/contact,22.0,/locations/london,city_page,city: wallington,"city form (wallington is inside london; parent page, see Q)"
+landlord tax accountant farringdon,,3,0,/locations/london,40.5,/locations/london,city_page,city: farringdon,"city form (farringdon is inside london; parent page, see Q)"
+property accountant south london,,3,0,/locations/london,30.0,/locations/london,city_page,city: south london,"city form (south london is inside london; parent page, see Q)"
+accountants in tower hamlets,40,2,0,/blog/property-accountant-services/london-property-accountant,32.5,/locations/london,city_page,city: tower hamlets,"city form (tower hamlets is inside london; parent page, see Q)"
+accountants tower hamlets,40,2,0,/blog/property-accountant-services/london-property-accountant,40.5,/locations/london,city_page,city: tower hamlets,"city form (tower hamlets is inside london; parent page, see Q)"
+buy to let accountant london,10,2,0,/blog/property-accountant-services/london-property-accountant,9.0,/locations/london,city_page,city: london,city form
+accountants in hornchurch,140,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,5.0,/locations/london,city_page,city: hornchurch,"city form (hornchurch is inside london; parent page, see Q)"
+property tax accountant ec1,,1,0,/blog/property-accountant-services/london-property-accountant,14.0,/locations/london,city_page,city: ec1,"city form (ec1 is inside london; parent page, see Q)"
+rental income tax advisor farringdon,,1,0,/contact,34.0,/locations/london,city_page,city: farringdon,"city form (farringdon is inside london; parent page, see Q)"
+capital gains tax accountant london,30,,,,,/locations/london,city_page,city: london,city form
+property tax accountants london,30,,,,,/locations/london,city_page,city: london,city form
+property accountant north london,10,,,,,/locations/london,city_page,city: north london,"city form (north london is inside london; parent page, see Q)"
+property tax advisor london,10,,,,,/locations/london,city_page,city: london,city form
+property tax specialist london,10,,,,,/locations/london,city_page,city: london,city form
+property tax specialists london,10,,,,,/locations/london,city_page,city: london,city form
+accountants for property investors london,,,,,,/locations/london,city_page,city: london,city form
+property investment accountant in london,,,,,,/locations/london,city_page,city: london,city form
+property investor accountant w6,,,,,,/locations/london,city_page,city: w6,"city form (w6 is inside london; parent page, see Q)"
+property accountant manchester,10,253,0,/blog/property-accountant-services/manchester-property-accountant,9.5,/locations/manchester,city_page,city: manchester,city form
+property accountants manchester,10,188,0,/blog/property-accountant-services/manchester-property-accountant,11.9,/locations/manchester,city_page,city: manchester,city form
+landlord accountant manchester,,87,0,/locations/manchester,23.4,/locations/manchester,city_page,city: manchester,city form
+capital gains tax advice manchester,,23,0,/locations/manchester,78.8,/locations/manchester,city_page,city: manchester,city form
+property tax accountant manchester,,4,0,/blog/property-accountant-services/manchester-property-accountant,8.5,/locations/manchester,city_page,city: manchester,city form
+landlord accountant,390,167,0,/locations/manchester,22.8,/services/landlord-accountant,title,landlord accountant,"head phrase: joint-top volume 390, most GSC impressions, current live title"
+landlord tax accountant,50,150,0,/locations/manchester,61.9,/services/landlord-accountant,h2,landlord tax accountant,natural high-volume variant
+buy to let accountants near me,20,139,0,/locations/birmingham,18.8,/services/landlord-accountant,coverage_statement,buy to let accountant,not written literally (near me / word order / stacked uk)
+buy to let accountants,110,127,0,/locations/birmingham,31.8,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+landlord accountants,390,122,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,24.6,/services/landlord-accountant,h1,landlord accountant,head phrase twin (plural)
+accountants for buy-to-let landlords,40,115,0,/locations/birmingham,44.2,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+buy to let property accountants,10,91,0,/locations/birmingham,30.3,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+buy-to-let property accountants,10,91,0,/locations/birmingham,31.0,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+accountants for landlords,260,86,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,30.3,/services/landlord-accountant,h2,landlord accountant,natural high-volume variant
+accountant for landlords,260,78,0,/locations/manchester,69.0,/services/landlord-accountant,body,landlord accountant,"natural variant, weave once"
+landlord accountant fees,10,78,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,9.4,/services/landlord-accountant,fees_section,landlord accountant fees,cost/fee query
+buy to let accountant,110,65,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,24.2,/services/landlord-accountant,h2,buy to let accountant,natural high-volume variant
+rental property tax accountant,10,45,0,/services,96.7,/services/landlord-accountant,body,landlord tax accountant,"natural variant, weave once"
+buy to let accountant fees,10,30,1,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,14.9,/services/landlord-accountant,fees_section,landlord accountant fees,cost/fee query
+accountant fees for rental property,10,27,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,8.1,/services/landlord-accountant,fees_section,landlord accountant fees,cost/fee query
+buy to let tax accountants,20,19,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,21.4,/services/landlord-accountant,body,landlord tax accountant,"natural variant, weave once"
+landlords accountant,390,18,0,/services/landlord-accountant,77.6,/services/landlord-accountant,body,landlord accountant,"natural as ""your landlord's accountant"", weave once"
+accountants for landlord,260,14,0,/blog/property-accountant-services/property-accountant-nottingham-landlords,57.8,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+accountant for rental property,110,13,0,/for/rental-income-disclosure,5.4,/services/landlord-accountant,body,rental property accountant,"natural variant, weave once"
+rental property accountant,110,13,0,/locations/bristol,8.4,/services/landlord-accountant,h2,rental property accountant,natural high-volume variant
+accountants for buy to let landlords,40,11,0,/services/landlord-accountant,63.1,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+landlord accountant near me,70,10,0,/locations/leeds,32.0,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+accountant landlords,260,8,0,/blog/property-accountant-services/property-accountant-nottingham-landlords,29.4,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+landlord tax accountants,50,8,0,/services/landlord-accountant,73.0,/services/landlord-accountant,body,landlord tax accountant,"natural variant, weave once"
+rental property accounting,,8,0,/blog/portfolio-management/how-to-value-rental-property-portfolio-tax-purposes,28.8,/services/landlord-accountant,body,rental property accountant,"natural variant, weave once"
+accountant for landlord,260,7,0,/services/landlord-accountant,64.6,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+accountant landlord,260,7,0,/services/landlord-accountant,73.8,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+rental income accountant,40,7,0,/services/landlord-accountant,70.6,/services/landlord-accountant,body,rental property accountant,"natural variant, weave once"
+rental income tax near me,,7,0,/locations/birmingham,41.7,/services/landlord-accountant,coverage_statement,landlord tax accountant,not written literally (near me / word order / stacked uk)
+uk landlord accountants,,7,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,25.3,/services/landlord-accountant,body,landlord accountant,"natural variant, weave once"
+btl accounting,,6,0,/blog/property-accountant-services/london-property-accountant,6.5,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+accountant rental property,110,5,0,/locations/bristol,24.2,/services/landlord-accountant,coverage_statement,rental property accountant,not written literally (near me / word order / stacked uk)
+cost of accountant for rental property,,5,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,/services/landlord-accountant,fees_section,landlord accountant fees,cost/fee query
+which specialist accounting services should a buy-to-let property investor use to handle tax returns and compliance?,,5,0,/blog/property-accountant-services/what-services-buy-to-let-accountant,8.0,/services/landlord-accountant,faq,landlord tax accountant,question form
+buy to let property accountant,10,4,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,17.3,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+accountant rental property cost,,4,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,/services/landlord-accountant,fees_section,landlord accountant fees,cost/fee query
+landlord accounting services uk,,4,0,/services/landlord-accountant,68.0,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+rental property accountant near me,10,3,0,/locations/leeds,7.0,/services/landlord-accountant,coverage_statement,rental property accountant,not written literally (near me / word order / stacked uk)
+landlord accounting service,,3,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,20.3,/services/landlord-accountant,body,landlord accountant,"natural variant, weave once"
+landlord tax accountant near me,,3,0,/locations/leeds,8.0,/services/landlord-accountant,coverage_statement,landlord tax accountant,not written literally (near me / word order / stacked uk)
+accountant for buy to let,10,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+buy to let specialist accountant,10,2,0,/for/selling-a-buy-to-let,4.5,/services/landlord-accountant,body,buy to let accountant,"natural variant, weave once"
+rental property tax accountant near me,10,2,1,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,6.0,/services/landlord-accountant,coverage_statement,landlord tax accountant,not written literally (near me / word order / stacked uk)
+landlord accountancy services,,2,0,/services/landlord-accountant,71.5,/services/landlord-accountant,body,landlord accountant,"natural variant, weave once"
+landlord accounting,,2,0,/services/landlord-accountant,71.5,/services/landlord-accountant,body,landlord accountant,"natural variant, weave once"
+landlord accountants near me,40,1,0,/locations/birmingham,7.0,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+buy to let accountant near me,30,1,0,/locations/manchester,5.0,/services/landlord-accountant,coverage_statement,buy to let accountant,not written literally (near me / word order / stacked uk)
+rental accountant,20,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,/services/landlord-accountant,body,rental property accountant,"natural variant, weave once"
+accountants for landlord and property accountants,10,1,0,/blog/property-accountant-services/accountant-accounting-services,89.0,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+do i need an accountant for my rental property,10,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,/services/landlord-accountant,faq,rental property accountant,question form
+landlord tax return accountant,10,1,0,/services/landlord-accountant,70.0,/services/landlord-accountant,body,landlord tax accountant,"natural variant, weave once"
+tax accountant for rental properties,10,1,0,/locations/birmingham,84.0,/services/landlord-accountant,body,landlord tax accountant,"natural variant, weave once"
+accountant rental property near me,,1,0,/locations/leeds,6.0,/services/landlord-accountant,coverage_statement,rental property accountant,not written literally (near me / word order / stacked uk)
+accountants for landlords near me,,1,0,/locations/birmingham,4.0,/services/landlord-accountant,coverage_statement,landlord accountant,not written literally (near me / word order / stacked uk)
+accounting for landlords,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,/services/landlord-accountant,body,landlord accountant,"natural variant, weave once"
+buy to let limited company accountant cost,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,7.0,/services/landlord-accountant,fees_section,landlord accountant fees,cost/fee query
+tax accounting for rental property,,1,0,/blog/portfolio-management/how-to-value-rental-property-portfolio-tax-purposes,2.0,/services/landlord-accountant,body,landlord tax accountant,"natural variant, weave once"
+landlord tax accountant uk,10,,,,,/services/landlord-accountant,coverage_statement,landlord tax accountant,not written literally (near me / word order / stacked uk)
+non resident landlord tax services,,7,0,/services/non-resident-landlord,54.1,/services/non-resident-landlord,body,non-resident landlord accountant,"natural variant, weave once"
+non-resident landlord accountant lond,,5,0,/locations/london,44.2,/services/non-resident-landlord,body,non-resident landlord accountant,"NRL rule applied over city rule (London is the property, not the client); see Q"
+non-resident landlord tax advice,,5,0,/for/non-resident-landlords,61.7,/services/non-resident-landlord,body,non-resident landlord accountant,"natural variant, weave once"
+property accountant,720,870,2,/blog/property-accountant-services/how-to-become-property-accountant,24.6,/services/property-accountant,title,property accountant,"head phrase: joint-top volume 720, most GSC impressions, current live title word"
+property tax accountant,210,544,0,/locations/manchester,48.3,/services/property-accountant,h2,property tax accountant,natural high-volume variant
+property accountant specialist,170,239,0,/blog/property-accountant-services/how-to-become-property-accountant,17.2,/services/property-accountant,coverage_statement,specialist property accountant,not written literally (near me / word order / stacked uk)
+property accountants near me,170,217,0,/locations/manchester,31.1,/services/property-accountant,coverage_statement,property accountant,not written literally (near me / word order / stacked uk)
+property accountants,720,187,1,/locations/birmingham,57.5,/services/property-accountant,h1,property accountant,head phrase twin (plural)
+property specialist accountant,170,160,0,/locations/bristol,18.3,/services/property-accountant,body,specialist property accountant,"natural UK phrasing (""property specialist accountants""), weave once"
+uk property accountants,480,141,0,/,39.9,/services/property-accountant,title,property accountant,"UK modifier on the title; owner 2026-10-09 moved ""property accountants UK"" from homepage"
+property tax accounting,,108,0,/blog/property-accountant-services/how-to-become-property-accountant,16.7,/services/property-accountant,body,property tax accountant,"natural variant, weave once"
+property tax accountant near me,90,106,0,/locations/bristol,10.3,/services/property-accountant,coverage_statement,property tax accountant,not written literally (near me / word order / stacked uk)
+property accountant near me,170,95,0,/blog/property-accountant-services/property-accountant-glasgow,10.8,/services/property-accountant,coverage_statement,property accountant,not written literally (near me / word order / stacked uk)
+specialist property accountant,170,85,0,/locations/bristol,13.4,/services/property-accountant,h2,specialist property accountant,natural high-volume variant
+accounting for property tax,,62,0,/blog/property-accountant-services/how-to-become-property-accountant,15.7,/services/property-accountant,body,property tax accountant,"natural variant, weave once"
+residential property accountant,10,53,0,/blog/property-accountant-services/how-to-become-property-accountant,10.5,/services/property-accountant,body,property accountant,"natural variant, weave once"
+property accounting,,48,0,/blog/property-accountant-services/how-to-become-property-accountant,20.1,/services/property-accountant,body,property accountant,"natural variant, weave once"
+what does a specialist property accountant do?,,45,0,/blog/property-accountant-services/how-to-become-property-accountant,7.9,/services/property-accountant,faq,property accountant,"pre-hire question; QRY_C tagged it career, reclassified (see Q)"
+accounting services for property owners,,42,0,/blog/property-accountant-services/accounting-services-for-property-owners,12.2,/services/property-accountant,body,property accountant,"natural variant, weave once"
+property tax accountants,210,34,1,/locations/manchester,88.4,/services/property-accountant,body,property tax accountant,"natural variant, weave once"
+accountant property specialist,170,33,0,/locations/bristol,20.6,/services/property-accountant,coverage_statement,specialist property accountant,not written literally (near me / word order / stacked uk)
+property accountants uk,10,27,0,/,39.3,/services/property-accountant,title,property accountant,UK modifier on the title; owner 2026-10-09 ruling
+accountants property,720,23,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,10.6,/services/property-accountant,coverage_statement,property accountant,not written literally (near me / word order / stacked uk)
+property investment accountant,320,22,0,/for/property-spv-set-up,19.9,/services/property-accountant,h2,property investment accountant,natural high-volume variant
+accountants for property tax,,21,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,22.1,/services/property-accountant,body,property tax accountant,"natural variant, weave once"
+commercial property accountant,20,18,0,/blog/property-accountant-services/how-to-become-property-accountant,26.1,/services/property-accountant,body,commercial property accountant,"natural variant, weave once"
+accountant for property,720,15,0,/locations/bristol,23.6,/services/property-accountant,body,property accountant,"natural variant, weave once"
+property tax accountant uk,20,15,0,/,59.8,/services/property-accountant,coverage_statement,property tax accountant,not written literally (near me / word order / stacked uk)
+property owner accountant,,14,0,/blog/property-accountant-services/accounting-services-for-property-owners,14.9,/services/property-accountant,body,property accountant,"natural variant, weave once"
+accounting for property taxes,,13,0,/blog/property-accountant-services/how-to-become-property-accountant,16.5,/services/property-accountant,body,property tax accountant,"natural variant, weave once"
+accountant property,720,11,0,/locations/bristol,20.3,/services/property-accountant,coverage_statement,property accountant,not written literally (near me / word order / stacked uk)
+property accountant uk,10,8,1,/blog/property-accountant-services/how-to-become-property-accountant,17.2,/services/property-accountant,coverage_statement,property accountant,not written literally (near me / word order / stacked uk)
+specialist property accountants,170,7,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,14.2,/services/property-accountant,body,specialist property accountant,"natural variant, weave once"
+property development accountant,90,7,0,/blog/property-accountant-services/what-does-a-property-accountant-do,71.0,exclude,exclude,property development accountant,R21: the firm does not name property development as a service; excluded until it does
+commercial property accountants,20,7,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,12.0,/services/property-accountant,body,commercial property accountant,"natural variant, weave once"
+tax accountant property,210,5,0,/locations/bristol,14.2,/services/property-accountant,coverage_statement,property accountant,not written literally (near me / word order / stacked uk)
+property specialist accountant near me,10,5,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,/services/property-accountant,coverage_statement,specialist property accountant,not written literally (near me / word order / stacked uk)
+accountants for property,720,4,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,10.8,/services/property-accountant,h2,property accountant,natural high-volume variant
+accountant for property investors,320,4,0,/for/property-spv-set-up,9.2,/services/property-accountant,h2,property investment accountant,natural high-volume variant
+investment property accountant,30,4,0,/blog/property-accountant-services/what-does-a-property-accountant-do,4.0,/services/property-accountant,body,property investment accountant,"natural variant, weave once"
+property specialist accountants,170,3,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,14.0,/services/property-accountant,body,specialist property accountant,"natural UK phrasing, weave once"
+accountant in real estate,140,3,0,/blog/property-accountant-services/how-to-become-property-accountant,42.3,exclude,exclude,real estate accountant,US-English form; a UK service page does not write it (R5); owner 2026-10-09 cut the aside
+real estate accountant,140,3,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,real estate accountant,US-English form; a UK service page does not write it (R5); owner 2026-10-09 cut the aside
+property tax accountants near me,20,3,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,8.7,/services/property-accountant,coverage_statement,property tax accountant,not written literally (near me / word order / stacked uk)
+uk property accountant,20,3,0,/,56.0,/services/property-accountant,body,property accountant,"natural variant, weave once"
+uk property tax accountants,20,3,0,/,33.5,/services/property-accountant,body,property tax accountant,"natural variant, weave once"
+property income accountant,,3,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,4.0,/services/property-accountant,body,property accountant,"natural variant, weave once"
+property portfolio accountant,,3,0,/blog/property-accountant-services/how-to-become-property-accountant,14.5,/services/property-accountant,body,property accountant,"natural variant, weave once"
+accountant property investment,320,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,/services/property-accountant,coverage_statement,property investment accountant,not written literally (near me / word order / stacked uk)
+real estate accountants,140,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,real estate accountant,US-English form; a UK service page does not write it (R5); owner 2026-10-09 cut the aside
+property development accountants,90,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,exclude,exclude,property development accountant,R21: the firm does not name property development as a service; excluded until it does
+accountants for property company,,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,/services/property-accountant,body,property accountant,"natural variant, weave once"
+multi-property portfolio accounting,,2,0,/blog/portfolio-management/property-portfolio-accounting-tracking-profitability,29.0,/services/property-accountant,body,property accountant,"natural variant, weave once"
+property accounting services,,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,/services/property-accountant,body,property accountant,"natural variant, weave once"
+accountants for property investors,320,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,/services/property-accountant,body,property investment accountant,"natural variant, weave once"
+property investment accountants,320,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,/services/property-accountant,body,property investment accountant,"natural variant, weave once"
+accountant specializing in real estate,10,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,exclude,exclude,real estate accountant,US-English form; a UK service page does not write it (R5); owner 2026-10-09 cut the aside
+accountants that specialise in property,10,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,/services/property-accountant,body,specialist property accountant,"natural variant, weave once"
+accounting for property companies,,1,0,/blog/portfolio-management/property-portfolio-accounting-tracking-profitability,74.0,/services/property-accountant,body,property accountant,"natural variant, weave once"
+property investor accountants,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,/services/property-accountant,body,property investment accountant,"natural variant, weave once"
+specialist property accountants near me,,1,0,/blog/property-accountant-services/manchester-property-accountant,8.0,/services/property-accountant,coverage_statement,specialist property accountant,not written literally (near me / word order / stacked uk)
+what does property accountant do,,1,0,/blog/property-accountant-services/how-to-become-property-accountant,1.0,/services/property-accountant,faq,property accountant,same question as above; one FAQ covers both
+property investment accountant near me,10,,,,,/services/property-accountant,coverage_statement,property investment accountant,not written literally (near me / word order / stacked uk)
+property specialist tax accountant,10,,,,,/services/property-accountant,body,specialist property accountant,"natural variant, weave once"
+accountant specialising in property investment near me,,,,,,/services/property-accountant,coverage_statement,property investment accountant,not written literally (near me / word order / stacked uk)
+property tax advice,,161,0,/services/property-tax-advice,71.2,/services/property-tax-advice,h1,property tax advice / adviser / specialist,"URL phrase, in live title, lands on this page today (Bing/ChatGPT baseline); see Q"
+property tax specialist,210,146,0,/blog/property-accountant-services/manchester-property-accountant,42.6,/services/property-tax-advice,title,property tax advice / adviser / specialist,head phrase: highest volume 210 and most GSC impressions in family
+landlord tax advice,,136,0,/landlord-tax,73.6,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+tax advice for landlords,,125,0,/landlord-tax,82.7,/services/property-tax-advice,h2,property tax advice / adviser / specialist,natural high-volume variant
+landlord tax advice uk,,71,0,/landlord-tax,89.3,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax advisor near me,110,70,0,/locations/birmingham,25.4,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax specialist near me,140,60,0,/locations/birmingham,19.6,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax advice near me,50,59,0,/locations/birmingham,29.9,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax specialists,210,48,0,/locations/bristol,45.4,/services/property-tax-advice,h2,property tax advice / adviser / specialist,plural twin of the head phrase
+property tax specialist uk,30,34,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,11.4,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax advisor,40,27,0,/locations/birmingham,48.6,/services/property-tax-advice,h2,property tax advice / adviser / specialist,natural high-volume variant
+property tax specialists near me,140,16,0,/locations/bristol,22.7,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+tax advice landlords,,15,0,/landlord-tax,91.3,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax advice uk,,14,0,/,59.8,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax specialists uk,30,11,0,/,54.9,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+buy-to-let tax advisor,10,4,0,/services/landlord-accountant,65.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+how much do property tax consultants charge,10,4,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,/services/property-tax-advice,fees_section,property tax advice / adviser / specialist,cost/fee query
+property investment tax advice,,4,0,/services/property-tax-advice,70.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+small landlord tax advice,,4,0,/landlord-tax,70.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+property tax consultant uk,,3,0,/,71.7,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+tax advice property,,3,0,/services/property-tax-advice,81.7,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax advisors,40,2,0,/locations/leeds,8.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+property tax experts near me,20,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property capital allowances tax advisors,10,2,0,/blog/property-types-and-specialist-tax/capital-allowances-on-property,55.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+property tax advisor uk,10,2,0,/,70.0,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+want accountant for property investment tax planning,,2,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,9.0,/services/property-tax-advice,coverage_statement,property tax advice / adviser / specialist,not written literally (near me / word order / stacked uk)
+property tax consultants,50,1,0,/locations/leeds,5.0,/services/property-tax-advice,h2,property tax advice / adviser / specialist,natural high-volume variant
+buy to let tax advisor,10,1,0,/,68.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+landlord tax specialist,,1,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,11.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+property tax expert,,1,0,/services/property-tax-advice,88.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+property tax experts,,1,0,/locations/leeds,23.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+specialist property tax advisors,,1,0,/blog/property-accountant-services/manchester-property-accountant,10.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+stamp duty advice,,1,0,/services/property-tax-advice,88.0,/services/property-tax-advice,body,property tax advice / adviser / specialist,"natural variant, weave once"
+property tax adviser,40,,,,,/services/property-tax-advice,h2,property tax advice / adviser / specialist,natural high-volume variant
+site:www.propertytaxpartners.co.uk,,1270,0,/locations/leeds,45.1,exclude,exclude,excluded,site: operator query
+specialist tax accountant,20,12,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,17.2,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+accountants near me,12100,11,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.6,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+propertyaccountant.co.uk,,9,0,/blog/property-accountant-services/how-to-become-property-accountant,37.0,exclude,exclude,excluded,competitor or publication brand
+"rental accounts,4,4,110,17,5.07,https://www.cottonsgroup.com/resources/blog/accounting-tips-for-landlords/,2,0.11,10,0,138, 19, 6, 6, 19, 5, 15, 19, 23, 19, 15, 19, 29 ,21/5/2026, video, people also ask, related searches, ai overview ,informational,organi",,8,0,/blog/landlord-tax-essentials/landlord-accounting-spreadsheet-template-free-excel-guide,23.9,exclude,exclude,excluded,malformed query (pasted CSV row)
+"accounting for landlords,1,1,260,28,8.25,https://www.cottonsgroup.com/resources/blog/accounting-tips-for-landlords/,9,0.52,74,0.73,12900000, 35, 35, 43, 35, 66, 35, 100, 100, 82, 82, 66, 82 ,22/4/2026, sitelinks, video, ads bottom, people also ask, relate",,5,0,/blog/landlord-tax-essentials/landlord-accounting-spreadsheet-template-free-excel-guide,32.2,exclude,exclude,excluded,malformed query (pasted CSV row)
+irish tax accountant services,,5,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,18.2,exclude,exclude,excluded,out of jurisdiction
+are there property management companies that handle all aspects of rental accounting and tax preparation?,,4,0,/blog/property-accountant-services/property-management-accounting-services,7.2,exclude,exclude,excluded,"asks for a management company, not an accountant"
+builder accountant headingley,,4,0,/locations/leeds,29.2,exclude,exclude,excluded,out of niche (other trade)
+sole trader accountant bristol,,4,0,/locations/bristol,22.8,exclude,exclude,excluded,out of niche (other trade)
+where to buy an affordable mtd-ready rental accounting app tailored for small landlords?,,4,0,/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026,11.2,exclude,exclude,excluded,software / tool
+property management accountant,20,3,0,/blog/property-accountant-services/how-to-become-property-accountant,38.3,exclude,exclude,excluded,ambiguous: in-house management-accountant role; career post ranks
+"accounting for landlords,4,4,260,28,8.25,https://www.cottonsgroup.com/resources/blog/accounting-tips-for-landlords/,5,0.29,41,0.73,12900000, 35, 35, 43, 35, 66, 35, 100, 100, 82, 82, 66, 82 ,22/4/2026, sitelinks, video, ads bottom, people also ask, relate",,3,0,/blog/landlord-tax-essentials/landlord-accounting-spreadsheet-template-free-excel-guide,34.0,exclude,exclude,excluded,malformed query (pasted CSV row)
+cost of hiring an accountant uk,,3,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,83.3,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+evaluate the sage (uk) company xero on mtd accountants,,3,0,/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026,6.7,exclude,exclude,excluded,competitor or publication brand
+landlord accountant uk pay,,3,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,excluded,career / salary
+pd tax consultants leeds,,3,0,/locations/leeds,54.0,exclude,exclude,excluded,competitor or publication brand
+pd tax consultants ltd 0113 887 8432,,3,0,/locations/leeds,46.0,exclude,exclude,excluded,competitor or publication brand
+tax accountants services ireland,,3,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,20.7,exclude,exclude,excluded,out of jurisdiction
+tax advice for moving to australia,,3,0,/blog/non-resident-landlord-tax/moving-to-australia-uk-rental-property-tax-pathway,40.7,exclude,exclude,excluded,out of jurisdiction
+how much will an accountant cost,1000,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+local tax accountant,140,2,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,51.5,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+estate accountant,40,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+evaluate the accounting and financial services company bdo on non-resident landlords,,2,0,/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements,1.5,exclude,exclude,excluded,competitor or publication brand
+i’m a uk landlord—what’s the best online accountant or digital tax service to file my self assessment rental income correctly,,2,0,/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide,1.0,exclude,exclude,excluded,listicle / recommendation intent
+property accountant skills,,2,0,/blog/property-accountant-services/how-to-become-property-accountant,7.0,exclude,exclude,excluded,career / salary
+property taxation,,2,0,/services/property-tax-advice,62.0,exclude,exclude,excluded,"topic term, no hire intent"
+recommend an accountant in london for a landlord,,2,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,excluded,listicle / recommendation intent
+uk to australia expat tax specialist,,2,0,/blog/non-resident-landlord-tax/moving-to-australia-uk-rental-property-tax-pathway,12.5,exclude,exclude,excluded,out of jurisdiction
+estate agents near me,49500,1,0,/blog/capital-gains-tax/cheapest-estate-agent-fees-uk,5.0,exclude,exclude,excluded,out of niche (not an accountant hire)
+accountant near me,12100,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+how much do accountants charge,1000,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,6.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+accountant fee,480,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,4.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+hire an accountant,260,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+specialist accountant,110,1,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,1.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+how much does a tax accountant cost,50,1,0,/blog/property-accountant-services/property-accountant-glasgow,34.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+accountant near me uk,10,1,0,/blog/property-accountant-services/property-accountant-near-me,14.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+best property accountants,10,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,excluded,listicle / recommendation intent
+best property accountants uk,10,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,exclude,exclude,excluded,listicle / recommendation intent
+accountancy fee,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+accounting service uk,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,excluded,"generic accountant query, not property/landlord"
+accounting web let property campaign,,1,0,/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026,22.0,exclude,exclude,excluded,competitor or publication brand
+best accountants for property landlords?,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,excluded,listicle / recommendation intent
+best property accountant near me,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,exclude,exclude,excluded,listicle / recommendation intent
+best property accountants in london,,1,0,/blog/property-tax-accountant-london,31.0,exclude,exclude,excluded,listicle / recommendation intent
+best way to produce rent statements for tenants and accountants,,1,0,/blog/portfolio-management/property-portfolio-accounting-tracking-profitability,9.0,exclude,exclude,excluded,"informational how-to, no hire intent"
+bookkeeping cost for real estate agents,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,7.0,exclude,exclude,excluded,out of niche (not an accountant hire)
+bookkeeping for real estate cost,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,2.0,exclude,exclude,excluded,"out of niche (agent bookkeeping, US phrasing)"
+evaluate the accounting and financial services company grant thornton on non-resident landlords,,1,0,/blog/property-accountant-services/manchester-property-accountant,9.0,exclude,exclude,excluded,competitor or publication brand
+evaluate the accounting and financial services company kpmg on non-resident landlords,,1,0,/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements,7.0,exclude,exclude,excluded,competitor or publication brand
+how to appeal property tax assessment,,1,0,/services/property-tax-advice,39.0,exclude,exclude,excluded,"US-style property tax appeal, not UK landlord tax"
+part time management accountant,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,5.0,exclude,exclude,excluded,out of niche (other trade)
+property accountant role,,1,0,/blog/property-accountant-services/how-to-become-property-accountant,8.0,exclude,exclude,excluded,career / salary
+property tax appeal,,1,0,/services/property-tax-advice,50.0,exclude,exclude,excluded,"US-style property tax appeal, not UK landlord tax"
+property tax consultant license,,1,0,/blog/property-accountant-services/how-to-become-property-accountant,2.0,exclude,exclude,excluded,career / salary
+recommend a property tax advisor in london,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,exclude,exclude,excluded,listicle / recommendation intent
+the pet accountant,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,exclude,exclude,excluded,out of niche (other trade)
+what are the best accountancy firms in the uk for landlords with multiple rental properties?,,1,0,/,7.0,exclude,exclude,excluded,listicle / recommendation intent
+recommend an accountant in london for a property investor,,,,,,exclude,exclude,excluded,listicle / recommendation intent
+property accountant west midlands,,140,0,/locations/birmingham,22.2,no page (city),exclude,city: west midlands,"city form, no west midlands page (WP4)"
+accountant for letting agents leicester,,90,0,/blog/property-accountant-services/property-accountant-leicester,4.2,no page (city),exclude,city: leicester,"city form, no leicester page (WP4)"
+property tax accountant oxford,,86,0,/blog/property-accountant-services/property-accountant-oxford-guide-local-landlords,10.6,no page (city),exclude,city: oxford,"city form, no oxford page (WP4)"
+landlord accountant cannock,,55,0,/locations/birmingham,53.4,no page (city),exclude,city: cannock,"city form, no cannock page (WP4)"
+accountants landlords oxford,10,48,0,/blog/property-accountant-services/property-accountant-oxford-guide-local-landlords,5.9,no page (city),exclude,city: oxford,"city form, no oxford page (WP4)"
+property tax advisors leicester,,30,0,/blog/property-accountant-services/property-accountant-leicester,11.9,no page (city),exclude,city: leicester,"city form, no leicester page (WP4)"
+landlord tax services fleetwood,,25,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,11.4,no page (city),exclude,city: fleetwood,"city form, no fleetwood page (WP4)"
+landlord accountant preston,,21,0,/blog/property-accountant-services/property-accountant-preston-expert-tax-services-local-landlords,7.0,no page (city),exclude,city: preston,"city form, no preston page (WP4)"
+property tax accountant preston,,17,0,/blog/property-accountant-services/property-accountant-preston-expert-tax-services-local-landlords,8.9,no page (city),exclude,city: preston,"city form, no preston page (WP4)"
+accountant for property developers west midlands,,16,0,/locations/birmingham,10.7,no page (city),exclude,city: west midlands,"city form, no west midlands page (WP4)"
+accountants in belfast,590,14,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,12.1,no page (city),exclude,city: belfast,"city form, no belfast page (WP4)"
+property accountants liverpool,,14,0,/about,54.8,no page (city),exclude,city: liverpool,"city form, no liverpool page (WP4)"
+property accountant glasgow,10,13,0,/blog/property-accountant-services/property-accountant-glasgow,9.2,no page (city),exclude,city: glasgow,"city form, no glasgow page (WP4)"
+landlord accountants in nottingham,,8,0,/blog/property-accountant-services/property-accountant-nottingham-landlords,13.5,no page (city),exclude,city: nottingham,"city form, no nottingham page (WP4)"
+landlord accountants nottingham,,7,0,/blog/property-accountant-services/property-accountant-nottingham-landlords,10.9,no page (city),exclude,city: nottingham,"city form, no nottingham page (WP4)"
+accountants peterborough btl landlords,,6,0,/blog/property-accountant-services/peterborough-property-accountant-specialist-tax-services,19.3,no page (city),exclude,city: peterborough,"city form, no peterborough page (WP4)"
+landlord accountants oxfordshire,,6,0,/blog/property-accountant-services/property-accountant-oxford-guide-local-landlords,14.0,no page (city),exclude,city: oxfordshire,"city form, no oxfordshire page (WP4)"
+landlord tax accountant nottingham,,6,0,/blog/property-accountant-services/property-accountant-nottingham-landlords,9.2,no page (city),exclude,city: nottingham,"city form, no nottingham page (WP4)"
+landlord accountant cardiff,,5,0,/blog/property-accountant-services/why-cardiff-landlords-need-specialist-property-accountant-2026,8.0,no page (city),exclude,city: cardiff,"city form, no cardiff page (WP4)"
+accountants for landlords nottingham,,4,0,/blog/property-accountant-services/property-accountant-nottingham-landlords,11.3,no page (city),exclude,city: nottingham,"city form, no nottingham page (WP4)"
+accountant for landlord dorset,,3,0,/blog/property-accountant-services/property-accountant-bournemouth-landlords-tax-services,13.0,no page (city),exclude,city: dorset,"city form, no dorset page (WP4)"
+property accountant scotland,,3,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,no page (city),exclude,city: scotland,"city form, no scotland page (WP4)"
+accountant in glasgow,320,2,0,/blog/property-accountant-services/property-accountant-glasgow,12.0,no page (city),exclude,city: glasgow,"city form, no glasgow page (WP4)"
+accountant northern ireland,70,2,0,/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,14.0,no page (city),exclude,city: northern ireland,"city form, no northern ireland page (WP4)"
+investment accountants liverpool,20,2,0,/blog/property-accountant-services/liverpool-property-accountant-tax-services-landlords,14.5,no page (city),exclude,city: liverpool,"city form, no liverpool page (WP4)"
+accountant for landlord bournemouth,,2,0,/blog/property-accountant-services/property-accountant-bournemouth-landlords-tax-services,9.0,no page (city),exclude,city: bournemouth,"city form, no bournemouth page (WP4)"
+accountant southsea,,2,0,/blog/property-accountant-services/portsmouth-property-accountant-landlord-tax-services,12.0,no page (city),exclude,city: southsea,"city form, no southsea page (WP4)"
+accountant luton,720,1,0,/blog/property-accountant-services/why-luton-landlords-need-specialist-property-accountant-2026,22.0,no page (city),exclude,city: luton,"city form, no luton page (WP4)"
+accountants newport,210,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,4.0,no page (city),exclude,city: newport,"city form, no newport page (WP4)"
+accountants in nuneaton,140,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,3.0,no page (city),exclude,city: nuneaton,"city form, no nuneaton page (WP4)"
+accountants in dorset,90,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,9.0,no page (city),exclude,city: dorset,"city form, no dorset page (WP4)"
+property accountant york,10,1,0,/locations/leeds,31.0,no page (city),exclude,city: york,"city form, no york page (WP4)"
+property accountants edinburgh,10,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,4.0,no page (city),exclude,city: edinburgh,"city form, no edinburgh page (WP4)"
+accountants for landlords wirral,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,1.0,no page (city),exclude,city: wirral,"city form, no wirral page (WP4)"
+accounting firms in bradford,,1,0,/,131.0,no page (city),exclude,city: bradford,"city form, no bradford page (WP4)"
+buy to let accountant preston,,1,0,/blog/property-accountant-services/property-accountant-preston-expert-tax-services-local-landlords,6.0,no page (city),exclude,city: preston,"city form, no preston page (WP4)"
+mtd accountant preston,,1,0,/blog/property-accountant-services/property-accountant-preston-expert-tax-services-local-landlords,12.0,no page (city),exclude,city: preston,"city form, no preston page (WP4)"
+partnership tax specialists cardiff,,1,0,/blog/property-accountant-services/property-accountant-swansea-landlord-tax-services,24.0,no page (city),exclude,city: cardiff,"city form, no cardiff page (WP4)"
+property accountant coventry,,1,0,/blog/property-accountant-services/coventry-property-accountant,14.0,no page (city),exclude,city: coventry,"city form, no coventry page (WP4)"
+property accountant solihull,,1,0,/blog/property-accountant-services/how-much-does-a-property-accountant-cost,4.0,no page (city),exclude,city: solihull,"city form, no solihull page (WP4)"
+property tax advice stourport,,1,0,/services/property-tax-advice,90.0,no page (city),exclude,city: stourport,"city form, no stourport page (WP4)"
+property tax advice surrey,,1,0,/services/property-tax-advice,86.0,no page (city),exclude,city: surrey,"city form, no surrey page (WP4)"
+property accountant surrey,20,,,,,no page (city),exclude,city: surrey,"city form, no surrey page (WP4)"
+property accountants surrey,20,,,,,no page (city),exclude,city: surrey,"city form, no surrey page (WP4)"
+accountants for landlords edinburgh,10,,,,,no page (city),exclude,city: edinburgh,"city form, no edinburgh page (WP4)"
+accountants for landlords glasgow,10,,,,,no page (city),exclude,city: glasgow,"city form, no glasgow page (WP4)"
+capital gains tax accountant swansea,10,,,,,no page (city),exclude,city: swansea,"city form, no swansea page (WP4)"
+landlord accountant derby,10,,,,,no page (city),exclude,city: derby,"city form, no derby page (WP4)"
+landlord accountant glasgow,10,,,,,no page (city),exclude,city: glasgow,"city form, no glasgow page (WP4)"
+landlord accountant kent,10,,,,,no page (city),exclude,city: kent,"city form, no kent page (WP4)"
+landlord accountants edinburgh,10,,,,,no page (city),exclude,city: edinburgh,"city form, no edinburgh page (WP4)"
+landlord accountants glasgow,10,,,,,no page (city),exclude,city: glasgow,"city form, no glasgow page (WP4)"
+landlord accountants surrey,10,,,,,no page (city),exclude,city: surrey,"city form, no surrey page (WP4)"
+property accountant brighton,10,,,,,no page (city),exclude,city: brighton,"city form, no brighton page (WP4)"
+property accountant derby,10,,,,,no page (city),exclude,city: derby,"city form, no derby page (WP4)"
+property accountant edinburgh,10,,,,,no page (city),exclude,city: edinburgh,"city form, no edinburgh page (WP4)"
+property accountant kent,10,,,,,no page (city),exclude,city: kent,"city form, no kent page (WP4)"
+property accountant nottingham,10,,,,,no page (city),exclude,city: nottingham,"city form, no nottingham page (WP4)"
+property accountant oxford,10,,,,,no page (city),exclude,city: oxford,"city form, no oxford page (WP4)"
+property accountant oxfordshire,10,,,,,no page (city),exclude,city: oxfordshire,"city form, no oxfordshire page (WP4)"
+property accountant sheffield,10,,,,,no page (city),exclude,city: sheffield,"city form, no sheffield page (WP4)"
+property accountant southampton,10,,,,,no page (city),exclude,city: southampton,"city form, no southampton page (WP4)"
+property accountants brighton,10,,,,,no page (city),exclude,city: brighton,"city form, no brighton page (WP4)"
+property accountants derby,10,,,,,no page (city),exclude,city: derby,"city form, no derby page (WP4)"
+property accountants glasgow,10,,,,,no page (city),exclude,city: glasgow,"city form, no glasgow page (WP4)"
+property accountants kent,10,,,,,no page (city),exclude,city: kent,"city form, no kent page (WP4)"
+property accountants nottingham,10,,,,,no page (city),exclude,city: nottingham,"city form, no nottingham page (WP4)"
+property accountants oxfordshire,10,,,,,no page (city),exclude,city: oxfordshire,"city form, no oxfordshire page (WP4)"
+property accountants sheffield,10,,,,,no page (city),exclude,city: sheffield,"city form, no sheffield page (WP4)"
+property tax accountants cardiff,10,,,,,no page (city),exclude,city: cardiff,"city form, no cardiff page (WP4)"
+property tax accountants edinburgh,10,,,,,no page (city),exclude,city: edinburgh,"city form, no edinburgh page (WP4)"
+property tax specialist cardiff,10,,,,,no page (city),exclude,city: cardiff,"city form, no cardiff page (WP4)"
+property tax specialist swansea,10,,,,,no page (city),exclude,city: swansea,"city form, no swansea page (WP4)"
+accountants for landlords milton keynes,,,,,,no page (city),exclude,city: milton keynes,"city form, no milton keynes page (WP4)"
+buy to let accountants milton keynes,,,,,,no page (city),exclude,city: milton keynes,"city form, no milton keynes page (WP4)"
+landlord accountants milton keynes,,,,,,no page (city),exclude,city: milton keynes,"city form, no milton keynes page (WP4)"
+landlord tax return accountant nottingham,,,,,,no page (city),exclude,city: nottingham,"city form, no nottingham page (WP4)"
+property accountant wolverhampton,,,,,,no page (city),exclude,city: wolverhampton,"city form, no wolverhampton page (WP4)"
+property accountants northampton,,,,,,no page (city),exclude,city: northampton,"city form, no northampton page (WP4)"
+property investment accountant milton keynes,,,,,,no page (city),exclude,city: milton keynes,"city form, no milton keynes page (WP4)"
+property specialist accountant milton keynes,,,,,,no page (city),exclude,city: milton keynes,"city form, no milton keynes page (WP4)"
+property tax accountant milton keynes,,,,,,no page (city),exclude,city: milton keynes,"city form, no milton keynes page (WP4)"
+property tax accountant northampton,,,,,,no page (city),exclude,city: northampton,"city form, no northampton page (WP4)"
+property tax accountants bournemouth,,,,,,no page (city),exclude,city: bournemouth,"city form, no bournemouth page (WP4)"
+property tax accountants northampton,,,,,,no page (city),exclude,city: northampton,"city form, no northampton page (WP4)"
+property tax advisor northampton,,,,,,no page (city),exclude,city: northampton,"city form, no northampton page (WP4)"
+property tax advisors newcastle,,,,,,no page (city),exclude,city: newcastle,"city form, no newcastle page (WP4)"
+property tax specialist milton keynes,,,,,,no page (city),exclude,city: milton keynes,"city form, no milton keynes page (WP4)"
+rental accountants slough,,,,,,no page (city),exclude,city: slough,"city form, no slough page (WP4)"

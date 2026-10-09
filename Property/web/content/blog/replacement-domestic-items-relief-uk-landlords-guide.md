@@ -3,7 +3,7 @@ title: "Replacement of Domestic Items Relief: A Complete Guide for UK Landlords"
 slug: "replacement-domestic-items-relief-uk-landlords-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Domestic Items Relief: UK Landlord Guide 2026/27"
@@ -276,4 +276,4 @@ faqs:
 <li>A company structure where the relief runs through corporation tax instead</li>
 </ul>
 
-<p>If you want a second pair of eyes on how a relief like this fits your wider position, a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can review your replacement spend and allocate it correctly. The form below routes through to the team that handles this work.</p>
+<p>If you want a second pair of eyes on how a relief like this fits your wider position, a <a href="/services/landlord-accountant">landlord tax accountant</a> can review your replacement spend and allocate it correctly. The form below routes through to the team that handles this work.</p>

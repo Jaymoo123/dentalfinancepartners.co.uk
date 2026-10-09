@@ -141,13 +141,18 @@ function DesktopDropdown({ item, pathname }: { item: NavItem; pathname: string }
         <ChevronIcon className={open ? "rotate-180 transition-transform" : "transition-transform"} />
       </button>
 
-      {open ? (
-        item.groups?.length ? (
+      {/* The panel is always in the HTML and toggled with the `hidden`
+          attribute, so every page carries a crawlable link to each service,
+          resource and calculator. Before this the panel mounted only on click,
+          which left the money pages with no header link for a crawler and only
+          the footer to find them by. Behaviour for a person is unchanged. */}
+      {item.groups?.length ? (
           // Grouped panel: the calculator fleet is too long for a single column
           // (it would run off the bottom of the viewport), so it splits into
           // category columns. max-h + scroll is the backstop if the fleet grows.
           <div
             id={menuId}
+            hidden={!open}
             className="absolute left-0 top-full z-50 max-h-[70vh] w-[38rem] overflow-y-auto rounded-xl border border-slate-200 bg-white p-4 shadow-lg"
           >
             <div className="columns-2 gap-6">
@@ -184,6 +189,7 @@ function DesktopDropdown({ item, pathname }: { item: NavItem; pathname: string }
         ) : (
           <div
             id={menuId}
+            hidden={!open}
             className="absolute left-0 top-full z-50 w-64 rounded-xl border border-slate-200 bg-white py-2 shadow-lg"
           >
             {item.children?.map((child) => (
@@ -201,8 +207,7 @@ function DesktopDropdown({ item, pathname }: { item: NavItem; pathname: string }
               </Link>
             ))}
           </div>
-        )
-      ) : null}
+        )}
     </div>
   );
 }
@@ -325,12 +330,17 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
         </div>
       </div>
 
-      {open ? (
-        <div
+      {/* Always rendered so the drawer's links are in the server HTML too.
+          `hidden` keeps it out of the layout and the accessibility tree and
+          `inert` keeps its controls out of the tab order while closed, so a
+          screen reader never meets a closed modal dialog. */}
+      <div
           className="fixed inset-0 z-50 lg:hidden"
           role="dialog"
           aria-modal="true"
           aria-labelledby={`${panelId}-title`}
+          hidden={!open}
+          inert={!open}
         >
           <button
             type="button"
@@ -452,7 +462,6 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
             </div>
           </div>
         </div>
-      ) : null}
     </header>
   );
 }

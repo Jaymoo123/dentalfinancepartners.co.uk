@@ -46,7 +46,7 @@ faqs:
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'
-dateModified: "2026-07-26"
+dateModified: "2026-10-09"
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
 - gov.uk
@@ -168,7 +168,7 @@ imageCredit:
 <p>If you use the AIA, you claim the full cost in the period of expenditure up to the cap; the balance, if any, goes into the special rate pool at 6%. Where you are a company, weigh the 50% special rate first-year allowance against pooling for any spend you cannot or do not cover with the AIA. With Making Tax Digital for Income Tax now phasing in for landlords and sole traders, accurate, well-categorised capital records also make quarterly reporting and the year-end position far easier to stand behind.</p>
 
 <h2>Why specialist advice matters</h2>
-<p>Integral features capital allowances are a technical area where the value of the claim turns on correct classification, the right pool, the correct first-year route and a valid election. Getting the section 33A categories wrong, missing the section 198 election deadline, or mis-applying a relief that does not reach integral features can all cost real relief. A property accountant experienced in capital allowances can identify the qualifying expenditure, allocate it defensibly across the shell, structure, integral features and plant, and prepare the documentation HMRC expects. To understand what that involves, see <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> and <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> who specialises in this work.</p>
+<p>Integral features capital allowances are a technical area where the value of the claim turns on correct classification, the right pool, the correct first-year route and a valid election. Getting the section 33A categories wrong, missing the section 198 election deadline, or mis-applying a relief that does not reach integral features can all cost real relief. A <a href="/services/property-accountant">property accountant experienced in capital allowances</a> can identify the qualifying expenditure, allocate it defensibly across the shell, structure, integral features and plant, and prepare the documentation HMRC expects. To understand what that involves, see <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> and <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> who specialises in this work.</p>
 <p>If you are considering incorporating your property business, the treatment of integral features and the transfer of pooled assets is part of the planning. Our <a href="/incorporation">incorporation services</a> can help structure the transaction so the allowances are preserved and used efficiently.</p>
 
 <h2>Final thoughts</h2>

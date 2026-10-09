@@ -3,7 +3,7 @@ title: "Making Tax Digital for Property Income 2026: Complete Landlord Guide"
 slug: "making-tax-digital-property-income-2026-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -92,7 +92,7 @@ faqs:
 
 <p>Signing up for MTD for ITSA is done through your existing Government Gateway account, the same credentials you use for Self Assessment. You confirm you are in scope, link your compatible software, and from that point HMRC expects quarterly updates rather than the old annual property pages.</p>
 
-<p>If an accountant files for you, the route is the <strong>Agent Services Account (ASA)</strong>. The 64-8 paper authorisation and the older online services account do not carry over to MTD. The agent raises an authorisation request through their ASA, you receive a link to the gov.uk authorisation portal, and you approve the agent for MTD for ITSA specifically by logging in through Government Gateway. Two points catch people out: joint owners must each authorise separately (there is no spouse-implies-spouse shortcut), and authorisations do not transfer if you change accountant, so a new adviser must request fresh authorisation.</p>
+<p>If <a href="/services/landlord-accountant">an accountant for landlords</a> files for you, the route is the <strong>Agent Services Account (ASA)</strong>. The 64-8 paper authorisation and the older online services account do not carry over to MTD. The agent raises an authorisation request through their ASA, you receive a link to the gov.uk authorisation portal, and you approve the agent for MTD for ITSA specifically by logging in through Government Gateway. Two points catch people out: joint owners must each authorise separately (there is no spouse-implies-spouse shortcut), and authorisations do not transfer if you change accountant, so a new adviser must request fresh authorisation.</p>
 
 <p>This is the hub-level summary; for the click-by-click flow see our <a href="/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide">step-by-step MTD registration guide for landlords</a> and the <a href="/blog/making-tax-digital-mtd/mtd-itsa-agent-services-account-asa-authorisation-walkthrough">ASA authorisation walkthrough</a>.</p>
 

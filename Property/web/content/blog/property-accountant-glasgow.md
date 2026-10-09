@@ -3,7 +3,7 @@ title: "Property Accountant Glasgow: Tax Specialists for Scottish Landlords"
 slug: "property-accountant-glasgow"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-glasgow"
 date: "2026-04-01"
-dateModified: "2026-05-29"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Glasgow | LBTT, ADS & Section 24 Help"
@@ -108,7 +108,7 @@ faqs:
 
 <h2>What a Glasgow Property Accountant Actually Does</h2>
 
-<p>Beyond preparing accounts and returns, a specialist brings the Scottish and UK-wide rules together into one coherent position. Typical areas of work include:</p>
+<p>Beyond preparing accounts and returns, <a href="/services/property-tax-advice">specialist advice</a> brings the Scottish and UK-wide rules together into one coherent position. Typical areas of work include:</p>
 
 <ul>
 <li>Structuring purchases with LBTT and ADS in mind, so the acquisition cost is understood before you commit</li>

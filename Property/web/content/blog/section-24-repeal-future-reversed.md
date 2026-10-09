@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 faqs:
   - question: "Will Section 24 be reversed?"
     answer: "On the current evidence, no. Section 24 is fully in force, no major political party has committed to repealing it, and Finance Act 2026 (Royal Assent 18 March 2026) entrenched it further by lifting the finance-cost reducer from 20% to 22% in step with the new property income rates from 6 April 2027. A government that wanted to repeal it would have aligned the reducer downward, not upward. The realistic planning assumption is that Section 24 is permanent, so structure your portfolio for the rules as they stand."
@@ -139,7 +139,7 @@ faqs:
 
 <h2>The bottom line</h2>
 
-<p>Section 24 is fully in force, the 20% reducer rises to 22% from April 2027 rather than disappearing, and no party has committed to repeal. The leveraged landlords who fare best are the ones who stop waiting and start structuring: testing incorporation on real numbers, using pension contributions to manage adjusted net income, and aligning ownership with the lower-rate spouse where it is genuine. If you would like a specialist to model your specific position, including the incorporation trade-off and the April 2027 transition, our property tax team can talk it through.</p>
+<p>Section 24 is fully in force, the 20% reducer rises to 22% from April 2027 rather than disappearing, and no party has committed to repeal. The leveraged landlords who fare best are the ones who stop waiting and start structuring: testing incorporation on real numbers, using pension contributions to manage adjusted net income, and aligning ownership with the lower-rate spouse where it is genuine. If you would like a specialist to model your specific position, including the incorporation trade-off and the April 2027 transition, our <a href="/services/property-tax-advice">property tax advice team</a> can talk it through.</p>
 
 <h2>Related reading</h2>
 

@@ -70,7 +70,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A cost of entry you can check line by line",
-        "body": "A specialist reviews each property's market value, base cost and outstanding debt, then prices the SDLT the company would pay and the CGT you would face without relief. You get figures per property, not one portfolio total, because the answer is often that some should move and others should not. Sanity-check it first with the <a href=\"/calculators/incorporation-cost-calculator\">incorporation cost calculator</a>."
+        "body": "One of our <a href=\"/services/property-tax-advice\">property tax specialists</a> reviews each property's market value, base cost and outstanding debt, then prices the SDLT the company would pay and the CGT you would face without relief. You get figures per property, not one portfolio total, because the answer is often that some should move and others should not. Sanity-check it first with the <a href=\"/calculators/incorporation-cost-calculator\">incorporation cost calculator</a>."
       },
       {
         "title": "A written view on whether section 162 is available to you",
@@ -178,11 +178,11 @@ export const audiences: Audience[] = [
       },
       {
         "title": "The 60-day return prepared and filed",
-        "body": "Where tax is due, a specialist sets up the property account if you do not have one, prepares the return, tells you the payment figure and the date it is owed, and files inside the window. Where the gain is covered by relief, losses or the allowance, you get that conclusion in writing instead."
+        "body": "Where tax is due, a <a href=\"/services/property-accountant\">capital gains tax accountant who works only on property</a> sets up the property account if you do not have one, prepares the return, tells you the payment figure and the date it is owed, and files inside the window. Where the gain is covered by relief, losses or the allowance, you get that conclusion in writing instead."
       },
       {
         "title": "Carried through to your self assessment",
-        "body": "The 60-day payment is on account, not the end of it. The same disposal goes on your self assessment for the year and the two must agree. Your accountant carries the computation forward, sets the payment against the final liability, and picks up capital losses brought forward or realised elsewhere."
+        "body": "The 60-day payment is on account, not the end of it. The same disposal goes on your self assessment for the year and the two must agree. Your <a href=\"/services/landlord-accountant\">buy-to-let accountant</a> carries the computation forward, sets the payment against the final liability, and picks up capital losses brought forward or realised elsewhere."
       }
     ],
     "faqs": [
@@ -282,7 +282,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "A written recommendation you can act on or decline",
-        "body": "The output is a written report: the numbers, the risks named, the sequence and the dates. Incorporation is not right for every portfolio, and where the modelling says stay as you are, the report says that. Where you want the work done, our team does it."
+        "body": "The output of our <a href=\"/services/property-tax-advice\">incorporation advice</a> is a written report: the numbers, the risks named, the sequence and the dates. Incorporation is not right for every portfolio, and where the modelling says stay as you are, the report says that. Where you want the work done, our team does it."
       }
     ],
     "faqs": [
@@ -481,7 +481,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "A first-year calendar, and the deal checked against it",
-        "body": "The first-year calendar is dated obligation by obligation, and bookkeeping is set up so rent, mortgage interest and the director's loan are recorded separately, because a lender refinancing in year two will ask for accounts. A specialist also reviews the purchase itself, starting from the <a href=\"/calculators/buy-to-let-cashflow-calculator\">buy-to-let cashflow calculator</a>."
+        "body": "The first-year calendar is dated obligation by obligation, with our <a href=\"/services/property-accountant\">accountancy service for property investors</a> ready to file against it, and bookkeeping is set up so rent, mortgage interest and the director's loan are recorded separately, because a lender refinancing in year two will ask for accounts. A specialist also reviews the purchase itself, starting from the <a href=\"/calculators/buy-to-let-cashflow-calculator\">buy-to-let cashflow calculator</a>."
       }
     ],
     "faqs": [
@@ -565,7 +565,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "The cost of the gift, before you sign anything",
-        "body": "One of our property tax specialists reviews your acquisition cost, improvement spend and any period the property was your main home, then sets the gain against a current valuation. You see the figure, the date it is payable, and how it moves if the gift is split across two tax years or two owners."
+        "body": "One of our property tax specialists reviews your acquisition cost, improvement spend and any period the property was your main home, then sets the gain against a current valuation. You see the figure, the date it is payable, and how it moves if the gift is split across two tax years or two owners. The work is <a href=\"/services/property-tax-advice\">one-off property tax advice</a>, with no need to move your accounts to us."
       },
       {
         "title": "A reservation of benefit review before the deed is drawn",
@@ -677,7 +677,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "The order of the steps, written down",
-        "body": "Severance where it is needed, then the declaration of trust, then Form 17 inside the 60 days, then the change to how each of you reports the rent. A specialist sets out that sequence and the dates before anything is executed, because a form signed ahead of the deed is what HMRC challenges."
+        "body": "Severance where it is needed, then the declaration of trust, then Form 17 inside the 60 days, then the change to how each of you reports the rent. An <a href=\"/services/landlord-accountant\">accountant for landlords who co-own</a> sets out that sequence and the dates before anything is executed, because a form signed ahead of the deed is what HMRC challenges."
       },
       {
         "title": "The change modelled both ways",
@@ -780,7 +780,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "Quarterly updates prepared and filed on time",
-        "body": "Each quarter the figures are categorised, agent statements reconciled to gross rents, and the update submitted by the 7th of the month after the quarter end. You approve rather than assemble. Calendar quarter-ends can be elected instead at the start of the year, from 6 April 2026."
+        "body": "Each quarter our <a href=\"/services/landlord-accountant\">landlord accountancy service</a> categorises the figures, reconciles agent statements to gross rents, and submits the update by the 7th of the month after the quarter end. You approve rather than assemble. Calendar quarter-ends can be elected instead at the start of the year, from 6 April 2026."
       },
       {
         "title": "Year-end statement, final declaration and SA105",
@@ -881,7 +881,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "The first return, from the start date",
-        "body": "The starting point is when the letting began, whether notification is already late, and which tax year the first return belongs in. Your accountant prepares the registration, the property pages and the computation, and sets out what is payable and when."
+        "body": "The starting point is when the letting began, whether notification is already late, and which tax year the first return belongs in. One of our <a href=\"/services/landlord-accountant\">accountants for landlords</a> prepares the registration, the property pages and the computation, and sets out what is payable and when."
       },
       {
         "title": "Allowance against expenses, on your figures",
@@ -975,7 +975,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "The probate valuation reviewed as a tax figure",
-        "body": "One of our property tax specialists re-reads the date of death valuation, the evidence behind it, and how it sits against the inheritance tax the estate reported. Where the property has since sold for less, they check whether substituting the sale price is worth the base cost it costs you."
+        "body": "A <a href=\"/services/property-tax-advice\">property tax adviser</a> from our team re-reads the date of death valuation, the evidence behind it, and how it sits against the inheritance tax the estate reported. Where the property has since sold for less, they check whether substituting the sale price is worth the base cost it costs you."
       },
       {
         "title": "Keep, let or sell, compared in figures",
@@ -1074,7 +1074,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "The director's loan account rebuilt from the records",
-        "body": "Where the loan account has drifted, a specialist reconstructs it from the incorporation paperwork, the bank statements and the expenses you paid personally, and tells you what the balance really is. That figure decides how much can come out with no personal tax, whether a section 455 exposure is building, and the year the credit balance runs out."
+        "body": "Where the loan account has drifted, a <a href=\"/services/property-accountant\">property company accountant</a> reconstructs it from the incorporation paperwork, the bank statements and the expenses you paid personally, and tells you what the balance really is. That figure decides how much can come out with no personal tax, whether a section 455 exposure is building, and the year the credit balance runs out."
       },
       {
         "title": "Payroll, dividend paperwork and the filings that follow",
@@ -1180,7 +1180,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "A year-by-year computation you can check",
-        "body": "Your accountant prepares a schedule per tax year: rental income, allowable expenses, the finance cost position, tax due, interest to the disclosure date and the penalty at the band claimed. Where records are missing, the assumptions are written down and evidenced, so the basis is visible and defensible."
+        "body": "Your <a href=\"/services/landlord-accountant\">landlord tax accountant</a> prepares a schedule per tax year: rental income, allowable expenses, the finance cost position, tax due, interest to the disclosure date and the penalty at the band claimed. Where records are missing, the assumptions are written down and evidenced, so the basis is visible and defensible."
       },
       {
         "title": "The mitigation case, and what follows",
@@ -1273,7 +1273,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A written read of where abolition left you",
-        "body": "A specialist reviews your last filed return against the current rules and sets out, property by property, the Section 24 position, the pooled allowances carried across, the ring-fenced losses, and the transitional capital gains position."
+        "body": "A <a href=\"/services/property-accountant\">specialist property accountant</a> reviews your last filed return against the current rules and sets out, property by property, the Section 24 position, the pooled allowances carried across, the ring-fenced losses, and the transitional capital gains position."
       },
       {
         "title": "A VAT position tested against your real takings",
@@ -1385,7 +1385,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "Returns, accounts and quarterly filings prepared",
-        "body": "Your accountant prepares the self assessment or the company accounts and corporation tax return, keeps licensing fees and running costs in the right period, and sets up the digital records Making Tax Digital for Income Tax needs before your start date."
+        "body": "Our <a href=\"/services/landlord-accountant\">team of HMO and multi-let accountants</a> prepares the self assessment or the company accounts and corporation tax return, keeps licensing fees and running costs in the right period, and sets up the digital records Making Tax Digital for Income Tax needs before your start date."
       }
     ],
     "faqs": [

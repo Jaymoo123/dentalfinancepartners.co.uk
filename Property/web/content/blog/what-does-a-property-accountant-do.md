@@ -3,7 +3,7 @@ title: "What Does a Property Accountant Do? Services and Scope for UK Landlords"
 slug: "what-does-a-property-accountant-do"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/what-does-a-property-accountant-do"
 date: "2026-05-21"
-dateModified: "2026-08-05"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Landlord Tax Services Explained: Scope for 2026/27"
@@ -60,7 +60,7 @@ faqs:
 
 <p>A property accountant handles the tax and accounting work that arises from owning, letting and eventually disposing of UK property. The work overlaps with general accountancy but the technical depth on property-specific rules (Section 24, SDLT including the 5% additional dwellings surcharge, the 60-day CGT regime, MTD for Income Tax, ATED, section 162 incorporation relief) is what distinguishes a specialist from a generalist.</p>
 
-<p>If you are ready to engage one rather than read about the role, see our main <a href="/">property accountants</a> page for UK-wide Section 24, MTD, and incorporation advice.</p>
+<p>If you are ready to engage one rather than read about the role, see our main <a href="/services/property-accountant">property accountants</a> page for UK-wide Section 24, MTD, and incorporation advice.</p>
 
 <p>This page sets out what the work actually involves, the deliverables in a typical engagement, when professional input adds real value, and how to evaluate options.</p>
 

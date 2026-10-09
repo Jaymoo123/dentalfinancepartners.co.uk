@@ -14,7 +14,7 @@ summary: Move a rental property into your own company and HMRC charges SDLT on t
 reviewedBy: Property Tax Partners Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-05-31'
-dateModified: "2026-08-17"
+dateModified: "2026-10-09"
 schema: ''
 faqs:
 - question: How is SDLT charged when I transfer property to my limited company in 2026 (connected party)?
@@ -238,4 +238,4 @@ metaDescription_prev: 'How SDLT works when you transfer property to your own com
 
 <p>The company must file the SDLT return and pay the tax within 14 days of the effective date, which is normally completion. Late filing and late payment both attract penalties, and interest runs on unpaid SDLT at HMRC's prevailing rate. Because the charge is built on market value, the valuation is the single most important number in the whole exercise: too low invites an HMRC challenge and penalties, too high overpays tax you will never recover. For any transfer where significant SDLT is at stake, an RICS valuation contemporaneous with the transfer is the evidence that defends the figure you report.</p>
 
-<p>The decision to incorporate should turn on the long-run tax position, not the headline entry cost alone, but you cannot judge the long run until the entry cost is priced accurately. A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model the SDLT, the CGT, the section 162 and Schedule 15 positions and the ongoing corporation tax outcome together, so the number you are weighing is the real one.</p>
+<p>The decision to incorporate should turn on the long-run tax position, not the headline entry cost alone, but you cannot judge the long run until the entry cost is priced accurately. A specialist <a href="/services/property-tax-advice">adviser on property incorporations</a> can model the SDLT, the CGT, the section 162 and Schedule 15 positions and the ongoing corporation tax outcome together, so the number you are weighing is the real one.</p>

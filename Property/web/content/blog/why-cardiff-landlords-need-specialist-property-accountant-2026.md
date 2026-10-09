@@ -3,7 +3,7 @@ title: "Why Cardiff Landlords Need a Specialist Property Accountant in 2026"
 slug: "why-cardiff-landlords-need-specialist-property-accountant-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/why-cardiff-landlords-need-specialist-property-accountant-2026"
 date: "2026-05-29"
-dateModified: "2026-07-26"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Cardiff | Welsh LTT & Landlord Tax Help"
@@ -77,7 +77,7 @@ faqs:
 
 <p>Every Cardiff landlord with a property let on a domestic tenancy must register with <strong>Rent Smart Wales</strong>, and any landlord who self-manages must also hold a licence, which requires completing approved training. The scheme runs under the Housing (Wales) Act 2014, and Cardiff Council is the designated licensing authority operating it for all 22 Welsh local authorities. Source: <a href="https://www.gov.wales/communities-and-childrens-secretary-reminds-landlords-need-register-rent-smart-wales">gov.wales Rent Smart Wales</a>.</p>
 
-<p>For tax purposes, registration fees, licence fees and the cost of the approved training course are allowable expenses against rental income. Failure to register or licence where required is a criminal offence and can lead to rent-repayment orders, so a specialist confirms compliance is in place as part of preparing the return rather than treating it as someone else's problem.</p>
+<p>For tax purposes, registration fees, licence fees and the cost of the approved training course are allowable expenses against rental income. Failure to register or licence where required is a criminal offence and can lead to rent-repayment orders, so a <a href="/services/landlord-accountant">specialist landlord accountant</a> confirms compliance is in place as part of preparing the return rather than treating it as someone else's problem.</p>
 
 <h2>Article 4 Directions and Cardiff's HMO Hotspots</h2>
 

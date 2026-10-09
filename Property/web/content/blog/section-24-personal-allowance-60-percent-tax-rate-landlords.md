@@ -14,7 +14,7 @@ summary: "Section 24 adds your mortgage interest back to taxable income and give
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 schema: ""
 faqs:
   - question: "What is the 60% marginal tax rate for landlords?"
@@ -149,4 +149,4 @@ howToSteps:
 
 <h2>Records to keep and when to get advice</h2>
 <p>The calculations that decide whether you are in the taper are unforgiving about detail, so keep clean records of mortgage interest certificates, all rental income and expenses, employment and other income, and pension contribution evidence. The figure that matters is adjusted net income, and reconstructing it accurately after the year has ended is far harder than tracking it as you go.</p>
-<p>If your combined income is approaching £100,000, or you suspect the Section 24 add-back is quietly carrying you into the taper, this is a position to model in advance rather than discover in arrears. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can calculate your adjusted net income, show how much pension contribution or income splitting brings you back under the line, and weigh whether incorporation is the right long-term answer for the shape of your portfolio. The planning generally has to be in place before the tax year ends, which is the real reason landlords get caught: by the time the trap is visible on a return, the year it relates to is already closed.</p>
+<p>If your combined income is approaching £100,000, or you suspect the Section 24 add-back is quietly carrying you into the taper, this is a position to model in advance rather than discover in arrears. A <a href="/services/property-tax-advice">specialist looking at your whole tax position</a> can calculate your adjusted net income, show how much pension contribution or income splitting brings you back under the line, and weigh whether incorporation is the right long-term answer for the shape of your portfolio. The planning generally has to be in place before the tax year ends, which is the real reason landlords get caught: by the time the trap is visible on a return, the year it relates to is already closed.</p>

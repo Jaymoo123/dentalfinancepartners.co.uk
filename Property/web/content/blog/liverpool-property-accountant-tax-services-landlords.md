@@ -3,7 +3,7 @@ title: "Property Accountants Liverpool: Landlord Tax Services & Section 24 Help"
 slug: "liverpool-property-accountant-tax-services-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/liverpool-property-accountant-tax-services-landlords"
 date: "2026-05-21"
-dateModified: "2026-07-28"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountants Liverpool | BTL Tax & Section 24 Help"
@@ -134,7 +134,7 @@ faqs:
 
 <h3>MTD for ITSA in practice</h3>
 
-<p>If you are already in scope (gross rents above £50,000 from 6 April 2026), three things change in practice: you keep digital records of every property income and expense item, you file quarterly updates within one month of quarter-end, and a final declaration replaces the old self assessment. Compatible software includes FreeAgent, Hammock, Xero (with an MTD bridging tool), Landlord Studio, and others. The right choice depends on your portfolio size and whether you also run a non-property trade. A property accountant configures the chart of accounts so each property's profit reads cleanly, sets up your bank feeds, and reviews each quarter before submission.</p>
+<p>If you are already in scope (gross rents above £50,000 from 6 April 2026), three things change in practice: you keep digital records of every property income and expense item, you file quarterly updates within one month of quarter-end, and a final declaration replaces the old self assessment. Compatible software includes FreeAgent, Hammock, Xero (with an MTD bridging tool), Landlord Studio, and others. The right choice depends on your portfolio size and whether you also run a non-property trade. A <a href="/services/landlord-accountant">landlord accountant</a> configures the chart of accounts so each property's profit reads cleanly, sets up your bank feeds, and reviews each quarter before submission.</p>
 
 <aside>
 <p>Crossed the MTD threshold or about to?</p>

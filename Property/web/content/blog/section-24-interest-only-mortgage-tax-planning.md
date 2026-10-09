@@ -48,7 +48,7 @@ howToSteps:
     text: "Work out the credit as 20% (2026/27) of the lowest of three figures: total finance costs, rental profits, or adjusted income above the personal allowance. Usually the finance-cost figure is lowest. Deduct the credit from your tax bill."
   - name: "Carry forward any restricted finance costs"
     text: "If the profits or income cap reduced your credit below 20% of your full interest, the unused finance costs carry forward to set against future years. Keep a running record, especially in low-profit or loss years."
-dateModified: "2026-08-21"
+dateModified: "2026-10-09"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
@@ -269,4 +269,4 @@ reviewedAt: "2026-05-31"
 
 <p>The interest-only versus repayment decision is, at heart, a debt and cash-flow decision, with Section 24 sitting on top of both. The relief rule is identical, so changing mortgage type does not change your Section 24 position. What changes your position is where the property is held, how the income is split, whether pension contributions reclaim band space, and whether your interest figure can be reduced.</p>
 
-<p>A specialist property accountant can model the interest-only and repayment paths against your actual income, test whether incorporation or ownership splitting pays for itself, and make sure your records are MTD-ready before the relevant threshold catches you. The right answer depends on your tax band, your portfolio size, and whether you are chasing income or growth, not on a rule that treats both mortgages the same.</p>
+<p>A specialist property accountant can <a href="/services/property-accountant">model the interest-only and repayment paths</a> against your actual income, test whether incorporation or ownership splitting pays for itself, and make sure your records are MTD-ready before the relevant threshold catches you. The right answer depends on your tax band, your portfolio size, and whether you are chasing income or growth, not on a rule that treats both mortgages the same.</p>

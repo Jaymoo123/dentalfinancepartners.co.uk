@@ -3,7 +3,7 @@ title: "HMO Tax Guide: How to Calculate Rental Income and Claim Deductions on Mu
 slug: "hmo-tax-guide-rental-income-deductions-multi-tenant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant"
 date: "2026-04-10"
-dateModified: "2026-08-21"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -186,7 +186,7 @@ faqs:
 <p>If you compare an HMO with a standard single let, the higher gross yield usually comes with more cost, more compliance and a sharper Section 24 effect from typically higher borrowing. Our <a href="/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison">HMO versus standard buy-to-let tax comparison</a> sets the two side by side, and the detail on licensing relief is in the guide to <a href="/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords">whether HMO licensing fees are tax deductible</a>.</p>
 
 <aside>
-<p><strong>Want tax advice for your HMO?</strong> Whether you run one shared house or a multi-property HMO portfolio, a specialist review can confirm your income and expense position, model Section 24 and incorporation, and get you MTD-ready. Request a free, no-obligation consultation through the form on this page.</p>
+<p><strong>Want tax advice for your HMO?</strong> Whether you run one shared house or a multi-property HMO portfolio, a review by <a href="/services/landlord-accountant">an accountant for HMO landlords</a> can confirm your income and expense position, model Section 24 and incorporation, and get you MTD-ready. Request a free, no-obligation consultation through the form on this page.</p>
 </aside>
 
 <h2>Making Tax Digital for HMO Landlords</h2>

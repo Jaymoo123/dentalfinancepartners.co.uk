@@ -3,7 +3,7 @@ title: "What Records Should UK Landlords Keep and for How Long?"
 slug: "record-keeping-landlords-what-track-how-long-keep"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/record-keeping-landlords-what-track-how-long-keep"
 date: "2026-04-10"
-dateModified: "2026-08-21"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -254,4 +254,4 @@ faqs:
 <li>You are facing an HMRC enquiry and need missing records reconstructed and presented properly</li>
 </ul>
 
-<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can set up the system, separate revenue from capital correctly, and make sure every allowable expense is captured while the records stay compliant. If any of the triggers above apply, the form below routes to a specialist who handles property landlords.</p>
+<p><a href="/services/landlord-accountant">An accountant who works with landlords</a> can set up the system, separate revenue from capital correctly, and make sure every allowable expense is captured while the records stay compliant. If any of the triggers above apply, the form below routes to a specialist who handles property landlords.</p>

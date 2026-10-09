@@ -46,13 +46,22 @@ const AccordionTrigger = React.forwardRef<
 ));
 AccordionTrigger.displayName = "AccordionTrigger";
 
+/**
+ * Content is force-mounted so every answer is in the server HTML. Radix only
+ * mounts a closed item's content on the client, which left the FAQ pages with
+ * twelve questions and no answers for any fetcher that does not run
+ * JavaScript (Bing, the AI crawlers, curl). A person sees exactly what they
+ * saw before: closed items are hidden by the data-state class and open on
+ * click. The FAQPage schema and the visible text now describe the same page.
+ */
 const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm sm:text-base leading-relaxed text-slate-700 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    forceMount
+    className="overflow-hidden text-sm sm:text-base leading-relaxed text-slate-700 data-[state=closed]:hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >
     <div className={cn("border-t border-slate-200 bg-white px-4 py-4 sm:px-6 sm:py-5", className)}>

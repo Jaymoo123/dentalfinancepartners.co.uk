@@ -3,7 +3,7 @@ title: "How to Calculate Your Section 24 Tax Credit Step by Step"
 slug: "how-to-calculate-section-24-tax-credit-step-by-step"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/how-to-calculate-section-24-tax-credit-step-by-step"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 reviewedBy: "Property Tax Partners Editorial Team"
@@ -179,4 +179,4 @@ faqs:
 <li><strong>Commercial property lettings</strong>, where finance costs remain fully deductible.</li>
 <li><strong>Furnished holiday lets before 6 April 2025.</strong> The FHL regime was abolished from that date, so former holiday lets now sit inside the standard residential rules and the Section 24 restriction.</li>
 </ul>
-<p>Knowing your exact Section 24 cost is the starting point for any incorporation decision, because the comparison has to weigh the annual reducer restriction against the Corporation Tax position, the SDLT and CGT on transfer, and the cost of extracting profits as dividends. That modelling is where a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> earns their keep, and it is rarely as clear-cut as portfolio landlords assume.</p>
+<p>Knowing your exact Section 24 cost is the starting point for any incorporation decision, because the comparison has to weigh the annual reducer restriction against the Corporation Tax position, the SDLT and CGT on transfer, and the cost of extracting profits as dividends. That modelling is where a <a href="/services/property-accountant">specialist property accountant</a> earns their keep, and it is rarely as clear-cut as portfolio landlords assume.</p>

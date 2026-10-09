@@ -3,7 +3,7 @@ title: "Starting a Property Business: Personal Ownership vs Limited Company vs P
 slug: "starting-property-business-sole-trader-vs-ltd-vs-partnership"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/starting-property-business-sole-trader-vs-ltd-vs-partnership"
 date: "2026-07-09"
-dateModified: "2026-07-20"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -319,7 +319,7 @@ faqs:
 
 <p>However, HMRC contests whether a residential letting business qualifies under s.162. In Ramsay [2013] UKUT 226, the Upper Tribunal found that a letting business could qualify as a "business" for s.162 purposes, but the level of personal activity was a material factual indicator. The tribunal's analysis pointed to something in the order of 20 hours per week of personal management activity as the kind of involvement that might move a letting business from passive investment to qualifying business under the provision. This is not a statutory threshold and the position remains fact-sensitive and contested.</p>
 
-<p>The practical conclusion: do not plan your structure on the assumption that s.162 will be available. Get specialist advice before relying on incorporation relief for a letting portfolio. The SDLT cost (FA 2003 s.53) cannot be deferred under s.162 in any event; only the CGT element is potentially deferrable.</p>
+<p>The practical conclusion: do not plan your structure on the assumption that s.162 will be available. <a href="/services/property-tax-advice">Get specialist advice</a> before relying on incorporation relief for a letting portfolio. The SDLT cost (FA 2003 s.53) cannot be deferred under s.162 in any event; only the CGT element is potentially deferrable.</p>
 
 <h2>Practical non-tax factors</h2>
 

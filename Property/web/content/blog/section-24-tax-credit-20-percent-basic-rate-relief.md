@@ -3,7 +3,7 @@ title: "Section 24 Tax Credit: How Does the 20% Basic Rate Relief Actually Work?
 slug: "section-24-tax-credit-20-percent-basic-rate-relief"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-tax-credit-20-percent-basic-rate-relief"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -160,6 +160,6 @@ faqs:
 
 <p>Because Section 24 is an income tax rule, it does not apply to companies. A limited company deducts mortgage interest in full before Corporation Tax, so within a company the interest is relieved at the Corporation Tax rate rather than capped at the basic rate reducer. That is the only route that genuinely lifts an individual's residential interest above 20% relief, and it is why incorporation is the most-discussed Section 24 response.</p>
 
-<p>It is not a free win. Moving property into a company can trigger SDLT on the transfer and CGT on the gain, you then pay Corporation Tax on company profits and personal tax to extract them, and there are ongoing compliance obligations. Whether it pays depends on your income, gearing, portfolio size and time horizon. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to buy-to-let limited companies</a> sets out the trade-offs, and if you would rather have the numbers run for your own situation, that is exactly the kind of work a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> does.</p>
+<p>It is not a free win. Moving property into a company can trigger SDLT on the transfer and CGT on the gain, you then pay Corporation Tax on company profits and personal tax to extract them, and there are ongoing compliance obligations. Whether it pays depends on your income, gearing, portfolio size and time horizon. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to buy-to-let limited companies</a> sets out the trade-offs, and if you would rather have the numbers run for your own situation, that is exactly the kind of work <a href="/services/property-accountant">our property accountancy service</a> does.</p>
 
 <p>For the full policy history and the broader picture of Section 24, including its phased introduction from 2017, see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete guide to Section 24 tax relief</a>.</p>

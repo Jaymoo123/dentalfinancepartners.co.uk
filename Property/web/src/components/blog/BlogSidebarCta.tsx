@@ -21,8 +21,11 @@ export function BlogSidebarCta({ copy }: { copy: BlogSidebarCtaCopy }) {
     <div className="rounded-xl bg-slate-900 p-6">
       <p className="text-lg font-bold leading-snug text-white">{copy.heading}</p>
       <p className="mt-3 text-sm leading-relaxed text-slate-300">{copy.body}</p>
+      {/* 2026-10-09, owner: "Book" buttons go to /contact, not to the in-page
+          form; the same ruling as the hero CTAs on 8 Oct. The article still
+          carries its inline form at #enquiry-form via the header's skip link. */}
       <a
-        href="#enquiry-form"
+        href="/contact"
         data-cta="blog_sidebar_book"
         data-cta-placement="sidebar"
         data-cta-goal="form"
@@ -31,7 +34,7 @@ export function BlogSidebarCta({ copy }: { copy: BlogSidebarCtaCopy }) {
         Book a call
       </a>
       <p className="mt-3 text-center text-xs text-slate-400">
-        Free, no obligation. The form is just below.
+        Free, no obligation.
       </p>
     </div>
   );

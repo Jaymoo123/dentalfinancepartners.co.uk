@@ -311,7 +311,7 @@ export default function LandlordCompliancePage() {
         }
         primary={
           <Link
-            href="#book"
+            href="/contact"
             data-cta="compliance_hero_book"
             data-cta-placement="hero"
             data-cta-goal="form"

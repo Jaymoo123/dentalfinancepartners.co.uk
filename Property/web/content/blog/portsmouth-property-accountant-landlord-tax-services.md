@@ -3,6 +3,7 @@ title: "Portsmouth Property Accountant: Landlord Tax Services for Local Investor
 slug: "portsmouth-property-accountant-landlord-tax-services"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/portsmouth-property-accountant-landlord-tax-services"
 date: "2026-05-29"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Portsmouth Property Accountant | Landlord & HMO Tax Help"
@@ -45,7 +46,7 @@ faqs:
 
 <h2>What a specialist property accountant does for Portsmouth landlords</h2>
 
-<p>A property specialist focuses on the issues that recur for landlords rather than the general bookkeeping a high-street firm handles. For Portsmouth investors that typically includes:</p>
+<p>A <a href="/services/property-accountant">property-focused accountant</a> focuses on the issues that recur for landlords rather than the general bookkeeping a high-street firm handles. For Portsmouth investors that typically includes:</p>
 
 <ul>
   <li>Calculating rental profit correctly, with proper treatment of allowable costs and the repair-versus-improvement distinction that matters so much on older terraced stock.</li>

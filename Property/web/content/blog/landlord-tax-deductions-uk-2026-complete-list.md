@@ -3,7 +3,7 @@ title: "Landlord Tax Deductions UK 2026/27: Complete List"
 slug: "landlord-tax-deductions-uk-2026-complete-list"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list"
 date: "2026-03-31"
-dateModified: "2026-08-21"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Landlord Allowable Expenses 2026/27 | Full Deductions List"
@@ -173,7 +173,7 @@ faqs:
 <p>Tenant-finding advertising is fully deductible, including online portal listings (Rightmove, Zoopla), professional photography, and "To Let" signboards. Marketing costs incurred before you owned the property, as part of acquiring it, are not.</p>
 
 <aside>
-<p><strong>Not sure which side of the repairs-versus-improvements line a cost falls on?</strong> Getting it wrong in either direction (overclaiming an improvement, or missing a genuine repair) is one of the most common reasons HMRC adjusts a landlord return. A specialist property accountant can review your spend before you file. Use the form on this page to ask for a free initial review of your position.</p>
+<p><strong>Not sure which side of the repairs-versus-improvements line a cost falls on?</strong> Getting it wrong in either direction (overclaiming an improvement, or missing a genuine repair) is one of the most common reasons HMRC adjusts a landlord return. <a href="/services/landlord-accountant">An accountant who prepares landlord returns</a> can review your spend before you file. Use the form on this page to ask for a free initial review of your position.</p>
 </aside>
 
 <h2>Finance Costs and Section 24</h2>

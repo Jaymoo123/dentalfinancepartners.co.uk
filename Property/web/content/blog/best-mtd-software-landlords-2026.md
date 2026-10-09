@@ -3,7 +3,7 @@ title: "Best MTD Software for UK Landlords in 2026: Complete Guide"
 slug: "best-mtd-software-landlords-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026"
 date: "2026-05-21"
-dateModified: "2026-07-26"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Making Tax Digital (MTD)"
 metaTitle: "Best MTD Software for Landlords UK 2026 | Ranked Picks"
@@ -149,7 +149,7 @@ faqs:
 
 <h2>When Professional Support Earns Its Fee</h2>
 
-<p>Software handles the mechanics. It does not replace tax planning judgment. The situations where a property accountant typically adds material value alongside the software:</p>
+<p>Software handles the mechanics. It does not replace tax planning judgment. The situations where <a href="/services/landlord-accountant">an accountant who files for landlords</a> typically adds material value alongside the software:</p>
 
 <ul>
 <li>Mixed portfolios (BTL + HMO + commercial + holiday let) where each property type has different MTD treatment</li>

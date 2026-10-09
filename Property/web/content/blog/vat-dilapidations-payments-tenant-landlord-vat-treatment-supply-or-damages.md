@@ -38,7 +38,7 @@ faqs:
     answer: "Residential tenancies are exempt from VAT in their entirety under VATA 1994 Schedule 9 Group 1, so if you let residential property the VAT question almost never arises. Deposit deductions for damage (the residential analogue of dilapidations) are not invoiced as taxable supplies. The exception is the rare residential landlord who is VAT-registered for other reasons (a serviced-accommodation operator above the £90,000 threshold), where the analysis follows the commercial principles above: damage-based deductions stay compensation outside scope; reinstatement charges for items beyond fair-wear-and-tear are documented as such."
   - question: "Should the lease specify how dilapidations are calculated to protect the VAT position?"
     answer: "Yes. The clearest VAT outcome flows from a lease that contains a full repairing covenant, a defined Schedule of Condition (attached at completion), a separate dilapidations clause referencing the costed-quotation methodology under section 18 of the Landlord and Tenant Act 1927, and a process for serving an interim schedule before lease expiry. Where the lease is silent or ambiguous, settlement negotiations can drift toward composite payments that mix rent, surrender, and dilapidations, and the VAT analysis becomes harder to defend. Bespoke drafting at the lease-grant stage costs little and saves real money at lease end."
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"
@@ -127,7 +127,7 @@ editorialNote: "Bucket A applied page. Lease-end-specific applied page sitting d
 
 <aside>
 <p>Want a second opinion on a live settlement?</p>
-<p>If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a VAT-aware property accountant before signing typically pays for itself many times over. We work with landlords and tenants on both sides of the table.</p>
+<p>If you are mid-negotiation on a commercial dilapidations claim and the structure of the settlement is unsettled, a 30-minute call with a <a href="/services/property-accountant">property accountant who handles commercial property</a> before signing typically pays for itself many times over. We work with landlords and tenants on both sides of the table.</p>
 </aside>
 
 <h2>The OTT Cross-Cut: Why the Option to Tax Only Sometimes Matters</h2>

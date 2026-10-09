@@ -3,7 +3,7 @@ title: "Inheritance Tax on Rental Property Portfolios: UK Guide 2026"
 slug: "inheritance-tax-rental-property-uk-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide"
 date: "2026-05-21"
-dateModified: "2026-07-28"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Inheritance Tax on Rental Property UK 2026: Reliefs"
@@ -202,7 +202,7 @@ faqs:
 
 <p>For BTL property, GROB applies if you transfer legal title to children but continue to collect the rent yourself, or if you transfer to family members but keep using the property personally. Effective gifting requires you to genuinely lose access to both the income and the capital.</p>
 
-<p>Pre-Owned Asset Tax (POAT) is the parallel income tax charge where GROB technically does not apply but you still benefit. Specialist advice is essential before any large-scale lifetime gift.</p>
+<p>Pre-Owned Asset Tax (POAT) is the parallel income tax charge where GROB technically does not apply but you still benefit. <a href="/services/property-tax-advice">Specialist advice</a> is essential before any large-scale lifetime gift.</p>
 
 <h2>What to do now</h2>
 

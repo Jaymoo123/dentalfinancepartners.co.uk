@@ -41,8 +41,12 @@ export function buildOrganizationJsonLd() {
       postalCode: office.postcode,
       addressCountry: "GB",
     },
-    // No public telephone is advertised: enquiries are handled via the on-site
-    // /contact form, so the ContactPoint (which would otherwise be empty) is omitted.
+    // Public contact facts (owner, 2026-10-09; blueprint R27): the SMS nurture
+    // number, to be swapped for a call-receiving one later, and the named
+    // mailbox. Rendered in the lead panel and llms.txt; the same two strings
+    // everywhere so the entity and the page agree.
+    ...(niche.contact.phone ? { phone: niche.contact.phone } : {}),
+    ...(niche.contact.public_email ? { email: niche.contact.public_email } : {}),
     // Only verifiable records: the Companies House filing plus sister-brand
     // homepages under the same opco. No LinkedIn URL exists in config.
     sameAs: [

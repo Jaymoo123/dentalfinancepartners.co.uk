@@ -41,7 +41,7 @@ faqs:
   answer: "The furnished holiday lettings regime was abolished from 6 April 2025 for income tax and 1 April 2025 for corporation tax (Finance Act 2025 Schedule 5). From those dates, a former FHL is treated as an ordinary property business, and the section 35 dwelling-house restriction applies in full to new expenditure. Pre-abolition plant and machinery pools are grandfathered and can continue to be written down, but no new FHL-route plant claims arise after the abolition dates."
 - question: "Does the AIA reduce my tax bill at my marginal rate?"
   answer: "An AIA claim reduces your taxable profit, so the cash value of the deduction depends on the rate that profit would otherwise have been taxed at. For a company that is corporation tax (currently 19% for small profits up to £50,000 and 25% above £250,000, with marginal relief between). For an individual landlord it tracks your marginal income tax rate. From 6 April 2027, property income in England and Northern Ireland is taxed under separate rates of 22% (basic), 42% (higher) and 47% (additional), enacted by Finance Act 2026 sections 6 to 7, which changes the value of an unincorporated landlord's allowances from that date."
-dateModified: "2026-05-30"
+dateModified: "2026-10-09"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - legislation.gov.uk
@@ -102,7 +102,7 @@ imageCredit:
 </ul>
 <p>Total qualifying expenditure is £135,000, comfortably inside the £1 million AIA cap. The investor can claim the full £135,000 as a deduction against the profits of the period. If the business is run through a limited company, that removes £135,000 from taxable profit; at the 25% main rate of corporation tax the relief is worth £33,750 in tax. If the investor is an individual higher-rate taxpayer, the £135,000 deduction reduces income taxed at 40%, a relief of £54,000. The point of the example is mechanical, not a promise of outcome: the AIA converts a capital outlay into an immediate, full deduction, and the cash value depends on the rate of tax that profit would otherwise have borne.</p>
 <aside>
-<p>Not sure how much of a commercial fit-out or HMO conversion qualifies in your situation? A specialist property accountant can scope the claim before you file. <a href="/contact">Speak to our team</a> about your portfolio.</p>
+<p>Not sure how much of a commercial fit-out or HMO conversion qualifies in your situation? A specialist property accountant can <a href="/services/property-accountant">scope the claim before you file</a>. <a href="/contact">Speak to our team</a> about your portfolio.</p>
 </aside>
 
 <h2>Accounting periods and the pro-rated cap</h2>

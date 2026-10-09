@@ -52,7 +52,7 @@ const CADENCE_THRESHOLDS_MS = [30_000, 70_000, 120_000, 180_000];
 // Yell-style immediacy: present the card ONCE per session shortly after landing
 // so its availability is unmissable. Presentation only (no 30d suppress).
 const AUTO_OPEN_KEY = "ptp_assistant_autoopened";
-const AUTO_OPEN_DELAY_MS = 600;
+const AUTO_OPEN_DELAY_MS = 12_000;
 
 export function SpecialistWidget() {
   const ctx = useIntentContext();
@@ -74,6 +74,8 @@ export function SpecialistWidget() {
 
   const openedRef = useRef(false);
   const engagedRef = useRef(false);
+  // Set once the visitor starts any form; the auto-open never interrupts them.
+  const formStartedRef = useRef(false);
   const openRef = useRef(false);
   const pingCountRef = useRef(0);
   const visibleMsRef = useRef(0);
@@ -240,6 +242,12 @@ export function SpecialistWidget() {
     });
   }, [active, runPing]);
 
+  useEffect(() => {
+    return onAnalyticsEvent((name: string) => {
+      if (name === "form_start") formStartedRef.current = true;
+    });
+  }, []);
+
   // Yell-style immediacy: auto-present the card ONCE per session shortly after
   // landing (consent-gated; never for converted/suppressed visitors). Presentation
   // only -> does NOT set the 30-day engaged-suppress (reserved for an actual click).
@@ -255,7 +263,9 @@ export function SpecialistWidget() {
     }
     if (window.innerWidth < 768) return; // guard: no auto-open/peek under 768px (2026-10-02)
     const t = window.setTimeout(() => {
-      if (engagedRef.current || openRef.current) return;
+      if (engagedRef.current || openRef.current || formStartedRef.current) return;
+      const ae = document.activeElement;
+      if (ae && ae.closest("form")) return;
       try {
         window.sessionStorage.setItem(AUTO_OPEN_KEY, "1");
       } catch {

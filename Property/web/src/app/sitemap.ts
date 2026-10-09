@@ -54,12 +54,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ? new Date(Math.max(...list.map((p) => editedAt(p).getTime())))
       : undefined;
 
+  // Real edit dates for static pages we rewrote, recorded by hand on the day
+  // they went live. A page not listed here carries no lastmod (see above).
+  const staticEditedAt: Record<string, string> = {
+    "": "2026-10-09", // title and services section re-aimed at the three pages
+    "/services/property-accountant": "2026-10-09",
+    "/services/landlord-accountant": "2026-10-09",
+    "/services/property-tax-advice": "2026-10-09",
+  };
+
   const entries: MetadataRoute.Sitemap = staticPaths.map((path) => {
     const url = `${base}${path}`;
+    const edited = staticEditedAt[path];
     return {
       url,
       // /blog is an index of the posts, so its newest post date is a real date.
       ...(path === "/blog" ? { lastModified: newest(posts) } : {}),
+      ...(edited ? { lastModified: new Date(edited) } : {}),
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : 0.7,
       alternates: hreflang(url),

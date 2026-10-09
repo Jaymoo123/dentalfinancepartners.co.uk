@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-08-18"
+dateModified: "2026-10-09"
 category: "Section 24 & Tax Relief"
 metaTitle: "Section 24 Self Assessment: How to Complete SA105 (2026)"
 metaDescription: "How to put mortgage interest on your Self Assessment under Section 24: Box 44 finance costs, the 20% credit, worked examples and SA105 mistakes to avoid."
@@ -177,4 +177,4 @@ faqs:
 <p>It is also worth keeping an eye on whether the restriction itself is ever softened. There is no announced repeal, and successive Budgets have retained it, so plan as though the 20% (soon 22%) credit is permanent. We track the position in our note on <a href="/blog/section-24-and-tax-relief/section-24-repeal-future-reversed">whether Section 24 will be repealed or reversed</a>.</p>
 
 <h2>When to get it checked</h2>
-<p>If your return is a single flat that stays inside the basic-rate band, the steps above are usually enough. The point to get a second pair of eyes is when the add-back pushes you into higher rate, the 60% taper or the Child Benefit charge, when you hold a mix of residential and commercial property, when an FHL has just come into the restriction, or when you are weighing incorporation against staying personal. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model those interactions, make sure the finance-cost figure and any carry-forward are right, and check the return ties up before it is filed. Used well, Section 24 is mechanical; the cost of getting it wrong is not.</p>
+<p>If your return is a single flat that stays inside the basic-rate band, the steps above are usually enough. The point to get a second pair of eyes is when the add-back pushes you into higher rate, the 60% taper or the Child Benefit charge, when you hold a mix of residential and commercial property, when an FHL has just come into the restriction, or when you are weighing incorporation against staying personal. A <a href="/services/landlord-accountant">landlord accountant preparing the return</a> can model those interactions, make sure the finance-cost figure and any carry-forward are right, and check the return ties up before it is filed. Used well, Section 24 is mechanical; the cost of getting it wrong is not.</p>

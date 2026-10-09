@@ -3,7 +3,7 @@ title: "Does Section 24 Apply to Commercial Property? Complete Guide for UK Land
 slug: "section-24-commercial-property-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/section-24-commercial-property-complete-guide"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -89,7 +89,7 @@ howToSteps:
 <li><strong>Student accommodation.</strong> Purpose-built or converted student housing is residential for the structures and buildings allowance and generally for income tax, despite its business-like operation.</li>
 </ul>
 
-<p>If you are unsure whether a let is genuinely non-residential, that question is worth settling before you file, not after an enquiry. A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> will pin the classification down against the actual use and lease terms.</p>
+<p>If you are unsure whether a let is genuinely non-residential, that question is worth settling before you file, not after an enquiry. A <a href="/services/property-accountant">specialist who works on commercial lettings</a> will pin the classification down against the actual use and lease terms.</p>
 
 <h2>Mixed-use property: where the residential part comes back inside Section 24</h2>
 

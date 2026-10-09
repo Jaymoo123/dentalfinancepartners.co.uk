@@ -1,6 +1,6 @@
 {
   "entity": {
-    "firm": "Property Tax Partners is the UK's specialist accountancy firm for landlords, property investors, commercial property owners and property SPVs. We handle incorporation and structuring, Section 24, SDLT, capital gains tax, Making Tax Digital for landlords and non-resident landlord compliance, alongside rental accounts, company accounts and tax returns. Property Tax Partners is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "firm": "Property Tax Partners is a UK specialist accountancy firm for landlords, property investors, commercial property owners and property SPVs. We handle incorporation and structuring, Section 24, SDLT, capital gains tax, Making Tax Digital for landlords and non-resident landlord compliance, alongside rental accounts, company accounts and tax returns. Property Tax Partners is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
     "serves": "We act for UK landlords, property investors, commercial property owners and property SPVs, from a single buy to let held in your own name to a portfolio run through a limited company.",
     "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
     "howItWorks": [
@@ -41,7 +41,8 @@
   },
   "contact": {
     "email": "hello@propertytaxpartners.co.uk",
-    "phone": "+44 20 3026 1111"
+    "public_email": "umair@propertytaxpartners.co.uk",
+    "phone": "+44 7723 568557"
   },
   "navigation": [
     {
@@ -291,7 +292,7 @@
         },
         "hero_primary": {
           "label": "Book free consultation",
-          "href": "#book"
+          "href": "/contact"
         },
         "hero_secondary": {
           "label": "Try free calculators",

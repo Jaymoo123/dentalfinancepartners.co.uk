@@ -293,7 +293,9 @@ export default function SpvCompanyPage() {
               <p className="mt-4 text-base leading-relaxed text-slate-600 sm:mt-6 sm:text-lg">
                 The structure is simple. The decisions around it are not: whether it beats owning personally,
                 how to move property in without an avoidable tax bill, and how to run and eventually unwind
-                it. This page routes each of those questions to the guide that answers it properly.
+                it, which is the work of an{" "}
+                <InlineLink href="/services/property-accountant">accountant who runs property companies</InlineLink>.
+                This page routes each of those questions to the guide that answers it properly.
               </p>
               <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
                 For how many landlords are actually doing this, see our{" "}

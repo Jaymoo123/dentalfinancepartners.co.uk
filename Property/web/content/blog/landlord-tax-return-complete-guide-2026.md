@@ -3,7 +3,7 @@ title: "Landlord Tax Return: Complete Guide 2026"
 slug: "landlord-tax-return-complete-guide-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026"
 date: "2026-04-01"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -215,4 +215,4 @@ faqs:
 </ul>
 
 <h2>When professional help pays off</h2>
-<p>Property taxation has become noticeably more involved: Section 24, the abolition of the FHL regime, 60-day CGT reporting and the arrival of Making Tax Digital all sit on top of the basic SA105. A specialist property accountant can make sure the return is right, that you are using the most efficient accounting basis and structure, and that you are MTD-ready ahead of your mandate date rather than scrambling at the deadline. For a wider view of what is changing this year, see our <a href="/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide">2026 landlord tax changes guide</a>.</p>
+<p>Property taxation has become noticeably more involved: Section 24, the abolition of the FHL regime, 60-day CGT reporting and the arrival of Making Tax Digital all sit on top of the basic SA105. An <a href="/services/landlord-accountant">accountant who specialises in landlord returns</a> can make sure the return is right, that you are using the most efficient accounting basis and structure, and that you are MTD-ready ahead of your mandate date rather than scrambling at the deadline. For a wider view of what is changing this year, see our <a href="/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide">2026 landlord tax changes guide</a>.</p>

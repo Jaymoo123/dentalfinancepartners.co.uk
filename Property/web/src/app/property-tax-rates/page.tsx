@@ -17,7 +17,7 @@ import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { StatsCounter } from "@/components/property/StatsCounter";
 import { TestimonialsSection } from "@/components/property/TestimonialsSection";
 import { FaqSection } from "@/components/ui/FaqSection";
-import { Eyebrow } from "@/components/ui/page-blocks";
+import { Eyebrow, InlineLink } from "@/components/ui/page-blocks";
 import { siteStats } from "@/lib/site-stats";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnOnCream, btnPrimary, heroCreamSurface, siteContainerLg } from "@/components/ui/layout-utils";
@@ -436,7 +436,8 @@ export default function PropertyTaxRatesPage() {
               />
               <MtdStaircase />
               <p className="text-sm text-slate-500">
-                These figures are a quick reference and not a substitute for advice on your own position. We
+                These figures are a quick reference and not a substitute for{" "}
+                <InlineLink href="/services/property-tax-advice">advice on your own position</InlineLink>. We
                 can confirm exactly how each applies to you.
               </p>
             </Section>

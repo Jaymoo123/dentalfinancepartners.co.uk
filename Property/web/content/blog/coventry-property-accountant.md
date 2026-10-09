@@ -3,7 +3,7 @@ title: "Coventry Property Accountant: Expert Services for Local Landlords"
 slug: "coventry-property-accountant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/coventry-property-accountant"
 date: "2026-04-01"
-dateModified: "2026-07-26"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Coventry | HMO, Article 4 & S24"
@@ -49,7 +49,7 @@ faqs:
 <li><strong>HMO licensing and Article 4</strong> · citywide additional licensing plus planning restrictions on new small HMOs in named wards.</li>
 </ul>
 
-<p>Each of these interacts with the others. Incorporating to soften Section 24, for example, has stamp duty and capital gains consequences, and changes how MTD applies. That is the case for joined-up advice from someone who works with property all day rather than as a sideline.</p>
+<p>Each of these interacts with the others. Incorporating to soften Section 24, for example, has stamp duty and capital gains consequences, and changes how MTD applies. That is the case for joined-up advice from <a href="/services/property-accountant">an accountant who works with property all day</a> rather than as a sideline.</p>
 
 <h2>Section 24 Planning for Coventry Buy-to-Let</h2>
 

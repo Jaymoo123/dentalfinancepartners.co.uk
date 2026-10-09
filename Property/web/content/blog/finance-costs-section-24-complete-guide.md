@@ -3,7 +3,7 @@ title: "Finance Costs Under Section 24: What Counts and What You Can Claim"
 slug: "finance-costs-section-24-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/finance-costs-section-24-complete-guide"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 reviewedAt: "2026-05-31"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -217,4 +217,4 @@ faqs:
 <li><strong>Forgetting the carry-forward.</strong> In a low-profit year, unrelieved finance costs are not lost. Carry them forward in box 45.</li>
 </ul>
 
-<p>Section 24 is a mechanism, not a penalty, and once you separate the qualifying finance costs from the ordinary expenses and apply the credit correctly, the calculation is mechanical. The cost of getting it wrong is real, though, both in overpaid tax and in HMRC enquiries, which is why portfolios with significant gearing tend to be where specialist review pays for itself. If your finance costs are large relative to your profit, or you are weighing incorporation against staying personal, that is the point to take advice rather than rely on default software treatment.</p>
+<p>Section 24 is a mechanism, not a penalty, and once you separate the qualifying finance costs from the ordinary expenses and apply the credit correctly, the calculation is mechanical. The cost of getting it wrong is real, though, both in overpaid tax and in HMRC enquiries, which is why portfolios with significant gearing tend to be where specialist review pays for itself. If your finance costs are large relative to your profit, or you are weighing incorporation against staying personal, that is the point to <a href="/services/property-tax-advice">take specialist advice</a> rather than rely on default software treatment.</p>

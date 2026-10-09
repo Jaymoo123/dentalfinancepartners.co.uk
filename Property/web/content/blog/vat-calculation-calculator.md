@@ -21,7 +21,7 @@ faqs:
   answer: The Direct Calculation Scheme is a retail scheme where you calculate VAT based on your expected selling price (ESP) rather than the actual selling price. Your turnover, excluding VAT, must be £1 million or less per year to use it. For standard-rated goods, divide the total ESP by 6. For reduced-rate goods (5%), divide the ESP by 21.
 - question: Do I need to keep digital VAT records?
   answer: Yes, most VAT-registered businesses must keep digital VAT records and use software to submit VAT Returns as part of HMRC's Making Tax Digital programme. This applies to property businesses as well. You cannot use the VAT payment deadline calculator if you make payments on account or use the annual accounting scheme.
-dateModified: "2026-07-26"
+dateModified: "2026-10-09"
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
 - accaglobal.com
@@ -114,7 +114,7 @@ imageCredit:
 <h2>Final Thoughts</h2>
 <p>A VAT calculation calculator is a useful tool, but it is only as good as the method you apply. For straightforward standard-rated supplies, a simple calculator works fine. For property businesses with mixed supplies, partial exemption, or retail schemes, you need a calculator that reflects the correct HMRC rules.</p>
 
-<p>Understanding the distinction between taxable and exempt supplies, the de minimis limit, and the annual adjustment process will help you use any VAT calculation calculator accurately. If in doubt, consult a specialist property accountant who deals with VAT on property every day.</p>
+<p>Understanding the distinction between taxable and exempt supplies, the de minimis limit, and the annual adjustment process will help you use any VAT calculation calculator accurately. If in doubt, consult a <a href="/services/property-accountant">specialist property accountant</a> on property every day.</p>
 
 <h2>Sources</h2>
 <ol>

@@ -14,7 +14,7 @@ summary: "From 6 April 2027 rental profit is taxed personally at 22%, 42% or 47%
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 schema: ""
 faqs:
   - question: "What are the new property income tax rates from April 2027?"
@@ -198,4 +198,4 @@ howToSteps:
 
 <p>The 2027 rates widen the gap between personal and corporate taxation of rental profit, and that pulls more higher and additional-rate landlords toward a company, especially geared ones who gain twice from full interest relief and the wider rate gap. But the gap on the headline rate is not the whole story, and treating 22% against 19% as a settled 3% saving is the most common, and most expensive, mistake landlords make. Add the second layer, and the corporate route wins on retained profit and loses on fully drawn profit, in every band.</p>
 
-<p>The right regime depends on numbers specific to you: your marginal rate from 2027, how much of the rent you actually need to spend, your gearing, and the latent gain you would crystallise to switch. Before acting, model both regimes over a realistic holding period, including the upfront CGT and SDLT and the cost of extraction, not just the rates. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can run those scenarios on your actual figures and tell you which regime your portfolio is better off in.</p>
+<p>The right regime depends on numbers specific to you: your marginal rate from 2027, how much of the rent you actually need to spend, your gearing, and the latent gain you would crystallise to switch. Before acting, model both regimes over a realistic holding period, including the upfront CGT and SDLT and the cost of extraction, not just the rates. A <a href="/services/property-tax-advice">specialist property tax adviser</a> can run those scenarios on your actual figures and tell you which regime your portfolio is better off in.</p>

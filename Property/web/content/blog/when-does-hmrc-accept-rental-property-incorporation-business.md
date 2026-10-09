@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 category: "Incorporation & Company Structures"
 metaTitle: "When Does HMRC Accept a Property Letting Business?"
 metaDescription: "When HMRC treats a rental portfolio as a business for incorporation relief: the Ramsay test, the evidence required, and the s.162, SDLT and CGT impact."
@@ -207,4 +207,4 @@ howToSteps:
 
 <p>Incorporation can be one of the most valuable restructurings you ever do, but only when the business test is genuinely met, the evidence is in place before the transfer, and the capital gains tax, stamp duty and ongoing corporation tax positions have all been modelled together rather than in isolation. The cost of an unsupported s.162 claim is not theoretical; it is a market-value capital gains tax charge plus stamp duty, often six figures on a real portfolio.</p>
 
-<p>If you are weighing incorporation, a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can assess whether your activity clears the Ramsay threshold, tell you honestly where the case is thin, and structure the transfer so the s.162 claim, the SDLT position and the company's ongoing tax all hold together. The broader <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets the structure in context. The earlier you build the evidence, the stronger and cheaper the eventual incorporation will be.</p>
+<p>If you are weighing incorporation, an <a href="/services/property-tax-advice">adviser who models incorporations</a> can assess whether your activity clears the Ramsay threshold, tell you honestly where the case is thin, and structure the transfer so the s.162 claim, the SDLT position and the company's ongoing tax all hold together. The broader <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets the structure in context. The earlier you build the evidence, the stronger and cheaper the eventual incorporation will be.</p>

@@ -97,7 +97,7 @@ export default function ForLettingAgentsPage() {
         }
         primary={
           <Link
-            href="#book"
+            href="/contact"
             data-cta="letting_agents_hero_book"
             data-cta-placement="hero"
             data-cta-goal="form"
@@ -378,7 +378,7 @@ export default function ForLettingAgentsPage() {
             the landlord needs their own accountant.
           </p>
           <Link
-            href="#book"
+            href="/contact"
             data-cta="letting_agents_forward_book"
             data-cta-placement="forward"
             data-cta-goal="form"

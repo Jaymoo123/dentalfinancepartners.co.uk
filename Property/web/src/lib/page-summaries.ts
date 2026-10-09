@@ -28,7 +28,7 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/section-24":
     "How the finance cost restriction works, what it costs you a year, who it hits hardest, and what actually reduces the bill.",
   "/services/property-tax-advice":
-    "One-off consultations on a specific decision: structuring, capital gains timing, capital allowances and portfolio inheritance tax, with written advice and no ongoing tie-in.",
+    "One-off written advice on the property decision in front of you: incorporation, capital gains timing, Section 24, stamp duty, inheritance tax and HMRC enquiries, with no need to move your accounts.",
   "/blog/property-types-and-specialist-tax":
     "Different property types face different tax rules. Guidance on HMOs, commercial property, serviced accommodation, holiday lets, student housing and property development.",
   "/blog/landlord-tax-essentials":

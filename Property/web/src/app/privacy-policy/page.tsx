@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 10 August 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 9 October 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
@@ -189,12 +189,7 @@ export default function PrivacyPolicyPage() {
             describes and to write the one-line summary we show to firms.
           </li>
           <li><strong>Companies House:</strong> looking up publicly available information where you mention a company.</li>
-          <li><strong>Stripe:</strong> payment processing for paid documents. Stripe receives your email address and card details; we never see your card number.</li>
         </ul>
-        <p>
-          When you buy a PDF of a calculator result, we store the figures you entered into the calculator and a
-          reference number for 90 days, so that we can produce the document and handle any refund.
-        </p>
         <p>
           Some of these providers process data outside the United Kingdom. Where they do, we rely on a valid transfer
           mechanism under the UK GDPR.

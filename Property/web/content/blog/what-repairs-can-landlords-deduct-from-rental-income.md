@@ -3,7 +3,7 @@ title: "What Repairs Can Landlords Deduct From Rental Income?"
 slug: "what-repairs-can-landlords-deduct-from-rental-income"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/what-repairs-can-landlords-deduct-from-rental-income"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -166,7 +166,7 @@ faqs:
 <p>The logic is that you can no longer realistically buy the original single-glazed units, so double glazing is simply the modern standard for "a window." The new windows perform better, but their function and character (keeping weather out, letting light in, opening and closing) is broadly the same. The same reasoning applies to replacing an old back boiler with a modern condensing boiler, or lead pipes with modern plastic or copper: you are not improving, you are repairing using what the market now sells.</p>
 
 <aside>
-<p><strong>Unsure whether a job crosses the line into an improvement?</strong> Borderline classifications are where landlords most often over-claim or under-claim. A specialist property accountant can review the work, apportion any genuine improvement element, and document the reasoning so the position holds up if HMRC asks. Use the enquiry form on this page to be matched with a specialist.</p>
+<p><strong>Unsure whether a job crosses the line into an improvement?</strong> Borderline classifications are where landlords most often over-claim or under-claim. A <a href="/services/landlord-accountant">buy-to-let accountant</a> can review the work, apportion any genuine improvement element, and document the reasoning so the position holds up if HMRC asks. Use the enquiry form on this page to be matched with a specialist.</p>
 </aside>
 
 <h2>Examples that are improvements (capital, not deductible against income)</h2>

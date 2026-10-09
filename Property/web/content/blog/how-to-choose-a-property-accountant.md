@@ -3,7 +3,7 @@ title: "How to Choose a Property Accountant: Complete Guide for UK Landlords"
 slug: "how-to-choose-a-property-accountant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-to-choose-a-property-accountant"
 date: "2026-03-31"
-dateModified: "2026-08-05"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "How to Choose a Landlord Tax Adviser: UK Checklist"
@@ -49,7 +49,7 @@ faqs:
 
 <h2>Why a Property Specialist Beats a Generalist</h2>
 <p>Most high street accountants are competent at general bookkeeping and self-assessment, but property investment has its own body of rules that a generalist rarely encounters often enough to master. The gap shows up not in routine filing but in the decisions around it: how finance costs are relieved, whether a cost is a deductible repair or a capital improvement, how to time a disposal, and whether a company structure is worth the friction.</p>
-<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> who works predominantly with landlords treats these as everyday questions. They will know, for example, that pre-letting expenses incurred to get a property ready for its first tenant can usually be set against later rental income, that replacing a like-for-like kitchen is generally a deductible repair while extending it is capital, and that the order in which you sell properties in a year can change your total Capital Gains Tax bill because the annual exempt amount is now only £3,000.</p>
+<p>A <a href="/services/property-accountant">property accountant who works predominantly with landlords</a> treats these as everyday questions. They will know, for example, that pre-letting expenses incurred to get a property ready for its first tenant can usually be set against later rental income, that replacing a like-for-like kitchen is generally a deductible repair while extending it is capital, and that the order in which you sell properties in a year can change your total Capital Gains Tax bill because the annual exempt amount is now only £3,000.</p>
 <p>The right specialist is not simply a more expensive generalist. They are a different proposition: someone whose default frame of reference is the landlord's tax position, so the planning points surface naturally rather than being missed.</p>
 
 <h2>The Qualifications That Actually Matter</h2>

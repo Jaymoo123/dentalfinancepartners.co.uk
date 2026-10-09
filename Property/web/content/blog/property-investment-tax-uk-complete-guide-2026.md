@@ -3,7 +3,7 @@ title: "Property Investment Tax UK: Complete Guide 2026"
 slug: "property-investment-tax-uk-complete-guide-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026"
 date: "2026-04-01"
-dateModified: "2026-07-26"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Specialist UK property tax editorial review, verified against legislation.gov.uk and HMRC guidance"
@@ -250,4 +250,4 @@ howToSteps:
 
 <h2>Getting specialist support</h2>
 
-<p>Property tax rules are dense and they keep moving: the April 2027 property rates, the Section 24 reducer rising to 22%, and the rolling Making Tax Digital deadlines all land within the next two years. A specialist property accountant can help you sequence the buy, hold, sell and pass-on decisions across the portfolio lifecycle and keep your reporting compliant as the rules change. Use the buttons on this page to start a conversation about your portfolio.</p>
+<p>Property tax rules are dense and they keep moving: the April 2027 property rates, the Section 24 reducer rising to 22%, and the rolling Making Tax Digital deadlines all land within the next two years. An <a href="/services/property-accountant">accountant for property investors</a> can help you sequence the buy, hold, sell and pass-on decisions across the portfolio lifecycle and keep your reporting compliant as the rules change. Use the buttons on this page to start a conversation about your portfolio.</p>

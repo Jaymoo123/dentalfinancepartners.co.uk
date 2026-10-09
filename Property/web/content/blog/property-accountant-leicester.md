@@ -3,7 +3,7 @@ title: "Property Accountant Leicester: Expert Tax Services for UK Landlords"
 slug: "property-accountant-leicester"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-leicester"
 date: "2026-05-21"
-dateModified: "2026-08-21"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Leicester | BTL Landlord Tax Help"
@@ -42,7 +42,7 @@ faqs:
 
 <p>Leicester's BTL market spans an unusual mix: high-yield student lets concentrated around De Montfort University and University of Leicester, family lets across the Oadby, Wigston, and Knighton commuter belt, HMO conversions in city centre wards (some subject to Article 4 directions removing permitted development rights), and affordable single-let stock in Belgrave, Spinney Hills, and Beaumont Leys. The combination produces gross yields typically in the 5-8% range, materially above the 4-6% UK average.</p>
 
-<p>For BTL landlords, this means Section 24's bite scales with the rental income, which scales with yield, which scales above national norms in Leicester. Add the April 2027 separate property income tax rates (22/42/47%), Leicester City Council's licensing schemes, and the live MTD-for-ITSA obligation for landlords above £50,000 gross income, and the case for specialist accountancy support strengthens at modest portfolio sizes.</p>
+<p>For BTL landlords, this means Section 24's bite scales with the rental income, which scales with yield, which scales above national norms in Leicester. Add the April 2027 separate property income tax rates (22/42/47%), Leicester City Council's licensing schemes, and the live MTD-for-ITSA obligation for landlords above £50,000 gross income, and the case for <a href="/services/landlord-accountant">specialist accountancy support for landlords</a> strengthens at modest portfolio sizes.</p>
 
 <h2>Leicester's BTL Market in 2026</h2>
 

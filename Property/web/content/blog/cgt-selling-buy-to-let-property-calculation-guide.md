@@ -3,7 +3,7 @@ title: "How Is CGT Calculated When Selling a Buy-to-Let Property? Step-by-Step G
 slug: "cgt-selling-buy-to-let-property-calculation-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -189,4 +189,4 @@ faqs:
 
 <p>If you are selling more than one property, timing is a lever. Completing one sale before 6 April and the next after it splits the gains across two tax years and uses two £3,000 exemptions. Realising a loss-making sale in the same year as a gain offsets the two. And from April 2026 the wider <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> regime tightens record-keeping expectations for landlords above the threshold, which makes the clean cost records a CGT computation needs easier to assemble.</p>
 
-<p>For a portfolio, or for a property with mixed private and let use, complicated ownership history, or a borderline repair-versus-improvement question, the computation rewards getting the base cost and reliefs right before completion rather than after. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> works the disposal calculation, the 60-day return and the reliefs together so nothing allowable is left on the table.</p>
+<p>For a portfolio, or for a property with mixed private and let use, complicated ownership history, or a borderline repair-versus-improvement question, the computation rewards getting the base cost and reliefs right before completion rather than after. A <a href="/services/property-accountant">property accountant handling the sale</a> works the disposal calculation, the 60-day return and the reliefs together so nothing allowable is left on the table.</p>

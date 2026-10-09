@@ -3,7 +3,7 @@ title: "Rental Income Tax UK: Complete Guide for Landlords 2026"
 slug: "rental-income-tax-uk-complete-guide-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords"
 date: "2026-03-29"
-dateModified: "2026-08-21"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -260,7 +260,7 @@ howToSteps:
 
 <h2>When professional advice pays for itself</h2>
 
-<p>For a single, unencumbered let with modest profit, the rental tax position is manageable on your own. The picture changes once any of the following apply, and these are the situations where a specialist property accountant routinely finds tax that would otherwise be overpaid:</p>
+<p>For a single, unencumbered let with modest profit, the rental tax position is manageable on your own. The picture changes once any of the following apply, and these are the situations where an <a href="/services/landlord-accountant">accountant for rental property</a> routinely finds tax that would otherwise be overpaid:</p>
 
 <ul>
 <li>You hold geared property as a higher or additional-rate taxpayer and the Section 24 wedge is material</li>

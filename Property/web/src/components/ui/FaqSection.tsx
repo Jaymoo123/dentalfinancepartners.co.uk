@@ -16,6 +16,7 @@ export function FaqSection({
   className = "bg-white py-12 sm:py-16 lg:py-20",
   tone = "slate",
   html = false,
+  headingId,
 }: {
   eyebrow?: string;
   title?: string;
@@ -26,6 +27,8 @@ export function FaqSection({
   /** `answer` is already-sanitised HTML (writer copy with inline links), not
    *  plain text. Every existing caller omits this and is unaffected. */
   html?: boolean;
+  /** Stable anchor on the H2 so the section can be cited by URL fragment. */
+  headingId?: string;
 }) {
   const itemSurface = tone === "white" ? "bg-white" : "bg-slate-50";
   return (
@@ -34,7 +37,7 @@ export function FaqSection({
         {eyebrow ? (
           <Eyebrow>{eyebrow}</Eyebrow>
         ) : null}
-        <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl mb-8 sm:mb-12">{title}</h2>
+        <h2 id={headingId} className="text-2xl font-bold text-slate-900 sm:text-4xl mb-8 sm:mb-12 scroll-mt-24">{title}</h2>
         <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
           {faqs.map((faq, idx) => (
             <AccordionItem key={faq.question} value={`faq-${idx}`} className={itemSurface}>

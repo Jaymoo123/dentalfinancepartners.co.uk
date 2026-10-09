@@ -402,7 +402,12 @@ export function SpecialistWidget() {
   useEffect(() => {
     if (!active) return;
     return onAnalyticsEvent((name: string) => {
-      if (name === "form_error" && !engagedRef.current) runPing("friction");
+      if (name !== "form_error" || engagedRef.current) return;
+      // Never while focus is inside a form: pinging mid-correction covers
+      // the very form we want them to finish (mobile mini-form Continue).
+      const ae = document.activeElement;
+      if (ae && ae.closest("form")) return;
+      runPing("friction");
     });
   }, [active, runPing]);
 

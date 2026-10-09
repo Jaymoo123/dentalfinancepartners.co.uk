@@ -14,7 +14,7 @@ summary: "Two tax years bring the biggest shift in landlord taxation for a gener
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-07-20"
+dateModified: "2026-10-09"
 schema: ""
 howToSteps:
   - name: "Confirm whether MTD catches you from April 2026"
@@ -195,4 +195,4 @@ faqs:
 
 <h2>Planning Ahead</h2>
 <p>The combination of digital compliance from 2026 and separate, higher property income rates from 2027 is the largest change to landlord taxation in decades. The good news is that none of it is uncertain any more: both changes are enacted, the dates are fixed, and you can plan against known law rather than speculation.</p>
-<p>The practical priorities are getting MTD-ready in time, understanding how the 2027 rates and the Section 24 reducer interact for your marginal rate, and reviewing whether your current ownership structure still fits the post-2027 position. A specialist property accountant can keep you compliant through the MTD transition and model the rate change against your actual numbers. To talk it through, explore our <a href="/services">property tax services</a> or <a href="/contact">get in touch</a> using the form on this page.</p>
+<p>The practical priorities are getting MTD-ready in time, understanding how the 2027 rates and the Section 24 reducer interact for your marginal rate, and reviewing whether your current ownership structure still fits the post-2027 position. A <a href="/services/property-accountant">specialist property accountant</a> can keep you compliant through the MTD transition and model the rate change against your actual numbers. To talk it through, explore our <a href="/services">property tax services</a> or <a href="/contact">get in touch</a> using the form on this page.</p>

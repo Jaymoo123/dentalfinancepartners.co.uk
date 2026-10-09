@@ -14,7 +14,7 @@ image: ""
 h1: "Property SPVs: Structure, Setup and Tax Mechanics"
 summary: "A property SPV is a UK limited company set up to hold and let residential property, distinguished from a generic trading company by its SIC code and articles and (most importantly to lenders) by the absence of unrelated trading activity. This guide covers the mechanics: SIC code, share structure, director loans, BTL mortgage criteria, corporation tax mechanics, dividend extraction, ATED, SDLT, and how the SPV interacts with personal tax."
 schema: ''
-dateModified: "2026-09-02"
+dateModified: "2026-10-09"
 faqs:
   - question: "What actually makes a company an SPV for property?"
     answer: "An SPV (Special Purpose Vehicle) for property is a UK limited company registered with one of the property SIC codes (most commonly 68209 Other letting and operating of own or leased real estate, or 68100 Buying and selling of own real estate), whose articles and trading activity are confined to holding and letting property. There is no separate legal SPV form in English company law; the distinction is practical, set by SIC code, the absence of unrelated activity, and lender expectation. Lenders treat SPV-status as a credit-worthiness signal because it limits the risks the company can take on."
@@ -259,4 +259,4 @@ faqs:
 
 <p>For a higher-rate landlord planning to grow a leveraged portfolio over a 10-plus-year horizon, the SPV route is usually the right answer, and the April 2027 income tax change has widened the gap further. For a basic-rate landlord with a single low-leverage property held for income, the SPV is usually unnecessary. The decision is portfolio-specific and turns on leverage, marginal rate, growth plans and extraction timing.</p>
 
-<p>The decisions worth getting professional input on at the SPV setup stage are the share structure (alphabet shares, spouse split, future growth share planning), the equity-versus-director-loan funding mix (which compounds for years afterwards in extraction efficiency), and the SIC code choice (which is fixed at incorporation and easier to set correctly than to change). After setup, the SPV runs on standard corporation tax mechanics, with the usual annual rhythm of accounts, CT600 and (where applicable) ATED.</p>
+<p>The decisions worth taking to <a href="/services/property-accountant">an accountant who sets up property SPVs</a> at the setup stage are the share structure (alphabet shares, spouse split, future growth share planning), the equity-versus-director-loan funding mix (which compounds for years afterwards in extraction efficiency), and the SIC code choice (which is fixed at incorporation and easier to set correctly than to change). After setup, the SPV runs on standard corporation tax mechanics, with the usual annual rhythm of accounts, CT600 and (where applicable) ATED.</p>

@@ -7,6 +7,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getCategorySlug, firstSentence } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { InlineLink } from "@/components/ui/page-blocks";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -755,6 +756,36 @@ const cityContent: Record<string, {
   },
 };
 
+// One body link per city page to a national service page, each with its own
+// anchor and sentence (AUDIT_IMPL 2026-10-09 §2c). Bristol is deliberately
+// absent: its link is deferred until the new owner pages have been fetched.
+const cityServiceLine: Record<string, { before: string; anchor: string; href: string; after: string }> = {
+  london: {
+    before: "London portfolios are handled by the same ",
+    anchor: "property accountants who act across the UK",
+    href: "/services/property-accountant",
+    after: ", with local market knowledge on top.",
+  },
+  birmingham: {
+    before: "Birmingham landlords get our ",
+    anchor: "UK-wide property accountancy service",
+    href: "/services/property-accountant",
+    after: ", run remotely, with an eye on what is happening in the West Midlands market.",
+  },
+  manchester: {
+    before: "Our ",
+    anchor: "landlord accountancy service",
+    href: "/services/landlord-accountant",
+    after: " works the same way for Manchester clients as it does everywhere else, remote by default and informed by the local market.",
+  },
+  leeds: {
+    before: "Leeds clients work with the same ",
+    anchor: "accountants for landlords",
+    href: "/services/landlord-accountant",
+    after: " who act for our clients nationally, so you get remote support with local knowledge behind it.",
+  },
+};
+
 const cityName = (slug: string) => slug.charAt(0).toUpperCase() + slug.slice(1);
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -806,6 +837,7 @@ export default async function LocationPage({ params }: Props) {
   }
 
   const city = cityName(slug);
+  const serviceLine = cityServiceLine[slug];
   const cityLower = city.toLowerCase();
   const indexablePosts = getAllPosts().filter((p) => !p.noindex);
   const cityPosts = indexablePosts.filter(
@@ -937,7 +969,16 @@ export default async function LocationPage({ params }: Props) {
             </p>
             <p className="mt-4 text-base leading-relaxed text-slate-700">
               We work with landlords across the UK, and we understand the specific dynamics of the {city} property
-              market. Remote support with local market knowledge.
+              market.{" "}
+              {serviceLine ? (
+                <>
+                  {serviceLine.before}
+                  <InlineLink href={serviceLine.href}>{serviceLine.anchor}</InlineLink>
+                  {serviceLine.after}
+                </>
+              ) : (
+                "Remote support with local market knowledge."
+              )}
             </p>
 
             <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">
@@ -962,7 +1003,7 @@ export default async function LocationPage({ params }: Props) {
                 of your portfolio, so we will talk that through rather than quote blind.
               </p>
               <div className="mt-6">
-                <Link href="#book" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
+                <Link href="/contact" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
                   Book your free consultation
                 </Link>
               </div>

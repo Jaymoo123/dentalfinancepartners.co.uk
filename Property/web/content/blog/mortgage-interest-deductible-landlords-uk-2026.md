@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 category: "Section 24 & Tax Relief"
 metaTitle: "Is Mortgage Interest Deductible? UK Landlords 2026"
 metaDescription: "Is mortgage interest deductible for UK landlords in 2026? No for individuals (20% credit, 22% from 2027), yes for companies. A guide by owner type."
@@ -97,7 +97,7 @@ howToSteps: []
 <p>There is a cap. The relief is the lower of three measures: 20% of the finance costs, 20% of the property profits for the year, or 20% of your total income above the personal allowance. If your finance costs are capped in a low-profit year, the unrelieved part is not lost; it is carried forward as a brought-forward amount and can be relieved in a later year. HMRC publishes its own worked examples of the cap and the carry-forward in its <a href="https://www.gov.uk/guidance/changes-to-tax-relief-for-residential-landlords-how-its-worked-out-including-case-studies" rel="noopener" target="_blank">guidance on how the restriction is worked out</a>. We deliberately do not re-walk the box-by-box arithmetic here, because our <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">guide to claiming mortgage interest on a rental property</a> takes you through the SA105 entries and the three-part cap with full worked figures.</p>
 
 <aside>
-<p>Not sure whether the cap is biting on your return, or whether you are carrying forward relief you could be using? A specialist review of your last filed return often surfaces a missed credit. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">See how a property accountant works through this</a>.</p>
+<p>Not sure whether the cap is biting on your return, or whether you are carrying forward relief you could be using? A review of your last filed return by <a href="/services/landlord-accountant">a landlord's accountant</a> often surfaces a missed credit. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">See how a property accountant works through this</a>.</p>
 </aside>
 
 <h2>Why a higher-rate landlord feels the credit as a penalty</h2>

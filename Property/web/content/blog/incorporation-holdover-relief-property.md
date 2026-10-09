@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 category: "Incorporation & Company Structures"
 metaTitle: "Holdover Relief vs Incorporation: Property CGT Routes"
 metaDescription: "No, you cannot use holdover relief to move a portfolio into a company: that is s.162 incorporation relief. How s.165, s.260 and s.162 differ for landlords."
@@ -193,4 +193,4 @@ faqs:
 
 <p>The costliest error in this area is not paying tax; it is claiming the wrong relief. Treat an incorporation as a holdover, or a buy-to-let gift as a business-asset gift, and the relief simply will not apply, leaving an unexpected CGT charge plus the time and cost of unwinding a return. Because these transfers are effectively irreversible, the analysis has to happen first.</p>
 
-<p>A portfolio landlord we worked alongside had assumed holdover would cover their incorporation; on the facts the correct route was a section 162 claim with Schedule 15 partnership relief carrying the SDLT, which only worked because a genuine letting partnership was already in place. The relief that fits depends on the precise transaction, and modelling it before you act is the difference between a clean deferral and an avoidable bill. If you are weighing incorporation, a family gift or a trust, talk to a specialist who can confirm the mechanism for your situation.</p>
+<p>A portfolio landlord we worked alongside had assumed holdover would cover their incorporation; on the facts the correct route was a section 162 claim with Schedule 15 partnership relief carrying the SDLT, which only worked because a genuine letting partnership was already in place. The relief that fits depends on the precise transaction, and modelling it before you act is the difference between a clean deferral and an avoidable bill. If you are weighing incorporation, a family gift or a trust, <a href="/services/property-tax-advice">talk to a specialist</a> who can confirm the mechanism for your situation.</p>

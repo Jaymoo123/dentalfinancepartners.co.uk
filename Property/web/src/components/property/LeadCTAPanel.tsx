@@ -4,6 +4,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { Eyebrow } from "@/components/ui/page-blocks";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { niche } from "@/config/niche-loader";
 
 type ProofPoint = { title: string; detail: string };
 
@@ -27,6 +28,7 @@ export function LeadCTAPanel({
   contained = false,
   ground = "slate",
   redirectOnSuccess = true,
+  headingId,
 }: {
   eyebrow?: string;
   title: string;
@@ -56,6 +58,8 @@ export function LeadCTAPanel({
    * page offers the slot picker at the highest-intent moment.
    */
   redirectOnSuccess?: boolean;
+  /** Stable anchor on the panel's H2 (the section usually carries id="book" itself). */
+  headingId?: string;
 }) {
   if (contained) {
     return (
@@ -71,6 +75,7 @@ export function LeadCTAPanel({
               submitLabel={submitLabel}
               footnote={footnote}
               redirectOnSuccess={redirectOnSuccess}
+              headingId={headingId}
             />
           </div>
         </div>
@@ -92,6 +97,7 @@ export function LeadCTAPanel({
           submitLabel={submitLabel}
           footnote={footnote}
           redirectOnSuccess={redirectOnSuccess}
+          headingId={headingId}
         />
       </div>
     </section>
@@ -118,6 +124,7 @@ function PanelBody({
   footnote,
   redirectOnSuccess,
   dark = false,
+  headingId,
 }: {
   eyebrow: string;
   title: string;
@@ -128,12 +135,13 @@ function PanelBody({
   footnote?: ReactNode;
   redirectOnSuccess: boolean;
   dark?: boolean;
+  headingId?: string;
 }) {
   return (
     <div className="grid items-start gap-8 sm:gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
       <div>
         <Eyebrow onDark={dark}>{eyebrow}</Eyebrow>
-        <h2 className={`text-2xl font-bold sm:text-4xl ${dark ? "text-white" : "text-slate-900"}`}>{title}</h2>
+        <h2 id={headingId} className={`text-2xl font-bold sm:text-4xl ${dark ? "text-white" : "text-slate-900"}`}>{title}</h2>
         <p
           className={`mt-4 text-lg leading-relaxed sm:mt-6 sm:text-xl ${dark ? "text-slate-200" : "text-slate-600"}`}
         >
@@ -161,6 +169,41 @@ function PanelBody({
         {footnote && (
           <p className={`mt-6 max-w-md text-sm leading-relaxed ${dark ? "text-slate-400" : "text-slate-500"}`}>
             {footnote}
+          </p>
+        )}
+        {/* The contact block slot (blueprint section 3.1 item 12, ruling R27).
+            The number is the SMS nurture sender until a call-receiving number
+            exists, so it is offered to text or call and nothing promises that
+            a person answers the phone. Hours and address are added here when
+            F2 and F6 arrive, not before. */}
+        {(niche.contact.phone || niche.contact.public_email) && (
+          <p className={`mt-6 max-w-md text-sm leading-relaxed ${dark ? "text-slate-300" : "text-slate-600"}`}>
+            Rather not fill in a form?{" "}
+            {niche.contact.phone ? (
+              <>
+                Text or call{" "}
+                <a
+                  href={`tel:${niche.contact.phone.replace(/\s+/g, "")}`}
+                  data-cta="panel_phone"
+                  data-cta-placement="lead_panel"
+                  className={`font-bold underline-offset-2 hover:underline ${dark ? "text-white" : "text-slate-900"}`}
+                >
+                  {niche.contact.phone}
+                </a>
+              </>
+            ) : null}
+            {niche.contact.phone && niche.contact.public_email ? " or email " : null}
+            {niche.contact.public_email ? (
+              <a
+                href={`mailto:${niche.contact.public_email}`}
+                data-cta="panel_email"
+                data-cta-placement="lead_panel"
+                className={`font-bold underline-offset-2 hover:underline ${dark ? "text-white" : "text-slate-900"}`}
+              >
+                {niche.contact.public_email}
+              </a>
+            ) : null}
+            .
           </p>
         )}
       </div>

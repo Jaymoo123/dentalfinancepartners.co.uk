@@ -490,7 +490,7 @@ export default function LandlordTaxPage() {
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"
@@ -1259,7 +1259,9 @@ export default function LandlordTaxPage() {
           <Prose>
             <p>
               A single flat, one mortgage, a PAYE job and nothing unusual is a return you can file yourself. The
-              decisions that repay a specialist several times over are the structural ones:
+              decisions that repay{" "}
+              <InlineLink href="/services/property-tax-advice">specialist property tax advice</InlineLink> several
+              times over are the structural ones:
             </p>
           </Prose>
 
@@ -1278,7 +1280,11 @@ export default function LandlordTaxPage() {
               that a declaration of trust needed a Form 17 to follow it, that a mixed-use purchase was taxed on the
               wrong table, that a loss from three years ago is still available, or that a disposal should have
               straddled two tax years. Those points are worth more than the compliance fee, and they are only
-              visible to someone who looks at rental portfolios every week.
+              visible to{" "}
+              <InlineLink href="/services/property-accountant">
+                a property accountant who looks at rental portfolios every week
+              </InlineLink>
+              .
             </p>
             <p>
               What that costs depends on the size of the portfolio and how much of it is structuring rather than

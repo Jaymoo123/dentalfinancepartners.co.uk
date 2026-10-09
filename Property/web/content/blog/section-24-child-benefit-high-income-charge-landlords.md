@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 faqs:
   - question: "Does Section 24 count towards the child benefit high income charge?"
     answer: "Indirectly, yes. Section 24 stops you deducting mortgage interest from rental profit, so your taxable property income (and therefore your adjusted net income) is higher than the cash you actually keep. The High Income Child Benefit Charge is assessed on adjusted net income, so a finance-heavy let can push you over the £60,000 threshold even though your real spendable income has barely moved."
@@ -108,4 +108,4 @@ faqs:
 <p>The practical upside for HICBC planning is real. Keeping <strong>MTD software for landlords</strong> updated quarterly means you can project your adjusted net income with months to spare, rather than discovering at the filing deadline that you crossed £60,000. That early visibility is what makes a pension top-up or income shift possible before the tax year closes. Our guide to the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital deadline for landlords</a> sets out what records you need and when.</p>
 
 <h2>Getting advice that joins the dots</h2>
-<p>The reason the section 24 child benefit interaction catches so many people is that it sits across three separate rule sets: the finance-cost restriction, the HICBC, and your wider income picture including pensions and any other earnings. Generic tax guidance tends to look at each in isolation. A property accountant who models adjusted net income alongside your rental profit, pension capacity and family circumstances can usually find a combination that protects the child benefit and the relief at the same time. If you are sitting just above £60,000, or expect to be after this year's rent reviews, it is worth running the numbers before the year end rather than after.</p>
+<p>The reason the section 24 child benefit interaction catches so many people is that it sits across three separate rule sets: the finance-cost restriction, the HICBC, and your wider income picture including pensions and any other earnings. Generic tax guidance tends to look at each in isolation. A <a href="/services/property-tax-advice">property tax adviser who looks at the whole picture</a> alongside your rental profit, pension capacity and family circumstances can usually find a combination that protects the child benefit and the relief at the same time. If you are sitting just above £60,000, or expect to be after this year's rent reviews, it is worth running the numbers before the year end rather than after.</p>

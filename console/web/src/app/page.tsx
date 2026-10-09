@@ -4,11 +4,10 @@
  * Cookie-gated (OB-01). Never indexed (noindex meta + X-Robots-Tag header).
  *
  * Layout:
- *   1. Paid PDF test panel (site_flags.calc_pdf_offer)
- *   2. Estate funnel totals (28-day)
- *   3. Channel comparison across sites (best channel per site)
- *   4. Latest leads across all sites (site-tagged)
- *   5. Error groups across sites
+ *   1. Estate funnel totals (28-day)
+ *   2. Channel comparison across sites (best channel per site)
+ *   3. Latest leads across all sites (site-tagged)
+ *   4. Error groups across sites
  *
  * RSC BOUNDARY: SnapshotCard and Sparkline are server-renderable; all
  * interactive components (SiteSwitcher) are leaf-level client components
@@ -41,8 +40,6 @@ import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSer
 import { checkAuth } from "@/lib/checkAuth";
 import SiteSwitcher from "@/components/SiteSwitcher";
 import ConversionFunnel, { type FunnelTotals } from "@/components/ConversionFunnel";
-import PdfTestPanel from "@/components/PdfTestPanel";
-import { getPdfTestData } from "@/lib/pdfTestData";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = CONSOLE_NOINDEX_META;
@@ -103,7 +100,7 @@ export default async function EstatePage() {
   const startOfTodayUTC = new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   );
-  const [sites, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily, pdfTest] =
+  const [sites, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily] =
     await Promise.all([
       getSitesRegistry(),
       getEstateChannels(28),
@@ -115,7 +112,6 @@ export default async function EstatePage() {
       getEstateKpis(startOfTodayUTC.toISOString(), now.toISOString()),
       getEstateKpis(new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
       getEstateTimeseries("1 day", new Date("2000-01-01").toISOString(), now.toISOString()),
-      getPdfTestData(now),
     ]);
 
   // KPI reducer: sum SiteKpis[] into estate totals
@@ -340,8 +336,6 @@ export default async function EstatePage() {
             />
           </div>
         </DeferredMount>
-
-        <PdfTestPanel model={pdfTest} />
 
         {/* Estate conversion funnel — swipe Daily -> Weekly -> Monthly -> All time */}
         <h2 className="mt-10 text-lg font-bold text-slate-900">Estate funnel</h2>

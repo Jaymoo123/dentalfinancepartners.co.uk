@@ -3,7 +3,7 @@ title: "Property Investment Company Structure: SPV vs Holding vs Group"
 slug: "property-investment-company-structure-planning"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/property-investment-company-structure-planning"
 date: "2026-04-01"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Property Company Structure: SPV vs Holding vs Group 2026"
@@ -173,4 +173,4 @@ faqs:
 
 <h2>Common mistakes, and getting it right</h2>
 <p>The recurring errors are predictable. Choosing on today's circumstances alone, ignoring where income and gearing are heading. Ignoring the associated-companies divisor and the CIHC trap, then being surprised by the corporation tax bill. Over-engineering with a holding company or group before it earns its keep. Letting to family inside a company without realising it forfeits the small profits rate. Underestimating the SDLT entry cost on incorporation, or assuming s.162 relieves it. And building around an inheritance-tax relief (BPR) that an investment company never gets.</p>
-<p>The way to avoid all of them is the same: decide the structure on the full picture, income, extraction, succession and entry cost together, not on a single headline rate. Because the interactions between corporation tax, CGT, SDLT and IHT are exactly what catch people out, a structure-choice decision is one worth modelling with a property tax specialist before you incorporate anything.</p>
+<p>The way to avoid all of them is the same: decide the structure on the full picture, income, extraction, succession and entry cost together, not on a single headline rate. Because the interactions between corporation tax, CGT, SDLT and IHT are exactly what catch people out, a structure-choice decision is one <a href="/services/property-tax-advice">worth modelling with a property tax specialist</a> before you incorporate anything.</p>

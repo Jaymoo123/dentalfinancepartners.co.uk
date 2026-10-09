@@ -125,7 +125,7 @@ export default function BlogIndexPage() {
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
-                href="#book"
+                href="/contact"
                 data-cta="blog_hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"
