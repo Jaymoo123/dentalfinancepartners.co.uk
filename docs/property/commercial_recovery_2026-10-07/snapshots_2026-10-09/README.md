@@ -1,0 +1,1 @@
+Rendered HTML of the three service pages, the landlord-tax guide, the Belfast post and the Bristol location page as served on 2026-10-09, before any service-page rewrite. Gzipped. Rollback of the source is `git` (every page is a committed file); these are the rendered reference for diffing what Google saw.
