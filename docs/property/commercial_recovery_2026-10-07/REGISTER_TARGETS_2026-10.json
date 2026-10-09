@@ -1,0 +1,12 @@
+{
+  "_source": "ANSWER_PATTERN_SPEC_services_2026-10.md section 1, measured 2026-10-09 from LANGUAGE_PROBE_2026-10-09.csv; read by scripts/service_page_verify.py check 14 (body copy, FAQ and shared components excluded)",
+  "words": [1600, 2400],
+  "sentence_len": [17, 22],
+  "flesch": [45, 55],
+  "question_headings_pct": [20, 35],
+  "you_per_1k": [28, 40],
+  "we_per_1k": [20, 30],
+  "statute_per_1k": [0, 0.5],
+  "jargon_per_1k": [0, 1.0],
+  "numbers_per_1k": [15, 25]
+}

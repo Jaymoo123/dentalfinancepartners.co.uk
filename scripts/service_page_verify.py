@@ -85,7 +85,8 @@ DEFERRED_PATTERNS = [
 STATUTE_RE = re.compile(r"\b(?:s\.\s?\d+[A-Z]?|section\s+\d+[A-Z]?|sch(?:edule)?\.?\s+\d+|FA\s?\d{4}|ITTOIA|TCGA|ITA\s?2007|IHTA|CTA\s?20\d\d|para(?:graph)?\s+\d+)\b", re.I)
 JARGON = ("chargeable", "disposal", "reducer", "mandation", "apportion", "enveloped", "relievable", "quantum",
           "consideration", "notifiable", "allowable", "deductible", "domicile", "situs", "remittance")
-SPEC_DEFAULT = {  # interim targets, blueprint 12.1; a measured spec file overrides them
+SPEC_FILE = DOCS / "REGISTER_TARGETS_2026-10.json"  # measured targets (spec section 1); used when present
+SPEC_DEFAULT = {  # interim targets, blueprint 12.1; the measured file above overrides them
     "words": [1300, 2400], "sentence_len": [14, 24], "flesch": [35, 60], "question_headings_pct": [20, 35],
     "you_per_1k": [25, 60], "we_per_1k": [8, 14], "statute_per_1k": [0, 2], "jargon_per_1k": [0, 2],
 }
@@ -277,10 +278,12 @@ class Page:
     def faq_section_text(self) -> str:
         return " ".join(f"{q} {a}" for q, a in self.faq_schema)
 
-    def copy_scope_text(self) -> str:
+    def copy_scope_text(self, exclude_faq: bool = False) -> str:
         """Page copy for the deferred-facts check: main text minus the shared
-        claim-carrying components (blueprint 12.2 check 8)."""
-        keep = [s["text"] for s in self.sections if not SHARED_CLAIM_SECTIONS.search(s["heading"])]
+        claim-carrying components (blueprint 12.2 check 8). With exclude_faq the
+        FAQ section is dropped too (the register probe measures body copy)."""
+        keep = [s["text"] for s in self.sections if not SHARED_CLAIM_SECTIONS.search(s["heading"])
+                and not (exclude_faq and re.search(r"\bquestions?\b|\bfaq\b", s["heading"], re.I))]
         return " ".join(keep)
 
 
@@ -699,7 +702,7 @@ def run_checks(page: Page, slug: str, *, assignment: dict, gsc_rows: list[dict],
     rep.add(13, "Links", "BLOCK" if q else "PASS", f"{len(hrefs)} body links, {len(unresolved)} unresolved", q)
 
     # 14 Register probe
-    probe = register_probe(page.main_text, [h["text"] for h in page.h2s + page.h3s])
+    probe = register_probe(page.copy_scope_text(exclude_faq=True), [h["text"] for h in page.h2s + page.h3s])
     q = []
     for k, (lo, hi) in spec.items():
         v = probe.get(k)
@@ -849,7 +852,8 @@ def main() -> int:
     snapshot = load_optional_page(snap_path, "snapshot")
     assignment = load_assignment(pathlib.Path(a.assignment), f"/services/{a.slug}")
     gsc_rows = load_gsc_queries(pathlib.Path(a.gsc), a.slug)
-    spec = SPEC_DEFAULT if not a.spec else json.loads(pathlib.Path(a.spec).read_text())
+    spec_path = pathlib.Path(a.spec) if a.spec else SPEC_FILE
+    spec = {k: v for k, v in json.loads(spec_path.read_text()).items() if not k.startswith("_")} if spec_path.exists() else SPEC_DEFAULT
     veto = {l.strip().lower() for l in pathlib.Path(a.veto).read_text().splitlines() if l.strip()} if a.veto else set()
     cited = [l.strip() for l in pathlib.Path(a.cited_facts).read_text().splitlines() if l.strip()] if a.cited_facts else None
     dropped = {l.strip() for l in pathlib.Path(a.dropped).read_text().splitlines() if l.strip()} if a.dropped else None
