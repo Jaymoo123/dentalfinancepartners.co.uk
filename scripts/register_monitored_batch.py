@@ -170,6 +170,20 @@ def page_url_for(slug: str) -> str:
     return f"/blog/{cat}/{slug}"
 
 
+def _url_match(slug: str) -> str:
+    """Exact page match, with and without a trailing slash.
+
+    2026-10-09: the old suffix match (`page_url LIKE '%/<slug>'`) swept every
+    URL ending in the slug into the baseline; for `property-accountant` that
+    pulled in the city posts (`.../glasgow-property-accountant`) and recorded
+    2,175 impressions against the service page's real 1. Matching the full URL
+    from page_url_for() stops that for every site.
+    """
+    path = page_url_for(slug)
+    full = PROD_DOMAIN + path
+    return f"(page_url = {esc(full)} OR page_url = {esc(full + '/')})"
+
+
 def gsc_baseline(slug: str, start: str, end: str):
     """Impression-weighted Google baseline over the trailing pre-rewrite window."""
     row = sql(f"""
@@ -179,7 +193,7 @@ def gsc_baseline(slug: str, start: str, end: str):
                     ELSE NULL END AS position
         FROM gsc_query_data
         WHERE site_key='{SITE}' AND date BETWEEN '{start}' AND '{end}'
-          AND (page_url LIKE '%/{slug}' OR page_url LIKE '%/{slug}/');
+          AND {_url_match(slug)};
     """)[0]
     return int(row["clicks"]), int(row["impressions"]), row["position"]
 
@@ -193,7 +207,7 @@ def bing_baseline(slug: str):
                     ELSE NULL END AS position
         FROM bing_query_data
         WHERE site_key='{SITE}'
-          AND (page_url LIKE '%/{slug}' OR page_url LIKE '%/{slug}/')
+          AND {_url_match(slug)}
           AND date = (SELECT MAX(date) FROM bing_query_data WHERE site_key='{SITE}');
     """)[0]
     return int(row["clicks"]), int(row["impressions"]), row["position"]
