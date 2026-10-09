@@ -185,7 +185,7 @@ Filled from the assignment table's "give up" list. Rule for each: title and H1 r
 
 | Page | Phrase it gives up | What it keeps | Change |
 |---|---|---|---|
-| homepage `/` | "property accountants uk", "uk property accountants" | brand, umbrella | title → brand-and-umbrella (R3, R26, signed off). The services-section links (`app/page.tsx:278-280`) are a separate edit to a frozen page and need the S2 sign-off, which is not yet recorded (§11). |
+| homepage `/` | "property accountants uk", "uk property accountants" | brand, umbrella | DONE 2026-10-09: title tag is now "Accountants and Tax Advisers for UK Landlords and Investors" plus the brand suffix (R3, R26); the OG and Twitter titles match; the services-section links to the three pages are in (R28). |
 | `/locations/bristol` | "property accountant", "property tax accountant near me", "property specialist accountant" | "accountant in bristol", "property accountant bristol" | title "Property Accountant in Bristol | ..." (already), body link to owner |
 | `/locations/birmingham` | "property accountants", "buy to let accountants", "accountants for buy-to-let landlords" | "property accountant birmingham", "west midlands" | body link to owner |
 | `/locations/manchester`, `/locations/leeds` | national forms | city forms | body link to owner |
@@ -256,7 +256,14 @@ Each step names what must be true before the next starts. One branch for the who
    - `git grep` for the three old titles and the old H1s: zero hits outside this folder's records
    - the §12.2 harness report for each page: zero BLOCK rows.
 10. **Human read** (READY 2026-10-09: `briefs/property/wp1-services/REVIEW_PACK_<slug>.md` for each page, screenshots in `shots/`, head 60b24709 plus the pack commit): the owner receives the review pack (§12.5) per page: the sixteen lines, the section diffs, the open reviewer disagreements, the link sentences, and screenshots (desktop 1280, phone 390). Build nothing further until he approves.
-11. **Deploy** (R10): the owner deploys once from the laptop. Then, in this order, the same day: request indexing for the three service pages and the homepage via Search Console (manual, or `agents/utils/gsc_client_oauth.py` has the Indexing scope); IndexNow drain for the changed URLs; the `site_flags` and `monitored_pages` SQL the 7 Oct plan's DONE_E lists (owner-run); record the deploy SHA and time in `docs/property/STATE.md`.
+11. **Deploy** (R10): the owner deploys once from the laptop. Then, in this order, the same day: request indexing for the three service pages and the homepage via Search Console (manual, or `agents/utils/gsc_client_oauth.py` has the Indexing scope); IndexNow drain for the changed URLs (`python -m optimisation_engine.indexing.submit_indexnow --site property <url> <url> <url> <url>`); register the watch (the three slugs already carry `net_new` rows from 2026-08-05, so the script needs the new `--rerewrite` flag, which keys on the rewrite date and marks the old rows resolved):
+    ```
+    python scripts/register_monitored_batch.py --slugs property-accountant landlord-accountant property-tax-advice \
+      --page-urls property-accountant=/services/property-accountant landlord-accountant=/services/landlord-accountant property-tax-advice=/services/property-tax-advice \
+      --rewrite-type rewrite --rewrite-date <deploy date YYYY-MM-DD> --rerewrite            # dry run, check the baselines print
+    python scripts/register_monitored_batch.py ... (same) --commit
+    ```
+    The stored-table baselines it will print (90 days to 9 Oct, `gsc_query_data`, which lags the API by about ten days): property-accountant 0 clicks / 1 impression / position 99; landlord-accountant 0 / 149 / 68.8; property-tax-advice 0 / 206 / 70.2; Bing: no rows for any of the three. The fresh API read in §9 (1 / 151 / 209 impressions) is the authoritative baseline for the day-14 and week-4 reads. Then `update site_flags set value = value || '{"enabled":false}' where key='calc_pdf_offer';` if the 7 Oct plan's DONE_E still applies; record the deploy SHA and time in `docs/property/STATE.md`.
 12. **Wait.** No further Property deploys for 14 days unless something is broken. The September crawl trough followed 31 deploys in ten days.
 13. **Day 14 read** (§9). If the three pages have been fetched and appear for the family phrases, execute §4's title changes on the Belfast and Manchester posts and the city pages (R6), one deploy, then wait again.
 14. **Week 4 read** (§9). Decide WP2 (hub), WP3 (city pages) and WP4 (cities with no page) from the numbers.
@@ -293,7 +300,7 @@ Each step names what must be true before the next starts. One branch for the who
 
 Baselines, 90 days to 7 Oct, from `INV_A_report.md` addendum: service pages 1 / 151 / 209 impressions, 0 clicks, positions 99 / 56 / 71 on head phrases; hire-intent top 30 queries 5 clicks total; Bristol page position 13 for "property accountant"; ChatGPT 15 sessions and 4 leads per 28 days on the tax-advice page; Property UK leads 12.3 a week.
 
-Day 14, written to this folder as `READ_D14_<date>.md`, nothing mailed:
+Day 14, written to this folder as `READ_D14_<date>.md`, nothing mailed. Tool: `python scripts/wp1_read.py --deploy-date <YYYY-MM-DD> --label D14` pulls the four sources (URL Inspection crawl state, Search Console per page and head phrase, the live SERPs with our position against djh.co.uk, ChatGPT referral sessions and leads from `web_sessions` and `leads`) and writes the file; it needs `GSC_SERVICE_ACCOUNT_JSON` or `GOOGLE_APPLICATION_CREDENTIALS`, `DATAFORSEO_B64`, `BING_WEBMASTER_API_KEY` and `SUPABASE_ACCESS_TOKEN` in the environment, and runs from the laptop or a cloud session that has them. Week 4 is the same command with `--label W4`.
 - URL Inspection: all three pages crawled after the deploy date, "Submitted and indexed", canonical self.
 - Search Console, 14 days: impressions on each page for its family phrases; position for the head phrase; whether the page appears at all for "property accountant", "landlord accountant", "property tax advice".
 - Live SERP for the three head phrases: which of our pages shows, and our position relative to `djh.co.uk` on each of the 12 terms (§0.1a).

@@ -224,6 +224,10 @@ def main():
     ap.add_argument("--commit", action="store_true")
     ap.add_argument("--print-urls", action="store_true",
                     help="print the full canonical URL for each batch slug and exit (no DB writes); for IndexNow")
+    ap.add_argument("--rerewrite", action="store_true",
+                    help="the slug is already monitored from an earlier change: insert a new row keyed on this "
+                         "rewrite_date (the table is unique on site_key, slug, rewrite_date) and mark the older "
+                         "active rows for the slug 'resolved' with a superseded note, instead of skipping the slug")
     ap.add_argument("--page-urls", nargs="+", metavar="SLUG=PATH", default=[],
                     help="per-slug URL overrides for non-blog pages, e.g. "
                          "stamp-duty-calculator=/calculators/stamp-duty-calculator "
@@ -255,9 +259,17 @@ def main():
     pulled_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
     note = f"Track 2 {a.batch or 'manual'} {a.rewrite_type.upper()}; registered {datetime.date.today().isoformat()} (G+Bing baseline)"
 
-    existing = {r["slug"] for r in sql(
-        f"SELECT slug FROM monitored_pages WHERE site_key='{SITE}' AND slug IN ("
-        + ",".join(esc(s) for s in slugs) + ");")} if slugs else set()
+    if a.rerewrite:
+        # Only a row for THIS rewrite_date counts as "exists"; earlier watches on the
+        # same slug are superseded below (2026-10-09, WP1 service pages: the three
+        # routes already carry net_new rows from 2026-08-05).
+        existing = {r["slug"] for r in sql(
+            f"SELECT slug FROM monitored_pages WHERE site_key='{SITE}' AND rewrite_date={esc(a.rewrite_date)} AND slug IN ("
+            + ",".join(esc(s) for s in slugs) + ");")} if slugs else set()
+    else:
+        existing = {r["slug"] for r in sql(
+            f"SELECT slug FROM monitored_pages WHERE site_key='{SITE}' AND slug IN ("
+            + ",".join(esc(s) for s in slugs) + ");")} if slugs else set()
 
     rows = []
     print(f"Batch={a.batch} rewrite_date={a.rewrite_date} baseline={base_start}..{base_end} monitor_until={monitor_until}\n")
@@ -294,6 +306,13 @@ def main():
         {values};
     """)
     print(f"\nInserted {len(fresh)} monitored rows (Google + Bing baselines). monitor_until={monitor_until}")
+    if a.rerewrite:
+        superseded = sql(
+            f"UPDATE monitored_pages SET status='resolved', updated_at=now(), "
+            f"notes = COALESCE(notes,'') || ' | superseded by the {esc(a.rewrite_date)[1:-1]} rewrite' "
+            f"WHERE site_key='{SITE}' AND status='active' AND rewrite_date < {esc(a.rewrite_date)} AND slug IN ("
+            + ",".join(esc(r['slug']) for r in fresh) + ") RETURNING slug, rewrite_date;")
+        print(f"Superseded {len(superseded)} earlier active row(s): " + ", ".join(f"{r['slug']}@{r['rewrite_date']}" for r in superseded))
 
 
 if __name__ == "__main__":

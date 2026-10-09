@@ -25,13 +25,16 @@ import { ArrowRight, BarChart3, Briefcase, Building2, CalendarClock, Check } fro
 import { Eyebrow, InlineLink } from "@/components/ui/page-blocks";
 
 export const metadata: Metadata = {
-  title: "Property Accountants UK | Specialist Landlord Tax Advice",
+  // 2026-10-09, blueprint R3 and R26 (owner sign-off S1): the homepage gives up
+  // "property accountants UK" to /services/property-accountant and carries the
+  // brand umbrella. The layout template appends " | Property Tax Partners".
+  title: "Accountants and Tax Advisers for UK Landlords and Investors",
   description:
     // Ours (c218d7a6): shortened to fit the SERP snippet.
     "Specialist property accountants for UK landlords and investors. Section 24, MTD, incorporation and CGT planning. Fixed fees and free calculators.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: `${siteConfig.name} | Property Accountants for UK Landlords`,
+    title: `${siteConfig.name} | Accountants and Tax Advisers for UK Landlords and Investors`,
     description:
       "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and specialist landlord tax advice.",
     url: siteConfig.url,
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Property Accountants for UK Landlords`,
+    title: `${siteConfig.name} | Accountants and Tax Advisers for UK Landlords and Investors`,
     description:
       "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and specialist landlord tax advice.",
   },
