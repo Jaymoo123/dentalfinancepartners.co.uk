@@ -1,4 +1,4 @@
-# Review pack: `/services/landlord-accountant` (draft2, 2026-10-09)
+# Review pack: `/services/landlord-accountant` (draft3, 2026-10-09)
 
 Read §1 first; if those lines are right the page is mostly right. Reply with numbers from §7 or "approved" with the SHA at the end.
 
@@ -7,15 +7,15 @@ Read §1 first; if those lines are right the page is mostly right. Reply with nu
 - **Title:** Landlord Accountant for UK Rental Income and Buy to Let | Property Tax Partners
 - **Meta description:** Landlord accountants for UK rental income: Self Assessment, Section 24, MTD quarterly filing, buy-to-let and portfolio accounts. Free first call.
 - **H1:** Landlord accountants for UK rental income
-- **Opening:** We are landlord accountants for anyone with rental income in the UK, from one flat to a portfolio, held personally or through a company. We prepare the accounts and tax return, work through the mortgage interest restriction, file quarterly Making Tax Digital updates and keep company accounts in order. We also tell you what the bill will be before it arrives. The first call is free, and the fee is fixed and agreed with you before any work begins. Landlords across the UK use us without ever visiting an office: everything runs by video call, phone and email, and our city pages for Leeds, Manchester, Birmingham, London and Bristol explain how we work locally in each. Book a consultation Try the free calculators What we do
-- **Coverage sentence:** Landlords across the UK use us without ever visiting an office: everything runs by video call, phone and email, and our city pages for Leeds, Manchester, Birmingham, London and Bristol explain how we work locally in each.
+- **Opening:** We are landlord accountants for anyone with rental income in the UK, from one flat to a portfolio, held personally or through a company. We prepare the accounts and tax return, work through the mortgage interest restriction, file quarterly Making Tax Digital (MTD) updates and keep company accounts in order. We also tell you what the bill will be before it arrives. The first call is free, our fees are fixed and quoted upfront, and you approve the fee before work starts. Landlords across the UK use us without ever visiting an office: everything runs by video call, phone and email, wherever you and your properties are. Book a consultation Try the free calculators What we do
+- **Coverage sentence:** Landlords across the UK use us without ever visiting an office: everything runs by video call, phone and email, wherever you and your properties are.
 - **H2 What a landlord accountant does for you** · A landlord accountant does the filing and the thinking: we keep the returns right and say, before the year ends, what would lower the bill.
-- **H2 Landlord tax accountant: the Section 24 and MTD side** · As landlord tax accountants, we spend most of our time on the two rules that move your bill furthest: the mortgage interest restriction and quarterly reporting under Making Tax Digital.
+- **H2 Landlord tax accountant: the Section 24 and MTD side** · As landlord tax accountants, we handle the two rules that change a landlord's year most: the mortgage interest restriction, which moves the bill, and quarterly reporting under Making Tax Digital, which moves the paperwork.
 - **H2 Accountants for landlords with one property or a portfolio** · We act as accountants for landlords with a single let and for landlords with twenty, and the work changes shape as you grow.
 - **H2 Buy to let accountant: personally held and company held** · Whichever way you hold a buy to let (BTL), in your own name, jointly or in a limited company, we do the accounts and returns that go with it, and the job is different for each.
-- **H2 Rental property accountant for investors and agents** · We also act as rental property accountant for two groups whose work goes beyond one tax return: property investors, and the letting agents who manage homes for landlords.
+- **H2 Rental property accountant for investors and agents** · We also act for two groups whose work goes beyond one tax return: property investors, and the letting agents who manage homes for landlords.
 - **H2 Who we work with** · We work with landlords and property investors at every stage, and landlord and property tax is all we do, so you will not have to explain the interest rule to us.
-- **H2 How it works** · It works in three steps, the first of them a free call.
+- **H2 How it works** · We work in three steps, and the first is a free call.
 - **H2 How our fees work** · Our fees are fixed and quoted upfront for the work you need, and you approve the fee before work starts.
 - **H2 Questions landlords ask** · What does a landlord accountant do?
 - **H2 Related guides and services** · These are the guides we send landlords to most often.
@@ -28,12 +28,12 @@ Read §1 first; if those lines are right the page is mostly right. Reply with nu
 | New H2 | First sentence now | Old section it replaces (first sentence then) |
 |---|---|---|
 | What a landlord accountant does for you | A landlord accountant does the filing and the thinking: we keep the returns right and say, before the year ends, what would lower the bill. | Looking for a landlord accountant near you: Property tax is national. |
-| Landlord tax accountant: the Section 24 and MTD side | As landlord tax accountants, we spend most of our time on the two rules that move your bill furthest: the mortgage interest restriction and quarterly reporting under Making Tax Digital. | Why a landlord tax accountant rather than a general practice: Most high street firms are perfectly competent and see rental income a few times a year. |
+| Landlord tax accountant: the Section 24 and MTD side | As landlord tax accountants, we handle the two rules that change a landlord's year most: the mortgage interest restriction, which moves the bill, and quarterly reporting under Making Tax Digital, which moves the paperwork. | Why a landlord tax accountant rather than a general practice: Most high street firms are perfectly competent and see rental income a few times a year. |
 | Accountants for landlords with one property or a portfolio | We act as accountants for landlords with a single let and for landlords with twenty, and the work changes shape as you grow. | Looking for a landlord accountant near you: Property tax is national. |
 | Buy to let accountant: personally held and company held | Whichever way you hold a buy to let (BTL), in your own name, jointly or in a limited company, we do the accounts and returns that go with it, and the job is different for each. | Buy to let landlords: On a geared buy to let you can hand over more tax than you kept in rent. |
-| Rental property accountant for investors and agents | We also act as rental property accountant for two groups whose work goes beyond one tax return: property investors, and the letting agents who manage homes for landlords. | Rental portfolios and multiple properties: Past a handful of properties the hard problem stops being the tax return and becomes the record. |
+| Rental property accountant for investors and agents | We also act for two groups whose work goes beyond one tax return: property investors, and the letting agents who manage homes for landlords. | Rental portfolios and multiple properties: Past a handful of properties the hard problem stops being the tax return and becomes the record. |
 | Who we work with | We work with landlords and property investors at every stage, and landlord and property tax is all we do, so you will not have to explain the interest rule to us. | Who we work with: One flat, first tax return You let out a property you used to live in, income is modest, and you want the return filed correctly with the reliefs you are entitled to. |
-| How it works | It works in three steps, the first of them a free call. | Put numbers on it before you call: Free, and the figures are yours to take to any adviser. |
+| How it works | We work in three steps, and the first is a free call. | Put numbers on it before you call: Free, and the figures are yours to take to any adviser. |
 | How our fees work | Our fees are fixed and quoted upfront for the work you need, and you approve the fee before work starts. | Who we work with: One flat, first tax return You let out a property you used to live in, income is modest, and you want the return filed correctly with the reliefs you are entitled to. |
 | Questions landlords ask | What does a landlord accountant do? | Buy to let landlords: On a geared buy to let you can hand over more tax than you kept in rent. |
 | Related guides and services | These are the guides we send landlords to most often. | Rental portfolios and multiple properties: Past a handful of properties the hard problem stops being the tax return and becomes the record. |
@@ -58,14 +58,21 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - offer "Undeclared rental income disclosures" not named on /services
 - offer "Undeclared rental income disclosures" not named on /
 
-| 14 | Register probe | WARN | words 2028; sentence_len 21.3; flesch 60.0; question_headings_pct 30.8; you_per_1k 38.0; we_per_1k 26.1; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 28.6 |
-- flesch = 60.0 (target 45 to 55)
-- numbers_per_1k = 28.6 (target 15 to 25)
+| 14 | Register probe | WARN | words 2134; sentence_len 21.8; flesch 59.9; question_headings_pct 30.0; you_per_1k 40.3; we_per_1k 27.2; statute_per_1k 0.0; jargon_per_1k 0.0; numbers_per_1k 24.8 |
+- flesch = 59.9 (target 45 to 55)
+- you_per_1k = 40.3 (target 28 to 40)
 
-| 15 | Section weight | WARN | 1 notes |
-- section "Questions landlords ask" has 964 words
+| 15 | Section weight | WARN | 6 notes |
+- section "What a landlord accountant does for you" has 365 words
+- section "Questions landlords ask" has 968 words
+- paragraph of 82 words: "We are landlord accountants for anyone with rental income in the UK, from one fl..."
+- paragraph of 97 words: "Mortgage interest no longer comes off the rent before tax. Individual landlords ..."
+- paragraph of 81 words: "Landlord accountant fees depend on three things: how many properties you have, h..."
+- paragraph of 89 words: "Four things decide it: your tax band, the size of your mortgage interest, whethe..."
 
-| 20 | Diff against snapshot (facts dropped) | WARN | 61 items in the snapshot and not here (no --dropped file: WARN only) |
+| 19 | Length (body words excluding FAQ) | WARN | 2485 words (3451 incl. FAQ) |
+
+| 20 | Diff against snapshot (facts dropped) | WARN | 62 items in the snapshot and not here (no --dropped file: WARN only) |
 - number: 04
 - number: 10.75%
 - number: 120
@@ -88,6 +95,7 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - number: £30,000,
 - number: £5,000
 - number: £5,000.
+- number: £50,000,
 - H3: Allowances and stamp duty
 - H3: Capital allowances and repairs
 - H3: Company accounts and corporation tax
@@ -105,12 +113,27 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - H3: Rental accounts and Self Assessment
 - H3: Scope and fixed quote
 - H3: Section 24 planning
-- H3: Structure and joint ventures
-- ... 21 more
+- ... 22 more
 
 ## 4. Reviewer disagreements (NOTE items for you)
 
-Pending: the two independent reviews and the merge have not run yet for this draft.
+Each item gives the quote and both positions. Items 1 to 12 are NOTEs. Item 13 is a reviewer tax claim that needs a house position before it can be applied.
+
+| # | Section | Quote | Position 1 | Position 2 | Raised by |
+|---|---|---|---|---|---|
+| 1 | S2, all six "What we do" items | Items run 41 to 53 words (pack §3.1 item 5 asks for 60 to 120). | Lengthen: add one line per item ("What we need" or "When") to reach about 60 words; meets the pack and gives an AI overview more per item (B5, typed FIX, but it gives an approach, not a sentence). | Hold: the body is at the 2,400 ceiling before this merge and lands near 2,490 after it (see conductor notes); the swaps in rows 3 to 9 already replace repeats with new lines, without padding (A28). | both |
+| 2 | S7 Who we work with | "We work with landlords and property investors at every stage, and landlord and property tax is all we do, so you will not have to explain the interest rule to us." | Move it up straight after "What we do" (pack §3.1 line 23): the reader sorts themselves before the detail. | Keep it sixth: that is the pack §3.3 H2 order, and moving it changes the anchor flow. | A29 |
+| 3 | Contact panel (shared `LeadCTAPanel`) against the body | Form: "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you." Body: "We ask your old accountant for clearance, get authorised with HMRC as your agent..." | Keep: the consent line is the legal disclosure and the panel is shared and outside this page. | Change: a reader who reads both may not know who "we" is when they book; an owner call on how the site describes itself. | A30 |
+| 4 | FAQ "Can you help if I have not declared rental income?" | "The earlier you come forward, the better your position, so it is worth a call before HMRC writes to you." | Keep: a fact about unprompted against prompted penalties (HP §27.6), not pressure. | Soften. A: "Coming forward before HMRC writes to you keeps the penalty lowest." B: end the sentence at "the better your position." (pattern E, no urgency). | both (A31, B37) |
+| 5 | FAQ set | (absent) "How to avoid paying 40% income tax on rental property?" and "How much does it cost for someone to do your tax return in the UK?", both mapped to this page in pack §3. | Add: swap the 40% question in for the buy-to-let investor FAQ, which overlaps FAQ 1 (B); two PAA slots this page owns (A). | Hold: the 12 FAQs are the pack §3.3 list and at the 12-item cap, the FAQ is already 964 words (check 15 WARN), the 40% answer lives in S3, and the fee question has no figure until F3. | both (A32, B33) |
+| 6 | Site-wide Organization JSON-LD | "Property Tax Partners is the UK's specialist accountancy firm for landlords, property investors, commercial property owners and property SPVs." | Change one word: "a UK specialist accountancy firm" ("the UK's" reads as a ranking, spec §4). | Leave: it is the shared Organization node, outside this page's file, and belongs to a site-wide pass. | A33 |
+| 7 | Whole page, check 14 | Flesch 60.0 against a 45 to 55 target. | Treat as a defect: lengthen the label fragments and FAQ openers back toward 55. | Accept: sentence length is in band (21.3), so the score comes from plain words, which the owner-voice sentences use too; spec card 10 says do not simplify. | B30 |
+| 8 | S2 offer list | Six offers, none for a sale, though S5 says "We do the calculation and file the report." | Add "Capital gains tax on a sale" as a seventh offer and schema item: it matches what the page does and gives the accidental landlord something to recognise. | Keep six: the pack fixed the list, and sale work belongs to `/for/selling-a-buy-to-let`. | B31 |
+| 9 | Check 12, cross-surface offer names | None of the six offer names appear on `/services` or `/` (12 WARN lines). | Fix the other surfaces so entity signals agree. | Leave: `/` is frozen and needs sign-off, and the services index card already links here. | B32 |
+| 10 | S6 investors paragraph (as amended by row 17) | "If you buy to refurbish and sell, HMRC's first question is whether you are trading or investing..." | Keep: buying to refurbish and sell is property trading, not development, and the trading test is the point. | Cut: a reader may take it as a development offer the firm does not make (R21, commercial yes, development no). | B34 |
+| 11 | S7, H3 Undeclared rental income | "Rent went undeclared, by oversight or because the returns stopped, and you want it put right before HMRC asks." | Keep: pack §3.1 item 6 wants every audience one sentence here, linking its page (row 9 already removes the S2 repeat). | Cut: three statements of one point on one page. | B35 |
+| 12 | S13 Where we work, first sentence | "We work with landlords in every part of the UK, and with UK landlords who now live abroad." | Keep: pack §3.1 item 13 makes this the local block, and a reader who scrolls here needs it. | Cut: the third time the page says it, after the coverage sentence and the shared `LocationMap` line. | B36 |
+| 13 | FAQ "What tax deductions can UK landlords claim?" (and the furnishings clause held from row 19) | "...accountancy fees, and replacing furnishings in a furnished let." | **Needs a house position.** Both reviewers say replacement of domestic items relief covers any let home, furnished or not. A: "...accountancy fees, and replacing furniture, appliances and furnishings you provide." B: "...accountancy fees, and replacing furniture, appliances and other domestic items in a let home." | HP §3 to §7 say nothing on this relief and no other HP section locks it (A flagged it under HP §14). The current wording stays until a position is locked. Once locked, apply the chosen wording here and add the furnishings clause back to the row 19 HMO sentence. | both (A26, B28) |
 
 ## 5. The link sentences pointing at this page (before and after)
 

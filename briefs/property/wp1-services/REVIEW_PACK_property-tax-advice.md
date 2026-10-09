@@ -1,28 +1,28 @@
-# Review pack: `/services/property-tax-advice` (draft2, 2026-10-09)
+# Review pack: `/services/property-tax-advice` (draft3, 2026-10-09)
 
 Read §1 first; if those lines are right the page is mostly right. Reply with numbers from §7 or "approved" with the SHA at the end.
 
 ## 1. The sixteen lines
 
 - **Title:** Property Tax Advice from Specialist Advisors | Property Tax Partners
-- **Meta description:** Specialist property tax advice for UK landlords: incorporation, CGT timing, Section 24, stamp duty, IHT, HMRC enquiries. Written advice, free first call.
+- **Meta description:** Specialist property tax advice for UK landlords: incorporation, CGT, Section 24, stamp duty, IHT, HMRC enquiries. One-off written advice, free first call.
 - **H1:** Property tax advice from specialist advisors
-- **Opening:** Whether you are deciding how to own a property, when to sell it or whether to incorporate, a free consultation scopes the question, quotes a fixed fee, and tells you if you do not need us. We work only on property tax: bring us one decision, from a purchase or gift to an HMRC letter, and we cost each option before you commit. Your accounts stay where they are, and we work by video call across the UK. Book a consultation Run the free calculators Why advice first
-- **Coverage sentence:** Coverage Where we work We advise landlords anywhere in the UK by video call and phone, so your postcode makes no difference to the service; our pages for London , Manchester , Birmingham , Leeds and Bristol describe the local work.
+- **Opening:** Whether you are deciding how to own a property, when to sell it or whether to incorporate, a free consultation scopes the question, quotes a fixed fee, and tells you if you do not need us. We work only on property tax: bring us one decision, from a purchase or gift to an HMRC letter, and we cost each option before you commit. Your accounts stay where they are, and we advise landlords and investors anywhere in the UK by video call. Book a consultation Run the free calculators Why advice first
+- **Coverage sentence:** Your accounts stay where they are, and we advise landlords and investors anywhere in the UK by video call.
 - **H2 Advice, not another set of accounts** · Most property tax is lost at the point of a decision, not at the point of filing.
 - **H2 Tax advice for landlords: what a consultation covers** · Our landlord tax advice covers six decisions, and one consultation can take in one or several.
 - **H2 Property tax specialists for the decisions that cost most** · As property tax specialists we see six moments again and again, each cheaper to get right before than to unpick after.
 - **H2 Property tax advisor or accountant: which do you need?** · You need a property tax advisor when a decision is still open, and an accountant when a return is due.
-- **H2 Property tax consultants for HMRC enquiries and disclosures** · We act as property tax consultants when HMRC is already involved: a nudge letter about rental income, a formal enquiry into a return, or a disclosure you would rather make before anyone asks.
+- **H2 Property tax consultants for HMRC enquiries and disclosures** · We act as property tax consultants once HMRC is involved.
 - **H2 Who we work with** · We work with landlords and property investors facing a tax decision, from one buy-to-let to a portfolio in a company.
-- **H2 How an engagement works** · An engagement works in three steps, and the first one costs nothing.
+- **H2 How an engagement works** · Three steps, and the first costs nothing.
 - **H2 What advice costs** · What advice costs depends on the question, and we quote it as a fixed fee before any work begins.
 - **H2 Run the numbers yourself first** · Before you book, you can size several of these questions yourself with our free calculators.
-- **H2 The rules your advice has to work around in 2026/27** · The rules your advice has to work around are moving, and several changes already in law land by April 2028.
+- **H2 The rules your advice has to work around in 2026/27** · We advise on the rules as they will stand, and several changes already in law land between April 2026 and April 2028.
 - **H2 Questions about a consultation** · What does a property tax advisor do?
 - **H2 Related guides and services** · These guides cover the ground most of our consultations start from.
+- **H2 Where we work** · Every part of the UK is covered from one place, so your postcode makes no difference to the service; our pages for London , Manchester , Birmingham , Leeds and Bristol describe the local work.
 - **H2 Get specialist advice from a property tax adviser on the decision in front of you** · Tell us the decision you are weighing up.
-- **H2 Where we work** · We advise landlords anywhere in the UK by video call and phone, so your postcode makes no difference to the service; our pages for London , Manchester , Birmingham , Leeds and Bristol describe the local work.
 - **FAQ questions:** What does a property tax advisor do? · What is the difference between property tax advice and property accountancy? · Do I have to switch accountants to get advice from you? · What does a property tax consultation cost? · What should I bring to the first call? · Can you advise on a property I have already bought or sold? · Do you give advice on incorporation? · Is a property tax specialist worth it for a small portfolio? · Do you advise on commercial property as well as residential? · Can you help with an HMRC enquiry or an undisclosed rental period? · What changes for landlords' income tax from April 2027? · Will you tell me if I should do nothing?
 
 ## 2. Old versus new, by section
@@ -33,20 +33,23 @@ Read §1 first; if those lines are right the page is mostly right. Reply with nu
 | Tax advice for landlords: what a consultation covers | Our landlord tax advice covers six decisions, and one consultation can take in one or several. | What the advice covers: Six areas account for most of what landlords and investors ask us. |
 | Property tax specialists for the decisions that cost most | As property tax specialists we see six moments again and again, each cheaper to get right before than to unpick after. | Get specialist property tax advice on the decision in front of you: Tell us the decision you are weighing up. |
 | Property tax advisor or accountant: which do you need? | You need a property tax advisor when a decision is still open, and an accountant when a return is due. | Get specialist property tax advice on the decision in front of you: Tell us the decision you are weighing up. |
-| Property tax consultants for HMRC enquiries and disclosures | We act as property tax consultants when HMRC is already involved: a nudge letter about rental income, a formal enquiry into a return, or a disclosure you would rather make before anyone asks. | Why a property tax specialist rather than a general adviser: A good general practice adviser handles a wide range of clients competently. |
+| Property tax consultants for HMRC enquiries and disclosures | We act as property tax consultants once HMRC is involved. | Why a property tax specialist rather than a general adviser: A good general practice adviser handles a wide range of clients competently. |
 | Who we work with | We work with landlords and property investors facing a tax decision, from one buy-to-let to a portfolio in a company. | The rules your advice has to work around in 2026/27: Several changes legislated in Finance Act 2026 land within the next two years. |
-| How an engagement works | An engagement works in three steps, and the first one costs nothing. | How an engagement works: 01 Scoping call A short conversation about the decision you are facing, the properties involved and your wider tax position. |
+| How an engagement works | Three steps, and the first costs nothing. | How an engagement works: 01 Scoping call A short conversation about the decision you are facing, the properties involved and your wider tax position. |
 | What advice costs | What advice costs depends on the question, and we quote it as a fixed fee before any work begins. | What the advice covers: Six areas account for most of what landlords and investors ask us. |
 | Run the numbers yourself first | Before you book, you can size several of these questions yourself with our free calculators. | Run the numbers yourself first: Several of the questions people book a consultation for can be sized in a few minutes. |
-| The rules your advice has to work around in 2026/27 | The rules your advice has to work around are moving, and several changes already in law land by April 2028. | The rules your advice has to work around in 2026/27: Several changes legislated in Finance Act 2026 land within the next two years. |
+| The rules your advice has to work around in 2026/27 | We advise on the rules as they will stand, and several changes already in law land between April 2026 and April 2028. | The rules your advice has to work around in 2026/27: Several changes legislated in Finance Act 2026 land within the next two years. |
 | Questions about a consultation | What does a property tax advisor do? | Questions about a consultation: What is the difference between property tax advice and property accountancy? |
 | Related guides and services | These guides cover the ground most of our consultations start from. | Advice, not another set of accounts: Most property tax is lost at the point of a decision, not at the point of filing. |
+| Where we work | Every part of the UK is covered from one place, so your postcode makes no difference to the service; our pages for London , Manchester , Birmingham , Leeds and Bristol describe the local work. | The rules your advice has to work around in 2026/27: Several changes legislated in Finance Act 2026 land within the next two years. |
 | Get specialist advice from a property tax adviser on the decision in front of you | Tell us the decision you are weighing up. | Get specialist property tax advice on the decision in front of you: Tell us the decision you are weighing up. |
-| Where we work | We advise landlords anywhere in the UK by video call and phone, so your postcode makes no difference to the service; our pages for London , Manchester , Birmingham , Leeds and Bristol describe the local work. | The rules your advice has to work around in 2026/27: Several changes legislated in Finance Act 2026 land within the next two years. |
 
 Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-back and check 20): When a consultation is worth booking; What the advice covers; What you get from a consultation; Why a property tax specialist rather than a general adviser; What landlords say; Get specialist property tax advice on the decision in front of you
 
 ## 3. What the harness flagged and was left (WARN rows)
+
+| 11 | Cross-page sameness (8-grams) | WARN | against 9 pages |
+- 1 shared 8-word sequences with /services/property-accountant: and we quote it as a fixed fee
 
 | 12 | Cross-surface consistency (offer names) | WARN | 12 mismatches |
 - offer "Incorporation and structuring advice" not named on /services
@@ -62,19 +65,23 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - offer "HMRC enquiries and undeclared income disclosures" not named on /services
 - offer "HMRC enquiries and undeclared income disclosures" not named on /
 
-| 14 | Register probe | WARN | words 1976; sentence_len 22.5; flesch 55.6; question_headings_pct 28.9; you_per_1k 29.9; we_per_1k 30.4; statute_per_1k 0.0; jargon_per_1k 0.51; numbers_per_1k 26.8 |
-- sentence_len = 22.5 (target 17 to 22)
-- flesch = 55.6 (target 45 to 55)
-- we_per_1k = 30.4 (target 20 to 30)
-- numbers_per_1k = 26.8 (target 15 to 25)
+| 14 | Register probe | WARN | words 2023; sentence_len 22.2; flesch 54.4; question_headings_pct 28.9; you_per_1k 32.6; we_per_1k 31.6; statute_per_1k 0.0; jargon_per_1k 0.49; numbers_per_1k 23.2 |
+- sentence_len = 22.2 (target 17 to 22)
+- we_per_1k = 31.6 (target 20 to 30)
 
-| 15 | Section weight | WARN | 2 notes |
-- section "Questions about a consultation" has 929 words
+| 15 | Section weight | WARN | 6 notes |
+- section "Tax advice for landlords: what a consultation covers" has 480 words
+- first sentence shares no term with its heading "How an engagement works": "Three steps, and the first costs nothing."
+- section "Questions about a consultation" has 916 words
 - first sentence shares no term with its heading "Questions about a consultation": "What does a property tax advisor do?"
+- section "Where we work" has 57 words
+- paragraph of 82 words: "Whether you are deciding how to own a property, when to sell it or whether to in..."
 
 | 18 | Cited sentences (ChatGPT) | WARN | no fact map supplied (--cited-facts); BING_G holds entry paths only, the sentence list is written at step 4 |
 
-| 20 | Diff against snapshot (facts dropped) | WARN | 47 items in the snapshot and not here (no --dropped file: WARN only) |
+| 19 | Length (body words excluding FAQ) | WARN | 2446 words (3360 incl. FAQ) |
+
+| 20 | Diff against snapshot (facts dropped) | WARN | 50 items in the snapshot and not here (no --dropped file: WARN only) |
 - number: 04
 - number: 05
 - number: 10.75%
@@ -90,7 +97,9 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - number: 2
 - number: 2016.
 - number: 2024
+- number: 2026,
 - number: 2026.
+- number: 2028
 - number: 2031,
 - number: 30
 - number: 35.75%
@@ -99,6 +108,7 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - number: 7
 - number: £1
 - number: £2.5
+- number: £20,000
 - number: £30,000
 - number: £5,000
 - number: £50,000
@@ -112,14 +122,31 @@ Old H2s with no replacement (dropped on purpose, reasons in the writer's hand-ba
 - H3: Inheritance tax and portfolio succession
 - H3: Non-resident and cross-border positions
 - H3: Scoping call
-- H3: Section 24 mitigation
-- H3: Structuring and ownership
-- H3: What the 2027 rate changes do to Section 24 relief
-- ... 7 more
+- ... 10 more
 
 ## 4. Reviewer disagreements (NOTE items for you)
 
-Pending: the two independent reviews and the merge have not run yet for this draft.
+Plain-language decisions first; each row has both positions in one line and the quoted text. None of these blocks the writer pass.
+
+| # | Item (quote) | Keep as is | Change | From |
+|---|---|---|---|---|
+| 1 | Opening sentence 1 and H2 "Advice, not another set of accounts" sentences 1 and 2: "Whether you are deciding how to own a property, when to sell it or whether to incorporate, a free consultation scopes the question, quotes a fixed fee, and tells you if you do not need us." / "Most property tax is lost at the point of a decision, not at the point of filing." | These are the sentences ChatGPT cites (ruling c); no fact map exists yet to prove which, so leave them word for word. | Lead with a "we" definition sentence, e.g. "We give one-off property tax advice to landlords and investors on the decision in front of them." (B), and say "a free first call" not "a free consultation" (A, and A's question-12 answer: make "consultation" mean only the free call or only the paid work, including in the pack-fixed headings "what a consultation covers" and "Questions about a consultation"). | A-N2, B-N3, A Q12 |
+| 2 | Page length and the offer write-ups. H2 "Property tax specialists for the decisions that cost most" and H2 "Property tax consultants for HMRC enquiries and disclosures" repeat the offer list and the HMRC offer. | Keep all fourteen H2s (pack §3.4 fixes them for search placement) and accept the length warning: after the apply list the body is about 2,480 words against a 2,400 ceiling, and three offer write-ups are still just under the 60-word floor (stamp duty 56, inheritance tax 56, HMRC 50). | Fold the "six moments" section into the six offers and the HMRC section into the HMRC offer: saves about 90 (A says up to 300) words, brings the page under 2,400 and frees words for the three thin offers. | A-N3, B-N4 |
+| 3 | H2 "Property tax advisor or accountant: which do you need?" | Pack names this exact string and it matches a People Also Ask shape. | "Property tax advisor or accountant: the difference" (spec: body H2s are plain statements). | A-N4 |
+| 4 | "*Note: Example figures displayed" under the table of enacted rates | Owner rule 33 and the pack put the note on the figure table. | Move it under the £12,000 worked example, the only example figure; under the table it reads as if the legal rates were examples. | A-N5, B-N6 |
+| 5 | Dropped FAQ sentence: "If there is a hard deadline, a completion date, a 60-day capital gains report or an HMRC response date, tell us on the first call and we will work to it." | Leave it out with the response-time FAQ until F5. | Put it back as the last sentence of "What should I bring to the first call?"; it promises a behaviour, not a time. | A-N6 |
+| 6 | "Yes, and it happens often." / "it is the right one for many landlords" / "often ends in “change nothing”" | The old page said "a common one"; it is owner-voice #10 territory. | No count backs "often" or "many": "Yes. Leaving things as they are is a proper recommendation." | A-N7 |
+| 7 | Pages that link in promise topics this page never mentions: leasehold premium stamp duty, landed-estate inheritance tax, adjusted net income and child benefit, lettings partnerships. | A service page need not name every linking topic. | Add one "Who we work with" line for leaseholders extending a lease and for landed estates. | A-N8 |
+| 8 | The six offer names do not appear on `/services` or the homepage (harness check 12, WARN). | Out of this page's file; leave to the conductor. | Name the six offers on the services index card. | A-N9 |
+| 9 | Shared incorporation calculator renders "CGT (21%)£21,018" in this page's HTML. 21% is not a house rate (§5: 18% and 24%). | Out of scope for this rewrite. | Check the component's default label separately. | A-N10 |
+| 10 | "Background reading before you book": eight article cards as H3s with editorial labels (e.g. "What the 2027 rate changes do to mortgage interest relief"), plus a second list under "Related guides and services" introduced with almost the same sentence. | `backgroundReading` 8 is a preserve item and Related guides is required. | A: render the eight as plain list links, not H3s (8 of the page's 31 H3s). B: merge the two lists under one introduction. | A-N11, B-N7 |
+| 11 | Meta description "...incorporation, CGT timing, Section 24, stamp duty, IHT, HMRC enquiries..." (row 1 keeps the abbreviations) | At 154 characters there is no room, and the body spells both out. | Spell out capital gains tax and inheritance tax (`house_positions.md` §13: no abbreviation without definition). | B-N2 |
+| 12 | FAQ questions "What does a property tax consultation cost?" / "Is a property tax specialist worth it for a small portfolio?"; mapped questions "How to find a good tax advisor in the UK?" and "Do accountants give free advice?" are not asked. | Pack §3.4 kept these strings by name, and 12 is the cap. | Use the People Also Ask strings word for word. | B-N5 |
+| 13 | Spelling: "adviser" appears only in the panel H2; five inbound anchors say "property tax adviser". | Pack asks for "adviser" once; "advisor" is the live title's spelling. | Add a second "adviser" in body prose to match what the links promise. | B-N9 |
+| 14 | Booking form option "Property developer" (shared panel) | Shared component, outside this rewrite. | Remove it site-wide; the firm does not claim developers (R21, spec §3). | B-N10 |
+| 15 | H3 "Section 24 and finance-cost planning" | It is the pack §3.4 offer name and must match `hasOfferCatalog`. | "Mortgage interest relief planning", the plain name the H3's own first sentence uses. | B-N11 |
+| 16 | Shared footer: "PropertyAccountants UK" / "Fixed fees, 24hr response." | Site-wide, outside this page, needs its own sign-off. | Fix the brand to "Property Tax Partners" everywhere. | B-N12 |
+| 17 | Not applied (row 9): "The clock: a gift you survive by seven years leaves your estate, so the earlier it starts the more it saves. We show what the estate pays under each option." | Leave it out; row 9's outcome line covers the item. | Add it with a qualifier, since §15.3 (gifts with reservation, s.102 FA 1986) keeps a gift in the estate if the giver keeps the rent or the use: "...a gift you survive by seven years, and keep no benefit from, leaves your estate...". Needs a house-position check of the wording before it goes in. | A-F8 |
 
 ## 5. The link sentences pointing at this page (before and after)
 
