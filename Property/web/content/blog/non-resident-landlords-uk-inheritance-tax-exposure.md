@@ -3,7 +3,7 @@ title: "Non-Resident Landlords and UK Inheritance Tax: What You Owe and How to P
 slug: "non-resident-landlords-uk-inheritance-tax-exposure"
 canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax/non-resident-landlords-uk-inheritance-tax-exposure"
 date: "2026-07-09"
-dateModified: "2026-08-03"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

@@ -14,7 +14,7 @@ summary: Move a rental property into your own company and HMRC charges SDLT on t
 reviewedBy: Property Tax Partners Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-05-31'
-dateModified: "2026-08-17"
+dateModified: "2026-10-09"
 schema: ''
 faqs:
 - question: How is SDLT charged when I transfer property to my limited company in 2026 (connected party)?

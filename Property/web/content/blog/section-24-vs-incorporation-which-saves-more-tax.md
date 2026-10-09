@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-31'
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 category: "Section 24 & Tax Relief"
 metaTitle: 'Section 24 vs Incorporation: Which Saves More Tax?'
 metaDescription: "Section 24 vs incorporation for UK landlords compared. Worked examples, the real tipping point, transfer-cost traps, and how April 2027 changes the maths."

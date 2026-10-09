@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 faqs:
   - question: "Will Section 24 be reversed?"
     answer: "On the current evidence, no. Section 24 is fully in force, no major political party has committed to repealing it, and Finance Act 2026 (Royal Assent 18 March 2026) entrenched it further by lifting the finance-cost reducer from 20% to 22% in step with the new property income rates from 6 April 2027. A government that wanted to repeal it would have aligned the reducer downward, not upward. The realistic planning assumption is that Section 24 is permanent, so structure your portfolio for the rules as they stand."

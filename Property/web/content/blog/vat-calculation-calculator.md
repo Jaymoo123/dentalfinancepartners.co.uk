@@ -21,7 +21,7 @@ faqs:
   answer: The Direct Calculation Scheme is a retail scheme where you calculate VAT based on your expected selling price (ESP) rather than the actual selling price. Your turnover, excluding VAT, must be £1 million or less per year to use it. For standard-rated goods, divide the total ESP by 6. For reduced-rate goods (5%), divide the ESP by 21.
 - question: Do I need to keep digital VAT records?
   answer: Yes, most VAT-registered businesses must keep digital VAT records and use software to submit VAT Returns as part of HMRC's Making Tax Digital programme. This applies to property businesses as well. You cannot use the VAT payment deadline calculator if you make payments on account or use the annual accounting scheme.
-dateModified: "2026-07-26"
+dateModified: "2026-10-09"
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
 - accaglobal.com

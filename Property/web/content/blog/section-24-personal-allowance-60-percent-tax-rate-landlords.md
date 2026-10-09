@@ -14,7 +14,7 @@ summary: "Section 24 adds your mortgage interest back to taxable income and give
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 schema: ""
 faqs:
   - question: "What is the 60% marginal tax rate for landlords?"

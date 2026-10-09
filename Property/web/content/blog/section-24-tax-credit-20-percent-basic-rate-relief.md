@@ -3,7 +3,7 @@ title: "Section 24 Tax Credit: How Does the 20% Basic Rate Relief Actually Work?
 slug: "section-24-tax-credit-20-percent-basic-rate-relief"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-tax-credit-20-percent-basic-rate-relief"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

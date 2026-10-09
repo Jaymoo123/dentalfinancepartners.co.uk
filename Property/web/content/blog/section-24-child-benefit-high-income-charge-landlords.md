@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 faqs:
   - question: "Does Section 24 count towards the child benefit high income charge?"
     answer: "Indirectly, yes. Section 24 stops you deducting mortgage interest from rental profit, so your taxable property income (and therefore your adjusted net income) is higher than the cash you actually keep. The High Income Child Benefit Charge is assessed on adjusted net income, so a finance-heavy let can push you over the £60,000 threshold even though your real spendable income has barely moved."

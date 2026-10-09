@@ -42,7 +42,7 @@ faqs:
     answer: "Yes. Sections 38 and 39 of LFRA 2024 would rewrite the costs regime for extension and enfranchisement claims, including repealing section 60 of the 1993 Act, but no commencement regulation touches them. The section 60 repeal is marked on legislation.gov.uk as a change yet to be applied, so a leaseholder serving a section 42 notice today still pays the freeholder's reasonable non-litigation valuation and legal costs on top of the premium."
   - question: "Should I extend my lease now or wait for the reforms?"
     answer: "It depends chiefly on your unexpired term. A lease already under 80 years is paying marriage value today and the premium grows every year you wait, with no guarantee the abolition commences before your position worsens further. A lease comfortably above 85 years can afford to watch the consultation outcome, because no marriage value is at stake yet. In between, the decision is a priced gamble: the reforms could cut your premium, but the new prescribed rates have not been set and could move premiums in either direction. Take dated, written advice from a valuer and a solicitor rather than relying on headlines."
-dateModified: "2026-08-21"
+dateModified: "2026-10-09"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

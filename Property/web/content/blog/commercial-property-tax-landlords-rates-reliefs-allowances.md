@@ -3,7 +3,7 @@ title: "What Tax Do Commercial Property Landlords Pay? Rates, Reliefs and Allowa
 slug: "commercial-property-tax-landlords-rates-reliefs-allowances"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/commercial-property-tax-landlords-rates-reliefs-allowances"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

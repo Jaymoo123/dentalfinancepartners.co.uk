@@ -3,7 +3,7 @@ title: "How Is CGT Calculated When Selling a Buy-to-Let Property? Step-by-Step G
 slug: "cgt-selling-buy-to-let-property-calculation-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide"
 date: "2026-04-10"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

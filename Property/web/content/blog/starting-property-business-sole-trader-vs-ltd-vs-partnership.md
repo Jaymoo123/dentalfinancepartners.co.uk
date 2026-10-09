@@ -3,7 +3,7 @@ title: "Starting a Property Business: Personal Ownership vs Limited Company vs P
 slug: "starting-property-business-sole-trader-vs-ltd-vs-partnership"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/starting-property-business-sole-trader-vs-ltd-vs-partnership"
 date: "2026-07-09"
-dateModified: "2026-07-20"
+dateModified: "2026-10-09"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

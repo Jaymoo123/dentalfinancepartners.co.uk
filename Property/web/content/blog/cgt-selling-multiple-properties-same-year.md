@@ -14,7 +14,7 @@ summary: "Sell several properties in one tax year and the gains are pooled, you 
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 schema: ""
 howToSteps:
   - name: "List every disposal and its completion date"

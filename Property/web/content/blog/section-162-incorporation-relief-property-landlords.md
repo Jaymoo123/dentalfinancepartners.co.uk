@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-06-23"
+dateModified: "2026-10-09"
 faqs:
   - question: "Can property landlords claim Section 162 incorporation relief?"
     answer: "Sometimes, but not usually. Section 162 defers the capital gains tax on transferring a business to a company in exchange for shares, and HMRC treats most ordinary buy-to-let as investment rather than a business. To qualify you need to show a genuine business: real time spent, active management across a portfolio, and a degree of organisation beyond collecting rent and arranging the occasional repair. The leading authority, Elizabeth Moyne Ramsay v HMRC [2013] UKUT 226 (TCC), confirms a property letting activity can be a business, but the bar is meaningful activity, not portfolio size alone."

@@ -51,7 +51,7 @@ faqs:
     answer: "The HMRC capital gains tax form you need depends on the route. For a UK residential property disposal filed online, the return is the CGT on UK property service itself rather than a numbered form. If you cannot or do not want to file online, the paper CGT return is the interactive PPDCGT form, which you complete on screen, print and post, still within 60 days of completion. For gains reported through Self Assessment, the form is the SA108 capital gains pages filed with your SA100 tax return by 31 January after the end of the tax year."
   - question: "Can I use HMRC's real time capital gains tax service to report a property sale?"
     answer: "No. You report CGT on a UK residential property disposal with tax to pay through the Capital Gains Tax on UK property service, within 60 days of completion, and the same gain is then reported again on your Self Assessment return if you file one. HMRC's real time capital gains tax service is a route for gains on other assets, and neither it nor Self Assessment substitutes for the 60-day property return."
-dateModified: "2026-08-20"
+dateModified: "2026-10-09"
 reviewedAt: "2026-08-20"
 ---
 
