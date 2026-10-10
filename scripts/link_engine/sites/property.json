@@ -225,6 +225,36 @@
         "secondary": "",
         "ruling": "LE-14"
       }
-    }
+    },
+    "destinations": [
+      "/for/moving-property-into-a-limited-company",
+      "/for/selling-a-buy-to-let",
+      "/for/portfolio-landlords-incorporating-a-partnership",
+      "/for/non-resident-landlords",
+      "/for/property-spv-set-up",
+      "/for/gifting-property-to-family",
+      "/for/couples-splitting-rental-income",
+      "/for/landlord-self-assessment-and-mtd",
+      "/for/first-time-and-accidental-landlords",
+      "/for/inherited-property",
+      "/for/property-company-profit-extraction",
+      "/for/rental-income-disclosure",
+      "/for/holiday-let-and-serviced-accommodation",
+      "/for/hmo-and-multi-let-landlords",
+      "/for/landlord-retirement-and-succession",
+      "/services/landlord-accountant",
+      "/services/non-resident-landlord",
+      "/services/property-accountant",
+      "/services/property-tax-advice",
+      "/locations/london",
+      "/locations/manchester",
+      "/locations/birmingham",
+      "/locations/leeds",
+      "/locations/bristol",
+      "/landed-estates",
+      "/for-letting-agents",
+      "/blog/capital-gains-tax/capital-gains-tax-second-home-sale",
+      "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk"
+    ]
   }
 }

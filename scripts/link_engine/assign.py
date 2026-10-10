@@ -13,7 +13,9 @@ Cost: free (no API calls). Deterministic: it reads every input fresh, so re-run 
       Running it WITHOUT --apply-judgments recomputes the deterministic result only; use --apply-judgments once verdicts exist.
 
 Definitions
-  DESTINATION  an owner_page of the owner rollup (ranked money families only) that is a real, indexable built route.
+  DESTINATION  every page in config `destinations` (all /for/, /services/, /locations/ pages, pillars, the two converting guides) is a valid
+               target for judgments; those without a rollup share get share 0. S1/S2/auto signals still use only the rollup owners:
+               an owner_page of the owner rollup (ranked money families only) that is a real, indexable built route.
                GAP / EXCLUDE / "needs judgment" / "other" rows are not destinations.
   SOURCE       an indexable page of 08_pages.csv except: config sitewide_pages, config assign_excluded_sources (calculators
                index, research hub, legal pages), blog category hubs (/blog/<category>). A destination is a source for every
@@ -252,7 +254,11 @@ def load_ctx(site: str, run: str) -> dict:
         dests[d]["heads"] = [f["head"] for f in fs]
         dests[d]["keywords"] = [k for f in fs for k in fam_kw[f["family_id"]]]
     for v in dests.values():
-        v["share_raw"] = v["share"]
+        v["share_raw"], v["rollup"] = v["share"], True
+    for d in le.get("destinations", []):                    # every commercial page is a valid destination; no rollup share = 0
+        if d not in dests and d in pages and pages[d]["indexable"] == "true":
+            dests[d] = {"share": 0.0, "share_raw": 0.0, "title": pages[d]["title"], "h1": pages[d]["h1"], "n_families": 0,
+                        "leads_90d": 0, "heads": [], "keywords": [], "rollup": False}
     fl = {k: float(x) for k, x in le.get("destination_share_floor", {}).items() if k in dests}
     if fl:                                                  # floors, then the others scale down so the total is unchanged
         total = sum(v["share"] for v in dests.values())
@@ -327,7 +333,7 @@ def compute_signals(ctx: dict) -> dict:
     ctx["vec"], ctx["text"] = vec, text
     out = {}
     for s in ctx["sources"]:
-        s2 = sorted(((cos(vec[("p", s)], vec[("d", d)]), d) for d in dests if d != s), key=lambda x: (-x[0], x[1]))
+        s2 = sorted(((cos(vec[("p", s)], vec[("d", d)]), d) for d in dests if d != s and dests[d]["rollup"]), key=lambda x: (-x[0], x[1]))
         mapped, total = Counter(), 0.0
         for q, im in ctx["gsc_qp"].get(s, []):
             total += im
