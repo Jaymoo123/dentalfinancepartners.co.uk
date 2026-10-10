@@ -16,8 +16,11 @@ Per destination
   cap              sources that could carry the link: primary or secondary here, or S2 fit >= 0.15 (the source itself excluded)
   target_in_body   max(n_primary, min(round(share * T), cap))
   deficit          max(0, target_in_body - covered)
-  secondary        filled from assigned sources not yet covered, not frozen and not give-up, with S2 fit to this destination >= 0.15,
-                   best first by fit * log1p(clicks*10 + impressions) + lead bonus; n_secondary_planned = min(deficit, pool).
+  secondary        filled from assigned sources not yet covered, not frozen and not give-up, best first by fit * log1p(clicks*10 +
+                   impressions) + lead bonus; n_secondary_planned = min(deficit, pool). Pool: S2 fit >= 0.15, except for the four /services/
+                   pages, where it is sources whose primary is a /for/ page or a converting guide and whose S2 fit to the service is >= 0.08
+                   or whose category prior is that service. A source never gets more than one secondary (primary + 1 = 2 sales links),
+                   and "none" sources are never eligible. Destinations are processed by share, largest first.
 A source is planned for at most the secondaries the deficit needs; a source with a body link already is never planned.
 """
 from __future__ import annotations
@@ -33,6 +36,7 @@ FIELDS = ["dest", "share", "share_raw", "T", "current_body_in", "n_primary", "n_
           "deficit", "pool", "n_secondary_planned", "n_pending_unassigned", "note"]
 PLAN = ["dest", "source", "rank", "s2", "source_value"]
 FIT_MIN = 0.15
+SERVICE_FIT_MIN = 0.08
 
 
 def main() -> None:
@@ -52,6 +56,7 @@ def main() -> None:
     repoint = defaultdict(set)
     for r in hire_repoints(edges, ctx):
         repoint[r["dest"]].add(r["source"])
+    has_sec = {s for s, r in done.items() if r["secondary_dest"]}      # at most one secondary per source (primary + 1 = 2 sales links)
     out, plan = [], []
     for d, v in sorted(dests.items(), key=lambda kv: -kv[1]["share"]):
         prim = {s for s, r in done.items() if r["primary_dest"] == d}
@@ -59,13 +64,20 @@ def main() -> None:
         cur = linkers.get(d, set())
         covered = cur | prim | repoint[d]
         fit = {s: s2_score(ctx, s, d) for s in done if s != d}
-        cap = len(prim | sec | {s for s, f in fit.items() if f >= FIT_MIN})
+        if d.startswith("/services/"):
+            # widened pool for the four service pages: sources whose primary is a /for/ page or a converting guide ("none" and
+            # service/city primaries are not eligible) that are hire-adjacent (S2 >= 0.08 to this service, or its category prior is this service)
+            ok = lambda s: (done[s]["primary_dest"].startswith(("/for/", "/blog/")) and (fit[s] >= SERVICE_FIT_MIN or sig[s]["s3"] == d))
+        else:
+            ok = lambda s: fit[s] >= FIT_MIN
+        cap = len(prim | sec | {s for s in fit if ok(s)})
         target = max(len(prim), min(round(v["share"] * T), cap))
         deficit = max(0, target - len(covered))
-        pool = sorted(((attention(ctx, s, sig[s], d), s) for s, f in fit.items()
-                       if f >= FIT_MIN and s not in covered and s not in ctx["frozen"] and s not in ctx["give_up"]),
+        pool = sorted(((attention(ctx, s, sig[s], d), s) for s in fit
+                       if ok(s) and s not in covered and s not in ctx["frozen"] and s not in ctx["give_up"] and s not in has_sec),
                       key=lambda x: (-x[0], x[1]))
         take = pool[:deficit]
+        has_sec.update(s for _, s in take)
         for i, (val, s) in enumerate(take, 1):
             plan.append({"dest": d, "source": s, "rank": i, "s2": round(fit[s], 3), "source_value": round(val, 3)})
         note = ""

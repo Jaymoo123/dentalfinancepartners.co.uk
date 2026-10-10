@@ -1,18 +1,19 @@
 {
-  "pulled_at": "2026-10-10T11:46:40+00:00",
+  "pulled_at": "2026-10-10T11:57:30+00:00",
   "source": "06_owner_rollup + 06_families + 05_clusters + 03_gsc_* + 08_pages + built HTML + leads + frozen list",
   "site": "property",
   "data_through": "2026-10-10",
-  "n_destinations": 23,
+  "n_destinations": 28,
   "n_sources": 866,
-  "judgments_applied": false,
+  "judgments_applied": true,
   "script": "assign.py",
   "args": [
     "--site",
     "property",
     "--run",
-    "2026-10-10"
+    "2026-10-10",
+    "--apply-judgments"
   ],
   "rows": 866,
-  "sha256": "1d2262101aaffe27e2d3a67662a981cde9b6f8412f7236c98e2e49d978e60368"
+  "sha256": "1812e29ef213755928daad8071dae61e8f4be6b2448e7a30b9a08ee9007ea8a5"
 }

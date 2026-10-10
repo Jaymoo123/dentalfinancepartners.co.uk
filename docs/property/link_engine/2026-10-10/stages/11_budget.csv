@@ -1,24 +1,29 @@
 dest,share,share_raw,T,current_body_in,n_primary,n_primary_missing_link,n_repoint,covered,cap,target_in_body,deficit,pool,n_secondary_planned,n_pending_unassigned,note
-/services/property-accountant,0.4009,0.4227,112,38,3,2,36,76,19,19,0,0,0,754,share set by destination_share_floor/rescale (rollup 0.4227)
-/services/landlord-accountant,0.1266,0.1335,112,35,0,0,1,36,24,14,0,5,0,754,share set by destination_share_floor/rescale (rollup 0.1335)
-/services/property-tax-advice,0.109,0.1149,112,36,2,2,1,39,15,12,0,0,0,754,share set by destination_share_floor/rescale (rollup 0.1149)
-/blog/capital-gains-tax/capital-gains-tax-second-home-sale,0.0665,0.0701,112,4,0,0,0,4,3,3,0,3,0,754,share set by destination_share_floor/rescale (rollup 0.0701)
-/services/non-resident-landlord,0.05,0.0,112,5,0,0,0,5,1,1,0,0,0,754,share set by destination_share_floor/rescale (rollup 0.0)
-/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,0.0496,0.0523,112,21,0,0,0,21,12,6,0,6,0,754,share set by destination_share_floor/rescale (rollup 0.0523)
-/for/moving-property-into-a-limited-company,0.0469,0.0494,112,3,15,15,0,18,19,15,0,4,0,754,share set by destination_share_floor/rescale (rollup 0.0494)
-/for/gifting-property-to-family,0.0392,0.0413,112,1,6,6,0,7,6,6,0,0,0,754,share set by destination_share_floor/rescale (rollup 0.0413)
-/for/property-spv-set-up,0.029,0.0306,112,1,12,12,0,13,16,12,0,4,0,754,share set by destination_share_floor/rescale (rollup 0.0306)
-/for/rental-income-disclosure,0.0153,0.0161,112,2,5,5,0,7,6,5,0,1,0,754,share set by destination_share_floor/rescale (rollup 0.0161)
-/locations/london,0.0102,0.0108,112,3,0,0,0,3,0,0,0,0,0,754,share set by destination_share_floor/rescale (rollup 0.0108)
-/locations/birmingham,0.0084,0.0089,112,3,0,0,0,3,0,0,0,0,0,754,share set by destination_share_floor/rescale (rollup 0.0089)
-/for/landlord-retirement-and-succession,0.008,0.0084,112,1,2,2,0,3,3,2,0,1,0,754,share set by destination_share_floor/rescale (rollup 0.0084)
-/for/selling-a-buy-to-let,0.0046,0.0048,112,3,5,5,0,8,8,5,0,3,0,754,share set by destination_share_floor/rescale (rollup 0.0048)
-/locations/manchester,0.0031,0.0033,112,4,1,0,0,4,2,1,0,1,0,754,share set by destination_share_floor/rescale (rollup 0.0033)
-/for/holiday-let-and-serviced-accommodation,0.0025,0.0026,112,0,10,10,0,10,14,10,0,4,0,754,share set by destination_share_floor/rescale (rollup 0.0026)
-/for/inherited-property,0.0009,0.001,112,1,4,4,0,5,4,4,0,0,0,754,share set by destination_share_floor/rescale (rollup 0.001)
-/landed-estates,0.0,0.0,112,5,7,3,0,8,8,7,0,1,0,754,"share 0: no ranked priority behind this page, target = primaries only"
-/locations/leeds,0.0,0.0,112,4,0,0,0,4,0,0,0,0,0,754,"share 0: no ranked priority behind this page, target = primaries only"
-/locations/bristol,0.0,0.0,112,3,0,0,0,3,0,0,0,0,0,754,"share 0: no ranked priority behind this page, target = primaries only"
-/for/hmo-and-multi-let-landlords,0.0,0.0,112,0,12,12,0,12,13,12,0,1,0,754,"share 0: no ranked priority behind this page, target = primaries only"
-/for-letting-agents,0.0,0.0,112,6,1,0,0,6,3,1,0,2,0,754,"share 0: no ranked priority behind this page, target = primaries only"
-/for/landlord-self-assessment-and-mtd,0.0,0.0,112,0,27,27,0,27,29,27,0,2,0,754,"share 0: no ranked priority behind this page, target = primaries only"
+/services/property-accountant,0.4009,0.4227,733,38,56,49,29,116,96,96,0,15,0,0,share set by destination_share_floor/rescale (rollup 0.4227)
+/services/landlord-accountant,0.1266,0.1335,733,35,46,34,1,70,204,93,23,97,23,0,share set by destination_share_floor/rescale (rollup 0.1335)
+/services/property-tax-advice,0.109,0.1149,733,36,244,232,1,269,324,244,0,30,0,0,share set by destination_share_floor/rescale (rollup 0.1149)
+/blog/capital-gains-tax/capital-gains-tax-second-home-sale,0.0665,0.0701,733,4,0,0,0,4,29,29,25,21,21,0,cap/pool short by 4: not enough sources with S2 fit >= 0.15; share set by destination_share_floor/rescale (rollup 0.0701)
+/services/non-resident-landlord,0.05,0.0,733,5,34,33,0,38,73,37,0,14,0,0,share set by destination_share_floor/rescale (rollup 0.0)
+/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,0.0496,0.0523,733,21,4,2,0,23,35,35,12,8,8,0,cap/pool short by 4: not enough sources with S2 fit >= 0.15; share set by destination_share_floor/rescale (rollup 0.0523)
+/for/moving-property-into-a-limited-company,0.0469,0.0494,733,3,39,39,0,42,71,39,0,9,0,0,share set by destination_share_floor/rescale (rollup 0.0494)
+/for/gifting-property-to-family,0.0392,0.0413,733,1,15,15,0,16,17,17,1,0,0,0,cap/pool short by 1: not enough sources with S2 fit >= 0.15; share set by destination_share_floor/rescale (rollup 0.0413)
+/for/property-spv-set-up,0.029,0.0306,733,1,24,24,0,25,58,24,0,12,0,0,share set by destination_share_floor/rescale (rollup 0.0306)
+/for/rental-income-disclosure,0.0153,0.0161,733,2,16,16,0,18,23,16,0,3,0,0,share set by destination_share_floor/rescale (rollup 0.0161)
+/locations/london,0.0102,0.0108,733,3,0,0,0,3,1,1,0,1,0,0,share set by destination_share_floor/rescale (rollup 0.0108)
+/locations/birmingham,0.0084,0.0089,733,3,0,0,0,3,1,1,0,0,0,0,share set by destination_share_floor/rescale (rollup 0.0089)
+/for/landlord-retirement-and-succession,0.008,0.0084,733,1,33,33,0,34,41,33,0,1,0,0,share set by destination_share_floor/rescale (rollup 0.0084)
+/for/selling-a-buy-to-let,0.0046,0.0048,733,3,31,31,0,34,42,31,0,3,0,0,share set by destination_share_floor/rescale (rollup 0.0048)
+/locations/manchester,0.0031,0.0033,733,4,1,0,0,4,4,2,0,1,0,0,share set by destination_share_floor/rescale (rollup 0.0033)
+/for/holiday-let-and-serviced-accommodation,0.0025,0.0026,733,0,26,26,0,26,39,26,0,8,0,0,share set by destination_share_floor/rescale (rollup 0.0026)
+/for/inherited-property,0.0009,0.001,733,1,11,11,0,12,12,11,0,1,0,0,share set by destination_share_floor/rescale (rollup 0.001)
+/landed-estates,0.0,0.0,733,5,10,5,0,10,14,10,0,3,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/locations/leeds,0.0,0.0,733,4,0,0,0,4,0,0,0,0,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/locations/bristol,0.0,0.0,733,3,0,0,0,3,0,0,0,0,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for/hmo-and-multi-let-landlords,0.0,0.0,733,0,18,18,0,18,41,18,0,14,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for-letting-agents,0.0,0.0,733,6,6,2,0,8,12,6,0,6,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for/landlord-self-assessment-and-mtd,0.0,0.0,733,0,55,55,0,55,71,55,0,8,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for/portfolio-landlords-incorporating-a-partnership,0.0,0.0,733,0,2,2,0,2,18,2,0,10,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for/non-resident-landlords,0.0,0.0,733,1,13,13,0,14,42,13,0,20,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for/couples-splitting-rental-income,0.0,0.0,733,0,13,13,0,13,16,13,0,0,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for/first-time-and-accidental-landlords,0.0,0.0,733,2,10,10,0,12,13,10,0,0,0,0,"share 0: no ranked priority behind this page, target = primaries only"
+/for/property-company-profit-extraction,0.0,0.0,733,1,26,26,0,27,34,26,0,6,0,0,"share 0: no ranked priority behind this page, target = primaries only"
