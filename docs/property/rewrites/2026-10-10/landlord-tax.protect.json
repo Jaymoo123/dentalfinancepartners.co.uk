@@ -1,0 +1,428 @@
+{
+  "page": "/landlord-tax",
+  "slug": "landlord-tax",
+  "source": "Property/web/src/app/landlord-tax/page.tsx",
+  "run": "2026-10-10",
+  "answer_min": 0.5,
+  "gsc_window": "2026-07-11..2026-10-08",
+  "bing_source": "cache",
+  "bing_rows": 4,
+  "bing_queries_total": 4,
+  "google_queries_total": 40,
+  "n_queries": 16,
+  "n_unanswered_at_baseline": 0,
+  "queries": [
+    {
+      "query": "tax advice for landlords",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 124,
+      "gsc_pos": 82.65,
+      "score": 0.667,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "landlord tax advice",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 118,
+      "gsc_pos": 73.56,
+      "score": 0.667,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "landlord tax advice uk",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 40,
+      "gsc_pos": 89.28,
+      "score": 0.667,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "landlord taxes",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 21,
+      "gsc_pos": 69.1,
+      "score": 0.8,
+      "section": "H2: There is no single landlord tax rate to look up",
+      "section_line": 532,
+      "ties": [
+        "H2: What tax do UK landlords pay?"
+      ]
+    },
+    {
+      "query": "landlord tax",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 20,
+      "gsc_pos": 60.1,
+      "score": 1.0,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "tax for landlords",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 19,
+      "gsc_pos": 61.53,
+      "score": 1.0,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "tax advice landlords",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 15,
+      "gsc_pos": 91.27,
+      "score": 0.667,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "taxes for landlords",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 9,
+      "gsc_pos": 74.33,
+      "score": 0.8,
+      "section": "H2: There is no single landlord tax rate to look up",
+      "section_line": 532,
+      "ties": [
+        "H2: What tax do UK landlords pay?"
+      ]
+    },
+    {
+      "query": "landlord tax penalty uk",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 8,
+      "gsc_pos": 58.38,
+      "score": 0.667,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "property tax for landlords",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 7,
+      "gsc_pos": 46.43,
+      "score": 1.0,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "rental property tax",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 7,
+      "gsc_pos": 81.29,
+      "score": 1.0,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: What tax do you pay when you buy a rental property?"
+      ]
+    },
+    {
+      "query": "uk landlord tax",
+      "engine": "bing+google",
+      "bing_clicks": 0,
+      "bing_impr": 6,
+      "bing_pos": 5.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 1,
+      "gsc_pos": 65.0,
+      "score": 1.0,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "how much tax do i pay as a landlord",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 6,
+      "gsc_pos": 80.83,
+      "score": 1.0,
+      "section": "H2: How much landlord tax do I pay?",
+      "section_line": 769,
+      "ties": []
+    },
+    {
+      "query": "landlord tax uk",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 5,
+      "gsc_pos": 86.8,
+      "score": 1.0,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": [
+        "H2: There is no single landlord tax rate to look up",
+        "H2: What tax do UK landlords pay?",
+        "H2: How much landlord tax do I pay?"
+      ]
+    },
+    {
+      "query": "property tax guide for landlords",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 5,
+      "gsc_pos": 54.8,
+      "score": 0.75,
+      "section": "H1/title: Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "tax return advice for landlords",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 5,
+      "gsc_pos": 100.0,
+      "score": 0.6,
+      "section": "H2: When is a property specialist worth it?",
+      "section_line": 1258,
+      "ties": []
+    }
+  ],
+  "structures": {
+    "question_headings": [
+      "What tax do UK landlords pay?",
+      "How is rental income taxed?",
+      "What is Section 24 and how much mortgage interest relief do you get?",
+      "How much landlord tax do I pay?",
+      "Which expenses can landlords deduct?",
+      "What tax do you pay when you buy a rental property?",
+      "What tax do you pay when you sell?",
+      "What happens to your portfolio for inheritance tax?",
+      "What changes for landlords in 2026/27 and 2027/28?",
+      "Should you hold rental property personally or in a company?",
+      "What are the deadlines and penalties?",
+      "When is a property specialist worth it?"
+    ],
+    "tables": [
+      "How is rental income taxed?",
+      "What is Section 24 and how much mortgage interest relief do you get?",
+      "How much landlord tax do I pay?",
+      "What changes for landlords in 2026/27 and 2027/28?",
+      "Should you hold rental property personally or in a company?"
+    ],
+    "faq_entries_matching_queries": [],
+    "faq_entries_all": []
+  },
+  "sections": [
+    {
+      "kind": "title",
+      "level": 1,
+      "heading": "Landlord tax explained: what you pay on UK rental property in 2026/27",
+      "line": 1,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "There is no single landlord tax rate to look up",
+      "line": 532,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What tax do UK landlords pay?",
+      "line": 561,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "How is rental income taxed?",
+      "line": 583,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What is Section 24 and how much mortgage interest relief do you get?",
+      "line": 663,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "The restriction covers",
+      "line": 731,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "It does not apply to",
+      "line": 742,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "How much landlord tax do I pay?",
+      "line": 769,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Which expenses can landlords deduct?",
+      "line": 843,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What tax do you pay when you buy a rental property?",
+      "line": 914,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What tax do you pay when you sell?",
+      "line": 972,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What happens to your portfolio for inheritance tax?",
+      "line": 1018,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What changes for landlords in 2026/27 and 2027/28?",
+      "line": 1084,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Should you hold rental property personally or in a company?",
+      "line": 1154,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What are the deadlines and penalties?",
+      "line": 1222,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "When is a property specialist worth it?",
+      "line": 1258,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Put numbers on your own position",
+      "line": 1316,
+      "has_table": false
+    }
+  ]
+}

@@ -262,6 +262,21 @@
       "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk": "/for/moving-property-into-a-limited-company",
       "/blog/capital-gains-tax/capital-gains-tax-second-home-sale": "/for/selling-a-buy-to-let",
       "/landlord-tax": "/services/property-tax-advice"
+    },
+    "protect_thresholds": {
+      "_doc": "A page is protected if ANY test passes. Leverage = bing_clicks >= leverage_bing_clicks AND (google not indexed OR gsc_impr_90d < leverage_gsc_impr_below). Protect-list query inclusion: any bing click, bing_impr >= list_bing_impr, any gsc click, or gsc_impr >= list_gsc_impr. A query counts as answered when best section token-overlap score >= answer_min.",
+      "bing_clicks": 10,
+      "bing_top3_queries": 5,
+      "gsc_clicks_90d": 5,
+      "gsc_impr_90d": 500,
+      "leads_90d": 1,
+      "top3_max_position": 3,
+      "top3_min_impr": 3,
+      "leverage_bing_clicks": 10,
+      "leverage_gsc_impr_below": 100,
+      "list_bing_impr": 3,
+      "list_gsc_impr": 5,
+      "answer_min": 0.5
     }
   }
 }

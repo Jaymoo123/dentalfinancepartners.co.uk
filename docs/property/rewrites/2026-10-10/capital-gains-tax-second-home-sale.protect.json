@@ -1,0 +1,1018 @@
+{
+  "page": "/blog/capital-gains-tax/capital-gains-tax-second-home-sale",
+  "slug": "capital-gains-tax-second-home-sale",
+  "source": "Property/web/content/blog/capital-gains-tax-second-home-sale.md",
+  "run": "2026-10-10",
+  "answer_min": 0.5,
+  "gsc_window": "2026-07-11..2026-10-08",
+  "bing_source": "cache",
+  "bing_rows": 119,
+  "bing_queries_total": 116,
+  "google_queries_total": 58,
+  "n_queries": 45,
+  "n_unanswered_at_baseline": 2,
+  "queries": [
+    {
+      "query": "capital gains tax on second homes",
+      "engine": "bing",
+      "bing_clicks": 3,
+      "bing_impr": 27,
+      "bing_pos": 3.48,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "do you have to pay capital gains tax on a second property",
+      "engine": "bing",
+      "bing_clicks": 2,
+      "bing_impr": 2,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.933,
+      "section": "FAQ: How much is capital gains tax on a second property in 2026/27?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Can you avoid capital gains tax on a second property?"
+      ]
+    },
+    {
+      "query": "sale of second home capital gains tax uk",
+      "engine": "bing",
+      "bing_clicks": 2,
+      "bing_impr": 2,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "cgt on second homes",
+      "engine": "bing+google",
+      "bing_clicks": 1,
+      "bing_impr": 3,
+      "bing_pos": 4.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 4,
+      "gsc_pos": 67.25,
+      "score": 1.0,
+      "section": "FAQ: Do you always pay CGT when selling a second home?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: Can Private Residence Relief reduce CGT on a second home?"
+      ]
+    },
+    {
+      "query": "allowances on selling second property uk",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 2,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.8,
+      "section": "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+      "section_line": 102,
+      "ties": [
+        "H2: How can you legally reduce capital gains tax on a second property?",
+        "H2: Can you avoid capital gains tax on a second property?"
+      ]
+    },
+    {
+      "query": "capital gains rules on second propertys",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 2,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.92,
+      "section": "H2: Can you avoid capital gains tax on a second property?",
+      "section_line": 187,
+      "ties": []
+    },
+    {
+      "query": "do you pay tax on a gain on a second home",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 2,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "how much capital gains tax paid on second home in uk today",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 2,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.825,
+      "section": "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "oif someone buys second property do they pay tax capital gains",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 2,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.756,
+      "section": "H2: Can you avoid capital gains tax on a second property?",
+      "section_line": 187,
+      "ties": []
+    },
+    {
+      "query": "capital gains on 320000 on selling 2nd property",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.6,
+      "section": "H2: How do you work out capital gains when selling a second home?",
+      "section_line": 63,
+      "ties": [
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: How can you legally reduce capital gains tax on a second property?",
+        "H2: Can you avoid capital gains tax on a second property?"
+      ]
+    },
+    {
+      "query": "capital gains tax on second home when i rent yjw propwrty im in",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.578,
+      "section": "H2: How do you work out capital gains when selling a second home?",
+      "section_line": 63,
+      "ties": [
+        "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "capital gains tax second home 2026",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.933,
+      "section": "FAQ: How much is capital gains tax on a second property in 2026/27?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?"
+      ]
+    },
+    {
+      "query": "do you pay capital gains tax on a second home",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "do you pay capital gains tax on a second property if it sells for less than was bought for uk",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.733,
+      "section": "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "do you pay capital gains tax when you sell a a second property",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.943,
+      "section": "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "how much capital gains tax do you pay when you sell a second or third property",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.844,
+      "section": "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "how much is capital ains on a 2nd property uk",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.6,
+      "section": "FAQ: How much is capital gains tax on a second property in 2026/27?",
+      "section_line": 0,
+      "ties": [
+        "H2: How much capital gains tax on a second property? A worked example"
+      ]
+    },
+    {
+      "query": "how wuick do you have to pay tax after sale of 2nd home",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.571,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "FAQ: Do you always pay CGT when selling a second home?"
+      ]
+    },
+    {
+      "query": "if i sell a second property i used to live in do i have to pay capital gains tax on the increase in value",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.673,
+      "section": "H2: Can you avoid capital gains tax on a second property?",
+      "section_line": 187,
+      "ties": []
+    },
+    {
+      "query": "if i sell my second home do have to pay tax",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "if you buy a second home amd pay off mortgare what do yiunoay capital gains on when you sell uk",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 2.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.545,
+      "section": "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "information on selling a second home and capital gaints",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.667,
+      "section": "H2: How do you work out capital gains when selling a second home?",
+      "section_line": 63,
+      "ties": [
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain"
+      ]
+    },
+    {
+      "query": "is a profit from second home sale added to my income",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.533,
+      "section": "H2: How do you work out capital gains when selling a second home?",
+      "section_line": 63,
+      "ties": []
+    },
+    {
+      "query": "sdo uoy still have to pay foh cil tax on 2nd home if uoure selling it",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 2.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.327,
+      "section": "FAQ: Do you always pay CGT when selling a second home?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?"
+      ]
+    },
+    {
+      "query": "second home",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 1,
+      "gsc_impr": 1,
+      "gsc_pos": 2.0,
+      "score": 1.0,
+      "section": "FAQ: Do you always pay CGT when selling a second home?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+        "FAQ: Can Private Residence Relief reduce CGT on a second home?",
+        "FAQ: Is letting relief available if I rented the second home out?",
+        "FAQ: What if my second home is jointly owned with someone who is not my spouse?",
+        "FAQ: Does Scotland or Wales tax a second home gain differently?",
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H2: How do you work out capital gains when selling a second home?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: Does Private Residence Relief apply to a second home?",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: What if you sell the second home at a loss?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "selling a secondary property taxes",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.45,
+      "section": "H2: What counts as a second home for capital gains tax?",
+      "section_line": 55,
+      "ties": []
+    },
+    {
+      "query": "tax rate on secound home sale",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.6,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "what are the capital gains rules for selling a second home in england",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.743,
+      "section": "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "section_line": 1,
+      "ties": [
+        "H2: What counts as a second home for capital gains tax?",
+        "H2: How do you work out capital gains when selling a second home?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain"
+      ]
+    },
+    {
+      "query": "what capital gains tax do you pay when you well a second home",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.857,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "what happens if the cgt rates change between exchange and completion when selling a second home",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.52,
+      "section": "H2: Can you avoid capital gains tax on a second property?",
+      "section_line": 187,
+      "ties": []
+    },
+    {
+      "query": "what was cgt rate for selling second home in 2013",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.7,
+      "section": "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+      "section_line": 102,
+      "ties": []
+    },
+    {
+      "query": "capital gains on second home",
+      "engine": "bing+google",
+      "bing_clicks": 0,
+      "bing_impr": 1,
+      "bing_pos": 4.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 11,
+      "gsc_pos": 48.91,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H2: How do you work out capital gains when selling a second home?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "capital gains tax on second home",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 12,
+      "gsc_pos": 54.83,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "capital gains tax on 2nd home sale",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 9,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.833,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "tax on second home uk",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 9,
+      "gsc_pos": 68.33,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: Does Scotland or Wales tax a second home gain differently?",
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "capital gains tax on a second home",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 8,
+      "gsc_pos": 55.75,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "capital gains tax second home",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 7,
+      "gsc_pos": 64.71,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "capital gains tax on second property",
+      "engine": "bing+google",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 4.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 3,
+      "gsc_pos": 53.33,
+      "score": 1.0,
+      "section": "FAQ: How much is capital gains tax on a second property in 2026/27?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: How to avoid capital gains tax on a second property?",
+        "H2: How much capital gains tax on a second property? A worked example",
+        "H2: How can you legally reduce capital gains tax on a second property?",
+        "H2: Can you avoid capital gains tax on a second property?"
+      ]
+    },
+    {
+      "query": "capital gains on secondary residence",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 5,
+      "gsc_pos": 50.2,
+      "score": 0.8,
+      "section": "H2: What counts as a second home for capital gains tax?",
+      "section_line": 55,
+      "ties": []
+    },
+    {
+      "query": "capital gains tax on sale of second home",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 5,
+      "gsc_pos": 49.4,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "capital gains tax on 2nd property",
+      "engine": "bing+google",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 6.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 1,
+      "gsc_pos": 47.0,
+      "score": 0.8,
+      "section": "FAQ: How much is capital gains tax on a second property in 2026/27?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: How to avoid capital gains tax on a second property?",
+        "H2: How much capital gains tax on a second property? A worked example",
+        "H2: How can you legally reduce capital gains tax on a second property?",
+        "H2: Can you avoid capital gains tax on a second property?"
+      ]
+    },
+    {
+      "query": "capital gains second home",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 5.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H2: How do you work out capital gains when selling a second home?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "in the uk are mp s liable for capital gains tax on second homes",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 2.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.7,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "H2: When do you report and pay capital gains tax on a second home sale?"
+      ]
+    },
+    {
+      "query": "tax on second homes",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 4.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "FAQ: When do you have to report and pay capital gains tax on a second home sale?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: Does Scotland or Wales tax a second home gain differently?",
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H2: What counts as a second home for capital gains tax?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain",
+        "H2: When do you report and pay capital gains tax on a second home sale?",
+        "H2: Is UK capital gains tax on second homes the same in Scotland and Wales?"
+      ]
+    },
+    {
+      "query": "what tax would i pay selling a second home",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.767,
+      "section": "FAQ: Do you always pay CGT when selling a second home?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+        "H3: Selling a second home: capital gains tax on a \u00a3200,000 gain"
+      ]
+    }
+  ],
+  "structures": {
+    "question_headings": [
+      "What counts as a second home for capital gains tax?",
+      "How do you work out capital gains when selling a second home?",
+      "How much capital gains tax on a second property? A worked example",
+      "Does Private Residence Relief apply to a second home?",
+      "What if you own the second property with your spouse?",
+      "When do you report and pay capital gains tax on a second home sale?",
+      "How can you legally reduce capital gains tax on a second property?",
+      "Can you avoid capital gains tax on a second property?",
+      "What if you sell the second home at a loss?",
+      "Is UK capital gains tax on second homes the same in Scotland and Wales?",
+      "What to do before you accept an offer"
+    ],
+    "tables": [
+      "How much capital gains tax on a second property? A worked example",
+      "Selling a second home: capital gains tax on a \u00a3200,000 gain"
+    ],
+    "faq_entries_matching_queries": [
+      "How much is capital gains tax on a second property in 2026/27?",
+      "Do you always pay CGT when selling a second home?",
+      "When do you have to report and pay capital gains tax on a second home sale?"
+    ],
+    "faq_entries_all": [
+      "How much is capital gains tax on a second property in 2026/27?",
+      "Do you always pay CGT when selling a second home?",
+      "Is capital gains tax on second house sales different from a flat?",
+      "How to avoid capital gains tax on a second property?",
+      "When do you have to report and pay capital gains tax on a second home sale?",
+      "What costs can you deduct from the gain on a second property?",
+      "Can Private Residence Relief reduce CGT on a second home?",
+      "Does transferring a share to my spouse before the sale reduce the tax?",
+      "Does the timing of completion change how much tax I pay?",
+      "Is letting relief available if I rented the second home out?",
+      "What if my second home is jointly owned with someone who is not my spouse?",
+      "Does Scotland or Wales tax a second home gain differently?",
+      "How are capital gains on second property disposals taxed if I have no income?",
+      "Do I still need to report the sale if I made a loss?"
+    ]
+  },
+  "sections": [
+    {
+      "kind": "title",
+      "level": 1,
+      "heading": "How Much Capital Gains Tax Will You Pay When You Sell a Second Home?",
+      "line": 1,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "How much is capital gains tax on a second property in 2026/27?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Do you always pay CGT when selling a second home?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Is capital gains tax on second house sales different from a flat?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "How to avoid capital gains tax on a second property?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "When do you have to report and pay capital gains tax on a second home sale?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What costs can you deduct from the gain on a second property?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Can Private Residence Relief reduce CGT on a second home?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Does transferring a share to my spouse before the sale reduce the tax?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Does the timing of completion change how much tax I pay?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Is letting relief available if I rented the second home out?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What if my second home is jointly owned with someone who is not my spouse?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Does Scotland or Wales tax a second home gain differently?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "How are capital gains on second property disposals taxed if I have no income?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Do I still need to report the sale if I made a loss?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What counts as a second home for capital gains tax?",
+      "line": 55,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "How do you work out capital gains when selling a second home?",
+      "line": 63,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "How much capital gains tax on a second property? A worked example",
+      "line": 81,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Selling a second home: capital gains tax on a \u00a3200,000 gain",
+      "line": 102,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Does Private Residence Relief apply to a second home?",
+      "line": 126,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What if you own the second property with your spouse?",
+      "line": 146,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "When do you report and pay capital gains tax on a second home sale?",
+      "line": 162,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "How can you legally reduce capital gains tax on a second property?",
+      "line": 172,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Can you avoid capital gains tax on a second property?",
+      "line": 187,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What if you sell the second home at a loss?",
+      "line": 209,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Is UK capital gains tax on second homes the same in Scotland and Wales?",
+      "line": 215,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "The statutory backdrop, briefly",
+      "line": 219,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What to do before you accept an offer",
+      "line": 223,
+      "has_table": false
+    }
+  ]
+}

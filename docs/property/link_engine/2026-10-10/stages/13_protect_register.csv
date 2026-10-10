@@ -1,0 +1,888 @@
+route,bing_impr,bing_clicks,bing_queries,bing_top3_queries,gsc_impr_90d,gsc_clicks_90d,google_index_state,leads_90d,protected,protect_reason,leverage_flag
+/,22,2,14,1,567,51,,61,yes,gsc_clicks_90d=51; gsc_impr_90d=567; leads_90d=61,no
+/about,0,0,0,0,225,24,,10,yes,gsc_clicks_90d=24; leads_90d=10,no
+/blog,0,0,0,0,193,0,,0,no,,no
+/blog/capital-gains-tax,0,0,0,0,0,0,,0,no,,no
+/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales,0,0,0,0,3,0,,0,no,,no
+/blog/capital-gains-tax/average-london-estate-agent-fees,9,1,8,0,193,1,,0,no,,no
+/blog/capital-gains-tax/bed-and-breakfasting,0,0,0,0,315,2,,0,no,,no
+/blog/capital-gains-tax/business-asset-disposal-relief-residential-property-qualification,0,0,0,0,209,2,,0,no,,no
+/blog/capital-gains-tax/can-you-sell-a-house-without-an-estate-agent,0,0,0,0,95,0,,0,no,,no
+/blog/capital-gains-tax/capital-gains-tax-on-shares-uk,8,0,8,0,641,1,,0,yes,gsc_impr_90d=641,no
+/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk,2572,156,726,12,4,0,Submitted and indexed,2,yes,bing_clicks=156; bing_top3_queries=12; leads_90d=2,yes
+/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances,600,32,358,5,236,2,,0,yes,bing_clicks=32; bing_top3_queries=5,no
+/blog/capital-gains-tax/capital-gains-tax-second-home-sale,196,34,116,3,1427,14,Submitted and indexed,1,yes,bing_clicks=34; gsc_clicks_90d=14; gsc_impr_90d=1427; leads_90d=1,no
+/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27,501,10,167,1,110,0,,0,yes,bing_clicks=10,no
+/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step,429,63,278,18,98,3,Crawled - currently not indexed,2,yes,bing_clicks=63; bing_top3_queries=18; leads_90d=2,yes
+/blog/capital-gains-tax/cgt-commercial-property-different-residential,18,1,14,0,0,0,,0,no,,no
+/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk,79,2,48,0,0,0,,1,yes,leads_90d=1,no
+/blog/capital-gains-tax/cgt-divorce-property-transfer-tax-implications,81,7,58,0,38,1,,1,yes,leads_90d=1,no
+/blog/capital-gains-tax/cgt-gifting-property-family-members-uk,1528,330,967,33,0,0,Crawled - currently not indexed,4,yes,bing_clicks=330; bing_top3_queries=33; leads_90d=4,yes
+/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk,29,2,16,0,248,4,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/capital-gains-tax/cgt-main-residence-election-two-properties,5,0,4,0,0,0,,0,no,,no
+/blog/capital-gains-tax/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics,85,4,52,3,285,6,,0,yes,gsc_clicks_90d=6,no
+/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost,125,9,105,0,1669,15,Submitted and indexed,0,yes,gsc_clicks_90d=15; gsc_impr_90d=1669,no
+/blog/capital-gains-tax/cgt-overseas-property-uk-residents-foreign-disposals,387,63,279,7,11,0,Submitted and indexed,5,yes,bing_clicks=63; bing_top3_queries=7; leads_90d=5,yes
+/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026,829,35,478,4,6127,56,,0,yes,bing_clicks=35; gsc_clicks_90d=56; gsc_impr_90d=6127,no
+/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords,55,5,30,0,12,0,,0,no,,no
+/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses,450,33,297,3,37,0,,0,yes,bing_clicks=33,yes
+/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate,6,1,3,0,107,1,,0,no,,no
+/blog/capital-gains-tax/cgt-property-transfer-spouse,598,62,394,5,133,1,Submitted and indexed,1,yes,bing_clicks=62; bing_top3_queries=5; leads_90d=1,no
+/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained,815,30,321,6,0,0,,0,yes,bing_clicks=30; bing_top3_queries=6,yes
+/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long,0,0,0,0,36,1,,0,no,,no
+/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide,64,7,50,1,195,2,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/capital-gains-tax/cgt-selling-multiple-properties-same-year,4,0,4,0,427,18,,0,yes,gsc_clicks_90d=18,no
+/blog/capital-gains-tax/cheapest-estate-agent-fees-uk,0,0,0,0,1383,2,,0,yes,gsc_impr_90d=1383,no
+/blog/capital-gains-tax/cost-of-moving-house-uk,0,0,0,0,46,0,,0,no,,no
+/blog/capital-gains-tax/do-limited-companies-pay-capital-gains-tax-property,5,0,4,0,765,9,,0,yes,gsc_clicks_90d=9; gsc_impr_90d=765,no
+/blog/capital-gains-tax/estate-agent-contract-tie-in-periods,0,0,0,0,308,6,,0,yes,gsc_clicks_90d=6,no
+/blog/capital-gains-tax/estate-agent-fees-for-renting,0,0,0,0,238,0,,0,no,,no
+/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications,234,27,167,4,142,0,Submitted and indexed,1,yes,bing_clicks=27; leads_90d=1,no
+/blog/capital-gains-tax/hmrcs-nudge-letters-demand-urgent-review-of-gift-hold-over-relief-claim,0,0,0,0,55,0,,0,no,,no
+/blog/capital-gains-tax/hmrcs-nudge-letters-on-business-asset-disposal-relief,0,0,0,0,10,0,,0,no,,no
+/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house,14,0,12,0,836,3,,0,yes,gsc_impr_90d=836,no
+/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step,0,0,0,0,376,7,,0,yes,gsc_clicks_90d=7,no
+/blog/capital-gains-tax/letting-relief-landlords-2026-changes,151,4,46,1,0,0,,0,no,,no
+/blog/capital-gains-tax/modern-method-of-auction-explained,0,0,0,0,1,0,,0,no,,no
+/blog/capital-gains-tax/online-estate-agents-uk,0,0,0,0,87,0,,0,no,,no
+/blog/capital-gains-tax/part-exchange-house-uk,2,0,2,0,830,14,,0,yes,gsc_clicks_90d=14; gsc_impr_90d=830,no
+/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step,893,46,284,3,2087,26,,0,yes,bing_clicks=46; gsc_clicks_90d=26; gsc_impr_90d=2087,no
+/blog/capital-gains-tax/principal-private-residence-relief-landlords,1227,60,463,8,0,0,,0,yes,bing_clicks=60; bing_top3_queries=8,yes
+/blog/capital-gains-tax/property-capital-gains-tax-calculator,0,0,0,0,0,0,,0,no,,no
+/blog/capital-gains-tax/property-improvements-reduce-cgt-enhancement-expenditure,932,70,528,11,0,0,,0,yes,bing_clicks=70; bing_top3_queries=11,yes
+/blog/capital-gains-tax/reduce-cgt-property-disposal-uk,1,0,1,0,23,1,Submitted and indexed,0,no,,no
+/blog/capital-gains-tax/rollover-relief-property-landlords,92,4,45,0,37,0,,0,no,,no
+/blog/capital-gains-tax/sell-house-without-estate-agent,0,0,0,0,73,0,,0,no,,no
+/blog/capital-gains-tax/selling-a-house-at-auction-uk,0,0,0,0,178,0,,0,no,,no
+/blog/capital-gains-tax/selling-a-probate-property,0,0,0,0,166,2,,0,no,,no
+/blog/capital-gains-tax/tax-sell-rental-property-uk,1490,295,920,48,0,0,Crawled - currently not indexed,1,yes,bing_clicks=295; bing_top3_queries=48; leads_90d=1,yes
+/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property,1,0,1,0,91,2,,0,no,,no
+/blog/incorporation-and-company-structures,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/2027-tax-rates-incorporation-decision-property-landlords,1,0,1,0,28,0,,0,no,,no
+/blog/incorporation-and-company-structures/2027-tax-rates-incorporation-decision-uk-landlords,0,0,0,0,6,0,,0,no,,no
+/blog/incorporation-and-company-structures/a-complete-guide-on-incorporating-a-company-in-uk,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/a-complete-guide-to-family-investment-companies-fics,1,0,1,0,93,0,,0,no,,no
+/blog/incorporation-and-company-structures/a-complete-guide-to-identity-verification-in-uk,48,1,18,0,106,0,,0,no,,no
+/blog/incorporation-and-company-structures/a-guide-for-shareholders-in-the-uk,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/accountant-payroll-services,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children,0,0,0,0,1308,12,,0,yes,gsc_clicks_90d=12; gsc_impr_90d=1308,no
+/blog/incorporation-and-company-structures/anti-avoidance-rules-share-exchanges-and-reorganisations,7,0,7,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/are-landlords-really-leaving-net-formation-data,0,0,0,0,30,1,,0,no,,no
+/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction,1,0,1,0,129,1,,0,no,,no
+/blog/incorporation-and-company-structures/ated-complete-guide-2026-27,63,0,40,1,2386,11,,0,yes,gsc_clicks_90d=11; gsc_impr_90d=2386,no
+/blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics,20,0,14,0,605,8,,0,yes,gsc_clicks_90d=8; gsc_impr_90d=605,no
+/blog/incorporation-and-company-structures/ated-late-filing-penalty-appeal-reasonable-excuse,6,1,5,0,140,2,,0,no,,no
+/blog/incorporation-and-company-structures/ated-mixed-use-property-apportionment-treatment,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/ated-overseas-companies-voluntary-compliance-otm-letters,2,0,2,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27,0,0,0,0,0,0,,1,yes,leads_90d=1,no
+/blog/incorporation-and-company-structures/ated-rates-2026-27-bands-table-worked-examples,275,2,108,4,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/ated-relief-clawback-occupation-non-qualifying-individual,0,0,0,0,36,0,,0,no,,no
+/blog/incorporation-and-company-structures/ated-relief-related-persons-market-rent-test,0,0,0,0,110,1,,0,no,,no
+/blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics,0,0,0,0,148,1,,0,no,,no
+/blog/incorporation-and-company-structures/ated-return-amendment-corrections-procedure,0,0,0,0,684,11,,0,yes,gsc_clicks_90d=11; gsc_impr_90d=684,no
+/blog/incorporation-and-company-structures/ated-six-step-compliance-walkthrough-uk-non-natural-persons,0,0,0,0,49,0,,0,no,,no
+/blog/incorporation-and-company-structures/ated-valuation-date-rules-2027-revaluation,49,3,32,2,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors,0,0,0,0,29,0,,0,no,,no
+/blog/incorporation-and-company-structures/btl-limited-company-year-end-date-changing-tax-planning,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction,0,0,0,0,11,0,,0,no,,no
+/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk,160,8,118,3,894,5,Submitted and indexed,2,yes,gsc_clicks_90d=5; gsc_impr_90d=894; leads_90d=2,no
+/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options,2,0,2,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-rates-2026-market-guide,2,0,2,0,251,0,,0,no,,no
+/blog/incorporation-and-company-structures/can-uk-landlords-still-use-llp-to-reduce-tax,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/change-sic-code-companies-house-property-company,31,0,24,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/charging-market-rent-to-own-property-company-tax-treatment,0,0,0,0,1029,9,,0,yes,gsc_clicks_90d=9; gsc_impr_90d=1029,no
+/blog/incorporation-and-company-structures/close-investment-holding-company-property,33,2,14,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/companies-house-changes-limited-partnership-requirements,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure,0,0,0,0,97,0,,0,no,,no
+/blog/incorporation-and-company-structures/companies-house-emails-directors-for-identity-verification-under-new-rules,0,0,0,0,1089,2,,0,yes,gsc_impr_90d=1089,no
+/blog/incorporation-and-company-structures/companies-house-id-verification-begins-today,0,0,0,0,108,0,,0,no,,no
+/blog/incorporation-and-company-structures/companies-house-reforms,0,0,0,0,620,1,,0,yes,gsc_impr_90d=620,no
+/blog/incorporation-and-company-structures/companies-house-reforms-explained-for-business-success,0,0,0,0,279,0,,0,no,,no
+/blog/incorporation-and-company-structures/companies-house-reforms-navigating-the-new-landscape,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/companies-house-tightens-id-rules-what-does-it-mean,0,0,0,0,33,0,,0,no,,no
+/blog/incorporation-and-company-structures/condition-c-trading-stock-section-162-incorporation-relief-denial-developers,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/confirmation-statements,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/corporate-tax-planning-strategies-for-uk-clients,0,0,0,0,40,0,,0,no,,no
+/blog/incorporation-and-company-structures/corporation-tax-deadlines-and-penalties,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/corporation-tax-marginal-relief-property-companies,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/corporation-tax-marginal-relief-uk-guide,791,20,258,1,555,0,,0,yes,bing_clicks=20; gsc_impr_90d=555,no
+/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27,0,0,0,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/corporation-tax-vs-income-tax-landlords-2027,0,0,0,0,13,0,,0,no,,no
+/blog/incorporation-and-company-structures/director-living-in-property-owned-by-limited-company,0,0,0,0,114,8,,0,yes,gsc_clicks_90d=8,no
+/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/director-loan-property-company,0,0,0,0,0,0,,1,yes,leads_90d=1,no
+/blog/incorporation-and-company-structures/directors-loan-accountsdla-uk-guide,585,22,256,1,0,0,,0,yes,bing_clicks=22,yes
+/blog/incorporation-and-company-structures/directors-loan-repayment-bed-and-breakfast-trap-s464c-s464d,1,0,1,0,11384,3,,0,yes,gsc_impr_90d=11384,no
+/blog/incorporation-and-company-structures/directors-of-trust-owned-spv-extraction-rules-settlor-interested-trap,0,0,0,0,16,0,,0,no,,no
+/blog/incorporation-and-company-structures/disadvantages-of-family-investment-companies-fics,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/do-landlords-incorporate-when-house-prices-fall,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/does-your-business-qualify-as-a-partnership,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos,0,0,0,0,14,0,,0,no,,no
+/blog/incorporation-and-company-structures/eligible-groups-for-group-relief-under-uk-corporation-tax,12,0,4,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/extracting-money-from-property-limited-company,0,0,0,0,311,4,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/incorporation-and-company-structures/extraction-while-incorporating-phase-2-acquisition-funded-by-personal-funds,0,0,0,0,1431,1,,0,yes,gsc_impr_90d=1431,no
+/blog/incorporation-and-company-structures/family-investment-company-mechanics-share-classes-property,0,0,0,0,82,0,,0,no,,no
+/blog/incorporation-and-company-structures/family-investment-company-property-worth-it,0,0,0,0,97,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-articles-of-association-property-control-mechanics,0,0,0,0,138,1,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/incorporation-and-company-structures/fic-blended-family-protected-legacy-property-second-marriage,0,0,0,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-campaign,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-complete-guide-property-wealth-transfer,0,0,0,0,7,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-gifting-shares-children-property-7-year-iht-mechanics,0,0,0,0,11,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-growth-shares-and-freezer-shares-design,0,0,0,0,40,1,,0,no,,no
+/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth,0,0,0,0,9,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-property-corporate-governance-board-meetings-resolutions-discipline,0,0,0,0,10,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-property-retirement-decumulation-mechanics-uk,0,0,0,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics,0,0,0,0,316,11,Crawled - currently not indexed,0,yes,gsc_clicks_90d=11,no
+/blog/incorporation-and-company-structures/gifting-property-to-minor-children-bare-trust-mechanics-tax-traps,0,0,0,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/grob-s102-family-home-shared-occupation-s102b-uk-mechanics,0,0,0,0,0,0,,1,yes,leads_90d=1,no
+/blog/incorporation-and-company-structures/hmrcs-new-guidelines-for-llps-raise-concerns,0,0,0,0,21,0,,0,no,,no
+/blog/incorporation-and-company-structures/how-many-buy-to-let-limited-companies-uk,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/how-old-are-uk-property-companies-age-profile,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/how-to-choose-right-property-company-structure-uk-landlords-2026,0,0,0,0,3,0,,0,no,,no
+/blog/incorporation-and-company-structures/how-to-close-a-property-limited-company,0,0,0,0,52,2,,0,no,,no
+/blog/incorporation-and-company-structures/how-to-set-up-property-investment-company-uk-guide,65,3,33,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,1331,313,846,41,2581,20,Submitted and indexed,15,yes,bing_clicks=313; bing_top3_queries=41; gsc_clicks_90d=20; gsc_impr_90d=2581; leads_90d=15,no
+/blog/incorporation-and-company-structures/how-us-based-directors-of-uk-companies-can-navigate-ecctas-new-identity-verification-rules,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/hybrid-limited-liability-partnership,0,0,0,0,17,0,,0,no,,no
+/blog/incorporation-and-company-structures/identity-verification-for-pscs-your-questions-answered,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/identity-verification-form,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/immediate-post-death-interest-ipdi-rental-property-tax-iht-1984-s49a,0,0,0,0,13,0,,0,no,,no
+/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt,0,0,0,0,2,0,,0,no,,no
+/blog/incorporation-and-company-structures/incorporating-an-hmo-into-a-limited-company-pros-and-cons,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/incorporating-hmo-portfolio-to-limited-company,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026,26,3,17,1,14,0,Submitted and indexed,2,yes,leads_90d=2,no
+/blog/incorporation-and-company-structures/incorporation-case-study-10-property-portfolio-200k-mortgage,0,0,0,0,44,0,,0,no,,no
+/blog/incorporation-and-company-structures/incorporation-case-study-5-property-portfolio-analysis,0,0,0,0,0,0,,1,yes,leads_90d=1,no
+/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications,0,0,0,0,1,0,,1,yes,leads_90d=1,no
+/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach,0,0,0,0,48,0,,0,no,,no
+/blog/incorporation-and-company-structures/incorporation-holdover-relief-property,0,0,0,0,38,0,,0,no,,no
+/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio,0,0,0,0,46,0,,0,no,,no
+/blog/incorporation-and-company-structures/interest-in-possession-iht-treatment-iipi-iht49a-life-tenant-rental-property,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/intestacy-mechanics-rental-property-portfolio-no-will-cohort-operational-walkthrough,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk,1,0,1,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/landlord-registration-limited-company-scotland-wales,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/limited-companies,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/limited-companies-and-btl-properties,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/limited-company-buy-to-let-allowable-expenses,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026,0,0,0,0,70,0,,0,no,,no
+/blog/incorporation-and-company-structures/llp-accounts,72,4,49,1,90,0,,0,no,,no
+/blog/incorporation-and-company-structures/llp-and-taxation-benefits,2,0,2,0,109,2,,0,no,,no
+/blog/incorporation-and-company-structures/llp-property-investment-worth-considering,2,0,2,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment,0,0,0,0,59,1,,0,no,,no
+/blog/incorporation-and-company-structures/partnership-partnership-agreement-roles-types-benefits,0,0,0,0,30,0,,0,no,,no
+/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions,270,15,120,0,754,0,Crawled - currently not indexed,2,yes,bing_clicks=15; gsc_impr_90d=754; leads_90d=2,yes
+/blog/incorporation-and-company-structures/pre-sale-extraction-strip-cash-before-spv-share-sale-vs-buyer-discount,0,0,0,0,334,3,,0,no,,no
+/blog/incorporation-and-company-structures/property-company-accounting-requirements-hmrc-expectations,0,0,0,0,87,0,,0,no,,no
+/blog/incorporation-and-company-structures/property-company-dividend-tax,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/property-company-employer-pension-contributions-directors,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/property-company-group-relief-corporation-tax,5,0,5,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/property-company-running-costs-annual-budget,0,0,0,0,25,1,,0,no,,no
+/blog/incorporation-and-company-structures/property-investment-company-structure-planning,59,1,36,1,1273,10,Submitted and indexed,1,yes,gsc_clicks_90d=10; gsc_impr_90d=1273; leads_90d=1,no
+/blog/incorporation-and-company-structures/property-partnership-trading-investment-jv-developer-structures-sch-15-sdlt-interaction,0,0,0,0,25,0,,0,no,,no
+/blog/incorporation-and-company-structures/property-spv-employer-pension-contributions-wholly-and-exclusively-test-mechanics,0,0,0,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/property-spv-share-buyback-out-of-distributable-reserves-mechanics,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack,0,0,0,0,16,0,,0,no,,no
+/blog/incorporation-and-company-structures/register-for-uk-corporation-tax,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/registered-office-address-property-spv,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/residential-property-developer-tax-uk,17,0,9,0,38,0,,0,no,,no
+/blog/incorporation-and-company-structures/retained-profits-property-company-tax-advantages,0,0,0,0,18,0,,0,no,,no
+/blog/incorporation-and-company-structures/salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics,0,0,0,0,13,0,,0,no,,no
+/blog/incorporation-and-company-structures/scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision,7,1,3,0,61,1,,0,no,,no
+/blog/incorporation-and-company-structures/sdlt-bewley-uninhabitable-property-test-non-residential-rates-landlords,0,0,0,0,188,0,,0,no,,no
+/blog/incorporation-and-company-structures/sdlt-divorce-separation-transfer-relief-schedule-3-paragraph-3-fa-2003,5,0,3,0,61,0,,0,no,,no
+/blog/incorporation-and-company-structures/sdlt-group-relief-for-corporate-landlord-portfolios,102,0,53,0,1203,8,,0,yes,gsc_clicks_90d=8; gsc_impr_90d=1203,no
+/blog/incorporation-and-company-structures/sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth,47,3,28,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice,110,9,69,1,797,13,,0,yes,gsc_clicks_90d=13; gsc_impr_90d=797,no
+/blog/incorporation-and-company-structures/sdlt-linked-transactions-fa-2003-section-108-landlord-portfolio-acquisition,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election,51,9,38,1,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/sdlt-sub-sale-relief-mechanics,9,0,4,0,31,0,,0,no,,no
+/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost,976,141,601,7,2076,8,Submitted and indexed,3,yes,bing_clicks=141; bing_top3_queries=7; gsc_clicks_90d=8; gsc_impr_90d=2076; leads_90d=3,no
+/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords,0,0,0,0,802,8,Submitted and indexed,0,yes,gsc_clicks_90d=8; gsc_impr_90d=802,no
+/blog/incorporation-and-company-structures/section-24-impact-on-company-formations-data,0,0,0,0,5,0,,0,no,,no
+/blog/incorporation-and-company-structures/selling-a-property-spv-share-sale-vs-asset-sale,0,0,0,0,9,0,,0,no,,no
+/blog/incorporation-and-company-structures/settlements-legislation-s624-s629-property-income-attribution-mechanics,43,1,21,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/settlor-interested-property-trust-grob-interaction-double-trap-mechanics,0,0,0,0,51,1,,0,no,,no
+/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules,0,0,0,0,1725,23,,0,yes,gsc_clicks_90d=23; gsc_impr_90d=1725,no
+/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026,0,0,0,0,0,0,Page with redirect,0,no,,no
+/blog/incorporation-and-company-structures/sipp-ssas-commercial-property-purchase-mechanics-landlord-pension-fund,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/sole-trader-vs-partnership,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/spv-company-bank-account,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/spv-company-formation-cost-uk,0,0,0,0,0,0,Discovered – currently not indexed,2,yes,leads_90d=2,no
+/blog/incorporation-and-company-structures/spv-company-name-rules-uk,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/spv-first-year-accounts-and-filing-timeline,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide,540,27,301,5,2519,25,Submitted and indexed,0,yes,bing_clicks=27; bing_top3_queries=5; gsc_clicks_90d=25; gsc_impr_90d=2519,no
+/blog/incorporation-and-company-structures/starting-property-business-sole-trader-vs-ltd-vs-partnership,0,0,0,0,89,0,,0,no,,no
+/blog/incorporation-and-company-structures/substantial-shareholding-exemption-property-companies,43,2,22,1,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/substantial-shareholding-exemption-sse,148,0,49,0,319,0,,0,no,,no
+/blog/incorporation-and-company-structures/tax-efficient-property-investment-structure-guide,2,0,2,0,158,0,,0,no,,no
+/blog/incorporation-and-company-structures/time-pressure-extraction-divorce-illness-emigration-sequence-12-month-window,0,0,0,0,103,0,,0,no,,no
+/blog/incorporation-and-company-structures/togc-vat-property-letting-business,232,9,90,2,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/transfer-of-going-concern-togc-commercial-property-option-matching-vat-free,0,0,0,0,1568,8,,0,yes,gsc_clicks_90d=8; gsc_impr_90d=1568,no
+/blog/incorporation-and-company-structures/transfer-properties-to-company-phased-guide,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/transfer-property-out-of-limited-company-to-personal-name,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/transfer-property-to-limited-company-conveyancing,0,0,0,0,49,0,,0,no,,no
+/blog/incorporation-and-company-structures/transferring-a-business-out-of-a-company,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/transferring-fhl-portfolio-to-limited-company,0,0,0,0,69,3,,0,no,,no
+/blog/incorporation-and-company-structures/trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017,0,0,0,0,13,0,,0,no,,no
+/blog/incorporation-and-company-structures/types-of-property-company-structure-uk-guide,168,12,118,6,0,0,,0,yes,bing_clicks=12; bing_top3_queries=6,yes
+/blog/incorporation-and-company-structures/uk-landlord-buy-to-let-company-statistics,0,0,0,0,1,0,,0,no,,no
+/blog/incorporation-and-company-structures/uk-spv-incorporation-index-how-to-cite,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/understanding-the-taxation-of-fhls-in-a-company,0,0,0,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition,5,0,3,0,0,0,,0,no,,no
+/blog/incorporation-and-company-structures/when-does-hmrc-accept-rental-property-incorporation-business,0,0,0,0,320,8,,0,yes,gsc_clicks_90d=8,no
+/blog/incorporation-and-company-structures/when-does-property-holding-company-structure-make-sense-uk-landlords,0,0,0,0,92,1,,0,no,,no
+/blog/incorporation-and-company-structures/where-uk-property-companies-are-formed-regional-data,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk,127,10,105,1,5,0,,0,yes,bing_clicks=10,yes
+/blog/landlord-tax-essentials/a-complete-guide-to-hmrcs-digital-disclosure-service,53,1,12,0,257,2,,0,no,,no
+/blog/landlord-tax-essentials/a-complete-guide-to-periodic-tenancy,52,0,27,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know,22,3,13,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/accidental-landlord-taxes-a-complete-guide,0,0,0,0,2,0,,0,no,,no
+/blog/landlord-tax-essentials/agricultural-relief-for-inheritance-tax-key-benefits,0,0,0,0,45,1,Crawled - currently not indexed,0,no,,no
+/blog/landlord-tax-essentials/annual-investment-allowance-2025,273,3,53,1,1,1,,0,no,,no
+/blog/landlord-tax-essentials/are-rent-arrears-skyrocketing-and-squeezing-landlords,0,0,0,0,55,0,,0,no,,no
+/blog/landlord-tax-essentials/bare-trusts-and-lbtt-relief-availability,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/benefits-of-participating-in-the-let-property-campaign,0,0,0,0,34,2,,0,no,,no
+/blog/landlord-tax-essentials/bidding-wars-asking-rent-cap-landlord-marketing-compliance,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/btl-mortgage,209,24,157,6,1,0,,0,yes,bing_clicks=24; bing_top3_queries=6,yes
+/blog/landlord-tax-essentials/business-property-relief-rental-property-iht,0,0,0,0,247,2,,0,no,,no
+/blog/landlord-tax-essentials/capital-allowances-on-vans,759,56,333,2,1,0,,0,yes,bing_clicks=56,yes
+/blog/landlord-tax-essentials/capital-allowances-second-hand-vans,228,9,114,2,0,0,,0,no,,no
+/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk,352,32,240,2,0,0,,0,yes,bing_clicks=32,yes
+/blog/landlord-tax-essentials/case-laws,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/claim-home-office-deduction-landlords,0,0,0,0,61,1,,0,no,,no
+/blog/landlord-tax-essentials/comparing-online-and-paper-self-assessment-tax-returns,0,0,0,0,11,0,,0,no,,no
+/blog/landlord-tax-essentials/comparison-of-discretionary-trusts,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/cop9-contractual-disclosure-facility-landlord-tax-fraud-investigation,0,0,0,0,6,0,,0,no,,no
+/blog/landlord-tax-essentials/decent-homes-standard-prs-landlord-compliance-checklist,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/declaration-of-trust,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17,152,5,93,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving,0,0,0,0,644,5,,0,yes,gsc_clicks_90d=5; gsc_impr_90d=644,no
+/blog/landlord-tax-essentials/deposit-buy-to-let-2026-mortgage-requirements,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/discovery-assessment-time-limits-landlord-tax-enquiries-tma-1970-s29,234,3,73,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords,0,0,0,0,25,0,,0,no,,no
+/blog/landlord-tax-essentials/eicr-certificate-cost-landlords,13,0,11,0,167,4,,0,no,,no
+/blog/landlord-tax-essentials/end-tax-year-checklist-landlords-april-2026,0,0,0,0,0,0,,1,yes,leads_90d=1,no
+/blog/landlord-tax-essentials/energy-performance-certificates-epc,0,0,0,0,29,0,,0,no,,no
+/blog/landlord-tax-essentials/epc-c-2030-minimum-energy-efficiency-landlord-spending-cap,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/epc-certificate-cost-uk,14,2,13,0,304,0,,0,no,,no
+/blog/landlord-tax-essentials/epc-improvement-grant-schemes-landlords-eco4-bus-gbis,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/essential-guide-for-first-time-homebuyers-in-scotland,16,0,13,0,3108,17,,1,yes,gsc_clicks_90d=17; gsc_impr_90d=3108; leads_90d=1,no
+/blog/landlord-tax-essentials/excluded-property-trust-long-term-resident-settlor-pivot-landlords,0,0,0,0,126,0,,0,no,,no
+/blog/landlord-tax-essentials/farmland-supply-value-drops-is-iht-reform-to-blame,0,0,0,0,1,0,,0,no,,no
+/blog/landlord-tax-essentials/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics,0,0,0,0,31,0,,0,no,,no
+/blog/landlord-tax-essentials/fire-risk-assessment-cost,0,0,0,0,631,2,,0,yes,gsc_impr_90d=631,no
+/blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know,1,0,1,0,1,0,,0,no,,no
+/blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation,633,23,182,5,0,0,,0,yes,bing_clicks=23; bing_top3_queries=5,yes
+/blog/landlord-tax-essentials/gas-safety-certificate-cost,0,0,0,0,965,5,,0,yes,gsc_clicks_90d=5; gsc_impr_90d=965,no
+/blog/landlord-tax-essentials/gas-safety-certificates,0,0,0,0,904,4,,0,yes,gsc_impr_90d=904,no
+/blog/landlord-tax-essentials/gift-with-reservation-of-benefit,0,0,0,0,2420,43,Submitted and indexed,1,yes,gsc_clicks_90d=43; gsc_impr_90d=2420; leads_90d=1,no
+/blog/landlord-tax-essentials/higher-rates-of-land-transaction-tax-a-complete-guide,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/hmo-landlord-accounting-multi-tenant-property-tax,0,0,0,0,1,0,,0,no,,no
+/blog/landlord-tax-essentials/hmrc-closure-notice-mechanics-landlord-enquiries-tma-1970-s28a,5,0,4,0,20,0,,0,no,,no
+/blog/landlord-tax-essentials/hmrc-discovery-assessment-tma-1970-section-29-time-limits-landlords,8,0,3,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/hmrc-nudge-letter-response-playbook-landlords-property-income,0,0,0,0,293,5,,1,yes,gsc_clicks_90d=5; leads_90d=1,no
+/blog/landlord-tax-essentials/hmrc-penalties-late-landlord-tax-returns-2026,0,0,0,0,32,0,,0,no,,no
+/blog/landlord-tax-essentials/how-long-does-probate-take-in-the-uk,0,0,0,0,7,0,,0,no,,no
+/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide,29,0,17,0,246,1,,0,no,,no
+/blog/landlord-tax-essentials/how-to-book-an-epc,0,0,0,0,165,1,,0,no,,no
+/blog/landlord-tax-essentials/how-to-calculate-net-rental-income-after-all-costs-uk-guide,53,0,41,1,245,4,,0,no,,no
+/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide,258,5,133,1,0,0,,1,yes,leads_90d=1,no
+/blog/landlord-tax-essentials/iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation,0,0,0,0,3,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact,25,0,17,0,4,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-charitable-legacy-property-portfolio-36-percent-reduced-rate,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-gift-with-reservation-letting-children-paying-rent-mechanics,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-gifts-with-reservation-of-benefit-property,27,0,16,0,4,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-joint-ownership-property-spouse-exemption-transferable-allowances-jointly-tic-vs-jt,71,7,52,0,391,3,,0,no,,no
+/blog/landlord-tax-essentials/iht-lifetime-gifts-7-year-rule-property-taper,13,1,10,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-long-term-resident-test-section-6a-tail-period-table-landlords,5,1,3,0,560,3,,0,yes,gsc_impr_90d=560,no
+/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards,0,0,0,0,5,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios,0,0,0,0,5,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-spouse-exemption-long-term-resident-section-18-section-267zc-election,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/iht-spouse-exemption-second-death-property-portfolio-window-mechanics,0,0,0,0,4,0,,0,no,,no
+/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide,392,47,257,8,38,0,,0,yes,bing_clicks=47; bing_top3_queries=8,yes
+/blog/landlord-tax-essentials/inheritance-tax-a-brief-summary,0,0,0,0,30,0,,0,no,,no
+/blog/landlord-tax-essentials/inheritance-tax-and-the-family-home,1,0,1,0,8,0,,0,no,,no
+/blog/landlord-tax-essentials/inheritance-tax-lifetime-gifts-vs-transfer-at-death,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide,35,3,22,2,1,0,Submitted and indexed,2,yes,leads_90d=2,no
+/blog/landlord-tax-essentials/inheriting-a-house-in-the-uk,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords,37,1,17,0,152,4,,0,no,,no
+/blog/landlord-tax-essentials/jointly-owned-property,0,0,0,0,314,2,,0,no,,no
+/blog/landlord-tax-essentials/know-about-let-property-campaign,0,0,0,0,48,0,,0,no,,no
+/blog/landlord-tax-essentials/land-transaction-tax-a-complete-guide,1045,12,228,2,4436,19,,0,yes,bing_clicks=12; gsc_clicks_90d=19; gsc_impr_90d=4436,no
+/blog/landlord-tax-essentials/landlord-accounting-spreadsheet-template-free-excel-guide,14,1,12,0,326,0,,0,no,,no
+/blog/landlord-tax-essentials/landlord-electrical-safety-certificate,0,0,0,0,1319,3,,0,yes,gsc_impr_90d=1319,no
+/blog/landlord-tax-essentials/landlord-insurance-guide-types-costs-tax-deductible,8,0,8,0,9,0,,0,no,,no
+/blog/landlord-tax-essentials/landlord-licensing-explained,0,0,0,0,121,0,,0,no,,no
+/blog/landlord-tax-essentials/landlord-tax-calendar-2026-27-key-dates,0,0,0,0,1167,15,,0,yes,gsc_clicks_90d=15; gsc_impr_90d=1167,no
+/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide,48,1,39,1,33,0,Crawled - currently not indexed,1,yes,leads_90d=1,no
+/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026,1186,17,339,5,1234,10,,0,yes,bing_clicks=17; bing_top3_queries=5; gsc_clicks_90d=10; gsc_impr_90d=1234,no
+/blog/landlord-tax-essentials/landlord-vat-registration-when-required,58,8,47,0,9,0,Submitted and indexed,2,yes,leads_90d=2,no
+/blog/landlord-tax-essentials/landlords-considering-selling-portfolio-rra-2025-tax-implications,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/late-filing-and-late-payment-penalties,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/lbtt-review-in-scotland,24,1,16,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026,0,0,0,0,727,7,,0,yes,gsc_clicks_90d=7; gsc_impr_90d=727,no
+/blog/landlord-tax-essentials/let-property-campaign-formal-disclosure-route-landlords-undisclosed-rental,0,0,0,0,44,0,,0,no,,no
+/blog/landlord-tax-essentials/let-property-campaign-penalty-calculator,27,0,16,0,35,0,,0,no,,no
+/blog/landlord-tax-essentials/let-property-campaign-why-voluntary-disclosure-makes-sense,0,0,0,0,1,0,,0,no,,no
+/blog/landlord-tax-essentials/limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence,0,0,0,0,50,0,,0,no,,no
+/blog/landlord-tax-essentials/ltt-calculator,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/ltt-higher-rates-for-spouses-minor-children-and-trust-interests,0,0,0,0,85,1,,0,no,,no
+/blog/landlord-tax-essentials/ltt-refunds-for-derelict-or-uninhabitable-properties,0,0,0,0,285,5,,0,yes,gsc_clicks_90d=5,no
+/blog/landlord-tax-essentials/making-a-disclosure-using-the-worldwide-disclosure-facility,7,0,3,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/maximising-business-relief-to-reduce-inheritance-tax,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/mees-epc-rules-what-your-landlords-think,0,0,0,0,49,2,,0,no,,no
+/blog/landlord-tax-essentials/mees-regulations-landlords,0,0,0,0,146,1,,0,no,,no
+/blog/landlord-tax-essentials/missed-taxes-let-property-campaign-to-the-rescue,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/national-insurance-on-rental-income,2,0,2,0,824,5,,0,yes,gsc_clicks_90d=5; gsc_impr_90d=824,no
+/blog/landlord-tax-essentials/paye-penalties-for-late-submission-and-filing,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/penalties-not-declaring-rental-income-hmrc,17,4,10,0,97,0,Submitted and indexed,2,yes,leads_90d=2,no
+/blog/landlord-tax-essentials/pension-decumulation-property-portfolio-iht-2027-cohort-sequence,0,0,0,0,1,0,,0,no,,no
+/blog/landlord-tax-essentials/pension-iht-april-2027-landlord-estate-planning,0,0,0,0,5,0,,0,no,,no
+/blog/landlord-tax-essentials/periodic-tenancy-default-ast-conversion-mechanics,18,0,13,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/pet-rights-tenancy-landlord-refusal-reasonable-grounds,24,1,16,0,428,3,,0,no,,no
+/blog/landlord-tax-essentials/pre-letting-expenses-landlord-claim-before-first-tenant,37,4,25,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords,689,64,426,5,167,2,Submitted and indexed,2,yes,bing_clicks=64; bing_top3_queries=5; leads_90d=2,no
+/blog/landlord-tax-essentials/property-income-allowance-1000-exemption-vs-expenses,162,20,107,2,709,3,,0,yes,bing_clicks=20; gsc_impr_90d=709,no
+/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026,57,1,47,0,1,0,,0,no,,no
+/blog/landlord-tax-essentials/property-investment-vs-stocks-shares-tax-comparison,0,0,0,0,23,0,,0,no,,no
+/blog/landlord-tax-essentials/prs-database-landlord-ombudsman-registration-requirements,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/putting-a-rental-property-into-a-trust,1,1,1,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/reasonable-excuse-case-law-landlord-penalties-perrin-martland,0,0,0,0,207,0,,0,no,,no
+/blog/landlord-tax-essentials/record-keeping-landlords-what-track-how-long-keep,71,4,51,0,599,16,,0,yes,gsc_clicks_90d=16; gsc_impr_90d=599,no
+/blog/landlord-tax-essentials/record-retention-discipline-voluntary-disclosure-failure-to-notify-landlords,2,0,2,0,7,0,,0,no,,no
+/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords,18,1,16,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/renters-rights-act-2026-tax-implications-landlords,1,0,1,0,21,0,,0,no,,no
+/blog/landlord-tax-essentials/renters-rights-act-periodic-tenancy-switch-landlord-obligations,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/renters-rights-act-possession-grounds-reform-section-8-landlords,7,0,5,0,21,0,,0,no,,no
+/blog/landlord-tax-essentials/renters-rights-act-property-redress-scheme-mandatory-enrolment-landlords,38,0,13,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/renters-rights-act-rent-increase-section-13-tribunal-route,57,3,46,1,0,0,,0,no,,no
+/blog/landlord-tax-essentials/renters-rights-act-section-21-abolition-landlord-operational-mechanics,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/residence-nil-rate-band-frozen,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/rra-2026-whats-in-force-letting-agents,0,0,0,0,87,0,,0,no,,no
+/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide,2976,237,841,25,488,0,Submitted and indexed,2,yes,bing_clicks=237; bing_top3_queries=25; leads_90d=2,no
+/blog/landlord-tax-essentials/schedule-24-fa-2007-careless-deliberate-penalty-mitigation-landlords,34,0,11,0,312,1,,0,no,,no
+/blog/landlord-tax-essentials/schedule-24-fa-2007-penalty-behaviour-categories-landlord-enquiries,191,0,40,0,589,1,,0,yes,gsc_impr_90d=589,no
+/blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers,8,0,7,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/scottish-lbtt-first-time-buyer-relief-eligibility-mechanics,0,0,0,0,15,0,,0,no,,no
+/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide,166,4,83,2,19,0,,0,no,,no
+/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process,104,5,59,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025,59,1,43,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/sdlt-leasehold-extension-vs-fresh-purchase,40,7,24,2,212,0,,0,no,,no
+/blog/landlord-tax-essentials/sdlt-mixed-use-property-classification,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/sdlt-on-probate-property-transfers,19,1,12,0,241,2,,0,no,,no
+/blog/landlord-tax-essentials/sdlt-refund-scams-how-to-avoid,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/sdlt-shared-ownership-staircasing,14,1,10,0,215,0,,0,no,,no
+/blog/landlord-tax-essentials/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules,3,0,2,0,17,0,,0,no,,no
+/blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026,20,0,3,0,63,0,,0,no,,no
+/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge,0,0,0,0,4,0,,0,no,,no
+/blog/landlord-tax-essentials/tenancy-agreement-template-rra-2025-compliant-clauses,0,0,0,0,61,0,,0,no,,no
+/blog/landlord-tax-essentials/tenancy-deposits-landlord-tax-position,0,0,0,0,172,2,,0,no,,no
+/blog/landlord-tax-essentials/tribunal-appeal-process-landlords-first-tier-tribunal-tax-chamber,0,0,0,0,6,0,,0,no,,no
+/blog/landlord-tax-essentials/understanding-alternative-finance-arrangements-under-lbtt,0,0,0,0,133,0,,0,no,,no
+/blog/landlord-tax-essentials/unmarried-co-owners-property-tax-rental-income-split-actual-beneficial-share,0,0,0,0,255,4,,0,no,,no
+/blog/landlord-tax-essentials/vat-dilapidations-payments-tenant-landlord-vat-treatment-supply-or-damages,68,4,42,0,1097,10,,0,yes,gsc_clicks_90d=10; gsc_impr_90d=1097,no
+/blog/landlord-tax-essentials/vat-on-rental-income-residential-vs-commercial-landlord-vat-status-decision-framework,362,16,227,2,4011,24,,0,yes,bing_clicks=16; gsc_clicks_90d=24; gsc_impr_90d=4011,no
+/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers,273,6,94,2,0,0,,0,no,,no
+/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland,0,0,0,0,0,0,,0,no,,no
+/blog/landlord-tax-essentials/welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics,4,0,3,0,96,0,,0,no,,no
+/blog/landlord-tax-essentials/what-repairs-can-landlords-deduct-from-rental-income,579,76,403,4,143,0,,0,yes,bing_clicks=76,no
+/blog/landlord-tax-essentials/worldwide-disclosure-facility-offshore-landlord-catch-up-fa-2017-ftc,0,0,0,0,192,1,,0,no,,no
+/blog/making-tax-digital-mtd,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026,130,3,51,2,428,6,Crawled - currently not indexed,2,yes,gsc_clicks_90d=6; leads_90d=2,no
+/blog/making-tax-digital-mtd/government-to-implement-mtd-for-it-with-lower-threshold,0,0,0,0,4,0,,0,no,,no
+/blog/making-tax-digital-mtd/heres-how-you-can-exit-mtd-if-your-income-falls,0,0,0,0,105,2,,0,no,,no
+/blog/making-tax-digital-mtd/how-making-tax-digital-affects-limited-companies,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide,186,6,61,1,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/how-to-switch-self-assessment-mtd-property-income,0,0,0,0,10,0,,0,no,,no
+/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026,32,1,4,0,1081,7,,0,yes,gsc_clicks_90d=7; gsc_impr_90d=1081,no
+/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/making-tax-digital-major-self-assessment-overhaul-ahead,0,0,0,0,6,0,,0,no,,no
+/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide,345,47,229,5,342,2,Submitted and indexed,0,yes,bing_clicks=47; bing_top3_queries=5,no
+/blog/making-tax-digital-mtd/mtd-itsa-accidental-landlords-do-i-need-to-file-digitally,0,0,0,0,9,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-agent-services-account-asa-authorisation-walkthrough,87,0,8,0,90,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-choosing-software-by-landlord-scenario-decision-tree,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-digital-records-receipts-bank-feeds-what-counts-evidence,0,0,0,0,28,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-exit-rule-income-drops-three-year-test,0,0,0,0,12,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-foreign-property-income-quarterly-reporting-rules,200,36,130,3,331,6,,0,yes,bing_clicks=36; gsc_clicks_90d=6,no
+/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split,0,0,0,0,66,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-late-submission-points-late-payment-15-30-31-worked,0,0,0,0,27,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next,0,0,0,0,13,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-letting-agent-managed-portfolio-who-files-quarterly,0,0,0,0,2,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-major-tax-reform-context-policy-history,0,0,0,0,7,1,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-pension-funds-sipp-ssas-holding-rental-property-treatment,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-pilot-trial-volunteer-2025-26-experience,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net,0,0,0,0,37,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-spreadsheets-with-bridging-software-allowed-mechanics,0,0,0,0,41,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-stopping-letting-mid-year-cessation-quarterly-mechanics,3,0,3,0,31,1,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-itsa-vs-limited-company-cohort-different-rules,1,0,1,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-made-simple-for-landlords-with-jointly-owned-properties,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-penalties-exemptions-and-what-to-watch,0,0,0,0,0,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline,0,0,0,0,14,0,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords,0,0,0,0,40,1,,0,no,,no
+/blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide,422,55,274,8,44,2,Submitted and indexed,2,yes,bing_clicks=55; bing_top3_queries=8; leads_90d=2,yes
+/blog/making-tax-digital-mtd/mtd-record-keeping-landlords-digital-requirements,51,5,36,0,12,0,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions,1192,82,369,14,921,5,Submitted and indexed,0,yes,bing_clicks=82; bing_top3_queries=14; gsc_clicks_90d=5; gsc_impr_90d=921,no
+/blog/making-tax-digital-mtd/mtd-software-landlords-free-vs-paid-options-compared,0,0,0,0,885,3,,0,yes,gsc_impr_90d=885,no
+/blog/making-tax-digital-mtd/property-accounting-software-uk-2026,0,0,0,0,3,0,,0,no,,no
+/blog/making-tax-digital-mtd/what-is-qualifying-income-for-mtd,4,0,3,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax,0,0,0,0,14,0,,0,no,,no
+/blog/non-resident-landlord-tax/are-you-leaving-the-uk-permanently,0,0,0,0,6,0,,0,no,,no
+/blog/non-resident-landlord-tax/arriving-in-the-uk,0,0,0,0,121,4,,0,no,,no
+/blog/non-resident-landlord-tax/automatic-exchange-of-information,0,0,0,0,531,0,,0,yes,gsc_impr_90d=531,no
+/blog/non-resident-landlord-tax/cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms,0,0,0,0,28,0,,0,no,,no
+/blog/non-resident-landlord-tax/changes-nrl-companies,5,0,3,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/consequences-for-roe-non-compliance,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/do-i-have-to-pay-uk-tax,0,0,0,0,26,0,,0,no,,no
+/blog/non-resident-landlord-tax/dont-pay-twice-an-introduction-to-tax-treaties,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/double-taxation-agreement-uk-and-isle-of-man,2,0,2,0,3,0,,0,no,,no
+/blog/non-resident-landlord-tax/double-taxation-convention-dta-uk-and-spain,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/double-taxation-convention-uk-and-india,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/dta-tie-breaker-test-dual-residence-property-owners,0,0,0,0,1565,23,,0,yes,gsc_clicks_90d=23; gsc_impr_90d=1565,no
+/blog/non-resident-landlord-tax/fig-election-mechanics-per-year-claim-personal-allowance-cgt-aea-cost,0,0,0,0,8,0,,0,no,,no
+/blog/non-resident-landlord-tax/fig-regime-qualifying-new-resident-10-year-non-residence-test-landlords,0,0,0,0,16,0,,0,no,,no
+/blog/non-resident-landlord-tax/fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/foreign-tax-credit-uk-property-overseas-landlords,0,0,0,0,46,0,,0,no,,no
+/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test,10,1,7,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/moving-to-australia-uk-rental-property-tax-pathway,0,0,0,0,4,0,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/non-resident-landlord-tax/moving-to-dubai-uk-rental-property-tax-pathway,0,0,0,0,20,1,,0,no,,no
+/blog/non-resident-landlord-tax/non-dom-reform-april-2025-fig-regime-property-investors,0,0,0,0,30,0,,0,no,,no
+/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide,727,19,395,3,0,0,,1,yes,bing_clicks=19; leads_90d=1,yes
+/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting,427,15,256,1,0,0,,0,yes,bing_clicks=15,yes
+/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide,2981,47,648,8,5869,49,Submitted and indexed,1,yes,bing_clicks=47; bing_top3_queries=8; gsc_clicks_90d=49; gsc_impr_90d=5869; leads_90d=1,no
+/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements,736,17,293,3,1,0,,0,yes,bing_clicks=17,yes
+/blog/non-resident-landlord-tax/non-resident-landlords-uk-inheritance-tax-exposure,0,0,0,0,224,4,,0,no,,no
+/blog/non-resident-landlord-tax/nrcgt-indirect-disposal-property-rich-companies-shares,61,1,43,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide,3326,142,542,36,328,1,,0,yes,bing_clicks=142; bing_top3_queries=36,no
+/blog/non-resident-landlord-tax/nrl-scheme-letting-agents-quarterly-returns-mechanics,121,1,54,1,4,0,,0,no,,no
+/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction,94,4,61,1,33,0,,0,no,,no
+/blog/non-resident-landlord-tax/offshore-company-owning-uk-property,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/returning-to-uk-after-non-residence-property-portfolio,0,0,0,0,161,9,,0,yes,gsc_clicks_90d=9,no
+/blog/non-resident-landlord-tax/returning-to-uk-after-non-residence-section-10a-recapture-fig-eligibility,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge,12,0,11,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/split-year-treatment-cases-1-8-landlord-departure-arrival,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree,0,0,0,0,36,1,,0,no,,no
+/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide,0,0,0,0,23,0,,0,no,,no
+/blog/non-resident-landlord-tax/temporary-repatriation-facility-trf-designation-mechanics-12-15-percent-rates,2,0,1,0,36,0,,0,no,,no
+/blog/non-resident-landlord-tax/trf-qualifying-overseas-capital-what-can-be-designated-non-doms,0,0,0,0,49,3,,0,no,,no
+/blog/non-resident-landlord-tax/uk-france-dta-property-rental-income-cgt,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/uk-india-dta-property-rental-income-treatment,0,0,0,0,267,3,,0,no,,no
+/blog/non-resident-landlord-tax/uk-italy-dta-tie-breaker-property-residence-disputes,5,0,5,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/uk-jersey-guernsey-isle-of-man-dtas-property-investors,8,1,8,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained,67,2,52,0,20,0,,0,no,,no
+/blog/non-resident-landlord-tax/uk-spain-dta-property-uk-resident-spanish-holiday-home,1,0,1,0,4,0,,0,no,,no
+/blog/non-resident-landlord-tax/uk-uae-dta-property-no-tax-jurisdiction-asymmetry,0,0,0,0,0,0,,0,no,,no
+/blog/non-resident-landlord-tax/uk-us-dta-property-tax-implications-landlords,0,0,0,0,3,0,,0,no,,no
+/blog/portfolio-management,0,0,0,0,47,0,,0,no,,no
+/blog/portfolio-management/btl-investment-plymouth-cardiff-landlord-hotspots,0,0,0,0,192,1,,0,no,,no
+/blog/portfolio-management/budgeting-voids-repairs-rental-cash-flow,0,0,0,0,30,1,,0,no,,no
+/blog/portfolio-management/buy-to-let-market-sees-record-high-returns,0,0,0,0,1,0,,0,no,,no
+/blog/portfolio-management/buying-commercial-property-through-a-sipp,4,0,4,0,1,0,,0,no,,no
+/blog/portfolio-management/how-to-scale-buy-to-let-portfolio-1-to-10-properties,0,0,0,0,0,0,,0,no,,no
+/blog/portfolio-management/how-to-value-rental-property-portfolio-tax-purposes,0,0,0,0,550,1,,0,yes,gsc_impr_90d=550,no
+/blog/portfolio-management/multi-property-landlord-tax-planning-strategies-5-plus-properties,0,0,0,0,309,0,,0,no,,no
+/blog/portfolio-management/portfolio-landlord-tax-planning-strategy-guide,0,0,0,0,185,1,,0,no,,no
+/blog/portfolio-management/property-investment-benchmarks-uk-2026-good-yield,189,13,140,1,138,0,,0,yes,bing_clicks=13,no
+/blog/portfolio-management/property-investment-exit-strategy-planning-guide,2,1,2,0,19,0,,0,no,,no
+/blog/portfolio-management/property-portfolio-accounting-tracking-profitability,0,0,0,0,31,0,,0,no,,no
+/blog/portfolio-management/property-portfolio-review-checklist-landlords-2026,0,0,0,0,2,0,,0,no,,no
+/blog/portfolio-management/reduce-void-periods-rental-properties-uk-landlords,0,0,0,0,37,0,,0,no,,no
+/blog/portfolio-management/refinancing-rental-property-when-does-it-make-financial-sense,1,0,1,0,220,1,,0,no,,no
+/blog/portfolio-management/rental-yield-vs-roi-property-investors-uk,0,0,0,0,0,0,,0,no,,no
+/blog/portfolio-management/retirement-planning-spousal-rental-income-shift-form-17-marginal-rate-restructure,0,0,0,0,0,0,,0,no,,no
+/blog/portfolio-management/track-rental-property-profitability-per-property-pl-guide,0,0,0,0,0,0,,0,no,,no
+/blog/portfolio-management/what-is-good-gross-yield-buy-to-let-property-2026,0,0,0,0,0,0,,0,no,,no
+/blog/portfolio-management/when-to-sell-rental-property-key-indicators-landlords,0,0,0,0,2031,7,,0,yes,gsc_clicks_90d=7; gsc_impr_90d=2031,no
+/blog/property-accountant-services,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/3m-mortgage-fraud-convicts-accountant-and-financial-adviser,0,0,0,0,49,1,,0,no,,no
+/blog/property-accountant-services/a-complete-guide-to-uk-payroll-taxes-and-deductions-for-employers,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/accounting-services-for-property-owners,4,0,2,0,83,0,,0,no,,no
+/blog/property-accountant-services/beginners-guide-to-cis-verification-in-the-uk,0,0,0,0,33,0,,0,no,,no
+/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services,0,0,0,0,1016,5,,0,yes,gsc_clicks_90d=5; gsc_impr_90d=1016,no
+/blog/property-accountant-services/brighton-property-accountant-specialist-tax-services,0,0,0,0,3,0,,0,no,,no
+/blog/property-accountant-services/buy-to-let-accountants-near-me-guide,0,0,0,0,20,0,,0,no,,no
+/blog/property-accountant-services/cambridge-property-accountant-landlord-tax-services,0,0,0,0,22,0,,0,no,,no
+/blog/property-accountant-services/can-you-claim-aia-on-second-hand-assets,366,37,223,9,860,0,,0,yes,bing_clicks=37; bing_top3_queries=9; gsc_impr_90d=860,no
+/blog/property-accountant-services/change-landlord-accountants,0,0,0,0,32,0,,0,no,,no
+/blog/property-accountant-services/cheltenham-property-accountant-landlord-tax-services,0,0,0,0,6,0,,0,no,,no
+/blog/property-accountant-services/coventry-property-accountant,0,0,0,0,129,2,,0,no,,no
+/blog/property-accountant-services/derby-property-accountant-specialist-tax-services-local-landlords,0,0,0,0,35,0,,0,no,,no
+/blog/property-accountant-services/ensuring-compliance-with-uk-payroll-reporting-regulations,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/essential-bookkeeping-tips-for-sole-traders,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/essential-guidelines-for-running-payroll-effectively,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/exeter-property-accountant-specialist-tax-services,0,0,0,0,31,0,,0,no,,no
+/blog/property-accountant-services/file-dormant-accounts-a-complete-guide,0,0,0,0,29,0,,0,no,,no
+/blog/property-accountant-services/hmrcs-loan-charge-settling-disguised-remuneration-schemes,0,0,0,0,93,3,,0,no,,no
+/blog/property-accountant-services/how-much-does-a-property-accountant-cost,5,0,3,0,4830,73,Submitted and indexed,1,yes,gsc_clicks_90d=73; gsc_impr_90d=4830; leads_90d=1,no
+/blog/property-accountant-services/how-to-choose-a-property-accountant,0,0,0,0,3,0,,0,no,,no
+/blog/property-accountant-services/ipswich-property-accountant-tax-services-local-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/liverpool-property-accountant-tax-services-landlords,0,0,0,0,215,1,,0,no,,no
+/blog/property-accountant-services/newcastle-property-accountant-landlord-tax-services,0,0,0,0,26,0,,0,no,,no
+/blog/property-accountant-services/peterborough-property-accountant-specialist-tax-services,0,0,0,0,7,0,,0,no,,no
+/blog/property-accountant-services/plymouth-property-accountant-local-landlord-tax-services,0,0,0,0,39,0,,0,no,,no
+/blog/property-accountant-services/portsmouth-property-accountant-landlord-tax-services,0,0,0,0,76,1,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/property-accountant-services/property-accountant-aberdeen-landlords-tax-services,0,0,0,0,8,1,Crawled - currently not indexed,1,yes,leads_90d=1,no
+/blog/property-accountant-services/property-accountant-bath-expert-tax-services-local-landlords,0,0,0,0,91,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-bournemouth-landlords-tax-services,0,0,0,0,105,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-dundee-landlord-tax-services,0,0,0,0,2,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-edinburgh-landlord-tax-services,0,0,0,0,68,1,Crawled - currently not indexed,2,yes,leads_90d=2,no
+/blog/property-accountant-services/property-accountant-glasgow,0,0,0,0,111,0,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/property-accountant-services/property-accountant-leicester,0,0,0,0,273,3,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/property-accountant-services/property-accountant-middlesbrough-specialist-tax-services,0,0,0,0,83,1,,0,no,,no
+/blog/property-accountant-services/property-accountant-milton-keynes-landlord-guide,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-near-me,0,0,0,0,33,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-northampton-expert-services,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-norwich-landlords-2026,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-nottingham-landlords,0,0,0,0,36,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-oxford-guide-local-landlords,0,0,0,0,187,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-preston-expert-tax-services-local-landlords,0,0,0,0,36,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-reading-specialist-tax-services,0,0,0,0,7,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-stockport-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-swansea-landlord-tax-services,0,0,0,0,116,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-warrington-landlord-services-2026,0,0,0,0,87,0,,0,no,,no
+/blog/property-accountant-services/property-accountant-wolverhampton-specialist-tax-services,0,0,0,0,77,0,,0,no,,no
+/blog/property-accountant-services/property-management-accounting-services,0,0,0,0,28,1,,0,no,,no
+/blog/property-accountant-services/slough-property-accountant-landlord-tax-services,0,0,0,0,37,0,,0,no,,no
+/blog/property-accountant-services/sunderland-property-accountant-specialist-tax-services,0,0,0,0,43,1,Crawled - currently not indexed,1,yes,leads_90d=1,no
+/blog/property-accountant-services/swindon-property-accountant-specialist-tax-services,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/vat-calculation-calculator,0,0,0,0,233,1,,0,no,,no
+/blog/property-accountant-services/vat-how-to-calculate,0,0,0,0,114,0,,0,no,,no
+/blog/property-accountant-services/vat-tax-calculator,0,0,0,0,15,1,,0,no,,no
+/blog/property-accountant-services/what-does-a-property-accountant-do,0,0,0,0,200,0,Submitted and indexed,0,no,,no
+/blog/property-accountant-services/why-cardiff-landlords-need-specialist-property-accountant-2026,0,0,0,0,62,0,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/property-accountant-services/why-luton-landlords-need-specialist-property-accountant-2026,0,0,0,0,109,0,,0,no,,no
+/blog/property-accountant-services/why-sheffield-landlords-need-property-accountant,0,0,0,0,0,0,,0,no,,no
+/blog/property-accountant-services/why-southampton-landlords-need-property-accountant,0,0,0,0,68,0,,0,no,,no
+/blog/property-accountant-services/york-property-accountant-landlord-tax-services,0,0,0,0,9,0,,0,no,,no
+/blog/property-finance,0,0,0,0,21,0,,0,no,,no
+/blog/property-finance/bridging-finance-for-auction-purchases,0,0,0,0,41,0,,0,no,,no
+/blog/property-finance/bridging-finance-for-below-market-value,0,0,0,0,70,2,,0,no,,no
+/blog/property-finance/bridging-finance-for-buy-to-let,0,0,0,0,116,0,,0,no,,no
+/blog/property-finance/bridging-finance-for-chain-breaks,0,0,0,0,19,0,,0,no,,no
+/blog/property-finance/bridging-finance-for-commercial-property,0,0,0,0,61,0,,0,no,,no
+/blog/property-finance/bridging-finance-for-hmo-conversions,0,0,0,0,59,1,,0,no,,no
+/blog/property-finance/bridging-finance-for-land-purchase,0,0,0,0,25,0,,0,no,,no
+/blog/property-finance/bridging-finance-for-refurbishment,0,0,0,0,33,0,,0,no,,no
+/blog/property-finance/bridging-loan-lenders,0,0,0,0,24,0,,0,no,,no
+/blog/property-finance/bridging-loan-rates,3,0,2,0,1823,2,,0,yes,gsc_impr_90d=1823,no
+/blog/property-finance/bridging-loans-guide,0,0,0,0,43,0,,0,no,,no
+/blog/property-finance/buy-to-let-mortgage-lenders,0,0,0,0,270,0,,0,no,,no
+/blog/property-finance/buy-to-let-mortgage-rates,0,0,0,0,602,0,,0,yes,gsc_impr_90d=602,no
+/blog/property-finance/buy-to-let-mortgages-guide,0,0,0,0,127,0,,0,no,,no
+/blog/property-finance/capital-raising-btl-remortgage-equity-release,0,0,0,0,46,0,,1,yes,leads_90d=1,no
+/blog/property-finance/commercial-mortgage-rates,0,0,0,0,310,0,,0,no,,no
+/blog/property-finance/commercial-mortgages-guide,0,0,0,0,421,4,,0,no,,no
+/blog/property-finance/day-one-remortgage-limited-company,0,0,0,0,138,2,,0,no,,no
+/blog/property-finance/development-exit-finance,0,0,0,0,17,0,,0,no,,no
+/blog/property-finance/development-finance-guide,0,0,0,0,49,0,,0,no,,no
+/blog/property-finance/expat-non-resident-landlord-mortgages,0,0,0,0,123,2,,0,no,,no
+/blog/property-finance/financing-a-property-development-tax,0,0,0,0,138,1,,0,no,,no
+/blog/property-finance/first-time-landlord-mortgage,0,0,0,0,192,0,,0,no,,no
+/blog/property-finance/hmo-mortgages,0,0,0,0,88,0,,0,no,,no
+/blog/property-finance/holiday-let-mortgages,0,0,0,0,169,0,,0,no,,no
+/blog/property-finance/is-bridging-loan-interest-tax-deductible,0,0,0,0,169,8,,0,yes,gsc_clicks_90d=8,no
+/blog/property-finance/let-to-buy-mortgages,0,0,0,0,27,0,,0,no,,no
+/blog/property-finance/mezzanine-and-jv-finance,0,0,0,0,27,0,,0,no,,no
+/blog/property-finance/portfolio-landlord-mortgages-guide,0,0,0,0,79,0,,0,no,,no
+/blog/property-finance/self-employed-buy-to-let-mortgage,0,0,0,0,128,0,,0,no,,no
+/blog/property-finance/semi-commercial-mortgages,0,0,0,0,97,2,,0,no,,no
+/blog/property-finance/sic-code-for-an-spv-property-company,0,0,0,0,198,2,,0,no,,no
+/blog/property-finance/spv-mortgage-no-income-newly-formed,0,0,0,0,106,1,,0,no,,no
+/blog/property-finance/spv-mortgages-explained,0,0,0,0,644,7,Submitted and indexed,0,yes,gsc_clicks_90d=7; gsc_impr_90d=644,no
+/blog/property-types-and-specialist-tax,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/a-complete-guide-on-community-infrastructure-levy-cil,1518,30,298,2,1818,16,,0,yes,bing_clicks=30; gsc_clicks_90d=16; gsc_impr_90d=1818,no
+/blog/property-types-and-specialist-tax/a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits,0,0,0,0,28,0,,0,no,,no
+/blog/property-types-and-specialist-tax/a-complete-guide-to-5-sdlt-surcharge-refund-claims,0,0,0,0,11,0,,0,no,,no
+/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-refund,57,1,34,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-relief-for-probate-properties,6,0,3,0,191,3,,0,no,,no
+/blog/property-types-and-specialist-tax/a-short-guide-planning-permission-in-uk,0,0,0,0,48,1,,0,no,,no
+/blog/property-types-and-specialist-tax/abolishment-of-multiple-dwelling-relief,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/abolition-of-multiple-dwellings-relief-mdr-raises-concerns,0,0,0,0,19,0,,0,no,,no
+/blog/property-types-and-specialist-tax/agricultural-property-relief-mixed-estate-1m-cap,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/aia-1m-cap-property-investors-allocation-strategy-and-association-rules-cta-2010,0,0,0,0,9,0,,0,no,,no
+/blog/property-types-and-specialist-tax/aia-allowance-uk-property-investors,27,0,20,0,55,0,,0,no,,no
+/blog/property-types-and-specialist-tax/aia-capital-allowances,11,0,7,0,78,3,,0,no,,no
+/blog/property-types-and-specialist-tax/air-bnb-and-post-covid,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/airbnb-landlords,0,0,0,0,7,0,,0,no,,no
+/blog/property-types-and-specialist-tax/airbnb-tax-uk-short-term-rental-income-taxed,802,37,294,8,0,0,,0,yes,bing_clicks=37; bing_top3_queries=8,yes
+/blog/property-types-and-specialist-tax/annual-tax-on-enveloped-dwellings-pro-and-cons,0,0,0,0,311,4,,0,no,,no
+/blog/property-types-and-specialist-tax/anti-fragmentation-rule-section-356oh-section-517h-multi-entity-developer-scheme-defeat,0,0,0,0,18,0,,0,no,,no
+/blog/property-types-and-specialist-tax/applicable-sdlt-rates-for-first-time-buyers,73,1,47,0,20,1,,0,no,,no
+/blog/property-types-and-specialist-tax/archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt,0,0,0,0,34,1,,0,no,,no
+/blog/property-types-and-specialist-tax/are-you-a-property-investor-or-developer,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/artificial-separation-and-vat-key-insights-from-cases,0,0,0,0,240,1,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/property-types-and-specialist-tax/ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal,0,0,0,0,13,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ated-penalties-and-appeals,5,0,3,0,4,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ated-rates,64,1,34,1,37,1,,0,no,,no
+/blog/property-types-and-specialist-tax/ated-relief-clawback-occupation-by-a-non-qualifying-occupation,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ated-relief-for-related-persons-and-market-rent-a-complete-guide,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ated-return-amendment-guide-when-how-tax-tips,0,0,0,0,16,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ated-valuation-date,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way,0,0,0,0,10,0,,0,no,,no
+/blog/property-types-and-specialist-tax/avoiding-common-mistakes-with-enveloped-dwelling-tax,0,0,0,0,53,1,,0,no,,no
+/blog/property-types-and-specialist-tax/badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords,11,3,10,0,94,3,,0,no,,no
+/blog/property-types-and-specialist-tax/balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics,99,4,64,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/big-tax-changes-ahead-for-furnished-holiday-lettings,0,0,0,0,30,0,,0,no,,no
+/blog/property-types-and-specialist-tax/booking-com-a-complete-guide-for-the-hosts,265,20,151,1,525,4,,0,yes,bing_clicks=20; gsc_impr_90d=525,no
+/blog/property-types-and-specialist-tax/brief-introduction-to-commercial-property-service-charge-accounts,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/building-safety-act-2022-cladding-cost-recovery-leaseholder-protections-landlords,18,0,16,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowance-aia-property-landlords,4,0,3,0,402,4,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-commercial-property-what-can-claim,158,11,97,2,0,0,,0,yes,bing_clicks=11,yes
+/blog/property-types-and-specialist-tax/capital-allowances-examples,94,3,63,1,4,0,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-care-homes,0,0,0,0,113,2,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-dental-practices,0,0,0,0,39,0,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-gp-surgeries,0,0,0,0,53,3,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-hospitality,0,0,0,0,1,0,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-hotels,0,0,0,0,219,4,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-industrial-units,0,0,0,0,265,7,,0,yes,gsc_clicks_90d=7,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-offices,0,0,0,0,132,2,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-pubs-and-restaurants,0,0,0,0,73,1,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-for-student-accommodation,0,0,0,0,39,1,,0,no,,no
+/blog/property-types-and-specialist-tax/capital-allowances-furnished-holiday-lets,0,0,0,0,390,8,,0,yes,gsc_clicks_90d=8,no
+/blog/property-types-and-specialist-tax/capital-allowances-on-cars-and-vehicles,35,1,23,0,1437,8,,0,yes,gsc_clicks_90d=8; gsc_impr_90d=1437,no
+/blog/property-types-and-specialist-tax/capital-allowances-on-property,547,28,318,6,3569,19,,0,yes,bing_clicks=28; bing_top3_queries=6; gsc_clicks_90d=19; gsc_impr_90d=3569,no
+/blog/property-types-and-specialist-tax/capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework,47,1,15,0,11,1,,0,no,,no
+/blog/property-types-and-specialist-tax/cis-deduction-by-contractors-in-the-uk,0,0,0,0,29,0,,0,no,,no
+/blog/property-types-and-specialist-tax/cis-templates,0,0,0,0,520,5,,0,yes,gsc_clicks_90d=5; gsc_impr_90d=520,no
+/blog/property-types-and-specialist-tax/commercial-energy-performance-certificate-cost,0,0,0,0,73,0,,0,no,,no
+/blog/property-types-and-specialist-tax/commercial-epc-requirements,18,2,15,0,107,3,,0,no,,no
+/blog/property-types-and-specialist-tax/commercial-property-fixtures-claim-s198-election-purchase-mechanics,784,34,221,3,1431,16,,1,yes,bing_clicks=34; gsc_clicks_90d=16; gsc_impr_90d=1431; leads_90d=1,no
+/blog/property-types-and-specialist-tax/commercial-property-mees-compliance,0,0,0,0,38,0,,0,no,,no
+/blog/property-types-and-specialist-tax/commercial-property-tax-landlords-rates-reliefs-allowances,12,3,11,0,3210,34,,0,yes,gsc_clicks_90d=34; gsc_impr_90d=3210,no
+/blog/property-types-and-specialist-tax/commonhold-and-leasehold-reform-bill,1,0,1,0,51,0,,0,no,,no
+/blog/property-types-and-specialist-tax/condition-a-acquisition-main-purpose-test-trader-by-stealth-landlord-trap,0,0,0,0,55,0,,0,no,,no
+/blog/property-types-and-specialist-tax/condition-d-development-main-purpose-convert-and-flip-trap-landlord-developers,0,0,0,0,12,0,,0,no,,no
+/blog/property-types-and-specialist-tax/contaminated-land-remediation-and-risk-assessment,0,0,0,0,20,0,,0,no,,no
+/blog/property-types-and-specialist-tax/council-tax-for-new-builds,467,91,313,5,928,15,,2,yes,bing_clicks=91; bing_top3_queries=5; gsc_clicks_90d=15; gsc_impr_90d=928; leads_90d=2,no
+/blog/property-types-and-specialist-tax/disapplication-option-to-tax-schedule-10-paragraph-12-residential-conversion,0,0,0,0,45,0,,0,no,,no
+/blog/property-types-and-specialist-tax/diy-housebuilders-vat-refund-scheme,689,14,285,3,589,7,,0,yes,bing_clicks=14; gsc_clicks_90d=7; gsc_impr_90d=589,no
+/blog/property-types-and-specialist-tax/embedded-capital-allowances-commercial-property,0,0,0,0,230,7,,0,yes,gsc_clicks_90d=7,no
+/blog/property-types-and-specialist-tax/end-of-the-furnished-holiday-letting-regime,0,0,0,0,126,2,,0,no,,no
+/blog/property-types-and-specialist-tax/farm-tax-uk-guide,16,0,13,0,1791,13,Submitted and indexed,0,yes,gsc_clicks_90d=13; gsc_impr_90d=1791,no
+/blog/property-types-and-specialist-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics,0,0,0,0,2,0,,0,no,,no
+/blog/property-types-and-specialist-tax/first-time-buyer-relief-benefits-and-eligibility-requirements,58,1,46,0,174,1,,0,no,,no
+/blog/property-types-and-specialist-tax/first-time-buyer-relief-calculator,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/first-time-buyer-relief-overcome-down-payment,0,0,0,0,21,0,,0,no,,no
+/blog/property-types-and-specialist-tax/first-time-buyer-relief-understanding-tax-credits-and-deductions,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/free-rental-valuation,0,0,0,0,38,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice,0,0,0,0,27,0,,0,no,,no
+/blog/property-types-and-specialist-tax/full-expensing-50-percent-fya-commercial-property-spvs-mechanics-fa-2023,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/full-expensing-and-first-year-allowances,42,3,23,0,75,1,,0,no,,no
+/blog/property-types-and-specialist-tax/full-expensing-capital-allowances,0,0,0,0,49,1,,0,no,,no
+/blog/property-types-and-specialist-tax/government-to-end-council-tax-on-hmo-rooms,24,1,14,0,1,0,,0,no,,no
+/blog/property-types-and-specialist-tax/ground-rent-rules-uk,0,0,0,0,873,8,,0,yes,gsc_clicks_90d=8; gsc_impr_90d=873,no
+/blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords,9,1,9,0,1297,20,,0,yes,gsc_clicks_90d=20; gsc_impr_90d=1297,no
+/blog/property-types-and-specialist-tax/hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics,172,6,117,1,21,0,,0,no,,no
+/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant,4,0,4,0,1617,17,,0,yes,gsc_clicks_90d=17; gsc_impr_90d=1617,no
+/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison,0,0,0,0,764,5,,0,yes,gsc_clicks_90d=5; gsc_impr_90d=764,no
+/blog/property-types-and-specialist-tax/hmrcs-otm-letters-campaign-directed-at-ated-avoidance,0,0,0,0,1,0,,0,no,,no
+/blog/property-types-and-specialist-tax/holiday-let-tax-calculator-fhl-changes,3,1,2,0,161,0,,0,no,,no
+/blog/property-types-and-specialist-tax/horton-hall-sdlt-case-residential-vs-non-residential-dispute,0,0,0,0,16,1,,0,no,,no
+/blog/property-types-and-specialist-tax/housing-development-finance,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk,511,56,282,11,3255,6,Submitted and indexed,0,yes,bing_clicks=56; bing_top3_queries=11; gsc_clicks_90d=6; gsc_impr_90d=3255,no
+/blog/property-types-and-specialist-tax/how-owning-property-abroad-leads-higher-stamp-duty-rates,113,13,82,2,1305,16,,0,yes,bing_clicks=13; gsc_clicks_90d=16; gsc_impr_90d=1305,no
+/blog/property-types-and-specialist-tax/how-to-avoid-inheritance-tax-on-a-farm,0,0,0,0,154,2,Submitted and indexed,0,no,,no
+/blog/property-types-and-specialist-tax/impact-of-fhl-tax-abolition-on-pension-contributions-key-insights-strategies,0,0,0,0,52,0,,0,no,,no
+/blog/property-types-and-specialist-tax/indirect-disposals-property-rich-entities-section-356od-section-517d-slice-action,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/inheritance-tax-on-farms,0,0,0,0,175,2,,0,no,,no
+/blog/property-types-and-specialist-tax/integral-features-capital-allowances,1016,76,327,12,1,0,,0,yes,bing_clicks=76; bing_top3_queries=12,yes
+/blog/property-types-and-specialist-tax/is-increasing-council-tax-damaging-the-housing-market,2,0,2,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/labour-plans-stamp-duty-hike-for-overseas-buyers,2,2,2,0,14,0,,0,no,,no
+/blog/property-types-and-specialist-tax/land-and-buildings-transaction-tax-multiple-dwellings-relief,0,0,0,0,33,0,,0,no,,no
+/blog/property-types-and-specialist-tax/land-remediation-relief-150-percent-claim-mechanics-ltdco-developer-investor,0,0,0,0,518,3,,0,yes,gsc_impr_90d=518,no
+/blog/property-types-and-specialist-tax/land-remediation-relief-cta-2009-part-14-100-50-percent-deduction-polluter-exclusion,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/land-remediation-relief-guide,0,0,0,0,46,2,,0,no,,no
+/blog/property-types-and-specialist-tax/landlord-vat-recovery-professional-fees-capital-costs-commercial-property,0,0,0,0,246,1,,0,no,,no
+/blog/property-types-and-specialist-tax/lease-extension-cost-uk,40,5,39,0,341,0,,0,no,,no
+/blog/property-types-and-specialist-tax/lease-extension-solicitor-what-they-do,0,0,0,0,65,2,,0,no,,no
+/blog/property-types-and-specialist-tax/lease-extension-vs-freehold-purchase,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/lease-extensions-in-the-uk-surrender-and-regrant,147,2,79,1,198,0,,0,no,,no
+/blog/property-types-and-specialist-tax/lease-variation-and-lease-surrender,160,7,95,0,13,0,,0,no,,no
+/blog/property-types-and-specialist-tax/leasehold-reform-act-2024-what-is-in-force,8,1,8,0,577,4,,0,yes,gsc_impr_90d=577,no
+/blog/property-types-and-specialist-tax/multiple-dwellings-relief,28,0,18,0,10,0,,0,no,,no
+/blog/property-types-and-specialist-tax/multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords,0,0,0,0,18,0,,0,no,,no
+/blog/property-types-and-specialist-tax/non-resident-developer-uk-tax-scope-fa-2016-offshore-developer-planning-closure,0,0,0,0,48,1,,0,no,,no
+/blog/property-types-and-specialist-tax/option-to-tax-revocation-routes-6-month-cooling-off-20-year-exit-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock,12,0,9,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/property-development-tax-trading-vs-investment-income,24,1,18,1,802,2,,0,yes,gsc_impr_90d=802,no
+/blog/property-types-and-specialist-tax/property-joint-venture-spv-structure-uk,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/reduce-your-council-tax-bill-in-the-uk,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/remittance-basis-tax-insights-for-non-domiciled-individuals,56,2,36,0,56,0,,0,no,,no
+/blog/property-types-and-specialist-tax/residency-and-domicile,0,0,0,0,4,0,,0,no,,no
+/blog/property-types-and-specialist-tax/right-to-manage-company-setup,0,0,0,0,228,2,,0,no,,no
+/blog/property-types-and-specialist-tax/right-to-manage-explained,0,0,0,0,263,1,,0,no,,no
+/blog/property-types-and-specialist-tax/right-to-manage-process-steps,0,0,0,0,297,5,,0,yes,gsc_clicks_90d=5,no
+/blog/property-types-and-specialist-tax/sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/sdlt-furnished-holiday-let-2025-abolition,3,0,3,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords,0,0,0,0,2,0,,0,no,,no
+/blog/property-types-and-specialist-tax/section-24-commercial-property-complete-guide,0,0,0,0,61,1,,0,no,,no
+/blog/property-types-and-specialist-tax/selling-house-below-market-value,0,0,0,0,897,6,,0,yes,gsc_clicks_90d=6; gsc_impr_90d=897,no
+/blog/property-types-and-specialist-tax/service-charge-disputes-leaseholders,13,1,11,0,434,1,,0,no,,no
+/blog/property-types-and-specialist-tax/serviced-accommodation-bpr-eligibility-pawson-test,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/serviced-accommodation-tax-fhl-abolition-april-2025,1,0,1,0,3,0,,0,no,,no
+/blog/property-types-and-specialist-tax/serviced-accommodation-vs-buy-to-let-tax-comparison-2026,0,0,0,0,2,0,,0,no,,no
+/blog/property-types-and-specialist-tax/single-person-council-tax-discount,764,11,230,2,490,1,,0,yes,bing_clicks=11,no
+/blog/property-types-and-specialist-tax/single-person-council-tax-discounts-a-complete-guide,345,18,197,3,3685,26,,0,yes,bing_clicks=18; gsc_clicks_90d=26; gsc_impr_90d=3685,no
+/blog/property-types-and-specialist-tax/structures-and-buildings-allowance-sba,0,0,0,0,139,2,,0,no,,no
+/blog/property-types-and-specialist-tax/structures-and-buildings-allowance-sba-3-percent-claim-mechanics-fa-2018-onward,106,7,71,0,81,0,,0,no,,no
+/blog/property-types-and-specialist-tax/super-deduction-130-percent-transitional-disposal-balancing-charge-mechanics-fa-2021,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/toms-vat-serviced-accommodation,0,0,0,0,7,0,Submitted and indexed,2,yes,leads_90d=2,no
+/blog/property-types-and-specialist-tax/transactions-in-uk-land-cta-2010-part-8zb-ita-2007-part-9a-four-conditions-test,0,0,0,0,72,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-calculator,1,0,1,0,237,2,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics,138,12,93,1,2022,6,,0,yes,bing_clicks=12; gsc_clicks_90d=6; gsc_impr_90d=2022,no
+/blog/property-types-and-specialist-tax/vat-cladding-remediation-relief-residential-building-safety-act-section-30a-mechanics,0,0,0,0,77,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-commercial-to-residential-conversion-5-percent-reduced-rate-developer-recovery-mechanics,5,0,4,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-developer-pre-registration-input-tax-recovery-property-development-projects,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment,4,0,3,0,1552,26,,0,yes,gsc_clicks_90d=26; gsc_impr_90d=1552,no
+/blog/property-types-and-specialist-tax/vat-on-furnished-holiday-lettings-fhl,5,0,4,0,87,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property,343,8,162,0,538,2,,0,yes,gsc_impr_90d=538,no
+/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation,426,4,66,1,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics,4,0,4,0,3,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-property-conversion-residential-to-commercial-or-commercial-to-residential-zero-rate-reduced-rate,170,8,104,2,5,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-property-conversions-residential-reduced-rate-opted-to-tax,0,0,0,0,2036,27,,1,yes,gsc_clicks_90d=27; gsc_impr_90d=2036; leads_90d=1,no
+/blog/property-types-and-specialist-tax/vat-registration-threshold-90k-landlords-april-2024-group-registration,0,0,0,0,10,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-storage-facility-lettings-schedule-9-group-1-supply-categorisation-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/property-types-and-specialist-tax/vat-toms-long-term-stays-hotel-aparthotel-28-day-rule-mechanics,302,21,203,3,891,6,,0,yes,bing_clicks=21; gsc_clicks_90d=6; gsc_impr_90d=891,no
+/blog/property-types-and-specialist-tax/welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics,0,0,0,0,33,0,,0,no,,no
+/blog/property-types-and-specialist-tax/writing-down-allowance-rates,404,15,205,2,138,1,,0,yes,bing_clicks=15,no
+/blog/section-24-and-tax-relief,0,0,0,0,1,0,,0,no,,no
+/blog/section-24-and-tax-relief/2027-property-tax-rates-section-24-relief-uk-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/section-24-and-tax-relief/aia-capital-allowance-property-landlords,0,0,0,0,306,1,,0,no,,no
+/blog/section-24-and-tax-relief/annual-investment-allowance-2024-25,0,0,0,0,120,1,,0,no,,no
+/blog/section-24-and-tax-relief/annual-investment-allowance-landlords-uk,0,0,0,0,6,0,,0,no,,no
+/blog/section-24-and-tax-relief/annual-investment-allowance-uk,25,0,11,0,79,2,,0,no,,no
+/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense,0,0,0,0,56,3,,0,no,,no
+/blog/section-24-and-tax-relief/can-section-24-push-higher-rate-tax,0,0,0,0,0,0,,0,no,,no
+/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24,1914,348,980,64,268,1,Submitted and indexed,2,yes,bing_clicks=348; bing_top3_queries=64; leads_90d=2,no
+/blog/section-24-and-tax-relief/finance-costs-section-24-complete-guide,1714,117,631,37,2,0,Crawled - currently not indexed,2,yes,bing_clicks=117; bing_top3_queries=37; leads_90d=2,yes
+/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions,410,16,223,1,1877,8,,0,yes,bing_clicks=16; gsc_clicks_90d=8; gsc_impr_90d=1877,no
+/blog/section-24-and-tax-relief/how-to-calculate-section-24-tax-credit-step-by-step,0,0,0,0,46,0,,0,no,,no
+/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible,29,2,20,1,2776,27,,0,yes,gsc_clicks_90d=27; gsc_impr_90d=2776,no
+/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list,1240,190,750,17,45,0,Submitted and indexed,3,yes,bing_clicks=190; bing_top3_queries=17; leads_90d=3,yes
+/blog/section-24-and-tax-relief/mortgage-arrangement-fees-deductible-landlord,388,95,264,9,587,0,Submitted and indexed,1,yes,bing_clicks=95; bing_top3_queries=9; gsc_impr_90d=587; leads_90d=1,no
+/blog/section-24-and-tax-relief/mortgage-interest-deductible-landlords-uk-2026,731,105,477,19,37,0,,0,yes,bing_clicks=105; bing_top3_queries=19,yes
+/blog/section-24-and-tax-relief/rent-a-room-relief-uk-landlords-lodgers-guide,730,34,233,4,280,0,,0,yes,bing_clicks=34,no
+/blog/section-24-and-tax-relief/rental-income-tax-calculator,0,0,0,0,6,0,,0,no,,no
+/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords,738,19,447,2,11,0,,0,yes,bing_clicks=19,yes
+/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide,804,32,284,1,1,0,,0,yes,bing_clicks=32,yes
+/blog/section-24-and-tax-relief/section-24-2027-tax-year-planning-landlords,0,0,0,0,68,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-2027-tax-year-planning-uk-landlords,0,0,0,0,64,2,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-basic-rate-taxpayers,0,0,0,0,26,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-calculator,0,0,0,0,7,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio,0,0,0,0,0,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-child-benefit-high-income-charge-landlords,0,0,0,0,254,7,,0,yes,gsc_clicks_90d=7,no
+/blog/section-24-and-tax-relief/section-24-employment-income-paye-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026,0,0,0,0,7,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-changes-2027,0,0,0,0,5,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-higher-rate-threshold-landlords,0,0,0,0,0,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-interest-only-mortgage-tax-planning,0,0,0,0,6,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-joint-property-ownership-tax-split,0,0,0,0,5,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords,326,4,79,3,1,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-multiple-properties-cumulative-impact,0,0,0,0,4,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning,0,0,0,0,0,0,,1,yes,leads_90d=1,no
+/blog/section-24-and-tax-relief/section-24-personal-allowance-60-percent-tax-rate-landlords,0,0,0,0,25,1,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-remortgaging-btl-property-tax-implications,12,2,6,1,0,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-repeal-future-reversed,0,0,0,0,187,0,Submitted and indexed,1,yes,leads_90d=1,no
+/blog/section-24-and-tax-relief/section-24-self-assessment-tax-return,470,54,322,4,70,1,,0,yes,bing_clicks=54,yes
+/blog/section-24-and-tax-relief/section-24-tax-credit-20-percent-basic-rate-relief,9,0,4,0,10,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide,10,0,3,1,5,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax,0,0,0,0,72,0,,0,no,,no
+/blog/section-24-and-tax-relief/section-24-worked-example-50k-rental-income-portfolio,0,0,0,0,1,0,,0,no,,no
+/blog/section-24-and-tax-relief/tax-relief-mortgage-interest-rented-property-guide,519,62,343,5,32,0,,1,yes,bing_clicks=62; bing_top3_queries=5; leads_90d=1,yes
+/blog/section-24-and-tax-relief/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision,0,0,0,0,62,1,,0,no,,no
+/blog/section-24-and-tax-relief/what-is-aia-in-tax,100,1,32,0,0,0,,0,no,,no
+/blog/section-24-and-tax-relief/writing-down-allowance-cars,515,34,261,2,257,1,,0,yes,bing_clicks=34,no
+/calculators,0,0,0,0,1373,1,,0,yes,gsc_impr_90d=1373,no
+/calculators/bpr-apr-allowance-calculator,0,0,0,0,63,2,,0,no,,no
+/calculators/bridging-loan-calculator,0,0,0,0,0,0,,0,no,,no
+/calculators/buy-to-let-cashflow-calculator,0,0,0,0,242,0,,0,no,,no
+/calculators/buy-to-let-mortgage-calculator,0,0,0,0,1,0,,0,no,,no
+/calculators/buy-to-let-rental-stress-test-calculator,0,0,0,0,113,0,,0,no,,no
+/calculators/capital-allowances-calculator,0,0,0,0,54,1,,0,no,,no
+/calculators/capital-gains-tax-calculator,45,2,25,0,178,0,,0,no,,no
+/calculators/commercial-mortgage-calculator,0,0,0,0,7396,1,,0,yes,gsc_impr_90d=7396,no
+/calculators/corporation-tax-calculator,0,0,0,0,233,3,Submitted and indexed,1,yes,leads_90d=1,no
+/calculators/cost-of-selling-calculator,0,0,0,0,3394,8,,0,yes,gsc_clicks_90d=8; gsc_impr_90d=3394,no
+/calculators/development-finance-calculator,0,0,0,0,106,1,,0,no,,no
+/calculators/dividend-tax-calculator,0,0,0,0,35,1,,0,no,,no
+/calculators/first-time-buyer-stamp-duty-calculator,0,0,0,0,1318,0,,0,yes,gsc_impr_90d=1318,no
+/calculators/incorporation-cost-calculator,0,0,0,0,21,1,,0,no,,no
+/calculators/lbtt-calculator-scotland,2838,22,171,0,144,0,,0,yes,bing_clicks=22,no
+/calculators/lease-extension-premium-calculator,0,0,0,0,608,2,,0,yes,gsc_impr_90d=608,no
+/calculators/ltt-calculator-wales,470,1,59,0,34,0,,0,no,,no
+/calculators/mtd-checker,0,0,0,0,0,0,,0,no,,no
+/calculators/portfolio-profitability-calculator,0,0,0,0,1139,7,,0,yes,gsc_clicks_90d=7; gsc_impr_90d=1139,no
+/calculators/property-allowance-checker,0,0,0,0,29,0,,0,no,,no
+/calculators/property-company-extraction-calculator,0,0,0,0,0,0,,0,no,,no
+/calculators/rd-tax-credit-calculator,0,0,0,0,400,0,,0,no,,no
+/calculators/rent-a-room-relief-calculator,0,0,0,0,455,11,,0,yes,gsc_clicks_90d=11,no
+/calculators/rental-income-tax-calculator,2,0,2,0,61,0,,0,no,,no
+/calculators/rental-yield-calculator,0,0,0,0,316,0,,0,no,,no
+/calculators/section-24-calculator,0,0,0,0,376,5,,0,yes,gsc_clicks_90d=5,no
+/calculators/stamp-duty-calculator,0,0,0,0,4,0,,0,no,,no
+/contact,0,0,0,0,162,3,,9,yes,leads_90d=9,no
+/cookie-policy,0,0,0,0,0,0,,0,no,,no
+/cost-of-selling-a-property,0,0,0,0,115,2,,0,no,,no
+/for-letting-agents,0,0,0,0,1,0,Submitted and indexed,0,no,,no
+/for/couples-splitting-rental-income,0,0,0,0,10,0,,0,no,,no
+/for/first-time-and-accidental-landlords,0,0,0,0,2,0,,0,no,,no
+/for/gifting-property-to-family,0,0,0,0,42,0,Submitted and indexed,0,no,,no
+/for/hmo-and-multi-let-landlords,0,0,0,0,8,0,Submitted and indexed,0,no,,no
+/for/holiday-let-and-serviced-accommodation,0,0,0,0,34,0,Submitted and indexed,0,no,,no
+/for/inherited-property,0,0,0,0,8,0,Submitted and indexed,0,no,,no
+/for/landlord-retirement-and-succession,0,0,0,0,38,0,Submitted and indexed,0,no,,no
+/for/landlord-self-assessment-and-mtd,0,0,0,0,27,0,Submitted and indexed,0,no,,no
+/for/moving-property-into-a-limited-company,0,0,0,0,39,0,Submitted and indexed,0,no,,no
+/for/non-resident-landlords,0,0,0,0,41,1,,0,no,,no
+/for/portfolio-landlords-incorporating-a-partnership,0,0,0,0,16,0,,0,no,,no
+/for/property-company-profit-extraction,0,0,0,0,1,0,,0,no,,no
+/for/property-spv-set-up,0,0,0,0,41,0,Submitted and indexed,0,no,,no
+/for/rental-income-disclosure,0,0,0,0,16,0,Submitted and indexed,0,no,,no
+/for/selling-a-buy-to-let,0,0,0,0,20,0,Submitted and indexed,0,no,,no
+/incorporation,0,0,0,0,13,0,,0,no,,no
+/landed-estates,0,0,0,0,121,1,Submitted and indexed,0,no,,no
+/landlord-compliance,0,0,0,0,130,1,,0,no,,no
+/landlord-tax,9,0,4,0,472,0,Submitted and indexed,0,no,,no
+/leasehold,0,0,0,0,216,3,,0,no,,no
+/locations,0,0,0,0,0,0,,1,yes,leads_90d=1,no
+/locations/birmingham,0,0,0,0,2,0,Submitted and indexed,2,yes,leads_90d=2,no
+/locations/bristol,0,0,0,0,899,1,Submitted and indexed,0,yes,gsc_impr_90d=899,no
+/locations/leeds,0,0,0,0,1863,8,Submitted and indexed,0,yes,gsc_clicks_90d=8; gsc_impr_90d=1863,no
+/locations/london,0,0,0,0,575,2,Submitted and indexed,0,yes,gsc_impr_90d=575,no
+/locations/manchester,0,0,0,0,1214,2,Submitted and indexed,2,yes,gsc_impr_90d=1214; leads_90d=2,no
+/making-tax-digital-landlords,0,0,0,0,240,0,,0,no,,no
+/privacy-policy,0,0,0,0,77,1,,0,no,,no
+/property-tax-rates,162,5,89,2,243,0,,0,no,,no
+/research,0,0,0,0,6,0,,0,no,,no
+/research/landlord-tax-index,0,0,0,0,19,0,,0,no,,no
+/section-24,2,0,2,0,169,3,,0,no,,no
+/services,0,0,0,0,128,3,,0,no,,no
+/services/landlord-accountant,0,0,0,0,172,0,Submitted and indexed,0,no,,no
+/services/non-resident-landlord,0,0,0,0,36,0,Submitted and indexed,2,yes,leads_90d=2,no
+/services/property-accountant,0,0,0,0,10,0,Submitted and indexed,0,no,,no
+/services/property-tax-advice,0,0,0,0,261,0,Submitted and indexed,7,yes,leads_90d=7,no
+/spv-company,0,0,0,0,18,0,,0,no,,no
+/terms,0,0,0,0,130,1,,0,no,,no

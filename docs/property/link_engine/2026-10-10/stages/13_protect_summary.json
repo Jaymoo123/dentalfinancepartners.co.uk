@@ -1,0 +1,291 @@
+{
+  "pages_scanned": 887,
+  "protected": 209,
+  "not_protected": 678,
+  "protected_by_reason": {
+    "bing_clicks": 76,
+    "bing_top3_queries": 37,
+    "gsc_clicks_90d": 89,
+    "gsc_impr_90d": 102,
+    "leads_90d": 73
+  },
+  "protected_bing_only": 39,
+  "leverage_count": 32,
+  "bing_fetch_sources": {
+    "cache": 9,
+    "api": 878
+  },
+  "thresholds": {
+    "_doc": "A page is protected if ANY test passes. Leverage = bing_clicks >= leverage_bing_clicks AND (google not indexed OR gsc_impr_90d < leverage_gsc_impr_below). Protect-list query inclusion: any bing click, bing_impr >= list_bing_impr, any gsc click, or gsc_impr >= list_gsc_impr. A query counts as answered when best section token-overlap score >= answer_min.",
+    "bing_clicks": 10,
+    "bing_top3_queries": 5,
+    "gsc_clicks_90d": 5,
+    "gsc_impr_90d": 500,
+    "leads_90d": 1,
+    "top3_max_position": 3,
+    "top3_min_impr": 3,
+    "leverage_bing_clicks": 10,
+    "leverage_gsc_impr_below": 100,
+    "list_bing_impr": 3,
+    "list_gsc_impr": 5,
+    "answer_min": 0.5
+  },
+  "leverage": [
+    {
+      "route": "/blog/capital-gains-tax/cgt-gifting-property-family-members-uk",
+      "bing_clicks": 330,
+      "bing_impr": 1528,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": "Crawled - currently not indexed"
+    },
+    {
+      "route": "/blog/capital-gains-tax/tax-sell-rental-property-uk",
+      "bing_clicks": 295,
+      "bing_impr": 1490,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": "Crawled - currently not indexed"
+    },
+    {
+      "route": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "bing_clicks": 190,
+      "bing_impr": 1240,
+      "gsc_impr_90d": 45,
+      "gsc_clicks_90d": 0,
+      "google_index_state": "Submitted and indexed"
+    },
+    {
+      "route": "/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk",
+      "bing_clicks": 156,
+      "bing_impr": 2572,
+      "gsc_impr_90d": 4,
+      "gsc_clicks_90d": 0,
+      "google_index_state": "Submitted and indexed"
+    },
+    {
+      "route": "/blog/section-24-and-tax-relief/finance-costs-section-24-complete-guide",
+      "bing_clicks": 117,
+      "bing_impr": 1714,
+      "gsc_impr_90d": 2,
+      "gsc_clicks_90d": 0,
+      "google_index_state": "Crawled - currently not indexed"
+    },
+    {
+      "route": "/blog/section-24-and-tax-relief/mortgage-interest-deductible-landlords-uk-2026",
+      "bing_clicks": 105,
+      "bing_impr": 731,
+      "gsc_impr_90d": 37,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/property-types-and-specialist-tax/integral-features-capital-allowances",
+      "bing_clicks": 76,
+      "bing_impr": 1016,
+      "gsc_impr_90d": 1,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/capital-gains-tax/property-improvements-reduce-cgt-enhancement-expenditure",
+      "bing_clicks": 70,
+      "bing_impr": 932,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step",
+      "bing_clicks": 63,
+      "bing_impr": 429,
+      "gsc_impr_90d": 98,
+      "gsc_clicks_90d": 3,
+      "google_index_state": "Crawled - currently not indexed"
+    },
+    {
+      "route": "/blog/capital-gains-tax/cgt-overseas-property-uk-residents-foreign-disposals",
+      "bing_clicks": 63,
+      "bing_impr": 387,
+      "gsc_impr_90d": 11,
+      "gsc_clicks_90d": 0,
+      "google_index_state": "Submitted and indexed"
+    },
+    {
+      "route": "/blog/section-24-and-tax-relief/tax-relief-mortgage-interest-rented-property-guide",
+      "bing_clicks": 62,
+      "bing_impr": 519,
+      "gsc_impr_90d": 32,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/capital-gains-tax/principal-private-residence-relief-landlords",
+      "bing_clicks": 60,
+      "bing_impr": 1227,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/landlord-tax-essentials/capital-allowances-on-vans",
+      "bing_clicks": 56,
+      "bing_impr": 759,
+      "gsc_impr_90d": 1,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide",
+      "bing_clicks": 55,
+      "bing_impr": 422,
+      "gsc_impr_90d": 44,
+      "gsc_clicks_90d": 2,
+      "google_index_state": "Submitted and indexed"
+    },
+    {
+      "route": "/blog/section-24-and-tax-relief/section-24-self-assessment-tax-return",
+      "bing_clicks": 54,
+      "bing_impr": 470,
+      "gsc_impr_90d": 70,
+      "gsc_clicks_90d": 1,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide",
+      "bing_clicks": 47,
+      "bing_impr": 392,
+      "gsc_impr_90d": 38,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/property-types-and-specialist-tax/airbnb-tax-uk-short-term-rental-income-taxed",
+      "bing_clicks": 37,
+      "bing_impr": 802,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses",
+      "bing_clicks": 33,
+      "bing_impr": 450,
+      "gsc_impr_90d": 37,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk",
+      "bing_clicks": 32,
+      "bing_impr": 352,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/section-24-and-tax-relief/replacement-domestic-items-relief-uk-landlords-guide",
+      "bing_clicks": 32,
+      "bing_impr": 804,
+      "gsc_impr_90d": 1,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained",
+      "bing_clicks": 30,
+      "bing_impr": 815,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/landlord-tax-essentials/btl-mortgage",
+      "bing_clicks": 24,
+      "bing_impr": 209,
+      "gsc_impr_90d": 1,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation",
+      "bing_clicks": 23,
+      "bing_impr": 633,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/incorporation-and-company-structures/directors-loan-accountsdla-uk-guide",
+      "bing_clicks": 22,
+      "bing_impr": 585,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide",
+      "bing_clicks": 19,
+      "bing_impr": 727,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords",
+      "bing_clicks": 19,
+      "bing_impr": 738,
+      "gsc_impr_90d": 11,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements",
+      "bing_clicks": 17,
+      "bing_impr": 736,
+      "gsc_impr_90d": 1,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions",
+      "bing_clicks": 15,
+      "bing_impr": 270,
+      "gsc_impr_90d": 754,
+      "gsc_clicks_90d": 0,
+      "google_index_state": "Crawled - currently not indexed"
+    },
+    {
+      "route": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",
+      "bing_clicks": 15,
+      "bing_impr": 427,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/incorporation-and-company-structures/types-of-property-company-structure-uk-guide",
+      "bing_clicks": 12,
+      "bing_impr": 168,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/property-types-and-specialist-tax/capital-allowances-commercial-property-what-can-claim",
+      "bing_clicks": 11,
+      "bing_impr": 158,
+      "gsc_impr_90d": 0,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    },
+    {
+      "route": "/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk",
+      "bing_clicks": 10,
+      "bing_impr": 127,
+      "gsc_impr_90d": 5,
+      "gsc_clicks_90d": 0,
+      "google_index_state": ""
+    }
+  ]
+}

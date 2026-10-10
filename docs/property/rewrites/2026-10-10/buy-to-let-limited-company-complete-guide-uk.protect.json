@@ -1,0 +1,604 @@
+{
+  "page": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk",
+  "slug": "buy-to-let-limited-company-complete-guide-uk",
+  "source": "Property/web/content/blog/buy-to-let-limited-company-complete-guide-uk.md",
+  "run": "2026-10-10",
+  "answer_min": 0.5,
+  "gsc_window": "2026-07-11..2026-10-08",
+  "bing_source": "api",
+  "bing_rows": 125,
+  "bing_queries_total": 118,
+  "google_queries_total": 32,
+  "n_queries": 17,
+  "n_unanswered_at_baseline": 2,
+  "queries": [
+    {
+      "query": "ltd company buy to let",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 2,
+      "bing_pos": 2.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.75,
+      "section": "FAQ: When does a buy-to-let limited company actually save tax?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: Are mortgage rates higher for limited company buy-to-let?",
+        "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026"
+      ]
+    },
+    {
+      "query": "btl company full form",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 4.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.55,
+      "section": "FAQ: Can I transfer my existing personally-owned properties into a company?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: What happens to a property company on my death?",
+        "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026",
+        "H2: Section 24 and why the company route exists"
+      ]
+    },
+    {
+      "query": "buy to let company sdlt",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.9,
+      "section": "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "buy to let incorporations - sdlt",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.8,
+      "section": "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "sdlt relief btl company",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 2.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.7,
+      "section": "FAQ: Can I transfer my existing personally-owned properties into a company?",
+      "section_line": 0,
+      "ties": [
+        "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026"
+      ]
+    },
+    {
+      "query": "tax benefits of btl in ltd company",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.52,
+      "section": "H2: What changes when you hold BTL through a company",
+      "section_line": 51,
+      "ties": []
+    },
+    {
+      "query": "what is a ltd company btl",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 3.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.667,
+      "section": "H2: What changes when you hold BTL through a company",
+      "section_line": 51,
+      "ties": []
+    },
+    {
+      "query": "what is a ltd company btl rules",
+      "engine": "bing",
+      "bing_clicks": 1,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.5,
+      "section": "H2: What changes when you hold BTL through a company",
+      "section_line": 51,
+      "ties": []
+    },
+    {
+      "query": "buy to let ltd uk co to",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 39,
+      "gsc_pos": 46.64,
+      "score": 0.5,
+      "section": "FAQ: When does a buy-to-let limited company actually save tax?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: Are mortgage rates higher for limited company buy-to-let?",
+        "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026"
+      ]
+    },
+    {
+      "query": "buy to let company structure",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 16,
+      "gsc_pos": 37.38,
+      "score": 0.9,
+      "section": "FAQ: When does a buy-to-let limited company actually save tax?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: Are mortgage rates higher for limited company buy-to-let?"
+      ]
+    },
+    {
+      "query": "buy to let limited company tax",
+      "engine": "bing+google",
+      "bing_clicks": 0,
+      "bing_impr": 1,
+      "bing_pos": 1.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 8,
+      "gsc_pos": 37.5,
+      "score": 1.0,
+      "section": "FAQ: When does a buy-to-let limited company actually save tax?",
+      "section_line": 0,
+      "ties": []
+    },
+    {
+      "query": "site www propertytaxpartners co uk",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 0,
+      "gsc_impr": 8,
+      "gsc_pos": 43.62,
+      "score": 0.0,
+      "section": "(none)",
+      "section_line": null,
+      "ties": []
+    },
+    {
+      "query": "buy to let as a limited company",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 6,
+      "bing_pos": 2.17,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 1.0,
+      "section": "FAQ: When does a buy-to-let limited company actually save tax?",
+      "section_line": 0,
+      "ties": [
+        "FAQ: Are mortgage rates higher for limited company buy-to-let?",
+        "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026"
+      ]
+    },
+    {
+      "query": "buy to let through limited company",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 4,
+      "bing_pos": 2.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.92,
+      "section": "H1/title: Buy-to-Let Limited Company: Complete Guide UK 2026",
+      "section_line": 1,
+      "ties": []
+    },
+    {
+      "query": "btl property in the company mortgage interest is dudctable",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 5.67,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.633,
+      "section": "H2: What changes when you hold BTL through a company",
+      "section_line": 51,
+      "ties": []
+    },
+    {
+      "query": "if i own a btl property via ltd company and i go to purchase my own home will ads be applied on my new home purchase",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 7.0,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.283,
+      "section": "FAQ: Can I transfer my existing personally-owned properties into a company?",
+      "section_line": 0,
+      "ties": [
+        "H2: Section 24 and why the company route exists",
+        "FAQ: What is ATED and when does it apply to my property company?",
+        "FAQ: What happens to a property company on my death?",
+        "H2: What changes when you hold BTL through a company"
+      ]
+    },
+    {
+      "query": "tax implications btl through limited company",
+      "engine": "bing",
+      "bing_clicks": 0,
+      "bing_impr": 3,
+      "bing_pos": 1.33,
+      "gsc_clicks": 0,
+      "gsc_impr": 0,
+      "gsc_pos": null,
+      "score": 0.7,
+      "section": "H2: What changes when you hold BTL through a company",
+      "section_line": 51,
+      "ties": []
+    }
+  ],
+  "structures": {
+    "question_headings": [
+      "What changes when you hold BTL through a company",
+      "When does the limited company route actually save tax?"
+    ],
+    "tables": [
+      "Worked comparison: personal versus company over 10 years",
+      "ATED (Annual Tax on Enveloped Dwellings)",
+      "Ongoing compliance and what it actually costs"
+    ],
+    "faq_entries_matching_queries": [
+      "When does a buy-to-let limited company actually save tax?",
+      "Can I transfer my existing personally-owned properties into a company?"
+    ],
+    "faq_entries_all": [
+      "When does a buy-to-let limited company actually save tax?",
+      "What corporation tax rates apply to a property company?",
+      "Can I transfer my existing personally-owned properties into a company?",
+      "What is the dividend tax cost when extracting profits from a property company?",
+      "Are mortgage rates higher for limited company buy-to-let?",
+      "What is Section 162 incorporation relief and how does it work?",
+      "What is ATED and when does it apply to my property company?",
+      "Does MTD for Income Tax Self Assessment apply to my property company?",
+      "Should I use a single company or a group structure for my portfolio?",
+      "What is the cost of running a property company year on year?",
+      "Can I pay my children dividends from the property company?",
+      "What happens to a property company on my death?",
+      "How long does it take to incorporate an existing property portfolio?",
+      "What if HMRC challenges my incorporation as not qualifying for Section 162 relief?",
+      "Can I use a property company to fund my pension?"
+    ]
+  },
+  "sections": [
+    {
+      "kind": "title",
+      "level": 1,
+      "heading": "Buy-to-Let Limited Company: Complete Guide UK 2026",
+      "line": 1,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "When does a buy-to-let limited company actually save tax?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What corporation tax rates apply to a property company?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Can I transfer my existing personally-owned properties into a company?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What is the dividend tax cost when extracting profits from a property company?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Are mortgage rates higher for limited company buy-to-let?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What is Section 162 incorporation relief and how does it work?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What is ATED and when does it apply to my property company?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Does MTD for Income Tax Self Assessment apply to my property company?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Should I use a single company or a group structure for my portfolio?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What is the cost of running a property company year on year?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Can I pay my children dividends from the property company?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What happens to a property company on my death?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "How long does it take to incorporate an existing property portfolio?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "What if HMRC challenges my incorporation as not qualifying for Section 162 relief?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "faq",
+      "level": 3,
+      "heading": "Can I use a property company to fund my pension?",
+      "line": 0,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "What changes when you hold BTL through a company",
+      "line": 51,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "When does the limited company route actually save tax?",
+      "line": 64,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Worked comparison: personal versus company over 10 years",
+      "line": 86,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Section 24 and why the company route exists",
+      "line": 112,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Corporation tax bands and how they bite",
+      "line": 118,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Extracting money: dividends, salary, pension, and loans",
+      "line": 132,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Salary",
+      "line": 134,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Dividends",
+      "line": 138,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Pension contributions",
+      "line": 150,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Director's loan account",
+      "line": 154,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Transferring existing properties: Section 162 relief, SDLT, and mortgage refinancing",
+      "line": 163,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "CGT and Section 162 incorporation relief",
+      "line": 167,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "SDLT cost",
+      "line": 173,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "SDLT Schedule 15 partnership route",
+      "line": 188,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Mortgage refinancing",
+      "line": 192,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "ATED (Annual Tax on Enveloped Dwellings)",
+      "line": 196,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "SPVs, group structures, and family share arrangements",
+      "line": 216,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Single trading company versus SPV-per-property",
+      "line": 218,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Holding company structures",
+      "line": 222,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 3,
+      "heading": "Alphabet shares and family income shifting",
+      "line": 226,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Inheritance tax: a common misunderstanding",
+      "line": 230,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Ongoing compliance and what it actually costs",
+      "line": 241,
+      "has_table": true
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "MTD does not apply to property companies (yet)",
+      "line": 261,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Common mistakes to avoid",
+      "line": 267,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Practical decision checklist",
+      "line": 280,
+      "has_table": false
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "heading": "Where to go next",
+      "line": 293,
+      "has_table": false
+    }
+  ]
+}
