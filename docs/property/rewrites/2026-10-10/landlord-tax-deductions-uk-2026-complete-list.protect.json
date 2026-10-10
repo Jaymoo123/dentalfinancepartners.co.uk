@@ -27,6 +27,23 @@
       "ties": []
     },
     {
+      "query": "landlord expenses list",
+      "engine": "google",
+      "bing_clicks": 0,
+      "bing_impr": 0,
+      "bing_pos": null,
+      "gsc_clicks": 2,
+      "gsc_impr": 54,
+      "gsc_pos": 22.7,
+      "score": 1.0,
+      "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses",
+      "section_line": 1,
+      "ties": [
+        "H2: The Complete List of Allowable Landlord Expenses",
+        "H3: Landlord Expenses List: At-a-Glance Table"
+      ]
+    },
+    {
       "query": "as a landlord what can i claim against tax",
       "engine": "bing+google",
       "bing_clicks": 1,
@@ -2908,20 +2925,22 @@
       ]
     },
     {
-      "query": "landlord expenses list",
-      "engine": "google",
+      "query": "tax write offs for landlords 6 6 90 19 0 53 https www cottonsgroup com resources blog deductible-expenses-for-landlords 2 0 11 1 0 24 138 42 66 52 66 42 9 33 33 80 42 42 52 27 5 2026 sitelinks video people also ask related searches ai",
+      "engine": "bing+google",
       "bing_clicks": 0,
-      "bing_impr": 0,
-      "bing_pos": null,
+      "bing_impr": 8,
+      "bing_pos": 3.0,
       "gsc_clicks": 0,
-      "gsc_impr": 17,
-      "gsc_pos": 9.35,
-      "score": 1.0,
-      "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses",
-      "section_line": 1,
+      "gsc_impr": 8,
+      "gsc_pos": 24.0,
+      "score": 0.174,
+      "section": "H3: Landlord Expenses List: At-a-Glance Table",
+      "section_line": 77,
       "ties": [
-        "H2: The Complete List of Allowable Landlord Expenses",
-        "H3: Landlord Expenses List: At-a-Glance Table"
+        "H2: Worked Example: Claiming Your Expenses Correctly",
+        "H2: Can you deduct mortgage interest from rental income?",
+        "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?",
+        "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
       ]
     },
     {
@@ -3043,25 +3062,6 @@
       "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses",
       "section_line": 1,
       "ties": []
-    },
-    {
-      "query": "tax write offs for landlords 6 6 90 19 0 53 https www cottonsgroup com resources blog deductible-expenses-for-landlords 2 0 11 1 0 24 138 42 66 52 66 42 9 33 33 80 42 42 52 27 5 2026 sitelinks video people also ask related searches ai",
-      "engine": "bing+google",
-      "bing_clicks": 0,
-      "bing_impr": 8,
-      "bing_pos": 3.0,
-      "gsc_clicks": 0,
-      "gsc_impr": 1,
-      "gsc_pos": 1.0,
-      "score": 0.174,
-      "section": "H3: Landlord Expenses List: At-a-Glance Table",
-      "section_line": 77,
-      "ties": [
-        "H2: Worked Example: Claiming Your Expenses Correctly",
-        "H2: Can you deduct mortgage interest from rental income?",
-        "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?",
-        "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
-      ]
     },
     {
       "query": "who can claim mortgage interest on tax return",

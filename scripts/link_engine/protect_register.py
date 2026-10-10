@@ -136,14 +136,23 @@ def path_key(u: str) -> str:
     return (p.path.rstrip("/") or "/")
 
 
+def _keep(store: dict, key, row: dict, url: str):
+    # GSC reports jump-link URLs (#section) as separate rows that share the page's path. The canonical (no-fragment)
+    # row always wins; a fragment row only fills a gap, highest impressions first. Before 2026-10-10 the last row read
+    # won, so a page could be recorded with one fragment's 45 impressions instead of its 4,053.
+    v = {"clicks": int(float(row["clicks"])), "impr": int(float(row["impressions"])), "pos": float(row["position"]),
+         "canon": not urlsplit(url).fragment}
+    cur = store.get(key)
+    if cur is None or (v["canon"] and not cur["canon"]) or (v["canon"] == cur["canon"] and v["impr"] > cur["impr"]):
+        store[key] = v
+
+
 def load_google(stages: Path):
     page, qp = {}, collections.defaultdict(dict)
     for r in read_csv(stages / "03b_gsc_page_fresh.csv"):
-        k = path_key(r["page"])
-        page[k] = {"clicks": int(float(r["clicks"])), "impr": int(float(r["impressions"])), "pos": float(r["position"])}
+        _keep(page, path_key(r["page"]), r, r["page"])
     for r in read_csv(stages / "03b_gsc_query_page_fresh.csv"):
-        qp[path_key(r["page"])][norm_query(r["query"])] = {
-            "clicks": int(float(r["clicks"])), "impr": int(float(r["impressions"])), "pos": float(r["position"])}
+        _keep(qp[path_key(r["page"])], norm_query(r["query"]), r, r["page"])
     return page, qp
 
 

@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T17:31:02+00:00",
+  "pulled_at": "2026-10-10T20:17:55+00:00",
   "source": "Bing GetPageQueryStats (weekly rows summed, Bing's full returned range) + stage 03b GSC 90d + 03c + leads",
   "site": "property",
   "thresholds": {
@@ -18,8 +18,7 @@
     "answer_min": 0.5
   },
   "bing_fetch_sources": {
-    "cache": 9,
-    "api": 878
+    "cache": 887
   },
   "bing_date_range": "2026-05-22..2026-10-02",
   "gsc_window": "2026-07-11..2026-10-08",
@@ -32,5 +31,5 @@
     "2026-10-10"
   ],
   "rows": 887,
-  "sha256": "4c3d6d39f04d15d5f05339e50e71e722e7d76b0489b7218409f1abdcb05238f6"
+  "sha256": "d2da4c7332ceb7fa0456b526b57e015ac7c88bf5791a34a096889a09e112572b"
 }

@@ -1,0 +1,6721 @@
+{
+ "meta": {
+  "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+  "canonical": "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+  "source": "Property/web/content/blog/landlord-tax-deductions-uk-2026-complete-list.md",
+  "built": "2026-10-10",
+  "gsc_pull": {
+   "property": "sc-domain:propertytaxpartners.co.uk",
+   "dataState": "all",
+   "range": "2025-06-01..2026-10-08 (16 months requested; page has data from 2026-04-02)",
+   "dimension_filter": "page equals canonical URL"
+  }
+ },
+ "gsc_page_total": {
+  "all_time_in_range": {
+   "clicks": 77,
+   "impressions": 6094,
+   "ctr": 0.0126,
+   "position": 7.7
+  },
+  "last_90d_2026-07-11_to_2026-10-08": {
+   "clicks": 72,
+   "impressions": 4055,
+   "ctr": 0.0178,
+   "position": 7.4
+  },
+  "named_query_rows_last_90d": {
+   "queries": 135,
+   "impressions": 399,
+   "clicks": 3
+  },
+  "named_query_rows_all_time": {
+   "queries": 153,
+   "impressions": 507,
+   "clicks": 3
+  },
+  "anonymised_share_of_impressions_90d": 0.902,
+  "register_figure_for_comparison": "13_protect_register.csv: gsc_impr_90d 45, gsc_clicks_90d 0, google_index_state Submitted and indexed. 03_gsc_page.csv / 03b_gsc_page_fresh.csv page rows: 3998 / 4053 impr, 71 / 72 clicks, pos 7.4.",
+  "first_day_with_impressions": "2026-04-02",
+  "published_per_frontmatter": "2026-03-31",
+  "position_bands_named_queries": {
+   "21-50": 18,
+   "51+": 26,
+   "4-10": 57,
+   "1-3": 33,
+   "11-20": 19
+  }
+ },
+ "owned_families": {
+  "families_in_06_families_csv": [
+   {
+    "family_id": "non-resident-landlord-travel-expenses",
+    "head": "non resident landlord travel expenses",
+    "top_keywords": "non resident landlord travel expenses",
+    "demand_volume": "0",
+    "weighted_cpc": "",
+    "gsc_impressions_90d": "0",
+    "owner_basis": "manager ruling (LE-1)",
+    "judgment_reason": "LE-1: both informational.",
+    "owner_leads_90d": "3",
+    "serp_pulled": "n",
+    "confidence_note": "thin data: volume under 50; no SERP for head"
+   }
+  ],
+  "term_map_rows_owned": 0,
+  "note": "TERM_MAP.csv has zero rows with this owner_page (the lone family has volume 0 and is not exported there)."
+ },
+ "store_wordings": {
+  "verdict": "NONE of the landlord expenses / allowable expenses / tax deductions / what can landlords claim wordings has a Google Ads volume in keyword_metrics.csv. Stage 01 excluded them as not_commercial_intent / borrower_intent / reference_informational before the volume purchase, so they are in no family and in no TERM_MAP row.",
+  "wordings_in_universe_with_exclusion_reason": [
+   {
+    "wording": "deductible costs of selling a rental property",
+    "universe_source": "dfs_cache",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": "10",
+    "in_keyword_metrics_store": true,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductible expenses when selling rental property",
+    "universe_source": "dfs_cache",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": "10",
+    "in_keyword_metrics_store": true,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductions when selling a rental property",
+    "universe_source": "dfs_cache",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": "10",
+    "in_keyword_metrics_store": true,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductions when selling rental property",
+    "universe_source": "dfs_cache",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": "10",
+    "in_keyword_metrics_store": true,
+    "term_map_owner": null
+   },
+   {
+    "wording": "non resident landlord travel expenses",
+    "universe_source": "dfs_cache",
+    "universe_status": "decision",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": true,
+    "term_map_owner": null
+   },
+   {
+    "wording": "selling rental property deductible expenses",
+    "universe_source": "dfs_cache",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": "10",
+    "in_keyword_metrics_store": true,
+    "term_map_owner": null
+   },
+   {
+    "wording": "selling rental property tax deductions",
+    "universe_source": "dfs_cache",
+    "universe_status": "decision",
+    "google_ads_volume": "10",
+    "in_keyword_metrics_store": true,
+    "term_map_owner": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide"
+   },
+   {
+    "wording": "are mortgage arrangement fees tax deductible uk",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are mortgage arrangement fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are remortgage fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord expenses list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are mortgage fees tax deductible for buy-to-let",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "as a landlord what can i claim against tax",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage arrangement fee tax deductible hmrc",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "property expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "30 standard deduction on rental income",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "actual expense",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "actual expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable capital expenditure on property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable costs for capital gains on property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable expenses for furnished holiday lets",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable expenses furnished holiday lets",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable expenses landlords uk",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable landlord expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable mortgage interest on rental property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "allowable tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are broker fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are brokerage fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are brokers fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are buy to let mortgages more expensive",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are closing costs deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are closing costs tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are conveyancing fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are hmo mortgages more expensive",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are home loan closing costs tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are licensing fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are loan closing costs tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are loan fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are loan origination fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are mortgage broker fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are mortgage closing costs tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are mortgage fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are mortgage fees tax deductible for buy to let",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are mortgage protection premiums tax-deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are roof repairs tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "are valuation fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "broker fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "business income expense worksheet",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "business insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "buy to let expenses calculator",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can brokerage fees be deducted",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can i deduct mortgage interest",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can i deduct mortgage interest from rental income",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can landlord deduct home office",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can mortgage interest be deducted from rental income",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can you claim brokerage fees as a tax deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can you deduct home insurance from taxes",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can you deduct mortgage interest on a rental property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can you deduct mortgage interest on a rental property uk",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "can you write off utilities on a rental property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "capital gains tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis deduction certificate",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis deduction form",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis deduction statement template",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis payment and deduction sheet",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis payment and deduction statement example",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis payment and deduction statement form",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis payment and deduction statement template",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis payment deduction statement template",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "cis statement of payment and deduction template",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "closing costs tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "commercial property tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "corporate tax deductions list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "council tax deduction for single person",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductible closing costs",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductible expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deducting tax from holiday let income",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deduction for commercial property sale",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "deduction of commercial property sale",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "do vans qualify for super deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "expense",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "free rental income and expense worksheet",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "habit breaking appliance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "hmrc 450 deduction rule",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "holiday home rental property tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "holiday homes tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "holiday rental property tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "home based business tax deductions 2016",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "home improvement tax deductions list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "home improvement tax write offs",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "home insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "home office tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "homeowners insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "house insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "how to calculate the mortgage interest deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "how to track rental income and expenses across properties",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "i have rental income what online tax software is best for including property income and expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: software_app",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "income property tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "income protection insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "income tax deduction list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "interest deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is a buy to let mortgage more expensive",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is a mortgage product fee tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is gas safety certificate tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is home insurance on rental property tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is home insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is insurance on a rental property tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is landlord insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is landlord insurance tax deductible uk",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is landlords insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is life insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is life insurance tax deductible uk",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is mortgage discharge fee tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is mortgage interest tax deductible uk",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is property insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "is rental property insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord allowable expenses 2021",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord expense guidance hammersmith",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord expense spreadsheet",
+    "universe_source": "gsc",
+    "universe_status": "excluded: software_app",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord expenses spreadsheet",
+    "universe_source": "gsc",
+    "universe_status": "excluded: software_app",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord expenses tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "list of expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "list of expenses for rental property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "list of expenses in profit and loss account",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage arrangement fee tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage discharge fee tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage interest deduction for rental property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage interest tax deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage interest tax deduction calculator",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage interest tax deduction uk",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage interest tax deduction uk main residence",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage refinance fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "mortgage tax deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "other allowable expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "property insurance tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "property tax deduction calculator",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "property tax deduction limit 2026",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "real estate tax deduction calculator",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "remediation tax deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "remortgage fees tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: borrower_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "rental property tax deductible expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "rental property tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "rental property tax deductions worksheet",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "repairs and maintenance expense",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "replacing kitchen tax deductible uk holiday let",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "s corporation tax deduction list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "small farm tax deductions",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "super deduction on vans",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductable expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductible expenses landlord",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductible items for rental property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deduction",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deduction check list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deduction for landlords",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deduction home improvement",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deduction list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductions for landlords",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductions for life insurance premiums",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductions landlord",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductions list",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax deductions on a second home",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax expense rules holiday let",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax relief for landlords",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "tax write offs for landlords",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "template for rental income and expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: calculator_rates_forms",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what are the allowable expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: reference_informational",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what are the other expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: reference_informational",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what counts as expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what deductions are available under landlord tax rules",
+    "universe_source": "gsc",
+    "universe_status": "excluded: reference_informational",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what else can i deduct",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what expenses are tax deductible",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what expenses can i claim as a landlord",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what expenses can i deduct from rental income",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what expenses can i write off against tax on holiday rental property",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what home improvements are tax deductible 2026",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what is allowable expenses",
+    "universe_source": "gsc",
+    "universe_status": "excluded: reference_informational",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what is tax deductible for landlords",
+    "universe_source": "gsc",
+    "universe_status": "excluded: reference_informational",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   },
+   {
+    "wording": "what property expenses can you claim as a landlord",
+    "universe_source": "gsc",
+    "universe_status": "excluded: not_commercial_intent",
+    "google_ads_volume": null,
+    "in_keyword_metrics_store": false,
+    "term_map_owner": null
+   }
+  ],
+  "only_metric_hits": [
+   {
+    "wording": "selling rental property tax deductions",
+    "volume": "10",
+    "fetched_on": "2026-10-10",
+    "term_map_owner": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide"
+   },
+   {
+    "wording": "deductible costs of selling a rental property",
+    "volume": "10",
+    "fetched_on": "2026-08-15",
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductible expenses when selling rental property",
+    "volume": "10",
+    "fetched_on": "2026-08-15",
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductions when selling a rental property",
+    "volume": "10",
+    "fetched_on": "2026-08-15",
+    "term_map_owner": null
+   },
+   {
+    "wording": "deductions when selling rental property",
+    "volume": "10",
+    "fetched_on": "2026-08-15",
+    "term_map_owner": null
+   },
+   {
+    "wording": "selling rental property deductible expenses",
+    "volume": "10",
+    "fetched_on": "2026-08-15",
+    "term_map_owner": null
+   },
+   {
+    "wording": "non resident landlord travel expenses",
+    "volume": null,
+    "fetched_on": "2026-10-10",
+    "term_map_owner": null
+   },
+   {
+    "wording": "non resident landlord capital allowances",
+    "volume": "10",
+    "fetched_on": "2026-08-15",
+    "term_map_owner": null
+   },
+   {
+    "wording": "landlord tax return advice",
+    "volume": "10",
+    "fetched_on": "2026-10-10",
+    "term_map_owner": "/landlord-tax"
+   },
+   {
+    "wording": "tax return advice for landlords",
+    "volume": "10",
+    "fetched_on": "2026-10-10",
+    "term_map_owner": "/landlord-tax"
+   },
+   {
+    "wording": "property capital allowances tax advisors",
+    "volume": "10",
+    "fetched_on": "2026-10-10",
+    "term_map_owner": "/services/property-tax-advice"
+   }
+  ]
+ },
+ "gsc_monthly": [
+  {
+   "month": "2026-03",
+   "clicks": 0,
+   "impressions": 0,
+   "days_with_impr": 0,
+   "avg_position": null
+  },
+  {
+   "month": "2026-04",
+   "clicks": 1,
+   "impressions": 513,
+   "days_with_impr": 22,
+   "avg_position": 13.5
+  },
+  {
+   "month": "2026-05",
+   "clicks": 0,
+   "impressions": 652,
+   "days_with_impr": 27,
+   "avg_position": 5.9
+  },
+  {
+   "month": "2026-06",
+   "clicks": 1,
+   "impressions": 411,
+   "days_with_impr": 29,
+   "avg_position": 6.0
+  },
+  {
+   "month": "2026-07",
+   "clicks": 18,
+   "impressions": 1232,
+   "days_with_impr": 30,
+   "avg_position": 7.7
+  },
+  {
+   "month": "2026-08",
+   "clicks": 25,
+   "impressions": 1381,
+   "days_with_impr": 31,
+   "avg_position": 9.4
+  },
+  {
+   "month": "2026-09",
+   "clicks": 27,
+   "impressions": 1541,
+   "days_with_impr": 30,
+   "avg_position": 5.9
+  },
+  {
+   "month": "2026-10",
+   "clicks": 5,
+   "impressions": 364,
+   "days_with_impr": 8,
+   "avg_position": 5.8
+  }
+ ],
+ "gsc_weekly": [
+  {
+   "week_starting": "2026-03-23",
+   "clicks": 0,
+   "impressions": 0,
+   "avg_position": null
+  },
+  {
+   "week_starting": "2026-03-30",
+   "clicks": 1,
+   "impressions": 148,
+   "avg_position": 17.8
+  },
+  {
+   "week_starting": "2026-04-06",
+   "clicks": 0,
+   "impressions": 143,
+   "avg_position": 22.3
+  },
+  {
+   "week_starting": "2026-04-13",
+   "clicks": 0,
+   "impressions": 7,
+   "avg_position": 4.1
+  },
+  {
+   "week_starting": "2026-04-20",
+   "clicks": 0,
+   "impressions": 90,
+   "avg_position": 4.9
+  },
+  {
+   "week_starting": "2026-04-27",
+   "clicks": 0,
+   "impressions": 216,
+   "avg_position": 4.9
+  },
+  {
+   "week_starting": "2026-05-04",
+   "clicks": 0,
+   "impressions": 215,
+   "avg_position": 6.0
+  },
+  {
+   "week_starting": "2026-05-11",
+   "clicks": 0,
+   "impressions": 208,
+   "avg_position": 6.1
+  },
+  {
+   "week_starting": "2026-05-18",
+   "clicks": 0,
+   "impressions": 23,
+   "avg_position": 10.1
+  },
+  {
+   "week_starting": "2026-05-25",
+   "clicks": 0,
+   "impressions": 115,
+   "avg_position": 5.7
+  },
+  {
+   "week_starting": "2026-06-01",
+   "clicks": 0,
+   "impressions": 95,
+   "avg_position": 5.9
+  },
+  {
+   "week_starting": "2026-06-08",
+   "clicks": 0,
+   "impressions": 104,
+   "avg_position": 6.0
+  },
+  {
+   "week_starting": "2026-06-15",
+   "clicks": 1,
+   "impressions": 105,
+   "avg_position": 6.6
+  },
+  {
+   "week_starting": "2026-06-22",
+   "clicks": 0,
+   "impressions": 88,
+   "avg_position": 5.3
+  },
+  {
+   "week_starting": "2026-06-29",
+   "clicks": 2,
+   "impressions": 190,
+   "avg_position": 8.2
+  },
+  {
+   "week_starting": "2026-07-06",
+   "clicks": 3,
+   "impressions": 363,
+   "avg_position": 7.3
+  },
+  {
+   "week_starting": "2026-07-13",
+   "clicks": 2,
+   "impressions": 222,
+   "avg_position": 6.8
+  },
+  {
+   "week_starting": "2026-07-20",
+   "clicks": 2,
+   "impressions": 236,
+   "avg_position": 8.6
+  },
+  {
+   "week_starting": "2026-07-27",
+   "clicks": 11,
+   "impressions": 303,
+   "avg_position": 7.8
+  },
+  {
+   "week_starting": "2026-08-03",
+   "clicks": 9,
+   "impressions": 326,
+   "avg_position": 9.5
+  },
+  {
+   "week_starting": "2026-08-10",
+   "clicks": 2,
+   "impressions": 363,
+   "avg_position": 13.3
+  },
+  {
+   "week_starting": "2026-08-17",
+   "clicks": 5,
+   "impressions": 286,
+   "avg_position": 7.1
+  },
+  {
+   "week_starting": "2026-08-24",
+   "clicks": 7,
+   "impressions": 293,
+   "avg_position": 7.3
+  },
+  {
+   "week_starting": "2026-08-31",
+   "clicks": 3,
+   "impressions": 327,
+   "avg_position": 6.6
+  },
+  {
+   "week_starting": "2026-09-07",
+   "clicks": 8,
+   "impressions": 442,
+   "avg_position": 5.2
+  },
+  {
+   "week_starting": "2026-09-14",
+   "clicks": 6,
+   "impressions": 336,
+   "avg_position": 5.3
+  },
+  {
+   "week_starting": "2026-09-21",
+   "clicks": 9,
+   "impressions": 335,
+   "avg_position": 5.9
+  },
+  {
+   "week_starting": "2026-09-28",
+   "clicks": 4,
+   "impressions": 305,
+   "avg_position": 7.0
+  },
+  {
+   "week_starting": "2026-10-05",
+   "clicks": 2,
+   "impressions": 210,
+   "avg_position": 5.4
+  }
+ ],
+ "gsc_page_queries": [
+  {
+   "query": "landlord expenses list",
+   "clicks": 2,
+   "impressions": 81,
+   "position": 39.0,
+   "malformed": false
+  },
+  {
+   "query": "tax deductible items for rental property,6,6,110,15,0.48,https://www.cottonsgroup.com/resources/blog/deductible-expenses-for-landlords/,2,0.11,0,0.32,13500000, 100, 66, 42, 52, 66, 52, 23, 42, 52, 42, 42, 42 ,24/4/2026, sitelinks, video, people also ask,",
+   "clicks": 0,
+   "impressions": 34,
+   "position": 26.4,
+   "malformed": true
+  },
+  {
+   "query": "landlord tax deductions",
+   "clicks": 0,
+   "impressions": 24,
+   "position": 67.1,
+   "malformed": false
+  },
+  {
+   "query": "yes",
+   "clicks": 0,
+   "impressions": 20,
+   "position": 7.7,
+   "malformed": false
+  },
+  {
+   "query": "tax write offs for landlords",
+   "clicks": 0,
+   "impressions": 18,
+   "position": 67.1,
+   "malformed": false
+  },
+  {
+   "query": "as a landlord what expenses can i claim,7,7,110,13,0.41,https://www.cottonsgroup.com/resources/blog/deductible-expenses-for-landlords/,1,0.05,0,0.43,30900000, 53, 21, 12, 28, 21, 21, 21, 28, 28, 43, 43, 100 ,7/5/2026, sitelinks, video, people also ask, re",
+   "clicks": 0,
+   "impressions": 16,
+   "position": 41.2,
+   "malformed": true
+  },
+  {
+   "query": "landlord tax deductions,5,5,170,20,0.53,https://www.cottonsgroup.com/resources/blog/deductible-expenses-for-landlords/,3,0.17,1,0.24,138, 43, 28, 28, 17, 28, 23, 53, 53, 66, 66, 43, 66 ,18/5/2026, sitelinks, video, people also ask, related searches, discu",
+   "clicks": 0,
+   "impressions": 15,
+   "position": 41.2,
+   "malformed": true
+  },
+  {
+   "query": "uk rental income tax allowable expenses 2026",
+   "clicks": 0,
+   "impressions": 15,
+   "position": 2.7,
+   "malformed": false
+  },
+  {
+   "query": "is mortgage interest tax deductible uk",
+   "clicks": 0,
+   "impressions": 12,
+   "position": 8.9,
+   "malformed": false
+  },
+  {
+   "query": "is mortgage interest deductible for uk landlords 2026",
+   "clicks": 0,
+   "impressions": 9,
+   "position": 5.4,
+   "malformed": false
+  },
+  {
+   "query": "mortgage interest tax deduction",
+   "clicks": 0,
+   "impressions": 9,
+   "position": 2.7,
+   "malformed": false
+  },
+  {
+   "query": "tax write offs for landlords,6,6,90,19,0.53,https://www.cottonsgroup.com/resources/blog/deductible-expenses-for-landlords/,2,0.11,1,0.24,138, 42, 66, 52, 66, 42, 9, 33, 33, 80, 42, 42, 52 ,27/5/2026, sitelinks, video, people also ask, related searches, ai",
+   "clicks": 0,
+   "impressions": 9,
+   "position": 23.6,
+   "malformed": true
+  },
+  {
+   "query": "uk landlord wear and tear allowance 2026",
+   "clicks": 0,
+   "impressions": 9,
+   "position": 1.8,
+   "malformed": false
+  },
+  {
+   "query": "who can claim mortgage interest on tax return",
+   "clicks": 0,
+   "impressions": 9,
+   "position": 4.9,
+   "malformed": false
+  },
+  {
+   "query": "what expenses can i claim as a landlord",
+   "clicks": 0,
+   "impressions": 8,
+   "position": 70.5,
+   "malformed": false
+  },
+  {
+   "query": "what property expenses can you claim as a landlord",
+   "clicks": 0,
+   "impressions": 8,
+   "position": 74.2,
+   "malformed": false
+  },
+  {
+   "query": "allowable expenses",
+   "clicks": 0,
+   "impressions": 6,
+   "position": 6.7,
+   "malformed": false
+  },
+  {
+   "query": "home improvement tax deductions list",
+   "clicks": 0,
+   "impressions": 6,
+   "position": 19.2,
+   "malformed": false
+  },
+  {
+   "query": "landlord allowable expenses 2021",
+   "clicks": 0,
+   "impressions": 6,
+   "position": 81.8,
+   "malformed": false
+  },
+  {
+   "query": "tax deduction home improvement",
+   "clicks": 0,
+   "impressions": 6,
+   "position": 19.5,
+   "malformed": false
+  },
+  {
+   "query": "yes please",
+   "clicks": 0,
+   "impressions": 6,
+   "position": 8.7,
+   "malformed": false
+  },
+  {
+   "query": "home office costs",
+   "clicks": 0,
+   "impressions": 5,
+   "position": 8.8,
+   "malformed": false
+  },
+  {
+   "query": "is landlord insurance tax deductible",
+   "clicks": 0,
+   "impressions": 4,
+   "position": 27.8,
+   "malformed": false
+  },
+  {
+   "query": "landlords expenses",
+   "clicks": 0,
+   "impressions": 4,
+   "position": 92.2,
+   "malformed": false
+  },
+  {
+   "query": "mortgage tax deduction",
+   "clicks": 0,
+   "impressions": 4,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "site:www.propertytaxpartners.co.uk",
+   "clicks": 0,
+   "impressions": 4,
+   "position": 52,
+   "malformed": false
+  },
+  {
+   "query": "which home improvement loan option offers the best tax benefits?",
+   "clicks": 0,
+   "impressions": 4,
+   "position": 3.5,
+   "malformed": false
+  },
+  {
+   "query": "home based business tax deductions 2016",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 94.3,
+   "malformed": false
+  },
+  {
+   "query": "home office tax deductible",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 9.3,
+   "malformed": false
+  },
+  {
+   "query": "landlord deductions",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 59.7,
+   "malformed": false
+  },
+  {
+   "query": "landlord tax relief on mortgage interest",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 7.3,
+   "malformed": false
+  },
+  {
+   "query": "list of expenses for rental property",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 3.3,
+   "malformed": false
+  },
+  {
+   "query": "section 24 mortgage interest relief",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 10.3,
+   "malformed": false
+  },
+  {
+   "query": "tax deduction check list",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 7.3,
+   "malformed": false
+  },
+  {
+   "query": "what expenses are tax deductible",
+   "clicks": 0,
+   "impressions": 3,
+   "position": 52.7,
+   "malformed": false
+  },
+  {
+   "query": "allowable expenses for landlords",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 94.5,
+   "malformed": false
+  },
+  {
+   "query": "allowable expenses furnished holiday lets",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 32.5,
+   "malformed": false
+  },
+  {
+   "query": "allowable landlord expenses",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "both",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 3,
+   "malformed": false
+  },
+  {
+   "query": "buy to let",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 3,
+   "malformed": false
+  },
+  {
+   "query": "holiday home income and outgoings as far as tax",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 23,
+   "malformed": false
+  },
+  {
+   "query": "its residential",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 5.5,
+   "malformed": false
+  },
+  {
+   "query": "landlord expenses tax deductible",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 35.5,
+   "malformed": false
+  },
+  {
+   "query": "limited company",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 3.5,
+   "malformed": false
+  },
+  {
+   "query": "rental property",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 4,
+   "malformed": false
+  },
+  {
+   "query": "rental property tax deductions",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 53,
+   "malformed": false
+  },
+  {
+   "query": "sure",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 9.5,
+   "malformed": false
+  },
+  {
+   "query": "tax deduction for landlords",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 54,
+   "malformed": false
+  },
+  {
+   "query": "what deductions are available under landlord tax rules?",
+   "clicks": 0,
+   "impressions": 2,
+   "position": 5,
+   "malformed": false
+  },
+  {
+   "query": "as a landlord what can i claim against tax",
+   "clicks": 1,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "\"djh business advisers limited\" acquisition or acquires or acquired -site:crunchbase.com -site:pitchbook.com -site:mergr.com -site:tracxn.com -site:cbinsights.com -site:zoominfo.com -site:dealroom.co -site:mergermarket.com -site:capitaliq.com -site:northdata.com -site:grokipedia.com -site:owler.com -site:linkedin.com -site:facebook.com -site:instagram.com -site:twitter.com -site:x.com -site:reddit.com -site:youtube.com -site:tiktok.com -site:pinterest.com -site:quora.com -site:wikipedia.org -site:glassdoor.com -site:indeed.com -site:jooble.org -site:expertini.com -site:jobly.fi",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": true
+  },
+  {
+   "query": "1",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 3,
+   "malformed": false
+  },
+  {
+   "query": "30 standard deduction on rental income",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 5,
+   "malformed": false
+  },
+  {
+   "query": "allowable expenses for furnished holiday lets",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "allowable expenses landlords uk",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 61,
+   "malformed": false
+  },
+  {
+   "query": "allowable tax deductions",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 3,
+   "malformed": false
+  },
+  {
+   "query": "any others?",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "are roof repairs tax deductible",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "are valuation fees tax deductible",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "are you sure about those?",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 13,
+   "malformed": false
+  },
+  {
+   "query": "bitte überprüfe deine angaben",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "btl company",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 5,
+   "malformed": false
+  },
+  {
+   "query": "buy to let property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 4,
+   "malformed": false
+  },
+  {
+   "query": "can i deduct mortgage interest",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "can landlord deduct home office",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 32,
+   "malformed": false
+  },
+  {
+   "query": "can you write off utilities on a rental property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "capital allowances leasehold improvements",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 32,
+   "malformed": false
+  },
+  {
+   "query": "capital gains tax deductions",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 29,
+   "malformed": false
+  },
+  {
+   "query": "claiming mortgage interest",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "cleaning",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "corporate tax deductions list",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 6,
+   "malformed": false
+  },
+  {
+   "query": "deductible expenses",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 15,
+   "malformed": false
+  },
+  {
+   "query": "deductions rental property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 79,
+   "malformed": false
+  },
+  {
+   "query": "england",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 4,
+   "malformed": false
+  },
+  {
+   "query": "entire property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "expenses for landlords",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 98,
+   "malformed": false
+  },
+  {
+   "query": "hmo for students",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "hmrc allowable expenses for landlords",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 79,
+   "malformed": false
+  },
+  {
+   "query": "home improvement credit for loft conversion 2026",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 10,
+   "malformed": false
+  },
+  {
+   "query": "home improvement tax credit",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 21,
+   "malformed": false
+  },
+  {
+   "query": "home improvement tax write offs",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 16,
+   "malformed": false
+  },
+  {
+   "query": "how is section 24 (mortgage interest relief) affecting my profits?",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "how to claim mortgage interest on taxes",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "income property tax deductions",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "income tax deduction list",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 34,
+   "malformed": false
+  },
+  {
+   "query": "individual",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 4,
+   "malformed": false
+  },
+  {
+   "query": "individual landlord",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "interest deductions",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 25,
+   "malformed": false
+  },
+  {
+   "query": "is mortgage interest deductible for buy to let uk 2026",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 9,
+   "malformed": false
+  },
+  {
+   "query": "is this all?",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 12,
+   "malformed": false
+  },
+  {
+   "query": "it's rented",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "landlord",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 9,
+   "malformed": false
+  },
+  {
+   "query": "landlord expenses",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "landlord list",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 15,
+   "malformed": false
+  },
+  {
+   "query": "landlord lists",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 40,
+   "malformed": false
+  },
+  {
+   "query": "landlord mortgage interest tax relief in 2020-21",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 72,
+   "malformed": false
+  },
+  {
+   "query": "landlord tax advice",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "landlord write offs",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "leasehold improvements capital allowances",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 9,
+   "malformed": false
+  },
+  {
+   "query": "list of expenses",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "list of expenses in profit and loss account",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "monthly",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "mortgage deduction",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "mortgage interest tax deduction uk",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "mortgage payments",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 6,
+   "malformed": false
+  },
+  {
+   "query": "please do so",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "private landlord",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "property rental",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 10,
+   "malformed": false
+  },
+  {
+   "query": "property tax deduction limit 2026",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 5,
+   "malformed": false
+  },
+  {
+   "query": "reddito locazione",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 5,
+   "malformed": false
+  },
+  {
+   "query": "redraft",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "rent a room allowance 2026/27",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 64,
+   "malformed": false
+  },
+  {
+   "query": "rent a room relief 2025/26",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 93,
+   "malformed": false
+  },
+  {
+   "query": "rent it out",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "rent received",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "rental property tax deductions 2018",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 73,
+   "malformed": false
+  },
+  {
+   "query": "rented",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "rented out",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "repairs and maintenance expense",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "residential",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "s corporation tax deduction list",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "section 24 property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  },
+  {
+   "query": "separate",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 10,
+   "malformed": false
+  },
+  {
+   "query": "tax breaks for landlords",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 84,
+   "malformed": false
+  },
+  {
+   "query": "tax deductable expenses",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 6,
+   "malformed": false
+  },
+  {
+   "query": "tax deductible expenses landlord",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 78,
+   "malformed": false
+  },
+  {
+   "query": "tax deductible expenses rental property,5,5,90,21,0.48,https://www.cottonsgroup.com/resources/blog/deductible-expenses-for-landlords/,2,0.11,0,0.32,135,\"65, 42, 65, 34, 42, 34, 26, 34, 34, 26, 34, 3\",24/5/2026,\"sitelinks, video, people also ask, related s",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": true
+  },
+  {
+   "query": "tax deductible items for rental property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 37,
+   "malformed": false
+  },
+  {
+   "query": "tax deduction list",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 20,
+   "malformed": false
+  },
+  {
+   "query": "tax deductions for a rental property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 91,
+   "malformed": false
+  },
+  {
+   "query": "tax deductions for landlords",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 6,
+   "malformed": false
+  },
+  {
+   "query": "tax deductions landlord",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 83,
+   "malformed": false
+  },
+  {
+   "query": "tax deductions list",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "tax deductions on rental property",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 91,
+   "malformed": false
+  },
+  {
+   "query": "tax itemized list of deductions",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 27,
+   "malformed": false
+  },
+  {
+   "query": "tax write offs for landlords,6,6,90,19,0.53,https://www.cottonsgroup.com/resources/blog/deductible-expenses-for-landlords/,2,0.11,1,0.24,138,\"42, 66, 52, 66, 42, 9, 33, 33, 80, 42, 42, 52\",27/5/2026,\"sitelinks, video, people also ask, related searches, ai",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": true
+  },
+  {
+   "query": "that would be helpful",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "this is in the uk",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 3,
+   "malformed": false
+  },
+  {
+   "query": "uk",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 8,
+   "malformed": false
+  },
+  {
+   "query": "uk tax on rental income",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 6,
+   "malformed": false
+  },
+  {
+   "query": "united kingdom",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "what about blinds?",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 4,
+   "malformed": false
+  },
+  {
+   "query": "what about mtg",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 3,
+   "malformed": false
+  },
+  {
+   "query": "what are tax efficient strategies for rental properties?",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 4,
+   "malformed": false
+  },
+  {
+   "query": "what are the allowable expenses",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "what else can i claim",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 15,
+   "malformed": false
+  },
+  {
+   "query": "what expenses",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 7,
+   "malformed": false
+  },
+  {
+   "query": "what expenses can i deduct from rental income",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "what home improvements are tax deductible 2026",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "what tax reliefs apply to holiday lets?",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 4,
+   "malformed": false
+  },
+  {
+   "query": "yeah",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 1,
+   "malformed": false
+  },
+  {
+   "query": "yes and yes",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 11,
+   "malformed": false
+  },
+  {
+   "query": "yes to both",
+   "clicks": 0,
+   "impressions": 1,
+   "position": 2,
+   "malformed": false
+  }
+ ],
+ "bing_page_queries": {
+  "source": "docs/property/rewrites/2026-10-10/landlord-tax-deductions-uk-2026-complete-list.protect.json (not re-pulled)",
+  "gsc_window_of_pack": "2026-07-11..2026-10-08",
+  "bing_rows": 814,
+  "bing_queries_total": 750,
+  "protect_list_queries": 258,
+  "protect_list_bing_clicks": 190,
+  "protect_list_bing_impr": 553,
+  "register_totals": "bing_impr 1240, bing_clicks 190, 750 queries, 17 top-3 queries, leads_90d 3 (13_protect_register.csv)",
+  "unanswered_at_baseline_score_lt_0.5": 70,
+  "top_by_clicks": [
+   {
+    "query": "are replacement mortgage fees allowable deductions",
+    "engine": "bing",
+    "bing_clicks": 3,
+    "bing_impr": 3,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.76,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "landlord deductions post new rules wikpedia rules",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 2,
+    "bing_pos": 1.5,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.433,
+    "section": "FAQ: Can landlords claim a flat-rate home-office deduction in 2026/27?"
+   },
+   {
+    "query": "tax relief for landlords examples",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 2,
+    "bing_pos": 2.5,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.8,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "can i claim mortgage insurance on tax returns in uk",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.64,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "can you include post redirection as landlords expense",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 1,
+    "bing_pos": 7.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.4,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "landlord charge for mileage 2026",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.7,
+    "section": "H3: Landlord Expenses List: At-a-Glance Table"
+   },
+   {
+    "query": "landlord uk tax deductions",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 1.0,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "tax relief for landlords 2026",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.9,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "landlord allowable expenses examples",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 10,
+    "bing_pos": 7.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.9,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "residential property expenses",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 5,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.733,
+    "section": "FAQ: Can I claim mortgage interest as a landlord expense in 2026/27?"
+   },
+   {
+    "query": "allowabel expensed for landlords",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 4,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.333,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "allowable expenses for rental income",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 3,
+    "bing_pos": 8.33,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.9,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "expenses l s 2026",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 3,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.55,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "what can you claim as tax deductable for a property owner",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 3,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.64,
+    "section": "H2: Should you claim expenses or the £1,000 property income allowance?"
+   },
+   {
+    "query": "what deductions are allowable on rental properties uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 3,
+    "bing_pos": 1.33,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.65,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "are mortgage redemption fees allaowable as expenses against rental income",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.65,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "boiler service letting tax deductable",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.48,
+    "section": "H2: The Complete List of Allowable Landlord Expenses"
+   },
+   {
+    "query": "can a mortgage arrangement fee be included as a private landlord expense",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.629,
+    "section": "H3: Landlord Expenses List: At-a-Glance Table"
+   },
+   {
+    "query": "can gardening hours and mileage on a rented property be tax deductible",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.371,
+    "section": "H2: Is rent tax deductible?"
+   },
+   {
+    "query": "can i include admin time to chase tenants on my tax return uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.343,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "can you claim website costs as an expenses for a rental property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.7,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "can you deduct tenant checks on rental property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.52,
+    "section": "H2: Can you deduct mortgage interest from rental income?"
+   },
+   {
+    "query": "deductable expenses for landlords",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.667,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "expenses allowable for tax uk property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.8,
+    "section": "H2: The Complete List of Allowable Landlord Expenses"
+   },
+   {
+    "query": "for a property company what sort of expenses can i claim as tax deductible",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.543,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "gas inspection expenses what is it classified in rental tax return",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.457,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "hmrc property claimable landlord loft insulation",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 7.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.467,
+    "section": "FAQ: What is the difference between repairs and improvements for landlord tax?"
+   },
+   {
+    "query": "how to deduct costs from the income to a rental property scotland",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 7.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.7,
+    "section": "H2: Can you deduct mortgage interest from rental income?"
+   },
+   {
+    "query": "in hmrc tax for letting out property can you deduct introduction fees",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.5,
+    "section": "H2: Professional Fees, Advertising and Management"
+   },
+   {
+    "query": "income tax for rented second home - expenses you cannot claim a deduction for include tab the full amount of your mortgage payment only the interest",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.459,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "is gas boiler insurance for a rented flat an allowable expense for a landlord in the uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.6,
+    "section": "H2: The Complete List of Allowable Landlord Expenses"
+   },
+   {
+    "query": "is redecoration an allowable expense",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 6.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.667,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "laminate flooring as an allowable expense",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.65,
+    "section": "H2: Which repairs count as allowable expenses, and which are improvements?"
+   },
+   {
+    "query": "landlord costs to not be taxed on",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.6,
+    "section": "H2: Insurance Claims and Other Grey Areas"
+   },
+   {
+    "query": "list of expenses a landlord can claim",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.9,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "list of expesnes for private landlord tax - list of allowable expenses",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.714,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   },
+   {
+    "query": "office ground rent tax relief uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.68,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "property maintenance of my office used for managing numerous property letings categorised as management costs s",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 7.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.345,
+    "section": "FAQ: Does claiming home-office costs affect Capital Gains Tax when I sell my home?"
+   },
+   {
+    "query": "rental expenses you can claim",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 9.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 1.0,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "residential property letting limited company accounts allowable costs list uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.422,
+    "section": "H2: The Complete List of Allowable Landlord Expenses"
+   },
+   {
+    "query": "schedule a rental income expenses allowed",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 6.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.6,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "tax deductible items on a property company",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.52,
+    "section": "H2: Is rent tax deductible?"
+   },
+   {
+    "query": "uk property expenses 2026 landlord electric gas bills",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.6,
+    "section": "FAQ: Can I claim mortgage interest as a landlord expense in 2026/27?"
+   },
+   {
+    "query": "uk property return 2027 what expenses can i claim for",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.6,
+    "section": "H2: Should you claim expenses or the £1,000 property income allowance?"
+   },
+   {
+    "query": "what allowable expenses can i write off from rental income",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.7,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "what are all the hmrc allowed landlords claim expenses that are incurred wholly and exclusively for renting out the property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 5.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.417,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "what can i claim as allowable expenses when renting out a property uk tax",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.686,
+    "section": "H2: Should you claim expenses or the £1,000 property income allowance?"
+   },
+   {
+    "query": "what can i claim for on expenses as a landlord",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 1.0,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "what costs of running a rental property tax deductible",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.7,
+    "section": "FAQ: What costs are not deductible against rental income?"
+   },
+   {
+    "query": "what deductions can you claim on a property let",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.65,
+    "section": "FAQ: Can landlords claim a flat-rate home-office deduction in 2026/27?"
+   },
+   {
+    "query": "what expenses are tax deductible for landlords",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.8,
+    "section": "FAQ: What is the difference between repairs and improvements for landlord tax?"
+   },
+   {
+    "query": "what expenses are tax deductible on a personally owned property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.567,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "what expenses can you claim from mmortgage",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.667,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "what is deductible from rental income",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 1.0,
+    "section": "FAQ: What costs are not deductible against rental income?"
+   },
+   {
+    "query": "as a landlord what can i claim against tax",
+    "engine": "bing+google",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 5.0,
+    "gsc_clicks": 1,
+    "gsc_impr": 1,
+    "gsc_pos": 1.0,
+    "score": 0.8,
+    "section": "FAQ: Can I claim mortgage interest as a landlord expense in 2026/27?"
+   },
+   {
+    "query": "landlord expenses",
+    "engine": "bing+google",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 1,
+    "gsc_pos": 7.0,
+    "score": 1.0,
+    "section": "FAQ: What expenses can landlords claim on tax in the UK for 2026/27?"
+   },
+   {
+    "query": "allowable expenses before renting property out uk tax",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 5.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.543,
+    "section": "H2: Which repairs count as allowable expenses, and which are improvements?"
+   },
+   {
+    "query": "allowable expenses for rental property uk 2026",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.76,
+    "section": "H2: What expenses can you claim against rental income?"
+   },
+   {
+    "query": "allowable expenses on property income uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.9,
+    "section": "H2: Should you claim expenses or the £1,000 property income allowance?"
+   },
+   {
+    "query": "allowable mortgage expenses uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_clicks": 0,
+    "gsc_impr": 0,
+    "gsc_pos": null,
+    "score": 0.867,
+    "section": "H1/title: Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
+   }
+  ],
+  "unanswered": [
+   {
+    "query": "landlord deductions post new rules wikpedia rules",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 2,
+    "bing_pos": 1.5,
+    "gsc_impr": 0,
+    "score": 0.433
+   },
+   {
+    "query": "can you include post redirection as landlords expense",
+    "engine": "bing",
+    "bing_clicks": 2,
+    "bing_impr": 1,
+    "bing_pos": 7.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "allowabel expensed for landlords",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 4,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.333
+   },
+   {
+    "query": "boiler service letting tax deductable",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.48
+   },
+   {
+    "query": "can gardening hours and mileage on a rented property be tax deductible",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.371
+   },
+   {
+    "query": "can i include admin time to chase tenants on my tax return uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.343
+   },
+   {
+    "query": "gas inspection expenses what is it classified in rental tax return",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.457
+   },
+   {
+    "query": "hmrc property claimable landlord loft insulation",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 7.0,
+    "gsc_impr": 0,
+    "score": 0.467
+   },
+   {
+    "query": "income tax for rented second home - expenses you cannot claim a deduction for include tab the full amount of your mortgage payment only the interest",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.459
+   },
+   {
+    "query": "property maintenance of my office used for managing numerous property letings categorised as management costs s",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 7.0,
+    "gsc_impr": 0,
+    "score": 0.345
+   },
+   {
+    "query": "residential property letting limited company accounts allowable costs list uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.422
+   },
+   {
+    "query": "what are all the hmrc allowed landlords claim expenses that are incurred wholly and exclusively for renting out the property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 5.0,
+    "gsc_impr": 0,
+    "score": 0.417
+   },
+   {
+    "query": "average annual allowable costs incurred by landlords as a percentage of rent",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "buying the freehold on your property can you claim that back in your tax return for landlord",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.475
+   },
+   {
+    "query": "can i claim a deduction from my property letting profits for the cost of a new boiler external door and roof",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.382
+   },
+   {
+    "query": "can i claim for my time doing admin when renting out my property uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.486
+   },
+   {
+    "query": "can i claim twx back for my gome insirwmce on my rental uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.433
+   },
+   {
+    "query": "can my ltd company renting out properties claim any finanace or grant",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.244
+   },
+   {
+    "query": "can you allow for your time spent on a rental property as the landlords to deduct from income what about commercial property for maintenance",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.42
+   },
+   {
+    "query": "can you claim tax relief on security installation of cctv on rented property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "can you include a mileage claim for vising rental property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.433
+   },
+   {
+    "query": "do i need to pay tax on landlord remedial garden works uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 5.0,
+    "gsc_impr": 0,
+    "score": 0.457
+   },
+   {
+    "query": "flats expenditure external",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.333
+   },
+   {
+    "query": "for a uk landlord what do cleaning materials cost code should i use for tax purposes",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.425
+   },
+   {
+    "query": "hmrc deductions that can be made for rental properties including using house as office 2026",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.36
+   },
+   {
+    "query": "i am a landlord and rent out a house privately can i claim for changing the fire alarms to electrical ones in the property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.338
+   },
+   {
+    "query": "i have bought a flat in the name of my business are diy improvements and a new gas boiler tax deductable",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.418
+   },
+   {
+    "query": "i own three rental properties can i claim over night hotel fees",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.356
+   },
+   {
+    "query": "if i have to replace the wall ties on my rental property is tghis tax deductable",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.275
+   },
+   {
+    "query": "im a landlord with 3 properties how much fuel can i claim for",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.314
+   },
+   {
+    "query": "is replacing bathroom fittings an allowabble repair for uk letting income tax",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 7.0,
+    "gsc_impr": 0,
+    "score": 0.425
+   },
+   {
+    "query": "is there any office costs for admin i can claim when renting a caravan",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 6.0,
+    "gsc_impr": 0,
+    "score": 0.486
+   },
+   {
+    "query": "list of taxable exenses for landlords renting with rent a room scheme",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.325
+   },
+   {
+    "query": "msepropetty in come deductions",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "parking permits for rented properties get coded where in accounts uk expense or cos",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.178
+   },
+   {
+    "query": "partial exemption limit 2026-27 for property repairs",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 5.0,
+    "gsc_impr": 0,
+    "score": 0.457
+   },
+   {
+    "query": "property rental company tax deductions for flooring and white goods",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.35
+   },
+   {
+    "query": "property rroairs msintenance renewaks allowance",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "redecoration of communal stair deductable expense for rental propoerty",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 5.0,
+    "gsc_impr": 0,
+    "score": 0.286
+   },
+   {
+    "query": "subsistence expenses for maintaining forign letting property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.467
+   },
+   {
+    "query": "tax deductible expenditure through limited company for letting property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "under which hmrc category can landlords claim for gas safety checks",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "what are common things you can claim for when filling out a tax return for letting out a property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.378
+   },
+   {
+    "query": "what are some of the deductions i can make to a tax return for a rented property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.429
+   },
+   {
+    "query": "what can i claim on self assessment tax for electric charge allowance rental property",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "what category is mortgage when doing taxes uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.3
+   },
+   {
+    "query": "what deductions can you use on rental income of 36000 pa",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.467
+   },
+   {
+    "query": "what expenses can you claim when you are going to rent out a residential house in uk",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.457
+   },
+   {
+    "query": "what refersjments are allowable for renters",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.333
+   },
+   {
+    "query": "what sections does utility costs fall under in a preperty tax return",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 5.0,
+    "gsc_impr": 0,
+    "score": 0.35
+   },
+   {
+    "query": "what utilities can a english landlord write off for tax if they offer an all inclusive basis",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.34
+   },
+   {
+    "query": "when filling in tax return do you beed to dentify expenses for property income",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.45
+   },
+   {
+    "query": "when renting a property which order do deduction occur",
+    "engine": "bing",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.32
+   },
+   {
+    "query": "tax deductible items for rental property 6 6 110 15 0 48 https www cottonsgroup com resources blog deductible-expenses-for-landlords 2 0 11 0 0 32 13500000 100 66 42 52 66 52 23 42 52 42 42 42 24 4 2026 sitelinks video people also ask",
+    "engine": "bing+google",
+    "bing_clicks": 0,
+    "bing_impr": 15,
+    "bing_pos": 3.67,
+    "gsc_impr": 34,
+    "score": 0.2
+   },
+   {
+    "query": "landlord tax deductions 5 5 170 20 0 53 https www cottonsgroup com resources blog deductible-expenses-for-landlords 3 0 17 1 0 24 138 43 28 28 17 28 23 53 53 66 66 43 66 18 5 2026 sitelinks video people also ask related searches discu",
+    "engine": "bing+google",
+    "bing_clicks": 0,
+    "bing_impr": 13,
+    "bing_pos": 3.69,
+    "gsc_impr": 15,
+    "score": 0.177
+   },
+   {
+    "query": "as a landlord what expenses can i claim 7 7 110 13 0 41 https www cottonsgroup com resources blog deductible-expenses-for-landlords 1 0 05 0 0 43 30900000 53 21 12 28 21 21 21 28 28 43 43 100 7 5 2026 sitelinks video people also ask re",
+    "engine": "bing+google",
+    "bing_clicks": 0,
+    "bing_impr": 2,
+    "bing_pos": 10.0,
+    "gsc_impr": 16,
+    "score": 0.144
+   },
+   {
+    "query": "tax write offs for landlords 6 6 90 19 0 53 https www cottonsgroup com resources blog deductible-expenses-for-landlords 2 0 11 1 0 24 138 42 66 52 66 42 9 33 33 80 42 42 52 27 5 2026 sitelinks video people also ask related searches ai",
+    "engine": "bing+google",
+    "bing_clicks": 0,
+    "bing_impr": 8,
+    "bing_pos": 3.0,
+    "gsc_impr": 1,
+    "score": 0.174
+   },
+   {
+    "query": "yes please",
+    "engine": "google",
+    "bing_clicks": 0,
+    "bing_impr": 0,
+    "bing_pos": null,
+    "gsc_impr": 6,
+    "score": 0.3
+   },
+   {
+    "query": "outstanding landlord expenses and fees net vat gross a2b electrical - install new smoke alarms - fitted new smoke detectors as instructed balance brought forward 10 of 330 3836 10 00 0 00 10 00 total outstanding 10 00 0 00 10 00",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 5,
+    "bing_pos": 1.0,
+    "gsc_impr": 0,
+    "score": 0.176
+   },
+   {
+    "query": "can i claim mileage for driving to pick up supplies for repair of rental property uk",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 6.0,
+    "gsc_impr": 0,
+    "score": 0.378
+   },
+   {
+    "query": "expenditure for morgage and rent",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 6.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "how much of revenue expences can a landlord claim for legal costs of evictionfrom hmrc",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 8.0,
+    "gsc_impr": 0,
+    "score": 0.444
+   },
+   {
+    "query": "i have a rental property i have carried out major improvements how much of it can i claim as expenses against my tax is there an upper limit",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.446
+   },
+   {
+    "query": "if i get repairs to property in 26 27 which happened 25 26 can this be claimed for 25 26 for roof repair and leak from hmrc as a revenue expense",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 6.0,
+    "gsc_impr": 0,
+    "score": 0.431
+   },
+   {
+    "query": "landlord deduct 15 wear and tear repair bill tenant uk",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 2.0,
+    "gsc_impr": 0,
+    "score": 0.35
+   },
+   {
+    "query": "car lease property portfolio landlord allowable for tax purposes",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 7.0,
+    "gsc_impr": 0,
+    "score": 0.425
+   },
+   {
+    "query": "is cost oftaking down a dangerous tree allowed as expense against rental income",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 4.0,
+    "gsc_impr": 0,
+    "score": 0.46
+   },
+   {
+    "query": "mortgage alowable interest in annual accounts uk",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 3.0,
+    "gsc_impr": 0,
+    "score": 0.4
+   },
+   {
+    "query": "uk hmrc pre-letting expenditure finance cost relief 20",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 7.0,
+    "gsc_impr": 0,
+    "score": 0.45
+   },
+   {
+    "query": "what home runnign costs can you claim when claiming rent a room as a landlord when you rent out a bedroom a bathroom and a kitchen",
+    "engine": "bing",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 8.0,
+    "gsc_impr": 0,
+    "score": 0.383
+   }
+  ]
+ },
+ "serp_context": {
+  "covers_landlord_allowable_expenses": false,
+  "statement": "No stored SERP covers \"landlord allowable expenses\", \"what expenses can landlords claim\", \"landlord expenses\", \"landlord tax deductions\" or any other expenses wording (serp_index.csv 449 rows, serp_fresh_index.csv 96 rows; searched for expens/deduct/allowable/claim/write-off/mortgage interest/repairs/mileage/home office/wear and tear/section 24/property income allowance). Nothing was bought. These wordings were excluded at stage 01 (not_commercial_intent), so no SERP was ever pulled.",
+  "nearest_stored_serps_adjacent_only": {
+   "selling rental property tax deductions": {
+    "source_index": "serp_fresh_index.csv",
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/2ab1d12b026cd6690fa2af62bdf6283b2114cfc4.fresh-2026-10-10.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.krestonreeves.com",
+      "url": "https://www.krestonreeves.com/news/exiting-the-uk-private-rental-sector-what-individual-landlords-need-to-know-about-tax/",
+      "title": "Exiting the UK private rental sector: What individual ..."
+     },
+     {
+      "rank": 2,
+      "rank_abs": 4,
+      "domain": "uklandlordtax.co.uk",
+      "url": "https://uklandlordtax.co.uk/a-simple-guide-to-property-rental-income-tax-and-property-capital-gains-tax/",
+      "title": "A Simple Guide to Property Rental Income Tax and Capital ..."
+     },
+     {
+      "rank": 3,
+      "rank_abs": 5,
+      "domain": "www.haybrook.com",
+      "url": "https://www.haybrook.com/landlords/understanding-buy-to-let-tax-implications/",
+      "title": "Understanding 'Buy-to-Let' tax implications"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "merrantiaccounting.com",
+      "url": "https://merrantiaccounting.com/buy-to-let-property/",
+      "title": "What Tax Do I Owe When Selling a Buy-to-Let Property?"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.gosimpletax.com",
+      "url": "https://www.gosimpletax.com/blog/21-tax-expenses-you-can-claim-as-a-landlord/",
+      "title": "21 expenses you can claim as a private residential landlord"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "assets.publishing.service.gov.uk",
+      "url": "https://assets.publishing.service.gov.uk/media/5da72232ed915d4298f25481/Property.pdf",
+      "title": "Property Rental Toolkit"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "www.axa.co.uk",
+      "url": "https://www.axa.co.uk/landlord-insurance/landlord-allowable-expenses/",
+      "title": "A Guide To Landlord Allowable Expenses"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "guildfordaccounting.com",
+      "url": "https://guildfordaccounting.com/blog/offset-against-capital-gains-tax-on-property-sale/",
+      "title": "Reducing Capital Gains Tax When Selling Property"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/groups/1447111702109702/posts/2807001079454084/",
+      "title": "What taxes should I pay when selling my rental property?"
+     }
+    ],
+    "paa": [
+     "What is capital gains tax on property?",
+     "What is the new tax on landlords?",
+     "What deductions can you claim on a rental?",
+     "Is capital gains tax changing in April 2026?"
+    ]
+   },
+   "landlord tax advice": {
+    "source_index": "serp_fresh_index.csv",
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/e3a01610d399f0260d73d6526d088f29df25b855.fresh-2026-10-10.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.nrla.org.uk",
+      "url": "https://www.nrla.org.uk/services/tax",
+      "title": "Landlord Tax Services | Property Tax Advisors"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "uklandlordtax.co.uk",
+      "url": "https://uklandlordtax.co.uk/",
+      "title": "UK Landlord Tax: Property Tax Accountants For Landlords"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 5,
+      "domain": "www.totallandlordinsurance.co.uk",
+      "url": "https://www.totallandlordinsurance.co.uk/knowledge-centre/taxes-for-uk-landlords",
+      "title": "Advice on UK landlord tax: the complete guide for 2025/6 |"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "www.gov.uk",
+      "url": "https://www.gov.uk/renting-out-a-property/paying-tax",
+      "title": "Renting out your property: Paying tax and National Insurance"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.geraldedelman.com",
+      "url": "https://www.geraldedelman.com/insights/tax-advice-for-landlords-seven-key-tips/",
+      "title": "Tax Advice For Landlords: 7 Key Tips To Follow"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.taxassist.co.uk",
+      "url": "https://www.taxassist.co.uk/who-we-help/landlords",
+      "title": "Landlords"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "perrysaccountants.co.uk",
+      "url": "https://perrysaccountants.co.uk/property-and-landlord-accountants",
+      "title": "Buy to Let Accountant and Tax Advice in London and Kent"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.alanboswell.com",
+      "url": "https://www.alanboswell.com/resources/landlord-tax-guide/",
+      "title": "Landlord Tax Guide | Understanding Tax As A Landlord"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.nrla.org.uk",
+      "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+      "title": "RITA4Rent | Rental Property Tax Advisor"
+     }
+    ],
+    "paa": [
+     "How to avoid paying 40% income tax on rental property?",
+     "What is the 2% rule for renting?",
+     "What is the new tax rule for landlords?",
+     "What can landlords get tax relief on?"
+    ]
+   },
+   "landlord tax advice uk": {
+    "source_index": "serp_index.csv",
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/a0e5f11e7d9d53ec642e94fa03ad45a62994b852.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.arnoldhill.co.uk",
+      "url": "https://www.arnoldhill.co.uk/property",
+      "title": "Property Tax Advice UK"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "www.taxfile.co.uk",
+      "url": "https://www.taxfile.co.uk/landlords-property-tax-advisers/",
+      "title": "Tax advice/accountancy for landlords, property rental, lettings ..."
+     },
+     {
+      "rank": 3,
+      "rank_abs": 4,
+      "domain": "www.hwja-accountants.co.uk",
+      "url": "https://www.hwja-accountants.co.uk/resources/blog/tax-advice-for-landlords/",
+      "title": "5 important reasons you need specialist tax advice for ..."
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "www.thomsoncooper.com",
+      "url": "https://www.thomsoncooper.com/sectors/landlord-property-accountants/",
+      "title": "Tax Planning for Landlords - Property Accountants"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.wtca.co.uk",
+      "url": "https://www.wtca.co.uk/blog/tax-saving-ideas-for-landlords/",
+      "title": "Tax saving ideas for landlords"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.simplybusiness.co.uk",
+      "url": "https://www.simplybusiness.co.uk/knowledge/landlord-tax/tax-on-rental-income/",
+      "title": "Tax on rental income – a complete guide to landlord tax"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "www.bsassociate.co.uk",
+      "url": "https://www.bsassociate.co.uk/blog/property-tax-accountants-in-london-a-practical-guide-to-rental-income-tax-and-compliance/",
+      "title": "Property Tax Accountants in London: A Practical Guide to ..."
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/uklandlordtax/",
+      "title": "UK Landlord Tax (@uklandlordtax)"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.hwja-accountants.co.uk",
+      "url": "https://www.hwja-accountants.co.uk/our-clients/accountants-for-landlords/",
+      "title": "Accountants for landlords | Cardiff & Bridgend"
+     }
+    ],
+    "paa": [
+     "How much is a landlord taxed?",
+     "Can a landlord be responsible for council tax?",
+     "How to avoid paying 40% tax on rental income?",
+     "How do I report rental income to HMRC?"
+    ]
+   },
+   "small landlord tax advice": {
+    "source_index": "serp_fresh_index.csv",
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/32c59940b49d256bac4d085634903e469cc6cf8f.fresh-2026-10-10.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "osome.com",
+      "url": "https://osome.com/uk/guides/how-to-reduce-tax-on-rental-income/",
+      "title": "How To Reduce Tax on Rental Income: 8 Essential Tips"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "www.nrla.org.uk",
+      "url": "https://www.nrla.org.uk/news/minimise-your-tax-liability-5-tips-for-landlords",
+      "title": "Minimise your tax liability – 5 tips for landlords"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 4,
+      "domain": "www.nrla.org.uk",
+      "url": "https://www.nrla.org.uk/resources/tax",
+      "title": "Landlord Tax Benefits & Deductions"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "r-m-t.co.uk",
+      "url": "https://r-m-t.co.uk/blog/tax-saving-strategies-for-landlords/",
+      "title": "Tax Saving Strategies For Landlords"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.litrg.org.uk",
+      "url": "https://www.litrg.org.uk/savings-property/property-income/reporting-property-income-hmrc",
+      "title": "Reporting property income to HMRC"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.samconveyancing.co.uk",
+      "url": "https://www.samconveyancing.co.uk/news/conveyancing/how-to-reduce-income-tax-on-rental-property",
+      "title": "How to Avoid Paying Tax on Rental Income in 2025"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "premiertaxsolutions.co.uk",
+      "url": "http://premiertaxsolutions.co.uk/articles/landlord-tax-return-tips/",
+      "title": "Maximise Your Landlord Tax Return with These Helpful Tips"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.cottonsgroup.com",
+      "url": "https://www.cottonsgroup.com/resources/blog/accounting-tips-for-landlords/",
+      "title": "Accounting tips for landlords: Maximising your rental income"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.bsassociate.co.uk",
+      "url": "https://www.bsassociate.co.uk/blog/property-tax-accountants-in-london-a-practical-guide-to-rental-income-tax-and-compliance/",
+      "title": "Property Tax Accountants in London: A Practical Guide to ..."
+     }
+    ],
+    "paa": [
+     "What is the property income allowance for HMRC?",
+     "What is a simple trick for avoiding capital gains tax?",
+     "What is the 2% rule for property?",
+     "How to pay no taxes on rental income in the UK?"
+    ]
+   }
+  },
+  "people_also_ask_deduped": [
+   {
+    "question": "What is capital gains tax on property?",
+    "raised_by": [
+     "selling rental property tax deductions"
+    ]
+   },
+   {
+    "question": "What is the new tax on landlords?",
+    "raised_by": [
+     "selling rental property tax deductions"
+    ]
+   },
+   {
+    "question": "What deductions can you claim on a rental?",
+    "raised_by": [
+     "selling rental property tax deductions"
+    ]
+   },
+   {
+    "question": "Is capital gains tax changing in April 2026?",
+    "raised_by": [
+     "selling rental property tax deductions"
+    ]
+   },
+   {
+    "question": "How to avoid paying 40% income tax on rental property?",
+    "raised_by": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "What is the 2% rule for renting?",
+    "raised_by": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "What is the new tax rule for landlords?",
+    "raised_by": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "What can landlords get tax relief on?",
+    "raised_by": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "How much is a landlord taxed?",
+    "raised_by": [
+     "landlord tax advice uk"
+    ]
+   },
+   {
+    "question": "Can a landlord be responsible for council tax?",
+    "raised_by": [
+     "landlord tax advice uk"
+    ]
+   },
+   {
+    "question": "How to avoid paying 40% tax on rental income?",
+    "raised_by": [
+     "landlord tax advice uk"
+    ]
+   },
+   {
+    "question": "How do I report rental income to HMRC?",
+    "raised_by": [
+     "landlord tax advice uk"
+    ]
+   },
+   {
+    "question": "What is the property income allowance for HMRC?",
+    "raised_by": [
+     "small landlord tax advice"
+    ]
+   },
+   {
+    "question": "What is a simple trick for avoiding capital gains tax?",
+    "raised_by": [
+     "small landlord tax advice"
+    ]
+   },
+   {
+    "question": "What is the 2% rule for property?",
+    "raised_by": [
+     "small landlord tax advice"
+    ]
+   },
+   {
+    "question": "How to pay no taxes on rental income in the UK?",
+    "raised_by": [
+     "small landlord tax advice"
+    ]
+   }
+  ],
+  "paa_count": 16
+ },
+ "sibling_pages": {
+  "method": "GSC shows our pages for the guide query set: (a) stage 03b fresh (window 2026-07-11..2026-10-08), pages other than the guide that rank for any query the guide ranks for, named rows only; (b) fresh API pull dimension query+page, 16 months, for the top 30 named queries plus 10 head wordings.",
+  "from_stage_03b": [
+   {
+    "page": "/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk",
+    "clicks": 4,
+    "impressions": 233,
+    "avg_position": 5.4,
+    "n_shared_queries": 19,
+    "top_shared_queries": [
+     [
+      "yes",
+      55,
+      3.9
+     ],
+     [
+      "buy to let",
+      40,
+      3.1
+     ],
+     [
+      "uk",
+      31,
+      5.1
+     ],
+     [
+      "rental property",
+      26,
+      3.9
+     ]
+    ]
+   },
+   {
+    "page": "/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible",
+    "clicks": 0,
+    "impressions": 152,
+    "avg_position": 10.0,
+    "n_shared_queries": 4,
+    "top_shared_queries": [
+     [
+      "is landlord insurance tax deductible",
+      148,
+      9.7
+     ],
+     [
+      "site:www.propertytaxpartners.co.uk",
+      2,
+      35.5
+     ],
+     [
+      "rental property",
+      1,
+      9.0
+     ],
+     [
+      "uk",
+      1,
+      5.0
+     ]
+    ]
+   },
+   {
+    "page": "/landlord-tax",
+    "clicks": 0,
+    "impressions": 120,
+    "avg_position": 73.1,
+    "n_shared_queries": 2,
+    "top_shared_queries": [
+     [
+      "landlord tax advice",
+      118,
+      73.6
+     ],
+     [
+      "site:www.propertytaxpartners.co.uk",
+      2,
+      47.0
+     ]
+    ]
+   },
+   {
+    "page": "/locations/leeds",
+    "clicks": 0,
+    "impressions": 84,
+    "avg_position": 45.1,
+    "n_shared_queries": 1,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      84,
+      45.1
+     ]
+    ]
+   },
+   {
+    "page": "/terms",
+    "clicks": 0,
+    "impressions": 83,
+    "avg_position": 46.6,
+    "n_shared_queries": 1,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      83,
+      46.6
+     ]
+    ]
+   },
+   {
+    "page": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+    "clicks": 0,
+    "impressions": 77,
+    "avg_position": 46.3,
+    "n_shared_queries": 10,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      54,
+      63.3
+     ],
+     [
+      "yes",
+      8,
+      8.1
+     ],
+     [
+      "yes please",
+      4,
+      4.0
+     ],
+     [
+      "rental property",
+      3,
+      8.3
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/gift-with-reservation-of-benefit",
+    "clicks": 0,
+    "impressions": 66,
+    "avg_position": 59.4,
+    "n_shared_queries": 2,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      65,
+      60.2
+     ],
+     [
+      "yes",
+      1,
+      7.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/incorporation-and-company-structures/companies-house-reforms",
+    "clicks": 0,
+    "impressions": 65,
+    "avg_position": 59.2,
+    "n_shared_queries": 1,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      65,
+      59.2
+     ]
+    ]
+   },
+   {
+    "page": "/blog/property-types-and-specialist-tax/cis-templates",
+    "clicks": 0,
+    "impressions": 65,
+    "avg_position": 57.0,
+    "n_shared_queries": 2,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      64,
+      57.8
+     ],
+     [
+      "yes",
+      1,
+      5.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge",
+    "clicks": 0,
+    "impressions": 59,
+    "avg_position": 57.9,
+    "n_shared_queries": 2,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      58,
+      58.9
+     ],
+     [
+      "yes",
+      1,
+      4.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide",
+    "clicks": 0,
+    "impressions": 52,
+    "avg_position": 8.1,
+    "n_shared_queries": 11,
+    "top_shared_queries": [
+     [
+      "yes",
+      21,
+      2.7
+     ],
+     [
+      "site:www.propertytaxpartners.co.uk",
+      8,
+      35.1
+     ],
+     [
+      "yes please",
+      7,
+      2.9
+     ],
+     [
+      "individual landlord",
+      3,
+      2.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/property-types-and-specialist-tax/capital-allowances-on-property",
+    "clicks": 0,
+    "impressions": 44,
+    "avg_position": 24.4,
+    "n_shared_queries": 12,
+    "top_shared_queries": [
+     [
+      "capital allowances leasehold improvements",
+      13,
+      46.4
+     ],
+     [
+      "site:www.propertytaxpartners.co.uk",
+      10,
+      26.9
+     ],
+     [
+      "residential",
+      7,
+      2.6
+     ],
+     [
+      "leasehold improvements capital allowances",
+      3,
+      48.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27",
+    "clicks": 0,
+    "impressions": 44,
+    "avg_position": 60.1,
+    "n_shared_queries": 5,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      34,
+      76.6
+     ],
+     [
+      "yes",
+      5,
+      5.2
+     ],
+     [
+      "buy to let",
+      2,
+      4.0
+     ],
+     [
+      "yes please",
+      2,
+      2.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/jointly-owned-property",
+    "clicks": 0,
+    "impressions": 41,
+    "avg_position": 38.5,
+    "n_shared_queries": 1,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      41,
+      38.5
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/penalties-not-declaring-rental-income-hmrc",
+    "clicks": 0,
+    "impressions": 36,
+    "avg_position": 41.3,
+    "n_shared_queries": 2,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      35,
+      42.5
+     ],
+     [
+      "this is in the uk",
+      1,
+      1.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/gas-safety-certificates",
+    "clicks": 0,
+    "impressions": 35,
+    "avg_position": 30.0,
+    "n_shared_queries": 2,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      34,
+      30.8
+     ],
+     [
+      "yes",
+      1,
+      3.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/non-resident-landlord-tax/moving-to-australia-uk-rental-property-tax-pathway",
+    "clicks": 0,
+    "impressions": 32,
+    "avg_position": 67.5,
+    "n_shared_queries": 4,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      27,
+      79.2
+     ],
+     [
+      "yes",
+      3,
+      4.3
+     ],
+     [
+      "both",
+      1,
+      4.0
+     ],
+     [
+      "rental property",
+      1,
+      6.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/section-24-and-tax-relief/mortgage-arrangement-fees-deductible-landlord",
+    "clicks": 1,
+    "impressions": 29,
+    "avg_position": 15.4,
+    "n_shared_queries": 7,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      10,
+      40.3
+     ],
+     [
+      "buy to let",
+      7,
+      2.0
+     ],
+     [
+      "limited company",
+      5,
+      2.4
+     ],
+     [
+      "individual",
+      2,
+      1.5
+     ]
+    ]
+   },
+   {
+    "page": "/calculators/rent-a-room-relief-calculator",
+    "clicks": 0,
+    "impressions": 27,
+    "avg_position": 7.4,
+    "n_shared_queries": 4,
+    "top_shared_queries": [
+     [
+      "rent a room allowance 2026/27",
+      23,
+      6.7
+     ],
+     [
+      "site:www.propertytaxpartners.co.uk",
+      2,
+      20.0
+     ],
+     [
+      "yes",
+      1,
+      3.0
+     ],
+     [
+      "yes please",
+      1,
+      5.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk",
+    "clicks": 0,
+    "impressions": 26,
+    "avg_position": 71.1,
+    "n_shared_queries": 4,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      23,
+      79.7
+     ],
+     [
+      "united kingdom",
+      1,
+      4.0
+     ],
+     [
+      "yes",
+      1,
+      8.0
+     ],
+     [
+      "yes please",
+      1,
+      3.0
+     ]
+    ]
+   },
+   {
+    "page": "/blog/incorporation-and-company-structures/ated-complete-guide-2026-27",
+    "clicks": 0,
+    "impressions": 24,
+    "avg_position": 12.0,
+    "n_shared_queries": 5,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      10,
+      22.0
+     ],
+     [
+      "yes",
+      6,
+      4.0
+     ],
+     [
+      "residential",
+      4,
+      4.8
+     ],
+     [
+      "rented out",
+      3,
+      5.7
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/land-transaction-tax-a-complete-guide",
+    "clicks": 1,
+    "impressions": 23,
+    "avg_position": 11.2,
+    "n_shared_queries": 7,
+    "top_shared_queries": [
+     [
+      "yes",
+      9,
+      3.3
+     ],
+     [
+      "site:www.propertytaxpartners.co.uk",
+      5,
+      33.6
+     ],
+     [
+      "yes please",
+      5,
+      4.8
+     ],
+     [
+      "yes and yes",
+      1,
+      6.0
+     ]
+    ]
+   },
+   {
+    "page": "/making-tax-digital-landlords",
+    "clicks": 0,
+    "impressions": 23,
+    "avg_position": 10.3,
+    "n_shared_queries": 1,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      23,
+      10.3
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide",
+    "clicks": 0,
+    "impressions": 22,
+    "avg_position": 8.6,
+    "n_shared_queries": 7,
+    "top_shared_queries": [
+     [
+      "yes",
+      9,
+      2.9
+     ],
+     [
+      "yes please",
+      4,
+      5.0
+     ],
+     [
+      "residential",
+      3,
+      7.0
+     ],
+     [
+      "site:www.propertytaxpartners.co.uk",
+      3,
+      37.3
+     ]
+    ]
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/landlord-accounting-spreadsheet-template-free-excel-guide",
+    "clicks": 0,
+    "impressions": 21,
+    "avg_position": 21.5,
+    "n_shared_queries": 5,
+    "top_shared_queries": [
+     [
+      "site:www.propertytaxpartners.co.uk",
+      10,
+      41.3
+     ],
+     [
+      "yes",
+      6,
+      1.8
+     ],
+     [
+      "yes please",
+      3,
+      5.3
+     ],
+     [
+      "property rental",
+      1,
+      3.0
+     ]
+    ]
+   }
+  ],
+  "fresh_pull_per_query": [
+   {
+    "query": "landlord expenses list",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 2,
+      "impressions": 81,
+      "position": 39.0,
+      "anchor_impr": 99
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 59.8,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "landlord tax deductions",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 24,
+      "position": 67.1,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant",
+      "clicks": 0,
+      "impressions": 16,
+      "position": 13.9,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 79.5,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "yes",
+    "pages": [
+     {
+      "page": "/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk",
+      "clicks": 1,
+      "impressions": 57,
+      "position": 4,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide",
+      "clicks": 0,
+      "impressions": 22,
+      "position": 2.8,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 20,
+      "position": 7.7,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide",
+      "clicks": 0,
+      "impressions": 13,
+      "position": 3.1,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+      "clicks": 0,
+      "impressions": 11,
+      "position": 7.9,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk",
+    "guide_present": true
+   },
+   {
+    "query": "tax write offs for landlords",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 18,
+      "position": 67.1,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "uk rental income tax allowable expenses 2026",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 15,
+      "position": 2.7,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "is mortgage interest tax deductible uk",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 12,
+      "position": 8.9,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "is mortgage interest deductible for uk landlords 2026",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 9,
+      "position": 5.4,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 3,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "mortgage interest tax deduction",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 9,
+      "position": 2.7,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "uk landlord wear and tear allowance 2026",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 9,
+      "position": 1.8,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "who can claim mortgage interest on tax return",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 9,
+      "position": 4.9,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "what expenses can i claim as a landlord",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 8,
+      "position": 70.5,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "what property expenses can you claim as a landlord",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 8,
+      "position": 74.2,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "allowable expenses",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 6.7,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "home improvement tax deductions list",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 19.2,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "landlord allowable expenses 2021",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 81.8,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "tax deduction home improvement",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 19.5,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "yes please",
+    "pages": [
+     {
+      "page": "/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk",
+      "clicks": 0,
+      "impressions": 26,
+      "position": 5.3,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide",
+      "clicks": 0,
+      "impressions": 7,
+      "position": 2.9,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/landlord-tax-essentials/landlord-accounting-spreadsheet-template-free-excel-guide",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 3.3,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 8.7,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/landlord-tax-essentials/land-transaction-tax-a-complete-guide",
+      "clicks": 0,
+      "impressions": 5,
+      "position": 4.8,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk",
+    "guide_present": true
+   },
+   {
+    "query": "home office costs",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 5,
+      "position": 8.8,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "is landlord insurance tax deductible",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible",
+      "clicks": 0,
+      "impressions": 148,
+      "position": 9.7,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/landlord-insurance-tax-deductible",
+      "clicks": 0,
+      "impressions": 23,
+      "position": 22.2,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible-what-can-you-claim",
+      "clicks": 0,
+      "impressions": 9,
+      "position": 37.7,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 27.8,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 69.5,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible",
+    "guide_present": true
+   },
+   {
+    "query": "landlords expenses",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 92.2,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 86,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "mortgage tax deduction",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 2,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "which home improvement loan option offers the best tax benefits?",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 3.5,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "home based business tax deductions 2016",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 94.3,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "home office tax deductible",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 9.3,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "landlord deductions",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 59.7,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "landlord tax relief on mortgage interest",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/tax-relief-mortgage-interest-rented-property-guide",
+      "clicks": 0,
+      "impressions": 17,
+      "position": 73.3,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 60.5,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 7.3,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/mortgage-interest-tax-relief-changes-landlords",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 49,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/tax-relief-mortgage-interest-rented-property-guide",
+    "guide_present": true
+   },
+   {
+    "query": "list of expenses for rental property",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 3.3,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "section 24 mortgage interest relief",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 10.3,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 20,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/calculators/section-24-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 18,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "tax deduction check list",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 7.3,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "landlord allowable expenses",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 5,
+      "position": 86.8,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+    "guide_present": false
+   },
+   {
+    "query": "what expenses can landlords claim",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 87.7,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+    "guide_present": false
+   },
+   {
+    "query": "landlord expenses",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 86.3,
+      "anchor_impr": 0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 7,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026",
+    "guide_present": true
+   },
+   {
+    "query": "allowable expenses for landlords",
+    "pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 94.5,
+      "anchor_impr": 0
+     }
+    ],
+    "google_prefers": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "guide_present": true
+   },
+   {
+    "query": "what can landlords claim against tax",
+    "pages": [],
+    "google_prefers": null,
+    "guide_present": false
+   },
+   {
+    "query": "landlord tax deductions uk",
+    "pages": [],
+    "google_prefers": null,
+    "guide_present": false
+   },
+   {
+    "query": "rental property expenses uk",
+    "pages": [],
+    "google_prefers": null,
+    "guide_present": false
+   },
+   {
+    "query": "landlord tax allowable expenses",
+    "pages": [],
+    "google_prefers": null,
+    "guide_present": false
+   },
+   {
+    "query": "expenses landlords can claim",
+    "pages": [],
+    "google_prefers": null,
+    "guide_present": false
+   },
+   {
+    "query": "what can i claim as a landlord",
+    "pages": [],
+    "google_prefers": null,
+    "guide_present": false
+   }
+  ],
+  "head_wordings_with_no_gsc_row_for_any_of_our_pages": [
+   "what can landlords claim against tax",
+   "landlord tax deductions uk",
+   "rental property expenses uk",
+   "landlord tax allowable expenses",
+   "expenses landlords can claim",
+   "what can i claim as a landlord"
+  ],
+  "redirected_old_url": "/blog/section-24-and-tax-relief/landlord-expenses-allowable-uk-2026 is 301-mapped into this guide (Property/web/src/middleware.ts line 418) but GSC still lists it for landlord allowable expenses (5 impr, pos 86.8), what expenses can landlords claim (3, pos 87.7), landlord expenses (3, pos 86.3). House positions s34 calls it the pillar.",
+  "blog_posts_targeting_expenses_deductions": [
+   {
+    "file": "annual-investment-allowance-landlords-uk.md",
+    "slug": "annual-investment-allowance-landlords-uk",
+    "category": "Section 24 & Tax Relief",
+    "title": "Annual Investment Allowance for UK Landlords: Who Can Actually Claim It",
+    "h1": "Annual Investment Allowance for UK Landlords: Who Can Actually Claim It",
+    "dateModified": ""
+   },
+   {
+    "file": "btl-mortgage.md",
+    "slug": "btl-mortgage",
+    "category": "Landlord Tax Essentials",
+    "title": "How Do BTL Mortgages Work for UK Landlords in 2025/26?",
+    "h1": "BTL Mortgage Tax Relief for UK Landlords: How It Actually Works",
+    "dateModified": ""
+   },
+   {
+    "file": "claim-mortgage-interest-rental-property-uk-section-24.md",
+    "slug": "claim-mortgage-interest-rental-property-uk-section-24",
+    "category": "Section 24 & Tax Relief",
+    "title": "How to Claim Mortgage Interest on UK Rental Property 2025/26 (Section 24 in Practice)",
+    "h1": "How to Claim Mortgage Interest on UK Rental Property 2025/26 (Section 24 in Practice)",
+    "dateModified": "2026-07-26"
+   },
+   {
+    "file": "eicr-certificate-cost-landlords.md",
+    "slug": "eicr-certificate-cost-landlords",
+    "category": "Landlord Tax Essentials",
+    "title": "EICR Certificate Cost for Landlords: Prices and Tax Treatment",
+    "h1": "EICR Certificate Cost for Landlords: What You Will Pay and What Is Deductible",
+    "dateModified": ""
+   },
+   {
+    "file": "hmo-licensing-fees-tax-deductible-uk-landlords.md",
+    "slug": "hmo-licensing-fees-tax-deductible-uk-landlords",
+    "category": "Property Types & Specialist Tax",
+    "title": "Are HMO Licensing Fees Tax Deductible for UK Landlords?",
+    "h1": "Are HMO Licensing Fees Tax Deductible for UK Landlords?",
+    "dateModified": "2026-08-21"
+   },
+   {
+    "file": "hmo-tax-guide-rental-income-deductions-multi-tenant.md",
+    "slug": "hmo-tax-guide-rental-income-deductions-multi-tenant",
+    "category": "Property Types & Specialist Tax",
+    "title": "HMO Tax Guide: How to Calculate Rental Income and Claim Deductions on Multi-Tenant Properties",
+    "h1": "HMO Tax Rules: How to Calculate Rental Income and Claim Deductions on Multi-Tenant Properties",
+    "dateModified": "2026-10-09"
+   },
+   {
+    "file": "landlord-insurance-guide-types-costs-tax-deductible.md",
+    "slug": "landlord-insurance-guide-types-costs-tax-deductible",
+    "category": "Landlord Tax Essentials",
+    "title": "What Types of Landlord Insurance Do You Need? A UK Coverage Guide",
+    "h1": "What Types of Landlord Insurance Do You Need? A UK Coverage Guide",
+    "dateModified": ""
+   },
+   {
+    "file": "landlord-insurance-tax-deductible.md",
+    "slug": "landlord-insurance-tax-deductible",
+    "category": "Section 24 & Tax Relief",
+    "title": "Landlord Insurance and Tax: Deductible Premiums and Taxable Payouts",
+    "h1": "Is Landlord Insurance Tax Deductible? Premiums and Claim Payouts Explained",
+    "dateModified": ""
+   },
+   {
+    "file": "limited-company-buy-to-let-allowable-expenses.md",
+    "slug": "limited-company-buy-to-let-allowable-expenses",
+    "category": "Incorporation & Company Structures",
+    "title": "Limited Company Buy-to-Let Allowable Expenses",
+    "h1": "Limited company buy-to-let allowable expenses",
+    "dateModified": "2026-09-01"
+   },
+   {
+    "file": "mortgage-arrangement-fees-deductible-landlord.md",
+    "slug": "mortgage-arrangement-fees-deductible-landlord",
+    "category": "Section 24 & Tax Relief",
+    "title": "Are Mortgage Arrangement Fees Tax Deductible for Landlords?",
+    "h1": "Are Mortgage Arrangement Fees Tax Deductible for Landlords?",
+    "dateModified": "2026-08-21"
+   },
+   {
+    "file": "mortgage-interest-deductible-landlords-uk-2026.md",
+    "slug": "mortgage-interest-deductible-landlords-uk-2026",
+    "category": "Section 24 & Tax Relief",
+    "title": "Is Mortgage Interest Deductible for UK Landlords in 2026?",
+    "h1": "Is Mortgage Interest Deductible for UK Landlords in 2026?",
+    "dateModified": "2026-10-09"
+   },
+   {
+    "file": "pre-letting-expenses-landlord-claim-before-first-tenant.md",
+    "slug": "pre-letting-expenses-landlord-claim-before-first-tenant",
+    "category": "Landlord Tax Essentials",
+    "title": "Pre-Letting Expenses: What Can Landlords Claim Before First Tenant?",
+    "h1": "Pre-Letting Expenses: What Landlords Can Claim Before the First Tenant",
+    "dateModified": "2026-08-21"
+   },
+   {
+    "file": "property-income-allowance-1000-exemption-vs-expenses.md",
+    "slug": "property-income-allowance-1000-exemption-vs-expenses",
+    "category": "Landlord Tax Essentials",
+    "title": "The £1,000 Property Income Allowance: When to Use It and When to Claim Actual Expenses Instead",
+    "h1": "The £1,000 Property Income Allowance: When to Use It and When to Claim Actual Expenses Instead",
+    "dateModified": ""
+   },
+   {
+    "file": "section-24-tax-relief-complete-guide.md",
+    "slug": "section-24-tax-relief-complete-guide",
+    "category": "Section 24 & Tax Relief",
+    "title": "Section 24 Tax Relief for Landlords: Complete Guide",
+    "h1": "Section 24 Tax Relief for Landlords: Complete Guide",
+    "dateModified": "2026-06-23"
+   },
+   {
+    "file": "tax-relief-mortgage-interest-rented-property-guide.md",
+    "slug": "tax-relief-mortgage-interest-rented-property-guide",
+    "category": "Section 24 & Tax Relief",
+    "title": "How Does Tax Relief on Mortgage Interest for Rented Property Work in 2026?",
+    "h1": "Tax Relief on Mortgage Interest for Rented Property",
+    "dateModified": "2026-10-09"
+   },
+   {
+    "file": "what-repairs-can-landlords-deduct-from-rental-income.md",
+    "slug": "what-repairs-can-landlords-deduct-from-rental-income",
+    "category": "Landlord Tax Essentials",
+    "title": "What Repairs Can Landlords Deduct From Rental Income?",
+    "h1": "What Repairs Can Landlords Deduct From Rental Income?",
+    "dateModified": "2026-10-09"
+   }
+  ]
+ },
+ "coverage_baseline": {
+  "command": "python scripts/track2_query_coverage.py --slug landlord-tax-deductions-uk-2026-complete-list --json",
+  "default_run": {
+   "result": "cannot run as designed",
+   "why": "the script pulls target queries from Supabase via optimisation_engine.track2.pull_page_data; no SUPABASE_ACCESS_TOKEN in this session (header \"Bearer \" empty), so it returned targets_total 0, reason \"invisible\", coverage 0.0. That 0.0 is a data failure, not a page score."
+  },
+  "offline_run": {
+   "command": "... --data <pull.json>",
+   "pull_json_built_from": "fresh GSC page queries (16 months) + Bing queries from the protect pack, merged by lowercase query, impressions summed, malformed pasted-CSV queries dropped (368 targets, 983 impr)",
+   "coverage_score": 0.9249,
+   "high_demand_covered_pct": 1.0,
+   "targets_total": 368,
+   "covered": 299,
+   "partial": 56,
+   "missing": 13,
+   "gated": true,
+   "passed": true,
+   "missing_queries": [
+    {
+     "query": "landlord allowable expenses 2021",
+     "source": "gsc",
+     "impr": 6,
+     "pos": 81.83
+    },
+    {
+     "query": "site:www.propertytaxpartners.co.uk",
+     "source": "gsc",
+     "impr": 4,
+     "pos": 52
+    },
+    {
+     "query": "landlord deduct 15 wear and tear repair bill tenant uk",
+     "source": "bing",
+     "impr": 4,
+     "pos": 2.0
+    },
+    {
+     "query": "bitte überprüfe deine angaben",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 8
+    },
+    {
+     "query": "england",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 4
+    },
+    {
+     "query": "reddito locazione",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 5
+    },
+    {
+     "query": "redraft",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 2
+    },
+    {
+     "query": "uk",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 8
+    },
+    {
+     "query": "united kingdom",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 11
+    },
+    {
+     "query": "yeah",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 1
+    },
+    {
+     "query": "property rroairs msintenance renewaks allowance",
+     "source": "bing",
+     "impr": 1,
+     "pos": 4.0
+    },
+    {
+     "query": "redecoration of communal stair deductable expense for rental propoerty",
+     "source": "bing",
+     "impr": 1,
+     "pos": 5.0
+    },
+    {
+     "query": "what deductions can you use on rental income of 36000 pa",
+     "source": "bing",
+     "impr": 1,
+     "pos": 1.0
+    }
+   ],
+   "partial_queries": [
+    {
+     "query": "yes please",
+     "source": "gsc",
+     "impr": 6,
+     "pos": 8.67
+    },
+    {
+     "query": "which home improvement loan option offers the best tax benefits?",
+     "source": "gsc",
+     "impr": 4,
+     "pos": 3.5
+    },
+    {
+     "query": "allowabel expensed for landlords",
+     "source": "bing",
+     "impr": 4,
+     "pos": 2.0
+    },
+    {
+     "query": "can i claim mileage for driving to pick up supplies for repair of rental property uk",
+     "source": "bing",
+     "impr": 4,
+     "pos": 6.0
+    },
+    {
+     "query": "expenditure for morgage and rent",
+     "source": "bing",
+     "impr": 4,
+     "pos": 6.0
+    },
+    {
+     "query": "how much of revenue expences can a landlord claim for legal costs of evictionfrom hmrc",
+     "source": "bing",
+     "impr": 4,
+     "pos": 8.0
+    },
+    {
+     "query": "landllrd tax and allowances",
+     "source": "bing",
+     "impr": 4,
+     "pos": 5.5
+    },
+    {
+     "query": "expenses l s 2026",
+     "source": "bing",
+     "impr": 3,
+     "pos": 1.0
+    },
+    {
+     "query": "documentsrental expenses",
+     "source": "bing",
+     "impr": 3,
+     "pos": 3.0
+    },
+    {
+     "query": "valour property management hmrc",
+     "source": "bing",
+     "impr": 3,
+     "pos": 7.0
+    },
+    {
+     "query": "allowable expenses furnished holiday lets",
+     "source": "gsc",
+     "impr": 2,
+     "pos": 32.5
+    },
+    {
+     "query": "holiday home income and outgoings as far as tax",
+     "source": "gsc",
+     "impr": 2,
+     "pos": 23
+    },
+    {
+     "query": "landlord deductions post new rules wikpedia rules",
+     "source": "bing",
+     "impr": 2,
+     "pos": 1.5
+    },
+    {
+     "query": "deductable expenses for landlords",
+     "source": "bing",
+     "impr": 2,
+     "pos": 2.0
+    },
+    {
+     "query": "allowable expenses for furnished holiday lets",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 2
+    },
+    {
+     "query": "btl company",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 5
+    },
+    {
+     "query": "entire property",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 8
+    },
+    {
+     "query": "hmo for students",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 2
+    },
+    {
+     "query": "landlord tax advice",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 1
+    },
+    {
+     "query": "please do so",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 7
+    },
+    {
+     "query": "rent received",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 8
+    },
+    {
+     "query": "tax breaks for landlords",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 84
+    },
+    {
+     "query": "tax deductable expenses",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 6
+    },
+    {
+     "query": "tax itemized list of deductions",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 27
+    },
+    {
+     "query": "that would be helpful",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 11
+    },
+    {
+     "query": "what about mtg",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 3
+    },
+    {
+     "query": "what are tax efficient strategies for rental properties?",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 4
+    },
+    {
+     "query": "yes to both",
+     "source": "gsc",
+     "impr": 1,
+     "pos": 2
+    },
+    {
+     "query": "can you include post redirection as landlords expense",
+     "source": "bing",
+     "impr": 1,
+     "pos": 7.0
+    },
+    {
+     "query": "allowable tax deductions forempty rental roperty expenses list",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "can boiler insurence be claimed for asa landlord expense",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "can i claim back costs for white goods from rental income profit",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "can i claim twx back for my gome insirwmce on my rental uk",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "can my ltd company renting out properties claim any finanace or grant",
+     "source": "bing",
+     "impr": 1,
+     "pos": 1.0
+    },
+    {
+     "query": "can you claim tax relief on security installation of cctv on rented property",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "do i need to pay tax on landlord remedial garden works uk",
+     "source": "bing",
+     "impr": 1,
+     "pos": 5.0
+    },
+    {
+     "query": "flats expenditure external",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "for a uk landlord what do cleaning materials cost code should i use for tax purposes",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "i own three rental properties can i claim over night hotel fees",
+     "source": "bing",
+     "impr": 1,
+     "pos": 1.0
+    },
+    {
+     "query": "if i have to replace the wall ties on my rental property is tghis tax deductable",
+     "source": "bing",
+     "impr": 1,
+     "pos": 4.0
+    },
+    {
+     "query": "if you are a landlord can you exclude maintencae expenses from taxable income",
+     "source": "bing",
+     "impr": 1,
+     "pos": 6.0
+    },
+    {
+     "query": "im a landlord with 3 properties how much fuel can i claim for",
+     "source": "bing",
+     "impr": 1,
+     "pos": 4.0
+    },
+    {
+     "query": "is rent for premises tax deductible",
+     "source": "bing",
+     "impr": 1,
+     "pos": 9.0
+    },
+    {
+     "query": "msepropetty in come deductions",
+     "source": "bing",
+     "impr": 1,
+     "pos": 3.0
+    },
+    {
+     "query": "parking permits for rented properties get coded where in accounts uk expense or cos",
+     "source": "bing",
+     "impr": 1,
+     "pos": 4.0
+    },
+    {
+     "query": "partial exemption limit 2026-27 for property repairs",
+     "source": "bing",
+     "impr": 1,
+     "pos": 5.0
+    },
+    {
+     "query": "property rental company tax deductions for flooring and white goods",
+     "source": "bing",
+     "impr": 1,
+     "pos": 1.0
+    },
+    {
+     "query": "rental businesses allowable expense offoce",
+     "source": "bing",
+     "impr": 1,
+     "pos": 6.0
+    },
+    {
+     "query": "tax deductables car for landlords",
+     "source": "bing",
+     "impr": 1,
+     "pos": 2.0
+    },
+    {
+     "query": "tax deductiobale expenses landlord",
+     "source": "bing",
+     "impr": 1,
+     "pos": 5.0
+    },
+    {
+     "query": "telephone allowance for landlords",
+     "source": "bing",
+     "impr": 1,
+     "pos": 4.0
+    },
+    {
+     "query": "things as allowable to deduct from rental income tax calculation",
+     "source": "bing",
+     "impr": 1,
+     "pos": 1.0
+    },
+    {
+     "query": "what can i claim on self assessment tax for electric charge allowance rental property",
+     "source": "bing",
+     "impr": 1,
+     "pos": 3.0
+    },
+    {
+     "query": "what refersjments are allowable for renters",
+     "source": "bing",
+     "impr": 1,
+     "pos": 3.0
+    },
+    {
+     "query": "when filling in tax return do you beed to dentify expenses for property income",
+     "source": "bing",
+     "impr": 1,
+     "pos": 3.0
+    },
+    {
+     "query": "when renting a property which order do deduction occur",
+     "source": "bing",
+     "impr": 1,
+     "pos": 4.0
+    }
+   ],
+   "unfiltered_variant_385_targets": {
+    "coverage_score": 0.885,
+    "covered": 309,
+    "partial": 58,
+    "missing": 18
+   }
+  }
+ },
+ "facts_index": {
+  "file": "docs/property/house_positions.md",
+  "size_note": "4335 lines, 324 headings; grepped only",
+  "topics": [
+   {
+    "topic": "wholly and exclusively",
+    "status": "partial",
+    "where_and_note": "§34 (line 3808; hooks at 3812: ITTOIA 2005 s.34 imported via s.272; §34.1 at 3813). No dedicated heading; no \"wholly and exclusively\" phrase anywhere in the file (grep returned 0).",
+    "lines": [
+     3808,
+     3812,
+     3813
+    ]
+   },
+   {
+    "topic": "repairs vs improvements, like-for-like, PIM2030",
+    "status": "partial",
+    "where_and_note": "No dedicated section. Operative text: §26.3 MEES energy improvement spend, PIM2030 corrected 2026-08-21, nearest-modern-equivalent = repair, single to double glazing (line 2269); Decent Homes capital/revenue split (2271, 1107); §26.10 EICR like-for-like vs first-time full rewire (4095); fire door like-for-like (4132). Law Shipping and Odeon Associated Theatres: ABSENT (0 hits); writer must source from PIM2020/PIM2030 and cases directly.",
+    "lines": [
+     2269,
+     2271,
+     1107,
+     4095,
+     4132
+    ]
+   },
+   {
+    "topic": "replacement of domestic items relief (RDIR)",
+    "status": "gap",
+    "where_and_note": "0 hits for \"domestic items\", \"RDIR\", \"furniture\" (as relief). Not locked in house_positions.md. Site post exists: replacement-domestic-items-relief-uk-landlords-guide.",
+    "lines": []
+   },
+   {
+    "topic": "s24 finance cost restriction, 20% reducer",
+    "status": "found",
+    "where_and_note": "§4 heading line 185; mechanics 187-195 (cap items 191-193, carry-forward 194, companies exempt 195) (credit = lower of 20% of finance costs, 20% of property profit, 20% of income above PA; excess carries forward); FA 2026 22% reducer from 2027/28 at line 197; PA taper interaction 199; do-not-write 201. Also §7 line 247 and rates 251-253; FHL post-abolition 236.",
+    "lines": [
+     185,
+     187,
+     191,
+     192,
+     193,
+     194,
+     195,
+     197,
+     199,
+     201,
+     247,
+     251,
+     253
+    ]
+   },
+   {
+    "topic": "property income allowance £1,000",
+    "status": "found",
+    "where_and_note": "§41 heading line 4064: s.783BD £1,000; s.783BE/BF full relief; s.783BK partial election; exclusions 783BN/BO/BP; rent-a-room 783BM; mutually exclusive with s24 reducer (PIM4460).",
+    "lines": [
+     4064,
+     4066
+    ]
+   },
+   {
+    "topic": "cash basis threshold and accruals",
+    "status": "gap",
+    "where_and_note": "0 hits for \"cash basis\"/\"cash-basis\"/ \"£150,000\" cash-basis threshold; only s.272ZA mentioned in passing at 3812/3814 (vehicle flat rates). Accruals appears only for service charges (4222). The cash basis default and its exit threshold are NOT locked.",
+    "lines": [
+     3812,
+     3814,
+     4222
+    ]
+   },
+   {
+    "topic": "pre-letting expenses (7 years)",
+    "status": "partial",
+    "where_and_note": "No pre-letting/7-year section. Nearest: post-cessation expenses 7 years, ITTOIA 2005 s.354 (line 941); pre-letting under pre-trading rules mentioned in EICR tax side (4095). The 7-year pre-trading rule (ITTOIA s.57) is not locked. Site post exists: pre-letting-expenses-landlord-claim-before-first-tenant.",
+    "lines": [
+     941,
+     4095
+    ]
+   },
+   {
+    "topic": "travel / mileage",
+    "status": "gap",
+    "where_and_note": "0 hits for mileage, 55p, 45p, AMAP. The guide cites 55p/mile in metaDescription and FAQ; that figure has no house-position lock (HMRC AMAP cars rate has long been 45p/25p, so verify 55p against gov.uk before keeping). §34 refs s.94C-94G vehicle flat rates at 3812.",
+    "lines": [
+     3812
+    ]
+   },
+   {
+    "topic": "use of home / home office",
+    "status": "found",
+    "where_and_note": "§34 line 3808; §34.2 home-office route CORRECTED 2026-08-21 (3814: s.94H not imported; PIM2100 actual-cost apportionment only); §34.3 cross-tax PPR trap TCGA s.224(1) (3815); §34.4 Ltd Co ITEPA ss.316A-317 £6/week (3816); do-not-write 3820.",
+    "lines": [
+     3808,
+     3814,
+     3815,
+     3816,
+     3820
+    ]
+   },
+   {
+    "topic": "capital allowances in residential lets",
+    "status": "found",
+    "where_and_note": "§25 line 2009 (CAA 2001); s.15 post-FHL omission 2019; residential exclusion s.270CF line 2061 (SBA); grandfathered FHL pools 2107; §38 line 3978 (FA 2026: main pool WDA 14%, AIA £1m permanent at 3986). Dwelling-house exclusion for plant (CAA s.35) is not separately locked.",
+    "lines": [
+     2009,
+     2019,
+     2061,
+     2107,
+     3978,
+     3986
+    ]
+   },
+   {
+    "topic": "MTD for ITSA thresholds and dates",
+    "status": "found",
+    "where_and_note": "§3 heading line 167: 6 Apr 2026 >£50,000; 6 Apr 2027 >£30,000; 6 Apr 2028 >£20,000 (lines 170-172); penalties 177-179; do-not-write 181. §19 line 807: qualifying income = gross rent before deductions (19.2 at 819-823), tested on 2024/25 return for 2026 cohort.",
+    "lines": [
+     167,
+     170,
+     171,
+     172,
+     177,
+     181,
+     807,
+     819
+    ]
+   },
+   {
+    "topic": "losses carried forward",
+    "status": "partial",
+    "where_and_note": "No general property-loss section. FHL-origin losses ring-fenced and carried forward (239); FHL loss-relief transitional (2111); s24 unused finance cost carry-forward (§4 line 194); ITTOIA s.118 not cited. Company loss relief not locked.",
+    "lines": [
+     239,
+     2111,
+     194
+    ]
+   },
+   {
+    "topic": "company landlords: CT deductibility of interest, 19%/25%",
+    "status": "partial",
+    "where_and_note": "CT rates 2026/27: 19% SPR up to £50k, 25% main over £250k, 26.5% effective in marginal band (line 1204; §21.A heading 2722, table 2730-2732, CIHC always 25% at 2746). Company deducts interest in full pre-CT: stated at §4 lines 195 and 201 only; loan-relationship rules (CTA 2009 Part 5) are not locked. CTA 2009 s.54 at 1228.",
+    "lines": [
+     1204,
+     2722,
+     2730,
+     2746,
+     195,
+     201,
+     1228
+    ]
+   },
+   {
+    "topic": "2026/27 rates and thresholds",
+    "status": "found",
+    "where_and_note": "Income tax 20/40/45% for 2026/27 and 22/42/47% property rates from 2027/28 (§7 line 247, 251-253); dividend rates 2026/27 line 1206 and §21.9 line 4072; CT rates 1204; FA 2026 rates §38 line 3978; employer payroll stack §35.1 line 3829. PA/basic-band figures (£12,570, £37,700): 0 hits, not locked.",
+    "lines": [
+     247,
+     251,
+     253,
+     1204,
+     1206,
+     3829,
+     3978,
+     4072
+    ]
+   }
+  ]
+ }
+}
