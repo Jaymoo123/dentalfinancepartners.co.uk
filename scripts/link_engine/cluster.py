@@ -47,6 +47,8 @@ CONFLICTS (nothing is resolved by guesswork; the rule above is applied and the d
                      no judgment needed) or "open" (shared_lt_6: ambiguous, goes to judgment). Without the
                      guard, chaining through the head terms fused 119 keywords (landlord accountant,
                      property tax advice, property accountant) into one family, against blueprint R2.
+  G2/G3 (hard rules, not conflicts): components of different intent_class never join; a keyword with a non-resident/expat
+                     or incorporation/limited-company/spv token never joins a family whose head lacks that group.
   lexical_serp_split two keywords with the same lexical key whose SERPs share <= 2 URLs AND whose surface
                      tokens differ by more than word order, plurals, stems, stopwords, "uk" and "near me" (so only
                      modifier variants such as specialist/best/services remain; those are not listed otherwise). They ARE merged by the lexical key; the judge
@@ -80,7 +82,8 @@ STOP = {"for", "to", "of", "in", "on", "into", "a", "an", "the", "and", "with", 
 SING = {"accountants": "accountant", "landlords": "landlord", "properties": "property", "advisors": "advisor",
         "advisers": "advisor", "adviser": "advisor", "consultants": "consultant", "specialists": "specialist",
         "investors": "investor", "experts": "expert", "companies": "company", "firms": "firm",
-        "services": "service", "hmos": "hmo", "trusts": "trust", "lets": "let", "accountancy": "accountant"}
+        "services": "service", "hmos": "hmo", "trusts": "trust", "lets": "let", "accountancy": "accountant",
+        "accounting": "accountant"}      # accounting / accountancy / accountants are one stem (Google Ads groups them as close variants)
 STEM_EXACT = {"selling": "sell", "sale": "sell", "sales": "sell", "sold": "sell", "sells": "sell",
               "house": "home", "houses": "home", "homes": "home", "flat": "home", "flats": "home",
               "gains": "gain", "taxes": "tax", "dwellings": "dwelling"}
@@ -104,6 +107,15 @@ def simple_tokens(q: str) -> list[str]:
     return sorted(x for t in q.split() if t not in STOP and t != "uk" for x in stem(SING.get(t, t)))
 
 
+# G3 forced-split token groups: a keyword with one of these never joins a family whose head lacks the same group.
+TOKEN_GROUPS = {"non_resident": re.compile(r"non[ -]resident|\bexpat|overseas landlord"),
+                "incorporation": re.compile(r"incorporat|limited company|\bltd\b|\bspv\b")}
+
+
+def token_groups(q: str) -> frozenset:
+    return frozenset(n for n, rx in TOKEN_GROUPS.items() if rx.search(q))
+
+
 LANDLORD_TOK = {"landlord", "buy", "btl", "rental", "hmo", "let", "rent"}
 
 
@@ -115,8 +127,9 @@ def normalise(q: str, cities: list[str]) -> tuple[list[str], str]:
     """Return (content tokens, city)."""
     city = geo_of(q, cities)
     s = q
-    if city:
-        s = re.sub(rf"\b{re.escape(city)}\b", " ", s)
+    if city:           # the place may be written with hyphens, and "newcastle upon tyne" / "stoke on trent" lose their tail too
+        rx = r"[ -]".join(re.escape(w) for w in city.split())
+        s = re.sub(rf"\b{rx}\b(?:[ -](?:upon|on)[ -][a-z]+)?", " ", s)
     s = re.sub(r"\bnear me\b", " ", s)
     toks = [x for t in s.split() if t not in STOP for x in stem(SING.get(t, t))]
     toks = [t for t in toks if t not in STOP and t not in ("uk", "best")]
@@ -235,6 +248,7 @@ def main() -> None:
         toks[q], city[q] = t, c
         key[q] = " ".join(sorted(set(t))) or q
     htype = {q: ("landlord" if LANDLORD_TOK & set(toks[q]) else "property") for q in order}
+    tg = {q: token_groups(q) for q in order}
 
     # SERP overlap counts between national keywords that have a SERP
     pulled = [q for q in order if urls.get(q) and not city[q]]
@@ -249,7 +263,7 @@ def main() -> None:
         g = defaultdict(list)
         for q in order:
             gk = (("geo", city[q], met[q]["intent_class"], htype[q]) if city[q]
-                  else ("lex", key[q], q) if q in split else ("lex", key[q]))
+                  else ("lex", key[q], q) if q in split else ("lex", key[q], met[q]["intent_class"], tg[q]))   # G2: never mix intents
             g[gk].append(q)
         return g
     # lexical splits: same key, SERPs share <= SPLIT_MAX URLs (non-head vs lexical head)
@@ -279,10 +293,13 @@ def main() -> None:
     cgrp = defaultdict(dict)       # component -> {close-variant group: its single volume}; cvol sums each group ONCE
     cvol = _CV(cgrp)
     cint, cown = defaultdict(Counter), defaultdict(Counter)       # per component: intent volume, WP1 owner volume
+    chead, cneed = {}, defaultdict(frozenset)                    # per component: best-ranked member, union of its token groups
     for q in order:
         r0 = uf.find(q)
         cgrp[r0][(key[q], vol[q], met[q]["cpc"])] = vol[q]
         cint[r0][met[q]["intent_class"]] += max(vol[q], 0.001)
+        chead[r0] = q if r0 not in chead or rank[q] < rank[chead[r0]] else chead[r0]
+        cneed[r0] = cneed[r0] | tg[q]
         for w in wp1.get(q, []):
             if w["owner_page"] and w["owner_page"] != "exclude":
                 cown[r0][w["owner_page"]] += max(vol[q], 0.001)
@@ -291,9 +308,19 @@ def main() -> None:
         rx, ry = uf.find(x), uf.find(y)
         if rx != ry:
             g, ci, co = {**cgrp[rx], **cgrp[ry]}, cint[rx] + cint[ry], cown[rx] + cown[ry]
+            hd = chead[rx] if rank[chead[rx]] < rank[chead[ry]] else chead[ry]
+            nd = cneed[rx] | cneed[ry]
             uf.union(rx, ry)
             r = uf.find(rx)
             cgrp[r], cint[r], cown[r] = g, ci, co
+            chead[r], cneed[r] = hd, nd
+
+    def forbidden(rx, ry):
+        """G2 + G3: components of different intent never join; token-group keywords never join a family whose head lacks the group."""
+        if met[chead[rx]]["intent_class"] != met[chead[ry]]["intent_class"]:
+            return True
+        hd = chead[rx] if rank[chead[rx]] < rank[chead[ry]] else chead[ry]
+        return not ((cneed[rx] | cneed[ry]) <= tg[hd])
 
     def block(rx, ry, n):
         """Why a SERP join between two components that each carry volume >= 100 is NOT applied, else ''."""
@@ -312,7 +339,7 @@ def main() -> None:
     held = []
     for _, x, y in edges:
         rx, ry = uf.find(x), uf.find(y)
-        if rx == ry:
+        if rx == ry or forbidden(rx, ry):
             continue
         why = block(rx, ry, -_) if cvol[rx] >= BRIDGE_VOL and cvol[ry] >= BRIDGE_VOL else ""
         if why:
@@ -339,7 +366,9 @@ def main() -> None:
                "volumes": f"{int(cvol[uf.find(ha)])}|{int(cvol[uf.find(hb)])}",
                "status": "open" if why == "shared_lt_6" else f"held by rule: {why}"}
         v = verdict_for(verdicts, row)
-        if v == "merge":
+        if v == "merge" and forbidden(uf.find(ha), uf.find(hb)):
+            row["status"] = "merge verdict not applied: intent or token-group rule (G2/G3)"
+        elif v == "merge":
             row["status"] = "resolved: merge by judgment"
             join(ha, hb)
         elif v == "split":
@@ -374,7 +403,7 @@ def main() -> None:
         best, bj = None, 0.0
         for r, m in targets.items():
             h = m[0]
-            if city[h] or met[h]["intent_class"] != met[q]["intent_class"]:
+            if city[h] or met[h]["intent_class"] != met[q]["intent_class"] or not tg[q] <= tg[h]:
                 continue
             hs = set(toks[h])
             j = len(qs & hs) / len(qs | hs) if qs | hs else 0.0

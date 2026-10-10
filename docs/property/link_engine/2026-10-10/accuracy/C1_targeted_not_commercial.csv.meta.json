@@ -1,14 +1,15 @@
 {
-  "pulled_at": "2026-10-10T13:57:05+00:00",
+  "pulled_at": "2026-10-10T14:11:47+00:00",
   "site": "property",
   "script": "accuracy_coverage.py",
   "args": [
     "--site",
     "property",
     "--run",
-    "2026-10-10"
+    "2026-10-10",
+    "--skip-c2"
   ],
   "source": "01_universe not_commercial_intent with provider word AND property word",
-  "rows": 33,
-  "sha256": "f864be0eb9834fdb226cba230d8aa68c918a3ab28391a5bba9e6bbdc109ed1f6"
+  "rows": 0,
+  "sha256": "e0e06129698b3e0ec2e11d0e8f1a7e501fe10475bbc2656e3c942c28b573a287"
 }

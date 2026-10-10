@@ -22,6 +22,8 @@ import argparse
 import re
 import time
 from collections import OrderedDict
+from functools import lru_cache
+from pathlib import Path
 
 from common import (REPO, STORE, _csv_rows, _gz_read, load_site, norm_query, read_csv, run_dir, script_meta,
                     write_csv)
@@ -65,14 +67,15 @@ DECISION_TOPIC_RULES = [
 
 # F3: any adviser-type word is a provider word when a property-context word is also present.
 PROVIDER_ANY = (r"\b(accountants?|accountancy|accounting|advice|advis[eo]rs?|specialists?|experts?|consultants?|planners?|"
-                r"tax planning)\b")
+                r"tax planning|tax services?)\b")
 # F3 tightened: adviser-type words (not accountants) count as hire only beside a tax word; otherwise they are estate-agency /
 # investment-adviser searches ("property consultant", "property advisor", "financial advice property").
-ACCT_PROVIDER = r"\b(accountants?|accountancy|accounting|tax planning)\b"
+ACCT_PROVIDER = r"\b(accountants?|accountancy|accounting|tax planning|tax services?)\b"       # "tax services" is a hire phrase (audit G2)
 SOFT_PROVIDER = r"\b(advice|advis[eo]rs?|specialists?|experts?|consultants?|planners?)\b"
 TAX_WORD = (r"\b(tax|taxes|cgt|capital gains|sdlt|stamp duty|lbtt|vat|iht|inheritance|self assessment|accounts|accounting|"
             r"incorporation|section 24|mtd)\b")
 FINANCIAL_ADVICE = r"\bfinancial (advice|advis[eo]rs?|planners?|planning)\b"
+EXPLAINER = (r"^(what is|what are|what does|what do|how to become|how do i become|who is|definition|meaning)\b|\bdo$")
 FORUM_NAV = r"\b(citizens advice|helplines?|advice lines?|forums?)\b"               # F3 exceptions: navigational / forum chatter
 ACCT_SOFTWARE = r"\b(software|systems?|apps?|spreadsheets?|templates?|excel|quickbooks|xero)\b"   # F1 exceptions
 ACCT_REFERENCE = r"\b(tips|standards?|ifrs|frs|definition|meaning)\b"
@@ -87,7 +90,7 @@ def malformed(raw: str, q: str) -> bool:
     """F5: pasted CSV/URL text, not a search (real GSC rows exist like 'accounting for landlords 1 1 260 28 https www ...')."""
     toks = q.split()
     return bool("http" in raw or "www" in raw or (".com" in raw and re.search(r"\d", raw))
-                or sum(t.isdigit() for t in toks) >= 4 or len(toks) > 15)
+                or sum(t.isdigit() for t in toks) >= 4 or len(toks) > 30)
 
 
 BORROW = r"\b(mortgages?|remortgag\w*|loans?|lenders?|brokers?|bridging|equity release)\b"
@@ -117,7 +120,7 @@ RULES = [
     ("seed_hire", lambda r, q, s: s == "hire" and ctx_hit(q), "hire", ""),
     ("seed_decision", lambda r, q, s: s == "decision" and ctx_hit(q), "decision", ""),
     # 2 operator queries are research probes, not demand
-    # 1b F5: pasted text (URLs, runs of numbers, over 15 words) is not a search
+    # 1b F5: pasted text (URLs, runs of numbers, over 30 words) is not a search
     ("malformed_query", lambda r, q, s: malformed(r, q), "excluded", "malformed_query"),
     ("site_operator", lambda r, q, s: "site:" in r, "excluded", "site_operator"),
     # 3 our brand and competitor brands (navigational)
@@ -135,12 +138,9 @@ RULES = [
     ("borrower_intent", lambda r, q, s: bool(re.search(BORROW, q) and not re.search(PROVIDER, q)), "excluded", "borrower_intent"),
     # 6 non-UK geography ("ireland" allowed when non resident; northern ireland is UK)
     ("non_uk_geo", lambda r, q, s: bool(re.search(NON_UK, re.sub(r"northern ireland", "", q))) and not ("ireland" in q and re.search(r"non[ -]resident", q) and not re.search(r"\b(usa|us|america|australia|canada|india|dubai)\b", q)), "excluded", "non_uk_geo"),
-    # 7 calculators, rates, forms, deadlines, templates: informational, the blog engine owns them
-    ("calculator_rates_forms", lambda r, q, s: bool(re.search(r"\b(calculators?|calculate|calculating|estimator|rates?|forms?|deadlines?|login|log in|templates?|pdf|checklist|thresholds?|allowances?)\b", q)), "excluded", "calculator_rates_forms"),
-    # 8 gov.uk / hmrc contact queries are navigational
-    ("gov_navigational", lambda r, q, s: bool(re.search(r"\bgov uk\b|\bhmrc\b.*\b(phone|contact|number|helpline|email|address)\b|\b(phone|contact|number|helpline)\b.*\bhmrc\b", q)), "excluded", "gov_hmrc_navigational"),
-    # 9 reference question shapes (COMMERCIAL_INTENT_DEMAND section 1)
-    ("reference", lambda r, q, s: bool(re.search(r"^(what|whats) (is|are|does|do)\b|^how (does|do|did)\b.*\b(work|works)\b|^how does\b|^when (is|do|does|are|can)\b|\bexplained\b|\brules$|\bmeaning\b|\bdefinition\b|^can i\b(?!.*\b(afford|claim|cost)\b)", q)), "excluded", "reference_informational"),
+    # H1 exception: explainer questions stay reference even with a provider word ("what is a property accountant", "... do")
+    ("explainer_question", lambda r, q, s: bool(re.search(EXPLAINER, q)), "excluded", "reference_informational"),
+    # H1: a row that qualifies as hire is never re-excluded by calculator / reference / not_commercial rules below
     # 10 hire (F1 + F3): any provider word (accountant, accounting, advice, adviser, specialist, expert, consultant, planner)
     #    AND a property-context word (now including stamp duty / sdlt / lbtt / ltt)
     ("financial_advice", lambda r, q, s: bool(re.search(FINANCIAL_ADVICE, q)), "excluded", "no_tax_context"),
@@ -149,6 +149,12 @@ RULES = [
     # 10a F4: capital gains tax / cgt beside accountant, adviser, advice or specialist is hire even without a property word
     #     (CGT for individuals is predominantly property; the owner page is judged later)
     ("cgt_provider", lambda r, q, s: bool(re.search(CGT, q) and re.search(CGT_PROVIDER, q)), "hire", ""),
+    # 7 calculators, rates, forms, deadlines, templates: informational, the blog engine owns them
+    ("calculator_rates_forms", lambda r, q, s: bool(re.search(r"\b(calculators?|calculate|calculating|estimator|rates?|forms?|deadlines?|login|log in|templates?|pdf|checklist|thresholds?|allowances?)\b", q)), "excluded", "calculator_rates_forms"),
+    # 8 gov.uk / hmrc contact queries are navigational
+    ("gov_navigational", lambda r, q, s: bool(re.search(r"\bgov uk\b|\bhmrc\b.*\b(phone|contact|number|helpline|email|address)\b|\b(phone|contact|number|helpline)\b.*\bhmrc\b", q)), "excluded", "gov_hmrc_navigational"),
+    # 9 reference question shapes (COMMERCIAL_INTENT_DEMAND section 1)
+    ("reference", lambda r, q, s: bool(re.search(r"^(what|whats) (is|are|does|do)\b|^how (does|do|did)\b.*\b(work|works)\b|^how does\b|^when (is|do|does|are|can)\b|\bexplained\b|\brules$|\bmeaning\b|\bdefinition\b|^can i\b(?!.*\b(afford|claim|cost)\b)", q)), "excluded", "reference_informational"),
     # 10b provider + only a tax-topic word (inheritance, iht, non resident...) and no property word is not a property hire query
     ("no_property_context", lambda r, q, s: bool(re.search(PROVIDER_ANY, q) and re.search(CONTEXT, q)), "excluded", "no_property_context"),
     # 10c homeowner fact patterns ("how much tax", "do I pay", "house sale") are reference searches unless a landlord/rental/second-home word is present
@@ -172,13 +178,51 @@ def classify(raw: str, q: str, seed_kind: str, brand_re) -> tuple[str, str, str]
 READING_OK = (r"\bin reading\b|\breading (accountants?|accountancy|tax|advis[eo]rs?|advice|specialists?|consultants?)\b|"
               r"\b(accountants?|accountancy|tax|advis[eo]rs?|advice|specialists?|consultants?) reading\b")
 
+# G1 gazetteer: data/uk_places.txt (GeoNames GB, ~5,300 names) plus London postcode districts. A place is only a place
+# when the name is not an ordinary word, or when it sits next to an accountant/tax word or after "in".
+PLACE_FILE = Path(__file__).parent / "data" / "uk_places.txt"
+PLACE_DENY = {"reading", "bath", "street", "wells", "march", "deal", "sale", "box", "more", "park", "pool", "van", "victoria",
+              "wall", "sound", "hay", "heath", "lewis", "hope", "ross", "rye", "bury", "ash", "mark", "well", "stone", "green",
+              "hill", "mill", "long", "high", "west", "east", "north", "south", "new", "old", "great", "little", "mount", "sea",
+              "bay", "cross", "bridge", "church", "field", "wood", "moor", "hall", "house", "bank", "ford", "brook", "lane",
+              "ware", "wick", "eye", "mold", "hyde", "easton", "wight"}
+ADJ_WORD = (r"(accountants?|accountancy|accounting|tax|taxes|advis[eo]rs?|advice|specialists?|consultants?|experts?|landlords?)")
+POSTCODE = re.compile(r"^(ec|wc|e|n|nw|se|sw|w)[0-9]{1,2}[a-z]?$")
+PROVIDERISH = re.compile(r"\b(accountants?|accountancy|accounting|landlords?|advis[eo]rs?|tax|property)\b")
+
+
+@lru_cache(maxsize=1)
+def _places() -> frozenset:
+    return frozenset(l.strip() for l in PLACE_FILE.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#"))
+
+
+def _place_ok(name: str, q: str) -> bool:
+    """A denied (ambiguous) name counts only after 'in' or beside an accountant / tax word."""
+    if name not in PLACE_DENY:
+        return True
+    n = r"[ -]".join(re.escape(w) for w in name.split())
+    return bool(re.search(rf"\bin {n}\b|\b{ADJ_WORD} {n}\b|\b{n} {ADJ_WORD}\b", q))
+
 
 def geo_of(q: str, cities: list[str]) -> str:
+    """The place a search names, '' for a national search. Config cities first (longest wins), then the gazetteer
+    (longest n-gram wins), then London postcode districts beside a provider word. Returns the canonical lower-case name."""
     for c in sorted(cities, key=len, reverse=True):
-        if re.search(rf"\b{re.escape(c)}\b", q):
+        if re.search(rf"\b{re.escape(c)}\b", q) and (c not in PLACE_DENY or _place_ok(c, q)):
             if c == "reading" and not re.search(READING_OK, q):
                 continue          # "reading" is a city only next to an accountant/tax word or after "in"
             return c
+    toks = q.replace("-", " ").split()
+    pl = _places()
+    for n in (4, 3, 2, 1):
+        for i in range(len(toks) - n + 1):
+            name = " ".join(toks[i:i + n])
+            if name in pl and _place_ok(name, " ".join(toks)):
+                return name
+    if PROVIDERISH.search(q):
+        for t in toks:
+            if POSTCODE.match(t):
+                return t
     return ""
 
 

@@ -1,6 +1,6 @@
 {
   "pulled_at": "2026-10-10T14:16:24+00:00",
-  "source": "judgments reader1 vs reader2",
+  "source": "head and deduped demand at the time each manager/owner ruling matched its queue row",
   "site": "property",
   "data_through": "2026-10-10",
   "script": "apply_judgments.py",
@@ -10,6 +10,6 @@
     "--run",
     "2026-10-10"
   ],
-  "rows": 0,
-  "sha256": "ac13e8e3b4b21a7e76577852206f59299dc24ca1844f94619df0bb5006f4d40d"
+  "rows": 46,
+  "sha256": "103c7dd705a17cd5b4f4b349e9d79b58eb962ceab8e87a8910cfb0310b3304a8"
 }

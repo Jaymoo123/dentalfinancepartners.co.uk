@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T14:16:21+00:00",
+  "source": "families.py safety net: same stemmed token set + identical (volume, cpc) in more than one family",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "families.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 0,
+  "sha256": "cda35d999612ac743d7502e20a5db4378cdf74ea2096a2ae62321d2bfb058060"
+}

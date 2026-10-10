@@ -1,20 +1,20 @@
 {
-  "pulled_at": "2026-10-10T14:05:29+00:00",
+  "pulled_at": "2026-10-10T14:14:11+00:00",
   "source": "Google Ads search_volume/live (UK 2826, en), single source; prior_* columns are reference only",
   "site": "property",
   "data_through": "2026-10-10",
   "dfs_balance_start": {
-    "balance": 13.222059999999999,
+    "balance": 13.03406000000001,
     "currency": "USD",
-    "ts": "2026-10-10T14:05:29+00:00"
+    "ts": "2026-10-10T14:14:10+00:00"
   },
   "dfs_balance_end": {
-    "balance": 13.222059999999999,
+    "balance": 13.03406000000001,
     "currency": "USD",
-    "ts": "2026-10-10T14:05:29+00:00"
+    "ts": "2026-10-10T14:14:11+00:00"
   },
-  "run_spend_usd": 1.38756,
-  "n_priced_search_volume": 598,
+  "run_spend_usd": 1.57556,
+  "n_priced_search_volume": 602,
   "n_ideas_returned": 300,
   "n_ideas_excluded_by_classifier": 298,
   "n_ideas_new_commercial": 0,
@@ -26,8 +26,8 @@
     "--run",
     "2026-10-10",
     "--max-estimate",
-    "0.20"
+    "0.05"
   ],
-  "rows": 598,
-  "sha256": "a5321a5907182e1a031aa1f4cdca22ac0a71259d36dfcf6265248dd8dafa7fe0"
+  "rows": 602,
+  "sha256": "d854a3d83b2f8c93bc18e44f9d558a9dd3f83f285536a7ba65738c4ee2b17a55"
 }

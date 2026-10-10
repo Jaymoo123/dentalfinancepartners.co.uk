@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T13:55:55+00:00",
+  "pulled_at": "2026-10-10T14:16:47+00:00",
   "source": "04_serp + 05_clusters + 06_families",
   "site": "property",
   "data_through": "2026-10-10",
@@ -10,6 +10,6 @@
     "--run",
     "2026-10-10"
   ],
-  "rows": 226,
-  "sha256": "54fbe43224a7b7bd1ca5ec2fe1549051b7241df68925176d72c3e33a3c90197b"
+  "rows": 244,
+  "sha256": "73e90cc457de91e8688968e357d5e37d57814ef5d20d376d4e14f7791bc96da4"
 }

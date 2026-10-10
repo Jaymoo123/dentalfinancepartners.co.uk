@@ -15,6 +15,7 @@ Checks
   6 leads     total leads and est_value_gbp in inputs/leads_by_entry_page.csv
   7 routes    every owner_page and primary_dest is a built route (08_pages.csv) or a sentinel (none, GAP...)
   8 dash      no em-dash in the named docs
+  9 variants  no (stemmed token set, volume, cpc) group appears in more than one family
 """
 from __future__ import annotations
 
@@ -90,10 +91,21 @@ def check_dash(d, exp, le):
     return not any(hits.values()), {"em_dash_counts": hits}
 
 
+def check_variants(d, exp, le):
+    """9: no (stemmed token set, volume, cpc) Google Ads group sits in more than one family (non-geo keywords with volume)."""
+    fam = defaultdict(set)
+    for k in read_csv(d / "stages/05_clusters.csv"):
+        if not k["geo"] and float(k["volume"] or 0) > 0:
+            fam[(lex_key(k["keyword"], le["cities"]), k["volume"], k["cpc"])].add(k["family_id"])
+    bad = {" | ".join(map(str, g)): sorted(f) for g, f in fam.items() if len(f) > exp["max_families_per_group"]}
+    return not bad, {"max_families_per_group": exp["max_families_per_group"], "n_groups": len(fam), "violations": dict(list(bad.items())[:10])}
+
+
 CHECKS = [("1 close-variant dedupe", "dedupe", check_dedupe), ("2 WP1 owners", "wp1_owners", check_owners),
           ("3 link baseline", "link_baseline", check_baseline), ("4 graph gate", "graph_gate", check_gate),
           ("5 store integrity", "serp_index_rows_min", check_store), ("6 leads", "leads", check_leads),
-          ("7 built routes", "route_sentinels", check_routes), ("8 no em-dash", "no_dash_files", check_dash)]
+          ("7 built routes", "route_sentinels", check_routes), ("8 no em-dash", "no_dash_files", check_dash),
+          ("9 close variants in one family", "variant_groups", check_variants)]
 
 
 def main() -> int:

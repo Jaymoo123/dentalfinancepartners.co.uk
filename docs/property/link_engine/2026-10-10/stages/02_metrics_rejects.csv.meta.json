@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T14:05:29+00:00",
+  "pulled_at": "2026-10-10T14:14:11+00:00",
   "source": "pre-filter for Google Ads keyword rules",
   "site": "property",
   "data_through": "2026-10-10",
@@ -10,8 +10,8 @@
     "--run",
     "2026-10-10",
     "--max-estimate",
-    "0.20"
+    "0.05"
   ],
-  "rows": 8,
-  "sha256": "9240cdeca88beb3b7df7065a62cf4731dbb806dfcbb9be94aa1ccf2bae7db834"
+  "rows": 10,
+  "sha256": "b4e19de5f4ce6f4556f2f4b4afa2ee3373c6f7e0a4486863cf8b27b0c6b7d6b2"
 }

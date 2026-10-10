@@ -20,6 +20,7 @@
       "graph_gate": "PASS",
       "serp_index_rows_min": 1,
       "leads": {"total": 206, "value_gbp": 83800},
+      "variant_groups": {"max_families_per_group": 1},
       "no_dash_files": ["DEMAND_MAP.md", "GAP_LIST.md"],
       "route_sentinels": ["none", "GAP", "EXCLUDE"]
     }

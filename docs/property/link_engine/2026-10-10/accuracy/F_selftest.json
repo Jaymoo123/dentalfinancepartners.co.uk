@@ -1,10 +1,10 @@
 {
   "site": "property",
   "run": "2026-10-10",
-  "ran_at": "2026-10-10T14:06:14+00:00",
+  "ran_at": "2026-10-10T14:16:47+00:00",
   "result": "PASS",
-  "passed": 8,
-  "total": 8,
+  "passed": 9,
+  "total": 9,
   "checks": [
     {
       "check": "1 close-variant dedupe",
@@ -65,7 +65,7 @@
     {
       "check": "5 store integrity",
       "pass": true,
-      "rows": 444,
+      "rows": 448,
       "min_rows": 1,
       "missing": [],
       "n_missing": 0
@@ -100,6 +100,13 @@
         "DEMAND_MAP.md": 0,
         "GAP_LIST.md": 0
       }
+    },
+    {
+      "check": "9 close variants in one family",
+      "pass": true,
+      "max_families_per_group": 1,
+      "n_groups": 255,
+      "violations": {}
     }
   ]
 }

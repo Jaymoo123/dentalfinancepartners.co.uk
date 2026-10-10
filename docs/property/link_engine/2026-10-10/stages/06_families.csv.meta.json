@@ -1,23 +1,23 @@
 {
-  "pulled_at": "2026-10-10T14:06:12+00:00",
+  "pulled_at": "2026-10-10T14:16:24+00:00",
   "source": "06_families + judgments/*.jsonl",
   "applied": {
     "judgment (medium)": 45,
-    "manager ruling (LE-18)": 7,
-    "excluded by judgment": 10,
     "manager ruling (LE-3)": 2,
+    "excluded by judgment": 10,
     "judgment (low, 2 readers agree)": 9,
-    "judgment (high)": 40,
+    "judgment (high)": 38,
     "manager ruling (LE-1)": 6,
     "manager ruling (LE-10)": 1,
     "manager ruling (LE-5)": 2,
+    "manager ruling (LE-18)": 8,
+    "manager ruling (LE-7)": 3,
     "manager ruling (LE-2)": 3,
     "manager ruling (LE-4)": 1,
     "manager ruling (LE-6)": 1,
-    "manager ruling (LE-7)": 1,
     "manager ruling (LE-11)": 1,
     "manager ruling (LE-8)": 1,
-    "manager ruling (LE-9)": 2,
+    "manager ruling (LE-9)": 3,
     "manager ruling (LE-14)": 7,
     "manager ruling (LE-12)": 1
   },
@@ -31,6 +31,6 @@
     "--run",
     "2026-10-10"
   ],
-  "rows": 234,
-  "sha256": "439d7d069d711e388aa76ad9df54e7b281573781f2481264c7bb7d4a5fdc9e3c"
+  "rows": 244,
+  "sha256": "0c8aeb97387eb066569d6a5e133b2131ffbf1c6e2a3bf5a51d66d89774586f5f"
 }

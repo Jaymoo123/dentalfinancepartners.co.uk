@@ -3,41 +3,46 @@
   "run": "2026-10-10",
   "threshold": 0.6,
   "min_results": 5,
+  "families": 244,
   "counts": {
-    "match": 102,
-    "mismatch": 23,
-    "insufficient": 101
+    "match": 97,
+    "mismatch": 26,
+    "insufficient": 121
   },
-  "results_classified": 3491,
+  "results_classified": 3613,
   "by_type": {
-    "service": 1092,
-    "guide": 1353,
-    "other": 745,
-    "directory": 84,
-    "gov": 174,
-    "lender": 43
+    "service": 1165,
+    "association": 157,
+    "other": 720,
+    "guide": 1289,
+    "directory": 81,
+    "gov": 166,
+    "lender": 35
   },
   "other_coverage": {
-    "n": 745,
-    "share": 0.213,
-    "residual_n": 528,
-    "residual_share": 0.151,
+    "n": 720,
+    "share": 0.199,
+    "residual_n": 490,
+    "residual_share": 0.136,
     "note": "other = residual R13 plus R3 social/video/jobs (deliberately not typed)"
   },
   "by_rule": {
-    "R1 gov domain": 174,
-    "R2 directory/forum": 84,
-    "R3 social/video/jobs": 217,
-    "R4 publisher domain": 324,
-    "R5 service path": 366,
-    "R6 guide path": 798,
-    "R7 lender/broker domain": 38,
+    "R1 gov domain": 166,
+    "R2 directory/forum": 81,
+    "R3 social/video/jobs": 230,
+    "R3b association/membership body": 157,
+    "R4 publisher domain": 193,
+    "R5 service path": 425,
+    "R6 guide path": 781,
+    "R7 lender/broker domain": 30,
     "R8 mortgage/broker text": 5,
-    "R9 guide title": 231,
-    "R10 firm homepage": 134,
-    "R11 loose service path": 485,
-    "R12 firm-worded title": 107,
-    "R13 anything else": 528
+    "R9 guide title": 225,
+    "R9b listicle/explainer title": 63,
+    "R9c article slug + question title": 27,
+    "R10 firm homepage": 154,
+    "R11 loose service path": 474,
+    "R12 firm-worded title": 112,
+    "R13 anything else": 490
   },
   "mismatches": [
     {
@@ -48,9 +53,16 @@
       "share_service": 0.111,
       "share_guide": 0.667,
       "share_gov": 0.0,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "480",
-      "priority": "1094.4"
+      "priority": "1094.4",
+      "our_best_guide": {
+        "page": "/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice",
+        "impressions": 1,
+        "position": 10.0,
+        "clicks": 0
+      }
     },
     {
       "family_id": "capital-gains-tax-on-gifting-property",
@@ -58,11 +70,18 @@
       "owner_page": "/for/gifting-property-to-family",
       "owner_type": "service",
       "share_service": 0.0,
-      "share_guide": 0.667,
+      "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.111,
       "dominant_type": "guide",
       "demand_volume": "650",
-      "priority": "723.72"
+      "priority": "723.72",
+      "our_best_guide": {
+        "page": "/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications",
+        "impressions": 1,
+        "position": 36.0,
+        "clicks": 0
+      }
     },
     {
       "family_id": "landlord-tax-advice",
@@ -72,9 +91,16 @@
       "share_service": 0.222,
       "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
-      "demand_volume": "180",
-      "priority": "187.54"
+      "demand_volume": "190",
+      "priority": "187.54",
+      "our_best_guide": {
+        "page": "/landlord-tax",
+        "impressions": 303,
+        "position": 80.7,
+        "clicks": 0
+      }
     },
     {
       "family_id": "incorporation-relief-property",
@@ -84,9 +110,16 @@
       "share_service": 0.0,
       "share_guide": 0.778,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "220",
-      "priority": "150.99"
+      "priority": "150.99",
+      "our_best_guide": {
+        "page": "/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice",
+        "impressions": 23,
+        "position": 14.1,
+        "clicks": 0
+      }
     },
     {
       "family_id": "capital-gains-tax-selling-rental-property",
@@ -96,9 +129,16 @@
       "share_service": 0.0,
       "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "470",
-      "priority": "124.26"
+      "priority": "124.26",
+      "our_best_guide": {
+        "page": "/blog/portfolio-management/when-to-sell-rental-property-key-indicators-landlords",
+        "impressions": 27,
+        "position": 17.8,
+        "clicks": 0
+      }
     },
     {
       "family_id": "small-landlord-tax-advice",
@@ -106,11 +146,37 @@
       "owner_page": "/services/property-tax-advice",
       "owner_type": "service",
       "share_service": 0.111,
-      "share_guide": 0.889,
+      "share_guide": 0.667,
       "share_gov": 0.0,
+      "share_association": 0.222,
       "dominant_type": "guide",
       "demand_volume": "170",
-      "priority": "72.24"
+      "priority": "72.24",
+      "our_best_guide": {
+        "page": "/landlord-tax",
+        "impressions": 4,
+        "position": 70.0,
+        "clicks": 0
+      }
+    },
+    {
+      "family_id": "tax-planning-for-holiday-lets",
+      "head": "tax planning for holiday lets",
+      "owner_page": "/for/holiday-let-and-serviced-accommodation",
+      "owner_type": "service",
+      "share_service": 0.0,
+      "share_guide": 0.667,
+      "share_gov": 0.111,
+      "share_association": 0.111,
+      "dominant_type": "guide",
+      "demand_volume": "20",
+      "priority": "67.06",
+      "our_best_guide": {
+        "page": "/blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk",
+        "impressions": 16,
+        "position": 58.6,
+        "clicks": 0
+      }
     },
     {
       "family_id": "holiday-letting-tax-advice",
@@ -120,9 +186,35 @@
       "share_service": 0.0,
       "share_guide": 0.778,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "67.06"
+      "priority": "67.06",
+      "our_best_guide": {
+        "page": "/blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk",
+        "impressions": 1,
+        "position": 24.0,
+        "clicks": 0
+      }
+    },
+    {
+      "family_id": "renting-out-inherited-property",
+      "head": "renting out inherited property",
+      "owner_page": "/for/inherited-property",
+      "owner_type": "service",
+      "share_service": 0.0,
+      "share_guide": 0.5,
+      "share_gov": 0.0,
+      "share_association": 0.125,
+      "dominant_type": "guide",
+      "demand_volume": "20",
+      "priority": "25.52",
+      "our_best_guide": {
+        "page": "/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide",
+        "impressions": 1,
+        "position": 75.0,
+        "clicks": 0
+      }
     },
     {
       "family_id": "incorporation-relief-for-landlords",
@@ -130,11 +222,18 @@
       "owner_page": "/for/moving-property-into-a-limited-company",
       "owner_type": "service",
       "share_service": 0.0,
-      "share_guide": 0.667,
+      "share_guide": 0.778,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "14.01"
+      "priority": "14.01",
+      "our_best_guide": {
+        "page": "/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords",
+        "impressions": 48,
+        "position": 38.9,
+        "clicks": 0
+      }
     },
     {
       "family_id": "incorporation-relief-on-transfer-of-property",
@@ -144,9 +243,11 @@
       "share_service": 0.0,
       "share_guide": 0.571,
       "share_gov": 0.143,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "13.02"
+      "priority": "13.02",
+      "our_best_guide": null
     },
     {
       "family_id": "incorporation-relief-property-business",
@@ -154,11 +255,13 @@
       "owner_page": "/for/moving-property-into-a-limited-company",
       "owner_type": "service",
       "share_service": 0.0,
-      "share_guide": 0.667,
+      "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.111,
       "dominant_type": "guide",
       "demand_volume": "20",
-      "priority": "5.53"
+      "priority": "5.53",
+      "our_best_guide": null
     },
     {
       "family_id": "gifting-property-tax",
@@ -168,9 +271,16 @@
       "share_service": 0.0,
       "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "70",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": {
+        "page": "/blog/landlord-tax-essentials/iht-gifts-with-reservation-of-benefit-property",
+        "impressions": 1,
+        "position": 35.0,
+        "clicks": 0
+      }
     },
     {
       "family_id": "agricultural-property-relief-iht",
@@ -180,9 +290,11 @@
       "share_service": 0.111,
       "share_guide": 0.667,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "60",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
     },
     {
       "family_id": "s162-incorporation-relief-property",
@@ -192,9 +304,11 @@
       "share_service": 0.0,
       "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "30",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
     },
     {
       "family_id": "section-162-incorporation-relief-property",
@@ -204,9 +318,16 @@
       "share_service": 0.111,
       "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "20",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": {
+        "page": "/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords",
+        "impressions": 1,
+        "position": 1.0,
+        "clicks": 0
+      }
     },
     {
       "family_id": "do-i-need-an-accountant-for-my-rental-property",
@@ -214,11 +335,18 @@
       "owner_page": "/services/landlord-accountant",
       "owner_type": "service",
       "share_service": 0.125,
-      "share_guide": 0.625,
+      "share_guide": 0.5,
       "share_gov": 0.0,
+      "share_association": 0.125,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": {
+        "page": "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
+        "impressions": 1,
+        "position": 2.0,
+        "clicks": 0
+      }
     },
     {
       "family_id": "how-to-reduce-capital-gains-tax-on-property-sale",
@@ -228,9 +356,16 @@
       "share_service": 0.0,
       "share_guide": 0.778,
       "share_gov": 0.0,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": {
+        "page": "/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost",
+        "impressions": 1,
+        "position": 79.0,
+        "clicks": 0
+      }
     },
     {
       "family_id": "incorporation-of-buy-to-let-business",
@@ -240,9 +375,11 @@
       "share_service": 0.0,
       "share_guide": 0.667,
       "share_gov": 0.0,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
     },
     {
       "family_id": "incorporation-relief-buy-to-let-2",
@@ -250,11 +387,13 @@
       "owner_page": "/for/moving-property-into-a-limited-company",
       "owner_type": "service",
       "share_service": 0.0,
-      "share_guide": 0.667,
+      "share_guide": 0.778,
       "share_gov": 0.0,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
     },
     {
       "family_id": "selling-rental-property-tax-deductions",
@@ -264,9 +403,11 @@
       "share_service": 0.111,
       "share_guide": 0.667,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
     },
     {
       "family_id": "spv-incorporation",
@@ -276,9 +417,16 @@
       "share_service": 0.0,
       "share_guide": 0.667,
       "share_gov": 0.0,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": {
+        "page": "/blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide",
+        "impressions": 3,
+        "position": 13.7,
+        "clicks": 0
+      }
     },
     {
       "family_id": "tax-advice-for-buy-to-let-landlords",
@@ -288,9 +436,11 @@
       "share_service": 0.0,
       "share_guide": 0.75,
       "share_gov": 0.0,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
     },
     {
       "family_id": "tax-advice-for-buy-to-let-landlords-2",
@@ -300,9 +450,25 @@
       "share_service": 0.111,
       "share_guide": 0.889,
       "share_gov": 0.0,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
+    },
+    {
+      "family_id": "tax-advice-for-rental-property-owners",
+      "head": "tax advice for rental property owners",
+      "owner_page": "/services/property-tax-advice",
+      "owner_type": "service",
+      "share_service": 0.111,
+      "share_guide": 0.778,
+      "share_gov": 0.0,
+      "share_association": 0.0,
+      "dominant_type": "guide",
+      "demand_volume": "10",
+      "priority": "0.0",
+      "our_best_guide": null
     },
     {
       "family_id": "tax-when-selling-buy-to-let-property",
@@ -312,9 +478,11 @@
       "share_service": 0.111,
       "share_guide": 0.556,
       "share_gov": 0.111,
+      "share_association": 0.0,
       "dominant_type": "guide",
       "demand_volume": "10",
-      "priority": "0.0"
+      "priority": "0.0",
+      "our_best_guide": null
     }
   ]
 }

@@ -1,0 +1,23 @@
+family_id,misfit,now_in_family,resolved
+non-resident-landlord-tax-return,non resident landlord tax services,non-resident-landlord-tax-services (national),yes
+landlord-accountant,accountant for landlord dorset,accountant-for-landlord-dorset (dorset),yes
+landlord-accountant,accountant for landlords ec1,accountant-for-landlords-ec1 (ec1),yes
+landlord-accountant,accountants for landlords wirral,accountants-for-landlords-wirral (wirral),yes
+landlord-accountant,landlord accountant cannock,landlord-accountant-cannock (cannock),yes
+landlord-accountant,landlord accountant wallington,landlord-accountant-wallington (wallington),yes
+landlord-accountant,landlord accountants oxfordshire,landlord-accountants-oxfordshire (oxfordshire),yes
+landlord-accountant,buy to let accountant fees,landlord-accountant (national),no
+landlord-accountant,landlord accountant uk pay,landlord-accountant (national),no
+non-resident-landlord-scheme,non resident landlord application,non-resident-landlord-scheme (national),no
+non-resident-landlord-scheme,apply for non resident landlord scheme,non-resident-landlord-scheme (national),no
+non-resident-landlord-scheme,non resident landlord scheme registration,non-resident-landlord-scheme (national),no
+non-resident-landlord-scheme,non resident landlord tax returns,non-resident-landlord-scheme (national),no
+non-resident-landlord-scheme,hmrc self assessment non resident landlord,non-resident-landlord-scheme (national),no
+non-resident-landlord-scheme,non resident landlord withholding tax,non-resident-landlord-scheme (national),no
+capital-gains-tax-on-property-sale,property incorporation capital gains tax,property-incorporation-capital-gains-tax (national),yes
+landlord-tax-advice,expat landlord tax advice,expat-landlord-tax-advice (national),yes
+landlord-tax-advice,non-resident landlord tax advice,non-resident-landlord-tax-advice (national),yes
+capital-gains-tax-on-gifting-property,gift a property,capital-gains-tax-on-gifting-property (national),no
+capital-gains-tax-on-home-sale,capital gains tax on btl sale uk,capital-gains-tax-on-property-sale (national),yes
+buy-to-let-tax-accountants,buy to let accountant wallington,landlord-accountant-wallington (wallington),yes
+accountant-for-letting-agents-leicester,property tax advisors leicester,accountant-for-letting-agents-leicester (leicester),no

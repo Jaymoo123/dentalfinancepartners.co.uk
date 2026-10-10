@@ -14,18 +14,18 @@ accountants for property,property-accountant,property accountant,hire,,720,12.06
 accountants property,property-accountant,property accountant,hire,,720,12.06,1,lexical
 property accountant,property-accountant,property accountant,hire,,720,12.06,,lexical
 property accountants,property-accountant,property accountant,hire,,720,12.06,6,lexical
-property accounting,property-accounting,property accounting,hire,,720,12.06,,lexical
+property accounting,property-accountant,property accountant,hire,,720,12.06,0,lexical
 bristol property partnership,bristol-property-partnership,bristol property partnership,decision,bristol,590,1.35,,lexical
 national trust rental properties,national-trust-rental-properties,national trust rental properties,decision,,590,0.36,,singleton
 hmrc inheritance tax property valuation,hmrc-inheritance-tax-property-valuation,hmrc inheritance tax property valuation,decision,,480,,,singleton
 property incorporation,property-incorporation,property incorporation,decision,,480,11.4,,singleton
 uk property accountants,property-accountant,property accountant,hire,,480,9.13,3,lexical
-accounting for landlords,landlord-accounting,landlord accounting,hire,,390,17.05,0,lexical
+accounting for landlords,landlord-accountant,landlord accountant,hire,,390,17.05,2,lexical
 buy to let limited company,buy-to-let-limited-company,buy to let limited company,decision,,390,9.84,,singleton
 capital gains tax on selling a property,capital-gains-tax-on-property-sale,capital gains tax on property sale,decision,,390,6.77,0,lexical
 landlord accountant,landlord-accountant,landlord accountant,hire,,390,17.05,,lexical
 landlord accountants,landlord-accountant,landlord accountant,hire,,390,17.05,0,lexical
-landlord accounting,landlord-accounting,landlord accounting,hire,,390,17.05,,lexical
+landlord accounting,landlord-accountant,landlord accountant,hire,,390,17.05,2,lexical
 landlords accountant,landlord-accountant,landlord accountant,hire,,390,17.05,6,lexical
 selling property capital gains tax,capital-gains-tax-on-property-sale,capital gains tax on property sale,decision,,390,6.77,0,lexical
 transfer property into limited company,transfer-property-to-limited-company,transfer property to limited company,decision,,390,5.57,0,lexical
@@ -96,11 +96,12 @@ capital gains tax accountant near me,capital-gains-tax-accountant,capital gains 
 capital gains tax on sale of second home,tax-on-selling-second-home,tax on selling second home,decision,,140,22.1,3,lexical
 capital gains tax on second home sale,tax-on-selling-second-home,tax on selling second home,decision,,140,22.1,1,lexical
 landlord tax advice,landlord-tax-advice,landlord tax advice,hire,,140,5.52,,lexical
+property tax services,property-tax-services,property tax services,hire,,140,9.98,,singleton
 property tax specialist near me,property-tax-advice,property tax advice,hire,,140,9.73,0,lexical
 property tax specialists near me,property-tax-advice,property tax advice,hire,,140,9.73,1,lexical
 real estate accountant,real-estate-accountant,real estate accountant,hire,,140,14.78,,lexical
 real estate accountants,real-estate-accountant,real estate accountant,hire,,140,14.78,0,lexical
-real estate accounting,real-estate-accounting,real estate accounting,hire,,140,14.78,,singleton
+real estate accounting,real-estate-accountant,real estate accountant,hire,,140,14.78,0,lexical
 tax advice for landlords,landlord-tax-advice,landlord tax advice,hire,,140,5.52,0,lexical
 tax advice landlords,landlord-tax-advice,landlord tax advice,hire,,140,5.52,3,lexical
 accountant for rental property,landlord-accountant,landlord accountant,hire,,110,13.19,2,lexical
@@ -122,8 +123,8 @@ property incorporation relief,incorporation-relief-property,incorporation relief
 property tax accounting,property-accountant,property accountant,hire,,110,21.79,3,lexical
 property tax advisor near me,property-tax-advice,property tax advice,hire,,110,10.26,0,lexical
 rental property accountant,landlord-accountant,landlord accountant,hire,,110,13.19,0,lexical
-rental property accounting,rental-property-accounting,rental property accounting,hire,,110,13.19,,singleton
-furnished holiday let tax,furnished-holiday-let-tax,furnished holiday let tax,decision,,90,15.51,,serp
+rental property accounting,landlord-accountant,landlord accountant,hire,,110,13.19,0,lexical
+furnished holiday let tax,furnished-holiday-let-tax,furnished holiday let tax,decision,,90,15.51,,lexical
 non resident landlord tax,non-resident-landlord-scheme,non resident landlord scheme,decision,,90,,1,lexical
 non-resident landlord tax,non-resident-landlord-scheme,non resident landlord scheme,decision,,90,,1,serp
 property accountant position,property-accountant-position,property accountant position,hire,,90,0.3,,singleton
@@ -178,7 +179,7 @@ capital gains tax on sale of commercial property,capital-gains-tax-on-commercial
 landlord accountants near me,landlord-accountant,landlord accountant,hire,,40,16.63,0,lexical
 landlord tax advice uk,landlord-tax-advice,landlord tax advice,hire,,40,5.5,1,lexical
 non resident landlord scheme uk,non-resident-landlord-scheme,non resident landlord scheme,decision,,40,1.41,3,lexical
-property accounting services,property-accountant,property accountant,hire,,40,,3,serp
+property accounting services,property-accountant,property accountant,hire,,40,,3,lexical
 property tax expert,property-tax-advice,property tax advice,hire,,40,6.73,1,lexical
 property tax experts,property-tax-advice,property tax advice,hire,,40,6.73,1,lexical
 rental income accountant,landlord-accountant,landlord accountant,hire,,40,10.95,4,serp
@@ -217,7 +218,7 @@ uk property tax specialists,property-tax-advice,property tax advice,hire,,30,14.
 accounting for letting agents,accounting-for-letting-agents,accounting for letting agents,hire,,20,3.54,,singleton
 apply for non resident landlord scheme,non-resident-landlord-scheme,non resident landlord scheme,decision,,20,,1,serp
 buy to let accountants near me,landlord-accountant,landlord accountant,hire,,20,,0,lexical
-buy to let tax accountants,buy-to-let-tax-accountants,buy to let tax accountants,hire,,20,11.91,,lexical
+buy to let tax accountants,buy-to-let-tax-accountants,buy to let tax accountants,hire,,20,11.91,,singleton
 commercial property accountant,property-accountant,property accountant,hire,,20,,0,lexical
 commercial property accountants,property-accountant,property accountant,hire,,20,,0,lexical
 hmo tax,hmo-tax,hmo tax,decision,,20,,,singleton
@@ -260,8 +261,8 @@ accountants for landlords edinburgh,landlord-accountants-edinburgh,landlord acco
 accountants for landlords glasgow,landlord-accountant-glasgow,landlord accountant glasgow,hire,glasgow,10,12.44,,lexical
 accountants landlords oxford,accountants-landlords-oxford,accountants landlords oxford,hire,oxford,10,,,singleton
 accountants that specialise in property,property-accountant,property accountant,hire,,10,10.8,5,serp
-accounting for buy-to let properties,accounting-for-buy-to-let-properties,accounting for buy-to let properties,hire,,10,,,serp
-accounting for buy-to-let properties,accounting-for-buy-to-let-properties,accounting for buy-to let properties,hire,,10,,8,serp
+accounting for buy-to let properties,landlord-accountant,landlord accountant,hire,,10,,0,serp
+accounting for buy-to-let properties,landlord-accountant,landlord accountant,hire,,10,,0,lexical
 avoid tax selling rental property,capital-gains-tax-selling-rental-property,capital gains tax selling rental property,decision,,10,,0,serp
 best property accountants,property-accountant,property accountant,hire,,10,9.33,1,lexical
 best property accountants uk,property-accountant,property accountant,hire,,10,,0,lexical
@@ -274,7 +275,7 @@ buy to let property accountants,landlord-accountant,landlord accountant,hire,,10
 buy to let property tax advisors,buy-to-let-property-tax-advisors,buy to let property tax advisors,hire,,10,,,singleton
 buy to let specialist accountant,landlord-accountant,landlord accountant,hire,,10,,1,lexical
 buy to let tax advisor,buy-to-let-tax-advisor,buy-to-let tax advisor,hire,,10,6.3,5,serp
-buy-to-let property accountants,landlord-accountant,landlord accountant,hire,,10,5.07,3,serp
+buy-to-let property accountants,landlord-accountant,landlord accountant,hire,,10,5.07,3,lexical
 buy-to-let tax advisor,buy-to-let-tax-advisor,buy-to-let tax advisor,hire,,10,6.3,,serp
 can undivided share of property be gifted,can-undivided-share-of-property-be-gifted,can undivided share of property be gifted,decision,,10,,,singleton
 capital gains tax accountant swansea,property-tax-specialist-swansea,property tax specialist swansea,hire,swansea,10,,,lexical
@@ -289,7 +290,7 @@ gift of undivided share in property,gift-of-undivided-share-in-property,gift of 
 hmrc non resident landlord application,non-resident-landlord-scheme-application,non resident landlord scheme application,decision,,10,,4,serp
 hmrc self assessment non resident landlord,non-resident-landlord-scheme,non resident landlord scheme,decision,,10,,1,serp
 holiday let accountant,holiday-let-accountant,holiday let accountant,hire,,10,,,singleton
-holiday let tax advice,furnished-holiday-let-tax,furnished holiday let tax,hire,,10,35.5,6,serp
+holiday let tax advice,tax-planning-for-holiday-lets,tax planning for holiday lets,hire,,10,35.5,4,serp
 holiday letting tax advice,holiday-letting-tax-advice,holiday letting tax advice,hire,,10,35.5,,singleton
 how much do property tax consultants charge,how-much-do-property-tax-consultants-charge,how much do property tax consultants charge,hire,,10,,,singleton
 how to reduce capital gains tax on property sale,how-to-reduce-capital-gains-tax-on-property-sale,how to reduce capital gains tax on property sale,decision,,10,,,singleton
@@ -314,7 +315,7 @@ landlord accountants edinburgh,landlord-accountants-edinburgh,landlord accountan
 landlord accountants glasgow,landlord-accountant-glasgow,landlord accountant glasgow,hire,glasgow,10,20.52,,lexical
 landlord accountants in london,landlord-accountant-london,landlord accountant london,hire,london,10,,,lexical
 landlord accountants surrey,landlord-accountants-surrey,landlord accountants surrey,hire,surrey,10,,,singleton
-landlord accounting service,landlord-accounting-service,landlord accounting service,hire,,10,,,lexical
+landlord accounting service,landlord-accountant,landlord accountant,hire,,10,,1,lexical
 landlord tax accountant uk,landlord-accountant,landlord accountant,hire,,10,,4,lexical
 landlord tax return accountant,landlord-accountant,landlord accountant,hire,,10,11.47,4,serp
 landlord tax return advice,landlord-tax-advice,landlord tax advice,hire,,10,,1,lexical
@@ -337,7 +338,7 @@ property accountant manchester,property-accountant-manchester,property accountan
 property accountant north london,property-tax-accountant-london,property tax accountant london,hire,london,10,,,lexical
 property accountant nottingham,property-accountant-nottingham,property accountant nottingham,hire,nottingham,10,6.37,,lexical
 property accountant oxford,property-accountant-oxford,property accountant oxford,hire,oxford,10,,,lexical
-property accountant oxfordshire,property-accountant-oxfordshire,property accountant oxfordshire,hire,,10,,,lexical
+property accountant oxfordshire,property-accountant-oxfordshire,property accountant oxfordshire,hire,oxfordshire,10,,,lexical
 property accountant sheffield,property-accountant-sheffield,property accountant sheffield,hire,sheffield,10,5.63,,lexical
 property accountant skills,property-accountant-skills,property accountant skills,hire,,10,,,singleton
 property accountant southampton,property-accountant-southampton,property accountant southampton,hire,southampton,10,18.39,,singleton
@@ -351,10 +352,11 @@ property accountants glasgow,property-accountant-glasgow,property accountant gla
 property accountants kent,property-accountant-kent,property accountant kent,hire,kent,10,4.47,,lexical
 property accountants manchester,property-accountant-manchester,property accountant manchester,hire,manchester,10,12.11,,lexical
 property accountants nottingham,property-accountant-nottingham,property accountant nottingham,hire,nottingham,10,6.37,,lexical
-property accountants oxfordshire,property-accountant-oxfordshire,property accountant oxfordshire,hire,,10,,8,lexical
+property accountants oxfordshire,property-accountant-oxfordshire,property accountant oxfordshire,hire,oxfordshire,10,,,lexical
 property accountants sheffield,property-accountant-sheffield,property accountant sheffield,hire,sheffield,10,5.63,,lexical
 property accountants uk,property-accountant,property accountant,hire,,10,11.58,4,lexical
 property business incorporation relief,incorporation-relief-property-business,incorporation relief property business,decision,,10,2.93,3,lexical
+property capital allowances tax advisors,property-capital-allowances-tax-advisors,property capital allowances tax advisors,hire,,10,,,singleton
 property development tax planning,property-development-tax-planning,property development tax planning,hire,,10,,,singleton
 property investment accountant near me,property-accountant,property accountant,hire,,10,,0,lexical
 property investment tax advice,property-tax-advice,property tax advice,hire,,10,,0,serp
@@ -371,6 +373,7 @@ property tax specialist cardiff,property-tax-specialist-cardiff,property tax spe
 property tax specialist london,property-tax-accountant-london,property tax accountant london,hire,london,10,11.31,,lexical
 property tax specialist swansea,property-tax-specialist-swansea,property tax specialist swansea,hire,swansea,10,,,lexical
 property tax specialists london,property-tax-accountant-london,property tax accountant london,hire,london,10,11.31,,lexical
+real property tax services,real-property-tax-services,real property tax services,hire,,10,,,singleton
 register as a non resident landlord,register-as-a-non-resident-landlord,register as a non resident landlord,decision,,10,,,singleton
 register for non resident landlord scheme,register-for-non-resident-landlord-scheme,register for non resident landlord scheme,decision,,10,,,singleton
 rental property accountant near me,landlord-accountant,landlord accountant,hire,,10,,1,lexical
@@ -386,14 +389,14 @@ selling rental property tax deductions,selling-rental-property-tax-deductions,se
 should landlord incorporate,incorporation-relief-property,incorporation relief property,decision,,10,,1,serp
 spv incorporation,spv-incorporation,spv incorporation,decision,,10,,,singleton
 tax accountant for rental properties,landlord-accountant,landlord accountant,hire,,10,,1,lexical
-tax accounting for rental property,tax-accounting-for-rental-property,tax accounting for rental property,hire,,10,,,singleton
+tax accounting for rental property,landlord-accountant,landlord accountant,hire,,10,,1,lexical
 tax advice for buy to let landlords,tax-advice-for-buy-to-let-landlords,tax advice for buy to let landlords,hire,,10,,,singleton
 tax advice for buy-to-let landlords,tax-advice-for-buy-to-let-landlords-2,tax advice for buy-to-let landlords,hire,,10,,,singleton
 tax advice for rental property owners,tax-advice-for-rental-property-owners,tax advice for rental property owners,hire,,10,,,singleton
 tax laws selling rental property,capital-gains-tax-selling-rental-property,capital gains tax selling rental property,decision,,10,,0,serp
 tax liability selling rental property,tax-liability-selling-rental-property,tax liability selling rental property,decision,,10,,,singleton
 tax liability when selling a rental property,tax-liability-when-selling-a-rental-property,tax liability when selling a rental property,decision,,10,0.3,,singleton
-tax planning for holiday lets,furnished-holiday-let-tax,furnished holiday let tax,hire,,10,,4,serp
+tax planning for holiday lets,tax-planning-for-holiday-lets,tax planning for holiday lets,hire,,10,,,serp
 tax return advice for landlords,landlord-tax-advice,landlord tax advice,hire,,10,,,lexical
 tax return for non resident landlord,non-resident-landlord-tax-return,non resident landlord tax return,decision,,10,,3,lexical
 tax when selling buy to let property,tax-when-selling-buy-to-let-property,tax when selling buy to let property,decision,,10,,,singleton
@@ -406,9 +409,9 @@ uk capital gains tax on sale of overseas property,uk-capital-gains-tax-on-sale-o
 uk inheritance tax on landlords,inheritance-tax-on-rental-property,inheritance tax on rental property,decision,,10,,5,serp
 uk property rental tax for non resident,non-resident-landlord-scheme,non resident landlord scheme,decision,,10,,1,serp
 accountant for landlord bournemouth,accountant-for-landlord-bournemouth,accountant for landlord bournemouth,hire,bournemouth,0,,,singleton
-accountant for landlord dorset,landlord-accountant,landlord accountant,hire,,0,,,overlap
+accountant for landlord dorset,accountant-for-landlord-dorset,accountant for landlord dorset,hire,dorset,0,,,singleton
 accountant for landlord london,landlord-accountant-london,landlord accountant london,hire,london,0,,,lexical
-accountant for landlords ec1,landlord-accountant,landlord accountant,hire,,0,,,overlap
+accountant for landlords ec1,accountant-for-landlords-ec1,accountant for landlords ec1,hire,ec1,0,,,singleton
 accountant for letting agents leicester,accountant-for-letting-agents-leicester,accountant for letting agents leicester,hire,leicester,0,,,lexical
 accountant for property developers west midlands,accountant-for-property-developers-west-midlands,accountant for property developers west midlands,hire,,0,,,singleton
 accountant for property in london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
@@ -419,21 +422,21 @@ accountants for landlords in london,landlord-accountant-london,landlord accounta
 accountants for landlords milton keynes,landlord-accountants-milton-keynes,landlord accountants milton keynes,hire,milton keynes,0,,,lexical
 accountants for landlords near me,landlord-accountant,landlord accountant,hire,,0,,,lexical
 accountants for landlords nottingham,landlord-accountants-in-nottingham,landlord accountants in nottingham,hire,nottingham,0,,,lexical
-accountants for landlords wirral,landlord-accountant,landlord accountant,hire,,0,,,overlap
+accountants for landlords wirral,accountants-for-landlords-wirral,accountants for landlords wirral,hire,wirral,0,,,singleton
 accountants for property company,property-accountant,property accountant,hire,,0,,,lexical
 accountants for property investors london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 accountants for property tax,property-accountant,property accountant,hire,,0,,,lexical
 accountants peterborough btl landlords,accountants-peterborough-btl-landlords,accountants peterborough btl landlords,hire,peterborough,0,,,singleton
-accounting for property companies,property-accounting,property accounting,hire,,0,,,overlap
-accounting services for property owners,accounting-services-for-property-owners,accounting services for property owners,hire,,0,,,singleton
-accounting web let property campaign,accounting-web-let-property-campaign,accounting web let property campaign,hire,,0,,,singleton
+accounting for property companies,property-accountant,property accountant,hire,,0,,,lexical
+accounting services for property owners,property-accountant,property accountant,hire,,0,,,overlap
+accounting web let property campaign,let-property-campaign-accountant-near-me,let property campaign accountant near me,hire,,0,,,overlap
 best accountants for property landlords,accountants-for-landlord-and-property-accountants,accountants for landlord and property accountants,hire,,0,,,lexical
 best property accountant near me,property-accountant,property accountant,hire,,0,,,lexical
 best property accountants in london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 best way to produce rent statements for tenants and accountants,best-way-to-produce-rent-statements-for-tenants-and-accountants,best way to produce rent statements for tenants and accountants,hire,,0,,,singleton
 buy to let accountant in london,landlord-accountant-london,landlord accountant london,hire,london,0,,,lexical
 buy to let accountant preston,landlord-accountant-preston,landlord accountant preston,hire,preston,0,,,lexical
-buy to let accountant wallington,buy-to-let-tax-accountants,buy to let tax accountants,hire,,0,,,overlap
+buy to let accountant wallington,landlord-accountant-wallington,landlord accountant wallington,hire,wallington,0,,,lexical
 buy to let accountants milton keynes,landlord-accountants-milton-keynes,landlord accountants milton keynes,hire,milton keynes,0,,,lexical
 buy to let incorporation relief,incorporation-relief-buy-to-let,incorporation relief buy to let,decision,,0,,,lexical
 buy to let limited company accountant cost,buy-to-let-limited-company-accountant-cost,buy to let limited company accountant cost,hire,,0,,,singleton
@@ -448,10 +451,10 @@ capital gains tax on btl sale uk,capital-gains-tax-on-property-sale,capital gain
 capital gains tax on gift of property to child uk,capital-gains-tax-on-gifting-property,capital gains tax on gifting property,decision,,0,,,overlap
 capital gains tax property accountant,capital-gains-tax-property-accountant,capital gains tax property accountant,hire,,0,,,lexical
 capital gains tax when selling a holiday let,capital-gains-tax-when-selling-a-holiday-let,capital gains tax when selling a holiday let,decision,,0,,,singleton
-cgt advice property hammersmith,cgt-advice-property-hammersmith,cgt advice property hammersmith,hire,,0,,,singleton
+cgt advice property hammersmith,cgt-advice-property-hammersmith,cgt advice property hammersmith,hire,hammersmith,0,,,singleton
 cost of accountant for rental property,cost-of-accountant-for-rental-property,cost of accountant for rental property,hire,,0,,,lexical
 do i need an accountant as a landlord,do-i-need-an-accountant-as-a-landlord,do i need an accountant as a landlord,hire,,0,,,singleton
-expat landlord tax advice,landlord-tax-advice,landlord tax advice,hire,,0,,,overlap
+expat landlord tax advice,expat-landlord-tax-advice,expat landlord tax advice,hire,,0,,,singleton
 furnished holiday let inheritance tax,furnished-holiday-let-tax,furnished holiday let tax,decision,,0,,,overlap
 furnished holiday let tax specialist,furnished-holiday-let-tax-specialist,furnished holiday let tax specialist,hire,,0,,,singleton
 gifting buy-to-let property to child uk,gifting-buy-to-let-property-to-child-uk,gifting buy-to-let property to child uk,decision,,0,,,singleton
@@ -461,7 +464,7 @@ gifting property to children tax,gifting-property-tax,gifting property tax,decis
 hmo accountant,hmo-accountants,hmo accountants,hire,,0,,,lexical
 hmo accountants,hmo-accountants,hmo accountants,hire,,0,,,lexical
 hmo landlord tax planning,hmo-landlord-tax-planning,hmo landlord tax planning,hire,,0,,,singleton
-holiday let tax specialist,holiday-let-tax-specialist,holiday let tax specialist,hire,,0,,,singleton
+holiday let tax specialist,tax-planning-for-holiday-lets,tax planning for holiday lets,hire,,0,,,overlap
 i inherited the property,inherited-property,inherited property,decision,,0,,,lexical
 income tax benefit on commercial property sale,income-tax-benefit-on-commercial-property-sale,income tax benefit on commercial property sale,decision,,0,,,singleton
 incorporate property portfolio,incorporating-a-property-portfolio-uk,incorporating a property portfolio uk,decision,,0,,,lexical
@@ -476,19 +479,19 @@ investment portfolio tax planning,investment-portfolio-tax-planning,investment p
 is incorporation right for my property portfolio,incorporating-a-property-portfolio-uk,incorporating a property portfolio uk,decision,,0,,,overlap
 landlord accountancy services,landlord-accountant,landlord accountant,hire,,0,,,lexical
 landlord accountant bristol,landlord-accountant-bristol,landlord accountant bristol,hire,bristol,0,,,singleton
-landlord accountant cannock,landlord-accountant,landlord accountant,hire,,0,,,overlap
+landlord accountant cannock,landlord-accountant-cannock,landlord accountant cannock,hire,cannock,0,,,singleton
 landlord accountant cardiff,landlord-accountant-cardiff,landlord accountant cardiff,hire,cardiff,0,,,singleton
 landlord accountant fees london,landlord-accountant-london,landlord accountant london,hire,london,0,,,lexical
 landlord accountant in london,landlord-accountant-london,landlord accountant london,hire,london,0,,,lexical
 landlord accountant manchester,landlord-accountant-manchester,landlord accountant manchester,hire,manchester,0,,,singleton
 landlord accountant preston,landlord-accountant-preston,landlord accountant preston,hire,preston,0,,,lexical
 landlord accountant uk pay,landlord-accountant,landlord accountant,hire,,0,,,overlap
-landlord accountant wallington,landlord-accountant,landlord accountant,hire,,0,,,overlap
+landlord accountant wallington,landlord-accountant-wallington,landlord accountant wallington,hire,wallington,0,,,lexical
 landlord accountants in nottingham,landlord-accountants-in-nottingham,landlord accountants in nottingham,hire,nottingham,0,,,lexical
 landlord accountants milton keynes,landlord-accountants-milton-keynes,landlord accountants milton keynes,hire,milton keynes,0,,,lexical
 landlord accountants nottingham,landlord-accountants-in-nottingham,landlord accountants in nottingham,hire,nottingham,0,,,lexical
-landlord accountants oxfordshire,landlord-accountant,landlord accountant,hire,,0,,,overlap
-landlord accounting services uk,landlord-accounting-service,landlord accounting service,hire,,0,,,lexical
+landlord accountants oxfordshire,landlord-accountants-oxfordshire,landlord accountants oxfordshire,hire,oxfordshire,0,,,singleton
+landlord accounting services uk,landlord-accountant,landlord accountant,hire,,0,,,lexical
 landlord incorporation relief,incorporation-relief-for-landlords,incorporation relief for landlords,decision,,0,,,lexical
 landlord portfolio incorporation uk,landlord-portfolio-incorporation-uk,landlord portfolio incorporation uk,decision,,0,,,singleton
 landlord tax accountant farringdon,landlord-tax-accountant-farringdon,landlord tax accountant farringdon,hire,,0,,,singleton
@@ -498,6 +501,7 @@ landlord tax accountant nottingham,landlord-accountants-in-nottingham,landlord a
 landlord tax advice leeds,buy-to-let-accountant-leeds,buy to let accountant leeds,hire,leeds,0,,,lexical
 landlord tax planning strategies,landlord-tax-planning-strategies,landlord tax planning strategies,hire,,0,,,singleton
 landlord tax return accountant nottingham,landlord-accountants-in-nottingham,landlord accountants in nottingham,hire,nottingham,0,,,lexical
+landlord tax services fleetwood,landlord-tax-services-fleetwood,landlord tax services fleetwood,hire,fleetwood,0,,,singleton
 landlord tax specialist,landlord-tax-specialist,landlord tax specialist,hire,,0,,,singleton
 let property campaign accountants,let-property-campaign-accountant-near-me,let property campaign accountant near me,hire,,0,,,lexical
 letting agent accounting services,letting-agent-accounting-services,letting agent accounting services,hire,,0,,,singleton
@@ -512,27 +516,27 @@ non resident landlord company,non-resident-company-landlord,non resident company
 non resident landlord company hmrc,non-resident-company-landlord,non resident company landlord,decision,,0,,,overlap
 non resident landlord scheme company,non-resident-landlord-scheme-for-companies,non resident landlord scheme for companies,decision,,0,,,lexical
 non resident landlord scheme registration,non-resident-landlord-scheme,non resident landlord scheme,decision,,0,,,overlap
-non resident landlord tax services,non-resident-landlord-tax-return,non resident landlord tax return,decision,,0,,,overlap
+non resident landlord tax services,non-resident-landlord-tax-services,non resident landlord tax services,hire,,0,,,singleton
 non resident landlord travel expenses,non-resident-landlord-travel-expenses,non resident landlord travel expenses,decision,,0,,,singleton
 non resident landlords quarterly return,non-resident-landlord-quarterly-return,non resident landlord quarterly return,decision,,0,,,lexical
 non-resident landlord accountant lond,non-resident-landlord-accountant-lond,non-resident landlord accountant lond,hire,,0,,,singleton
-non-resident landlord tax advice,landlord-tax-advice,landlord tax advice,hire,,0,,,overlap
+non-resident landlord tax advice,non-resident-landlord-tax-advice,non-resident landlord tax advice,hire,,0,,,singleton
 nrl property,nrl-property,nrl property,decision,,0,,,singleton
 portfolio incorporation guidance,portfolio-incorporation-guidance,portfolio incorporation guidance,decision,,0,,,singleton
 portfolio landlord tax planning,portfolio-landlord-tax-planning,portfolio landlord tax planning,hire,,0,,,singleton
 property accountancy leeds,property-accountancy-leeds,property accountancy leeds,hire,leeds,0,,,lexical
-property accountant camden,property-accountant,property accountant,hire,,0,,,overlap
+property accountant camden,property-accountant-camden,property accountant camden,hire,camden,0,,,singleton
 property accountant coventry,property-accountant-coventry,property accountant coventry,hire,coventry,0,,,singleton
 property accountant erdington,property-accountant,property accountant,hire,,0,,,overlap
 property accountant in london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 property accountant leeds,property-accountancy-leeds,property accountancy leeds,hire,leeds,0,,,lexical
 property accountant london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 property accountant role,property-accountant,property accountant,hire,,0,,,overlap
-property accountant scotland,property-accountant,property accountant,hire,,0,,,overlap
-property accountant solihull,property-accountant,property accountant,hire,,0,,,overlap
+property accountant scotland,property-accountant-scotland,property accountant scotland,hire,scotland,0,,,singleton
+property accountant solihull,property-accountant-solihull,property accountant solihull,hire,solihull,0,,,singleton
 property accountant south london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 property accountant west midlands,property-accountant-west-midlands,property accountant west midlands,hire,,0,,,singleton
-property accountant westminster,property-accountant,property accountant,hire,,0,,,overlap
+property accountant westminster,property-accountant-westminster,property accountant westminster,hire,westminster,0,,,singleton
 property accountant wolverhampton,property-accountant-wolverhampton,property accountant wolverhampton,hire,wolverhampton,0,,,singleton
 property accountants in london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 property accountants leeds,property-accountancy-leeds,property accountancy leeds,hire,leeds,0,,,lexical
@@ -540,11 +544,11 @@ property accountants london,property-tax-accountant-london,property tax accounta
 property accountants northampton,property-accountants-northampton,property accountants northampton,hire,northampton,0,,,lexical
 property company accountant,property-accountant,property accountant,hire,,0,,,overlap
 property income accountant,property-accountant,property accountant,hire,,0,,,overlap
-property incorporation capital gains tax,capital-gains-tax-on-property-sale,capital gains tax on property sale,decision,,0,,,overlap
-property incorporation tax advice,property-tax-advice,property tax advice,hire,,0,,,overlap
+property incorporation capital gains tax,property-incorporation-capital-gains-tax,property incorporation capital gains tax,decision,,0,,,singleton
+property incorporation tax advice,property-incorporation-tax-advice,property incorporation tax advice,hire,,0,,,singleton
 property investment accountant in london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 property investment accountant milton keynes,property-tax-accountant-milton-keynes,property tax accountant milton keynes,hire,milton keynes,0,,,lexical
-property investor accountant w6,property-investor-accountant-w6,property investor accountant w6,hire,,0,,,singleton
+property investor accountant w6,property-investor-accountant-w6,property investor accountant w6,hire,w6,0,,,singleton
 property investor accountants,property-accountant,property accountant,hire,,0,,,lexical
 property owner accountant,property-accountant,property accountant,hire,,0,,,overlap
 property portfolio accountant,property-accountant,property accountant,hire,,0,,,overlap
@@ -552,7 +556,7 @@ property portfolio incorporation services,incorporating-a-property-portfolio-uk,
 property portfolio tax planning,property-tax-planning,property tax planning,hire,,0,,,overlap
 property specialist accountant in london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 property specialist accountant milton keynes,property-tax-accountant-milton-keynes,property tax accountant milton keynes,hire,milton keynes,0,,,lexical
-property tax accountant ec1,property-tax-accountant-ec1,property tax accountant ec1,hire,,0,,,singleton
+property tax accountant ec1,property-tax-accountant-ec1,property tax accountant ec1,hire,ec1,0,,,singleton
 property tax accountant in london,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 property tax accountant manchester,property-accountant-manchester,property accountant manchester,hire,manchester,0,,,lexical
 property tax accountant milton keynes,property-tax-accountant-milton-keynes,property tax accountant milton keynes,hire,milton keynes,0,,,lexical
@@ -573,7 +577,7 @@ recommend a property tax advisor in london,property-tax-accountant-london,proper
 recommend an accountant in london for a landlord,landlord-accountant-london,landlord accountant london,hire,london,0,,,lexical
 recommend an accountant in london for a property investor,property-tax-accountant-london,property tax accountant london,hire,london,0,,,lexical
 rental accountant headingley,rental-accountant-headingley,rental accountant headingley,hire,,0,,,singleton
-rental accountant horsforth,rental-accountant-horsforth,rental accountant horsforth,hire,,0,,,singleton
+rental accountant horsforth,rental-accountant-horsforth,rental accountant horsforth,hire,horsforth,0,,,singleton
 rental accountant leeds,buy-to-let-accountant-leeds,buy to let accountant leeds,hire,leeds,0,,,lexical
 rental accountants slough,rental-accountants-slough,rental accountants slough,hire,slough,0,,,singleton
 rental income tax advisor farringdon,rental-income-tax-advisor-farringdon,rental income tax advisor farringdon,hire,,0,,,singleton
@@ -590,7 +594,7 @@ stamp duty on transfer to company,stamp-duty-on-transfer-of-property-to-limited-
 stamp duty specialist uk,stamp-duty-specialist-uk,stamp duty specialist uk,hire,,0,,,singleton
 tax advice for hmo landlords,landlord-tax-advice,landlord tax advice,hire,,0,,,overlap
 tax benefits of property incorporation,tax-benefits-of-property-incorporation,tax benefits of property incorporation,decision,,0,,,singleton
-tax planning for landlords hammersmith,tax-planning-for-landlords-hammersmith,tax planning for landlords hammersmith,hire,,0,,,singleton
+tax planning for landlords hammersmith,tax-planning-for-landlords-hammersmith,tax planning for landlords hammersmith,hire,hammersmith,0,,,singleton
 transferring property to a limited company uk,transfer-property-to-limited-company,transfer property to limited company,decision,,0,,,lexical
 uk capital gains tax on foreign property sale,sale-of-foreign-property-capital-gains-tax,sale of foreign property capital gains tax,decision,,0,,,lexical
 uk capital gains tax on property sale 2026,capital-gains-tax-on-property-sale,capital gains tax on property sale,decision,,0,,,overlap

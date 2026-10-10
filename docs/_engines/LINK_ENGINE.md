@@ -111,27 +111,40 @@ Starts only after the owner approves the Half A demand map (`DEMAND_MAP.md` plus
 
 Queries are normalised with `norm_query` (lowercase, punctuation to space except hyphen, collapsed spaces). The universe keeps **all** candidates, with `intent_class` (`hire`, `decision`, `excluded`) and an `excluded_reason`. Sources: seeds, the cached DFS export, the prior universe (QRY_C), the prior assignment (WP1) and fresh GSC queries.
 
+Rules run in this order, first match wins (all in `universe.py`, `RULES`, each named and commented):
+
 | # | Rule | Test | Result |
 |---|---|---|---|
 | 1 | `seed_hire` / `seed_decision` | an owner seed AND a property-context word (`ctx_hit`) | hire / decision (a seed with no property-context word is not forced) |
+| 1b | `malformed_query` (F5) | `http`/`www`, `.com` with digits, 4 or more numeric tokens, or more than 30 words (pasted CSV text, not a search) | excluded |
 | 2 | `site_operator` | raw text contains `site:` | excluded |
-| 3 | `brand` | site brand terms or competitor brands from config | excluded (navigational) |
+| 3 | `brand` | site brand terms or competitor brands from config (includes Money Saving Expert) | excluded (navigational) |
+| 3b | `forum_helpline` (F3) | citizens advice, helpline, advice line, forum | excluded |
 | 4 | `career` | jobs, careers, salary, vacancies, apprentice, courses, training, qualifications, "become a" | excluded |
 | 5 | `software` | software, app(s), platform, spreadsheet(s) | excluded |
-| 5b | `borrower_intent` | mortgage, remortgage, loan, lender, broker, bridging, equity release, unless an accountant/adviser word is present | excluded |
-| 6 | `non_uk_geo` | USA, Australia, Canada, India, Dubai, Ireland and similar (northern ireland is UK; "ireland" allowed beside "non resident") | excluded |
-| 7 | `calculator_rates_forms` | calculator, rate(s), form(s), deadline, login, template, pdf, checklist, threshold, allowance | excluded (blog engine owns these) |
-| 8 | `gov_navigational` | gov uk; hmrc with phone/contact/number/helpline/email/address | excluded |
-| 9 | `reference` | "what is/are/does", "how does/do ... work", "when is/do/can", "explained", "rules" (at end), "meaning", "definition", "can i" (unless afford/claim/cost) | excluded |
-| 10 | `hire_provider_context` | provider word (accountant, accountancy, accounting firm/service, tax adviser/advice/specialist/consultant/expert/planning) AND a property-context word | hire |
-| 10b | `no_property_context` | provider word + only a tax-topic word (cgt, inheritance, sdlt, non resident...), no property-context word | excluded |
-| 11 | `decision_topic` | a decision-topic rule matches AND a property-context word exists OUTSIDE every topic-word span | decision |
-| 12 | `not_commercial` | everything else | excluded |
+| 5a | `accounting_software` / `accounting_reference` (F1) | "accounting" beside software, system, app, excel, template (tool) or tips, standards, ifrs, frs, definition, meaning | excluded |
+| 5b | `borrower_intent` | mortgage, remortgage, loan, lender, broker, bridging, equity release, unless an accountant/tax-adviser word is present | excluded |
+| 6 | `non_uk_geo` | USA, Australia, Canada, India, Dubai, Ireland, BC, Switzerland and similar (northern ireland is UK; "ireland" allowed beside "non resident") | excluded |
+| 6b | `explainer_question` (H1 exception) | starts what is / what are / what does / what do / how to become / how do i become / who is / definition / meaning, or ends "do" | excluded (reference) |
+| 7 | `financial_advice` (F3) | financial advice / adviser / planner / planning | excluded `no_tax_context` |
+| 7a | `hire_provider_context` (F1, F2, F3) | a property-context word AND either an accountant word (accountant, accountancy, accounting, tax planning, tax services) or an adviser word (advice, adviser/advisor, specialist, expert, consultant, planner) beside a tax word | hire |
+| 7b | `no_tax_context` (F3) | property-context word + adviser word but no tax word ("property consultant", "property advisor") | excluded |
+| 7c | `cgt_provider` (F4) | capital gains tax / cgt beside accountant, adviser, advice or specialist, even without a property word | hire |
+| 8 | `calculator_rates_forms` | calculator, rate(s), form(s), deadline, login, template, pdf, checklist, threshold, allowance | excluded (blog engine owns these) |
+| 9 | `gov_navigational` | gov uk; hmrc with phone/contact/number/helpline/email/address | excluded |
+| 10 | `reference` | "what is/are/does", "how does/do ... work", "when is/do/can", "explained", "rules" (at end), "meaning", "definition", "can i" (unless afford/claim/cost) | excluded |
+| 11 | `no_property_context` | provider word + only a tax-topic word (inheritance, iht, non resident...), no property-context word | excluded |
+| 12 | `homeowner_fact` | "how much is/tax", "do i pay", "if you sell", "house sale", "home sale", "selling a house", unless a landlord / rental / buy to let / second home word is present | excluded (reference) |
+| 13 | `decision_topic` | a decision-topic rule matches AND a property-context word exists OUTSIDE every topic-word span | decision |
+| 14 | `not_commercial` | everything else | excluded |
 
-- **Property-context words** (`DECISION_CONTEXT`): property/properties, landlord(s), buy to let, btl, rental, rent, let, letting(s), hmo, holiday let(s), spv, portfolio, house, flat, real estate. "home" counts only beside a sell/gift/inherit/iht topic word.
+- **H1: hire beats exclusion.** Rules 7a to 7c sit before the calculator, gov, reference and not-commercial rules, so a query that qualifies as hire is not re-excluded by them ("property capital allowances tax advisors"). Career, brand, non-UK, software, malformed, forum and the explainer-question exception still win over hire.
+- **Property-context words** (`DECISION_CONTEXT`): property/properties, landlord(s), buy to let, btl, rental, rent, let, letting(s), hmo, holiday let(s), spv, portfolio, house, flat, real estate, and (F2) stamp duty, sdlt, lbtt, ltt. "home" counts only beside a sell/gift/inherit/iht topic word.
 - **Decision-topic rules:** incorporation; transfer + (limited company or ltd); sell/selling/sale + tax; gift; inherit; iht; non resident; nrl; expat; (sdlt or stamp duty) + (transfer, multiple dwellings or mdr); restructure; partnership; family investment company; trust.
 - **Separate-word rule (incident, section 9):** bare "inheritance tax" does not qualify, because "inherit" is itself the topic span and a context word must lie outside it.
-- **City:** `geo_of` returns the first city (longest first) from the site's list; "reading" counts as a city only beside an accountant/tax word or after "in".
+- **Competitor source (F6):** keywords from the stored `ranked_keywords` responses (competitor pages) enter the universe with flag `competitor` and go through the same rules.
+- **Geo (G1):** `geo_of` returns a config city first (longest first), then the longest gazetteer match from `data/uk_places.txt` (5,319 UK places from GeoNames GB, a header comment records the source and filter), then a London postcode district (ec1, sw1, n1, e14) beside a provider word. Ambiguous names (reading, bath, sale, march, deal, street, wells and others, `PLACE_DENY`) count only after "in" or beside an accountant / tax word. Geo keywords form one city family per place and never join a national family (blueprint R4, R16, R17).
+- **Clustering hard rules (G2, G3):** components of different `intent_class` never join; a keyword with a non-resident / expat / overseas-landlord or incorporation / limited company / ltd / spv token never joins a family whose head lacks that group.
 
 ### 5.2 Close-variant dedupe (`cluster.py`, `families.py`)
 
@@ -208,9 +221,23 @@ The model decides only two things: whether two families are one (cluster conflic
 6. **Disagreements go to the owner.** Two readers who differ on `(decision, owner_page, commercial_fit)` leave `owner_page` blank with basis `OWNER DECISION NEEDED` and both reasons in `judgment_reason`. Readers who agree apply at the lowest of their confidences.
 7. **`apply_judgments.py` refuses, and lists, any verdict** whose family is not in the owner queue, whose `input_sha256` differs from the current queue row, whose queue row no longer hashes to its stored value, whose decision or confidence is invalid, or whose `commercial_fit` is missing. Nothing is guessed. Merge/split verdicts are counted but applied only by re-running `cluster.py`.
 8. **Rulings as precedent.** A decision the owner makes on a disagreement is appended to `<site>_rulings.md` so it is read first next time. Blueprint rulings (Property: R2, R4, R15, R18, R22) are binding; if data disagrees with a ruling, follow the ruling and say so in `reason`.
-9. Style for `reason`: one sentence, no em-dashes, no hedging.
+9. **Final rulings survive re-clustering.** A verdict with reader `manager` or `owner` whose `input_sha256` no longer matches is still applied if the family's head is unchanged (same `family_id`) and its deduped demand moved by 25% or less since the ruling matched. The head and demand at that moment are kept in `stages/07_ruling_snapshot.csv` (written every run). `owner_basis` then reads `manager ruling (LE-n), carried by head` and the family is listed in `stages/07_carried_rulings.csv` (old and new demand). Anything else is refused and listed in `07_rejudge_needed.csv`. Opus reader verdicts keep the strict hash rule.
+10. Style for `reason`: one sentence, no em-dashes, no hedging.
 
 ---
+
+## Accuracy checks
+
+Run once per run (outputs in `<run>/accuracy/`, read-only on the stages, never edit the blind labels). Property 2026-10-10 results:
+
+| Check | What it is | Script | Result |
+|---|---|---|---|
+| A1 | 150 queries (50 hire, 50 decision, 50 excluded by the engine) labelled blind by an agent, scored against the engine | blind labels + `A1_rescore.json` | 124/150 exact and 127/150 commercial-vs-not (was 115 and 118 before the F, G, H fixes). Most remaining misses are non-resident landlord scheme explainers the blind labeller called not commercial; a manager ruling (LE-11) already treats them as informational |
+| A2 | 40 families read blind for coherence (same searcher need, one page) | `A2_family_sample.csv`, `A2_blind_family_verdicts.csv`, `A2_recheck.csv` | 31 of 40 coherent. Of 22 flagged misfits, 12 fixed by code (place names, intent, token groups); 10 accepted under rulings (fee/cost wording, non-resident application tasks, "gift a property", audience mix) |
+| C1 | Did the engine miss commercial searches? Candidates from GSC, WP1 assignment, Bing and two competitor ranked-keyword pulls | `accuracy_coverage.py` | volume capture 99.9% of the WP1 list, 86% of djh, 95% of Bing; every one of the top-40 GSC "misses" checked and was a correct exclusion |
+| C2 | Second-source volume check against Bing | `accuracy_coverage.py` | inconclusive: Bing has data for 8 of 40 keywords only |
+| D | Intent labels on a classifier sample, compared with the engine class | `accuracy_intent.py` | 99 match, 31 mismatch, 122 insufficient evidence |
+| F | Regression fixture: dedupe, WP1 owners, link baseline, graph gate, store integrity, leads, routes, no em-dash | `selftest.py` | 8/8 PASS; expected values live in `sites/<site>_selftest.json` and change only by a deliberate edit |
 
 ## 7. Adding a new site
 

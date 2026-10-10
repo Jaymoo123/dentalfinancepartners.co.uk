@@ -25,6 +25,9 @@ Rules
     owner_basis "OWNER DECISION NEEDED", and a row in 07_disagreements.csv.
   - One reader: high or medium is applied. A lone low verdict has no second reader and aborts the run
     (the process guarantees a second reader for every low verdict).
+  - A manager or owner ruling whose hash no longer matches is still applied when the family's head is unchanged and its
+    deduped demand moved by 25% or less since the ruling matched (stages/07_ruling_snapshot.csv); owner_basis then reads
+    "manager ruling (LE-n), carried by head" and the family is listed in 07_carried_rulings.csv. Opus reader verdicts keep the strict rule.
   - A verdict with reader "manager" is final for its family (and its conflict pair, see cluster.py) and
     overrides reader disagreement; owner_basis "manager ruling (LE-n)", n taken from the start of its reason.
     It still must match the current input_sha256 or it is refused (and listed).
@@ -47,6 +50,15 @@ from common import load_site, read_csv, run_dir, script_meta, write_csv
 from families import EXCLUDED_BASIS, FIELDS, FITS, QUEUE, ROLLUP, attach_leads, rerank, rollup, row_sha
 
 CONF_ORDER = {"low": 0, "medium": 1, "high": 2}
+FINAL = ("manager", "owner")        # final rulings; may be carried across re-clustering (see main)
+CARRY_TOL = 0.25
+
+
+def fl(v) -> float:
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return 0.0
 EXCL = "EXCLUDE (no page):"
 DIS = ["kind", "id", "head", "value_usd_month", "detail"] + \
       [f"{r}_{k}" for r in ("reader1", "reader2") for k in ("decision", "owner", "fit", "confidence", "reason")]
@@ -105,6 +117,8 @@ def main() -> None:
                 owner_v[v["family_id"]].append(v)
 
     rejudge, disagreements, applied, lone_low = [], [], Counter(), []
+    carried_rows, snap_new = [], {}
+    snapshot = {r["input_sha256"]: r for r in (read_csv(st / "07_ruling_snapshot.csv") if (st / "07_ruling_snapshot.csv").exists() else [])}
     head_of_kw = {c["keyword"]: c["family_id"] for c in clusters}
     for fid, vs in sorted(owner_v.items()):
         q = queue.get(fid)
@@ -117,13 +131,26 @@ def main() -> None:
         if row_sha({k: q[k] for k in QUEUE}) != q["input_sha256"]:
             refused.append(("queue", 0, fid, "queue row no longer hashes to its stored input_sha256"))
             continue
-        mgr = [v for v in vs if v.get("reader") == "manager"]
+        mgr = [v for v in vs if v.get("reader") in FINAL]
+        carried = False
         if mgr and mgr[-1].get("input_sha256") != q["input_sha256"]:
-            refused.append(("manager", 0, fid, "manager verdict input_sha256 does not match the current queue row"))
-            mgr = []
-            vs = [v for v in vs if v.get("reader") != "manager"]
-        match = [v for v in vs if v.get("input_sha256") == q["input_sha256"]]
-        stale = [v for v in vs if v.get("input_sha256") != q["input_sha256"]]
+            # A manager / owner ruling survives re-clustering when the family's head is unchanged and its deduped demand moved
+            # by 25% or less since the ruling was applied (07_ruling_snapshot.csv). Opus reader verdicts keep the strict sha rule.
+            old = snapshot.get(mgr[-1].get("input_sha256"))
+            cur = by_id[fid]
+            if (old and old["head"] == cur["head"]
+                    and abs(fl(cur["demand_volume"]) - fl(old["demand_volume"])) <= CARRY_TOL * max(fl(old["demand_volume"]), 1.0)):
+                carried = True
+                carried_rows.append({"family_id": fid, "head": cur["head"], "reader": mgr[-1]["reader"],
+                                     "old_demand": old["demand_volume"], "new_demand": cur["demand_volume"],
+                                     "old_input_sha256": mgr[-1]["input_sha256"], "new_input_sha256": q["input_sha256"]})
+            else:
+                refused.append((mgr[-1]["reader"], 0, fid, "ruling input_sha256 does not match the current queue row "
+                                "(head or demand moved too far to carry)"))
+                mgr = []
+                vs = [v for v in vs if v.get("reader") not in FINAL]
+        match = [v for v in vs if v.get("input_sha256") == q["input_sha256"] or (carried and v is mgr[-1])]
+        stale = [v for v in vs if v not in match]
         note = ""
         if not match and stale:
             if len(stale) > 1 and len({agree_key(v) for v in stale}) == 1:
@@ -139,10 +166,16 @@ def main() -> None:
         r = by_id[fid]
         if r["owner_basis"] == "WP1 ruling":
             continue
+        if not match:             # every verdict for this family was refused (e.g. a stale manager ruling)
+            rejudge.append({"family_id": fid, "action": "rejudge", "reason": "no usable verdict (refused or stale)"})
+            continue
         if mgr:
             v = mgr[-1]
             lm = re.match(r"LE-\d+", v["reason"])
-            basis = f"manager ruling ({lm.group(0) if lm else 'LE-?'})"
+            basis = f"{v['reader']} ruling ({lm.group(0) if lm else 'LE-?'})" + (", carried by head" if carried else "")
+            if not carried:
+                snap_new[v["input_sha256"]] = {"input_sha256": v["input_sha256"], "family_id": fid, "head": by_id[fid]["head"],
+                                               "demand_volume": by_id[fid]["demand_volume"], "reader": v["reader"]}
         elif len(match) == 1:
             v = match[0]
             if v["confidence"] == "low":
@@ -196,6 +229,12 @@ def main() -> None:
     write_csv(st / "06_owner_rollup.csv", rollup(fams, leads, le), ROLLUP,
               {"source": "06_families (informational_with_ad_spend and excluded left out)", **meta})
     write_csv(st / "07_disagreements.csv", disagreements, DIS, {"source": "judgments reader1 vs reader2", **meta})
+    write_csv(st / "07_carried_rulings.csv", carried_rows,
+              ["family_id", "head", "reader", "old_demand", "new_demand", "old_input_sha256", "new_input_sha256"],
+              {"source": "manager/owner rulings applied although the queue row hash changed (same head, demand within 25%)", **meta})
+    write_csv(st / "07_ruling_snapshot.csv", list({**snapshot, **snap_new}.values()),
+              ["input_sha256", "family_id", "head", "demand_volume", "reader"],
+              {"source": "head and deduped demand at the time each manager/owner ruling matched its queue row", **meta})
     write_csv(st / "07_rejudge_needed.csv", rejudge, ["family_id", "action", "reason"],
               {"source": "judgments whose input_sha256 no longer matches", **meta})
     stale = {x["family_id"] for x in rejudge if x["action"] == "rejudge"}

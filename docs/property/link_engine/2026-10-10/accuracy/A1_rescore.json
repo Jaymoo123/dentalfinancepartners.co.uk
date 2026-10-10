@@ -199,5 +199,10 @@
       "engine": "hire",
       "reason": ""
     }
-  ]
+  ],
+  "pass2": {
+    "exact": 124,
+    "commercial_vs_not": 127,
+    "n": 150
+  }
 }

@@ -26,6 +26,8 @@ Definitions
   gsc_pos_family_weighted  impression-weighted mean of the best-ranking page's position per query.
   our_top_page     page with most impressions across the family, excluding noindexed pages and pages
                    that the middleware 301s (DUPLICATE_REDIRECTS, BLOG_TO_LOCATION, recategorised slugs).
+  Safety net: close variants (same stemmed token set, identical volume and cpc) found in more than one family are moved to
+                   the family with the most GSC impressions and logged in 06_cross_family_variants.csv.
   confidence_note  "thin data" when demand_volume < 50 and/or no SERP for the head.
   priority_raw     value_usd_month * winnability.
   priority         priority_raw times the config `priority_overrides` multiplier (a manual, ruled lift: each entry has
@@ -313,6 +315,13 @@ def main() -> None:
         wp1[norm_query(r["query"])].append(r)
     route_info, bad_pages = routes()
 
+    merges = merge_cross_family_variants(cl, gsc, le["cities"])
+    write_csv(st / "06_cross_family_variants.csv", merges, ["keyword", "from_family", "to_family", "volume", "cpc"],
+              {"source": "families.py safety net: same stemmed token set + identical (volume, cpc) in more than one family",
+               "site": a.site, "data_through": a.run, **script_meta()})
+    if merges:      # keep 05_clusters.csv consistent with what 06 uses (selftest 9 and check 1 read it)
+        write_csv(st / "05_clusters.csv", cl, list(cl[0]), {"source": "05_clusters + families.py cross-family variant merges",
+                  "site": a.site, "data_through": a.run, "cross_family_merges": len(merges), **script_meta()})
     fams = defaultdict(list)
     for r in cl:
         fams[r["family_id"]].append(r)
@@ -483,6 +492,39 @@ def selftest(rows: list[dict], cl: list[dict], cities: list[str]) -> None:
         if "property accountant" in v and "accountant property" in v and v["property accountant"]["volume"] == v["accountant property"]["volume"]:
             one = fnum(v["property accountant"]["volume"])
             assert r["demand_volume_raw"] - r["demand_volume"] >= one, "property accountant volume counted more than once"
+
+
+def merge_cross_family_variants(cl: list[dict], gsc: dict, cities: list[str]) -> list[dict]:
+    """Safety net: Google Ads gives close variants ONE grouped figure. Any two non-geo keywords anywhere with the same stemmed
+    token set (cluster.lex_key) and identical (volume, cpc) are one group and must sit in one family, the one holding the variant
+    with the most GSC impressions (tie: highest volume family, then family id). Edits cl in place; returns the merge log."""
+    groups = defaultdict(list)
+    for k in cl:
+        if not k["geo"] and fnum(k["volume"]) > 0:
+            groups[(lex_key(k["keyword"], cities), k["volume"], k["cpc"])].append(k)
+    impr = lambda k: sum(x[1] for x in gsc.get(k["keyword"], []))
+    log = []
+    for g in groups.values():
+        if len({k["family_id"] for k in g}) < 2:
+            continue
+        tgt = max(g, key=lambda k: (impr(k), fnum(k["volume"]), k["family_id"]))
+        for k in g:
+            if k["family_id"] != tgt["family_id"]:
+                log.append({"keyword": k["keyword"], "from_family": k["family_id"], "to_family": tgt["family_id"],
+                            "volume": k["volume"], "cpc": k["cpc"]})
+                k["family_id"], k["family_head"] = tgt["family_id"], tgt["family_head"]
+    # a family that lost its head keeps its id but takes the best remaining keyword as head
+    by = defaultdict(list)
+    for k in cl:
+        by[k["family_id"]].append(k)
+    for ks in by.values():
+        heads = {k["family_head"] for k in ks}
+        if len(heads) == 1 and next(iter(heads)) in {k["keyword"] for k in ks}:
+            continue
+        best = max(ks, key=lambda k: (fnum(k["volume"]), impr(k), -len(k["keyword"])))
+        for k in ks:
+            k["family_head"] = best["keyword"]
+    return log
 
 
 def row_sha(qr: dict) -> str:

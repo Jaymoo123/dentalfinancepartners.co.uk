@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T13:55:55+00:00",
+  "pulled_at": "2026-10-10T14:16:47+00:00",
   "source": "04_serp.csv",
   "site": "property",
   "data_through": "2026-10-10",
@@ -10,7 +10,7 @@
     "--run",
     "2026-10-10"
   ],
-  "seed": 10,
+  "seed": 20261011,
   "rows": 30,
-  "sha256": "2302f2c1815f4e81b246c9eca18a97e961394723c4b98926c3705cad3c100c75"
+  "sha256": "19472eb4bc62de168f71e5e9b3044f75ca0e954cd7a2b293d46d5a91612dab4a"
 }
