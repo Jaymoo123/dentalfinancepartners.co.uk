@@ -1,0 +1,22 @@
+{
+  "pulled_at": "2026-10-10T16:23:24+00:00",
+  "site": "property",
+  "data_through": "2026-10-08",
+  "window": "2026-09-09..2026-10-08",
+  "dataState": "all",
+  "partial_last_days": "last 1-3 days are provisional/partial (dataState all)",
+  "script": "gsc_pull.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10",
+    "--data-state",
+    "all"
+  ],
+  "source": "GSC searchanalytics sc-domain:propertytaxpartners.co.uk dataState=all dims=date,page",
+  "n_pages": 36,
+  "note": "owner_page + conversion_page of ranked families in 06_families.csv; dataState all: includes fresh partial days; query-level rows are privacy-thresholded",
+  "rows": 517,
+  "sha256": "437b3cf366ced615bcab548844b0e8aa57cd2e47d65be3d4411277e3dd2c05d2"
+}

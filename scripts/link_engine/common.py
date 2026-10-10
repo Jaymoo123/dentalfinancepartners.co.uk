@@ -170,7 +170,7 @@ def dfs_cache_get(endpoint: str, payload: list[dict]):
     return None
 
 
-def _dfs_post_raw(endpoint: str, payload: list[dict], site: str, run: str) -> dict:
+def _dfs_post_raw(endpoint: str, payload: list[dict], site: str, run: str, fresh: bool = False) -> dict:
     """POST a paid DataForSEO call. Local disk mirror -> hard stop -> call -> ledger. (Use dfs_post, which checks the store first.)
 
     Returns the full response body. Mirror hits cost 0 and are logged.
@@ -178,7 +178,7 @@ def _dfs_post_raw(endpoint: str, payload: list[dict], site: str, run: str) -> di
     key = hashlib.sha256((endpoint + json.dumps(payload, sort_keys=True)).encode()).hexdigest()
     cp = CACHE_DIR / f"{key}.json"
     n = _n_items(endpoint, payload)
-    if cp.exists() and datetime.now().timestamp() - cp.stat().st_mtime < CACHE_MAX_AGE_DAYS * 86400:
+    if not fresh and cp.exists() and datetime.now().timestamp() - cp.stat().st_mtime < CACHE_MAX_AGE_DAYS * 86400:
         _ledger_append(site, run, endpoint, n, 0.0, True)
         return json.loads(cp.read_text(encoding="utf-8"))
     est = estimate_cost(endpoint, payload)
@@ -190,7 +190,7 @@ def _dfs_post_raw(endpoint: str, payload: list[dict], site: str, run: str) -> di
     body = r.json()
     cost = float(body.get("cost") or 0)
     _ledger_append(site, run, endpoint, n, cost, False)
-    if body.get("status_code") == 20000:
+    if body.get("status_code") == 20000 and not fresh:       # a fresh pull never replaces the first snapshot's mirror
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
         cp.write_text(json.dumps(body), encoding="utf-8")
     return body
@@ -333,6 +333,41 @@ def serp_store_write(keyword: str, location_code: int, device: str, body: dict, 
     return p
 
 
+FRESH_INDEX = STORE / "serp_fresh_index.csv"    # second-pull snapshots; kept apart so serp_store_lookup keeps returning pull 1
+
+
+def serp_fresh_path(keyword: str, location_code: int, device: str, fetched_on: str) -> Path:
+    """New dated path next to the original; never an existing file."""
+    base = serp_store_path(keyword, location_code, device, fetched_on)
+    stem = base.name.removesuffix(".json.gz")
+    p, n = base.with_name(f"{stem}.fresh-{fetched_on[:10]}.json.gz"), 1
+    while p.exists():
+        n += 1
+        p = base.with_name(f"{stem}.fresh-{fetched_on[:10]}-{n}.json.gz")
+    return p
+
+
+def serp_fresh_lookup(keyword: str, location_code: int = UK_LOCATION, device: str = "desktop", on: str | None = None):
+    """Latest fresh-pull store path for this keyword (optionally only one fetched on date `on`), else None."""
+    best = None
+    for r in _csv_rows(FRESH_INDEX):
+        if (r["keyword"] == norm_query(keyword) and r["location"] == str(location_code) and r["device"] == device
+                and (on is None or r["fetched_on"] == on) and (REPO / r["path"]).exists()):
+            if best is None or r["fetched_on"] >= best["fetched_on"]:
+                best = r
+    return REPO / best["path"] if best else None
+
+
+def serp_fresh_write(keyword: str, location_code: int, device: str, body: dict, fetched_on: str) -> Path:
+    p = serp_fresh_path(keyword, location_code, device, fetched_on)
+    _gz_write(p, body)
+    n = sum(1 for t in body.get("tasks") or [] for res in t.get("result") or [] for i in res.get("items") or []
+            if i.get("type") == "organic")
+    _csv_append(FRESH_INDEX, SERP_FIELDS, [{"keyword": norm_query(keyword), "location": location_code, "device": device,
+                "fetched_on": fetched_on, "path": str(p.relative_to(REPO)).replace("\\", "/"), "n_results": n}])
+    return p
+
+
 def ideas_key(seeds: list[str], location_code: int, language_code: str, limit: int) -> str:
     return hashlib.sha1(("|".join(sorted(norm_query(s) for s in seeds)) + f"|{location_code}|{language_code}|{limit}").encode()).hexdigest()
 
@@ -383,7 +418,7 @@ def ranked_store_write(task: dict, body: dict, fetched_on: str) -> None:
                 "path": str(p.relative_to(REPO)).replace("\\", "/"), "n_items": n}])
 
 
-def dfs_post(endpoint: str, payload: list[dict], site: str, run: str) -> dict:
+def dfs_post(endpoint: str, payload: list[dict], site: str, run: str, fresh: bool = False) -> dict:
     """Paid DataForSEO call, store first. Per keyword for search_volume and serp, per seed set for keyword_ideas:
     (a) look the keyword up in the committed store, (b) send only what is missing, (c) append the paid result to
     the store immediately, before the caller processes it (a crash cannot lose paid data), (d) ledger as usual
@@ -418,6 +453,18 @@ def dfs_post(endpoint: str, payload: list[dict], site: str, run: str) -> dict:
         tasks = []
         for task in payload:
             loc, dev = task.get("location_code", UK_LOCATION), task.get("device", "desktop")
+            if fresh:       # second pull: skip the 90-day reuse, save as a NEW dated entry (a same-day re-run reuses its own fresh pull)
+                fp = serp_fresh_lookup(task["keyword"], loc, dev, on=today)
+                if fp:
+                    _ledger_append(site, run, endpoint, 1, 0.0, True)
+                    body = _gz_read(fp)
+                else:
+                    body = _dfs_post_raw(endpoint, [task], site, run, fresh=True)
+                    if body.get("status_code") == 20000:
+                        serp_fresh_write(task["keyword"], loc, dev, body, today)
+                tasks += body.get("tasks") or []
+                last = body
+                continue
             have, need = serp_store_lookup([task["keyword"]], location_code=loc, device=dev)
             if have:
                 _ledger_append(site, run, endpoint, 1, 0.0, True)

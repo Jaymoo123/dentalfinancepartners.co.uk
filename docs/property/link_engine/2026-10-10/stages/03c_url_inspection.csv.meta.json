@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T16:32:38+00:00",
+  "site": "property",
+  "source": "GSC URL Inspection API sc-domain:propertytaxpartners.co.uk",
+  "script": "url_inspect.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "n_urls": 83,
+  "rows": 83,
+  "sha256": "f4d8741bfa31372eb75f0340ee7f7cea1315f3d83c56095795685cb65da7253e"
+}

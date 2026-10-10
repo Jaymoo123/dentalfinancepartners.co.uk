@@ -8,24 +8,28 @@ Window: 90 days ending run_date - 3 days (GSC final data lag).
 Cost: free (GSC and Bing APIs). Query-level rows are privacy-thresholded, so the
         (query,page) sums are lower than the page-level totals; both are in the meta.
 Order: run this BEFORE universe.py (universe reads 03_gsc_query_page.csv).
+Fresh mode: --data-state all [--end-date YYYY-MM-DD] pulls the 90 days ending on the latest date GSC returns
+        (detected from the date dimension over the last 5 days) and writes 03b_gsc_query_page_fresh.csv,
+        03b_gsc_page_fresh.csv and 03b_gsc_daily_moneypages.csv (last 30 days, owner/conversion pages of
+        06_families.csv). Last 1-3 days are partial/provisional. Skips Bing. Default (final) outputs are untouched.
 """
 from __future__ import annotations
 
 import argparse
-from datetime import timedelta
+from datetime import date, timedelta
 
-from common import (bing_date, bing_get, gsc_service, load_site, run_date, run_dir,
+from common import (bing_date, bing_get, gsc_service, load_site, read_csv, run_date, run_dir,
                     script_meta, write_csv)
 
 ROW_LIMIT = 25000
 
 
-def gsc_rows(svc, prop: str, start: str, end: str, dims: list[str]) -> list[dict]:
+def gsc_rows(svc, prop: str, start: str, end: str, dims: list[str], data_state: str = "final") -> list[dict]:
     """Paginate searchanalytics.query until a page returns < ROW_LIMIT rows."""
     out, start_row = [], 0
     while True:
         body = {"startDate": start, "endDate": end, "dimensions": dims, "rowLimit": ROW_LIMIT,
-                "startRow": start_row, "dataState": "final"}
+                "startRow": start_row, "dataState": data_state}
         rows = svc.searchanalytics().query(siteUrl=prop, body=body).execute().get("rows", [])
         for r in rows:
             d = dict(zip(dims, r["keys"]))
@@ -37,13 +41,59 @@ def gsc_rows(svc, prop: str, start: str, end: str, dims: list[str]) -> list[dict
         start_row += ROW_LIMIT
 
 
+def latest_date(svc, prop: str, today: date) -> str:
+    """Latest date GSC returns with dataState=all, from the date dimension over the last 5 days."""
+    rows = gsc_rows(svc, prop, str(today - timedelta(days=4)), str(today), ["date"], "all")
+    return max(r["date"] for r in rows)
+
+
+def fresh(a, le, st) -> None:
+    svc = gsc_service()
+    prop = le["gsc_property"]
+    through = a.end_date or latest_date(svc, prop, date.today())
+    end = date.fromisoformat(through)
+    start = end - timedelta(days=89)
+    base = {"site": a.site, "data_through": through, "window": f"{start}..{through}", "dataState": "all",
+            "partial_last_days": "last 1-3 days are provisional/partial (dataState all)", **script_meta()}
+    src = f"GSC searchanalytics {prop} dataState=all"
+    qp = gsc_rows(svc, prop, str(start), through, ["query", "page"], "all")
+    pg = gsc_rows(svc, prop, str(start), through, ["page"], "all")
+    tot = {"page_clicks_sum": sum(r["clicks"] for r in pg), "page_impressions_sum": sum(r["impressions"] for r in pg)}
+    note = "dataState all: includes fresh partial days; query-level rows are privacy-thresholded"
+    write_csv(st / "03b_gsc_query_page_fresh.csv", qp, ["query", "page", "clicks", "impressions", "ctr", "position"],
+              {**base, "source": src + " dims=query,page", "note": note, "page_level_totals": tot})
+    write_csv(st / "03b_gsc_page_fresh.csv", pg, ["page", "clicks", "impressions", "ctr", "position"],
+              {**base, "source": src + " dims=page", **tot, "note": note})
+    money = {r["owner_page"] for r in read_csv(st / "06_families.csv") if r.get("rank", "").isdigit()
+             and not r["owner_page"].startswith("GAP")}
+    money |= {r["conversion_page"] for r in read_csv(st / "06_families.csv") if r.get("rank", "").isdigit()
+              and r["conversion_page"] and not r["conversion_page"].startswith("GAP")}
+    dstart = end - timedelta(days=29)
+    host = "https://www." + le["domain"]
+    daily = [{"date": r["date"], "path": r["page"].replace(host, "").rstrip("/") or "/", "page": r["page"],
+              "clicks": r["clicks"], "impressions": r["impressions"], "position": r["position"]}
+             for r in gsc_rows(svc, prop, str(dstart), through, ["date", "page"], "all")
+             if (r["page"].replace(host, "").rstrip("/") or "/") in money]
+    daily.sort(key=lambda r: (r["path"], r["date"]))
+    write_csv(st / "03b_gsc_daily_moneypages.csv", daily, ["date", "path", "page", "clicks", "impressions", "position"],
+              {**{**base, "window": f"{dstart}..{through}"}, "source": src + " dims=date,page", "n_pages": len(money),
+               "note": "owner_page + conversion_page of ranked families in 06_families.csv; " + note})
+    print(f"fresh: through {through} (dataState all); query_page {len(qp)}, page {len(pg)}, daily money rows {len(daily)} for {len(money)} pages")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--site", required=True)
     ap.add_argument("--run", required=True)
+    ap.add_argument("--data-state", choices=["final", "all"], default="final")
+    ap.add_argument("--end-date", help="YYYY-MM-DD; default final: run minus 3, all: latest date GSC returns")
     a = ap.parse_args()
     le = load_site(a.site)["link_engine"]
     st = run_dir(a.site, a.run) / "stages"
+    if a.data_state == "all":
+        return fresh(a, le, st)
+    if a.end_date:
+        raise SystemExit("--end-date without --data-state all is not supported (would overwrite the final files)")
     through = run_date(a.run) - timedelta(days=3)
     start = through - timedelta(days=89)
     win = f"{start}..{through}"

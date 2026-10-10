@@ -2,7 +2,7 @@
 
 Inputs (run dir): stages/04_serp.csv, stages/05_clusters.csv, stages/06_families.csv.
 Outputs (accuracy/): D_intent.csv, D_summary.json, D_classifier_sample.csv (30 random classified results, seed 20261011).
-Cost: free (no API calls). Deterministic: ordered rules, first match wins.
+Cost: free (no API calls). --second-pull: also D2_intent.csv, D2_stability.csv, D2_summary.json from stages/04_serp_pull2.csv. Deterministic: ordered rules, first match wins.
 
 Per family the SERP is the head's top 10 when the head was pulled, else the pooled top 10s of every member that was.
 Owner type: service = /services/, /for/, /locations/, /for-letting-agents, /landed-estates, "/" ; guide = /blog/ or any other
@@ -120,24 +120,105 @@ def best_guides(st, members: dict) -> dict:
     return out
 
 
+def family_row(f: dict, qs: list[str], basis: str, serp: dict, classified: dict) -> dict:
+    """One D row for family f from the SERPs of queries qs (rules shared by pull 1 and --second-pull)."""
+    res = [classified[(q, r["rank"])][0] for q in qs for r in serp[q]]
+    n = len(res)
+    c = Counter(res)
+    sh = {t: (c[t] / n if n else 0.0) for t in TYPES}
+    ot = owner_type(f["owner_page"])
+    dom = max(TYPES, key=lambda t: (c[t], -TYPES.index(t))) if n else ""
+    if n < MIN_RESULTS or not ot:
+        status, flag = "insufficient", ""
+    elif (ot == "service" and sh["guide"] + sh["association"] + sh["gov"] >= THRESH) or (ot == "guide" and sh["service"] >= THRESH):
+        status, flag = "mismatch", "mismatch"
+    else:
+        status, flag = "match", ""
+    return {"family_id": f["family_id"], "head": f["head"], "owner_page": f["owner_page"], "owner_type": ot,
+            "serp_basis": basis if n else "none", "n_results": n,
+            "share_service": round(sh["service"], 3), "share_guide": round(sh["guide"], 3), "share_association": round(sh["association"], 3), "share_gov": round(sh["gov"], 3),
+            "share_directory": round(sh["directory"], 3), "share_lender": round(sh["lender"], 3), "share_other": round(sh["other"], 3),
+            "dominant_type": dom, "demand_volume": f["demand_volume"], "priority": f["priority"], "flag": flag, "status": status}
+
+
+def load_serp(path) -> dict:
+    serp = defaultdict(list)
+    for r in read_csv(path):
+        serp[r["query"]].append(r)
+    return serp
+
+
+def classify_all(serp: dict) -> dict:
+    return {(q, r["rank"]): classify(r["url"], r["title"]) for q, rs in serp.items() for r in rs}
+
+
+def norm_url(u: str) -> str:
+    s = urlsplit(u)
+    return s.netloc.lower().removeprefix("www.") + (s.path.rstrip("/") or "/")
+
+
+def second_pull(a) -> None:
+    """Classify the fresh snapshot (stages/04_serp_pull2.csv) with the same rules, compare with pull 1 on the same query set."""
+    d = run_dir(a.site, a.run)
+    st, acc = d / "stages", d / "accuracy"
+    s1, s2 = load_serp(st / "04_serp.csv"), load_serp(st / "04_serp_pull2.csv")
+    c1, c2 = classify_all(s1), classify_all(s2)
+    members = defaultdict(list)
+    for r in read_csv(st / "05_clusters.csv"):
+        members[r["family_id"]].append(r["keyword"])
+    d1 = {r["family_id"]: r for r in read_csv(acc / "D_intent.csv")}
+    d2, stab = [], []
+    for f in read_csv(st / "06_families.csv"):
+        if f["family_id"] in d1:                             # judge both pulls against the owner D_intent.csv used, so only the SERP differs
+            f = {**f, "owner_page": d1[f["family_id"]]["owner_page"]}
+        qs, basis = ([f["head"]], "head") if f["head"] in s2 else ([k for k in members[f["family_id"]] if k in s2], "members")
+        qs = [q for q in qs if q in s1]                      # compare like with like: same queries in both pulls
+        if not qs:
+            continue
+        r2, r1 = family_row(f, qs, basis, s2, c2), family_row(f, qs, basis, s1, c1)
+        ov = sum(len({norm_url(x["url"]) for x in s1[q]} & {norm_url(x["url"]) for x in s2[q]}) for q in qs)
+        d2.append(r2)
+        row = {"family_id": f["family_id"], "head": f["head"], "owner_page": f["owner_page"], "queries": "; ".join(qs)}
+        for k in ("service", "guide", "association", "gov"):
+            row[f"p1_share_{k}"], row[f"p2_share_{k}"] = r1[f"share_{k}"], r2[f"share_{k}"]
+        row |= {"p1_dominant": r1["dominant_type"], "p2_dominant": r2["dominant_type"], "p1_flag": r1["flag"], "p2_flag": r2["flag"],
+                "p1_status": r1["status"], "p2_status": r2["status"],
+                "stable": "yes" if (r1["dominant_type"] == r2["dominant_type"] and r1["flag"] == r2["flag"]) else "no",
+                "url_overlap": ov, "url_total_pull1": sum(len(s1[q]) for q in qs)}
+        stab.append(row)
+    meta = {"source": "04_serp + 04_serp_pull2 + 05_clusters + 06_families", "site": a.site, "data_through": a.run, **script_meta()}
+    write_csv(acc / "D2_intent.csv", d2, FIELDS, meta)
+    sf = list(stab[0]) if stab else []
+    write_csv(acc / "D2_stability.csv", stab, sf, meta)
+    allq = [q for q in s2 if q in s1]
+    ovs = [len({norm_url(x["url"]) for x in s1[q]} & {norm_url(x["url"]) for x in s2[q]}) for q in allq]
+    uns = [r for r in stab if r["stable"] == "no"]
+    summ = {"site": a.site, "run": a.run, "families_compared": len(stab), "stable": len(stab) - len(uns), "unstable": len(uns),
+            "keywords_pulled_pull2": len(s2), "keywords_compared": len(allq),
+            "avg_top10_url_overlap": round(sum(ovs) / len(ovs), 2) if ovs else None,
+            "unstable_families": [{k: r[k] for k in r if k not in ("queries", "url_total_pull1")} | {"verdict": "unstable"} for r in uns]}
+    (acc / "D2_summary.json").write_text(json.dumps(summ, indent=2), encoding="utf-8")
+    (acc / "D2_summary.json.meta.json").write_text(json.dumps({**meta, "rows": len(uns)}, indent=2), encoding="utf-8")
+    print(f"D2: {len(stab)} families, stable {summ['stable']}, unstable {summ['unstable']}, avg url overlap {summ['avg_top10_url_overlap']}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--site", required=True)
     ap.add_argument("--run", required=True)
+    ap.add_argument("--second-pull", action="store_true",
+                    help="classify stages/04_serp_pull2.csv (serp.py --fresh) and write D2_intent.csv, D2_stability.csv, D2_summary.json")
     a = ap.parse_args()
     load_site(a.site)
+    if a.second_pull:
+        return second_pull(a)
     d = run_dir(a.site, a.run)
     st, acc = d / "stages", d / "accuracy"
-    serp = defaultdict(list)
-    for r in read_csv(st / "04_serp.csv"):
-        serp[r["query"]].append(r)
+    serp = load_serp(st / "04_serp.csv")
     members = defaultdict(list)
     for r in read_csv(st / "05_clusters.csv"):
         members[r["family_id"]].append(r["keyword"])
-    classified = {}
-    for q, rs in serp.items():
-        for r in rs:
-            classified[(q, r["rank"])] = classify(r["url"], r["title"])
+    classified = classify_all(serp)
 
     out, listed = [], []
     for f in read_csv(st / "06_families.csv"):
@@ -146,23 +227,7 @@ def main() -> None:
             qs, basis = [head], "head"
         else:
             qs, basis = [k for k in members[f["family_id"]] if k in serp], "members"
-        res = [classified[(q, r["rank"])][0] for q in qs for r in serp[q]]
-        n = len(res)
-        c = Counter(res)
-        sh = {t: (c[t] / n if n else 0.0) for t in TYPES}
-        ot = owner_type(f["owner_page"])
-        dom = max(TYPES, key=lambda t: (c[t], -TYPES.index(t))) if n else ""
-        if n < MIN_RESULTS or not ot:
-            status, flag = "insufficient", ""
-        elif (ot == "service" and sh["guide"] + sh["association"] + sh["gov"] >= THRESH) or (ot == "guide" and sh["service"] >= THRESH):
-            status, flag = "mismatch", "mismatch"
-        else:
-            status, flag = "match", ""
-        out.append({"family_id": f["family_id"], "head": head, "owner_page": f["owner_page"], "owner_type": ot,
-                    "serp_basis": basis if n else "none", "n_results": n,
-                    "share_service": round(sh["service"], 3), "share_guide": round(sh["guide"], 3), "share_association": round(sh["association"], 3), "share_gov": round(sh["gov"], 3),
-                    "share_directory": round(sh["directory"], 3), "share_lender": round(sh["lender"], 3), "share_other": round(sh["other"], 3),
-                    "dominant_type": dom, "demand_volume": f["demand_volume"], "priority": f["priority"], "flag": flag, "status": status})
+        out.append(family_row(f, qs, basis, serp, classified))
 
     meta = {"source": "04_serp + 05_clusters + 06_families", "site": a.site, "data_through": a.run, **script_meta()}
     write_csv(acc / "D_intent.csv", out, FIELDS, meta)

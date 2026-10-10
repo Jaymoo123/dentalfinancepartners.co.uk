@@ -1,0 +1,25 @@
+{
+  "pulled_at": "2026-10-10T16:23:24+00:00",
+  "site": "property",
+  "data_through": "2026-10-08",
+  "window": "2026-07-11..2026-10-08",
+  "dataState": "all",
+  "partial_last_days": "last 1-3 days are provisional/partial (dataState all)",
+  "script": "gsc_pull.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10",
+    "--data-state",
+    "all"
+  ],
+  "source": "GSC searchanalytics sc-domain:propertytaxpartners.co.uk dataState=all dims=query,page",
+  "note": "dataState all: includes fresh partial days; query-level rows are privacy-thresholded",
+  "page_level_totals": {
+    "page_clicks_sum": 3669,
+    "page_impressions_sum": 388018
+  },
+  "rows": 12252,
+  "sha256": "31e26b59222378130263cf6ca61d65309eb9193bf363e00aa88e7b1a50cade63"
+}

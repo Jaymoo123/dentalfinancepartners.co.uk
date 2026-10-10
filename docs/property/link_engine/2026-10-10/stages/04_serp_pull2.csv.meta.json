@@ -1,0 +1,35 @@
+{
+  "pulled_at": "2026-10-10T16:31:49+00:00",
+  "source": "DFS serp/google/organic/live/advanced depth=10 UK desktop",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "dfs_balance_start": {
+    "balance": 13.03406000000001,
+    "currency": "USD",
+    "ts": "2026-10-10T16:24:06+00:00"
+  },
+  "dfs_balance_end": {
+    "balance": 12.844060000000013,
+    "currency": "USD",
+    "ts": "2026-10-10T16:31:49+00:00"
+  },
+  "run_spend_usd": 1.76556,
+  "script": "serp.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10",
+    "--keywords-file",
+    "/tmp/claude-0/-home-user-dentalfinancepartners-co-uk/85b60d49-6a2f-5037-bcbf-ea095e5c36ef/scratchpad/kw.csv",
+    "--fresh",
+    "--limit",
+    "200",
+    "--max-estimate",
+    "0.20"
+  ],
+  "pull": "fresh second pull",
+  "pulled_on": "2026-10-10",
+  "rows": 828,
+  "sha256": "acbae6e8c39c8c3996ef9f37732fe658dece69fe9fd2a48180766ffed65eada4"
+}

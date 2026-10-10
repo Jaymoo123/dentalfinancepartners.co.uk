@@ -12,8 +12,9 @@ from __future__ import annotations
 
 import argparse
 
-from common import (UK_LOCATION, LANG, dfs_balance, dfs_post, estimate_cost, load_site, norm_query, serp_store_lookup,
-                    read_csv, run_dir, run_spend, script_meta, write_csv)
+from common import (UK_LOCATION, LANG, dfs_balance, dfs_post, estimate_cost, load_site, norm_query, serp_fresh_lookup,
+                    serp_store_lookup, read_csv, run_dir, run_spend, script_meta, write_csv)
+from datetime import date
 
 ENDPOINT = "serp/google/organic/live/advanced"
 F1 = ["query", "rank", "domain", "url", "title", "is_us", "is_yardstick", "is_hard"]
@@ -53,6 +54,9 @@ def main() -> None:
     ap.add_argument("--min-volume", type=float, default=0, help="--from-metrics only: skip keywords below this volume")
     ap.add_argument("--max-estimate", type=float, default=1.00,
                     help="if the estimate is higher, keep the top N by volume*cpc that fit and log the rest")
+    ap.add_argument("--fresh", action="store_true",
+                    help="second pull: ignore the 90-day store reuse for these keywords, save each response as a NEW dated store entry "
+                         "(serp_fresh_index.csv, original untouched), ledger it, write stages/04_serp_pull2.csv (04_serp.csv is not touched)")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--selftest", action="store_true",
                     help="dry-run proof: add one fake keyword and assert only that keyword would be pulled")
@@ -61,6 +65,8 @@ def main() -> None:
     rd = run_dir(a.site, a.run)
     qs = pick_queries(a, rd)
     have, need = serp_store_lookup(qs)                   # the committed store: only `need` is ever pulled
+    if a.fresh:                                          # only a same-day fresh pull is reusable (free); everything else is new
+        have = {q: p for q in qs if (p := serp_fresh_lookup(q, on=date.today().isoformat()))}
     if a.selftest:
         fake = "zz selftest fake keyword xyz"
         h2, n2 = serp_store_lookup(qs + [fake])
@@ -91,7 +97,7 @@ def main() -> None:
     rows, summ = [], []
     for q in qs:
         body = dfs_post(ENDPOINT, [{"keyword": q, "location_code": UK_LOCATION, "language_code": LANG,
-                                    "depth": 10, "device": "desktop"}], a.site, a.run)
+                                    "depth": 10, "device": "desktop"}], a.site, a.run, fresh=a.fresh)
         items = [i for t in body.get("tasks") or [] for res in t.get("result") or []
                  for i in res.get("items") or [] if i.get("type") == "organic"]
         qrows = []
@@ -109,6 +115,10 @@ def main() -> None:
     bal1 = dfs_balance()
     meta = {"source": f"DFS {ENDPOINT} depth=10 UK desktop", "site": a.site, "data_through": a.run,
             "dfs_balance_start": bal0, "dfs_balance_end": bal1, "run_spend_usd": run_spend(a.site, a.run), **script_meta()}
+    if a.fresh:
+        write_csv(rd / "stages" / "04_serp_pull2.csv", rows, F1, {**meta, "pull": "fresh second pull", "pulled_on": date.today().isoformat()})
+        print(f"wrote {len(rows)} pull-2 serp rows for {len(summ)} queries")
+        return
     write_csv(rd / "stages" / "04_serp.csv", rows, F1, meta)
     write_csv(rd / "stages" / "04_serp_summary.csv", summ, F2, meta)
     write_csv(rd / "stages" / "04_serp_skipped.csv", [{"query": q, "reason": "over_budget"} for q in skipped],

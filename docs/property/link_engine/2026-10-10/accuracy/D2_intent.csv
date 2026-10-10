@@ -1,0 +1,78 @@
+family_id,head,owner_page,owner_type,serp_basis,n_results,share_service,share_guide,share_association,share_gov,share_directory,share_lender,share_other,dominant_type,demand_volume,priority,flag,status
+property-accountant,property accountant,/services/property-accountant,service,head,10,0.9,0.0,0.1,0.0,0.0,0.0,0.0,service,2790,11425.77,,match
+landlord-accountant,landlord accountant,/services/landlord-accountant,service,head,9,0.556,0.444,0.0,0.0,0.0,0.0,0.0,service,1560,3594.7,,match
+property-tax-advice,property tax advice,/services/property-tax-advice,service,head,10,0.6,0.0,0.1,0.0,0.0,0.0,0.3,service,1180,2513.44,,match
+tax-on-selling-second-home,tax on selling second home,/blog/capital-gains-tax/capital-gains-tax-second-home-sale,guide,head,9,0.0,0.889,0.0,0.111,0.0,0.0,0.0,guide,810,1813.52,,match
+property-incorporation,property incorporation,/for/moving-property-into-a-limited-company,service,head,9,0.111,0.556,0.0,0.0,0.0,0.0,0.333,guide,480,1094.4,,match
+transfer-property-to-limited-company-without-stamp-duty,transfer property to limited company without stamp duty,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,guide,head,8,0.0,0.375,0.0,0.0,0.125,0.0,0.5,other,320,817.24,,match
+capital-gains-tax-on-gifting-property,capital gains tax on gifting property,/for/gifting-property-to-family,service,head,9,0.0,0.556,0.0,0.0,0.0,0.0,0.444,guide,650,723.72,,match
+buy-to-let-limited-company,buy to let limited company,/for/property-spv-set-up,service,head,9,0.0,0.556,0.0,0.0,0.0,0.111,0.333,guide,390,682.33,,match
+capital-gains-tax-accountant,capital gains tax accountant,/for/selling-a-buy-to-let,service,head,9,0.778,0.111,0.0,0.0,0.0,0.0,0.111,service,360,524.38,,match
+transfer-property-to-limited-company,transfer property to limited company,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,guide,head,9,0.0,0.333,0.0,0.0,0.222,0.0,0.444,other,530,469.57,,match
+stamp-duty-advice,stamp duty advice,/services/property-tax-advice,service,head,9,0.111,0.333,0.111,0.111,0.0,0.0,0.333,guide,210,418.51,,match
+real-estate-accountant,real estate accountant,/services/property-accountant,service,head,9,0.333,0.556,0.0,0.0,0.0,0.0,0.111,guide,140,413.84,,match
+cgt-on-gifted-property,cgt on gifted property,/for/gifting-property-to-family,service,head,9,0.0,0.556,0.0,0.111,0.0,0.111,0.222,guide,320,345.67,mismatch,mismatch
+sdlt-advice,sdlt advice,/services/property-tax-advice,service,head,9,0.333,0.333,0.0,0.0,0.0,0.0,0.333,service,210,287.2,,match
+inheritance-tax-mitigation-strategies-for-landlords,inheritance tax mitigation strategies for landlords,/for/landlord-retirement-and-succession,service,head,9,0.0,0.556,0.111,0.0,0.0,0.0,0.333,guide,110,218.24,mismatch,mismatch
+capital-gains-tax-specialist-near-me,capital gains tax specialist near me,/for/selling-a-buy-to-let,service,head,10,0.7,0.0,0.0,0.0,0.2,0.0,0.1,service,110,214.26,,match
+landlord-tax-advice,landlord tax advice,/services/property-tax-advice,service,head,9,0.333,0.333,0.222,0.111,0.0,0.0,0.0,service,190,187.54,mismatch,mismatch
+incorporation-relief-property,incorporation relief property,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.667,0.0,0.111,0.0,0.0,0.222,guide,220,150.99,mismatch,mismatch
+property-tax-services,property tax services,/services/property-tax-advice,service,head,10,0.7,0.1,0.0,0.1,0.0,0.0,0.1,service,140,139.72,,match
+capital-gains-tax-selling-rental-property,capital gains tax selling rental property,/for/selling-a-buy-to-let,service,head,9,0.0,0.444,0.0,0.111,0.111,0.111,0.222,guide,470,124.26,,match
+spv-accountant,spv accountant,/for/property-spv-set-up,service,head,9,0.333,0.444,0.0,0.0,0.0,0.0,0.222,guide,90,109.44,,match
+let-property-campaign-accountant-cost,let property campaign accountant cost,/for/rental-income-disclosure,service,head,8,0.25,0.375,0.125,0.0,0.125,0.0,0.125,guide,30,105.36,,match
+stamp-duty-experts,stamp duty experts,/services/property-tax-advice,service,head,10,0.4,0.1,0.0,0.0,0.1,0.0,0.4,service,50,97.0,,match
+property-tax-planning,property tax planning,/services/property-tax-advice,service,head,10,0.2,0.4,0.2,0.0,0.0,0.0,0.2,guide,10,73.69,mismatch,mismatch
+small-landlord-tax-advice,small landlord tax advice,/services/property-tax-advice,service,head,9,0.0,0.778,0.222,0.0,0.0,0.0,0.0,guide,170,72.24,mismatch,mismatch
+tax-planning-for-holiday-lets,tax planning for holiday lets,/for/holiday-let-and-serviced-accommodation,service,head,9,0.0,1.0,0.0,0.0,0.0,0.0,0.0,guide,20,67.06,mismatch,mismatch
+how-to-transfer-property-to-limited-company,how to transfer property to limited company,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,guide,head,8,0.0,0.375,0.0,0.0,0.125,0.0,0.5,other,70,59.61,,match
+renting-out-inherited-property,renting out inherited property,/for/inherited-property,service,head,9,0.0,0.889,0.0,0.111,0.0,0.0,0.0,guide,20,25.52,mismatch,mismatch
+accounting-for-letting-agents,accounting for letting agents,/for-letting-agents,service,head,9,0.333,0.556,0.0,0.0,0.0,0.0,0.111,guide,20,14.16,,match
+incorporation-relief-for-landlords,incorporation relief for landlords,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.778,0.0,0.111,0.0,0.0,0.111,guide,10,14.01,mismatch,mismatch
+incorporation-relief-on-transfer-of-property,incorporation relief on transfer of property,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.444,0.0,0.111,0.0,0.0,0.444,guide,10,13.02,,match
+transfer-residential-property-to-limited-company,transfer residential property to limited company,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,guide,head,9,0.0,0.444,0.0,0.0,0.222,0.0,0.333,guide,10,6.33,,match
+incorporation-relief-property-business,incorporation relief property business,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.556,0.111,0.111,0.0,0.0,0.222,guide,20,5.53,mismatch,mismatch
+tax-liability-when-selling-a-rental-property,tax liability when selling a rental property,/for/selling-a-buy-to-let,service,head,9,0.0,0.333,0.0,0.0,0.111,0.111,0.444,other,10,0.57,,match
+family-investment-company-property,family investment company property,/for/landlord-retirement-and-succession,service,head,9,0.111,0.667,0.0,0.0,0.0,0.0,0.222,guide,10,0.28,mismatch,mismatch
+gifting-property-tax,gifting property tax,/for/gifting-property-to-family,service,head,9,0.0,0.556,0.111,0.111,0.0,0.111,0.111,guide,70,0.0,mismatch,mismatch
+transfer-buy-to-let-to-limited-company,transfer buy to let to limited company,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,guide,head,9,0.0,0.444,0.0,0.0,0.111,0.0,0.444,guide,70,0.0,,match
+agricultural-property-relief-iht,agricultural property relief iht,/landed-estates,service,head,9,0.0,0.444,0.0,0.0,0.0,0.0,0.556,other,60,0.0,,match
+cgt-advisor,cgt advisor,/services/property-tax-advice,service,head,9,0.667,0.0,0.0,0.0,0.0,0.0,0.333,service,50,0.0,,match
+non-resident-landlord-tax-return,non resident landlord tax return,/services/non-resident-landlord,service,head,9,0.0,0.556,0.0,0.0,0.0,0.0,0.444,guide,40,0.0,,match
+gifting-property-to-limited-company,gifting property to limited company,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.444,0.111,0.111,0.0,0.0,0.333,guide,30,0.0,mismatch,mismatch
+s162-incorporation-relief-property,s162 incorporation relief property,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.556,0.0,0.111,0.0,0.0,0.333,guide,30,0.0,mismatch,mismatch
+stamp-duty-on-transfer-of-property-to-limited-company,stamp duty on transfer of property to limited company,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,guide,head,9,0.0,0.333,0.0,0.0,0.0,0.111,0.556,other,30,0.0,,match
+transfer-rental-property-to-limited-company,transfer rental property to limited company,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,guide,head,9,0.0,0.556,0.0,0.0,0.222,0.0,0.222,guide,30,0.0,,match
+section-162-incorporation-relief-property,section 162 incorporation relief property,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.667,0.0,0.111,0.0,0.0,0.222,guide,20,0.0,mismatch,mismatch
+accountants-for-landlord-and-property-accountants,accountants for landlord and property accountants,/services/landlord-accountant,service,head,9,0.556,0.444,0.0,0.0,0.0,0.0,0.0,service,10,0.0,,match
+do-i-need-an-accountant-for-my-rental-property,do i need an accountant for my rental property,/services/landlord-accountant,service,head,8,0.125,0.375,0.125,0.0,0.0,0.0,0.375,guide,10,0.0,,match
+how-to-reduce-capital-gains-tax-on-property-sale,how to reduce capital gains tax on property sale,/for/selling-a-buy-to-let,service,head,8,0.0,0.875,0.0,0.0,0.0,0.0,0.125,guide,10,0.0,mismatch,mismatch
+incorporation-of-buy-to-let-business,incorporation of buy to let business,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.667,0.0,0.0,0.0,0.0,0.333,guide,10,0.0,mismatch,mismatch
+incorporation-relief-buy-to-let,incorporation relief buy to let,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.556,0.0,0.0,0.0,0.0,0.444,guide,10,0.0,,match
+incorporation-relief-buy-to-let-2,incorporation relief buy-to let,/for/moving-property-into-a-limited-company,service,head,9,0.0,0.778,0.0,0.0,0.0,0.0,0.222,guide,10,0.0,mismatch,mismatch
+inherited-rental-property,inherited rental property,/for/inherited-property,service,head,9,0.0,0.667,0.0,0.0,0.111,0.0,0.222,guide,10,0.0,mismatch,mismatch
+landlord-accountant-fees,landlord accountant fees,/services/landlord-accountant,service,head,9,0.333,0.222,0.111,0.0,0.0,0.0,0.333,service,10,0.0,,match
+property-development-tax-planning,property development tax planning,GAP: new page needed,,head,9,0.111,0.444,0.0,0.111,0.0,0.0,0.333,guide,10,0.0,,insufficient
+selling-rental-property-tax-deductions,selling rental property tax deductions,/for/selling-a-buy-to-let,service,head,9,0.111,0.667,0.0,0.111,0.0,0.0,0.111,guide,10,0.0,mismatch,mismatch
+spv-incorporation,spv incorporation,/for/property-spv-set-up,service,head,9,0.0,0.667,0.0,0.0,0.0,0.0,0.333,guide,10,0.0,mismatch,mismatch
+tax-advice-for-buy-to-let-landlords,tax advice for buy to let landlords,/services/property-tax-advice,service,head,8,0.0,0.75,0.0,0.0,0.0,0.125,0.125,guide,10,0.0,mismatch,mismatch
+tax-advice-for-rental-property-owners,tax advice for rental property owners,/services/property-tax-advice,service,head,8,0.125,0.625,0.125,0.125,0.0,0.0,0.0,guide,10,0.0,mismatch,mismatch
+tax-liability-selling-rental-property,tax liability selling rental property,/for/selling-a-buy-to-let,service,head,9,0.0,0.556,0.0,0.111,0.111,0.0,0.222,guide,10,0.0,mismatch,mismatch
+tax-when-selling-buy-to-let-property,tax when selling buy to let property,/for/selling-a-buy-to-let,service,head,9,0.0,0.444,0.111,0.222,0.111,0.0,0.111,guide,10,0.0,mismatch,mismatch
+transferring-buy-to-let-property-into-trust,transferring buy-to-let property into trust,/for/landlord-retirement-and-succession,service,head,8,0.0,0.625,0.0,0.0,0.0,0.0,0.375,guide,10,0.0,mismatch,mismatch
+capital-gains-on-inherited-property,capital gains on inherited property,/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost,guide,head,9,0.0,0.556,0.0,0.222,0.0,0.0,0.222,guide,1000,1361.95,,match
+capital-gains-tax-on-property-sale,capital gains tax on property sale,/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk,guide,head,9,0.0,0.556,0.0,0.111,0.111,0.222,0.0,guide,1390,1273.24,,match
+how-to-avoid-capital-gains-tax-on-inherited-property-uk,how to avoid capital gains tax on inherited property uk,/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost,guide,head,7,0.0,0.286,0.0,0.0,0.0,0.143,0.571,other,320,175.28,,match
+non-resident-landlord-scheme,non resident landlord scheme,/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide,guide,head,9,0.0,0.333,0.111,0.0,0.0,0.0,0.556,other,2990,127.7,,match
+rental-income-from-property-held-in-trust-uk,rental income from property held in trust uk,/blog/landlord-tax-essentials/putting-a-rental-property-into-a-trust,guide,head,9,0.0,0.778,0.0,0.111,0.0,0.0,0.111,guide,40,19.2,,match
+tax-implications-of-selling-a-second-home,tax implications of selling a second home,/blog/capital-gains-tax/capital-gains-tax-second-home-sale,guide,head,9,0.0,0.333,0.111,0.0,0.111,0.111,0.333,guide,30,15.58,,match
+if-you-sell-a-second-home-do-i-pay-tax,if you sell a second home do i pay tax,/blog/capital-gains-tax/capital-gains-tax-second-home-sale,guide,head,8,0.0,0.5,0.125,0.0,0.0,0.125,0.25,guide,20,6.64,,match
+non-resident-landlord-application-for-an-individual,non resident landlord application for an individual,/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide,guide,head,9,0.0,0.667,0.0,0.222,0.0,0.0,0.111,guide,140,0.0,,match
+is-stamp-duty-payable-on-gifted-property,is stamp duty payable on gifted property,/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications,guide,head,9,0.0,0.444,0.0,0.0,0.0,0.111,0.444,guide,70,0.0,,match
+sdlt-on-gifted-property,sdlt on gifted property,/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications,guide,head,9,0.0,0.667,0.0,0.111,0.0,0.0,0.222,guide,50,0.0,,match
+capital-gains-tax-on-commercial-property-sale,capital gains tax on commercial property sale,/blog/capital-gains-tax/cgt-commercial-property-different-residential,guide,head,9,0.0,0.444,0.111,0.222,0.0,0.111,0.111,guide,40,0.0,,match
+non-resident-landlord-quarterly-return,non resident landlord quarterly return,/blog/non-resident-landlord-tax/nrl-scheme-letting-agents-quarterly-returns-mechanics,guide,head,9,0.111,0.444,0.0,0.222,0.0,0.0,0.222,guide,30,0.0,,match
+hmo-tax,hmo tax,/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant,guide,head,9,0.0,0.556,0.0,0.222,0.0,0.0,0.222,guide,20,0.0,,match
+non-resident-landlord-registration,non resident landlord registration,/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide,guide,head,9,0.0,0.667,0.0,0.333,0.0,0.0,0.0,guide,20,0.0,,match
+non-resident-landlord-scheme-application,non resident landlord scheme application,/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide,guide,head,9,0.0,0.556,0.0,0.333,0.0,0.0,0.111,guide,20,0.0,,match
+selling-property-abroad-uk-tax,selling property abroad uk tax,/blog/capital-gains-tax/cgt-overseas-property-uk-residents-foreign-disposals,guide,head,8,0.0,0.75,0.0,0.0,0.0,0.0,0.25,guide,20,0.0,,match

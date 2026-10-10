@@ -1,0 +1,28 @@
+{
+  "inspected": 83,
+  "deploy_time": "2026-10-09T12:51:00Z",
+  "by_coverageState": {
+    "Submitted and indexed": 69,
+    "Crawled - currently not indexed": 12,
+    "Page with redirect": 1,
+    "Discovered \u2013 currently not indexed": 1
+  },
+  "services_pages": {
+    "https://www.propertytaxpartners.co.uk/services/landlord-accountant": {
+      "lastCrawlTime": "2026-08-05T16:59:47Z",
+      "after_deploy": false
+    },
+    "https://www.propertytaxpartners.co.uk/services/non-resident-landlord": {
+      "lastCrawlTime": "2026-08-05T17:29:41Z",
+      "after_deploy": false
+    },
+    "https://www.propertytaxpartners.co.uk/services/property-accountant": {
+      "lastCrawlTime": "2026-08-06T04:42:22Z",
+      "after_deploy": false
+    },
+    "https://www.propertytaxpartners.co.uk/services/property-tax-advice": {
+      "lastCrawlTime": "2026-08-06T18:11:33Z",
+      "after_deploy": false
+    }
+  }
+}

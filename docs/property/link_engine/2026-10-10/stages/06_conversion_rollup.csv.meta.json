@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T15:21:43+00:00",
+  "pulled_at": "2026-10-10T16:26:25+00:00",
   "source": "06_families grouped by conversion_page (LE-19)",
   "site": "property",
   "data_through": "2026-10-10",
@@ -11,5 +11,5 @@
     "2026-10-10"
   ],
   "rows": 23,
-  "sha256": "26fb44233ee441e3a197de7c79e3020bf0f8a65275125021aee9973f49af8a75"
+  "sha256": "a1e05c98be2176e7ea9d1702a7708bd0c5a9c7472b92ad801cb2c107c54a8df1"
 }

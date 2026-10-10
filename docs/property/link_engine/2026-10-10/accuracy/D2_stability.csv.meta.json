@@ -1,0 +1,16 @@
+{
+  "pulled_at": "2026-10-10T16:31:57+00:00",
+  "source": "04_serp + 04_serp_pull2 + 05_clusters + 06_families",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "accuracy_intent.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10",
+    "--second-pull"
+  ],
+  "rows": 77,
+  "sha256": "12b781ffa032fd0b744f1652bba845dd84d9028080c7435e5418bef357c9e824"
+}
