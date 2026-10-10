@@ -1,0 +1,16 @@
+{
+  "pulled_at": "2026-10-10T11:44:09+00:00",
+  "source": "source-level scan: blog markdown, audiences.ts, TSX pages and one level of components, middleware.ts",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "graph_source.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "note": "links in modules not counted as body",
+  "rows": 237,
+  "sha256": "b6a7cf0b0f6c2a26917e342e41d479226f583b30fdd2556df696c879204dd2d2"
+}

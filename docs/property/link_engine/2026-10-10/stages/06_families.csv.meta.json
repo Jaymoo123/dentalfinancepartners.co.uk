@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T11:02:20+00:00",
+  "pulled_at": "2026-10-10T11:37:09+00:00",
   "source": "06_families + judgments/*.jsonl",
   "applied": {
     "judgment (medium)": 54,
@@ -31,5 +31,5 @@
     "2026-10-10"
   ],
   "rows": 226,
-  "sha256": "fb459e5d35e836f0e7a2a1f43412ca249bcb64bc00ac300772037e000cfc4b25"
+  "sha256": "3530385baf5d46d65dc560d09771afae9ccf7e669b6874a5102c76debbb18988"
 }

@@ -177,6 +177,54 @@
       "/services/property-accountant": "2026-10-09",
       "/services/landlord-accountant": "2026-10-09",
       "/services/property-tax-advice": "2026-10-09"
+    },
+    "category_destinations": {
+      "Landlord Tax Essentials": "/services/landlord-accountant",
+      "Incorporation & Company Structures": "/for/moving-property-into-a-limited-company",
+      "Incorporation and Company Structures": "/for/moving-property-into-a-limited-company",
+      "Property Types & Specialist Tax": "/services/property-tax-advice",
+      "Property Types and Specialist Tax": "/services/property-tax-advice",
+      "Property Accountant Services": "/services/property-accountant",
+      "Capital Gains Tax": "/for/selling-a-buy-to-let",
+      "Non-Resident Landlord Tax": "/services/non-resident-landlord",
+      "Section 24 & Tax Relief": "/services/property-tax-advice",
+      "Section 24 and Tax Relief": "/services/property-tax-advice",
+      "Property Finance": "/services/property-accountant",
+      "Making Tax Digital (MTD)": "/for/landlord-self-assessment-and-mtd",
+      "Making Tax Digital MTD": "/for/landlord-self-assessment-and-mtd",
+      "Portfolio Management": "/services/property-tax-advice"
+    },
+    "priority_overrides": [],
+    "give_up_pages": [
+      "/",
+      "/locations/bristol",
+      "/locations/birmingham",
+      "/locations/manchester",
+      "/locations/leeds",
+      "/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services",
+      "/landlord-tax",
+      "/blog/property-accountant-services/what-does-a-property-accountant-do",
+      "/for/landlord-retirement-and-succession",
+      "/for/selling-a-buy-to-let",
+      "/blog/property-accountant-services/how-to-become-property-accountant"
+    ],
+    "assign_excluded_sources": [
+      "/calculators",
+      "/research",
+      "/cookie-policy",
+      "/privacy-policy",
+      "/terms"
+    ],
+    "destination_share_floor": {
+      "/services/non-resident-landlord": 0.05,
+      "ruling": "LE-15"
+    },
+    "forced_assignments": {
+      "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk": {
+        "primary": "/for/moving-property-into-a-limited-company",
+        "secondary": "",
+        "ruling": "LE-14"
+      }
     }
   }
 }

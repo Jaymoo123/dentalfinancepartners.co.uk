@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T11:45:03+00:00",
+  "source": "stages/08_edges_html.csv vs stages/09_edges_source.csv",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "graph_compare.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 6,
+  "sha256": "81599bf13c32b295e207a7c143d476e71e6383ef1279976e933f9a3df77a5478"
+}

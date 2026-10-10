@@ -1,0 +1,307 @@
+{
+  "site": "property",
+  "run": "2026-10-10",
+  "generated": "2026-10-10T11:45:03+00:00",
+  "gate": "PASS",
+  "definition": {
+    "html": "region=body, status ok|redirect",
+    "source": "field in body|template, status ok|redirect",
+    "key": "(source, target_final)",
+    "self_links": "ignored on both sides"
+  },
+  "pairs_compared": 6035,
+  "differing_pairs": 6,
+  "total_body_links": {
+    "html": 7298,
+    "source": 7309
+  },
+  "posts": {
+    "pairs": 5647,
+    "html_links": 6881,
+    "source_links": 6881,
+    "differing_pairs": 0,
+    "exact": true
+  },
+  "money_pages": {
+    "targets": 23,
+    "exact_targets": 23,
+    "all_exact": true,
+    "unexplained_differing_pairs": 0,
+    "by_target": {
+      "/services/property-accountant": {
+        "html_links": 38,
+        "source_links": 38,
+        "html_sources": 38,
+        "source_sources": 38,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/services/landlord-accountant": {
+        "html_links": 35,
+        "source_links": 35,
+        "html_sources": 35,
+        "source_sources": 35,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/services/property-tax-advice": {
+        "html_links": 36,
+        "source_links": 36,
+        "html_sources": 36,
+        "source_sources": 36,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/blog/capital-gains-tax/capital-gains-tax-second-home-sale": {
+        "html_links": 4,
+        "source_links": 4,
+        "html_sources": 4,
+        "source_sources": 4,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk": {
+        "html_links": 25,
+        "source_links": 25,
+        "html_sources": 21,
+        "source_sources": 21,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/moving-property-into-a-limited-company": {
+        "html_links": 3,
+        "source_links": 3,
+        "html_sources": 3,
+        "source_sources": 3,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/gifting-property-to-family": {
+        "html_links": 1,
+        "source_links": 1,
+        "html_sources": 1,
+        "source_sources": 1,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/property-spv-set-up": {
+        "html_links": 1,
+        "source_links": 1,
+        "html_sources": 1,
+        "source_sources": 1,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/rental-income-disclosure": {
+        "html_links": 2,
+        "source_links": 2,
+        "html_sources": 2,
+        "source_sources": 2,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/locations/london": {
+        "html_links": 3,
+        "source_links": 3,
+        "html_sources": 3,
+        "source_sources": 3,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/locations/birmingham": {
+        "html_links": 3,
+        "source_links": 3,
+        "html_sources": 3,
+        "source_sources": 3,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/landlord-retirement-and-succession": {
+        "html_links": 1,
+        "source_links": 1,
+        "html_sources": 1,
+        "source_sources": 1,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/selling-a-buy-to-let": {
+        "html_links": 3,
+        "source_links": 3,
+        "html_sources": 3,
+        "source_sources": 3,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/locations/manchester": {
+        "html_links": 4,
+        "source_links": 4,
+        "html_sources": 4,
+        "source_sources": 4,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/holiday-let-and-serviced-accommodation": {
+        "html_links": 0,
+        "source_links": 0,
+        "html_sources": 0,
+        "source_sources": 0,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/inherited-property": {
+        "html_links": 1,
+        "source_links": 1,
+        "html_sources": 1,
+        "source_sources": 1,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/landed-estates": {
+        "html_links": 5,
+        "source_links": 5,
+        "html_sources": 5,
+        "source_sources": 5,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/services/non-resident-landlord": {
+        "html_links": 5,
+        "source_links": 5,
+        "html_sources": 5,
+        "source_sources": 5,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/locations/leeds": {
+        "html_links": 4,
+        "source_links": 4,
+        "html_sources": 4,
+        "source_sources": 4,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/locations/bristol": {
+        "html_links": 3,
+        "source_links": 3,
+        "html_sources": 3,
+        "source_sources": 3,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/hmo-and-multi-let-landlords": {
+        "html_links": 0,
+        "source_links": 0,
+        "html_sources": 0,
+        "source_sources": 0,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for-letting-agents": {
+        "html_links": 6,
+        "source_links": 6,
+        "html_sources": 6,
+        "source_sources": 6,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      },
+      "/for/landlord-self-assessment-and-mtd": {
+        "html_links": 0,
+        "source_links": 0,
+        "html_sources": 0,
+        "source_sources": 0,
+        "differing_pairs": 0,
+        "unexplained_pairs": 0,
+        "exact": true,
+        "differing_causes": {}
+      }
+    }
+  },
+  "by_cause": {
+    "no_built_html": {
+      "pairs": 6,
+      "links": 11,
+      "allowed": true,
+      "why": "source page is dynamic/client-rendered and has no prerendered HTML, so stage 08 cannot see its links"
+    }
+  },
+  "allowed_causes": {
+    "no_built_html": "source page is dynamic/client-rendered and has no prerendered HTML, so stage 08 cannot see its links",
+    "route_handler_asset": "target is a route handler or static asset (CSV, feed, robots), not a page; one method calls it external_asset",
+    "faq_classification": "one method files the link under FAQ, the other under body",
+    "card_component": "link sits in a card, chip, map, carousel or index-tile module that one method counts as body",
+    "hub_category_chips": "blog hub category chips counted as body in one method, navigation in nature",
+    "sidebar_cta_aside": "sidebar CTA (aside) counted as body by one method"
+  },
+  "unexplained_pairs": 0,
+  "baseline_2026_10_09": {
+    "holds": true,
+    "/services/property-accountant": {
+      "html_body_links": 38,
+      "baseline": 38,
+      "source_body_links": 38
+    },
+    "/services/landlord-accountant": {
+      "html_body_links": 35,
+      "baseline": 35,
+      "source_body_links": 35
+    },
+    "/services/property-tax-advice": {
+      "html_body_links": 36,
+      "baseline": 36,
+      "source_body_links": 36
+    },
+    "/blog/property-accountant-services/what-does-a-property-accountant-do": {
+      "html_body_links": 90,
+      "html_sources": 85,
+      "baseline": {
+        "links": 90,
+        "sources": 85
+      },
+      "source_body_links": 90
+    }
+  }
+}

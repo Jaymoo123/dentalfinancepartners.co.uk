@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T02:02:43+00:00",
+  "pulled_at": "2026-10-10T11:37:09+00:00",
   "source": "05_clusters + 04_serp_summary + 03_gsc_query_page + WP1 assignment + leads_by_entry_page + built routes",
   "site": "property",
   "data_through": "2026-10-10",
@@ -13,5 +13,5 @@
     "2026-10-10"
   ],
   "rows": 142,
-  "sha256": "9a443470a5d319e81784f44e8e5a89d29b59441371fe6d3bd39d7250d2bdd918"
+  "sha256": "ee7fc0261eaf9f3f165dd9aada628b9fbdad7f56daed7298960a5a7bd6767fdc"
 }

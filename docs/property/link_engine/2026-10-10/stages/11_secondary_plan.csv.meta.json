@@ -1,0 +1,17 @@
+{
+  "pulled_at": "2026-10-10T11:46:44+00:00",
+  "source": "10_assignments + 06_owner_rollup + 08_edges_html",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "provisional": true,
+  "n_pending_unassigned": 754,
+  "script": "budget.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 0,
+  "sha256": "7e14b085dc73f7eb20a79e8571231e2a1a4ac17e5dd2cb037a93ef32d7ae6cff"
+}

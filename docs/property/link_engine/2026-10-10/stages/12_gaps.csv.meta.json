@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T11:46:51+00:00",
+  "source": "10_assignments + 11_budget + 08_edges_html + 08_pages + 03_gsc_* + 06_families",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "gaps.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 1059,
+  "sha256": "5a4cbb92f51e5247996edcfd20c3f6112b5ff24743e0fadca599b052f8dfd9b5"
+}

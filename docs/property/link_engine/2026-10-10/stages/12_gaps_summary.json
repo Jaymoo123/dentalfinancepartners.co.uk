@@ -1,0 +1,259 @@
+{
+  "run": "2026-10-10",
+  "site": "property",
+  "rows": 1059,
+  "by_kind": {
+    "competing_page": 26,
+    "repoint_hire_anchor": 39,
+    "missing_primary": 94,
+    "missing_secondary": 43,
+    "orphan_needs_inlink": 99,
+    "broken": 6,
+    "pending_assignment": 752
+  },
+  "by_kind_wave": {
+    "competing_page": {
+      "1": 13,
+      "never": 13
+    },
+    "repoint_hire_anchor": {
+      "1": 18,
+      "2": 19,
+      "never": 2
+    },
+    "missing_primary": {
+      "1": 50,
+      "2": 43,
+      "never": 1
+    },
+    "missing_secondary": {
+      "1": 22,
+      "2": 20,
+      "never": 1
+    },
+    "orphan_needs_inlink": {
+      "1": 61,
+      "2": 38
+    },
+    "broken": {
+      "1": 6
+    },
+    "pending_assignment": {
+      "1": 432,
+      "2": 301,
+      "never": 19
+    }
+  },
+  "by_wave": {
+    "1": 602,
+    "2": 421,
+    "never": 36
+  },
+  "wave1_expected_new_sentences": 146,
+  "wave1_expected_reworks": 24,
+  "wave1_pending_assignment_rows": 432,
+  "competing_skipped_already_linking": 9,
+  "none_no_natural_link": 0,
+  "orphans_total": 102,
+  "also_kinds": {
+    "missing_primary": 11,
+    "repoint_hire_anchor": 3,
+    "pending_assignment": 2,
+    "competing_page": 1
+  },
+  "hire_repoint_targets": {
+    "/blog/property-accountant-services/what-does-a-property-accountant-do": 33,
+    "/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies": 3,
+    "/blog/property-accountant-services/property-accountant-near-me": 3,
+    "/blog/property-accountant-services/how-to-choose-a-property-accountant": 1,
+    "/blog/property-accountant-services/buy-to-let-accountants-near-me-guide": 1,
+    "/blog/property-types-and-specialist-tax/airbnb-tax-uk-short-term-rental-income-taxed": 1
+  },
+  "per_destination_body_inlinks": {
+    "/services/property-accountant": {
+      "share": 0.400927052642423,
+      "before_body_in": 38,
+      "after_wave1": 64,
+      "after_all_waves": 88,
+      "pending_candidates": 13,
+      "never_listed": 7
+    },
+    "/services/landlord-accountant": {
+      "share": 0.12662351910992067,
+      "before_body_in": 35,
+      "after_wave1": 42,
+      "after_all_waves": 51,
+      "pending_candidates": 53,
+      "never_listed": 6
+    },
+    "/services/property-tax-advice": {
+      "share": 0.10898159060471825,
+      "before_body_in": 36,
+      "after_wave1": 46,
+      "after_all_waves": 52,
+      "pending_candidates": 10,
+      "never_listed": 3
+    },
+    "/blog/capital-gains-tax/capital-gains-tax-second-home-sale": {
+      "share": 0.06648920366745648,
+      "before_body_in": 4,
+      "after_wave1": 4,
+      "after_all_waves": 4,
+      "pending_candidates": 87,
+      "never_listed": 4
+    },
+    "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk": {
+      "share": 0.04960606778613372,
+      "before_body_in": 21,
+      "after_wave1": 22,
+      "after_all_waves": 22,
+      "pending_candidates": 43,
+      "never_listed": 1
+    },
+    "/for/moving-property-into-a-limited-company": {
+      "share": 0.0468554445245699,
+      "before_body_in": 3,
+      "after_wave1": 13,
+      "after_all_waves": 18,
+      "pending_candidates": 119,
+      "never_listed": 3
+    },
+    "/for/gifting-property-to-family": {
+      "share": 0.0391726692077882,
+      "before_body_in": 1,
+      "after_wave1": 5,
+      "after_all_waves": 7,
+      "pending_candidates": 10,
+      "never_listed": 1
+    },
+    "/for/property-spv-set-up": {
+      "share": 0.02902381786339755,
+      "before_body_in": 1,
+      "after_wave1": 6,
+      "after_all_waves": 13,
+      "pending_candidates": 69,
+      "never_listed": 0
+    },
+    "/for/rental-income-disclosure": {
+      "share": 0.015270701555578449,
+      "before_body_in": 2,
+      "after_wave1": 6,
+      "after_all_waves": 7,
+      "pending_candidates": 15,
+      "never_listed": 1
+    },
+    "/locations/london": {
+      "share": 0.010243700422375606,
+      "before_body_in": 3,
+      "after_wave1": 3,
+      "after_all_waves": 3,
+      "pending_candidates": 2,
+      "never_listed": 0
+    },
+    "/locations/birmingham": {
+      "share": 0.008441567940661377,
+      "before_body_in": 3,
+      "after_wave1": 3,
+      "after_all_waves": 3,
+      "pending_candidates": 1,
+      "never_listed": 0
+    },
+    "/for/landlord-retirement-and-succession": {
+      "share": 0.007967322550736582,
+      "before_body_in": 1,
+      "after_wave1": 2,
+      "after_all_waves": 3,
+      "pending_candidates": 33,
+      "never_listed": 1
+    },
+    "/for/selling-a-buy-to-let": {
+      "share": 0.004552755743278046,
+      "before_body_in": 3,
+      "after_wave1": 7,
+      "after_all_waves": 8,
+      "pending_candidates": 43,
+      "never_listed": 0
+    },
+    "/locations/manchester": {
+      "share": 0.0031300195735036573,
+      "before_body_in": 4,
+      "after_wave1": 4,
+      "after_all_waves": 4,
+      "pending_candidates": 0,
+      "never_listed": 0
+    },
+    "/for/holiday-let-and-serviced-accommodation": {
+      "share": 0.002466076027608942,
+      "before_body_in": 0,
+      "after_wave1": 5,
+      "after_all_waves": 9,
+      "pending_candidates": 28,
+      "never_listed": 1
+    },
+    "/for/inherited-property": {
+      "share": 0.0009484907798495931,
+      "before_body_in": 1,
+      "after_wave1": 5,
+      "after_all_waves": 6,
+      "pending_candidates": 3,
+      "never_listed": 0
+    },
+    "/landed-estates": {
+      "share": 0.0,
+      "before_body_in": 5,
+      "after_wave1": 5,
+      "after_all_waves": 8,
+      "pending_candidates": 24,
+      "never_listed": 0
+    },
+    "/services/non-resident-landlord": {
+      "share": 0.05,
+      "before_body_in": 5,
+      "after_wave1": 5,
+      "after_all_waves": 5,
+      "pending_candidates": 75,
+      "never_listed": 0
+    },
+    "/locations/leeds": {
+      "share": 0.0,
+      "before_body_in": 4,
+      "after_wave1": 4,
+      "after_all_waves": 4,
+      "pending_candidates": 1,
+      "never_listed": 0
+    },
+    "/locations/bristol": {
+      "share": 0.0,
+      "before_body_in": 3,
+      "after_wave1": 3,
+      "after_all_waves": 3,
+      "pending_candidates": 2,
+      "never_listed": 0
+    },
+    "/for/hmo-and-multi-let-landlords": {
+      "share": 0.0,
+      "before_body_in": 0,
+      "after_wave1": 8,
+      "after_all_waves": 12,
+      "pending_candidates": 37,
+      "never_listed": 5
+    },
+    "/for-letting-agents": {
+      "share": 0.0,
+      "before_body_in": 6,
+      "after_wave1": 6,
+      "after_all_waves": 6,
+      "pending_candidates": 26,
+      "never_listed": 0
+    },
+    "/for/landlord-self-assessment-and-mtd": {
+      "share": 0.0,
+      "before_body_in": 0,
+      "after_wave1": 13,
+      "after_all_waves": 27,
+      "pending_candidates": 58,
+      "never_listed": 3
+    }
+  },
+  "provisional": true
+}

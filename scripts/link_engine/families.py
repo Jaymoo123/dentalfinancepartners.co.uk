@@ -27,7 +27,10 @@ Definitions
   our_top_page     page with most impressions across the family, excluding noindexed pages and pages
                    that the middleware 301s (DUPLICATE_REDIRECTS, BLOG_TO_LOCATION, recategorised slugs).
   confidence_note  "thin data" when demand_volume < 50 and/or no SERP for the head.
-  priority         value_usd_month * winnability.
+  priority_raw     value_usd_month * winnability.
+  priority         priority_raw times the config `priority_overrides` multiplier (a manual, ruled lift: each entry has
+                   match_head [substrings of the family head], multiplier and the ruling id, e.g. LE-15 for non-resident
+                   landlord); equal to priority_raw when no override matches. All ranking and shares use priority.
   owner_page       WP1 ruling: volume-weighted majority owner_page over the family's keywords,
                    ignoring "exclude"; "no page (city)" becomes "GAP: city page". No WP1 row for
                    any keyword: blank, owner_basis "needs judgment", and the family joins the queue.
@@ -55,7 +58,7 @@ FIELDS = ["rank", "family_id", "head", "intent_class", "geo", "n_keywords", "n_v
           "top_keywords", "demand_volume", "demand_volume_raw", "value_usd_month", "weighted_cpc", "gsc_impressions_90d", "gsc_clicks_90d", "gsc_pos_family_weighted",
           "our_top_page", "our_top_page_impr", "yardstick_position", "serp_rank_us_head", "gsc_pos_head",
           "gsc_impr_head", "pos_basis", "hard_share", "hard_basis", "serp_pulled", "winnability", "confidence_note",
-          "priority", "owner_page", "owner_basis", "owner_leads_90d", "owner_lead_value_gbp_90d", "lead_sharing",
+          "priority_raw", "priority", "owner_page", "owner_basis", "owner_leads_90d", "owner_lead_value_gbp_90d", "lead_sharing",
           "gap_brief", "judgment_reason", "commercial_fit"]
 QUEUE = ["family_id", "head", "intent_class", "geo", "demand_volume", "value_usd_month", "top_keywords",
          "gsc_impressions_90d", "our_top_page", "yardstick_position", "winnability", "pos_basis", "confidence_note", "commercial_fit"] + \
@@ -276,6 +279,15 @@ def rollup(rows: list[dict], leads: dict, cfg: dict) -> list[dict]:
     return out
 
 
+def override_mult(head: str, cfg: dict) -> float:
+    """Product of the multipliers of every config priority_overrides entry whose match_head substring is in the head."""
+    m, h = 1.0, head.lower()
+    for o in cfg.get("priority_overrides", []):
+        if any(t in h for t in o["match_head"]):
+            m *= float(o["multiplier"])
+    return m
+
+
 def pos_factor(p) -> float:
     if p is None:
         return 0.2
@@ -395,7 +407,8 @@ def main() -> None:
                "winnability": round(win, 3),
                "confidence_note": "; ".join(n for n in ("thin data: volume under 50" if vol < 50 else "",
                                                         "no SERP for head" if not hs else "") if n),
-               "priority": round(val * win, 2),
+               "priority_raw": round(val * win, 2),
+               "priority": round(val * win * override_mult(head, le), 2),
                "owner_page": owner, "owner_basis": obasis}
         # leads
         rows.append(row)

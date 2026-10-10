@@ -1,0 +1,317 @@
+{
+  "run": "2026-10-10",
+  "site": "property",
+  "pages_parsed": 898,
+  "html_files": 927,
+  "edges_total": 133767,
+  "edges_by_region": {
+    "nav": 88902,
+    "breadcrumb": 2557,
+    "body": 7307,
+    "form": 1767,
+    "footer": 27838,
+    "faq": 162,
+    "aside": 1620,
+    "related": 2418,
+    "listing": 1021,
+    "related_cards": 175
+  },
+  "edges_by_status": {
+    "ok": 133747,
+    "broken": 6,
+    "redirect": 5,
+    "external_asset": 9
+  },
+  "edges_by_region_status": {
+    "aside|ok": 1620,
+    "body|external_asset": 9,
+    "body|ok": 7296,
+    "body|redirect": 2,
+    "breadcrumb|ok": 2557,
+    "faq|broken": 6,
+    "faq|ok": 153,
+    "faq|redirect": 3,
+    "footer|ok": 27838,
+    "form|ok": 1767,
+    "listing|ok": 1021,
+    "nav|ok": 88902,
+    "related|ok": 2418,
+    "related_cards|ok": 175
+  },
+  "money_pages_body_inlinks": {
+    "/services/property-accountant": {
+      "distinct_sources": 38,
+      "links": 38,
+      "baseline_links": 38
+    },
+    "/services/landlord-accountant": {
+      "distinct_sources": 35,
+      "links": 35,
+      "baseline_links": 35
+    },
+    "/services/property-tax-advice": {
+      "distinct_sources": 36,
+      "links": 36,
+      "baseline_links": 36
+    },
+    "/services/non-resident-landlord": {
+      "distinct_sources": 5,
+      "links": 5,
+      "baseline_links": null
+    }
+  },
+  "baseline_2026_10_09": {
+    "service_pages_body_links": {
+      "/services/property-accountant": 38,
+      "/services/landlord-accountant": 35,
+      "/services/property-tax-advice": 36
+    },
+    "explainer": {
+      "links": 90,
+      "distinct_sources": 85
+    },
+    "hire_anchors": {
+      "clear": 28,
+      "borderline": 6
+    }
+  },
+  "explainer": {
+    "route": "/blog/property-accountant-services/what-does-a-property-accountant-do",
+    "distinct_sources": 85,
+    "links": 90,
+    "hire_wording_role_noun": {
+      "total": 28,
+      "anchors": {
+        "specialist property accountant": 15,
+        "property accountant": 8,
+        "Property accountants": 1,
+        "property-specialist accountant": 1,
+        "conversation with a property accountant": 1,
+        "Property Accountant Services: Expert Tax and Advisory Solutions for UK Landlords": 1,
+        "A property accountant": 1
+      }
+    },
+    "hire_wording_descriptive": {
+      "total": 61,
+      "anchors": {
+        "what a property accountant does": 36,
+        "What a specialist property accountant handles": 6,
+        "What Does a Property Accountant Do? Essential Services for UK Landlords": 3,
+        "what a property accountant actually does": 2,
+        "what a property accountant can do": 1,
+        "property accountant review the classification": 1,
+        "See what a property accountant actually does": 1,
+        "accountant who handles property tax": 1,
+        "guide to what a property accountant does": 1,
+        "overview of what a property accountant does": 1,
+        "what does a property accountant do": 1,
+        "What a property accountant does: core services and responsibilities": 1,
+        "What Does a Property Accountant Do?": 1,
+        "guide on what a property accountant does": 1,
+        "See how a property accountant works through this": 1,
+        "Find out how a property accountant runs that comparison": 1,
+        "See how a specialist property accountant approaches it": 1,
+        "What does a property accountant do?": 1
+      }
+    },
+    "hire_definition": "anchor has 'accountant' and any of property/landlord/specialist/hire/tax; role_noun = names the role (e.g. 'specialist property accountant'), descriptive = what/does/handles/guide/see phrasing"
+  },
+  "broken": {
+    "count": 6,
+    "distinct_targets": 3,
+    "top_targets": [
+      [
+        "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        3
+      ],
+      [
+        "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+        2
+      ],
+      [
+        "/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "source": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+        "target_raw": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+        "target_final": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+        "reason": "",
+        "n": 1
+      },
+      {
+        "source": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+        "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "target_final": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "reason": "",
+        "n": 1
+      },
+      {
+        "source": "/blog/capital-gains-tax/reduce-cgt-property-disposal-uk",
+        "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "target_final": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "reason": "",
+        "n": 1
+      },
+      {
+        "source": "/blog/capital-gains-tax/rollover-relief-property-landlords",
+        "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "target_final": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "reason": "",
+        "n": 1
+      },
+      {
+        "source": "/blog/capital-gains-tax/rollover-relief-property-landlords",
+        "target_raw": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+        "target_final": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+        "reason": "",
+        "n": 1
+      },
+      {
+        "source": "/blog/property-types-and-specialist-tax/vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics",
+        "target_raw": "/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method",
+        "target_final": "/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method",
+        "reason": "",
+        "n": 1
+      }
+    ]
+  },
+  "redirect": {
+    "count": 5,
+    "by_reason": {
+      "wrong_category": 3,
+      "flat_to_canonical": 2
+    },
+    "examples": [
+      {
+        "source": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+        "target_raw": "/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting",
+        "target_final": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",
+        "reason": "wrong_category",
+        "n": 1
+      },
+      {
+        "source": "/blog/capital-gains-tax/letting-relief-landlords-2026-changes",
+        "target_raw": "/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting",
+        "target_final": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",
+        "reason": "wrong_category",
+        "n": 1
+      },
+      {
+        "source": "/blog/incorporation-and-company-structures/director-living-in-property-owned-by-limited-company",
+        "target_raw": "/blog/principal-private-residence-relief-landlords",
+        "target_final": "/blog/capital-gains-tax/principal-private-residence-relief-landlords",
+        "reason": "flat_to_canonical",
+        "n": 1
+      },
+      {
+        "source": "/blog/property-accountant-services/cheltenham-property-accountant-landlord-tax-services",
+        "target_raw": "/blog/buy-to-let-limited-company-complete-guide-uk",
+        "target_final": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk",
+        "reason": "flat_to_canonical",
+        "n": 1
+      },
+      {
+        "source": "/spv-company",
+        "target_raw": "/blog/property-finance/buy-to-let-limited-company-mortgage-options",
+        "target_final": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options",
+        "reason": "wrong_category",
+        "n": 1
+      }
+    ]
+  },
+  "pages_to_service_pages_in_body": {
+    "/locations/bristol": {
+      "/locations/bristol": []
+    },
+    "belfast_posts": {
+      "/blog/property-accountant-services/belfast-property-accountant-specialist-tax-services": []
+    },
+    "/for/landlord-retirement-and-succession": {
+      "/for/landlord-retirement-and-succession": []
+    },
+    "note": "service pages = first three money pages; /services/non-resident-landlord excluded from this check"
+  },
+  "card_modules": {
+    "definition": "links inside .related-card (RelatedArticles.tsx); module by renderer",
+    "links_per_module": {
+      "BlogPostRenderer foot (section related-heading, blog posts)": 2418,
+      "RelatedArticles in page (services, locations, calculators, thank-you)": 79,
+      "TopicSection (topic pillar pages)": 90,
+      "unmapped": 6
+    },
+    "region_per_module": {
+      "BlogPostRenderer foot (section related-heading, blog posts)": {
+        "related": 2418
+      },
+      "RelatedArticles in page (services, locations, calculators, thank-you)": {
+        "related_cards": 79
+      },
+      "TopicSection (topic pillar pages)": {
+        "related_cards": 90
+      },
+      "unmapped": {
+        "related_cards": 6
+      }
+    },
+    "modules": [
+      "RelatedArticles at the blog post foot (BlogPostRenderer, section aria-labelledby=related-heading)",
+      "RelatedArticles in page-authored sections (service pages, /locations/[slug], /calculators/[slug], /thank-you)",
+      "TopicSection cards (RelatedArticles via relatedItemsFromLinks, on the topic pillar pages)"
+    ]
+  },
+  "orphans_body_indexable": 114,
+  "unreachable_from_home": 10,
+  "self_links_ignored_in_counts": 130,
+  "skipped_routes": {
+    "count": 29,
+    "rule": "any path segment in ['_not-found', 'api', 'apple-icon', 'embed', 'feed', 'icon', 'llms', 'opengraph-image', 'robots', 'sitemap', 'twitter-image']",
+    "routes": [
+      "/_not-found",
+      "/embed",
+      "/embed/bpr-apr-allowance-calculator",
+      "/embed/bridging-loan-calculator",
+      "/embed/buy-to-let-cashflow-calculator",
+      "/embed/buy-to-let-mortgage-calculator",
+      "/embed/buy-to-let-rental-stress-test-calculator",
+      "/embed/capital-allowances-calculator",
+      "/embed/capital-gains-tax-calculator",
+      "/embed/commercial-mortgage-calculator",
+      "/embed/corporation-tax-calculator",
+      "/embed/cost-of-selling-calculator",
+      "/embed/development-finance-calculator",
+      "/embed/dividend-tax-calculator",
+      "/embed/first-time-buyer-stamp-duty-calculator",
+      "/embed/incorporation-cost-calculator",
+      "/embed/lbtt-calculator-scotland",
+      "/embed/lease-extension-premium-calculator",
+      "/embed/ltt-calculator-wales",
+      "/embed/mtd-checker",
+      "/embed/portfolio-profitability-calculator",
+      "/embed/property-allowance-checker",
+      "/embed/property-company-extraction-calculator",
+      "/embed/rd-tax-credit-calculator",
+      "/embed/rent-a-room-relief-calculator",
+      "/embed/rental-income-tax-calculator",
+      "/embed/rental-yield-calculator",
+      "/embed/section-24-calculator",
+      "/embed/stamp-duty-calculator"
+    ]
+  },
+  "redirect_maps": {
+    "SLUG_TO_CATEGORY_MAP": 372,
+    "DUPLICATE_REDIRECTS": 116,
+    "next_config": {
+      "/pricing": "/services"
+    }
+  },
+  "deviations": [
+    "<header>/<footer> count as nav/footer only outside <main>",
+    "a link inside a <form> element is region form even without a labelled section",
+    "related_cards = .related-card links not in a section labelled related; n_in_related counts both",
+    "apex-host absolute links are status redirect (reason apex_to_www)",
+    "self-links are kept in the edges csv and ignored in page in-counts and BFS"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "pulled_at": "2026-10-10T11:43:34+00:00",
+  "source": "Property/web/.next/server/app + middleware.ts maps",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "n_pages": 898,
+  "skipped_routes": [
+    "/_not-found",
+    "/embed",
+    "/embed/bpr-apr-allowance-calculator",
+    "/embed/bridging-loan-calculator",
+    "/embed/buy-to-let-cashflow-calculator",
+    "/embed/buy-to-let-mortgage-calculator",
+    "/embed/buy-to-let-rental-stress-test-calculator",
+    "/embed/capital-allowances-calculator",
+    "/embed/capital-gains-tax-calculator",
+    "/embed/commercial-mortgage-calculator",
+    "/embed/corporation-tax-calculator",
+    "/embed/cost-of-selling-calculator",
+    "/embed/development-finance-calculator",
+    "/embed/dividend-tax-calculator",
+    "/embed/first-time-buyer-stamp-duty-calculator",
+    "/embed/incorporation-cost-calculator",
+    "/embed/lbtt-calculator-scotland",
+    "/embed/lease-extension-premium-calculator",
+    "/embed/ltt-calculator-wales",
+    "/embed/mtd-checker",
+    "/embed/portfolio-profitability-calculator",
+    "/embed/property-allowance-checker",
+    "/embed/property-company-extraction-calculator",
+    "/embed/rd-tax-credit-calculator",
+    "/embed/rent-a-room-relief-calculator",
+    "/embed/rental-income-tax-calculator",
+    "/embed/rental-yield-calculator",
+    "/embed/section-24-calculator",
+    "/embed/stamp-duty-calculator"
+  ],
+  "card_modules": [
+    "RelatedArticles at the blog post foot (BlogPostRenderer, section aria-labelledby=related-heading)",
+    "RelatedArticles in page-authored sections (service pages, /locations/[slug], /calculators/[slug], /thank-you)",
+    "TopicSection cards (RelatedArticles via relatedItemsFromLinks, on the topic pillar pages)"
+  ],
+  "script": "graph_html.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 898,
+  "sha256": "932095015f22b870b4db9316e03bff8b974d8ff868e811d90a3343d53bf1661c"
+}

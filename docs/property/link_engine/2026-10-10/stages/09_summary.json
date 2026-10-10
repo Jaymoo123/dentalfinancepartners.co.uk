@@ -1,0 +1,592 @@
+{
+  "site": "property",
+  "run": "2026-10-10",
+  "generated": "2026-10-10T11:44:09+00:00",
+  "edges": 7474,
+  "excluded_edges": 237,
+  "by_field": {
+    "body": 7303,
+    "faq": 162,
+    "template": 9
+  },
+  "by_status": {
+    "ok": 7460,
+    "broken": 6,
+    "redirect": 5,
+    "external_asset": 3
+  },
+  "by_field_status": {
+    "body": {
+      "external_asset": 3,
+      "ok": 7298,
+      "redirect": 2
+    },
+    "faq": {
+      "broken": 6,
+      "ok": 153,
+      "redirect": 3
+    },
+    "template": {
+      "ok": 9
+    }
+  },
+  "excluded_by_module": {
+    "sidebar CTA (aside)": 8,
+    "related-article cards (tool.related)": 40,
+    "breadcrumb": 62,
+    "form chrome (BookingPicker)": 2,
+    "form chrome (DetailsForm)": 1,
+    "TopicSection.links": 90,
+    "card component (CardCarousel)": 6,
+    "card component (LocationMap)": 11,
+    "related-article cards": 17
+  },
+  "inlinks_by_target_final": {
+    "/services/property-accountant": {
+      "body_excl_faq": {
+        "links": 36,
+        "sources": 36,
+        "sources_indexable_only": 36
+      },
+      "body_plus_faq": {
+        "links": 36,
+        "sources": 36,
+        "sources_indexable_only": 36
+      },
+      "body_plus_template_excl_faq": {
+        "links": 38,
+        "sources": 38,
+        "sources_indexable_only": 38
+      },
+      "body_plus_faq_components_template": {
+        "links": 38,
+        "sources": 38,
+        "sources_indexable_only": 38
+      },
+      "body_plus_components_template_excl_faq": {
+        "links": 38,
+        "sources": 38,
+        "sources_indexable_only": 38
+      }
+    },
+    "/services/landlord-accountant": {
+      "body_excl_faq": {
+        "links": 33,
+        "sources": 33,
+        "sources_indexable_only": 33
+      },
+      "body_plus_faq": {
+        "links": 33,
+        "sources": 33,
+        "sources_indexable_only": 33
+      },
+      "body_plus_template_excl_faq": {
+        "links": 35,
+        "sources": 35,
+        "sources_indexable_only": 35
+      },
+      "body_plus_faq_components_template": {
+        "links": 35,
+        "sources": 35,
+        "sources_indexable_only": 35
+      },
+      "body_plus_components_template_excl_faq": {
+        "links": 35,
+        "sources": 35,
+        "sources_indexable_only": 35
+      }
+    },
+    "/services/property-tax-advice": {
+      "body_excl_faq": {
+        "links": 36,
+        "sources": 36,
+        "sources_indexable_only": 36
+      },
+      "body_plus_faq": {
+        "links": 36,
+        "sources": 36,
+        "sources_indexable_only": 36
+      },
+      "body_plus_template_excl_faq": {
+        "links": 36,
+        "sources": 36,
+        "sources_indexable_only": 36
+      },
+      "body_plus_faq_components_template": {
+        "links": 36,
+        "sources": 36,
+        "sources_indexable_only": 36
+      },
+      "body_plus_components_template_excl_faq": {
+        "links": 36,
+        "sources": 36,
+        "sources_indexable_only": 36
+      }
+    },
+    "/services/non-resident-landlord": {
+      "body_excl_faq": {
+        "links": 5,
+        "sources": 5,
+        "sources_indexable_only": 5
+      },
+      "body_plus_faq": {
+        "links": 6,
+        "sources": 5,
+        "sources_indexable_only": 5
+      },
+      "body_plus_template_excl_faq": {
+        "links": 5,
+        "sources": 5,
+        "sources_indexable_only": 5
+      },
+      "body_plus_faq_components_template": {
+        "links": 6,
+        "sources": 5,
+        "sources_indexable_only": 5
+      },
+      "body_plus_components_template_excl_faq": {
+        "links": 5,
+        "sources": 5,
+        "sources_indexable_only": 5
+      }
+    },
+    "/blog/property-accountant-services/what-does-a-property-accountant-do": {
+      "body_excl_faq": {
+        "links": 90,
+        "sources": 85,
+        "sources_indexable_only": 82
+      },
+      "body_plus_faq": {
+        "links": 91,
+        "sources": 85,
+        "sources_indexable_only": 82
+      },
+      "body_plus_template_excl_faq": {
+        "links": 90,
+        "sources": 85,
+        "sources_indexable_only": 82
+      },
+      "body_plus_faq_components_template": {
+        "links": 91,
+        "sources": 85,
+        "sources_indexable_only": 82
+      },
+      "body_plus_components_template_excl_faq": {
+        "links": 90,
+        "sources": 85,
+        "sources_indexable_only": 82
+      }
+    }
+  },
+  "explainer_hire_anchors": {
+    "body_excl_faq": {
+      "links_into_explainer": 90,
+      "any_accountant_plus_property_landlord_specialist_tax": 89,
+      "clear": 28,
+      "borderline": 4,
+      "informational": 57,
+      "clear_sources": 28,
+      "clear_anchors": {
+        "specialist property accountant": 15,
+        "property accountant": 8,
+        "accountant who handles property tax": 1,
+        "property accountants": 1,
+        "property accountant review the classification": 1,
+        "property-specialist accountant": 1,
+        "a property accountant": 1
+      },
+      "borderline_anchors": {
+        "see how a property accountant works through this": 1,
+        "find out how a property accountant runs that comparison": 1,
+        "conversation with a property accountant": 1,
+        "see how a specialist property accountant approaches it": 1
+      },
+      "informational_anchors": {
+        "what a property accountant does": 36,
+        "what a specialist property accountant handles": 6,
+        "what does a property accountant do? essential services for uk landlords": 3,
+        "what a property accountant actually does": 2,
+        "what does a property accountant do?": 2,
+        "what a property accountant can do": 1,
+        "guide on what a property accountant does": 1,
+        "property accountant services: expert tax and advisory solutions for uk landlords": 1,
+        "see what a property accountant actually does": 1,
+        "what does a property accountant do": 1,
+        "what a property accountant does: core services and responsibilities": 1,
+        "overview of what a property accountant does": 1,
+        "guide to what a property accountant does": 1
+      }
+    },
+    "body_plus_faq": {
+      "links_into_explainer": 91,
+      "any_accountant_plus_property_landlord_specialist_tax": 90,
+      "clear": 28,
+      "borderline": 4,
+      "informational": 58,
+      "clear_sources": 28,
+      "clear_anchors": {
+        "specialist property accountant": 15,
+        "property accountant": 8,
+        "accountant who handles property tax": 1,
+        "property accountants": 1,
+        "property accountant review the classification": 1,
+        "property-specialist accountant": 1,
+        "a property accountant": 1
+      },
+      "borderline_anchors": {
+        "see how a property accountant works through this": 1,
+        "find out how a property accountant runs that comparison": 1,
+        "conversation with a property accountant": 1,
+        "see how a specialist property accountant approaches it": 1
+      },
+      "informational_anchors": {
+        "what a property accountant does": 37,
+        "what a specialist property accountant handles": 6,
+        "what does a property accountant do? essential services for uk landlords": 3,
+        "what a property accountant actually does": 2,
+        "what does a property accountant do?": 2,
+        "what a property accountant can do": 1,
+        "guide on what a property accountant does": 1,
+        "property accountant services: expert tax and advisory solutions for uk landlords": 1,
+        "see what a property accountant actually does": 1,
+        "what does a property accountant do": 1,
+        "what a property accountant does: core services and responsibilities": 1,
+        "overview of what a property accountant does": 1,
+        "guide to what a property accountant does": 1
+      }
+    }
+  },
+  "broken": [
+    {
+      "source_route": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+      "source_file": "Property/web/content/blog/cgt-deferral-strategies-property-investors-uk.md",
+      "line": 1,
+      "field": "faq",
+      "target_raw": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+      "target_final": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+      "anchor_text": "settlor-interested trust guide",
+      "note": "wrong-category (file cat=incorporation-and-company-structures)"
+    },
+    {
+      "source_route": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+      "source_file": "Property/web/content/blog/cgt-deferral-strategies-property-investors-uk.md",
+      "line": 1,
+      "field": "faq",
+      "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+      "target_final": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+      "anchor_text": "FHL grandfathered claims guide",
+      "note": "wrong-category (file cat=property-types-and-specialist-tax)"
+    },
+    {
+      "source_route": "/blog/capital-gains-tax/reduce-cgt-property-disposal-uk",
+      "source_file": "Property/web/content/blog/reduce-cgt-property-disposal-uk.md",
+      "line": 1,
+      "field": "faq",
+      "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+      "target_final": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+      "anchor_text": "FHL grandfathered claims guide",
+      "note": "wrong-category (file cat=property-types-and-specialist-tax)"
+    },
+    {
+      "source_route": "/blog/capital-gains-tax/rollover-relief-property-landlords",
+      "source_file": "Property/web/content/blog/rollover-relief-property-landlords.md",
+      "line": 1,
+      "field": "faq",
+      "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+      "target_final": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+      "anchor_text": "FHL grandfathered claims guide",
+      "note": "wrong-category (file cat=property-types-and-specialist-tax)"
+    },
+    {
+      "source_route": "/blog/capital-gains-tax/rollover-relief-property-landlords",
+      "source_file": "Property/web/content/blog/rollover-relief-property-landlords.md",
+      "line": 1,
+      "field": "faq",
+      "target_raw": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+      "target_final": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+      "anchor_text": "settlor-interested trust guide",
+      "note": "wrong-category (file cat=incorporation-and-company-structures)"
+    },
+    {
+      "source_route": "/blog/property-types-and-specialist-tax/vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics",
+      "source_file": "Property/web/content/blog/vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics.md",
+      "line": 1,
+      "field": "faq",
+      "target_raw": "/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method",
+      "target_final": "/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method",
+      "anchor_text": "VAT partial exemption for mixed residential and commercial portfolios",
+      "note": "wrong-category (file cat=landlord-tax-essentials)"
+    }
+  ],
+  "wrong_category": {
+    "total": 9,
+    "by_field": {
+      "faq": 8,
+      "body": 1
+    },
+    "covered_by_middleware": 3,
+    "links": [
+      {
+        "source_route": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+        "field": "faq",
+        "target_raw": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+        "correct_category": "incorporation-and-company-structures",
+        "middleware_covers": false,
+        "middleware_target": "",
+        "status": "broken",
+        "line": 1,
+        "source_file": "Property/web/content/blog/cgt-deferral-strategies-property-investors-uk.md"
+      },
+      {
+        "source_route": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+        "field": "faq",
+        "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "correct_category": "property-types-and-specialist-tax",
+        "middleware_covers": false,
+        "middleware_target": "",
+        "status": "broken",
+        "line": 1,
+        "source_file": "Property/web/content/blog/cgt-deferral-strategies-property-investors-uk.md"
+      },
+      {
+        "source_route": "/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk",
+        "field": "faq",
+        "target_raw": "/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting",
+        "correct_category": "non-resident-landlord-tax",
+        "middleware_covers": true,
+        "middleware_target": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",
+        "status": "redirect",
+        "line": 1,
+        "source_file": "Property/web/content/blog/cgt-deferral-strategies-property-investors-uk.md"
+      },
+      {
+        "source_route": "/blog/capital-gains-tax/letting-relief-landlords-2026-changes",
+        "field": "faq",
+        "target_raw": "/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting",
+        "correct_category": "non-resident-landlord-tax",
+        "middleware_covers": true,
+        "middleware_target": "/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting",
+        "status": "redirect",
+        "line": 1,
+        "source_file": "Property/web/content/blog/letting-relief-landlords-2026-changes.md"
+      },
+      {
+        "source_route": "/blog/capital-gains-tax/reduce-cgt-property-disposal-uk",
+        "field": "faq",
+        "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "correct_category": "property-types-and-specialist-tax",
+        "middleware_covers": false,
+        "middleware_target": "",
+        "status": "broken",
+        "line": 1,
+        "source_file": "Property/web/content/blog/reduce-cgt-property-disposal-uk.md"
+      },
+      {
+        "source_route": "/blog/capital-gains-tax/rollover-relief-property-landlords",
+        "field": "faq",
+        "target_raw": "/blog/capital-gains-tax/fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+        "correct_category": "property-types-and-specialist-tax",
+        "middleware_covers": false,
+        "middleware_target": "",
+        "status": "broken",
+        "line": 1,
+        "source_file": "Property/web/content/blog/rollover-relief-property-landlords.md"
+      },
+      {
+        "source_route": "/blog/capital-gains-tax/rollover-relief-property-landlords",
+        "field": "faq",
+        "target_raw": "/blog/capital-gains-tax/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules",
+        "correct_category": "incorporation-and-company-structures",
+        "middleware_covers": false,
+        "middleware_target": "",
+        "status": "broken",
+        "line": 1,
+        "source_file": "Property/web/content/blog/rollover-relief-property-landlords.md"
+      },
+      {
+        "source_route": "/blog/property-types-and-specialist-tax/vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics",
+        "field": "faq",
+        "target_raw": "/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method",
+        "correct_category": "landlord-tax-essentials",
+        "middleware_covers": false,
+        "middleware_target": "",
+        "status": "broken",
+        "line": 1,
+        "source_file": "Property/web/content/blog/vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics.md"
+      },
+      {
+        "source_route": "/spv-company",
+        "field": "body",
+        "target_raw": "/blog/property-finance/buy-to-let-limited-company-mortgage-options",
+        "correct_category": "incorporation-and-company-structures",
+        "middleware_covers": true,
+        "middleware_target": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options",
+        "status": "redirect",
+        "line": 471,
+        "source_file": "Property/web/src/app/spv-company/page.tsx"
+      }
+    ]
+  },
+  "self_links": 0,
+  "diagnostics": {
+    "skipped_external": 2751,
+    "markdown_syntax_in_html_not_rendered": 2,
+    "skipped_fragment-only": 169,
+    "location_cityContent_anchor_strings": 0,
+    "dynamic_member_ref_fed_by_data_arrays": 61,
+    "ignored_packages_only": 1
+  },
+  "unresolved_dynamic_hrefs": [
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/app/blog/page.tsx",
+      "line": 202,
+      "expr": "{`/blog/${cat.slug}`}"
+    },
+    {
+      "file": "Property/web/src/app/blog/page.tsx",
+      "line": 269,
+      "expr": "{`/calculators/${tool.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogListWithSearch.tsx",
+      "line": 145,
+      "expr": "{`/blog/${p.categorySlug}/${p.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/components/blog/BlogCategoryHub.tsx",
+      "line": 186,
+      "expr": "{`/blog/${topic.slug}`}"
+    },
+    {
+      "file": "Property/web/src/app/calculators/page.tsx",
+      "line": 153,
+      "expr": "{`/calculators/${t.slug}`}"
+    },
+    {
+      "file": "Property/web/src/app/complete/page.tsx",
+      "line": 108,
+      "expr": "{`/book?t=${bookingToken}`}"
+    },
+    {
+      "file": "Property/web/src/components/forms/DetailsForm.tsx",
+      "line": 97,
+      "expr": "{`/book?t=${bookingToken}`}"
+    },
+    {
+      "file": "Property/web/src/app/page.tsx",
+      "line": 368,
+      "expr": "{`/blog/${post.categorySlug}/${post.slug}`}"
+    },
+    {
+      "file": "Property/web/src/app/services/page.tsx",
+      "line": 296,
+      "expr": "{`/calculators/${service.calc.slug}`}"
+    },
+    {
+      "file": "Property/web/src/app/services/page.tsx",
+      "line": 371,
+      "expr": "{`/calculators/${tier.calc.slug}`}"
+    }
+  ],
+  "corpus": {
+    "blog_posts": 806,
+    "blog_slug_filename_mismatch": [],
+    "audiences": 15,
+    "cities": 5,
+    "static_routes": 51,
+    "resource_guides": [
+      "capital-gains",
+      "incorporation",
+      "landlord-compliance",
+      "landlord-essentials",
+      "leasehold",
+      "mtd",
+      "section-24",
+      "stamp-duty"
+    ],
+    "middleware_maps": {
+      "SLUG_TO_CATEGORY_MAP": 372,
+      "DUPLICATE_REDIRECTS": 116,
+      "BLOG_TO_LOCATION": 5,
+      "next_config_redirects": {
+        "/pricing": "/services"
+      }
+    }
+  },
+  "modules": {
+    "counted_as_body": "page JSX and page-level data (InlineLink, Link, a, href: props), blog markdown body, audiences intro/challenges/howWeHelp, rendered resource guides",
+    "counted_as_faq": "blog frontmatter faqs[].answer, audiences faqs[].answer, FaqSection data (html sinks only)",
+    "counted_as_component": [],
+    "component_tags_recognised_as_card_modules": [
+      "CalculatorLinkCards",
+      "CalculatorPreviewGrid",
+      "CardCarousel",
+      "ComparisonTable",
+      "LocationChips",
+      "LocationMap",
+      "ProblemStatement",
+      "ServiceIconGrid",
+      "ServiceTiers"
+    ],
+    "counted_as_template": "location template (cityServiceLine, /contact CTA), resources aside CTA",
+    "excluded": {
+      "Breadcrumb": "breadcrumb",
+      "RelatedArticles": "related-article cards",
+      "CalculatorTabs": "calculator tool nav",
+      "StickyCTA": "floating CTA",
+      "LeadCTAPanel": "lead panel (tel/mailto only)",
+      "LeadForm": "form chrome",
+      "TableOfContents": "toc",
+      "SiteHeader": "header",
+      "SiteFooter": "footer",
+      "TopicSection.links": "related-article cards via RelatedArticles",
+      "relatedItemsFromLinks": "related-article cards",
+      "latest-posts cards": "home page dynamic post list"
+    }
+  }
+}

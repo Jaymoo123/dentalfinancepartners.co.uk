@@ -1,0 +1,7 @@
+source,target_final,n_html,n_source,html_regions,source_fields,cause,resolution
+/book,/contact,0,2,,body:2;excluded:form chrome (BookingPicker):1,no_built_html,"none needed: not comparable. Page has no static HTML in .next/server/app (client route, noindex)."
+/complete,/contact,0,3,,body:3,no_built_html,"none needed: not comparable. Page has no static HTML in .next/server/app (client route, noindex)."
+/complete,/privacy-policy,0,1,,body:1;excluded:form chrome (DetailsForm):1,no_built_html,"none needed: not comparable. Page has no static HTML in .next/server/app (client route, noindex)."
+/thank-you,/,0,2,,body:2,no_built_html,"none needed: not comparable. Page has no static HTML in .next/server/app (client route, noindex)."
+/thank-you,/blog,0,2,,body:2,no_built_html,"none needed: not comparable. Page has no static HTML in .next/server/app (client route, noindex)."
+/thank-you,/contact,0,1,,body:1;excluded:form chrome (BookingPicker):1,no_built_html,"none needed: not comparable. Page has no static HTML in .next/server/app (client route, noindex)."

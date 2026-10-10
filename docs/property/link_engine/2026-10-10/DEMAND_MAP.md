@@ -146,8 +146,12 @@ Run in order: gsc_pull, universe, metrics, serp, cluster, families, apply_judgme
 | stages/04_serp_summary.csv | 393 | 96330bc84d721c3ed7cd141facf8d636d2b24b5ed479dbeac0cf0ab84be4a957 | ok |
 | stages/05_cluster_conflicts.csv | 16 | dc90ce7541b511a4a8f3478358d360f1f363c8d5d6beffa07f14937b4207856a | ok |
 | stages/05_clusters.csv | 578 | ac6e6c0d3cab911eb4ebc8b4c43986fed34b202ba2bf34c17ef705c16f0c4a1d | ok |
-| stages/06_families.csv | 226 | fb459e5d35e836f0e7a2a1f43412ca249bcb64bc00ac300772037e000cfc4b25 | ok |
-| stages/06_owner_queue.csv | 142 | 9a443470a5d319e81784f44e8e5a89d29b59441371fe6d3bd39d7250d2bdd918 | ok |
+| stages/06_families.csv | 226 | 3530385baf5d46d65dc560d09771afae9ccf7e669b6874a5102c76debbb18988 | ok |
+| stages/06_owner_queue.csv | 142 | ee7fc0261eaf9f3f165dd9aada628b9fbdad7f56daed7298960a5a7bd6767fdc | ok |
 | stages/06_owner_rollup.csv | 25 | c08fcb1fd90116765af5ab82a40a5165a8b705d7894fe342a7927a49d5dcbbe8 | ok |
 | stages/07_disagreements.csv | 0 | ac13e8e3b4b21a7e76577852206f59299dc24ca1844f94619df0bb5006f4d40d | ok |
 | stages/07_rejudge_needed.csv | 4 | 1bea02c299f6106073985b047ac3e82497baf82ff01da08b762eb2d715a15b69 | ok |
+| stages/08_edges_html.csv | 133767 | 2baea7a611fa4a3749480db97e53f60d5f6c1cf549cf4d24326bb7b94def498e | ok |
+| stages/08_pages.csv | 898 | 2a74c126428f222948b2f90005affc5e4e5a79f67bd70782792777c7579dbd1b | ok |
+| stages/09_edges_source.csv | 7512 | 4a559d2f51a4bbc7667f6923adc8ff36ed605c7b126fbc0d15665f8a361d90b1 | ok |
+| stages/09_edges_source_excluded.csv | 200 | 6171ef30d3942e710918df87ba2b5ddd6c099e3e1ea56bbf3bba15096929e5b0 | ok |
