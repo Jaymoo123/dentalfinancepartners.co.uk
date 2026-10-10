@@ -1,0 +1,12 @@
+{
+  "source": "Supabase dataforseo_keyword_data via connector; latest row per keyword, UK 2826, broad commercial-pattern prefilter (superset; precise filter in scripts/link_engine/universe.py)",
+  "sql_cte": "with k as (select distinct on (lower(coalesce(related_keyword,seed_keyword))) lower(coalesce(related_keyword,seed_keyword)) kw, endpoint, search_volume, cpc, competition, keyword_difficulty, date_pulled from dataforseo_keyword_data where site_key='property' and location_code=2826 order by lower(coalesce(related_keyword,seed_keyword)), date_pulled desc),\nf as (select row_number() over (order by kw) rn, concat_ws(',', '\"'||replace(kw,'\"','\"\"')||'\"', endpoint, coalesce(search_volume::text,''), coalesce(cpc::text,''), coalesce(competition::text,''), coalesce(keyword_difficulty::text,''), coalesce(date_pulled::text,'')) line from k where kw ~ '(accountant|accountancy|accounting|adviser|advisor|advice|specialist|consultant|expert|planning|firm|help|incorporat|limited company|ltd|spv|transfer|sell|selling|gift|inherit|iht|non.?resident|nrl|sdlt|stamp duty|restructur|trust|cgt|capital gains)')",
+  "site": "property",
+  "pulled_at": "2026-10-10",
+  "rows": 1524,
+  "body_md5_db": "dcccbf6279318f7472da0aa572ae3def",
+  "body_md5_file": "dcccbf6279318f7472da0aa572ae3def",
+  "min_date_pulled": "2026-05-19",
+  "max_date_pulled": "2026-08-21",
+  "data_through": "2026-08-21"
+}

@@ -1,0 +1,33 @@
+{
+  "pulled_at": "2026-10-10T01:33:52+00:00",
+  "source": "Google Ads search_volume/live (UK 2826, en), single source; prior_* columns are reference only",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "dfs_balance_start": {
+    "balance": 13.571619999999996,
+    "currency": "USD",
+    "ts": "2026-10-10T01:33:45+00:00"
+  },
+  "dfs_balance_end": {
+    "balance": 13.481619999999992,
+    "currency": "USD",
+    "ts": "2026-10-10T01:33:52+00:00"
+  },
+  "run_spend_usd": 1.128,
+  "n_priced_search_volume": 578,
+  "n_ideas_returned": 300,
+  "n_ideas_excluded_by_classifier": 298,
+  "n_ideas_new_commercial": 0,
+  "cpc_currency": "USD (DataForSEO convention, unverified)",
+  "script": "metrics.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10",
+    "--max-estimate",
+    "0.50"
+  ],
+  "rows": 578,
+  "sha256": "b0fa6b9869c5ce4cd50aedf3a61483f9e906f75997d18f8dd13bbcfb118035c7"
+}

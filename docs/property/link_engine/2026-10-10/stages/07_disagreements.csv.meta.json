@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T02:02:47+00:00",
+  "source": "judgments reader1 vs reader2",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "apply_judgments.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 0,
+  "sha256": "ac13e8e3b4b21a7e76577852206f59299dc24ca1844f94619df0bb5006f4d40d"
+}

@@ -1,0 +1,17 @@
+{
+  "pulled_at": "2026-10-10T00:46:03+00:00",
+  "site": "property",
+  "data_through": "2026-10-02",
+  "window": "2026-05-22..2026-10-02",
+  "script": "gsc_pull.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "source": "Bing Webmaster GetQueryStats https://propertytaxpartners.co.uk/",
+  "note": "Bing returns its own date range (weekly rows); page-stats .Query holds the URL",
+  "rows": 2000,
+  "sha256": "621f1936dfa9670de2ce86198d83abf508ceb3789678953e5700c0bbfc27a0c9"
+}

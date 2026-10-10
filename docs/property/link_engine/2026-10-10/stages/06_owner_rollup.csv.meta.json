@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T02:02:47+00:00",
+  "source": "06_families (informational_with_ad_spend and excluded left out)",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "apply_judgments.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 25,
+  "sha256": "975a389c8ca1c24eaa310933aee4dc24a912cad0a617cfa630d2efd1f8cfbe48"
+}

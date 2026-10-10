@@ -1,0 +1,23 @@
+{
+  "pulled_at": "2026-10-10T00:46:01+00:00",
+  "site": "property",
+  "data_through": "2026-10-07",
+  "window": "2026-07-10..2026-10-07",
+  "script": "gsc_pull.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "source": "GSC searchanalytics sc-domain:propertytaxpartners.co.uk dataState=final dims=query,page",
+  "query_page_clicks_sum": 196,
+  "query_page_impressions_sum": 93645,
+  "page_level_totals": {
+    "page_clicks_sum": 3601,
+    "page_impressions_sum": 382443
+  },
+  "note": "query-level rows are privacy-thresholded; (query,page) sums are expected to be below page totals",
+  "rows": 12036,
+  "sha256": "cc928470dd1588d5dcd41b097c7e43e2171997e1d00b8898331445984231c03a"
+}

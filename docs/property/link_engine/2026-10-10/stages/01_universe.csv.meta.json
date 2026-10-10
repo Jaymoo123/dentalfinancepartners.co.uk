@@ -1,0 +1,17 @@
+{
+  "pulled_at": "2026-10-10T01:33:31+00:00",
+  "source": "seeds + dfs_cache_commercial.csv + QRY_C + WP1 assignment + stage 03 GSC",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "gsc_included": true,
+  "gsc_query_page_rows_read": 12036,
+  "script": "universe.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 11118,
+  "sha256": "145eccb82b35fef183ccd1bb6110a611c9be10c42b34b2173903874d3858132b"
+}

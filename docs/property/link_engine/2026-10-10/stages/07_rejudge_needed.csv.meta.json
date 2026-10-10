@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T02:02:47+00:00",
+  "source": "judgments whose input_sha256 no longer matches",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "apply_judgments.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 4,
+  "sha256": "1bea02c299f6106073985b047ac3e82497baf82ff01da08b762eb2d715a15b69"
+}
