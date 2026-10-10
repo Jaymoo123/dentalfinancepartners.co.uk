@@ -209,7 +209,7 @@ Decisions only he can make, oldest first where it matters. Ask them in plain lan
 5. **Hub demotion**: whether `/services`, `/calculators` and `/blog` get a clickable top-level nav route back (2026-09-26 read).
 6. **Header CTA breakpoint** (his lock), **`resource_block` restore** on calculator pages, the designer's unbuilt C17 form restage, the blog sidebar card: left alone 2026-10-08, owner to rule.
 7. **Decision M**: the "280+ properties enquired about" stat tile wording. **Decision I**: a fee figure on `/services/property-accountant`.
-8. **Request indexing on the 20 May posts** that match the crawled-not-indexed pattern (Search Console action, reversible, needs his go).
+8. **(Declined 2026-10-10 by owner: nothing changed on those posts, so no signal expected.)** Request indexing on the 20 May posts that match the crawled-not-indexed pattern (Search Console action, reversible, needs his go).
 9. **One-form-per-page rule** for Solicitors, Dentists and Generalist blog posts.
 10. **Incorporation cluster (Phase D)** was deferred to after the SDLT 28-day reads; the re-check is overdue.
 11. **Paid-PDF test teardown, last step**: the code, console panel and legal-page sections are gone from the branch and the prod flag is off (2026-10-09). Four DROP statements (view `vw_calc_pdf_test`, tables `calc_pdf_requests`, `site_flags`, `tiktok_creatives`) are in `supabase/migrations/20261009000001_remove_paid_pdf_test_rls_session_events.sql` and still need running from the Supabase SQL editor; the connector held them for a confirmation it could not surface. Related owner call: the test's console panel had replaced the old "Sites (last 7 days)" table on the console home page; removing the panel does not bring the table back.
@@ -274,6 +274,7 @@ Scope note (2026-10-09, from `house_positions.md` section 4, which outranks the 
 
 ## 11. Log (one line per deploy or decision, newest first)
 
+- 2026-10-10 (evening): fresh GSC (data to 2026-10-08) and URL Inspection of 83 money/guide URLs: the four /services/ pages were last crawled 5-6 Aug, so Google has NOT seen the 2026-10-09 rewrite; owning guides not indexed: cgt-gifting-property-family-members-uk (owns 1,040 searches), tax-sell-rental-property-uk (500), agricultural-relief guide, cgt-calculation step-by-step guide; should-i-incorporate guide still held by Google as a May redirect. Second SERP snapshot: LE-19 guide calls hold in both pulls. Owner declined the 20-post indexing test (D5).
 - 2026-10-10 (later): link half built to checkpoint 1 and paused by owner; accuracy pass (blind audits, coverage, Google intent, locked selftest) fixed 8 defects; rulings LE-14 to LE-18; DataForSEO total $1.58.
 - 2026-10-10: link engine Half A built and run locally (no deploy, no content edits); demand map, rulings LE-1 to LE-13, WP1 close-variant inflation found; one push to `claude/new-session-3umxgd`.
 - 2026-10-09 21:27 UTC: estate-console production deploy `dpl_G5W3rADqrsD9bJRTNzf3vsQBVYcz` at `2ef35cd0c` (owner said "Yes"): PDF test panel gone from the dashboard, plus the 28 Sep shared-kit change that had been waiting. Property not deployed (freeze to 2026-10-23).
