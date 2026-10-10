@@ -1,0 +1,3625 @@
+{
+ "meta": {
+  "page": "/blog/section-24-and-tax-relief/finance-costs-section-24-complete-guide",
+  "canonical": "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/finance-costs-section-24-complete-guide",
+  "source": "Property/web/content/blog/finance-costs-section-24-complete-guide.md",
+  "built": "2026-10-10",
+  "frontmatter": {
+   "date": "2026-04-10",
+   "dateModified": "2026-10-09",
+   "reviewedAt": "2026-05-31",
+   "metaTitle": "Section 24 Finance Costs: What Counts for Landlords",
+   "h1": "Finance Costs Under Section 24: What Counts and What You Can Claim",
+   "words": 2148
+  },
+  "gsc_pull": {
+   "property": "sc-domain:propertytaxpartners.co.uk",
+   "dataState": "all",
+   "range": "2025-06-01..2026-10-08 (16 months requested)",
+   "dimension_filter": "page equals canonical URL; also page contains slug to catch #fragment rows (none exist for this page)",
+   "fragment_rule": "canonical (no-fragment) row used for page totals; fragment rows excluded and counted"
+  }
+ },
+ "index_status": {
+  "url_inspection_stage_03c": "Crawled - currently not indexed; lastCrawlTime 2026-05-29T06:43:54Z; googleCanonical empty; userCanonical empty; robots ALLOWED; fetch SUCCESSFUL",
+  "reinspected_2026-10-10_via_API": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "lastCrawlTime": "2026-05-29T06:43:54Z",
+   "googleCanonical": null,
+   "userCanonical": null,
+   "pageFetchState": "SUCCESSFUL",
+   "sitemap": [
+    "https://www.propertytaxpartners.co.uk/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/can-section-24-push-higher-rate-tax"
+   ]
+  },
+  "note": "Last crawl pre-dates the 2026-10-09 dateModified (title/meta rewritten, metaTitle_prev kept in frontmatter) by 4.5 months: Google has not seen the current version."
+ },
+ "owned_families": {
+  "families_in_06_families_csv_owner_page_this_guide": [],
+  "term_map_rows_owned": 0,
+  "note": "06_families.csv has 244 families; none has owner_page = this guide, and no family head or keyword contains section 24 / finance costs / mortgage interest / tax credit. TERM_MAP.csv (480 rows) has no row for this owner_page.",
+  "store_wordings_with_volume": [
+   {
+    "wording": "limited company buy to let mortgage interest only",
+    "volume": "30",
+    "in_keyword_metrics": true,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "non-residential property finance costs",
+    "volume": "50",
+    "in_keyword_metrics": true,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 limited company",
+    "volume": "10",
+    "in_keyword_metrics": true,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   }
+  ],
+  "store_wordings_without_volume_count": 77,
+  "store_wordings_all": [
+   {
+    "wording": "20 tax bracket",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "20 tax payer",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "allowable mortgage interest on rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "btl tax calculator section 24",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: calculator_rates_forms",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "budget 2027 mortgage interest relief",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can i claim mortgage interest against rental income",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can i claim mortgage interest on my taxes",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can i claim mortgage interest on rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can i claim tax relief on mortgage interest uk",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can i deduct mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can i deduct mortgage interest from rental income",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can landlords still claim tax relief on mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can mortgage interest be deducted from rental income",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you claim mortgage interest on a rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you claim mortgage interest on buy to let",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you claim mortgage interest on holiday lets",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you claim mortgage interest on rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you claim mortgage interest on taxes",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you claim tax relief on mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you deduct mortgage interest on a rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "can you deduct mortgage interest on a rental property uk",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "claiming mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "claiming mortgage interest on rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "corporate interest restriction de minimis 2 million hmrc guidance",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "foreign tax credit relief on capital gains",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "furnished holiday let mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "furnished holiday let mortgage interest only",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "furnished holiday lettings mortgage interest relief",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "home improvement tax credit",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "how does section 24 affect landlords",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: reference_informational",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "how is section 24 mortgage interest relief affecting my profits",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "how to calculate tax savings from mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "how to calculate the mortgage interest deduction",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "how to claim mortgage interest on taxes",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "is mortgage interest tax deductible uk",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "land remediation relief tax credit",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "landlords section 24",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "limited company buy to let mortgage interest only",
+    "volume": "30",
+    "in_keyword_metrics": true,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest deduction for rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest on rental property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest tax deduction",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest tax deduction uk",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest tax deduction uk main residence",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest tax relief",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "mortgage interest tax relief calculator uk",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "non-residential property finance costs",
+    "volume": "50",
+    "in_keyword_metrics": true,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "personal tax credit 2025",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "rental income mortgage interest",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "rental tax credit",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "residential property finance costs",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 abolish",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 application",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 explained",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: reference_informational",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 holiday let",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 landlord",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 landlords",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 limited company",
+    "volume": "10",
+    "in_keyword_metrics": true,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 mortgage interest caravan lettings",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 mortgage interest relief",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 mortgage interest relief strategy",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 mortgage interest restriction holiday let",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 of income tax act",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 tax",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 tax changes",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 tax planning",
+    "volume": "",
+    "in_keyword_metrics": true,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 tax to be abolished",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 to be abolished",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 uk",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "section 24 uk law",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "tax relief on mortgage interest on rented property",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "what is a section 24",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: reference_informational",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "what is section 24",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: reference_informational",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "what is section 24 for landlords",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: reference_informational",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "when did section 24 come into effect",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "where to claim air conditioner tax creditbook a hotel",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "who can claim mortgage interest on tax return",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: borrower_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   },
+   {
+    "wording": "will section 24 be reversed",
+    "volume": null,
+    "in_keyword_metrics": false,
+    "stage01": "excluded: not_commercial_intent",
+    "term_map_owner": null,
+    "our_page_owning": "none (not in any family or TERM_MAP)"
+   }
+  ],
+  "volume_verdict": "Google Ads volume exists for only three wordings in this topic set, all tiny and none owned: \"non-residential property finance costs\" 50, \"limited company buy to let mortgage interest only\" 30 (borrower intent), \"section 24 limited company\" 10. Every other section 24 / finance costs / mortgage interest relief / 20% credit wording was excluded at stage 01 before the volume purchase, so volume is unknown, not zero.",
+  "closest_owned_family": "/services/landlord-accountant is the link-engine destination for this page (assign_E, medium confidence), not an owner."
+ },
+ "gsc_page_total": {
+  "canonical_url_row_16m": {
+   "clicks": 0,
+   "impressions": 7,
+   "position": 7
+  },
+  "canonical_url_row_90d_2026-07-11_to_2026-10-08": {
+   "clicks": 0,
+   "impressions": 2,
+   "position": 5
+  },
+  "named_queries_16m": 0,
+  "named_queries_90d": 0,
+  "fragment_rows_for_this_page": 0,
+  "first_day_with_impressions": "2026-06-02",
+  "last_day_with_impressions": "2026-09-27",
+  "register_comparison": "13_protect_register gsc_impr_90d 2, clicks 0: agrees with the fresh pull."
+ },
+ "gsc_monthly": [
+  {
+   "month": "2026-03",
+   "clicks": 0,
+   "impressions": 0,
+   "days_with_impr": 0,
+   "avg_position": null
+  },
+  {
+   "month": "2026-04",
+   "clicks": 0,
+   "impressions": 0,
+   "days_with_impr": 0,
+   "avg_position": null
+  },
+  {
+   "month": "2026-05",
+   "clicks": 0,
+   "impressions": 0,
+   "days_with_impr": 0,
+   "avg_position": null
+  },
+  {
+   "month": "2026-06",
+   "clicks": 0,
+   "impressions": 3,
+   "days_with_impr": 3,
+   "avg_position": 7.3
+  },
+  {
+   "month": "2026-07",
+   "clicks": 0,
+   "impressions": 3,
+   "days_with_impr": 3,
+   "avg_position": 8.0
+  },
+  {
+   "month": "2026-08",
+   "clicks": 0,
+   "impressions": 0,
+   "days_with_impr": 0,
+   "avg_position": null
+  },
+  {
+   "month": "2026-09",
+   "clicks": 0,
+   "impressions": 1,
+   "days_with_impr": 1,
+   "avg_position": 3.0
+  },
+  {
+   "month": "2026-10",
+   "clicks": 0,
+   "impressions": 0,
+   "days_with_impr": 0,
+   "avg_position": null
+  }
+ ],
+ "gsc_days_with_impressions": [
+  {
+   "date": "2026-06-02",
+   "impressions": 1,
+   "position": 9
+  },
+  {
+   "date": "2026-06-04",
+   "impressions": 1,
+   "position": 9
+  },
+  {
+   "date": "2026-06-06",
+   "impressions": 1,
+   "position": 4
+  },
+  {
+   "date": "2026-07-02",
+   "impressions": 1,
+   "position": 7
+  },
+  {
+   "date": "2026-07-07",
+   "impressions": 1,
+   "position": 10
+  },
+  {
+   "date": "2026-07-20",
+   "impressions": 1,
+   "position": 7
+  },
+  {
+   "date": "2026-09-27",
+   "impressions": 1,
+   "position": 3
+  }
+ ],
+ "gsc_page_queries": [],
+ "gsc_page_queries_note": "Zero rows. Query dimension with page equals the canonical URL returned nothing for 2025-06-01..2026-10-08, 90-day window also empty: all 7 impressions are anonymised.",
+ "bing": {
+  "source": "docs/property/rewrites/2026-10-10/finance-costs-section-24-complete-guide.protect.json (stored, not re-pulled)",
+  "bing_rows_weekly": 790,
+  "bing_queries_total": 631,
+  "register_13_protect_register": {
+   "bing_impr": 1714,
+   "bing_clicks": 117,
+   "bing_queries": 631,
+   "bing_top3_queries": 37,
+   "leads_90d": 2
+  },
+  "protect_list_queries": 170,
+  "protect_list_unanswered_at_baseline": 27,
+  "first_bing_week": "2026-05-22",
+  "monthly_query_level": {
+   "2026-05": {
+    "impressions": 111,
+    "clicks": 4
+   },
+   "2026-06": {
+    "impressions": 338,
+    "clicks": 20
+   },
+   "2026-07": {
+    "impressions": 434,
+    "clicks": 38
+   },
+   "2026-08": {
+    "impressions": 384,
+    "clicks": 28
+   },
+   "2026-09": {
+    "impressions": 361,
+    "clicks": 20
+   },
+   "2026-10": {
+    "impressions": 86,
+    "clicks": 7
+   }
+  },
+  "monthly_page_level_03_bing_page": {
+   "2026-05": {
+    "impressions": 274,
+    "clicks": 4,
+    "weeks": 2
+   },
+   "2026-06": {
+    "impressions": 857,
+    "clicks": 22,
+    "weeks": 4
+   },
+   "2026-07": {
+    "impressions": 1369,
+    "clicks": 39,
+    "weeks": 5
+   },
+   "2026-08": {
+    "impressions": 1195,
+    "clicks": 29,
+    "weeks": 4
+   },
+   "2026-09": {
+    "impressions": 994,
+    "clicks": 23,
+    "weeks": 4
+   },
+   "2026-10": {
+    "impressions": 255,
+    "clicks": 7,
+    "weeks": 1
+   }
+  },
+  "top_queries_by_clicks_then_impr": [
+   {
+    "query": "section 24",
+    "bing_clicks": 7,
+    "bing_impr": 408,
+    "bing_pos": 3.5,
+    "section": "FAQ: What is Section 24 tax?",
+    "score": 1.0
+   },
+   {
+    "query": "residential property finance costs",
+    "bing_clicks": 3,
+    "bing_impr": 32,
+    "bing_pos": 3.0,
+    "section": "FAQ: Is Section 24 the same for non-residential and commercial property finance costs?",
+    "score": 1.0
+   },
+   {
+    "query": "residential finance costs hmrc",
+    "bing_clicks": 2,
+    "bing_impr": 16,
+    "bing_pos": 2.38,
+    "section": "FAQ: Where do residential finance costs go on the HMRC self-assessment form?",
+    "score": 1.0
+   },
+   {
+    "query": "residential property finance costs tax return",
+    "bing_clicks": 2,
+    "bing_impr": 16,
+    "bing_pos": 3.0,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.867
+   },
+   {
+    "query": "are bank charges included in finance costs for rental property",
+    "bing_clicks": 2,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?",
+    "score": 0.6
+   },
+   {
+    "query": "section 24 interest",
+    "bing_clicks": 2,
+    "bing_impr": 2,
+    "bing_pos": 2.5,
+    "section": "FAQ: Does overdraft interest count as a finance cost under Section 24?",
+    "score": 1.0
+   },
+   {
+    "query": "how is insidential cost of finance treated with regards to property income",
+    "bing_clicks": 2,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?",
+    "score": 0.514
+   },
+   {
+    "query": "relief for finance costs maximum allowable",
+    "bing_clicks": 1,
+    "bing_impr": 13,
+    "bing_pos": 3.0,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?",
+    "score": 0.52
+   },
+   {
+    "query": "finance cost relief on property",
+    "bing_clicks": 1,
+    "bing_impr": 10,
+    "bing_pos": 2.4,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.8
+   },
+   {
+    "query": "hmrc relief for finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 7,
+    "bing_pos": 2.29,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim",
+    "score": 0.8
+   },
+   {
+    "query": "relief for property finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 5,
+    "bing_pos": 3.6,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.8
+   },
+   {
+    "query": "residential property finance costs tax relief",
+    "bing_clicks": 1,
+    "bing_impr": 5,
+    "bing_pos": 2.6,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.8
+   },
+   {
+    "query": "tax limit on deduction of property finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 4,
+    "bing_pos": 4.0,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.767
+   },
+   {
+    "query": "finance cost section 24 hmrc",
+    "bing_clicks": 1,
+    "bing_impr": 3,
+    "bing_pos": 1.0,
+    "section": "FAQ: Does overdraft interest count as a finance cost under Section 24?",
+    "score": 0.92
+   },
+   {
+    "query": "relief for finance costs uk",
+    "bing_clicks": 1,
+    "bing_impr": 3,
+    "bing_pos": 1.67,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim",
+    "score": 0.867
+   },
+   {
+    "query": "what is the cap on finance costs on the tax return for rental property",
+    "bing_clicks": 1,
+    "bing_impr": 3,
+    "bing_pos": 1.0,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.657
+   },
+   {
+    "query": "allowable finance costs for rental property",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?",
+    "score": 0.84
+   },
+   {
+    "query": "are finace charges taken into account when determining uk quarterly tax return returns",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 5.0,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.25
+   },
+   {
+    "query": "are incidental costs of loan finance deductible at 20 in a property rental business",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "section": "FAQ: Is Section 24 the same for non-residential and commercial property finance costs?",
+    "score": 0.533
+   },
+   {
+    "query": "are normal bank charges shown as residential finance costs on a personal tax return",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.42
+   },
+   {
+    "query": "can i claim financing costs for a loan against my rental income",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?",
+    "score": 0.543
+   },
+   {
+    "query": "can you claim relief for residential finance costs when the property is void",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 5.0,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?",
+    "score": 0.629
+   },
+   {
+    "query": "definition of finance costs for rental businesses",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "section": "FAQ: Does overdraft interest count as a finance cost under Section 24?",
+    "score": 0.52
+   },
+   {
+    "query": "does mortgage interest go into finance cost for self assessment",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "section": "FAQ: Where do residential finance costs go on the HMRC self-assessment form?",
+    "score": 0.714
+   },
+   {
+    "query": "financ ecost is lower of cost adjustable income and property profit",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "section": "FAQ: How does the Section 24 basic-rate credit work?",
+    "score": 0.375
+   },
+   {
+    "query": "finance costs property letting",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "section": "FAQ: Is Section 24 the same for non-residential and commercial property finance costs?",
+    "score": 0.9
+   },
+   {
+    "query": "finance relief on rental income with remortgage of house",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?",
+    "score": 0.533
+   },
+   {
+    "query": "how does finncae cost relief work",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim",
+    "score": 0.55
+   },
+   {
+    "query": "how does hmrc calculate whatr tax topay onfinancecialcostsofproperty",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "section": "H2: Where the figures go on your tax return",
+    "score": 0.367
+   },
+   {
+    "query": "in calculation of residential property tax why does hmrc not take bank interest charges as a cost",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "section": "H2: Common mistakes that trigger HMRC adjustments",
+    "score": 0.473
+   },
+   {
+    "query": "land property finance costs - what is allowable",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?",
+    "score": 0.72
+   },
+   {
+    "query": "minus relief for finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim",
+    "score": 0.65
+   },
+   {
+    "query": "residential finance costs for letting own home hmrc",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "section": "H2: Which residential finance costs qualify?",
+    "score": 0.6
+   },
+   {
+    "query": "section 24 property tax",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "section": "FAQ: Do the April 2027 property income tax rates change the Section 24 credit?",
+    "score": 1.0
+   },
+   {
+    "query": "uk property self assessment loan finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 3.0,
+    "section": "FAQ: Where do residential finance costs go on the HMRC self-assessment form?",
+    "score": 0.767
+   },
+   {
+    "query": "what constitutes residenital propertry finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "section": "FAQ: What are residential finance costs?",
+    "score": 0.4
+   },
+   {
+    "query": "20 tax credit on finance costs section 24",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim",
+    "score": 0.829
+   },
+   {
+    "query": "6 6 residential finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "section": "FAQ: What are residential finance costs?",
+    "score": 0.75
+   },
+   {
+    "query": "allowable residential finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "section": "FAQ: What are residential finance costs?",
+    "score": 0.75
+   },
+   {
+    "query": "any amount recognised at the commencement date in accordance with section 24",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "section": "FAQ: How does the Section 24 basic-rate credit work?",
+    "score": 0.325
+   }
+  ],
+  "unanswered_queries": [
+   {
+    "query": "are finace charges taken into account when determining uk quarterly tax return returns",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 5.0,
+    "score": 0.25,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?"
+   },
+   {
+    "query": "are normal bank charges shown as residential finance costs on a personal tax return",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "score": 0.42,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?"
+   },
+   {
+    "query": "financ ecost is lower of cost adjustable income and property profit",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 1.0,
+    "score": 0.375,
+    "section": "FAQ: How does the Section 24 basic-rate credit work?"
+   },
+   {
+    "query": "how does hmrc calculate whatr tax topay onfinancecialcostsofproperty",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 4.0,
+    "score": 0.367,
+    "section": "H2: Where the figures go on your tax return"
+   },
+   {
+    "query": "in calculation of residential property tax why does hmrc not take bank interest charges as a cost",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "score": 0.473,
+    "section": "H2: Common mistakes that trigger HMRC adjustments"
+   },
+   {
+    "query": "what constitutes residenital propertry finance costs",
+    "bing_clicks": 1,
+    "bing_impr": 2,
+    "bing_pos": 2.0,
+    "score": 0.4,
+    "section": "FAQ: What are residential finance costs?"
+   },
+   {
+    "query": "any amount recognised at the commencement date in accordance with section 24",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 1.0,
+    "score": 0.325,
+    "section": "FAQ: How does the Section 24 basic-rate credit work?"
+   },
+   {
+    "query": "are solicitors costs associated with the re-mortgage of a residential buy to let also dealt with under section 24",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "score": 0.4,
+    "section": "FAQ: Are mortgage booking fees tax deductible according to HMRC?"
+   },
+   {
+    "query": "can i deduct remortgage fee from self assessment in uk for rental property",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "score": 0.457,
+    "section": "FAQ: Where do residential finance costs go on the HMRC self-assessment form?"
+   },
+   {
+    "query": "finance cost tax reduction calculation do i put in my full interest for the rental or just 20 of it",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "score": 0.455,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim"
+   },
+   {
+    "query": "finances costs for btl interest is it restricted to the adjusted profit after tax allowances",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "score": 0.42,
+    "section": "H2: The three-part cap and carry-forward"
+   },
+   {
+    "query": "how to qualify for refinance tax uk",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 8.0,
+    "score": 0.4,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim"
+   },
+   {
+    "query": "if a remortgage fee was added tot he mortgage balance is this is deductable finance cost in rental property profit calcualtions",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 7.0,
+    "score": 0.4,
+    "section": "FAQ: Can I claim finance costs of getting a mortgage and remortgage costs that relate to the sale of a property?"
+   },
+   {
+    "query": "is there a limit on relief for finance coists for buy to let",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "score": 0.367,
+    "section": "FAQ: What are residential finance costs?"
+   },
+   {
+    "query": "on my tax return my finance costs are higher than income will i get tax refund",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 3.0,
+    "score": 0.475,
+    "section": "H2: Where the figures go on your tax return"
+   },
+   {
+    "query": "residential financial cost deductable from rental income tax relief uk",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "score": 0.425,
+    "section": "FAQ: What is Section 24 tax?"
+   },
+   {
+    "query": "what is financial cost relief when declaring taxes",
+    "bing_clicks": 1,
+    "bing_impr": 1,
+    "bing_pos": 2.0,
+    "score": 0.32,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim"
+   },
+   {
+    "query": "s24 cra",
+    "bing_clicks": 0,
+    "bing_impr": 6,
+    "bing_pos": 9.0,
+    "score": 0.0,
+    "section": "(none)"
+   },
+   {
+    "query": "when working out the basic rate restrictor for finance cost the personal allowance is used in the calculation is it just the generic pa for the year or the individuals pa",
+    "bing_clicks": 0,
+    "bing_impr": 5,
+    "bing_pos": 3.0,
+    "score": 0.312,
+    "section": "FAQ: How does the Section 24 basic-rate credit work?"
+   },
+   {
+    "query": "for landlord with property in their name can they claim the mortgage arrangement fees on tax returns",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 5.0,
+    "score": 0.467,
+    "section": "FAQ: Can I claim loan arrangement fees under Section 24?"
+   },
+   {
+    "query": "no cost business bank account",
+    "bing_clicks": 0,
+    "bing_impr": 4,
+    "bing_pos": 11.0,
+    "score": 0.48,
+    "section": "H3: Mortgage and loan interest"
+   },
+   {
+    "query": "finance cost relief property let out december 2025 uk",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 4.0,
+    "score": 0.475,
+    "section": "FAQ: What are residential finance costs?"
+   },
+   {
+    "query": "how to identify section 24 of taxation taxable income and what are the basic principles of it",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 2.0,
+    "score": 0.45,
+    "section": "FAQ: How does the Section 24 basic-rate credit work?"
+   },
+   {
+    "query": "non restrictable finance charges for uk self assessment return",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 3.67,
+    "score": 0.457,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?"
+   },
+   {
+    "query": "property llp with residential finance cost how does finance cost reduction come out on personal tax or on partnership return",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 3.0,
+    "score": 0.433,
+    "section": "FAQ: What is the basic rate tax deduction for property finance on the tax return if it is not claimed?"
+   },
+   {
+    "query": "refund finace costs tax relief",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 3.0,
+    "score": 0.44,
+    "section": "FAQ: What is Section 24 tax?"
+   },
+   {
+    "query": "uk hmrc pre-letting expenditure finance cost relief 20",
+    "bing_clicks": 0,
+    "bing_impr": 3,
+    "bing_pos": 4.0,
+    "score": 0.475,
+    "section": "H1/title: Finance Costs Under Section 24: What Counts and What You Can Claim"
+   }
+  ]
+ },
+ "serp_context": {
+  "covers_section_24_finance_costs": false,
+  "statement": "No stored SERP covers section 24, finance costs, residential finance costs, mortgage interest relief for landlords, 20% tax credit or any wording in this guide's set (serp_index.csv 448 rows, serp_fresh_index.csv 95 rows; keyword scan for section 24/s24/finance cost/mortgage/interest/tax credit/tax relief/rental income/deduct/expens/reducer/restriction/btl tax). Nothing was bought. These wordings were excluded at stage 01 (borrower_intent / not_commercial_intent / reference_informational) so no SERP was ever pulled.",
+  "nearest_stored_serps_adjacent_only": {
+   "landlord tax advice": {
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/e3a01610d399f0260d73d6526d088f29df25b855.fresh-2026-10-10.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.nrla.org.uk",
+      "title": "Landlord Tax Services | Property Tax Advisors",
+      "url": "https://www.nrla.org.uk/services/tax"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "uklandlordtax.co.uk",
+      "title": "UK Landlord Tax: Property Tax Accountants For Landlords",
+      "url": "https://uklandlordtax.co.uk/"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 5,
+      "domain": "www.totallandlordinsurance.co.uk",
+      "title": "Advice on UK landlord tax: the complete guide for 2025/6 |",
+      "url": "https://www.totallandlordinsurance.co.uk/knowledge-centre/taxes-for-uk-landlords"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "www.gov.uk",
+      "title": "Renting out your property: Paying tax and National Insurance",
+      "url": "https://www.gov.uk/renting-out-a-property/paying-tax"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.geraldedelman.com",
+      "title": "Tax Advice For Landlords: 7 Key Tips To Follow",
+      "url": "https://www.geraldedelman.com/insights/tax-advice-for-landlords-seven-key-tips/"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.taxassist.co.uk",
+      "title": "Landlords",
+      "url": "https://www.taxassist.co.uk/who-we-help/landlords"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "perrysaccountants.co.uk",
+      "title": "Buy to Let Accountant and Tax Advice in London and Kent",
+      "url": "https://perrysaccountants.co.uk/property-and-landlord-accountants"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.alanboswell.com",
+      "title": "Landlord Tax Guide | Understanding Tax As A Landlord",
+      "url": "https://www.alanboswell.com/resources/landlord-tax-guide/"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.nrla.org.uk",
+      "title": "RITA4Rent | Rental Property Tax Advisor",
+      "url": "https://www.nrla.org.uk/services/tax/rita4rent"
+     }
+    ],
+    "paa": [
+     "How to avoid paying 40% income tax on rental property?",
+     "What is the 2% rule for renting?",
+     "What is the new tax rule for landlords?",
+     "What can landlords get tax relief on?"
+    ],
+    "types": [
+     "ai_overview",
+     "organic",
+     "people_also_ask",
+     "related_searches"
+    ]
+   },
+   "landlord tax advice uk": {
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/a0e5f11e7d9d53ec642e94fa03ad45a62994b852.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.arnoldhill.co.uk",
+      "title": "Property Tax Advice UK",
+      "url": "https://www.arnoldhill.co.uk/property"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "www.taxfile.co.uk",
+      "title": "Tax advice/accountancy for landlords, property rental, lettings ...",
+      "url": "https://www.taxfile.co.uk/landlords-property-tax-advisers/"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 4,
+      "domain": "www.hwja-accountants.co.uk",
+      "title": "5 important reasons you need specialist tax advice for ...",
+      "url": "https://www.hwja-accountants.co.uk/resources/blog/tax-advice-for-landlords/"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "www.thomsoncooper.com",
+      "title": "Tax Planning for Landlords - Property Accountants",
+      "url": "https://www.thomsoncooper.com/sectors/landlord-property-accountants/"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.wtca.co.uk",
+      "title": "Tax saving ideas for landlords",
+      "url": "https://www.wtca.co.uk/blog/tax-saving-ideas-for-landlords/"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.simplybusiness.co.uk",
+      "title": "Tax on rental income – a complete guide to landlord tax",
+      "url": "https://www.simplybusiness.co.uk/knowledge/landlord-tax/tax-on-rental-income/"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "www.bsassociate.co.uk",
+      "title": "Property Tax Accountants in London: A Practical Guide to ...",
+      "url": "https://www.bsassociate.co.uk/blog/property-tax-accountants-in-london-a-practical-guide-to-rental-income-tax-and-compliance/"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.facebook.com",
+      "title": "UK Landlord Tax (@uklandlordtax)",
+      "url": "https://www.facebook.com/uklandlordtax/"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.hwja-accountants.co.uk",
+      "title": "Accountants for landlords | Cardiff & Bridgend",
+      "url": "https://www.hwja-accountants.co.uk/our-clients/accountants-for-landlords/"
+     }
+    ],
+    "paa": [
+     "How much is a landlord taxed?",
+     "Can a landlord be responsible for council tax?",
+     "How to avoid paying 40% tax on rental income?",
+     "How do I report rental income to HMRC?"
+    ],
+    "types": [
+     "ai_overview",
+     "organic",
+     "people_also_ask",
+     "related_searches"
+    ]
+   },
+   "small landlord tax advice": {
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/32c59940b49d256bac4d085634903e469cc6cf8f.fresh-2026-10-10.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "osome.com",
+      "title": "How To Reduce Tax on Rental Income: 8 Essential Tips",
+      "url": "https://osome.com/uk/guides/how-to-reduce-tax-on-rental-income/"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "www.nrla.org.uk",
+      "title": "Minimise your tax liability – 5 tips for landlords",
+      "url": "https://www.nrla.org.uk/news/minimise-your-tax-liability-5-tips-for-landlords"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 4,
+      "domain": "www.nrla.org.uk",
+      "title": "Landlord Tax Benefits & Deductions",
+      "url": "https://www.nrla.org.uk/resources/tax"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "r-m-t.co.uk",
+      "title": "Tax Saving Strategies For Landlords",
+      "url": "https://r-m-t.co.uk/blog/tax-saving-strategies-for-landlords/"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.litrg.org.uk",
+      "title": "Reporting property income to HMRC",
+      "url": "https://www.litrg.org.uk/savings-property/property-income/reporting-property-income-hmrc"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.samconveyancing.co.uk",
+      "title": "How to Avoid Paying Tax on Rental Income in 2025",
+      "url": "https://www.samconveyancing.co.uk/news/conveyancing/how-to-reduce-income-tax-on-rental-property"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "premiertaxsolutions.co.uk",
+      "title": "Maximise Your Landlord Tax Return with These Helpful Tips",
+      "url": "http://premiertaxsolutions.co.uk/articles/landlord-tax-return-tips/"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.cottonsgroup.com",
+      "title": "Accounting tips for landlords: Maximising your rental income",
+      "url": "https://www.cottonsgroup.com/resources/blog/accounting-tips-for-landlords/"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.bsassociate.co.uk",
+      "title": "Property Tax Accountants in London: A Practical Guide to ...",
+      "url": "https://www.bsassociate.co.uk/blog/property-tax-accountants-in-london-a-practical-guide-to-rental-income-tax-and-compliance/"
+     }
+    ],
+    "paa": [
+     "What is the property income allowance for HMRC?",
+     "What is a simple trick for avoiding capital gains tax?",
+     "What is the 2% rule for property?",
+     "How to pay no taxes on rental income in the UK?"
+    ],
+    "types": [
+     "ai_overview",
+     "organic",
+     "people_also_ask",
+     "related_searches"
+    ]
+   },
+   "tax advice for landlords": {
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/07afb040722af2da84cac8ea4c85822689da8f24.fresh-2026-10-10.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.litrg.org.uk",
+      "title": "Property income",
+      "url": "https://www.litrg.org.uk/savings-property/property-income"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "www.gov.uk",
+      "title": "Check if you need to tell HMRC about your rental income",
+      "url": "https://www.gov.uk/guidance/check-if-you-need-to-tell-hmrc-about-your-rental-income"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 4,
+      "domain": "www.gosimpletax.com",
+      "title": "How much tax does a landlord need to pay",
+      "url": "https://www.gosimpletax.com/blog/how-much-tax-does-a-landlord-need-to-pay/"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "www.cottonsgroup.com",
+      "title": "Accounting tips for landlords: Maximising your rental income",
+      "url": "https://www.cottonsgroup.com/resources/blog/accounting-tips-for-landlords/"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.belvoir.co.uk",
+      "title": "Tax Planning for Landlords",
+      "url": "https://www.belvoir.co.uk/guides/northwich/tax-planning-for-landlords/"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.nrla.org.uk",
+      "title": "Self Assessment Tax Returns For Landlords with Rental ...",
+      "url": "https://www.nrla.org.uk/resources/tax/self-assessment-tax-guide"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "www.nrla.org.uk",
+      "title": "Landlord Tax & Finance Courses",
+      "url": "https://www.nrla.org.uk/training-academy/tax-and-finance"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.benhams.com",
+      "title": "UK property tax return services for landlords",
+      "url": "https://www.benhams.com/services/tax-return/"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "premiertaxsolutions.co.uk",
+      "title": "Maximise Your Landlord Tax Return with These Helpful Tips",
+      "url": "http://premiertaxsolutions.co.uk/articles/landlord-tax-return-tips/"
+     }
+    ],
+    "paa": [
+     "How is rental income taxed in the UK?",
+     "What is the 2% rule for property?",
+     "Do I need to register for self-assessment for rental income?",
+     "What is the property income allowance for HMRC?"
+    ],
+    "types": [
+     "ai_overview",
+     "organic",
+     "people_also_ask",
+     "related_searches"
+    ]
+   },
+   "tax advice landlords": {
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/079cfc6a7367edce400491f0f7c3d70c8c3be33a.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.cottonsgroup.com",
+      "title": "Accounting tips for landlords: Maximising your rental income",
+      "url": "https://www.cottonsgroup.com/resources/blog/accounting-tips-for-landlords/"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 3,
+      "domain": "www.taxcafe.co.uk",
+      "title": "Landlord Tax Guide and Books from Taxcafe",
+      "url": "https://www.taxcafe.co.uk/resources/landlordtaxguide.html"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 4,
+      "domain": "www.alpha-accountancy.co.uk",
+      "title": "Property Accountants | Landlord Tax Services & Advice",
+      "url": "https://www.alpha-accountancy.co.uk/property-landlord-tax-services-uk/"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "www.wtca.co.uk",
+      "title": "Tax saving ideas for landlords",
+      "url": "https://www.wtca.co.uk/blog/tax-saving-ideas-for-landlords/"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.simplybusiness.co.uk",
+      "title": "Tax on rental income – a complete guide to landlord tax",
+      "url": "https://www.simplybusiness.co.uk/knowledge/landlord-tax/tax-on-rental-income/"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "www.andrewpasser.com",
+      "title": "Property Accountant London - Accounting Services for ...",
+      "url": "https://www.andrewpasser.com/property-tax-accountant-london"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "www.pearlaccountants.com",
+      "title": "The top 10 Tax saving tips for landlords",
+      "url": "https://www.pearlaccountants.com/blog/10-tax-saving-tips-for-landlords/"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "www.pearsonmay.co.uk",
+      "title": "Why landlords should have an accountant",
+      "url": "https://www.pearsonmay.co.uk/resources/blog/why-landlords-should-have-an-accountant/"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.cottonsgroup.com",
+      "title": "Tax Planning for Landlords",
+      "url": "https://www.cottonsgroup.com/resources/blog/tax-planning-for-landlords/"
+     }
+    ],
+    "paa": [
+     "How much tax do landlords pay in the UK?",
+     "Why are landlords selling up in 2026?",
+     "Do landlords need an accountant?",
+     "How to avoid paying 40% tax on rental income?"
+    ],
+    "types": [
+     "ai_overview",
+     "organic",
+     "people_also_ask",
+     "related_searches"
+    ]
+   },
+   "buy to let tax advisor": {
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/6efdbdcdb232b9b7047f780d667657d5a6d7fb9f.json.gz",
+    "ai_overview": false,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 1,
+      "domain": "stevenburtonandco.com",
+      "title": "Landlord and Property Owner Accountants",
+      "url": "https://stevenburtonandco.com/landlord-and-property-owner-accountants/"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 2,
+      "domain": "fhpaccounting.co.uk",
+      "title": "Landlord accountants explained: From buy-to-let setup ...",
+      "url": "https://fhpaccounting.co.uk/landlord-accountants-explained-from-buy-to-let-setup-to-scaling/"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 4,
+      "domain": "www.watsonbuckle.co.uk",
+      "title": "Tax for Landlords | Watson Buckle Accountants Bradford, ...",
+      "url": "https://www.watsonbuckle.co.uk/sectors/tax-for-landlords/"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 5,
+      "domain": "www.djh.co.uk",
+      "title": "Property Accountants & Business Advisers",
+      "url": "https://www.djh.co.uk/specialisms/property/"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 6,
+      "domain": "www.propertytaxpartners.co.uk",
+      "title": "How to Choose a Property Accountant: A UK Landlord's Guide",
+      "url": "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-to-choose-a-property-accountant"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 7,
+      "domain": "naailandco.com",
+      "title": "Landlord Accountant UK for Successful Investors",
+      "url": "https://naailandco.com/who-we-help/landlord-accountant/"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 11,
+      "domain": "www.facebook.com",
+      "title": "Can anyone recommend an affordable accountant to help ...",
+      "url": "https://www.facebook.com/groups/222818713883/posts/10162093433038884/"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 12,
+      "domain": "hwfisher.co.uk",
+      "title": "Property Accountant Services - VAT, SDLT, Tax Advice",
+      "url": "https://hwfisher.co.uk/specialisms/property/"
+     }
+    ],
+    "paa": [
+     "How much does a tax advisor charge?",
+     "What are the steps to become a tax advisor in the UK?",
+     "What is the new tax for landlords?",
+     "How to avoid paying 40% tax on rental income?"
+    ],
+    "types": [
+     "discussions_and_forums",
+     "images",
+     "local_pack",
+     "organic",
+     "people_also_ask",
+     "related_searches"
+    ]
+   },
+   "selling rental property tax deductions": {
+    "fetched_on": "2026-10-10",
+    "path": "docs/_engines/link_engine_store/serp/2026-10/2ab1d12b026cd6690fa2af62bdf6283b2114cfc4.fresh-2026-10-10.json.gz",
+    "ai_overview": true,
+    "top10": [
+     {
+      "rank": 1,
+      "rank_abs": 2,
+      "domain": "www.krestonreeves.com",
+      "title": "Exiting the UK private rental sector: What individual ...",
+      "url": "https://www.krestonreeves.com/news/exiting-the-uk-private-rental-sector-what-individual-landlords-need-to-know-about-tax/"
+     },
+     {
+      "rank": 2,
+      "rank_abs": 4,
+      "domain": "uklandlordtax.co.uk",
+      "title": "A Simple Guide to Property Rental Income Tax and Capital ...",
+      "url": "https://uklandlordtax.co.uk/a-simple-guide-to-property-rental-income-tax-and-property-capital-gains-tax/"
+     },
+     {
+      "rank": 3,
+      "rank_abs": 5,
+      "domain": "www.haybrook.com",
+      "title": "Understanding 'Buy-to-Let' tax implications",
+      "url": "https://www.haybrook.com/landlords/understanding-buy-to-let-tax-implications/"
+     },
+     {
+      "rank": 4,
+      "rank_abs": 6,
+      "domain": "merrantiaccounting.com",
+      "title": "What Tax Do I Owe When Selling a Buy-to-Let Property?",
+      "url": "https://merrantiaccounting.com/buy-to-let-property/"
+     },
+     {
+      "rank": 5,
+      "rank_abs": 7,
+      "domain": "www.gosimpletax.com",
+      "title": "21 expenses you can claim as a private residential landlord",
+      "url": "https://www.gosimpletax.com/blog/21-tax-expenses-you-can-claim-as-a-landlord/"
+     },
+     {
+      "rank": 6,
+      "rank_abs": 8,
+      "domain": "assets.publishing.service.gov.uk",
+      "title": "Property Rental Toolkit",
+      "url": "https://assets.publishing.service.gov.uk/media/5da72232ed915d4298f25481/Property.pdf"
+     },
+     {
+      "rank": 7,
+      "rank_abs": 9,
+      "domain": "www.axa.co.uk",
+      "title": "A Guide To Landlord Allowable Expenses",
+      "url": "https://www.axa.co.uk/landlord-insurance/landlord-allowable-expenses/"
+     },
+     {
+      "rank": 8,
+      "rank_abs": 10,
+      "domain": "guildfordaccounting.com",
+      "title": "Reducing Capital Gains Tax When Selling Property",
+      "url": "https://guildfordaccounting.com/blog/offset-against-capital-gains-tax-on-property-sale/"
+     },
+     {
+      "rank": 9,
+      "rank_abs": 11,
+      "domain": "www.facebook.com",
+      "title": "What taxes should I pay when selling my rental property?",
+      "url": "https://www.facebook.com/groups/1447111702109702/posts/2807001079454084/"
+     }
+    ],
+    "paa": [
+     "What is capital gains tax on property?",
+     "What is the new tax on landlords?",
+     "What deductions can you claim on a rental?",
+     "Is capital gains tax changing in April 2026?"
+    ],
+    "types": [
+     "ai_overview",
+     "organic",
+     "people_also_ask",
+     "related_searches"
+    ]
+   }
+  },
+  "paa_deduped_count": 24,
+  "paa": [
+   {
+    "question": "How to avoid paying 40% income tax on rental property?",
+    "serps": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "What is the 2% rule for renting?",
+    "serps": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "What is the new tax rule for landlords?",
+    "serps": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "What can landlords get tax relief on?",
+    "serps": [
+     "landlord tax advice"
+    ]
+   },
+   {
+    "question": "How much is a landlord taxed?",
+    "serps": [
+     "landlord tax advice uk"
+    ]
+   },
+   {
+    "question": "Can a landlord be responsible for council tax?",
+    "serps": [
+     "landlord tax advice uk"
+    ]
+   },
+   {
+    "question": "How to avoid paying 40% tax on rental income?",
+    "serps": [
+     "landlord tax advice uk",
+     "tax advice landlords",
+     "buy to let tax advisor"
+    ]
+   },
+   {
+    "question": "How do I report rental income to HMRC?",
+    "serps": [
+     "landlord tax advice uk"
+    ]
+   },
+   {
+    "question": "What is the property income allowance for HMRC?",
+    "serps": [
+     "small landlord tax advice",
+     "tax advice for landlords"
+    ]
+   },
+   {
+    "question": "What is a simple trick for avoiding capital gains tax?",
+    "serps": [
+     "small landlord tax advice"
+    ]
+   },
+   {
+    "question": "What is the 2% rule for property?",
+    "serps": [
+     "small landlord tax advice",
+     "tax advice for landlords"
+    ]
+   },
+   {
+    "question": "How to pay no taxes on rental income in the UK?",
+    "serps": [
+     "small landlord tax advice"
+    ]
+   },
+   {
+    "question": "How is rental income taxed in the UK?",
+    "serps": [
+     "tax advice for landlords"
+    ]
+   },
+   {
+    "question": "Do I need to register for self-assessment for rental income?",
+    "serps": [
+     "tax advice for landlords"
+    ]
+   },
+   {
+    "question": "How much tax do landlords pay in the UK?",
+    "serps": [
+     "tax advice landlords"
+    ]
+   },
+   {
+    "question": "Why are landlords selling up in 2026?",
+    "serps": [
+     "tax advice landlords"
+    ]
+   },
+   {
+    "question": "Do landlords need an accountant?",
+    "serps": [
+     "tax advice landlords"
+    ]
+   },
+   {
+    "question": "How much does a tax advisor charge?",
+    "serps": [
+     "buy to let tax advisor"
+    ]
+   },
+   {
+    "question": "What are the steps to become a tax advisor in the UK?",
+    "serps": [
+     "buy to let tax advisor"
+    ]
+   },
+   {
+    "question": "What is the new tax for landlords?",
+    "serps": [
+     "buy to let tax advisor"
+    ]
+   },
+   {
+    "question": "What is capital gains tax on property?",
+    "serps": [
+     "selling rental property tax deductions"
+    ]
+   },
+   {
+    "question": "What is the new tax on landlords?",
+    "serps": [
+     "selling rental property tax deductions"
+    ]
+   },
+   {
+    "question": "What deductions can you claim on a rental?",
+    "serps": [
+     "selling rental property tax deductions"
+    ]
+   },
+   {
+    "question": "Is capital gains tax changing in April 2026?",
+    "serps": [
+     "selling rental property tax deductions"
+    ]
+   }
+  ],
+  "paa_on_topic": [
+   "What is the new tax rule for landlords?",
+   "What is the new tax for landlords?",
+   "What can landlords get tax relief on?",
+   "What deductions can you claim on a rental?"
+  ],
+  "recommendation": "If the owner wants a section 24 head SERP, it needs a buy of roughly 6 to 8 SERPs at about $0.002 each (common.py estimate_cost); not done."
+ },
+ "sibling_pages": {
+  "method": "(a) fresh GSC query+page pulls (dimension page, filter query equals, 16 months, dataState all) for the top 30 Bing queries by impressions plus 16 head wordings, 42 distinct queries; (b) stage 03b_gsc_query_page_fresh.csv (90d) joined to the page's 631 Bing queries; (c) fresh page-dimension pull for every page under /blog/section-24-and-tax-relief/ (canonical rows only; fragment rows excluded, 37 fragment rows seen in 16m) ; (d) fresh URL Inspection API on 20 cluster URLs; (e) TF-IDF cosine and 5-gram shingle overlap of body text across all Property blog posts.",
+  "per_query_which_google_page": [
+   {
+    "query": "section 24",
+    "google_pages": [
+     {
+      "page": "/section-24",
+      "impr": 6,
+      "clicks": 0,
+      "pos": 31.8
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/section-24-repeal-future-reversed",
+      "impr": 3,
+      "clicks": 0,
+      "pos": 5.7
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "residential finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "residential property finance costs",
+    "google_pages": [
+     {
+      "page": "/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 1.0
+     },
+     {
+      "page": "/blog/property-finance",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 48.0
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 tax",
+    "google_pages": [
+     {
+      "page": "/section-24",
+      "impr": 3,
+      "clicks": 0,
+      "pos": 72.0
+     },
+     {
+      "page": "/blog/property-accountant-services/liverpool-property-accountant-tax-services-landlords",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 51.0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/section-24-repeal-future-reversed",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 3.0
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "relief for finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "finance cost relief",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "what is section 24",
+    "google_pages": [
+     {
+      "page": "/section-24",
+      "impr": 2,
+      "clicks": 0,
+      "pos": 40.5
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "residential finance costs hmrc",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "residential property finance costs tax return",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "relief for finance costs maximum allowable",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "relief for finance costs rental property",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "residential finance costs relief",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "finance cost relief on property",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "hmrc relief for finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "hmrc finance cost relief",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "relief for residential finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "financial cost relief",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "non-residential property finance costs",
+    "google_pages": [
+     {
+      "page": "/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 2.0
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "s24 cra",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "relief for property finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "residential property finance costs tax relief",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "finance cost relief hmrc",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "hmrc residential property finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 rules",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 uk",
+    "google_pages": [
+     {
+      "page": "/section-24",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 7.0
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "when working out the basic rate restrictor for finance cost the personal allowance is used in the calculation is it just the generic pa for the year or the individuals pa",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "tax limit on deduction of property finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "finance cost reducer deduction from taxable profit uk",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "finance costs relief gov uk",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "finance costs section 24",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "mortgage interest relief landlords",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "20% tax credit landlords",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 tax credit",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 mortgage interest relief",
+    "google_pages": [
+     {
+      "page": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+      "impr": 3,
+      "clicks": 0,
+      "pos": 10.3
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 20.0
+     },
+     {
+      "page": "/calculators/section-24-calculator",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 18.0
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "mortgage interest tax relief",
+    "google_pages": [
+     {
+      "page": "https://propertytaxpartners.co.uk/blog/mortgage-interest-tax-relief-changes-landlords",
+      "impr": 8,
+      "clicks": 0,
+      "pos": 67.9
+     },
+     {
+      "page": "/blog/mortgage-interest-tax-relief-changes-landlords",
+      "impr": 2,
+      "clicks": 0,
+      "pos": 66.0
+     },
+     {
+      "page": "/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 70.0
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "landlord finance costs",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 tax relief",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "what finance costs can landlords claim",
+    "google_pages": [],
+    "guide_shown": false
+   },
+   {
+    "query": "section 24 landlords",
+    "google_pages": [
+     {
+      "page": "/section-24",
+      "impr": 3,
+      "clicks": 0,
+      "pos": 75.0
+     },
+     {
+      "page": "https://propertytaxpartners.co.uk/blog/mortgage-interest-tax-relief-changes-landlords",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 15.0
+     },
+     {
+      "page": "/blog/mortgage-interest-tax-relief-changes-landlords",
+      "impr": 1,
+      "clicks": 0,
+      "pos": 19.0
+     }
+    ],
+    "guide_shown": false
+   },
+   {
+    "query": "finance costs rental property",
+    "google_pages": [],
+    "guide_shown": false
+   }
+  ],
+  "queries_tested": 42,
+  "queries_with_any_google_row": 9,
+  "queries_where_guide_shown": 0,
+  "stage_03b_join": [
+   {
+    "page": "/section-24",
+    "impr": 23,
+    "clicks": 0,
+    "pos": 48.1,
+    "queries": "landlords section 24 (4, 75.5); section 24 (6, 31.8); section 24 explained (2, 17.0)"
+   },
+   {
+    "page": "/blog/section-24-and-tax-relief/section-24-repeal-future-reversed",
+    "impr": 4,
+    "clicks": 0,
+    "pos": 5.0,
+    "queries": "section 24 (3, 5.7); section 24 tax (1, 3.0)"
+   },
+   {
+    "page": "/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide",
+    "impr": 2,
+    "clicks": 0,
+    "pos": 1.5,
+    "queries": "residential property finance costs (1, 1.0); non-residential property finance costs (1, 2.0)"
+   },
+   {
+    "page": "/blog/property-finance (hub)",
+    "impr": 1,
+    "pos": 48.0,
+    "queries": "residential property finance costs"
+   },
+   {
+    "page": "/blog/property-accountant-services/liverpool-property-accountant-tax-services-landlords",
+    "impr": 1,
+    "pos": 51.0,
+    "queries": "section 24 tax"
+   }
+  ],
+  "siblings": [
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-tax-credit-20-percent-basic-rate-relief",
+    "h1": "Section 24 Tax Credit: How Does the 20% Basic Rate Relief Actually Work?",
+    "angle": "20% credit mechanics",
+    "words": 2067,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 59,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 7.5,
+    "gsc_90d_impr": 10,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 19,
+    "bing_impr": "9",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-28T14:50:36Z",
+    "tfidf_cosine_vs_guide": 0.472,
+    "5gram_shingle_overlap_vs_guide": 0.028
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
+    "h1": "Section 24 Mortgage Interest Restriction: A Plain-English Guide for UK Landlords",
+    "angle": "what is s24 / interest restriction",
+    "words": 2653,
+    "dateModified": "2026-06-23",
+    "gsc_16m_impr": 2,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 33.5,
+    "gsc_90d_impr": 1,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 63,
+    "bing_impr": "326",
+    "bing_clicks": "4",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-29T00:02:52Z",
+    "tfidf_cosine_vs_guide": 0.469,
+    "5gram_shingle_overlap_vs_guide": 0.028
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/mortgage-interest-deductible-landlords-uk-2026",
+    "h1": "Is Mortgage Interest Deductible for UK Landlords in 2026?",
+    "angle": "is mortgage interest deductible",
+    "words": 2414,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 221,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 9.0,
+    "gsc_90d_impr": 37,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 11.1,
+    "bing_impr": "731",
+    "bing_clicks": "105",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-29T20:01:07Z",
+    "tfidf_cosine_vs_guide": 0.453,
+    "5gram_shingle_overlap_vs_guide": 0.018
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/tax-relief-mortgage-interest-rented-property-guide",
+    "h1": "Tax Relief on Mortgage Interest for Rented Property",
+    "angle": "tax relief on mortgage interest",
+    "words": 1565,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 186,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 41.8,
+    "gsc_90d_impr": 32,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 54.2,
+    "bing_impr": "519",
+    "bing_clicks": "62",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-29T21:56:58Z",
+    "tfidf_cosine_vs_guide": 0.39,
+    "5gram_shingle_overlap_vs_guide": 0.024
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24",
+    "h1": "How to Claim Mortgage Interest on UK Rental Property 2025/26 (Section 24 in Practice)",
+    "angle": "how to claim mortgage interest, s24 in practice",
+    "words": 1888,
+    "dateModified": "2026-07-26",
+    "gsc_16m_impr": 387,
+    "gsc_16m_clicks": 2,
+    "gsc_16m_pos": 30.3,
+    "gsc_90d_impr": 269,
+    "gsc_90d_clicks": 1,
+    "gsc_90d_pos": 38.7,
+    "bing_impr": "1914",
+    "bing_clicks": "348",
+    "google_index_state_2026-10-10": "Submitted and indexed",
+    "last_crawl": null,
+    "tfidf_cosine_vs_guide": 0.388,
+    "5gram_shingle_overlap_vs_guide": 0.009
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/how-to-calculate-section-24-tax-credit-step-by-step",
+    "h1": "How Do You Calculate the Section 24 Tax Credit? A Step-by-Step Method",
+    "angle": "worked calculation of the credit",
+    "words": 1930,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 62,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 14.4,
+    "gsc_90d_impr": 46,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 10.2,
+    "bing_impr": "0",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Submitted and indexed",
+    "last_crawl": "2026-07-11T09:28:57Z",
+    "tfidf_cosine_vs_guide": 0.457,
+    "5gram_shingle_overlap_vs_guide": 0.017
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide",
+    "h1": "Section 24 Tax Relief for Landlords: Complete Guide",
+    "angle": "s24 relief complete guide",
+    "words": 2233,
+    "dateModified": "2026-06-23",
+    "gsc_16m_impr": 5,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 59.8,
+    "gsc_90d_impr": 5,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 59.8,
+    "bing_impr": "10",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-29T19:14:17Z",
+    "tfidf_cosine_vs_guide": 0.414,
+    "5gram_shingle_overlap_vs_guide": 0.022
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/mortgage-arrangement-fees-deductible-landlord",
+    "h1": "Are Mortgage Arrangement Fees Tax Deductible for Landlords?",
+    "angle": "arrangement fees deductible",
+    "words": 2105,
+    "dateModified": "2026-08-21",
+    "gsc_16m_impr": 8804,
+    "gsc_16m_clicks": 330,
+    "gsc_16m_pos": 4.7,
+    "gsc_90d_impr": 8034,
+    "gsc_90d_clicks": 308,
+    "gsc_90d_pos": 4.6,
+    "bing_impr": "388",
+    "bing_clicks": "95",
+    "google_index_state_2026-10-10": "Submitted and indexed",
+    "last_crawl": null,
+    "tfidf_cosine_vs_guide": 0.385,
+    "5gram_shingle_overlap_vs_guide": 0.013
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-self-assessment-tax-return",
+    "h1": "How Does Section 24 Affect Your Self Assessment Tax Return?",
+    "angle": "SA105 completion",
+    "words": 2403,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 84,
+    "gsc_16m_clicks": 1,
+    "gsc_16m_pos": 5.0,
+    "gsc_90d_impr": 70,
+    "gsc_90d_clicks": 1,
+    "gsc_90d_pos": 4.1,
+    "bing_impr": "470",
+    "bing_clicks": "54",
+    "google_index_state_2026-10-10": "Submitted and indexed",
+    "last_crawl": "2026-09-11T16:11:15Z",
+    "tfidf_cosine_vs_guide": 0.352,
+    "5gram_shingle_overlap_vs_guide": 0.017
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-interest-only-mortgage-tax-planning",
+    "h1": "Section 24 and Interest-Only BTL Mortgages: What It Costs and How to Plan",
+    "angle": "interest-only mortgages",
+    "words": 2212,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 15,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 10.9,
+    "gsc_90d_impr": 6,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 3.2,
+    "bing_impr": "0",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-28T16:40:46Z",
+    "tfidf_cosine_vs_guide": 0.36,
+    "5gram_shingle_overlap_vs_guide": 0.018
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-joint-property-ownership-tax-split",
+    "h1": "Section 24 and Joint Property Ownership: How Is Tax Split?",
+    "angle": "joint ownership split",
+    "words": 2765,
+    "dateModified": "2026-08-21",
+    "gsc_16m_impr": 14,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 6.6,
+    "gsc_90d_impr": 5,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 5,
+    "bing_impr": "0",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-15T18:58:41Z",
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-basic-rate-taxpayers",
+    "h1": "Section 24 and Basic Rate Taxpayers: Are You Affected?",
+    "angle": "basic-rate taxpayers",
+    "words": 2680,
+    "dateModified": "2026-06-23",
+    "gsc_16m_impr": 38,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 9.3,
+    "gsc_90d_impr": 26,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 11.6,
+    "bing_impr": "0",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-07-19T08:57:31Z",
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-remortgaging-btl-property-tax-implications",
+    "h1": "How Section 24 Applies When You Remortgage a BTL Property",
+    "angle": "remortgage fees",
+    "words": 2263,
+    "dateModified": "2026-06-23",
+    "gsc_16m_impr": 23,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 5.5,
+    "gsc_90d_impr": 0,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": null,
+    "bing_impr": "12",
+    "bing_clicks": "2",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-07-03T11:47:40Z",
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-multiple-properties-cumulative-impact",
+    "h1": "How Does Section 24 Affect Landlords with Multiple Rental Properties?",
+    "angle": "multiple properties",
+    "words": 1984,
+    "dateModified": "2026-08-21",
+    "gsc_16m_impr": 8,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 5.6,
+    "gsc_90d_impr": 4,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 5,
+    "bing_impr": "0",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Crawled - currently not indexed",
+    "last_crawl": "2026-05-15T18:57:13Z",
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   },
+   {
+    "route": "/blog/landlord-tax-essentials/btl-mortgage",
+    "h1": "'BTL Mortgage Tax Relief for UK Landlords: How It Actually Works'",
+    "angle": "BTL mortgage tax relief",
+    "words": 2405,
+    "dateModified": "2026-06-23",
+    "gsc_16m_impr": 8,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": 41.6,
+    "gsc_90d_impr": 1,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": 40,
+    "bing_impr": "209",
+    "bing_clicks": "24",
+    "google_index_state_2026-10-10": "not inspected",
+    "last_crawl": null,
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/2027-property-tax-rates-section-24-relief-uk-landlords",
+    "h1": "April 2027 Property Tax Rates and Section 24: The Enacted Position for UK Landlords",
+    "angle": "April 2027 rates and reducer",
+    "words": 2770,
+    "dateModified": "2026-07-26",
+    "gsc_16m_impr": 0,
+    "gsc_16m_clicks": 0,
+    "gsc_16m_pos": null,
+    "gsc_90d_impr": 0,
+    "gsc_90d_clicks": 0,
+    "gsc_90d_pos": null,
+    "bing_impr": "0",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "not inspected",
+    "last_crawl": null,
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/section-24-repeal-future-reversed",
+    "h1": "Will Section 24 Be Reversed? The Realistic 2026 Outlook",
+    "angle": "repeal outlook",
+    "words": 1729,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 975,
+    "gsc_16m_clicks": 43,
+    "gsc_16m_pos": 4.7,
+    "gsc_90d_impr": 954,
+    "gsc_90d_clicks": 41,
+    "gsc_90d_pos": 4.7,
+    "bing_impr": "0",
+    "bing_clicks": "0",
+    "google_index_state_2026-10-10": "Submitted and indexed",
+    "last_crawl": null,
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   },
+   {
+    "route": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "h1": "Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses",
+    "angle": "all deductions list (sister guide)",
+    "words": 4898,
+    "dateModified": "2026-10-09",
+    "gsc_16m_impr": 6094,
+    "gsc_16m_clicks": 77,
+    "gsc_16m_pos": 7.7,
+    "gsc_90d_impr": 4055,
+    "gsc_90d_clicks": 72,
+    "gsc_90d_pos": 7.4,
+    "bing_impr": "1240",
+    "bing_clicks": "190",
+    "google_index_state_2026-10-10": "Submitted and indexed",
+    "last_crawl": null,
+    "tfidf_cosine_vs_guide": null,
+    "5gram_shingle_overlap_vs_guide": null
+   }
+  ],
+  "pillar": {
+   "route": "/section-24",
+   "gsc_16m": {
+    "clicks": 3,
+    "impressions": 169,
+    "position": 15.8698224852071
+   },
+   "gsc_90d": {
+    "clicks": 3,
+    "impressions": 169,
+    "position": 15.8698224852071
+   },
+   "google_index_state": "Submitted and indexed",
+   "last_crawl": "2026-08-05T15:48:52Z",
+   "title": "Section 24 Explained: Mortgage Interest Relief for Landlords",
+   "source": "Property/web/src/app/section-24/page.tsx"
+  },
+  "cluster_index_state": {
+   "inspected_today": 16,
+   "crawled_currently_not_indexed": 11,
+   "submitted_and_indexed": 5,
+   "unknown_to_google": 2,
+   "excluded": "mortgage-interest-tax-relief-changes-landlords is a 301 to section-24-mortgage-interest-restriction-uk-landlords (middleware.ts line 456), not counted",
+   "cni_urls": [
+    "/blog/section-24-and-tax-relief/finance-costs-section-24-complete-guide",
+    "/blog/section-24-and-tax-relief/section-24-tax-credit-20-percent-basic-rate-relief",
+    "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
+    "/blog/section-24-and-tax-relief/mortgage-interest-deductible-landlords-uk-2026",
+    "/blog/section-24-and-tax-relief/tax-relief-mortgage-interest-rented-property-guide",
+    "/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide",
+    "/blog/section-24-and-tax-relief/section-24-interest-only-mortgage-tax-planning",
+    "/blog/section-24-and-tax-relief/section-24-joint-property-ownership-tax-split",
+    "/blog/section-24-and-tax-relief/section-24-basic-rate-taxpayers",
+    "/blog/section-24-and-tax-relief/section-24-remortgaging-btl-property-tax-implications",
+    "/blog/section-24-and-tax-relief/section-24-multiple-properties-cumulative-impact"
+   ],
+   "indexed_urls": [
+    "/blog/section-24-and-tax-relief/how-to-calculate-section-24-tax-credit-step-by-step",
+    "/blog/section-24-and-tax-relief/section-24-self-assessment-tax-return",
+    "/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026",
+    "/section-24",
+    "/blog/property-types-and-specialist-tax/section-24-commercial-property-complete-guide"
+   ]
+  },
+  "duplicate_verdict": {
+   "formal_duplicate": "No evidence. Coverage state is \"Crawled - currently not indexed\", not \"Duplicate, Google chose different canonical\", and googleCanonical is empty, so Google has not named another URL as the canonical.",
+   "practical_verdict": "Probable cluster-level redundancy / low-value filter, not a copy. Body text is not duplicated (max 5-gram overlap 2.8%, TF-IDF cosine 0.47), but the guide is a hub that restates, in H2 form, topics that seven named sibling pages own: 20% credit (section-24-tax-credit-20-percent-basic-rate-relief), what is s24 (section-24-mortgage-interest-restriction-uk-landlords), arrangement fees (mortgage-arrangement-fees-deductible-landlord), SA105 (section-24-self-assessment-tax-return), worked example and cap (how-to-calculate-section-24-tax-credit-step-by-step), commercial (section-24-commercial-property-complete-guide), April 2027 reducer (2027-property-tax-rates-section-24-relief-uk-landlords). 11 of 16 cluster URLs inspected today are crawled-not-indexed, so the pattern is the cluster, not this URL alone.",
+   "stale_signal": "Most of the CNI cluster was last crawled 2026-05-15 to 2026-07-19; the 2026-10-09 rewrite has not been recrawled. The verdict is on the May version.",
+   "how_it_differs": "Only this page frames the topic in HMRC's own term, \"residential finance costs\" (SA105 box 44/45 wording, PIM2054), and answers the \"which costs count\" question as one list: interest, arrangement and broker fees, overdraft, refinancing, loan to buy furniture, alternative finance, plus exclusions. Bing proves that angle: 37 top-3 queries, 117 clicks, mostly residential finance costs / relief for finance costs / HMRC wording. No sibling targets that phrase in title or H1.",
+   "how_it_could_differ": "Own the finance-cost definition (what is and is not a residential finance cost, with box 44/45 and the cap) and hand the credit mechanics, arrangement-fee detail, worked example and 2027 reducer to the sibling pages by link instead of restating them. Link in body to those siblings and to /section-24 (it links to none of them today), and get it linked from the pillar and the indexed siblings. Add the unanswered Bing queries (27) as FAQ or H3."
+  }
+ },
+ "existing_links": {
+  "into_total": 24,
+  "into_by_region": {
+   "body": 22,
+   "listing": 1,
+   "related_cards": 1
+  },
+  "into_body_links": 22,
+  "into_body_distinct_source_pages": 20,
+  "into_body_sources": [
+   {
+    "source": "/blog/incorporation-and-company-structures/incorporation-case-study-10-property-portfolio-200k-mortgage",
+    "anchor": "Section 24"
+   },
+   {
+    "source": "/blog/incorporation-and-company-structures/section-24-impact-on-company-formations-data",
+    "anchor": "finance costs guide"
+   },
+   {
+    "source": "/blog/incorporation-and-company-structures/transfer-properties-to-company-phased-guide",
+    "anchor": "finance costs and Section 24"
+   },
+   {
+    "source": "/blog/landlord-tax-essentials/accidental-landlord-taxes-a-complete-guide",
+    "anchor": "finance costs Section 24 complete guide"
+   },
+   {
+    "source": "/blog/landlord-tax-essentials/btl-mortgage",
+    "anchor": "finance costs and Section 24"
+   },
+   {
+    "source": "/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide",
+    "anchor": "finance costs under Section 24"
+   },
+   {
+    "source": "/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge",
+    "anchor": "Section 24 finance-cost restriction"
+   },
+   {
+    "source": "/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge",
+    "anchor": "Section 24 finance-cost restriction"
+   },
+   {
+    "source": "/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026",
+    "anchor": "finance costs under Section 24"
+   },
+   {
+    "source": "/blog/portfolio-management/property-portfolio-accounting-tracking-profitability",
+    "anchor": "finance cost restriction in full"
+   },
+   {
+    "source": "/blog/property-finance/bridging-finance-for-buy-to-let",
+    "anchor": "finance costs and Section 24"
+   },
+   {
+    "source": "/blog/property-finance/bridging-finance-for-chain-breaks",
+    "anchor": "Section 24 finance costs guide"
+   },
+   {
+    "source": "/blog/property-finance/bridging-loan-lenders",
+    "anchor": "Section 24 finance-cost guide"
+   },
+   {
+    "source": "/blog/property-finance/bridging-loan-rates",
+    "anchor": "finance costs under Section 24"
+   },
+   {
+    "source": "/blog/property-finance/bridging-loans-guide",
+    "anchor": "finance costs and Section 24 guide"
+   },
+   {
+    "source": "/blog/property-finance/is-bridging-loan-interest-tax-deductible",
+    "anchor": "finance costs under Section 24 guide"
+   },
+   {
+    "source": "/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense",
+    "anchor": "Finance Costs and Section 24: The Complete Guide"
+   },
+   {
+    "source": "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
+    "anchor": "finance costs under Section 24 guide"
+   },
+   {
+    "source": "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
+    "anchor": "Finance Costs Under Section 24: What Counts"
+   },
+   {
+    "source": "/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning",
+    "anchor": "complete guide to finance costs under Section 24"
+   },
+   {
+    "source": "/blog/section-24-and-tax-relief/section-24-remortgaging-btl-property-tax-implications",
+    "anchor": "complete guide to Section 24 finance costs"
+   },
+   {
+    "source": "/blog/section-24-and-tax-relief/section-24-tax-credit-20-percent-basic-rate-relief",
+    "anchor": "complete guide to finance costs under Section 24"
+   }
+  ],
+  "into_non_body": [
+   {
+    "region": "listing",
+    "source": "/blog/section-24-and-tax-relief",
+    "anchor": "Finance Costs Under Section 24: What Counts and What You Can ClaimSection 24 does not stop residential landlords claiming finance costs. It changes how the relief is given: instead of deducting mortgage interest and other dwelling-related loan costs from rental profit, you get a basic-rate tax reducer worth 20% of those costs for 2026/27 (rising to 22% from 2027/28). This guide sets out exactly which costs qualify as residential finance costs, which fall outside the restriction, how the three-part cap works, where the figures go on the SA105 self-assessment pages, and a full worked example.9 min read10 April 2026"
+   },
+   {
+    "region": "related_cards",
+    "source": "/services/property-accountant",
+    "anchor": "Finance costs and the interest restriction"
+   }
+  ],
+  "edges_snapshot": "stages/08_edges_html.csv built 2026-10-10 from Property/web/.next (pre-dates any later content edits)",
+  "out_body_links": [
+   {
+    "target": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk",
+    "anchor": "holding property through a limited company"
+   },
+   {
+    "target": "/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline",
+    "anchor": "Making Tax Digital for Income Tax"
+   },
+   {
+    "target": "/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk",
+    "anchor": "2027 property income tax rates"
+   },
+   {
+    "target": "/blog/section-24-and-tax-relief/2027-property-tax-rates-section-24-relief-uk-landlords",
+    "anchor": "Section 24 relief for landlords"
+   },
+   {
+    "target": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
+    "anchor": "list of landlord tax deductions"
+   },
+   {
+    "target": "/services/property-tax-advice",
+    "anchor": "take specialist advice"
+   }
+  ],
+  "out_to_property_tax_advice": true,
+  "out_to_property_tax_advice_where": "body, source line 220, anchor \"take specialist advice\" (in the closing paragraph); also in nav and footer",
+  "out_to_section_24_pillar_in_body": false,
+  "out_to_section_24_pillar_other": "nav (\"Section 24 explained\") and footer only; no contextual body link to /section-24",
+  "out_to_other_section_24_siblings_in_body": [
+   "/blog/section-24-and-tax-relief/2027-property-tax-rates-section-24-relief-uk-landlords",
+   "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list"
+  ],
+  "not_linked_from_body": [
+   "section-24-tax-credit-20-percent-basic-rate-relief",
+   "mortgage-arrangement-fees-deductible-landlord",
+   "section-24-mortgage-interest-restriction-uk-landlords",
+   "how-to-calculate-section-24-tax-credit-step-by-step",
+   "section-24-self-assessment-tax-return",
+   "claim-mortgage-interest-rental-property-uk-section-24",
+   "/calculators/section-24-calculator",
+   "/section-24"
+  ],
+  "link_engine_assignment": "judgments/assign_E_reader1.jsonl line 132: primary_dest /services/landlord-accountant (medium, \"which finance costs to claim; landlord accountant\"); GAP_LIST row 22 and 12_gaps.csv: missing_primary, linked only from footer and nav not body. The guide currently links /services/property-tax-advice (LE-16 destination for Section 24 planning), not /services/landlord-accountant.",
+  "ruling": "LE-16 (scripts/link_engine/sites/property_rulings.md line 26): Section 24 planning goes to /services/property-tax-advice; /section-24 pillar is a link source not a money destination."
+ },
+ "coverage_baseline": {
+  "command": "python scripts/track2_query_coverage.py --slug finance-costs-section-24-complete-guide --json --data <pull.json>",
+  "default_run": "not run: needs Supabase (optimisation_engine.track2.pull_page_data); no SUPABASE env in this session, and the previous pack recorded it returns coverage 0.0 on a data failure.",
+  "pull_json_built_from": "all 631 Bing queries for the page via protect_register.fetch_bing (cache) + bing_by_query; 9 pasted/over-long junk strings dropped; GSC contributes none (zero named queries in 16 months). 622 targets, 1696 impressions.",
+  "coverage_score": 0.8921,
+  "high_demand_covered_pct": 1.0,
+  "targets_total": 622,
+  "covered": 444,
+  "partial": 125,
+  "missing": 53,
+  "gated": true,
+  "passed": true,
+  "missing_queries": [
+   {
+    "query": "s24 cra",
+    "source": "bing",
+    "impr": 6,
+    "pos": 9.0
+   },
+   {
+    "query": "pro44 residential finance costs",
+    "source": "bing",
+    "impr": 3,
+    "pos": 5.0
+   },
+   {
+    "query": "finance cost relief property let out december 2025 uk",
+    "source": "bing",
+    "impr": 3,
+    "pos": 4.0
+   },
+   {
+    "query": "non residental finance relief on 9382 profit 2526 calculator",
+    "source": "bing",
+    "impr": 2,
+    "pos": 9.0
+   },
+   {
+    "query": "restricted residential finance costs 2025-26",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "what is minus relief for finance costs 6 304 00 reduced to maximum allowable",
+    "source": "bing",
+    "impr": 2,
+    "pos": 2.0
+   },
+   {
+    "query": "section 24 f1",
+    "source": "bing",
+    "impr": 2,
+    "pos": 9.0
+   },
+   {
+    "query": "gov uk finance costs on rental 25 26",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "section 24 of the housing act 1985",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "uk property income loan interest restriction finance costs 2025",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "hmrc pim2052 finance costs overview",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "s24 finance costs what does this mean",
+    "source": "bing",
+    "impr": 2,
+    "pos": 1.0
+   },
+   {
+    "query": "how do you calculate otal non-deductible finance charges in uk tax return 25-26",
+    "source": "bing",
+    "impr": 2,
+    "pos": 3.0
+   },
+   {
+    "query": "when submitting my q1 mtd return what is allowable residential property finance costs in box 44",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "help about uk property 43 - residential property finance costs is this a mortgage payment",
+    "source": "bing",
+    "impr": 2,
+    "pos": 3.0
+   },
+   {
+    "query": "finance relief cost sa302",
+    "source": "bing",
+    "impr": 2,
+    "pos": 5.0
+   },
+   {
+    "query": "financial cost releif mortgage gov",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "sa100 foreign rental income are finance costs tax deductible",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "if i remove residential finance costs brought forward and claim 1k can i re introduce it in the future",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "26 - non-residential property finance costs",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "section 24 5 c i",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "what constitutes residenital propertry finance costs",
+    "source": "bing",
+    "impr": 2,
+    "pos": 2.0
+   },
+   {
+    "query": "s24 finance costs hmrc 2021",
+    "source": "bing",
+    "impr": 2,
+    "pos": 3.0
+   },
+   {
+    "query": "what figure do i use on sa302 minus relief fo rfinance costs",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "minus relief for finance costs 1 796 00 reduced to maximum allowable 2025-26",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "sa302 relif of finance cost",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "relief for non-deductible property finance charges uk 2025 uk",
+    "source": "bing",
+    "impr": 2,
+    "pos": 4.0
+   },
+   {
+    "query": "eestriction on a eemortgage",
+    "source": "bing",
+    "impr": 1,
+    "pos": 2.0
+   },
+   {
+    "query": "restricted finance costs 2025 26",
+    "source": "bing",
+    "impr": 1,
+    "pos": 6.0
+   },
+   {
+    "query": "minus relief for finance costs 27 402 00 reduced to maximum allowable",
+    "source": "bing",
+    "impr": 1,
+    "pos": 9.0
+   },
+   {
+    "query": "uk tax credit under the finance act 2006",
+    "source": "bing",
+    "impr": 1,
+    "pos": 9.0
+   },
+   {
+    "query": "section 24 8 cra 2017",
+    "source": "bing",
+    "impr": 1,
+    "pos": 10.0
+   },
+   {
+    "query": "for uk financial year 25-26 can one claim reflief for finance costs",
+    "source": "bing",
+    "impr": 1,
+    "pos": 3.0
+   },
+   {
+    "query": "what is se tio 24",
+    "source": "bing",
+    "impr": 1,
+    "pos": 6.0
+   },
+   {
+    "query": "what does minus relief for finance costs 364 reduced to maximum allowable mean",
+    "source": "bing",
+    "impr": 1,
+    "pos": 3.0
+   },
+   {
+    "query": "section 5 24",
+    "source": "bing",
+    "impr": 1,
+    "pos": 6.0
+   },
+   {
+    "query": "residential finance costs pr044",
+    "source": "bing",
+    "impr": 1,
+    "pos": 3.0
+   },
+   {
+    "query": "then filetype tscn",
+    "source": "bing",
+    "impr": 1,
+    "pos": 5.0
+   },
+   {
+    "query": "works on filetype tscn",
+    "source": "bing",
+    "impr": 1,
+    "pos": 4.0
+   },
+   {
+    "query": "what isresidential financial costs",
+    "source": "bing",
+    "impr": 1,
+    "pos": 4.0
+   },
+   {
+    "query": "does the hmrc sa200 have residential finance tax relief",
+    "source": "bing",
+    "impr": 1,
+    "pos": 4.0
+   },
+   {
+    "query": "does the hmrc sa200 have a field residential finance tax relief program",
+    "source": "bing",
+    "impr": 1,
+    "pos": 3.0
+   },
+   {
+    "query": "perfumería plaza españa",
+    "source": "bing",
+    "impr": 1,
+    "pos": 4.0
+   },
+   {
+    "query": "hmrc property finance costs tax reduction 2025 2026 20",
+    "source": "bing",
+    "impr": 1,
+    "pos": 3.0
+   },
+   {
+    "query": "do i get financial relief costs on my second property if i don t have any borrowings 2025 to 2026",
+    "source": "bing",
+    "impr": 1,
+    "pos": 3.0
+   },
+   {
+    "query": "gov uk residential property finance costs tax reduction 2025 2026",
+    "source": "bing",
+    "impr": 1,
+    "pos": 5.0
+   },
+   {
+    "query": "hmrc property income finance costs basic rate tax reduction 2024 2025 uk property notes",
+    "source": "bing",
+    "impr": 1,
+    "pos": 4.0
+   },
+   {
+    "query": "hmrc discretionary trust residential property finance costs basic rate tax reduction 2025 26",
+    "source": "bing",
+    "impr": 1,
+    "pos": 2.0
+   },
+   {
+    "query": "can you adjust for the fact that there are also residential property finance costs of 1 667",
+    "source": "bing",
+    "impr": 1,
+    "pos": 2.0
+   },
+   {
+    "query": "hmrc tax implication on residential finance costs for tax year 2015-2016",
+    "source": "bing",
+    "impr": 1,
+    "pos": 8.0
+   },
+   {
+    "query": "nangillihan gmail com or outlook com or yahoo com or hotmail com or icloud com or proton me",
+    "source": "bing",
+    "impr": 1,
+    "pos": 1.0
+   },
+   {
+    "query": "hmrc property income manual finance costs residential landlords tax reduction 2025 2026",
+    "source": "bing",
+    "impr": 1,
+    "pos": 5.0
+   },
+   {
+    "query": "11686016200 buy -site ebay ca -site ebay com -site mercadolibre com mx -site nriparts com -site radwell ca -site radwell com",
+    "source": "bing",
+    "impr": 1,
+    "pos": 1.0
+   }
+  ],
+  "partial_queries_top30": [
+   {
+    "query": "financial cost relief",
+    "source": "bing",
+    "impr": 6,
+    "pos": 3.67
+   },
+   {
+    "query": "finance costs relief gov uk",
+    "source": "bing",
+    "impr": 4,
+    "pos": 3.5
+   },
+   {
+    "query": "section 24 finance request",
+    "source": "bing",
+    "impr": 3,
+    "pos": 2.0
+   },
+   {
+    "query": "refund finace costs tax relief",
+    "source": "bing",
+    "impr": 3,
+    "pos": 3.0
+   },
+   {
+    "query": "uk residental property financial costs",
+    "source": "bing",
+    "impr": 3,
+    "pos": 4.0
+   },
+   {
+    "query": "uk hmrc pre-letting expenditure finance cost relief 20",
+    "source": "bing",
+    "impr": 3,
+    "pos": 4.0
+   },
+   {
+    "query": "what is a financing cost",
+    "source": "bing",
+    "impr": 3,
+    "pos": 21.33
+   },
+   {
+    "query": "how to identify section 24 of taxation taxable income and what are the basic principles of it",
+    "source": "bing",
+    "impr": 3,
+    "pos": 2.0
+   },
+   {
+    "query": "property llp with residential finance cost how does finance cost reduction come out on personal tax or on partnership return",
+    "source": "bing",
+    "impr": 3,
+    "pos": 3.0
+   },
+   {
+    "query": "financing restriction for residential let property the ciot s concerns hmrc clarification thanks",
+    "source": "bing",
+    "impr": 2,
+    "pos": 1.0
+   },
+   {
+    "query": "residencial finance cost",
+    "source": "bing",
+    "impr": 2,
+    "pos": 2.0
+   },
+   {
+    "query": "finance cost restriction taper",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "section 24 cra",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "finance cost relief gov uk",
+    "source": "bing",
+    "impr": 2,
+    "pos": 2.0
+   },
+   {
+    "query": "carrying forward unsued finance costs for poperty income in sa",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "are overdraft interst fees taax deductible for rental income",
+    "source": "bing",
+    "impr": 2,
+    "pos": 9.0
+   },
+   {
+    "query": "restricting fianace costs",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "financ ecost is lower of cost adjustable income and property profit",
+    "source": "bing",
+    "impr": 2,
+    "pos": 1.0
+   },
+   {
+    "query": "section 24 mitigation across the four properties",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "finasnce 24",
+    "source": "bing",
+    "impr": 2,
+    "pos": 8.0
+   },
+   {
+    "query": "hmrc fcr mortgage reduction",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "what are unused property finance costs brough forward sa tax return",
+    "source": "bing",
+    "impr": 2,
+    "pos": 10.0
+   },
+   {
+    "query": "section 24 20 gov uk",
+    "source": "bing",
+    "impr": 2,
+    "pos": 6.0
+   },
+   {
+    "query": "hoe to calculate income tax with residential finance proeprty costs",
+    "source": "bing",
+    "impr": 2,
+    "pos": 4.0
+   },
+   {
+    "query": "what is the maximum annual fianance tax relief for property uk",
+    "source": "bing",
+    "impr": 2,
+    "pos": 7.0
+   },
+   {
+    "query": "residential finnace relief",
+    "source": "bing",
+    "impr": 2,
+    "pos": 2.0
+   },
+   {
+    "query": "why is fiance cost a relief",
+    "source": "bing",
+    "impr": 2,
+    "pos": 3.0
+   },
+   {
+    "query": "basic rate tax reduction for finance costs- what does this mean",
+    "source": "bing",
+    "impr": 2,
+    "pos": 3.0
+   },
+   {
+    "query": "legislation about basic tax rate reducer for loan interest",
+    "source": "bing",
+    "impr": 2,
+    "pos": 4.0
+   },
+   {
+    "query": "section 24 application uk",
+    "source": "bing",
+    "impr": 2,
+    "pos": 7.0
+   }
+  ],
+  "caveat": "Measures token overlap with title/H1/headings/FAQ/body only, not rank. Source file read: Property/web/content/blog/finance-costs-section-24-complete-guide.md as at 2026-10-10 (dateModified 2026-10-09)."
+ }
+}
