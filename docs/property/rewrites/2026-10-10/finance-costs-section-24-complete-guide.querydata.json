@@ -3621,5 +3621,89 @@
    }
   ],
   "caveat": "Measures token overlap with title/H1/headings/FAQ/body only, not rank. Source file read: Property/web/content/blog/finance-costs-section-24-complete-guide.md as at 2026-10-10 (dateModified 2026-10-09)."
+ },
+ "facts_index": {
+  "file": "docs/property/house_positions.md",
+  "size_note": "4335 lines; grepped only, never read whole; line numbers as of 2026-10-10",
+  "topics": [
+   {
+    "topic": "s24 restriction / ITTOIA 2005 s.272A",
+    "status": "PARTIAL",
+    "where_and_note": "§4 heading line 185 (mechanics 187-199, do-not-write 201). The statute citation is NOT locked: 0 hits for s.272A, s.274A, s.274B, s.272B. Only ss.274AA/274C and ITA 2007 s.399B appear, in the FA 2026 22% note (line 197) and §7 (line 253). The guide cites s.272A, s.274A to s.274C and s.272B."
+   },
+   {
+    "topic": "20% basic-rate reducer and three-way cap",
+    "status": "FOUND",
+    "where_and_note": "§4 lines 189-193: credit = lower of 20% of finance costs (191), 20% of rental profit before finance costs (192), 20% of total income above the personal allowance (193). House says \"total income above the personal allowance\"; the statute and guide say adjusted total income, so the writer should use the statutory term and not contradict."
+   },
+   {
+    "topic": "carry-forward of unrelieved finance costs",
+    "status": "FOUND",
+    "where_and_note": "§4 line 194 (un-credited portion carries forward indefinitely). Statutory basis (s.272B / s.399B) not cited."
+   },
+   {
+    "topic": "which finance costs count (interest, arrangement fees, broker fees, loan to buy furniture, overdraft, alternative finance)",
+    "status": "GAP",
+    "where_and_note": "Only line 188 (\"mortgage interest and other allowable finance costs\"). 0 hits for arrangement fee, broker fee (the only 'broker' is estate agency, line 4278), furniture, overdraft, alternative finance, PIM2054, 'residential finance costs', 'dwelling-related'. Adjacent only: line 2272 (§26 regulatory costs are not finance costs), line 4263 (CGT s.38(3) interest never reduces a gain, a different tax), line 1103 (rent increases vs S24). The whole 'what counts' content of this guide has no house lock; must be sourced from PIM2054 and legislation.gov.uk."
+   },
+   {
+    "topic": "what is excluded: capital repayment",
+    "status": "GAP",
+    "where_and_note": "0 hits for capital repayment / capital element."
+   },
+   {
+    "topic": "excluded: commercial property (non-residential)",
+    "status": "GAP",
+    "where_and_note": "§4 does not mention commercial or non-residential property (only 'residential rental profit', line 192). Sister post section-24-commercial-property-complete-guide exists. Nearest: FIC/company point at line 1221."
+   },
+   {
+    "topic": "excluded: FHL history and abolition from April 2025",
+    "status": "FOUND",
+    "where_and_note": "§4 line 196 (S24 did not apply while FHL was a separate regime; applies from 6 April 2025). §6 heading line 232, abolition 6 April 2025 at 234-236, transitional losses 239, 50/50 joint default and Form 17 at 241, anti-forestalling 240. Capital allowances pools FHL: lines 2107, 2111."
+   },
+   {
+    "topic": "excluded: companies",
+    "status": "FOUND",
+    "where_and_note": "§4 line 195 (does not apply to limited companies, companies deduct interest in full pre-CT) and do-not-write line 201; line 1221 (FIC, S24 not at corporate level); trusts/partnerships line 195; IIP holder level line 1943. Loan-relationship rules (CTA 2009 Part 5) not locked."
+   },
+   {
+    "topic": "joint ownership split of finance costs",
+    "status": "FOUND",
+    "where_and_note": "§24.5 heading line 1631, S24 block 1635-1638: reducer and cap apply to each spouse's share separately; with a 75/25 Form 17 split finance costs follow 75/25; cannot allocate 100/0. Default 50/50 §24.1 lines 1559-1564 (ITA 2007 s.836, PIM1030); Form 17 §24.2 line 1575; unmarried co-owners 24.6 line 1661. Does the guide's FAQ on joint ownership match: sibling post section-24-joint-property-ownership-tax-split exists."
+   },
+   {
+    "topic": "SA105 boxes",
+    "status": "GAP",
+    "where_and_note": "0 hits for box 44 or box 45; SA105 appears only at line 935 (category list, 'finance costs' as a column) and as part of the MTD section. The guide's box 44 (residential finance costs) and box 45 (brought forward) are not locked; verify against the current SA105 notes."
+   },
+   {
+    "topic": "2026/27 rates and bands",
+    "status": "PARTIAL",
+    "where_and_note": "Income tax 20/40/45% for 2026/27: §7 line 251. Additional-rate threshold £125,140 and PA taper from £100,000: lines 199 and 1211. NOT locked: personal allowance £12,570 (appears only as the NI primary threshold, lines 1205 and 1210) and basic-rate band £37,700 (0 hits), higher-rate threshold £50,270 (line 1211, dividend context only). The worked example needs PA and basic band from gov.uk."
+   },
+   {
+    "topic": "April 2027 property income rates 22/42/47%",
+    "status": "FOUND",
+    "where_and_note": "§7 heading line 247, enactment (Autumn Budget 26 Nov 2025, FA 2026 Royal Assent 18 March 2026, ss.6-7) line 249, 2027/28 rates line 253, wedge consequence 255-256. Scotland carved out (line 249); Wales and Scotland enabling power FA 2026 s.8 / Sch 2 also line 249."
+   },
+   {
+    "topic": "22% reducer from 2027/28",
+    "status": "FOUND",
+    "where_and_note": "§4 line 197 (FA 2026 Sch 1 amends ITTOIA 2005 ss.274AA/274C and ITA 2007 s.399B; three-part cap computed at 22% from 2027/28; 20% for 2026/27 and earlier), §7 lines 253 and 255 (basic-rate landlord sees no new wedge; higher/additional wedge stays 20pp / 25pp), do-not-write line 201."
+   },
+   {
+    "topic": "property allowance interaction",
+    "status": "FOUND",
+    "where_and_note": "§41 heading line 4064, line 4070: PIM4460, property allowance not available in a year the S24 reducer is applied (the guide's FAQ about the property allowance and finance costs relies on this)."
+   }
+  ],
+  "gaps_the_writer_must_source_outside_house_positions": [
+   "statute citations s.272A / s.274A-C / s.272B",
+   "which costs are residential finance costs (PIM2054): arrangement and broker fees, overdraft, loan to buy furniture, alternative finance",
+   "capital repayment exclusion",
+   "commercial / non-residential exclusion",
+   "SA105 box 44 and box 45",
+   "2026/27 personal allowance £12,570 and basic-rate band £37,700"
+  ]
  }
 }
