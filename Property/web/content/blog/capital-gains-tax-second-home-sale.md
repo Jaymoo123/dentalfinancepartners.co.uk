@@ -45,7 +45,7 @@ faqs:
     answer: "You still get your personal allowance and your full basic rate band, so more of the gain falls at 18%. With no other income, the first £12,570 of the gain is not covered by the personal allowance, because the personal allowance applies to income rather than gains, but the whole £37,700 basic rate band is available, so £37,700 of gain above the £3,000 annual exempt amount is taxed at 18% and the rest at 24%. Retired owners with modest pensions often sit in exactly this position."
   - question: "Do I still need to report the sale if I made a loss?"
     answer: "There is no 60-day return to file where no tax is due, but you should still report the loss on your Self Assessment return so it is on record. Losses must be claimed within four years of the end of the tax year in which they arose. Once claimed, a loss can be carried forward indefinitely against future gains, which is worth up to 24 pence in the pound when you eventually sell something at a profit."
-dateModified: "2026-08-20"
+dateModified: "2026-10-10"
 ---
 
 <p>Sell a second home in the UK in 2026/27 and you pay capital gains tax at <strong>18% or 24%</strong> on the gain above your <strong>£3,000</strong> annual exempt amount, and where tax is due you have <strong>60 days from completion</strong> to report it and pay it. The 18% applies only to the slice of the gain that fits in whatever is left of your basic rate band once your income is counted. Everything above that is taxed at 24%. There is no separate second home rate, no taper for long ownership, and no threshold below which a big gain escapes.</p>
@@ -167,7 +167,7 @@ dateModified: "2026-08-20"
 
 <p>Miss the deadline and you get a £100 fixed penalty straight away, daily penalties of £10 from day 91, and further charges of 5% of the tax at 6 months and again at 12 months, with interest running on top. The <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines page</a> goes through the filing mechanics in detail.</p>
 
-<p>The practical point: 60 days is short. Instruct whoever is doing your computation when the sale is agreed, not when it completes, because valuing improvements and reconstructing 15-year-old purchase costs takes longer than you think.</p>
+<p>The practical point: 60 days is short. Instruct whoever is doing your computation when the sale is agreed, not when it completes, because valuing improvements and reconstructing 15-year-old purchase costs takes longer than you think. If you would rather hand it over, Property Tax Partners <a href="/for/selling-a-buy-to-let">prepares the gain computation and files the 60-day return</a> for you, ideally starting before contracts are exchanged.</p>
 
 <h2>How can you legally reduce capital gains tax on a second property?</h2>
 

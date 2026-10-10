@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-10-09"
+dateModified: "2026-10-10"
 faqs:
   - question: "Can property landlords claim Section 162 incorporation relief?"
     answer: "Sometimes, but not usually. Section 162 defers the capital gains tax on transferring a business to a company in exchange for shares, and HMRC treats most ordinary buy-to-let as investment rather than a business. To qualify you need to show a genuine business: real time spent, active management across a portfolio, and a degree of organisation beyond collecting rent and arranging the occasional repair. The leading authority, Elizabeth Moyne Ramsay v HMRC [2013] UKUT 226 (TCC), confirms a property letting activity can be a business, but the bar is meaningful activity, not portfolio size alone."
@@ -84,7 +84,7 @@ faqs:
 <tr><td>Tribunal read-across</td><td>Passive holding for capital growth</td><td>Ramsay-style serious undertaking</td></tr>
 </tbody>
 </table>
-<p>If your honest answer to most rows is the left column, plan on the basis that Section 162 will not be available and that incorporation means paying CGT on the way in. If you sit in the right column, build the evidence and take advice before you act, because the relief is valuable enough to be worth getting right.</p>
+<p>If your honest answer to most rows is the left column, plan on the basis that Section 162 will not be available and that incorporation means paying CGT on the way in. If you sit in the right column, build the evidence and take advice before you act, because the relief is valuable enough to be worth getting right. Property Tax Partners can start with <a href="/for/moving-property-into-a-limited-company">an assessment of whether your lettings pass the business test</a> before anything is transferred.</p>
 
 <h2>What Section 162 does not cover: the SDLT trap</h2>
 <p>This is the point that catches landlords out most often. Section 162 is a capital gains tax relief and nothing else. Transferring property from your own name into a company is a separate transaction for stamp duty land tax, and the company is the buyer. Because a company purchasing residential property is almost always within the additional-dwellings rules, the transfer normally attracts the <strong>5% additional-dwellings surcharge</strong> on top of standard SDLT rates on the market value of what is transferred. There is no general relief that switches this off.</p>

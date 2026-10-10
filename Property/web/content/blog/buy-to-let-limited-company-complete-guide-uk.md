@@ -3,7 +3,7 @@ title: "Buy-to-Let Limited Company: Complete Guide UK 2026"
 slug: "buy-to-let-limited-company-complete-guide-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk"
 date: "2026-05-21"
-dateModified: "2026-10-09"
+dateModified: "2026-10-10"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Buy-to-Let Limited Company UK: Tax, SDLT, S162 Relief, ATED"
@@ -217,7 +217,7 @@ faqs:
 
 <h3>Single trading company versus SPV-per-property</h3>
 
-<p>Until you grow past 10 to 15 properties, a single trading company usually does the job. An SPV-per-property structure (one company per asset, often held under a parent holding company) earns its keep once you want ring-fenced lender risk, easier sale of one property at a time via share transfer (which can save the buyer SDLT), or easier external investor or family participation property by property. The cost is more compliance (one CT600 per company) and tighter corporation tax bands once the associated-companies division kicks in.</p>
+<p>Until you grow past 10 to 15 properties, a single trading company usually does the job. An SPV-per-property structure (one company per asset, often held under a parent holding company) earns its keep once you want ring-fenced lender risk, easier sale of one property at a time via share transfer (which can save the buyer SDLT), or easier external investor or family participation property by property. The cost is more compliance (one CT600 per company) and tighter corporation tax bands once the associated-companies division kicks in. If the next purchase is going into a new company, Property Tax Partners starts with <a href="/for/property-spv-set-up">a structure review before your SPV is formed</a>: a written note on share classes, directors and whether one company or several fits your plans.</p>
 
 <h3>Holding company structures</h3>
 

@@ -96,7 +96,7 @@ export const audiences: Audience[] = [
       },
       {
         "question": "Is my rental portfolio a business for section 162 purposes?",
-        "answer": "It depends on the activity, not the number of doors alone. HMRC looks for evidence of a business being carried on: active management, time committed, decisions made, work done on tenancies and repairs rather than an agent doing everything while you receive a statement. A larger portfolio under hands-on management is the stronger case; one or two lets run by an agent usually is not."
+        "answer": "It depends on the activity, not the number of doors alone. HMRC looks for evidence of a business being carried on: active management, time committed, decisions made, work done on tenancies and repairs rather than an agent doing everything while you receive a statement. A larger portfolio under hands-on management is the stronger case; one or two lets run by an agent usually is not. The <a href=\"/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords\">business test and the case law behind it</a> are explained separately."
       },
       {
         "question": "Should I incorporate before the 2027 property income tax rates start?",
@@ -160,7 +160,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "Rates and the annual exempt amount for 2026/27",
-        "body": "Residential gains are taxed at 18% in the basic rate band and 24% above it, with trustees and personal representatives at 24% throughout. The annual exempt amount is £3,000 per person, down from £6,000 and from £12,300 before that, so an older worked example will understate your bill. It is per person and per tax year, which is why joint ownership and the exchange date both matter."
+        "body": "Residential gains are taxed at 18% in the basic rate band and 24% above it, with trustees and personal representatives at 24% throughout. The annual exempt amount is £3,000 per person, down from £6,000 and from £12,300 before that, so an older worked example will understate your bill. It is per person and per tax year, which is why joint ownership and the exchange date both matter. The rate split and the joint-ownership saving are <a href=\"/blog/capital-gains-tax/capital-gains-tax-second-home-sale\">worked through in pounds for a second home sale</a>."
       },
       {
         "title": "Selling before or after incorporation, and company-held property",
@@ -487,7 +487,7 @@ export const audiences: Audience[] = [
     "faqs": [
       {
         "question": "Should I buy my first property through an SPV or in my own name?",
-        "answer": "It turns on your marginal income tax rate, whether you need the rent to live on, and how long you intend to hold. A company pays corporation tax on profit after full mortgage interest relief, while personally held residential property is restricted to a basic-rate credit on finance costs. Against that, taking money out is a second tax event and company mortgage pricing is usually higher. A higher-rate taxpayer reinvesting the rent often does better in a company; someone drawing the income often does not."
+        "answer": "It turns on your marginal income tax rate, whether you need the rent to live on, and how long you intend to hold. A company pays corporation tax on profit after full mortgage interest relief, while personally held residential property is restricted to a basic-rate credit on finance costs. Against that, taking money out is a second tax event and company mortgage pricing is usually higher. A higher-rate taxpayer reinvesting the rent often does better in a company; someone drawing the income often does not. The <a href=\"/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk\">worked comparison of personal and company ownership</a> shows where that line falls."
       },
       {
         "question": "Does my company pay the 5% stamp duty surcharge on its first property?",

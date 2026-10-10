@@ -14,7 +14,7 @@ summary: "Moving a rental property into a limited company is a sale to a connect
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-08-03"
+dateModified: "2026-10-10"
 schema: ""
 howToSteps:
   - name: "Decide whether incorporation is right for you"
@@ -224,4 +224,4 @@ faqs:
 
 <p>Incorporation is one of the few property tax decisions where the upfront cost is large, the benefit is gradual, and the reliefs are easy to get wrong. The difference between a sale at market value, a s.162 business incorporation and a partnership incorporation can be tens of thousands of pounds on the same portfolio, and the new claim deadline means even a qualifying transfer can lose its relief through a missed filing.</p>
 
-<p>If you are weighing the move, the most useful first step is to model your specific portfolio: the stamp duty the company would pay, the CGT exposure and whether it can be deferred, and the lifetime saving against the running cost. Talk to a property tax specialist before you set up the company, not after the property has already moved.</p>
+<p>If you are weighing the move, the most useful first step is to model your specific portfolio: the stamp duty the company would pay, the CGT exposure and whether it can be deferred, and the lifetime saving against the running cost. Property Tax Partners builds that model for you, with <a href="/for/moving-property-into-a-limited-company">a cost of entry priced property by property</a> and the refinancing checked before anything moves. Talk to a property tax specialist before you set up the company, not after the property has already moved.</p>
