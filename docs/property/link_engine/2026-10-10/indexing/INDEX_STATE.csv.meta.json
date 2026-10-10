@@ -1,0 +1,31 @@
+{
+  "file": "INDEX_STATE.csv",
+  "rows": 887,
+  "sha256": "51c5a57e3cbf3f66e220d42de48da967b8679ae46c6c77a80b4d0512de1f38c1",
+  "built_at": "2026-10-10T22:20:59.449537+00:00",
+  "url_inspection_dates": [
+    "2026-10-10"
+  ],
+  "url_inspection_n": 887,
+  "gsc_daily": {
+    "dimensions": "date,page",
+    "dataState": "all",
+    "requested": "2025-06-01..2026-10-10",
+    "first_date_returned": "2026-03-29",
+    "last_date_returned": "2026-10-08",
+    "fragment_urls_excluded": true
+  },
+  "gsc_90d_register_data_through": "2026-10-07",
+  "vercel_prod_deploys": 302,
+  "git_history": "unshallowed 3486 commits",
+  "substantive_edit_threshold_body_lines": 10,
+  "bing_strong_definition": "bing_clicks>=10 (13_protect_register)",
+  "inputs": [
+    "stages/08_pages.csv",
+    "stages/08_edges_html.csv",
+    "stages/13_protect_register.csv",
+    "inputs/leads_by_entry_page.csv",
+    "indexing/inspect_raw.jsonl",
+    "indexing/vercel_prod_deploys.csv"
+  ]
+}
