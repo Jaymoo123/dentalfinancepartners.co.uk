@@ -1,0 +1,303 @@
+created_utc,id,sha,ref,msg
+2026-03-29T18:02:06.440000+00:00,...[truncated],...[trunc,...[truncated],...[truncated]
+2026-03-29T18:18:01.382000+00:00,dpl_8auEFHGXgK1g3XUoZ4j81JYb1gwb,69998745b,main,Fix Property ...[truncated]
+2026-03-29T18:30:33.782000+00:00,dpl_6ApLuqKBPw9QAjqrBeAJiCUNEH56,592ecbf86,main,Implement comprehensive mobile-first optimization for Property site  -
+2026-03-29T18:36:11.558000+00:00,dpl_3NLkZi3EpGdbnuURAben3UnzCbyG,3ff260f51,main,Fix canonical tags and OpenGraph metadata across both sites  Dentists 
+2026-03-29T20:59:04.903000+00:00,dpl_5KtBCGbeQdqPM7tvsFa3MNeJzpL2,443d7c6e0,main,Remove ssr: false from dynamic imports in Next.js 15  Next.js 15 doesn
+2026-03-29T21:07:50.776000+00:00,dpl_45ekc2NcwraBGJkLKDkqmnBjmn4t,47f369164,main,Fix environment keys for agents and frontend  - Updated .env with serv
+2026-03-29T21:08:32.401000+00:00,dpl_L12habhUn6GAesMASKuBVQhSsrw6,f90666d46,main,Add complete final status report  Everything is done. System is produc
+2026-03-29T21:36:30.802000+00:00,dpl_vn2zZHJCeo3g2GoiCPJZxeJDz7Rp,d11475a9f,main,Generate 27 new Property blog posts  Topics covered: - Section 24 and 
+2026-03-29T22:03:53.082000+00:00,dpl_6CqvXTZXm7872jmbGcGghLJXYwF2,045eee092,main,Implement keyword-driven content strategy to eliminate duplicate resea
+2026-03-29T22:11:03.400000+00:00,dpl_Caum2W7sKcP5XtTQFX333JF3dmuq,fa0386bb8,main,Reorganize project structure: archive deprecated code and historical d
+2026-03-30T07:20:47.253000+00:00,dpl_9v3himU2t5wQRMRuWjroRyx7qs71,a43010639,main,Deploy blog content for Dentists
+2026-03-30T07:23:01.360000+00:00,dpl_5VUxBmyjQLcp45eJb8fpYJXyHA2H,3a28b30d3,main,Deploy blog content for Property
+2026-03-30T10:25:33.368000+00:00,dpl_HBvkbndAuZxyr6LJqfeyitzNVZUP,f9038fce4,main,Merge branch 'main' of https://github.com/Jaymoo123/dentalfinancepartn
+2026-03-30T10:28:26.563000+00:00,dpl_BrHP83BfkmQGrdP73t4XrxSMdQUn,a722d25bc,main,Fix domain in Dentists niche config to include www subdomain for prope
+2026-03-30T10:34:28.029000+00:00,dpl_DDPqw3vqGVJVsRYSfmMFNDkY5Wka,3f6bbf262,main,Trigger Vercel redeploy to fix robots.txt line breaks  Made-with: Curs
+2026-03-30T10:49:51.503000+00:00,dpl_BcoMdXwniG5WVzGrGms9aNtRN3rt,7c93ce14f,main,Fix Property domain to include www subdomain for proper sitemap/robots
+2026-03-30T10:54:14.900000+00:00,dpl_C3ku8iQG8BjUNuxjGpTZa54ir8f3,2cbc3d59f,main,Update Property .env.local.example and add robots.txt fix documentatio
+2026-03-30T11:41:29.960000+00:00,dpl_EcsCBFr9tvo9ka9d4RBhXZVkVhRc,e4b11d0b0,main,Add comprehensive deployment checklist and update guides with www subd
+2026-03-30T11:45:15.146000+00:00,dpl_9J54eJ2EbhNoZkzgUxaRZbk9s5Dm,9271e9377,main,Add Property GA4 measurement ID (G-B5MCP5NGMY) and deployment checklis
+2026-03-30T11:51:59.400000+00:00,dpl_8CHVDBMRP2EktCxgUjjYgAz3dp3T,9a4622917,main,Configure multi-niche GA4 analytics system  - Add Property GA4 propert
+2026-03-30T11:52:45.305000+00:00,dpl_G7SmRS68Mt1rTWWiakQutgKWgtZt,e89a8bf97,main,Update deployment checklist with Property GA4 completion  Made-with: C
+2026-03-31T07:05:56.598000+00:00,dpl_By6HHvdat5RvRQUug5DiubycsKPV,85e5556a0,main,Deploy blog content for Dentists
+2026-03-31T07:06:19.468000+00:00,dpl_Fahvr54mR4C9Utbfvr4rSg4QLrVt,38b81f830,main,Deploy blog content for Property
+2026-03-31T23:30:34.234000+00:00,dpl_2LoKG1BiJ5FfmkJHh9Upa7Y2S2ot,f06c32126,main,Add Phase 1 and Phase 2 content generation: 67 new blog posts - Proper
+2026-04-01T04:44:04.987000+00:00,dpl_9dKg7T1nXDWTsH5uknmkuAu4RqVX,10806dc14,main,Deploy blog content for Dentists
+2026-04-01T04:45:09.004000+00:00,dpl_8NdUQeyNQcHEcQpTECNcM5RnK7Pu,6d7d86296,main,Deploy blog content for Property
+2026-04-01T07:12:17.726000+00:00,dpl_9Qgbyn9DFrWXFBmVpa5onm8jnvww,5967c646f,main,Deploy blog content for Dentists
+2026-04-01T07:12:33.093000+00:00,dpl_8Yt3zXJj7KbMCGgYdJkZVKDfUjk7,94702c61f,main,Deploy blog content for Property
+2026-04-01T09:45:53.870000+00:00,dpl_69PowsiXPbP9382uFXHx3H48LJpj,d9d17ada1,main,Cleanup: Organize files and fix generation scripts  File organization:
+2026-04-01T10:18:44.141000+00:00,dpl_F62UmqizEEvFMPFcX25svGm638qs,425e70c4d,main,docs: add Medical Vercel setup guide and config  Made-with: Cursor
+2026-04-01T10:29:01.934000+00:00,dpl_5yrRCroDANdvMxCsdD6zRzJksDE5,7a80d991d,main,content: add 52 Property blog posts (Phase 2 complete)  Generated 52 c
+2026-04-01T10:33:55.706000+00:00,dpl_3ru13NLhtB5NDmSjtpCs58e5hjzU,c0c99e324,main,docs: Medical deployment complete  Made-with: Cursor
+2026-04-01T10:41:58.231000+00:00,dpl_GPZ9CyvWevVB69LBrBsSZkfEUpWS,619512199,main,Fix Medical site: remove all cross-site references and ensure brand di
+2026-04-01T10:43:35.404000+00:00,dpl_8BQ4PoY8o3qJnX4wYBXoKkY1iDGr,ac22558fc,main,Add Medical source to leads table constraint  - Create migration to up
+2026-04-01T10:45:02.409000+00:00,dpl_E4LPe4AYN9BTZvQru4555Thu8xce,f3949d786,main,Add Medical lead form verification scripts  - Create apply_medical_mig
+2026-04-01T10:46:57.097000+00:00,dpl_E2FL2NpWaxPA8MzoXrT3sESCxafE,eadc6a949,main,Document Medical site environment variable setup  - Create .env.local 
+2026-04-01T10:51:25.069000+00:00,dpl_6Ro4NkXrx4Yy1xqd3kApRHdYdFDr,700b3be06,main,CRITICAL: Add RLS policy fix for leads table security  - Create migrat
+2026-04-01T10:56:55.863000+00:00,dpl_9mTrwhVPAKTp7pSjM7gwUQY7PF8N,ef571ce91,main,Complete RLS security verification and documentation  - Verify RLS pol
+2026-04-01T10:59:57.336000+00:00,dpl_FoUQCgnUqPjfBSPXThGUiEfbRn5A,de4b91e17,main,Document Medical site live status and next steps  Medical site is now 
+2026-04-01T12:39:11.018000+00:00,dpl_95dJo3jM1EuK8Jf8FY5xpuK4HBXM,7c7983311,main,"Launch Medical Accounts site with 62 blog posts, 3 calculators, and co"
+2026-04-01T12:43:22.612000+00:00,dpl_6FPuBswQc9ND92spoP5zFzgimRPK,60d6ce093,main,Add Solicitors niche foundation (Accounts for Lawyers)  Initialize new
+2026-04-01T12:45:51.903000+00:00,dpl_5gBmZ9opAjjVu2avUpMWzevqQ16b,c00430261,main,"Add Solicitors database migrations, blog generator, and agent config  "
+2026-04-01T12:49:03.292000+00:00,dpl_CHFVRHcR9gFkZfRu5YyRXJ6nBZy8,18a391d82,main,Fix Solicitors build errors and verify production build  - Add missing
+2026-04-01T12:50:16.804000+00:00,dpl_9TY32aUdt49C1pns2Et9dta8Tqkb,953191963,main,Add Solicitors keyword import and batch generation scripts  - scripts/
+2026-04-01T12:54:30.455000+00:00,dpl_5LHyKmfxXZNerSDhDUxBuo4arvhg,1bdd1eb2c,main,Add Solicitors README with complete setup documentation  Comprehensive
+2026-04-01T12:56:23.670000+00:00,dpl_8R9zF2isLcMi77po4eLyLbjioVVQ,ceb8886bd,main,Add Solicitors launch checklist for quick deployment reference  Step-b
+2026-04-01T13:32:01.381000+00:00,dpl_AWkpXdUf4nEystxsympPq98ksx6j,0519d898a,main,Fix blog typography and refine Solicitors site design - Add prose-blog
+2026-04-01T14:22:21.634000+00:00,dpl_J5SrcVNQ5RLLm77zBcAqPxpfE9s3,3186916e2,main,Add Solicitors blog content and fix batch generation scripts  - Genera
+2026-04-01T14:26:04.013000+00:00,dpl_5oxpvRNneEgR7pGiE5JNorQezTWm,ee2e93215,main,"Add comprehensive prose-blog styles to Dentists site  - Added table, t"
+2026-04-01T15:30:53.855000+00:00,dpl_Ciut2B3MogDqAJqFnh3dGBqYtMjw,1b43e289f,main,Restructure blog URLs to nested hierarchy and improve SEO - Restructur
+2026-04-01T15:51:05.785000+00:00,dpl_5ySgz7P8v7QkXBjAEjuQroDQFWJ6,6419e752b,main,Restructure Dentists blog to nested hierarchy and improve SEO  - Restr
+2026-04-01T16:01:43.553000+00:00,dpl_4xgAog44KdvJNd62ZFHSwCvcRokV,bc8746299,main,Complete comprehensive Dentists site audit fixes  - Add Twitter card m
+2026-04-01T17:20:30.310000+00:00,dpl_4yWC1qwyybzK4DNthNj5AhuRyBFi,47c08fa6a,main,Fix Property site dev server errors - Added missing calculateReadTime 
+2026-04-01T19:28:46.148000+00:00,dpl_2cvPX2QKDLL1A1xZmsftRYQjFc1S,ef326c543,main,Update Solicitors hero image to more appropriate legal imagery  Replac
+2026-04-02T07:05:37.218000+00:00,dpl_FJLzmeqKQvLdQ9bhJHxzKMBuFrkS,c2059972d,main,Deploy blog content for Dentists
+2026-04-02T17:32:50.616000+00:00,dpl_78bAWy3M1k1FMDPCirS41RmGsd1Q,17646ed2a,main,"Fix build: add missing blog utility functions, upgrade Medical blog pa"
+2026-04-02T17:43:41.337000+00:00,dpl_8GZPVFFmJBUNm6G2yucG9DdtqBcg,a4619ea66,main,Remove shared GSC HTML verification file from Dentists  Dentists was u
+2026-04-02T19:00:13.004000+00:00,dpl_BuqJ3n1H838pohVtR9UdAZ7dNVcv,51425a648,main,Add Google Analytics tag (G-N6ZPRB3DSQ) for Solicitors site  Made-with
+2026-04-02T19:06:04.920000+00:00,dpl_FSHUbQnBy1iougs79pXEVPkNMPkv,544397631,main,Update Solicitors GA4 config across agent config and docs (G-N6ZPRB3DS
+2026-04-02T19:13:38.381000+00:00,dpl_FVuhYVm2uEKR3DaX2GT3DZPA62Sb,5ff288848,main,"Add Medical GA4 tag (G-CQF7KFZ1P6), mark Solicitors GSC verified, upda"
+2026-04-02T20:49:36.812000+00:00,dpl_4ik742UcY7c9CwvSPoP2emndteJr,d833f9d14,main,Comprehensive SEO audit fixes and repo reorganization  SEO and Schema 
+2026-04-02T20:51:10.077000+00:00,dpl_Cw7aKNVs6YrffuzDFwuqZJKWfCnx,946f062dd,main,Add always-apply Cursor rule with full project context  Made-with: Cur
+2026-04-02T21:46:50.673000+00:00,dpl_7e3rujVTPxwyq15n2Bg4FjwY2tSi,085b52903,main,SEO and AI discoverability improvements across all 4 sites  - Add llms
+2026-04-02T22:11:44.153000+00:00,dpl_DrBAkZfPsgxSEBudxX6nmhAtYjtJ,15ab9f34d,main,Update project context with full SEO status and audit results  Made-wi
+2026-04-02T22:22:11.749000+00:00,dpl_93twsAyGKsvZTLhvbhrtUTw3f33g,6dc339da2,main,Fix Incorporation hub page: wrong categorySlug missing 'and' caused ze
+2026-04-02T22:54:31.485000+00:00,dpl_HuMgm8ZwLNQ2EJPFYJMM3B3Yr4Zm,5982c9d5b,main,Standardize category hub pages across all 4 sites  - Medical: Create 8
+2026-04-02T22:55:06.766000+00:00,dpl_6bvqdkunDMwkVHtayZG6UpY19ctP,5fb3a2f7e,main,Update project context with category hub standardization status  Made-
+2026-04-02T23:39:05.889000+00:00,dpl_9gBsdGCTaMz9FoaNUEYZhzMqb6vL,980a58d0b,main,Fix Medical slug conflict: rename gp-accountant-services post to avoid
+2026-04-03T00:04:28.573000+00:00,dpl_5H9ivoW3YpbKzdTybEe6r6xPbmVN,45acd15e6,main,Remove temp commit message file  Made-with: Cursor
+2026-04-03T00:10:18.049000+00:00,dpl_8oswMJnCoEQYBsKeSdcaB7kqRGSZ,a9b513d3e,main,Remove temp file  Made-with: Cursor
+2026-04-03T00:15:03.830000+00:00,dpl_3v8pbV4WsrSCs635AN4NsaTVMKmA,00e2f3714,main,Remove temp file  Made-with: Cursor
+2026-04-03T00:18:01.705000+00:00,dpl_253ZsNHdiz4dD8wpV3n3T7Q4Rmh2,ec2083a2c,main,"Update project context with TOC system, reading time, rendering pipeli"
+2026-04-03T00:45:54.860000+00:00,dpl_GDxnVUkA4EhtNYcVSMjcejpTZ2ib,7a43cf152,main,"Fix pipeline bugs, standardize content generation, add scaffolding and"
+2026-04-03T01:09:29.621000+00:00,dpl_CdLJ3exTa3aUPcP5TLqZBZUXBcDW,0cd71be56,main,Update project context with link/redirect audit results and remaining 
+2026-04-10T22:51:40.717000+00:00,dpl_12VeTwXWBKxTm23qXSNxHZSq2skA,5422c5e88,main,"Property site: add 148 blog posts, 2 new category hubs, consolidate de"
+2026-04-11T18:25:47.199000+00:00,dpl_FJfMw6tuMoXrjMnch7p9HyKXQdz4,80d51206c,main,"Property site: deduplicate 241 blog posts, eliminate heading duplicati"
+2026-04-16T19:29:02.910000+00:00,dpl_8GSybt9stUQhT97pwt1xEhsPBSsn,18a41cb40,main,"SEO: cross-site geo-targeting, Dentists GSC-driven content optimisatio"
+2026-05-17T15:04:29.389000+00:00,dpl_3hTFjVFjXdD65sexLf9DcVtDG9KG,d8e5ba9dd,main,"Property: shadcn foundation, accordion FAQ, expand bot allowlist, Inde"
+2026-05-17T15:55:34.125000+00:00,dpl_Bw7GJanoXWdrLqPcyH9HfFC4pHtu,586aae3b1,main,generalist: scaffold sixth lead-gen site from Digital Agency template 
+2026-05-17T16:23:18.198000+00:00,dpl_EoEhF7pK3XcN2gXpuQEeQEKyPNrK,3a86bee6a,main,"generalist: Phase A rebuild from scratch, new design system and homepa"
+2026-05-17T16:35:23.589000+00:00,dpl_Rkn4b8vhefPJnqci6f1uzutgS7tM,a6cac3bb0,main,generalist: Phase B brand-critical pages and Agency residue purge  Ful
+2026-05-18T18:07:08.912000+00:00,dpl_6MqeoDxL6d3qdFFxqvhdW6seaMSD,08d47d533,main,"Property: rewrite 23 high-impression, low-CTR meta titles + descriptio"
+2026-05-18T18:32:21.499000+00:00,dpl_5UqEgCgkRBsvbJb5WoaMYGU6Ab4k,e25afa910,main,"Property: 7 new posts targeting GSC keyword gaps (1,025 unclaimed impr"
+2026-05-18T18:41:10.420000+00:00,dpl_HXtqM2fr7axiXW79gDZqMKn1zzkc,26553548f,main,Disable 4 scheduled LLM-using workflows (manual trigger remains)  User
+2026-05-18T18:58:10.571000+00:00,dpl_Bqqn4nMUQRHo4shyNdjrqWBPuomn,0af775595,main,Property: switch MTD copy from future to present tense (live since 6 A
+2026-05-18T19:06:12.409000+00:00,dpl_5BeuXhQuqwRn8hDAgL4fqDj9KBrD,a38927d56,main,Dentists: meta rewrites on 5 page-1 ranking posts + Phase 5 gap findin
+2026-05-18T19:40:10.051000+00:00,dpl_7NRueyNBT4ZDWWsvndP58yaR1Exv,7a88e011e,main,Dentists Phase 0: prompt + fact-block + taxonomy + Haiku validator + t
+2026-05-18T19:44:31.183000+00:00,dpl_2nW3nb4g3NREYwKuN7upK9drc2rv,57abf7488,main,Dentists Phase 1: extended schema library + applied to home and /servi
+2026-05-18T19:55:39.725000+00:00,dpl_9bdybMcaS1jvga9zFhXveWVxYLt1,e7ed5d6c3,main,Dentists Phase 2: services hub rebuild + 5 deep service sub-pages  Rew
+2026-05-18T20:01:08.233000+00:00,dpl_6tQuhFT2jWDorGRjJsnT2vfaYFjA,d25f84057,main,Dentists Phase 3: 4 audience-stage landing pages  New shared AudienceS
+2026-05-18T20:06:02.120000+00:00,dpl_56z95dq2iHxrtCj2UTF5eTjpDtp5,73578d114,main,"Dentists Phase 4a: pillar guides infra + NHS contracts pillar (3,000 w"
+2026-05-18T20:08:27.719000+00:00,dpl_A7r28S61x4k6ZaGtNYb3pDBdD8q2,6d1a3af46,main,"Dentists Phase 4b: associate tax survival guide pillar (~3,300 words) "
+2026-05-18T20:15:08.204000+00:00,dpl_8WCsTFj1mR98wJqrDH3Lnz9vuJ8P,07e02e56c,main,Dentists Phase 4c+4d: practice purchase DD + goodwill valuation pillar
+2026-05-18T20:19:00.784000+00:00,dpl_7GXfgeFWoQm2kHk9Zq9VCB8JLnPK,5e0fa2654,main,Dentists Phase 4e+4f: profit extraction + NHS Pension pillar guides  F
+2026-05-18T20:26:17.568000+00:00,dpl_FvFPFCr8suuomSYS5aWQf2CsSuzk,e88f27cdc,main,Dentists Phase 5: /free-practice-health-check diagnostic  Six-step wiz
+2026-05-18T20:33:55.378000+00:00,dpl_8H7iUyzRHFrBMcR9pDrHbQ9VeM6Z,082c94205,main,Dentists Phase 6: 5 dental calculators at /calculators/*  - UDA Value 
+2026-05-18T20:39:49.447000+00:00,dpl_25LdGP4GfVH6PZEMqMt9Q6wrXTYF,4d6e9fb0d,main,Dentists Phase 7a: blog parity batch 1 (4 NHS contract posts)  DeepSee
+2026-05-18T20:51:23.688000+00:00,dpl_8D5D15wek3H7iXD7Y2VEhEL699KC,94716e333,main,Dentists Phase 8: measurement script adapted from Property  Identical 
+2026-05-18T20:56:36.916000+00:00,dpl_8gQoZGhFddWz7F6TA8pmtmSC6GYs,49f04c83e,main,Dentists Phase 7b: 5 more blog posts + tune meta validation  Posts wri
+2026-05-18T20:58:37.334000+00:00,dpl_8VKbfgDMp3Z5rJiMEubBisUpUZS8,6589761b1,main,"Dentists: link health check, calculators, pillar guides from homepage "
+2026-05-18T21:17:25.262000+00:00,dpl_Bifakev5KhQdcnCWyeoGGtvgfcmv,8b2bf261f,main,Dentists Phase 7c: 18 more blog posts (batch 3)  Generator tuning paid
+2026-05-18T21:28:57.007000+00:00,dpl_CFjzK3iiDYKE6LXZT8nGEzxGaQdg,fc5f12a88,main,Dentists Phase 7d: 9 mid-batch posts (batch 4 progress)  Cluster mix: 
+2026-05-18T21:45:07.725000+00:00,dpl_7mCwdrcdTJKu1heevkSkZgrvLaSu,3b955dd2e,main,Dentists Phase 7 push: 26 more posts across NHS pension + goodwill-sal
+2026-05-18T21:47:47.642000+00:00,dpl_FUL1eu1976JxL6vB5igbSpvMewg6,624be46cd,main,Solicitors Phase 0+1: pipeline + schema + www canonical  Phase 0 — pip
+2026-05-18T21:56:10.610000+00:00,dpl_91Lsek1tGB53XgVsr6hZi4CVK5rM,16169e519,main,Solicitors Phase 2: services hub depth + 5 sub-pages  Services hub (se
+2026-05-18T22:01:08.502000+00:00,dpl_3FTuqpHgY6CWzPuU8aWM9pScjFN1,9814d1502,main,Solicitors Phase 3: 4 audience-stage pages  AudienceStageLayout lifted
+2026-05-18T22:07:45.976000+00:00,dpl_8zKvePqY5h6v2kkPEKLp6cQe2ar4,fd32d7c0c,main,Solicitors Phase 4a-c: pillar guide infra + 3 of 6 guides  Infra (lift
+2026-05-20T00:59:55.339000+00:00,dpl_DgzUQqsuc3XsVttMhHbZ9EYW85Dy,,,
+2026-05-20T12:25:32.347000+00:00,dpl_7nQWEDC8wrz4qLPSoEcXbJQRyb2T,5beaa7712,infra-refactor/phase-2-shared-components,Phase 2: migrate Property to @accounting-network/web-shared workspace
+2026-05-21T20:52:35.556000+00:00,dpl_9w7FcWnhawGNFU2c5ELGXpNgK5jr,5fe375d54,main,Cannibalisation + semantic-dupe protection patched at source
+2026-05-23T00:25:55.908000+00:00,dpl_7tfrSLrr49GmbaXbivUuBTzKCoLi,d44ae1bd7,main,Wave 3 close: NETNEW_PROGRAM §3 + §16 update
+2026-05-26T21:41:33.199000+00:00,dpl_71g8G9Jrw4RobgJ9n2Zni5aGAyAR,11a78b4d5,main,NETNEW_PROGRAM §3 heartbeat: MW1 CLOSED — 52 net-new pages
+2026-05-28T23:23:00.560000+00:00,dpl_6Tjih3EcjbAbGSANiAae6Pudxpgv,c05f38f0a,main,Property: dynamicParams=false on [category]/[slug] to fix deploy
+2026-05-29T10:19:24.645000+00:00,dpl_5wv42n4YATzjSyd4ThBCzXgsFUzW,7da4a7648,main,"feat(property): blog lead-capture (inline mini-form, exit-intent, stic"
+2026-05-29T12:06:29.134000+00:00,dpl_CS2bYcE1btMaxeByf5xf1564g87U,6f8137c30,main,Track 2 reasoning-first engine + program tooling (2026-05-29)
+2026-05-29T12:42:40.318000+00:00,dpl_33mAaVN9oWRASxdBgyJtqZ6c8RKb,d8301db36,main,Fix: strip leaked tool-call markup from 33 live blog pages
+2026-05-29T13:44:56.728000+00:00,dpl_CeZgHa5fpJJkdhSmCCeGY2dCAkLF,27ec789ea,main,"Track 2 CityService Tier-2A: 13 long-tail city refreshes (de-leak, de-"
+2026-05-29T13:59:46.889000+00:00,dpl_3J67H1N8iMETYmCgg1CBa7jgMjQU,7eb620c80,main,Track 2 CityService Tier-2B: final 13 long-tail city refreshes (CitySe
+2026-05-29T15:47:58.967000+00:00,dpl_5P4booH3qSXz1TPvepCh8GsqNSg7,dfb3d277d,main,"Track 2 remediation WS-A: fix 2027 framing, statute cites, 404 links ("
+2026-05-29T18:11:15+00:00,dpl_EkWSdN4uptad47Le6RLkANmfF6Fr,4ca1f97e2,main,Track 2 WS-B: corpus-wide April-2027 property-rate framing sweep (28 p
+2026-05-29T19:35:54.900000+00:00,dpl_AaLfsJymcAHkKfhTPR551ADcEfHB,f4f6d9775,main,Track 2 WS-C: fix all 247 broken internal /blog links (229 HARD -> 0)
+2026-05-29T23:35:57.515000+00:00,dpl_BdmQ5AN3fsc6SaHBsfhaDVc7Ejt2,c151126b7,main,Track 2 batch 3: 4 QA-gated legacy rewrites + 1 equity-safe collapse
+2026-05-30T10:40:14.529000+00:00,dpl_FZycEpTs6ESMy6XivXpNX3GpeFWU,4623c0776,main,Track 2: refresh resume doc for next-manager handover (batch 3 shipped
+2026-05-30T12:04:34.955000+00:00,dpl_7ezWgJVgCBvvhQFMLMTXbXrApjZH,c17d36019,main,Scale-hardening C5: mandatory secondary-source check for recently-chan
+2026-05-31T13:14:19.315000+00:00,dpl_E2LszDoTzrjSXgc69aMtBBi3oa5s,a1c670a1a,main,Track 2 Section 24 cluster (batch A): 12 ranking-grade rewrites (12/12
+2026-06-01T17:35:13.658000+00:00,dpl_2yoaH8yD9SCZ1fGyxq4webNURmMa,a1c670a1a,main,Track 2 Section 24 cluster (batch A): 12 ranking-grade rewrites (12/12
+2026-06-01T17:44:38.735000+00:00,dpl_3JYkHYFWyNbUuqdhVtVAaHZYv4mh,a1c670a1a,main,Track 2 Section 24 cluster (batch A): 12 ranking-grade rewrites (12/12
+2026-06-01T17:58:31.685000+00:00,dpl_714YCZrEkecSAYKgFGF6nV3jCEFK,9374e835f,main,"Lead email: send to junaydmoughal@hotmail.co.uk, remove lead reply-to"
+2026-06-01T18:10:00.816000+00:00,dpl_CcjboaV2K8D9pzJYrdJm2VX3k9wp,91c971802,main,"Lead email: all leads-table columns, retitle 'New lead for <site>', fo"
+2026-06-02T11:05:11.520000+00:00,dpl_7yACHdE316rqf16iA18fNhvcCk37,fcd52e515,main,Lead email: redesign notification as brand-neutral premium template
+2026-06-02T13:08:07.965000+00:00,dpl_AVQo6nDq474JX2spnrXmz3jveq1q,eb75b70bc,main,Lead forms: mandatory data-sharing consent checkbox across all sites
+2026-06-02T20:15:09.183000+00:00,dpl_2oYonKqZEx3KhQxS2XRCea81xH4b,65b81650c,main,Track 2 re-polish (CapitalAllowances 9): earlier-tier capital-allowanc
+2026-06-02T23:05:41.105000+00:00,dpl_3KZKgT5phLSi235xsLRsCVH8XDbn,323d8aaf7,main,Core-page SEO engine (optimisation_engine/corepage) + analysis briefs
+2026-06-03T14:13:09.486000+00:00,dpl_69tuiDhrrozSSGMNf4GcuGLVRHnt,5bf541746,main,Briefs + dispatch state + harness + engine tweaks
+2026-06-03T14:45:01.012000+00:00,dpl_71o8HqiKPnTbaAS9i7QKfTR4T17R,5bf541746,main,Briefs + dispatch state + harness + engine tweaks
+2026-06-04T19:31:24.827000+00:00,dpl_jVfgL7p51PGAAVpNSodTVPdJTZrb,aff1073f1,main,Medical: Wave 2 + deploy heartbeat (STATE + wave2 tracker)
+2026-06-05T14:55:10.936000+00:00,dpl_9fJPjWzC2LuJVK8j7sicTm4795RR,4b18830ba,property-calculators-and-geo,Property: AI-citable property tax rates reference page
+2026-06-05T15:08:54.143000+00:00,dpl_8q9Bg39dCvsBpvEjae9GvaxsYzES,4b18830ba,property-calculators-and-geo,Property: AI-citable property tax rates reference page
+2026-06-06T12:05:43.398000+00:00,dpl_3vAGARjiPiL8AKL7MGjJVdumWZBg,b0e967dee,property-calculators-and-geo,Property: escape apostrophe in leads sub-page copy (build lint fix)
+2026-06-06T12:17:33.891000+00:00,dpl_2mmW57EtW7hNrA8c3F3jaZPrZkqv,9e37b875a,property-calculators-and-geo,Property: curated specialist FAQ widget (Phase 9)
+2026-06-06T12:56:15.373000+00:00,dpl_Hz9S27i6ynhZtHhugxbhgpfgtLZr,e45474f08,property-calculators-and-geo,Property: polished dashboard trends charts (shadcn + Recharts area cha
+2026-06-06T13:30:15.256000+00:00,dpl_HAutMTCL9r4Ntp3wdh2w8ECW9hDi,7d391e3fd,property-calculators-and-geo,Property: visitor Story/Activity tabs + dashboard readability (Round 2
+2026-06-06T14:19:18.229000+00:00,dpl_CyE4w9LYZVx7bwV9VR7EY4HeEiJX,18acef795,property-calculators-and-geo,"Property: Section 24 flagship tool + Excel model + guide, live (Phase "
+2026-06-06T14:42:16.386000+00:00,dpl_5QoTYcZp4CGiijYCTdJhwQm5zTdD,c77baaa31,property-calculators-and-geo,Property: roll out premium tools + Excel models + guides for 5 more ca
+2026-06-06T15:33:52.150000+00:00,dpl_59gvbNsYv4r2kU49kQ6pdp9UBjJb,e49a4d73e,property-calculators-and-geo,"Property: plug the holes - render tools/gate early+visible, real perso"
+2026-06-06T15:43:51.976000+00:00,dpl_69TQWYY4Awxh7C1u5w5nxgV4eogg,5cd99deb6,property-humanise,Property: disable the on-page premium tool/gate module (rendered badly
+2026-06-07T10:08:52.842000+00:00,dpl_DUTDs1GkSgpbc5Me13iWKyVZD4cz,fa0a230f1,property-calculators-and-geo,scripts: fix link-audit category slugify (site-aware &-handling)
+2026-06-08T16:21:20.431000+00:00,dpl_2hc2f5HmShUD6NRkXKjs2gJz4uPG,8da8f8120,property-calculators-and-geo,Property docs: record 2026-06-07 consolidated deploy (STATE §0.07)
+2026-06-08T17:46:46.002000+00:00,dpl_GfFgcJfZjCFN6TjcnF9vxSxFpHkN,f4bba17de,property-calculators-and-geo,"Property analytics: nested funnel, GB slicer, dark-data panels, glance"
+2026-06-08T19:39:08.388000+00:00,dpl_Bg3Ghyqk6MDr4qw3auT56ZX1mcxY,7adc71548,property-calculators-and-geo,Property CRO: concurrent A/B experiment program + live experiments led
+2026-06-08T19:47:27.386000+00:00,dpl_ALrozdBJhknnr2B1SQsDw7KTRmY4,2cef2a0f1,property-calculators-and-geo,Property analytics: restore m+s engaged time; show Pages on mobile vis
+2026-06-08T21:06:16.406000+00:00,dpl_6MRNrrDrkTvh8PH7THxynqxQmDAS,69b6e62d5,property-calculators-and-geo,"Property data program Phase 1a: geo (city/region/tz), real-user perf, "
+2026-06-08T21:21:49.940000+00:00,dpl_5HYtgFeURysKGYp6Uw5LTuUwUD2Q,f6cc7d909,property-calculators-and-geo,Property data program Phase 2: channel-value + visits-to-conversion pa
+2026-06-08T21:46:30.418000+00:00,dpl_BWVQzMqnUT1cuwcDmVkCV1nCezMw,e41a41f4e,property-calculators-and-geo,Property data program Phase 1b: Vercel BotID server verdict on ingest
+2026-06-08T22:01:40.955000+00:00,dpl_6CE91reMV8yFrUVTwpBMNXTbj71L,7ebbca58b,property-calculators-and-geo,Property data program Phase 3: nurture engine (opt-in + drip + engagem
+2026-06-08T22:27:32.592000+00:00,dpl_3Gqfiy8HntJzSGe8DCEo9q86zVEi,12bb6f58f,property-calculators-and-geo,Property data program Phase 4: lead intelligence (AI Gateway + Compani
+2026-06-09T10:21:11.983000+00:00,dpl_25GSK7tAHYC7HaeQp3EfkHQ2ciZn,2a7ba726d,property-calculators-and-geo,"Property docs: data & growth program state (Phases 1a-4 shipped, 5 + p"
+2026-06-09T12:04:45.937000+00:00,dpl_FCEm3EzD36VvDxCaiWTyNJtmmwY8,74fc78343,property-calculators-and-geo,Property analytics: surface ambiguous events in the per-visitor view
+2026-06-09T13:06:30.530000+00:00,dpl_9C4YJqNJhJf4LJ5zAK5mEQgN6N73,6f3f8711e,property-calculators-and-geo,"Property analytics: score A/B tests on the building block, not just co"
+2026-06-09T13:16:47.080000+00:00,dpl_FPYhZ8nr7ZPTd3BuNYBLCwq9FRzj,778578487,property-calculators-and-geo,Property analytics: show the building-block card from day one
+2026-06-09T15:04:29.258000+00:00,dpl_8os9XEzPPK8S39SRK5wLhoF8PPvr,5a1891ead,property-calculators-and-geo,Property analytics: load Microsoft Clarity via @microsoft/clarity pack
+2026-06-09T17:45:26.928000+00:00,dpl_9jq48g2LHb23AtTViZjzxbadvMVy,33d7d51b9,property-calculators-and-geo,Property research: ship UK Landlord Tax Index data-PR asset (Phase A)
+2026-06-11T19:03:18.922000+00:00,dpl_91DTK34zgu4ypnWcTaoQpy7oPAKN,ce6b6076d,main,"Phase F (F1): Property adoption — plumbing (analytics, headers, consol"
+2026-06-11T19:40:51.276000+00:00,dpl_3PtZdVMzPm2MczZonesXAbDfK231,1c1a451aa,main,Phase F (F2): Property calculator fleet onto shared tools platform
+2026-06-11T20:15:09.253000+00:00,dpl_FFbLBYb43sJRvcbUQcuYLEbHGfdn,fcd5cff1b,main,Phase F (F3): Property nurture onto shared engine + CTA contrast fix
+2026-06-11T21:21:19.252000+00:00,dpl_CMfdjjnickYoovMKzL4XrfKBqFXT,a87cd72ff,main,"Phase G (G1): shared experiments engine, continuity-pinned"
+2026-06-11T21:37:27.078000+00:00,dpl_C79pPfADxcwsoqUgRg8AP8x7T7xw,748bc4632,main,SDK hotfix: pre-config identity race (experiment assignment integrity)
+2026-06-11T22:09:19.533000+00:00,dpl_3ZryZ5EMQ5BtvigkKBX4VxSWVc24,7c7db8206,main,SDK: exposure observer attaches on element appearance (G2 probe findin
+2026-06-16T11:10:42.233000+00:00,dpl_8jyP6J2or3Z8QwEGGu4VtdmP2nwB,f90f6cca4,property-funnel-qualified-form,"Property funnel: fix calculator inputs, ship one qualified lead form, "
+2026-06-16T23:35:38.353000+00:00,dpl_HVBcRcLhQopD7RH5rxMUJVmYNCME,f4f20e499,main,Estate console: lead + estate + conversion/funnel charts (all-countrie
+2026-06-18T14:22:26.377000+00:00,dpl_EpwY6Sm8podELB5XfTRDmZZAqW1G,96f49820f,main,contractors-ir35: IndexNow submitted; defer monitored_pages until base
+2026-06-18T23:08:22.118000+00:00,dpl_4s4fU3L7HjqXXZGDt26iZ1qjmfFv,014ee3a2c,main,compliance: trade as Ashfield Trading Ltd t/a brands + UK GDPR overhau
+2026-06-22T16:18:39.443000+00:00,dpl_4jva5oDrYA6ob8VQQoMXwxtTXezd,f0c6ff3d1,console-kpi-windows-carousel,Estate console: show UK and all-country lead conversion on one card
+2026-06-23T21:20:50.238000+00:00,dpl_CpGdAQEL9sbau29sE5uAiwfXCY9G,ffedc5f33,console-kpi-windows-carousel,Estate console: split Experiments tab into live vs concluded
+2026-06-23T22:43:29.746000+00:00,dpl_ASvyNvQ6CtCQHVrErwFuTbza2CYe,9754341be,console-kpi-windows-carousel,Property: result-gate pre-deploy review fixes
+2026-06-24T11:31:49.129000+00:00,dpl_HiRUzNeqBsNDBeTShogmeP4oW1KN,9fb4fdadb,console-kpi-windows-carousel,Property: process-audit Wave 0/1 — test-data isolation + verification 
+2026-06-24T17:10:56.797000+00:00,dpl_GXWyJjPnahswB1F343FwVJodDajC,9fb4fdadb,console-kpi-windows-carousel,Property: process-audit Wave 0/1 — test-data isolation + verification 
+2026-06-24T23:50:46.700000+00:00,dpl_5pAoGHzbDEjpkaVVsAC1WJr1cGgZ,2865efa3b,console-kpi-windows-carousel,Monitoring: lead-capture tripwire + post-deploy bundle guard
+2026-06-25T00:31:30.236000+00:00,dpl_242kn1KRgoWGeiQdQ4321HLpsCdL,404c39266,console-kpi-windows-carousel,Property: revert lead-form copy to in-house pre-data-sharing wording
+2026-06-25T10:06:25.455000+00:00,dpl_D3fAjmEXsESGRqk3xmBUbYrkQSaz,f45c7c005,console-kpi-windows-carousel,Property: honeypot diagnostic (Step 1) — make the silent lead-drop obs
+2026-06-25T11:57:34.999000+00:00,dpl_7SJnbhHrHxf5uN7XS6Y4dxjFNNPh,de8c80598,console-kpi-windows-carousel,Property: rename honeypot field company_url -> enquiry_ref (stop autof
+2026-06-26T00:58:15.991000+00:00,dpl_9k5yeGR4sx1AnNZUo7RjdD7f3pNJ,3f1b3c657,property-onsite-assistant-mvp,Property: fix assistant build error (unescaped apostrophes) + mobile o
+2026-06-30T17:10:47.475000+00:00,dpl_2WHbcgGV988uvPyxgiJCZp8NNe5c,1e60bf373,property-onsite-assistant-mvp,Generalist Wave 3 GEO: keyTakeaways answer-boxes on all 74 audit-clean
+2026-06-30T19:31:06.438000+00:00,dpl_DMnyLkDgHavRUQyHUXoFvXpekzNT,1e60bf373,property-onsite-assistant-mvp,Generalist Wave 3 GEO: keyTakeaways answer-boxes on all 74 audit-clean
+2026-07-02T12:03:26.073000+00:00,dpl_Aw976h7iNKHeEUrsMhzx8btUBJUF,f912911c9,property-onsite-assistant-mvp,Property nurture: fix two next-build blockers before first deploy
+2026-07-02T13:14:39.240000+00:00,dpl_6fg42xEGzu24jYuZnwk6ng5K2Sxc,f912911c9,property-onsite-assistant-mvp,Property nurture: fix two next-build blockers before first deploy
+2026-07-02T13:41:23.750000+00:00,dpl_4mEC9LZuVkevGKBbJXaM1yRbQnFY,f912911c9,property-onsite-assistant-mvp,Property nurture: fix two next-build blockers before first deploy
+2026-07-02T14:56:38.653000+00:00,dpl_E7m5dTyvGyD7gwHaa98gWtWPofhA,f90e029ba,property-onsite-assistant-mvp,Property lead nurture: copy + mobile + dashboard polish
+2026-07-02T17:00:48.557000+00:00,dpl_AbDE2ivX7nbnZXFFhsdSSmVztJ4e,21a2b1491,property-onsite-assistant-mvp,Property C1: restore Annex B.1 DJH point-of-collection consent wording
+2026-07-02T18:06:14.944000+00:00,dpl_CRkrd3NAN2KqYHofRWEoVr2VmRtx,e2abeef37,property-onsite-assistant-mvp,"Property Wave 1: lead-nurture safety fixes (de-GET, opt-out intent, en"
+2026-07-02T18:49:56.435000+00:00,dpl_zoGS2yZTmx6seGUVa2J1NyQaHGA2,d17f9f3c8,property-onsite-assistant-mvp,Property Wave 2: lead-nurture analytics + observability
+2026-07-02T20:00:11.609000+00:00,dpl_8CcT2Zd5BzjwyHZkp9HPJajKzqZV,c9451dd44,property-onsite-assistant-mvp,Property Wave 3: compliance hardening + route-level test debt
+2026-07-02T22:03:32.500000+00:00,dpl_3ee9pH8wdWxsCMHvsEyNKbWLSZRe,85cecd806,property-onsite-assistant-mvp,Property lead-nurture: post-launch copy + UX polish (owner feedback)
+2026-07-02T22:19:30.174000+00:00,dpl_4E7Cb5WVwnsSzpbVELxUxdPaadg2,7df4645c3,property-onsite-assistant-mvp,"Property lead-nurture: restructure first SMS to lead with reply YES, o"
+2026-07-02T22:48:38.479000+00:00,dpl_7AeeNsqtsqm7K2CYkWbMH1XdUh4q,df5823232,property-onsite-assistant-mvp,Property lead-nurture: handoff email fully forwardable to DJH + privac
+2026-07-03T10:06:42.796000+00:00,dpl_Cq3HcTNnbpJDFTsaE6iSRGnJVQq9,cb2982dbc,property-onsite-assistant-mvp,Property lead-nurture: fix stuck-view migration (drop-then-create)
+2026-07-03T10:41:14.684000+00:00,dpl_BAMvbjMqBWmFmtroYJo7DLDLN6za,8e5f6db18,property-onsite-assistant-mvp,Property lead-nurture: internal email preview route
+2026-07-03T10:47:32.572000+00:00,dpl_Hs8Dn9CeJ5s1wLDEsngHu85AP2yo,f2986c341,property-onsite-assistant-mvp,Property: tell leads to check spam for our confirmation email
+2026-07-03T14:00:55.809000+00:00,dpl_7rUN2deLPkEeCw6HLSRnLxVKNmUH,aed81e355,property-onsite-assistant-mvp,Console: sequence-aware nurture step-health/stuck panels (multi-sequen
+2026-07-03T14:20:18.571000+00:00,dpl_P4p7dUgRs4b8fpB4zxsYRuUS3QT3,d5b855046,property-onsite-assistant-mvp,Property inbound: fetch reply body by email_id (Resend webhook is meta
+2026-07-03T15:25:02.457000+00:00,dpl_4zii267VNsDXmtF7ZEEfhZ9Ug2TK,f93e10df1,property-onsite-assistant-mvp,Add re_consented migration to apply script list
+2026-07-03T18:36:52.981000+00:00,dpl_GvMd18odNudriooan58mchRenGVS,55798c4a9,property-onsite-assistant-mvp,Property lead emails: branded template + human copy + reply acknowledg
+2026-07-04T14:25:13.800000+00:00,dpl_Bc386WZkLF3pCyU1aP6pmQWwmvcw,55798c4a9,property-onsite-assistant-mvp,Property lead emails: branded template + human copy + reply acknowledg
+2026-07-04T14:56:08.219000+00:00,dpl_4P878s4LavT1CxqQHZtELtAqAUEC,2a341ae58,property-onsite-assistant-mvp,Property nurture: forwardable DJH handover split + reconcile/permanent
+2026-07-04T15:11:48.716000+00:00,dpl_7y6Kwvq9ZAEqrCPnuhenPNXAyAgP,aa478511d,property-onsite-assistant-mvp,Property handover: single email in the original format (owner correcti
+2026-07-07T18:11:25.370000+00:00,dpl_3WhJq1WL4689s3gq8RWhFNq4F7z8,5bf1d0278,property-lead-quality,property: widget friction-ping form-focus guard + lead-capture map doc
+2026-07-09T14:18:44.198000+00:00,dpl_BW79HPrABPvsRd3Tm5HXGzfFRsJP,cde798a0b,property-lead-quality,deploy: .vercelignore (agent worktrees ballooned upload to 2.8GB) + ar
+2026-07-09T14:24:15.872000+00:00,dpl_AH4D2U1hqWu4EfUFu4jNcqC7Hfis,b3754948c,property-lead-quality,"Wave 10 post-merge back-patches: back-links into new pages (F-41, F-53"
+2026-07-09T15:00:40.713000+00:00,dpl_3576E4iEnjxucUZFpYiTLsBWnoEc,23d37e3e8,property-lead-quality,Post-handoff replies resend the full updated handoff pack
+2026-07-09T15:04:27.658000+00:00,dpl_2SfgGwHRFQW6DpBjZxBCciriMgvz,23d37e3e8,property-lead-quality,Post-handoff replies resend the full updated handoff pack
+2026-07-09T15:16:50.749000+00:00,dpl_FsJhTs48FecXSDpwsv4zyE2AErkh,d65c0fa59,property-lead-quality,Handoff 'How they responded' derived from reply history
+2026-07-09T15:32:39.648000+00:00,dpl_Fz7y8epsbNb48rUj5ELYSqneFvPM,3eacef7fa,property-lead-quality,Timeline labels email replies correctly (was hardcoded SMS)
+2026-07-09T21:29:26.797000+00:00,dpl_HM2r2S3vMedECdBMGjDNKrAUBJCU,8dcf7db63,property-lead-quality,fix(.vercelignore): root-anchor patterns — unanchored supabase/ exclud
+2026-07-09T21:33:19.254000+00:00,dpl_HMtsfWqauQzKGS5rwSu8HZF9WjPH,8dcf7db63,property-lead-quality,fix(.vercelignore): root-anchor patterns — unanchored supabase/ exclud
+2026-07-09T22:12:17.473000+00:00,dpl_FnHoSPMJRfQhaYMnoMZhmZ3J1MuR,c7cb89133,property-lead-quality,"Property: remove parked subscriber-drip system (0 subscribers ever, UI"
+2026-07-10T20:36:26.942000+00:00,dpl_2DAkss1RZYESqkzBZiSgmV1762L1,20e5694d5,property-lead-quality,Leads: strip operator-facing meta talk from forwardable emails
+2026-07-10T20:38:55.473000+00:00,dpl_4VHuKJjcdkBmiJmoKDDCgvK1BRsv,20e5694d5,property-lead-quality,Leads: strip operator-facing meta talk from forwardable emails
+2026-07-10T20:44:04.607000+00:00,dpl_DG5avBCk9soopkTcLbtxBaY2E7L9,bb220be70,property-lead-quality,Leads: idempotency key on handoff email retries (duplicate-send fix)
+2026-07-11T20:32:26.248000+00:00,dpl_2QtiMp2yE2hA25XuR1fv2bYwCWqJ,3a1651334,expansion/phase-0,Property lead forms: forewarn leads of the instant SMS/email reply-to-
+2026-07-14T11:50:00.631000+00:00,dpl_AQ6MAZJqyT5wMamX6MsD6sSvaxqE,02b8a0445,expansion/phase-0,Honeypot tag-only estate-wide: never block/quarantine leads (every hit
+2026-07-14T11:52:38.072000+00:00,dpl_Eb79JwsXqV847XVvkiFE3rcEZX8c,02b8a0445,expansion/phase-0,Honeypot tag-only estate-wide: never block/quarantine leads (every hit
+2026-07-15T13:57:56.887000+00:00,dpl_E9WbvsewZdLiLe5jtiHVHu1DZVB8,0e3b5aeaf,expansion/phase-0,Property: pause DJH disclosure on lead forms + privacy policy (reversi
+2026-07-16T20:18:39.780000+00:00,dpl_HpUQo6Dxork9Hf5GcCQAdAM5LRDv,1d68a570e,expansion/phase-0,Expansion launch: all 7 Tier-1 sites deployed to production
+2026-07-19T15:16:50.065000+00:00,dpl_J69WtXUdY7CEvUFKhbXTgxopsdUz,2cf1bc2fd,expansion/phase-0,"Property small-fix wave: 4 meta pairs (stamp-skip apply), generic reca"
+2026-07-20T12:29:50.339000+00:00,dpl_4MgenhFuS7GDdvyQEBrzmzY88FLH,f63d7c318,expansion/phase-0,"Expansion GEO wave: curated llms-full route headers (7 sites, ledger-s"
+2026-07-20T12:32:35.285000+00:00,dpl_pzLwUXtzBCQsKXjf4hzim2Qv2tUq,f63d7c318,expansion/phase-0,"Expansion GEO wave: curated llms-full route headers (7 sites, ledger-s"
+2026-07-20T14:30:13.960000+00:00,dpl_53DZTJ9G45BxK2AJDqYfZLQFuVuW,fcb4d21f8,expansion/phase-0,Property: clear cross-brand gate false-positive (bare 'trustee tax' co
+2026-07-26T18:22:36.109000+00:00,dpl_EFEmGQKsdsiEEocSN6rQWDUKdRMq,36f7f1573,expansion/phase-0,"fix(medical,dentists,solicitors): remove sitewide propertytaxpartners "
+2026-07-26T18:25:57.042000+00:00,dpl_3KocwU2fKtAkXzUdg1S69ShJn8mA,36f7f1573,expansion/phase-0,"fix(medical,dentists,solicitors): remove sitewide propertytaxpartners "
+2026-08-03T18:20:14.379000+00:00,dpl_8z2hbt3USBZDzU9HEf9FkEHhZ3KN,,,
+2026-08-03T21:54:02.800000+00:00,dpl_G3iFLrcQUDYV9wBgVpfbWsi8ntt3,b4e0bbdb0,expansion/phase-0,fix(estate): FA2026/R3 year-transition sweep - 28 pages to 2026/27 cur
+2026-08-05T14:45:58.671000+00:00,dpl_8yAeKk8h5Z1CP3xSy6YGbieEyo9a,8079e55c9,expansion/phase-0,"docs(property): llms files carry new money tier, hubs and corrected 20"
+2026-08-05T14:50:32.340000+00:00,dpl_FBWnr7CaKF29JwKngSFrLNJjCU44,8079e55c9,expansion/phase-0,"docs(property): llms files carry new money tier, hubs and corrected 20"
+2026-08-05T15:04:43.679000+00:00,dpl_CmCNzJivD7TzQQFzdGXpQ1cuJuMz,05264d8ab,expansion/phase-0,"fix(property): nav overflow - drop redundant Contact nav item, tighten"
+2026-08-05T16:46:57.667000+00:00,dpl_8ccCTsGZvAaqQ2ZXbo8iVRTS23ok,9bff893aa,expansion/phase-0,fix(estate): dedupe brand suffix in page titles across 14 sites
+2026-08-05T22:54:48.717000+00:00,dpl_8j2q3zoMRBYv2716D36Tf7qddwb7,e8de03251,expansion/phase-0,fix(estate): owner walk round - header CTA drops price + Talk to us; P
+2026-08-06T16:25:13.406000+00:00,dpl_B2sYiD5yB5ZmMTeKJZ4iz8ZWCcUt,7f7eae12d,expansion/phase-0,"revert(estate): pkg_pricing_v1 packages experiment removed, back to le"
+2026-08-06T17:31:30.931000+00:00,dpl_3yemFHTifCib7zxVw3eWW483QRi7,5d7670e56,expansion/phase-0,"fix(leads): aux-cron scans filter to own site source, stops cross-bran"
+2026-08-07T09:50:24.608000+00:00,dpl_EBz5HGJPrrBJ2fiAizTKFyjYdpyG,2bc3e50ec,expansion/phase-0,fix(leads): honour signed email opt-outs (STOP + signature block)
+2026-08-07T09:55:19.148000+00:00,dpl_2Y2CowqDso3DJpKh1NTa2jrCbKKk,2bc3e50ec,expansion/phase-0,fix(leads): honour signed email opt-outs (STOP + signature block)
+2026-08-13T09:38:10.468000+00:00,dpl_7osoVRsb33pVyE85fQP73c3pUYuw,2bc3e50ec,expansion/phase-0,fix(leads): honour signed email opt-outs (STOP + signature block)
+2026-08-15T15:20:44.876000+00:00,dpl_GQmPbjSxYBvvSV6L528eemBPNprv,ead4aee30,expansion/new-sites-2026-08,fix(deploy): repair corrupted --workspace paths in 18 vercel.json
+2026-08-15T15:25:40.301000+00:00,dpl_24ahtGJ1zpKtv7CfSw5VyYzgNfX2,ead4aee30,expansion/new-sites-2026-08,fix(deploy): repair corrupted --workspace paths in 18 vercel.json
+2026-08-15T15:29:42.500000+00:00,dpl_4cNrtJXJn5i5CWCfysmwENfW7dy4,ead4aee30,expansion/new-sites-2026-08,fix(deploy): repair corrupted --workspace paths in 18 vercel.json
+2026-08-16T08:01:19.628000+00:00,dpl_6GviLrk5QSGiMSpiZs7wnZFr1UiV,,,
+2026-08-17T07:54:42.773000+00:00,dpl_Ehbntd3xaPh8Av4NJWaTEa1iWuAJ,,,
+2026-08-17T20:14:43.434000+00:00,dpl_Bzc6YK9Sw3EE8PKxj8VDcZYcYskZ,,,
+2026-08-18T14:58:01.049000+00:00,dpl_4c5BJeZLCA1DFWpDJjonTKmnAiQ7,,,
+2026-08-19T10:08:21.853000+00:00,dpl_FVjLmp4FzuLGWT9BurgaNdjLwg3n,,,
+2026-08-19T10:28:07.583000+00:00,dpl_FYrdAZAQYNV8e1NbzovGCtRVn2sK,,,
+2026-08-19T10:48:49.130000+00:00,dpl_4LL4aeV99nb74tyBL66jqNMJ9EHF,,,
+2026-08-19T11:02:26.957000+00:00,dpl_6CMiURpB14qPCCTRrcNS2T2QNAjG,,,
+2026-08-19T11:17:40.101000+00:00,dpl_F7iH6QRvZScWZMFnzfL2c6CgkxqG,,,
+2026-08-19T12:06:07.100000+00:00,dpl_3YZ48TAfEfFgzuaSQ5VTK9uznMxE,,,
+2026-08-19T12:24:16.743000+00:00,dpl_HWzFisambDJoMFwr7ffbzF1J4pN3,,,
+2026-08-19T12:36:40.637000+00:00,dpl_D4JD8mRq4aTn7UuyHN6ScRbCxf7S,,,
+2026-08-19T12:47:15.017000+00:00,dpl_EoiiJ23AMFZnS3hZCe9qNaupjnG8,,,
+2026-08-19T13:05:40.283000+00:00,dpl_7qzvfxm8Dq6SLhej9DaZfFWwDyKM,,,
+2026-08-19T13:40:56.044000+00:00,dpl_5U4zxpG8LWB4KL7Lg8s8UZ3Nbxm1,,,
+2026-08-19T13:45:11.723000+00:00,dpl_5FduhJcz9t8hKiPqvYNQsv4mMPFT,,,
+2026-08-19T13:58:26.585000+00:00,dpl_FtBo6FoYNiWe7F7FqRD26jdiewZb,,,
+2026-08-19T18:06:55.430000+00:00,dpl_6WskQBqp5GStGeh4jXtMhXnDoHBi,,,
+2026-08-19T18:09:31.829000+00:00,dpl_FgMjLtPTVAwWmY6ozwPuYWDG4wA5,,,
+2026-08-19T21:43:41.551000+00:00,dpl_3y1JWft5mQ7F9cMQhBEdZvXWoDdS,,,
+2026-08-20T12:10:39.327000+00:00,dpl_DTRqbfeXLYzDJ9qCxn991aBuEopj,,,
+2026-08-20T13:39:23.565000+00:00,dpl_EKeUavzB2JMZrq9h2gNpPJbePeeM,,,
+2026-08-20T14:12:50.007000+00:00,dpl_4jFtviZdKygQedojfPSRwchEU4Dd,,,
+2026-08-20T14:28:19.705000+00:00,dpl_Bcjuiwst3HjDtvq5n2N4rZxtdApY,,,
+2026-08-20T15:35:31.494000+00:00,dpl_64v6KpwTC16hhxBFDRPgr9n4u7e6,,,
+2026-08-20T18:34:47.147000+00:00,dpl_6mx6Q2MapEaudURWxigUgQydYCJg,,,
+2026-08-20T19:43:27.683000+00:00,dpl_3PCY6d8dDkdkFfMYXD8axLm1LaEM,,,
+2026-08-20T21:04:45.885000+00:00,dpl_6gE7RK3wpKER45DxzUXE4outhsjD,,,
+2026-08-21T11:57:22.762000+00:00,dpl_B8SGyMhCB4BdvwNns1fMsW67xuDp,,,
+2026-08-21T14:32:26.479000+00:00,dpl_C8CGheNvpuhdxCzzc7fp6GQhKdCR,,,
+2026-08-21T18:30:22.676000+00:00,dpl_F5UBBHoxZLmn9yFyDB1j9VE3NkJt,,,
+2026-08-23T20:21:50.427000+00:00,dpl_8RvtcCMQ7J2bRPXtzRoNUxAsf1Lu,,,
+2026-08-23T20:34:05.367000+00:00,dpl_E5YYbdpF1xZHdcNvLNcSvaqNGMZT,,,
+2026-08-24T08:22:21.766000+00:00,dpl_6nhP2oRiLcoEa4KN8HwviRnKu6cS,,,
+2026-08-24T20:18:45.026000+00:00,dpl_A2V6tnJCgGak4xT24RdCFav5WZtW,,,
+2026-08-26T15:20:54.614000+00:00,dpl_9N8prj2zzE7YmVoVa7YCEJDQ9Zrx,,,
+2026-09-02T10:47:42.657000+00:00,dpl_CsYAudM4Vw1f2z28ubfUm2RK3odB,,,
+2026-09-02T11:34:23.329000+00:00,dpl_ByjoUQ5P9aigLaRujHXE77p5s9fq,,,
+2026-09-02T11:58:11.476000+00:00,dpl_AA9HMP7259haCkyVQkiRJcHBQtjh,,,
+2026-09-02T12:47:55.019000+00:00,dpl_6cEjqV9acfWCP6fhvffc7SUZEYFE,,,
+2026-09-02T18:56:03.012000+00:00,dpl_GE82825b1qEUW9PPiSVuzf1D3rrc,,,
+2026-09-09T14:15:13.874000+00:00,dpl_XFEdtwS3wFF2USguTqjbekUmD6bw,,,
+2026-09-14T16:12:27.681000+00:00,dpl_HNf6XPLWfjfoXvTmr4ZiQHu7NAKk,,,
+2026-09-16T11:13:22.457000+00:00,dpl_EoHurVzJg6tvyjkAbyuLomjYHzKh,,,
+2026-09-23T11:58:28.153000+00:00,dpl_4houNAaD49ZGaXhjctt39YLH7vN2,,,
+2026-09-28T12:50:45.795000+00:00,dpl_2HCXHTVQRjw8uQhQ7FRXQawecAuf,,,
+2026-09-28T13:43:31.059000+00:00,dpl_3NG7iRxSxHbPZLmHQE1vSTWk2iNp,1f572ac46,main,"docs(leads-250): deploy record for 2026-09-28, what shipped, CI noise "
+2026-09-28T13:56:22.469000+00:00,dpl_598yfRixnR9inu46e8L5fo5o49CJ,,,
+2026-09-28T15:04:33.740000+00:00,dpl_ESpGF5sS6WHwCXR44iMZMVPdfSNQ,,,
+2026-09-30T10:37:14.628000+00:00,dpl_2kb42wc9FE3VKtA9CDXYL2xYhggy,,,
+2026-10-07T13:41:30.696000+00:00,dpl_8pboioKD8fAWZYoj1JD7isdXNZTH,,,
+2026-10-07T14:28:52.878000+00:00,dpl_26JkvBNiwdQE2NtXUofieuGLDcjw,,,
+2026-10-09T12:11:24.724000+00:00,dpl_H5xDbcbcFWm45iDKNx96VfZTeSFb,3e6db9c5a,claude/website-estate-access-gdk8ei,"feat(property): homepage title to the brand umbrella (R3, R26); monito"
+2026-10-09T12:31:19.643000+00:00,dpl_9VQczBP1Kr6YmkbQFCCfmNuxMCWY,eba68bdb0,claude/website-estate-access-gdk8ei,"fix(property): every ""Book"" button goes to /contact, not to the in-pag"
+2026-10-09T12:38:12.374000+00:00,dpl_FEDcmz4UNnhaEj56fz6RszuUYxSi,eba68bdb0,claude/website-estate-access-gdk8ei,"fix(property): every ""Book"" button goes to /contact, not to the in-pag"
+2026-10-09T12:48:07.212000+00:00,dpl_8VEjoSyDktnjMYBgWMeJe55MdvmW,eba68bdb0,claude/website-estate-access-gdk8ei,"fix(property): every ""Book"" button goes to /contact, not to the in-pag"
+2026-10-09T12:55:33.884000+00:00,dpl_CpSH2UYxan7UK4oEm7EWE96exTyZ,0d649aaf9,claude/website-estate-access-gdk8ei,fix(property): homepage title carries the brand (the layout title temp
+2026-10-09T15:13:54.758000+00:00,dpl_43fZDSzN6hVK4U3Y4QzcTdYYJkNq,cfe956298,claude/website-estate-access-gdk8ei,"fix(property): homepage H1, WebPage name and description carry the R26"
