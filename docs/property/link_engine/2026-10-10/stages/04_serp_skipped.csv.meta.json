@@ -1,17 +1,17 @@
 {
-  "pulled_at": "2026-10-10T01:34:30+00:00",
+  "pulled_at": "2026-10-10T11:04:45+00:00",
   "source": "DFS serp/google/organic/live/advanced depth=10 UK desktop",
   "site": "property",
   "data_through": "2026-10-10",
   "dfs_balance_start": {
-    "balance": 13.481619999999992,
+    "balance": 13.469619999999992,
     "currency": "USD",
-    "ts": "2026-10-10T01:34:01+00:00"
+    "ts": "2026-10-10T11:04:43+00:00"
   },
   "dfs_balance_end": {
     "balance": 13.469619999999992,
     "currency": "USD",
-    "ts": "2026-10-10T01:34:30+00:00"
+    "ts": "2026-10-10T11:04:45+00:00"
   },
   "run_spend_usd": 1.14,
   "script": "serp.py",

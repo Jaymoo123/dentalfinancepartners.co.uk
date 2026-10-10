@@ -13,7 +13,7 @@ Built by scripts/link_engine/demand_pack.py from the stage files listed at the e
 | Search volume and cost per click | Google Ads, UK, one source, one date: 2026-10-10 |
 | Live Google results (top 10) | UK desktop, pulled on 2026-10-10 |
 | Leads window | 2026-07-12..2026-10-09 inclusive (90 days) (data through 2026-10-09) |
-| DataForSEO spend this run | $1.14 over 415 paid calls (387 cache hits) |
+| DataForSEO spend this run | $1.14 over 415 paid calls (781 cache hits) |
 | Keywords priced | 578 |
 | Search families in total | 226 |
 | Money families ranked | 149 |
@@ -29,8 +29,9 @@ Priority is ad-market value times winnability (how likely we are to rank). Share
 | /services/property-accountant | 5 | 2,830 | 29,915 | 42.3% | 0 | property accountant; real estate accountant; accountant specializing in real estate |
 | /services/landlord-accountant | 11 | 1,380 | 18,161 | 13.4% | 0 | landlord accountant; buy to let tax accountants; accountant fees for rental property |
 | /services/property-tax-advice | 14 | 1,610 | 14,482 | 11.5% | 7 | property tax advice; landlord tax advice; buy-to-let tax advisor |
-| /for/moving-property-into-a-limited-company | 21 | 1,820 | 10,943 | 9.9% | 0 | property incorporation; transfer property to limited company without stamp duty; transfer property to limited company |
 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale | 1 | 810 | 10,200 | 7.0% | 1 | tax on selling second home |
+| /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | 7 | 1,040 | 5,091 | 5.2% | 15 | transfer property to limited company without stamp duty; transfer property to limited company; how to transfer property to limited company |
+| /for/moving-property-into-a-limited-company | 15 | 850 | 6,035 | 4.9% | 0 | property incorporation; incorporation relief property; incorporation relief for landlords |
 | /for/gifting-property-to-family | 4 | 1,040 | 6,144 | 4.1% | 0 | capital gains tax on gifting property; cgt on gifted property; gifting property tax |
 | /for/property-spv-set-up | 3 | 490 | 4,385 | 3.1% | 0 | buy to let limited company; spv accountant; spv incorporation |
 | GAP: city page | 39 | 270 | 1,717 | 2.6% | 0 | landlord accountant glasgow; property accountant glasgow; property accountants liverpool |
@@ -38,7 +39,7 @@ Priority is ad-market value times winnability (how likely we are to rank). Share
 | /locations/london | 8 | 100 | 786 | 1.1% | 0 | property tax accountant london; landlord accountant london; buy-to-let accountant farringdon |
 | /locations/birmingham | 1 | 20 | 329 | 0.9% | 2 | property accountant birmingham |
 | /for/landlord-retirement-and-succession | 5 | 130 | 547 | 0.8% | 0 | inheritance tax mitigation strategies for landlords; family investment company property; transferring buy-to-let property into trust |
-| Other (13 pages) | 35 | 870 | 1,843 | 1.7% | 19 | - |
+| Other (12 pages) | 34 | 800 | 1,660 | 1.5% | 4 | - |
 
 ## 3. Top 30 search families
 
@@ -50,11 +51,11 @@ Winnability is our position factor times one minus half the share of big-site re
 | 2 | landlord accountant | Hire | 1,310 | 17,830 | 0.19 | not in top 10 (Search Console average 50.5) | not in top 10 | /services/landlord-accountant | WP1 ruling | 0 leads on owner page (shared with 11 families) |
 | 3 | property tax advice | Hire | 1,180 | 12,567 | 0.2 | not in top 10 (Search Console average 68.7) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
 | 4 | tax on selling second home | Paid decision | 810 | 10,200 | 0.178 | not in top 10 (Search Console average 53.7) | not in top 10 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale | manager ruling (LE-12) | 1 leads on owner page (sole family on this page) |
-| 5 | property incorporation | Paid decision | 480 | 5,472 | 0.2 | not in top 10 (Search Console average 11.0) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 21 families) |
-| 6 | transfer property to limited company without stamp duty | Paid decision | 320 | 2,384 | 0.343 | not in top 10 (Search Console average 46.7) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 21 families) |
+| 5 | property incorporation | Paid decision | 480 | 5,472 | 0.2 | not in top 10 (Search Console average 11.0) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 15 families) |
+| 6 | transfer property to limited company without stamp duty | Paid decision | 320 | 2,384 | 0.343 | not in top 10 (Search Console average 46.7) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-14) | 15 leads on owner page (shared with 7 families) |
 | 7 | capital gains tax on gifting property | Paid decision | 650 | 4,070 | 0.178 | not in top 10 (Search Console average 36.0) | not in top 10 | /for/gifting-property-to-family | judgment (medium) | 0 leads on owner page (shared with 4 families) |
 | 8 | buy to let limited company | Paid decision | 390 | 3,838 | 0.178 | not in top 10 (no Search Console data) | not in top 10 | /for/property-spv-set-up | judgment (low, 2 readers agree) | 0 leads on owner page (shared with 3 families) |
-| 9 | transfer property to limited company | Paid decision | 530 | 2,486 | 0.189 | not in top 10 (Search Console average 50.6) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 21 families) |
+| 9 | transfer property to limited company | Paid decision | 530 | 2,486 | 0.189 | not in top 10 (Search Console average 50.6) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-14) | 15 leads on owner page (shared with 7 families) |
 | 10 | real estate accountant | Hire | 140 | 2,069 | 0.2 | not in top 10 (Search Console average 16.5) | not in top 10 | /services/property-accountant | judgment (medium) | 0 leads on owner page (shared with 5 families) |
 | 11 | cgt on gifted property | Paid decision | 320 | 2,074 | 0.167 | not in top 10 (Search Console average 53.5) | not in top 10 | /for/gifting-property-to-family | judgment (medium) | 0 leads on owner page (shared with 4 families) |
 | 12 | landlord accountant glasgow | Hire | 20 | 330 | 1.0 | live Google rank 8 | not in top 10 | GAP: city page | WP1 ruling | 0 leads on owner page (n/a) |
@@ -63,7 +64,7 @@ Winnability is our position factor times one minus half the share of big-site re
 | 15 | property accountant birmingham | Hire | 20 | 329 | 0.7 | not in top 10 (Search Console average 14.8) | not in top 10 | /locations/birmingham | WP1 ruling | 2 leads on owner page (sole family on this page) |
 | 16 | inheritance tax mitigation strategies for landlords | Paid decision | 110 | 546 | 0.4 | not in top 10 (Search Console average 34.5) | not in top 10 | /for/landlord-retirement-and-succession | judgment (medium) | 0 leads on owner page (shared with 5 families) |
 | 17 | landlord tax advice | Hire | 180 | 993 | 0.189 | not in top 10 (Search Console average 78.7) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
-| 18 | incorporation relief property | Paid decision | 220 | 425 | 0.356 | not in top 10 (Search Console average 21.6) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 21 families) |
+| 18 | incorporation relief property | Paid decision | 220 | 425 | 0.356 | not in top 10 (Search Console average 21.6) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 15 families) |
 | 19 | buy-to-let tax advisor | Hire | 20 | 126 | 1.0 | live Google rank 4 | rank 6 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
 | 20 | capital gains tax selling rental property | Paid decision | 470 | 658 | 0.189 | not in top 10 (no Search Console data) | not in top 10 | /for/selling-a-buy-to-let | manager ruling (LE-10) | 0 leads on owner page (shared with 8 families) |
 | 21 | spv accountant | Hire | 90 | 547 | 0.2 | not in top 10 (Search Console average 58.3) | not in top 10 | /for/property-spv-set-up | WP1 ruling | 0 leads on owner page (shared with 3 families) |
@@ -75,7 +76,7 @@ Winnability is our position factor times one minus half the share of big-site re
 | 27 | small landlord tax advice | Hire | 170 | 406 | 0.178 | not in top 10 (Search Console average 70.0) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
 | 28 | property accountants liverpool | Hire | 20 | 378 | 0.189 | not in top 10 (Search Console average 54.8) | rank 1 | GAP: city page | WP1 ruling | 0 leads on owner page (n/a) |
 | 29 | holiday letting tax advice | Hire | 10 | 355 | 0.189 | not in top 10 (Search Console average 24.0) | not in top 10 | /for/holiday-let-and-serviced-accommodation | WP1 ruling | 0 leads on owner page (shared with 4 families) |
-| 30 | how to transfer property to limited company | Paid decision | 70 | 183 | 0.325 | not in top 10 (Search Console average 47.9) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-4) | 15 leads on owner page (sole family on this page) |
+| 30 | how to transfer property to limited company | Paid decision | 70 | 183 | 0.325 | not in top 10 (Search Console average 47.9) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-4) | 15 leads on owner page (shared with 7 families) |
 
 ## 4. Gaps: demand with no page to own it
 
@@ -94,8 +95,6 @@ Leads belong to the page that owns a family, never to the family itself, and sit
 |---|---|---|---|---|---|---|
 | /services/property-accountant | 42.3% | 5 | 0 | 0 | demand without leads | page rewritten 2026-10-09, maturing |
 | /services/landlord-accountant | 13.4% | 11 | 0 | 0 | demand without leads | page rewritten 2026-10-09, maturing |
-| /for/moving-property-into-a-limited-company | 9.9% | 21 | 0 | 0 | demand without leads | - |
-| /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | 0.2% | 1 | 15 | 9,500 | leads exceed demand | - |
 
 Entry pages with 3 or more leads that own no ranked family:
 
@@ -147,8 +146,8 @@ Run in order: gsc_pull, universe, metrics, serp, cluster, families, apply_judgme
 | stages/04_serp_summary.csv | 393 | 96330bc84d721c3ed7cd141facf8d636d2b24b5ed479dbeac0cf0ab84be4a957 | ok |
 | stages/05_cluster_conflicts.csv | 16 | dc90ce7541b511a4a8f3478358d360f1f363c8d5d6beffa07f14937b4207856a | ok |
 | stages/05_clusters.csv | 578 | ac6e6c0d3cab911eb4ebc8b4c43986fed34b202ba2bf34c17ef705c16f0c4a1d | ok |
-| stages/06_families.csv | 226 | 022ff99d0ac408cb490aa40a2b58b1d6b024de034c651ed6a0916381b310ccf3 | ok |
+| stages/06_families.csv | 226 | fb459e5d35e836f0e7a2a1f43412ca249bcb64bc00ac300772037e000cfc4b25 | ok |
 | stages/06_owner_queue.csv | 142 | 9a443470a5d319e81784f44e8e5a89d29b59441371fe6d3bd39d7250d2bdd918 | ok |
-| stages/06_owner_rollup.csv | 25 | 975a389c8ca1c24eaa310933aee4dc24a912cad0a617cfa630d2efd1f8cfbe48 | ok |
+| stages/06_owner_rollup.csv | 25 | c08fcb1fd90116765af5ab82a40a5165a8b705d7894fe342a7927a49d5dcbbe8 | ok |
 | stages/07_disagreements.csv | 0 | ac13e8e3b4b21a7e76577852206f59299dc24ca1844f94619df0bb5006f4d40d | ok |
 | stages/07_rejudge_needed.csv | 4 | 1bea02c299f6106073985b047ac3e82497baf82ff01da08b762eb2d715a15b69 | ok |

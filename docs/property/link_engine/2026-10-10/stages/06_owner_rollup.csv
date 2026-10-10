@@ -2,8 +2,9 @@ owner_page,n_families,demand_volume,value_usd_month,priority_sum,share_of_priori
 /services/property-accountant,5,2830,29915.2,10934.06,0.4227,0,0,demand without leads,"page rewritten 2026-10-09, maturing",property accountant; real estate accountant; accountant specializing in real estate
 /services/landlord-accountant,11,1380,18160.6,3453.82,0.1335,0,0,demand without leads,"page rewritten 2026-10-09, maturing",landlord accountant; buy to let tax accountants; accountant fees for rental property
 /services/property-tax-advice,14,1610,14482.4,2972.91,0.1149,7,0,,,property tax advice; landlord tax advice; buy-to-let tax advisor
-/for/moving-property-into-a-limited-company,21,1820,10943.2,2571.09,0.0994,0,0,demand without leads,,property incorporation; transfer property to limited company without stamp duty; transfer property to limited company
 /blog/capital-gains-tax/capital-gains-tax-second-home-sale,1,810,10199.8,1813.52,0.0701,1,0,,,tax on selling second home
+/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,7,1040,5091.2,1352.75,0.0523,15,9500,,,transfer property to limited company without stamp duty; transfer property to limited company; how to transfer property to limited company
+/for/moving-property-into-a-limited-company,15,850,6035.4,1277.95,0.0494,0,0,,,property incorporation; incorporation relief property; incorporation relief for landlords
 /for/gifting-property-to-family,4,1040,6144.0,1069.39,0.0413,0,0,,,capital gains tax on gifting property; cgt on gifted property; gifting property tax
 /for/property-spv-set-up,3,490,4384.8,791.77,0.0306,0,0,,,buy to let limited company; spv accountant; spv incorporation
 GAP: city page,39,270,1716.9,678.59,0.0262,0,0,,,landlord accountant glasgow; property accountant glasgow; property accountants liverpool
@@ -15,7 +16,6 @@ GAP: city page,39,270,1716.9,678.59,0.0262,0,0,,,landlord accountant glasgow; pr
 /locations/manchester,2,10,121.1,84.77,0.0033,2,0,,,property accountant manchester; landlord accountant manchester
 GAP: new page needed,2,100,377.1,75.42,0.0029,0,0,,,property development accountant; property development tax planning
 /for/holiday-let-and-serviced-accommodation,4,20,355.0,67.06,0.0026,0,0,,,holiday letting tax advice; holiday let accountant; furnished holiday let tax specialist
-/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,1,70,183.4,59.61,0.0023,15,9500,leads exceed demand,,how to transfer property to limited company
 /for/inherited-property,3,30,145.8,25.52,0.001,0,0,,,renting out inherited property; inherited rental property; inherited property landlord advice
 /landed-estates,1,60,0.0,0.0,0.0,0,0,,,agricultural property relief iht
 /services/non-resident-landlord,4,40,0.0,0.0,0.0,2,0,,,non resident landlord tax return; non resident capital gains tax uk property; non resident landlord accountant

@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import argparse
 
-from common import (UK_LOCATION, LANG, dfs_balance, dfs_post, estimate_cost, load_site, norm_query,
+from common import (UK_LOCATION, LANG, dfs_balance, dfs_post, estimate_cost, load_site, norm_query, serp_store_lookup,
                     read_csv, run_dir, run_spend, script_meta, write_csv)
 
 ENDPOINT = "serp/google/organic/live/advanced"
@@ -54,17 +54,36 @@ def main() -> None:
     ap.add_argument("--max-estimate", type=float, default=1.00,
                     help="if the estimate is higher, keep the top N by volume*cpc that fit and log the rest")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--selftest", action="store_true",
+                    help="dry-run proof: add one fake keyword and assert only that keyword would be pulled")
     a = ap.parse_args()
     le = load_site(a.site)["link_engine"]
     rd = run_dir(a.site, a.run)
     qs = pick_queries(a, rd)
+    have, need = serp_store_lookup(qs)                   # the committed store: only `need` is ever pulled
+    if a.selftest:
+        fake = "zz selftest fake keyword xyz"
+        h2, n2 = serp_store_lookup(qs + [fake])
+        assert n2 == need + [fake], "selftest failed: more than the fake keyword would be pulled"
+        print(f"selftest ok: {len(h2)} SERPs from the store, would pull only {len(n2)} ({n2[-1]!r} is the fake one)")
+        return
     skipped = []
     fit = int(a.max_estimate / 0.002 + 1e-9)
-    if len(qs) > fit:        # qs is already ordered by volume*cpc for --from-metrics
-        qs, skipped = qs[:fit], qs[fit:]
-        print(f"estimate over ${a.max_estimate:.2f}: keeping top {fit}, skipping {len(skipped)} (logged to 04_serp_skipped.csv)")
-    est = 0.002 * len(qs)
-    print(f"{len(qs)} queries; est ${est:.3f}; run spend so far ${run_spend(a.site, a.run):.4f}")
+    kept, budget = [], fit              # stored SERPs are free; only new pulls count against the budget
+    for q in qs:                        # qs is ordered by volume*cpc for --from-metrics
+        if q in have:
+            kept.append(q)
+        elif budget > 0:
+            kept.append(q)
+            budget -= 1
+        else:
+            skipped.append(q)
+    if skipped:
+        print(f"estimate over ${a.max_estimate:.2f}: skipping {len(skipped)} new pulls (logged to 04_serp_skipped.csv)")
+    qs = kept
+    est = 0.002 * len([q for q in qs if q not in have])
+    print(f"{len(qs)} queries ({len(have)} in the store, {len(qs) - len([q for q in qs if q in have])} new); est ${est:.3f}; "
+          f"run spend so far ${run_spend(a.site, a.run):.4f}")
     if a.dry_run:
         print("dry run, first 10:", qs[:10])
         return

@@ -24,7 +24,7 @@ from __future__ import annotations
 import argparse
 import re
 
-from common import (UK_LOCATION, LANG, dfs_balance, dfs_cache_get, dfs_post, estimate_cost, load_site, norm_query,
+from common import (UK_LOCATION, LANG, SV, dfs_balance, dfs_post, estimate_cost, ideas_store_lookup, store_lookup, load_site, norm_query,
                     read_csv, run_dir, run_spend, script_meta, write_csv)
 from universe import classify, geo_of
 
@@ -33,7 +33,6 @@ FIELDS = ["query", "intent_class", "geo", "volume", "cpc", "cpc_currency", "comp
 CPC_CURRENCY = "USD (DataForSEO convention, unverified)"
 REJECT_FIELDS = ["query", "reason"]
 IDEAS_SRC = "dfs_keyword_ideas_{run}"
-SV = "keywords_data/google_ads/search_volume/live"
 BATCH = 1000
 
 
@@ -65,6 +64,8 @@ def main() -> None:
     ap.add_argument("--run", required=True)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--max-estimate", type=float, default=1.00)
+    ap.add_argument("--selftest", action="store_true",
+                    help="dry-run proof: add one fake keyword and assert only that keyword would be priced")
     a = ap.parse_args()
     le = load_site(a.site)["link_engine"]
     rd = run_dir(a.site, a.run)
@@ -77,7 +78,7 @@ def main() -> None:
     ideas_payload = [{"keywords": [s for k in ("hire", "decision") for s in le["seeds"][k]],
                       "location_code": UK_LOCATION, "language_code": LANG, "limit": 300}]
     est_ideas = estimate_cost("dataforseo_labs/google/keyword_ideas/live", ideas_payload)
-    body = dfs_cache_get("dataforseo_labs/google/keyword_ideas/live", ideas_payload)
+    body = ideas_store_lookup(ideas_payload[0])        # committed store, keyed by the seed set
     if body is None:
         if a.dry_run:
             print(f"note: keyword_ideas not cached; would cost ~${est_ideas:.3f}")
@@ -110,13 +111,19 @@ def main() -> None:
             rejects.append({"query": q, "reason": why})
         else:
             to_price.append(q)
-    batches = [to_price[i:i + BATCH] for i in range(0, len(to_price), BATCH)]
+    have, need = store_lookup(to_price)                  # per keyword: only `need` is ever sent to the API
+    if a.selftest:
+        fake = "zz selftest fake keyword xyz"
+        h2, n2 = store_lookup(to_price + [fake])
+        assert n2 == need + [fake], f"selftest failed: expected only the fake keyword to be new, got {len(n2) - len(need)} extra"
+        print(f"selftest ok: {len(h2)} keywords from the store, would price only {len(n2)} ({n2[-1]!r} is the fake one)")
+        return
+    batches = [need[i:i + BATCH] for i in range(0, len(need), BATCH)]
     payloads = [[{"keywords": b, "location_code": UK_LOCATION, "language_code": LANG}] for b in batches]
-    est_sv = sum(0.0 if dfs_cache_get(SV, p) is not None else estimate_cost(SV, p) for p in payloads)
+    est_sv = sum(estimate_cost(SV, p) for p in payloads)
     est = est_sv + (0.0 if body is not None else est_ideas)
-    print(f"commercial rows {len(comm)} (ideas added {n_new}); to price {len(to_price)} in {len(batches)} batch(es); "
-          f"rejects {len(rejects)}; est ${est:.4f} (search_volume ${est_sv:.4f}; rate-card upper bound at 0.0015/kw "
-          f"would be ${sum(0.075 + 0.0015 * len(b) for b in batches):.2f})")
+    print(f"commercial rows {len(comm)} (ideas added {n_new}); to price {len(to_price)}: {len(have)} from the store, "
+          f"{len(need)} new in {len(batches)} batch(es); rejects {len(rejects)}; est ${est:.4f}")
     bal0 = dfs_balance()
     print("DFS balance:", bal0)
     if a.dry_run:
@@ -126,8 +133,9 @@ def main() -> None:
         raise SystemExit(2)
 
     out = {}
-    for b, p in zip(batches, payloads):
-        body = dfs_post(SV, p, a.site, a.run)
+    full = [to_price[i:i + BATCH] for i in range(0, len(to_price), BATCH)]
+    for b in full:
+        body = dfs_post(SV, [{"keywords": b, "location_code": UK_LOCATION, "language_code": LANG}], a.site, a.run)
         got = {norm_query(x.get("keyword", "")): x for x in first_items(body)}
         for q in b:
             x = got.get(q, {})
