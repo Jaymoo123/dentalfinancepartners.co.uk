@@ -50,6 +50,13 @@ import json
 import re
 from collections import Counter, defaultdict
 
+import json as _json
+from pathlib import Path as _Path
+try:
+    CONVERSION_OVERRIDES = _json.load(open(_Path(__file__).resolve().parent / "sites" / "property.json")).get("link_engine", {}).get("conversion_overrides", {})
+except (OSError, ValueError):
+    CONVERSION_OVERRIDES = {}
+
 from cluster import conflict_sha
 from common import load_site, read_csv, run_dir, script_meta, write_csv
 from families import (CONV_ROLLUP, EXCLUDED_BASIS, FIELDS, FITS, QUEUE, ROLLUP, attach_leads, conversion_rollup, rerank, rollup,
@@ -228,7 +235,9 @@ def main() -> None:
             r["owner_basis"] = basis
             applied[basis] += 1
         r["gap_brief"], r["judgment_reason"], r["commercial_fit"] = v.get("gap_brief") or "", v["reason"] + note, v["commercial_fit"]
-        r["conversion_page"], r["le19_decision"] = r["owner_page"], ""
+        # A guide that owns a family through an earlier ruling (LE-12, LE-14) names its sales page in config
+        # `conversion_overrides` {guide: sales page}; otherwise the owner is its own conversion page.
+        r["conversion_page"], r["le19_decision"] = CONVERSION_OVERRIDES.get(r["owner_page"], r["owner_page"]), ""
     if lone_low:
         raise SystemExit(f"ABORT: {len(lone_low)} low-confidence verdicts have no second reader: {lone_low}")
 

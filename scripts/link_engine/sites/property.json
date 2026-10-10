@@ -257,6 +257,11 @@
       "/for-letting-agents",
       "/blog/capital-gains-tax/capital-gains-tax-second-home-sale",
       "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk"
-    ]
+    ],
+    "conversion_overrides": {
+      "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk": "/for/moving-property-into-a-limited-company",
+      "/blog/capital-gains-tax/capital-gains-tax-second-home-sale": "/for/selling-a-buy-to-let",
+      "/landlord-tax": "/services/property-tax-advice"
+    }
   }
 }

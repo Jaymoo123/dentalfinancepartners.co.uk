@@ -2,38 +2,50 @@
 
 Every commercial search in the map, grouped under the one page that should rank for it. Searches per month are Google Ads figures with close variants counted once per group (a wording's own figure may be shared with its variants). Impressions and position are our own Search Console data, 90 days to 2026-10-07 (before the 9 October service page rewrite). 'Google shows' is the page type Google ranks for the main search in the live top 10 pulled 2026-10-10.
 
-**24 money pages** (21 sales pages, 3 guides) plus 2 gap groups own 13,070 searches a month across 176 search groups.
+**35 money pages** (20 sales pages, 15 guides) plus 3 gap groups own 13,070 searches a month across 176 search groups.
 
 ## Summary
 
 | # | Page | Type | Searches/month | Wordings | Our impressions on these searches | Share shown on this page | Who Google shows us instead |
 |---|---|---|---|---|---|---|---|
 | 1 | /services/property-accountant | sales | 2,940 | 68 | 3,355 | 0% | how-to-become-property-accountant (971); bristol (519); birmingham (391); manchester (380) |
-| 2 | /services/property-tax-advice | sales | 1,930 | 44 | 806 | 22% | birmingham (180); manchester-property-accountant (128); belfast-property-accountant-specialist-tax-services (79) |
-| 3 | /services/landlord-accountant | sales | 1,630 | 64 | 1,624 | 7% | birmingham (669); belfast-property-accountant-specialist-tax-services (240); manchester (219); how-much-does-a-property-accountant-cost (164) |
-| 4 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | guide | 1,070 | 22 | 388 | 90% | moving-property-into-a-limited-company (27); transfer-property-to-limited-company-conveyancing (9); section-162-incorporation-relief-property-landlords (1) |
-| 5 | /for/gifting-property-to-family | sales | 1,040 | 11 | 23 | 73% | gifting-property-and-deed-of-gift-tax-implications (3); capital-gains-tax-property-complete-guide-uk (1); gift-with-reservation-of-benefit (1) |
-| 6 | /for/selling-a-buy-to-let | sales | 990 | 31 | 38 | 0% | when-to-sell-rental-property-key-indicators-landlords (27); belfast-property-accountant-specialist-tax-services (3); what-does-a-property-accountant-do (3); how |
-| 7 | /for/moving-property-into-a-limited-company | sales | 850 | 37 | 696 | 0% | incorporation-existing-portfolios-phased-approach (256); how-to-transfer-property-into-limited-company-uk (207); section-162-incorporation-relief-property-landl |
-| 8 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale | guide | 810 | 9 | 15 | 93% | capital-gains-tax-property-complete-guide-uk (1) |
-| 9 | /for/property-spv-set-up | sales | 490 | 4 | 10 | 40% | spv-property-investment-special-purpose-vehicle-guide (3); spv-company (2); extraction-while-incorporating-phase-2-acquisition-funded-by-personal-funds (1) |
-| 10 | /landlord-tax | guide | 360 | 8 | 370 | 82% | landlord-accountant (24); / (22); hmo-tax-guide-rental-income-deductions-multi-tenant (13) |
-| 11 | GAP: city page | gap | 280 | 77 | 613 | 0% | birmingham (208); property-accountant-oxford-guide-local-landlords (140); property-accountant-leicester (120); property-accountant-preston-expert-tax-services-l |
-| 12 | /locations/london | sales | 130 | 46 | 705 | 52% | london-property-accountant (311); how-much-does-a-property-accountant-cost (10); / (9) |
-| 13 | /for/landlord-retirement-and-succession | sales | 130 | 7 | 160 | 0% | inheritance-tax-rental-property-uk-guide (158); multi-property-landlord-tax-planning-strategies-5-plus-properties (2) |
-| 14 | GAP: new page needed | gap | 100 | 3 | 10 | 0% | what-does-a-property-accountant-do (4); how-much-does-a-property-accountant-cost (3); london-property-accountant (2); multi-property-landlord-tax-planning-strat |
-| 15 | /for/rental-income-disclosure | sales | 80 | 4 | 33 | 3% | how-much-does-a-property-accountant-cost (27); birmingham (4); let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026 (1) |
-| 16 | /landed-estates | sales | 60 | 3 | 0 | 0% |  |
-| 17 | /for/holiday-let-and-serviced-accommodation | sales | 40 | 6 | 17 | 0% | how-much-tax-holiday-let-property-uk (17) |
-| 18 | /services/non-resident-landlord | sales | 40 | 8 | 32 | 28% | non-resident-landlord-scheme-uk-complete-guide (12); non-resident-landlords (4); london (4) |
-| 19 | /for/inherited-property | sales | 30 | 3 | 4 | 0% | inheritance-tax-rental-property-uk-guide (4) |
-| 20 | /locations/birmingham | sales | 20 | 2 | 116 | 88% | birmingham-property-accountant (12); how-much-does-a-property-accountant-cost (1) |
-| 21 | /for-letting-agents | sales | 20 | 2 | 7 | 0% | landlord-accountant (6); bristol (1) |
-| 22 | /locations/manchester | sales | 10 | 5 | 555 | 49% | manchester-property-accountant (277); / (1) |
-| 23 | /locations/leeds | sales | 10 | 8 | 1,212 | 82% | leeds-property-accountant-specialist-tax-services (195); / (10); sunderland-property-accountant-specialist-tax-services (4) |
-| 24 | /locations/bristol | sales | 10 | 3 | 150 | 33% | bristol-property-accountant (100) |
-| 25 | /for/hmo-and-multi-let-landlords | sales | 0 | 3 | 161 | 2% | hmo-tax-guide-rental-income-deductions-multi-tenant (95); birmingham-property-accountant (24); hmo-vs-standard-buy-to-let-tax-comparison (21); bristol-property- |
-| 26 | /for/landlord-self-assessment-and-mtd | sales | 0 | 1 | 0 | 0% |  |
+| 2 | /services/property-tax-advice | sales | 1,900 | 41 | 806 | 22% | birmingham (180); manchester-property-accountant (128); belfast-property-accountant-specialist-tax-services (79) |
+| 3 | /services/landlord-accountant | sales | 1,620 | 63 | 1,623 | 7% | birmingham (669); belfast-property-accountant-specialist-tax-services (240); manchester (219); how-much-does-a-property-accountant-cost (163) |
+| 4 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | guide | 1,580 | 24 | 396 | 90% | moving-property-into-a-limited-company (27); transfer-property-to-limited-company-conveyancing (10); sdlt-incorporation-stamp-duty-twice (1) |
+| 5 | /blog/capital-gains-tax/cgt-gifting-property-family-members-uk | guide | 970 | 5 | 6 | 0% | gifting-property-and-deed-of-gift-tax-implications (3); gifting-property-to-family (2); capital-gains-tax-property-complete-guide-uk (1) |
+| 6 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale | guide | 810 | 9 | 15 | 93% | capital-gains-tax-property-complete-guide-uk (1) |
+| 7 | /blog/capital-gains-tax/tax-sell-rental-property-uk | guide | 500 | 20 | 30 | 0% | when-to-sell-rental-property-key-indicators-landlords (27); how-to-value-rental-property-portfolio-tax-purposes (2); capital-gains-tax-property-complete-guide-u |
+| 8 | /for/selling-a-buy-to-let | sales | 470 | 9 | 6 | 0% | belfast-property-accountant-specialist-tax-services (3); what-does-a-property-accountant-do (3) |
+| 9 | /blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk | guide | 390 | 1 | 0 | 0% |  |
+| 10 | /landlord-tax | guide | 390 | 11 | 370 | 82% | landlord-accountant (24); / (22); hmo-tax-guide-rental-income-deductions-multi-tenant (13) |
+| 11 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords | guide | 330 | 22 | 102 | 67% | sdlt-incorporation-stamp-duty-twice (23); how-to-transfer-property-into-limited-company-uk (8); extraction-while-incorporating-phase-2-acquisition-funded-by-per |
+| 12 | GAP: city page | gap | 280 | 77 | 613 | 0% | birmingham (208); property-accountant-oxford-guide-local-landlords (140); property-accountant-leicester (120); property-accountant-preston-expert-tax-services-l |
+| 13 | /locations/london | sales | 130 | 46 | 705 | 52% | london-property-accountant (311); how-much-does-a-property-accountant-cost (10); / (9) |
+| 14 | /for/landlord-retirement-and-succession | sales | 130 | 7 | 160 | 0% | inheritance-tax-rental-property-uk-guide (158); multi-property-landlord-tax-planning-strategies-5-plus-properties (2) |
+| 15 | GAP: new page needed | gap | 100 | 3 | 10 | 0% | what-does-a-property-accountant-do (4); how-much-does-a-property-accountant-cost (3); london-property-accountant (2); multi-property-landlord-tax-planning-strat |
+| 16 | /for/property-spv-set-up | sales | 90 | 2 | 6 | 66% | spv-company (2) |
+| 17 | /for/rental-income-disclosure | sales | 80 | 4 | 33 | 3% | how-much-does-a-property-accountant-cost (27); birmingham (4); let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026 (1) |
+| 18 | /blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications | guide | 70 | 5 | 16 | 0% | gifting-property-to-family (14); gift-with-reservation-of-benefit (1); iht-gifts-with-reservation-of-benefit-property (1) |
+| 19 | /blog/landlord-tax-essentials/agricultural-relief-for-inheritance-tax-key-benefits | guide | 60 | 3 | 0 | 0% |  |
+| 20 | /services/non-resident-landlord | sales | 40 | 8 | 32 | 28% | non-resident-landlord-scheme-uk-complete-guide (12); non-resident-landlords (4); london (4) |
+| 21 | /blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk | guide | 30 | 4 | 17 | 100% |  |
+| 22 | /locations/birmingham | sales | 20 | 2 | 116 | 88% | birmingham-property-accountant (12); how-much-does-a-property-accountant-cost (1) |
+| 23 | GAP: guide needed | gap | 20 | 1 | 1 | 0% | inheritance-tax-rental-property-uk-guide (1) |
+| 24 | /for-letting-agents | sales | 20 | 2 | 7 | 0% | landlord-accountant (6); bristol (1) |
+| 25 | /locations/manchester | sales | 10 | 5 | 555 | 49% | manchester-property-accountant (277); / (1) |
+| 26 | /locations/leeds | sales | 10 | 8 | 1,212 | 82% | leeds-property-accountant-specialist-tax-services (195); / (10); sunderland-property-accountant-specialist-tax-services (4) |
+| 27 | /blog/property-accountant-services/what-does-a-property-accountant-do | guide | 10 | 1 | 1 | 0% | how-much-does-a-property-accountant-cost (1) |
+| 28 | /for/holiday-let-and-serviced-accommodation | sales | 10 | 2 | 0 | 0% |  |
+| 29 | /blog/capital-gains-tax/reduce-cgt-property-disposal-uk | guide | 10 | 1 | 2 | 0% | capital-gains-tax-property-complete-guide-uk (1); cgt-on-inherited-property-uk-probate-base-cost (1) |
+| 30 | /blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026 | guide | 10 | 2 | 0 | 0% |  |
+| 31 | /for/inherited-property | sales | 10 | 2 | 3 | 0% | inheritance-tax-rental-property-uk-guide (3) |
+| 32 | /locations/bristol | sales | 10 | 3 | 150 | 33% | bristol-property-accountant (100) |
+| 33 | /blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide | guide | 10 | 1 | 0 | 0% |  |
+| 34 | /blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide | guide | 10 | 1 | 4 | 75% | extraction-while-incorporating-phase-2-acquisition-funded-by-personal-funds (1) |
+| 35 | /for/gifting-property-to-family | sales | 0 | 1 | 1 | 100% |  |
+| 36 | /for/hmo-and-multi-let-landlords | sales | 0 | 3 | 161 | 2% | hmo-tax-guide-rental-income-deductions-multi-tenant (95); birmingham-property-accountant (24); hmo-vs-standard-buy-to-let-tax-comparison (21); bristol-property- |
+| 37 | /for/moving-property-into-a-limited-company | sales | 0 | 11 | 586 | 0% | incorporation-existing-portfolios-phased-approach (256); how-to-transfer-property-into-limited-company-uk (193); incorporation-existing-portfolios-phased-approa |
+| 38 | /for/landlord-self-assessment-and-mtd | sales | 0 | 1 | 0 | 0% |  |
 
 ## Page by page
 
@@ -132,7 +144,7 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | multi-property portfolio accounting | 0 | 2 | 29.0 | /blog/portfolio-management/property-portfolio-accounting-tracking-profitability |
 
-### /services/property-tax-advice (sales, 1,930 searches/month)
+### /services/property-tax-advice (sales, 1,900 searches/month)
 
 **property tax advice**: 1,180/month, $12,567 ad value, decided by WP1 ruling, Google shows mostly service
 
@@ -225,24 +237,6 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | property capital allowances tax advisors | 10 | 2 | 60.0 | /blog/property-types-and-specialist-tax/capital-allowances-examples |
 
-**tax advice for buy to let landlords**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| tax advice for buy to let landlords | 10 | 0 | | |
-
-**tax advice for buy-to-let landlords**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| tax advice for buy-to-let landlords | 10 | 0 | | |
-
-**tax advice for rental property owners**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| tax advice for rental property owners | 10 | 0 | | |
-
 **landlord tax specialist**: 0/month, $0 ad value, decided by WP1 ruling
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
@@ -273,7 +267,7 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | want accountant for property investment tax planning | 0 | 2 | 10.0 | /blog/property-accountant-services/belfast-property-accountant-specialist-tax-services |
 
-### /services/landlord-accountant (sales, 1,630 searches/month)
+### /services/landlord-accountant (sales, 1,620 searches/month)
 
 **landlord accountant**: 1,560/month, $18,920 ad value, decided by WP1 ruling, Google shows mostly service
 
@@ -357,12 +351,6 @@ Every commercial search in the map, grouped under the one page that should rank 
 | accountants for landlord and property accountants | 10 | 1 | 89.0 | /blog/property-accountant-services/accountant-accounting-services |
 | best accountants for property landlords | 0 | 1 | 1.0 | /blog/property-accountant-services/how-much-does-a-property-accountant-cost |
 
-**do i need an accountant for my rental property**: 10/month, $0 ad value, decided by WP1 ruling, Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| do i need an accountant for my rental property | 10 | 1 | 2.0 | /blog/property-accountant-services/how-much-does-a-property-accountant-cost |
-
 **landlord accountant fees**: 10/month, $0 ad value, decided by WP1 ruling, Google shows mostly service
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
@@ -394,9 +382,9 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | limited company landlord accountant | 0 | 0 | | |
 
-### /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk (guide, 1,070 searches/month)
+### /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk (guide, 1,580 searches/month)
 
-**transfer property to limited company**: 530/month, $2,486 ad value, decided by manager ruling (LE-14), Google shows mostly guide
+**transfer property to limited company**: 530/month, hands readers to /for/moving-property-into-a-limited-company, $2,486 ad value, decided by manager ruling (LE-14), Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
@@ -411,19 +399,25 @@ Every commercial search in the map, grouped under the one page that should rank 
 | transfer property to ltd company | 30 | 3 | 56.3 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 | transferring property to a limited company uk | 0 | 49 | 45.5 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 
-**transfer property to limited company without stamp duty**: 320/month, $2,384 ad value, decided by manager ruling (LE-14), Google shows mostly guide
+**property incorporation**: 480/month, hands readers to /for/moving-property-into-a-limited-company, $5,472 ad value, decided by judgment (low, 2 readers agree), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| property incorporation | 480 | 2 | 11.0 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
+
+**transfer property to limited company without stamp duty**: 320/month, hands readers to /for/moving-property-into-a-limited-company, $2,384 ad value, decided by manager ruling (LE-14), Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | transfer property to limited company without stamp duty | 320 | 34 | 46.7 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 
-**how to transfer property to limited company**: 70/month, $183 ad value, decided by manager ruling (LE-4), Google shows mostly other
+**how to transfer property to limited company**: 70/month, hands readers to /for/moving-property-into-a-limited-company, $183 ad value, decided by manager ruling (LE-4), Google shows mostly other
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | how to transfer property to limited company | 70 | 45 | 47.9 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 
-**transfer buy to let to limited company**: 70/month, $0 ad value, decided by manager ruling (LE-14), Google shows mostly guide
+**transfer buy to let to limited company**: 70/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by manager ruling (LE-14), Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
@@ -433,34 +427,40 @@ Every commercial search in the map, grouped under the one page that should rank 
 | transferring buy-to-let to limited company | 20 | 0 | | |
 | transfer buy-to-let into limited company | 10 | 0 | | |
 
-**stamp duty on transfer of property to limited company**: 30/month, $0 ad value, decided by manager ruling (LE-14), Google shows mostly other
+**gifting property to limited company**: 30/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| gifting property to limited company | 30 | 6 | 59.5 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
+
+**stamp duty on transfer of property to limited company**: 30/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by manager ruling (LE-14), Google shows mostly other
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | stamp duty on transfer of property to limited company | 30 | 2 | 54.0 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 | stamp duty on transfer to company | 0 | 0 | | |
 
-**transfer rental property to limited company**: 30/month, $0 ad value, decided by manager ruling (LE-14), Google shows mostly guide
+**transfer rental property to limited company**: 30/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by manager ruling (LE-14), Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | transfer rental property to limited company | 30 | 0 | | |
 
-**transfer residential property to limited company**: 10/month, $38 ad value, decided by manager ruling (LE-14), Google shows mostly guide
+**transfer residential property to limited company**: 10/month, hands readers to /for/moving-property-into-a-limited-company, $38 ad value, decided by manager ruling (LE-14), Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | transfer residential property to limited company | 10 | 2 | 10.0 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 
-**transferring property ownership to a limited company 2017**: 10/month, $0 ad value, decided by manager ruling (LE-14), Google shows mostly guide
+**transferring property ownership to a limited company 2017**: 10/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by manager ruling (LE-14), Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | transferring property ownership to a limited company 2017 | 10 | 5 | 57.0 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 
-### /for/gifting-property-to-family (sales, 1,040 searches/month)
+### /blog/capital-gains-tax/cgt-gifting-property-family-members-uk (guide, 970 searches/month)
 
-**capital gains tax on gifting property**: 650/month, $4,070 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
+**capital gains tax on gifting property**: 650/month, hands readers to /for/gifting-property-to-family, $4,070 ad value, decided by judgment (high), LE-19, Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
@@ -469,31 +469,31 @@ Every commercial search in the map, grouped under the one page that should rank 
 | gifting property uk | 70 | 1 | 76.0 | /for/gifting-property-to-family |
 | capital gains tax on gift of property to child uk | 0 | 1 | 60.0 | /for/gifting-property-to-family |
 
-**cgt on gifted property**: 320/month, $2,074 ad value, decided by judgment (medium), Google shows mostly guide
+**cgt on gifted property**: 320/month, hands readers to /for/gifting-property-to-family, $2,074 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | cgt on gifted property | 320 | 2 | 53.5 | /blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications |
 
-**gifting property tax**: 70/month, $0 ad value, decided by judgment (high), Google shows mostly guide **(Google prefers guides here)**
+### /blog/capital-gains-tax/capital-gains-tax-second-home-sale (guide, 810 searches/month)
+
+**tax on selling second home**: 810/month, hands readers to /for/selling-a-buy-to-let, $10,200 ad value, decided by manager ruling (LE-12), Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
-| gifted property tax | 70 | 1 | 16.0 | /blog/landlord-tax-essentials/gift-with-reservation-of-benefit |
-| gifting property tax | 70 | 4 | 54.0 | /for/gifting-property-to-family |
-| gifting property tax or gifting property uk | 0 | 5 | 68.6 | /for/gifting-property-to-family |
-| gifting property tax uk | 0 | 6 | 54.7 | /for/gifting-property-to-family |
-| gifting property to children tax | 0 | 0 | | |
+| selling second home tax | 320 | 1 | 56.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
+| tax on selling second home | 320 | 2 | 52.5 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
+| capital gains tax on selling a second home | 210 | 1 | 58.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
+| capital gains tax selling second home | 210 | 2 | 59.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
+| capital gains tax on sale of second home | 140 | 5 | 49.4 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
+| capital gains tax on second home sale | 140 | 1 | 55.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
+| tax on sale of second home | 90 | 1 | 54.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
+| capital gains tax on sale of second property | 50 | 1 | 7.0 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk |
+| capital gains tax on second property sale | 50 | 1 | 4.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
 
-**gifting buy-to-let property to child uk**: 0/month, $0 ad value, decided by judgment (high)
+### /blog/capital-gains-tax/tax-sell-rental-property-uk (guide, 500 searches/month)
 
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| gifting buy-to-let property to child uk | 0 | 1 | 66.0 | /for/gifting-property-to-family |
-
-### /for/selling-a-buy-to-let (sales, 990 searches/month)
-
-**capital gains tax selling rental property**: 470/month, $658 ad value, decided by manager ruling (LE-10), Google shows mostly guide **(Google prefers guides here)**
+**capital gains tax selling rental property**: 470/month, hands readers to /for/selling-a-buy-to-let, $658 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
@@ -515,6 +515,26 @@ Every commercial search in the map, grouped under the one page that should rank 
 | tax laws selling rental property | 10 | 0 | | |
 | uk capital gains tax on sale of rental property | 0 | 1 | 44.0 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk |
 
+**tax liability when selling a rental property**: 10/month, hands readers to /for/selling-a-buy-to-let, $3 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| tax liability when selling a rental property | 10 | 0 | | |
+
+**tax liability selling rental property**: 10/month, hands readers to /for/selling-a-buy-to-let, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| tax liability selling rental property | 10 | 0 | | |
+
+**tax when selling buy to let property**: 10/month, hands readers to /for/selling-a-buy-to-let, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| tax when selling buy to let property | 10 | 0 | | |
+
+### /for/selling-a-buy-to-let (sales, 470 searches/month)
+
 **capital gains tax accountant**: 360/month, $2,622 ad value, decided by WP1 ruling, Google shows mostly service
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
@@ -531,36 +551,6 @@ Every commercial search in the map, grouped under the one page that should rank 
 | cgt accountant | 30 | 0 | | |
 | cgt accountant near me | 30 | 2 | 21.0 | /blog/property-accountant-services/belfast-property-accountant-specialist-tax-services |
 
-**tax liability when selling a rental property**: 10/month, $3 ad value, decided by judgment (high), Google shows mostly guide
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| tax liability when selling a rental property | 10 | 0 | | |
-
-**how to reduce capital gains tax on property sale**: 10/month, $0 ad value, decided by manager ruling (LE-5), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| how to reduce capital gains tax on property sale | 10 | 2 | 47.0 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk |
-
-**selling rental property tax deductions**: 10/month, $0 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| selling rental property tax deductions | 10 | 0 | | |
-
-**tax liability selling rental property**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly guide
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| tax liability selling rental property | 10 | 0 | | |
-
-**tax when selling buy to let property**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| tax when selling buy to let property | 10 | 0 | | |
-
 **capital gains tax property accountant**: 0/month, $0 ad value, decided by WP1 ruling
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
@@ -574,168 +564,15 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | capital gains tax when selling a holiday let | 0 | 0 | | |
 
-### /for/moving-property-into-a-limited-company (sales, 850 searches/month)
+### /blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk (guide, 390 searches/month)
 
-**property incorporation**: 480/month, $5,472 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| property incorporation | 480 | 2 | 11.0 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
-
-**incorporation relief property**: 220/month, $425 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporation relief property | 110 | 50 | 21.6 | /blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice |
-| property incorporation relief | 110 | 0 | | |
-| incorporation relief property rental business | 30 | 1 | 2.0 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
-| incorporating a rental business | 20 | 1 | 32.0 | /blog/incorporation-and-company-structures/extraction-while-incorporating-phase-2-acquisition-funded-by-personal-funds |
-| incorporating buy to let properties | 10 | 0 | | |
-| incorporation relief buy-to-let | 10 | 0 | | |
-| incorporation relief property partnership | 10 | 0 | | |
-| incorporation relief property stamp duty | 10 | 0 | | |
-| property partnership incorporation | 10 | 1 | 11.0 | /blog/incorporation-and-company-structures/property-investment-company-structure-planning |
-| should landlord incorporate | 10 | 0 | | |
-| buy-to-let incorporation relief | 0 | 0 | | |
-| incorporation relief property portfolio | 0 | 0 | | |
-
-**gifting property to limited company**: 30/month, $0 ad value, decided by judgment (medium), Google shows mostly guide
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| gifting property to limited company | 30 | 6 | 59.5 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
-
-**s162 incorporation relief property**: 30/month, $0 ad value, decided by manager ruling (LE-9), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| s162 incorporation relief property | 30 | 0 | | |
-
-**incorporation relief property business**: 20/month, $29 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporation relief property business | 10 | 0 | | |
-| property business incorporation relief | 10 | 0 | | |
-
-**section 162 incorporation relief property**: 20/month, $0 ad value, decided by manager ruling (LE-9), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| section 162 incorporation relief property | 20 | 1 | 1.0 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
-
-**incorporation relief for landlords**: 10/month, $39 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporation relief for landlords | 10 | 48 | 38.9 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
-| landlord incorporation relief | 0 | 0 | | |
-
-**incorporation relief on transfer of property**: 10/month, $70 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporation relief on transfer of property | 10 | 0 | | |
-
-**incorporation of buy to let business**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporation of buy to let business | 10 | 0 | | |
-| incorporating a buy to let business | 0 | 0 | | |
-
-**incorporation relief buy to let**: 10/month, $0 ad value, decided by judgment (medium), Google shows mostly guide
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporation relief buy to let | 10 | 0 | | |
-| buy to let incorporation relief | 0 | 0 | | |
-
-**incorporation relief buy-to let**: 10/month, $0 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporation relief buy-to let | 10 | 0 | | |
-
-**incorporating a property portfolio uk**: 0/month, $0 ad value, decided by judgment (high)
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| incorporate property portfolio | 0 | 0 | | |
-| incorporating a property portfolio | 0 | 1 | 6.0 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
-| incorporating a property portfolio uk | 0 | 152 | 40.0 | /blog/incorporation-existing-portfolios-phased-approach |
-| is incorporation right for my property portfolio | 0 | 3 | 16.0 | /blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio |
-| property portfolio incorporation services | 0 | 4 | 53.3 | /blog/incorporation-existing-portfolios-phased-approach |
-| should i incorporate my property portfolio | 0 | 31 | 21.5 | /blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio |
-
-**landlord portfolio incorporation uk**: 0/month, $0 ad value, decided by judgment (high)
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| landlord portfolio incorporation uk | 0 | 159 | 43.2 | /blog/incorporation-existing-portfolios-phased-approach |
-
-**portfolio incorporation guidance**: 0/month, $0 ad value, decided by judgment (high)
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| portfolio incorporation guidance | 0 | 6 | 32.2 | /blog/incorporation-existing-portfolios-phased-approach |
-
-**property incorporation capital gains tax**: 0/month, $0 ad value, decided by manager ruling (LE-9)
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| property incorporation capital gains tax | 0 | 149 | 64.3 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
-
-**property incorporation tax advice**: 0/month, $0 ad value, decided by WP1 ruling
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| property incorporation tax advice | 0 | 77 | 70.5 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
-
-**tax benefits of property incorporation**: 0/month, $0 ad value, decided by judgment (low, 2 readers agree)
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| tax benefits of property incorporation | 0 | 4 | 17.2 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
-
-### /blog/capital-gains-tax/capital-gains-tax-second-home-sale (guide, 810 searches/month)
-
-**tax on selling second home**: 810/month, $10,200 ad value, decided by manager ruling (LE-12), Google shows mostly guide
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| selling second home tax | 320 | 1 | 56.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-| tax on selling second home | 320 | 2 | 52.5 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-| capital gains tax on selling a second home | 210 | 1 | 58.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-| capital gains tax selling second home | 210 | 2 | 59.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-| capital gains tax on sale of second home | 140 | 5 | 49.4 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-| capital gains tax on second home sale | 140 | 1 | 55.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-| tax on sale of second home | 90 | 1 | 54.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-| capital gains tax on sale of second property | 50 | 1 | 7.0 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk |
-| capital gains tax on second property sale | 50 | 1 | 4.0 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale |
-
-### /for/property-spv-set-up (sales, 490 searches/month)
-
-**buy to let limited company**: 390/month, $3,838 ad value, decided by judgment (low, 2 readers agree), Google shows mostly guide
+**buy to let limited company**: 390/month, hands readers to /for/property-spv-set-up, $3,838 ad value, decided by judgment (high), LE-19, Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | buy to let limited company | 390 | 0 | | |
 
-**spv accountant**: 90/month, $547 ad value, decided by WP1 ruling, Google shows mostly guide
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| spv accountant | 90 | 4 | 49.5 | /for/property-spv-set-up |
-| spv accountants | 90 | 2 | 76.0 | /for/property-spv-set-up |
-
-**spv incorporation**: 10/month, $0 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| spv incorporation | 10 | 4 | 16.3 | /blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide |
-
-### /landlord-tax (guide, 360 searches/month)
+### /landlord-tax (guide, 390 searches/month)
 
 **landlord tax advice**: 190/month, hands readers to /services/property-tax-advice, $993 ad value, decided by manager ruling (LE-20), Google shows mostly guide
 
@@ -754,6 +591,88 @@ Every commercial search in the map, grouped under the one page that should rank 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | small landlord tax advice | 170 | 4 | 70.0 | /landlord-tax |
+
+**tax advice for buy to let landlords**: 10/month, hands readers to /services/property-tax-advice, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| tax advice for buy to let landlords | 10 | 0 | | |
+
+**tax advice for buy-to-let landlords**: 10/month, hands readers to /services/property-tax-advice, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| tax advice for buy-to-let landlords | 10 | 0 | | |
+
+**tax advice for rental property owners**: 10/month, hands readers to /services/property-tax-advice, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| tax advice for rental property owners | 10 | 0 | | |
+
+### /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords (guide, 330 searches/month)
+
+**incorporation relief property**: 220/month, hands readers to /for/moving-property-into-a-limited-company, $425 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporation relief property | 110 | 50 | 21.6 | /blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice |
+| property incorporation relief | 110 | 0 | | |
+| incorporation relief property rental business | 30 | 1 | 2.0 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
+| incorporating a rental business | 20 | 1 | 32.0 | /blog/incorporation-and-company-structures/extraction-while-incorporating-phase-2-acquisition-funded-by-personal-funds |
+| incorporating buy to let properties | 10 | 0 | | |
+| incorporation relief buy-to-let | 10 | 0 | | |
+| incorporation relief property partnership | 10 | 0 | | |
+| incorporation relief property stamp duty | 10 | 0 | | |
+| property partnership incorporation | 10 | 1 | 11.0 | /blog/incorporation-and-company-structures/property-investment-company-structure-planning |
+| should landlord incorporate | 10 | 0 | | |
+| buy-to-let incorporation relief | 0 | 0 | | |
+| incorporation relief property portfolio | 0 | 0 | | |
+
+**s162 incorporation relief property**: 30/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by judgment (high), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| s162 incorporation relief property | 30 | 0 | | |
+
+**incorporation relief property business**: 20/month, hands readers to /for/moving-property-into-a-limited-company, $29 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporation relief property business | 10 | 0 | | |
+| property business incorporation relief | 10 | 0 | | |
+
+**section 162 incorporation relief property**: 20/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by judgment (high), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| section 162 incorporation relief property | 20 | 1 | 1.0 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
+
+**incorporation relief for landlords**: 10/month, hands readers to /for/moving-property-into-a-limited-company, $39 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporation relief for landlords | 10 | 48 | 38.9 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
+| landlord incorporation relief | 0 | 0 | | |
+
+**incorporation relief on transfer of property**: 10/month, hands readers to /for/moving-property-into-a-limited-company, $70 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporation relief on transfer of property | 10 | 0 | | |
+
+**incorporation relief buy to let**: 10/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporation relief buy to let | 10 | 0 | | |
+| buy to let incorporation relief | 0 | 0 | | |
+
+**incorporation relief buy-to let**: 10/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporation relief buy-to let | 10 | 0 | | |
 
 ### GAP: city page (gap, 280 searches/month)
 
@@ -1226,6 +1145,15 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | property development tax planning | 10 | 1 | 2.0 | /blog/portfolio-management/multi-property-landlord-tax-planning-strategies-5-plus-properties |
 
+### /for/property-spv-set-up (sales, 90 searches/month)
+
+**spv accountant**: 90/month, $547 ad value, decided by WP1 ruling, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| spv accountant | 90 | 4 | 49.5 | /for/property-spv-set-up |
+| spv accountants | 90 | 2 | 76.0 | /for/property-spv-set-up |
+
 ### /for/rental-income-disclosure (sales, 80 searches/month)
 
 **let property campaign accountant near me**: 50/month, $1,552 ad value, decided by WP1 ruling, Google shows mostly service
@@ -1242,43 +1170,27 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | let property campaign accountant cost | 30 | 25 | 20.2 | /blog/property-accountant-services/how-much-does-a-property-accountant-cost |
 
-### /landed-estates (sales, 60 searches/month)
+### /blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications (guide, 70 searches/month)
 
-**agricultural property relief iht**: 60/month, $0 ad value, decided by manager ruling (LE-3), Google shows mostly guide **(Google prefers guides here)**
+**gifting property tax**: 70/month, hands readers to /for/gifting-property-to-family, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| gifted property tax | 70 | 1 | 16.0 | /blog/landlord-tax-essentials/gift-with-reservation-of-benefit |
+| gifting property tax | 70 | 4 | 54.0 | /for/gifting-property-to-family |
+| gifting property tax or gifting property uk | 0 | 5 | 68.6 | /for/gifting-property-to-family |
+| gifting property tax uk | 0 | 6 | 54.7 | /for/gifting-property-to-family |
+| gifting property to children tax | 0 | 0 | | |
+
+### /blog/landlord-tax-essentials/agricultural-relief-for-inheritance-tax-key-benefits (guide, 60 searches/month)
+
+**agricultural property relief iht**: 60/month, hands readers to /landed-estates, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | agricultural property relief iht | 30 | 0 | | |
 | agricultural property relief inheritance tax | 30 | 0 | | |
 | iht agricultural property relief | 30 | 0 | | |
-
-### /for/holiday-let-and-serviced-accommodation (sales, 40 searches/month)
-
-**tax planning for holiday lets**: 20/month, $355 ad value, decided by manager ruling (LE-18), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| holiday let tax advice | 10 | 0 | | |
-| tax planning for holiday lets | 10 | 16 | 58.6 | /blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk |
-| holiday let tax specialist | 0 | 0 | | |
-
-**holiday letting tax advice**: 10/month, $355 ad value, decided by WP1 ruling, Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| holiday letting tax advice | 10 | 1 | 24.0 | /blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk |
-
-**holiday let accountant**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly service
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| holiday let accountant | 10 | 0 | | |
-
-**furnished holiday let tax specialist**: 0/month, $0 ad value, decided by judgment (high)
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| furnished holiday let tax specialist | 0 | 0 | | |
 
 ### /services/non-resident-landlord (sales, 40 searches/month)
 
@@ -1325,20 +1237,21 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | non resident landlord tax services | 0 | 7 | 54.1 | /services/non-resident-landlord |
 
-### /for/inherited-property (sales, 30 searches/month)
+### /blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk (guide, 30 searches/month)
 
-**renting out inherited property**: 20/month, $146 ad value, decided by judgment (medium), Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| renting out inherited property | 20 | 1 | 75.0 | /blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide |
-
-**inherited rental property**: 10/month, $0 ad value, decided by manager ruling (LE-3), Google shows mostly guide
+**tax planning for holiday lets**: 20/month, hands readers to /for/holiday-let-and-serviced-accommodation, $355 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
-| inherited rental property | 10 | 2 | 62.0 | /blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide |
-| inheriting rental property | 10 | 1 | 64.0 | /blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide |
+| holiday let tax advice | 10 | 0 | | |
+| tax planning for holiday lets | 10 | 16 | 58.6 | /blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk |
+| holiday let tax specialist | 0 | 0 | | |
+
+**holiday letting tax advice**: 10/month, hands readers to /for/holiday-let-and-serviced-accommodation, $355 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| holiday letting tax advice | 10 | 1 | 24.0 | /blog/property-types-and-specialist-tax/how-much-tax-holiday-let-property-uk |
 
 ### /locations/birmingham (sales, 20 searches/month)
 
@@ -1348,6 +1261,14 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | property accountant birmingham | 20 | 116 | 14.8 | /locations/birmingham |
 | property accountants birmingham | 20 | 0 | | |
+
+### GAP: guide needed (gap, 20 searches/month)
+
+**renting out inherited property**: 20/month, hands readers to /for/inherited-property, $146 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| renting out inherited property | 20 | 1 | 75.0 | /blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide |
 
 ### /for-letting-agents (sales, 20 searches/month)
 
@@ -1410,6 +1331,54 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | rental accountant horsforth | 0 | 12 | 14.2 | /locations/leeds |
 
+### /blog/property-accountant-services/what-does-a-property-accountant-do (guide, 10 searches/month)
+
+**do i need an accountant for my rental property**: 10/month, hands readers to /services/landlord-accountant, $0 ad value, decided by manager ruling (LE-24), Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| do i need an accountant for my rental property | 10 | 1 | 2.0 | /blog/property-accountant-services/how-much-does-a-property-accountant-cost |
+
+### /for/holiday-let-and-serviced-accommodation (sales, 10 searches/month)
+
+**holiday let accountant**: 10/month, $0 ad value, decided by judgment (high), Google shows mostly service
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| holiday let accountant | 10 | 0 | | |
+
+**furnished holiday let tax specialist**: 0/month, $0 ad value, decided by judgment (high)
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| furnished holiday let tax specialist | 0 | 0 | | |
+
+### /blog/capital-gains-tax/reduce-cgt-property-disposal-uk (guide, 10 searches/month)
+
+**how to reduce capital gains tax on property sale**: 10/month, hands readers to /for/selling-a-buy-to-let, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| how to reduce capital gains tax on property sale | 10 | 2 | 47.0 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk |
+
+### /blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026 (guide, 10 searches/month)
+
+**incorporation of buy to let business**: 10/month, hands readers to /for/moving-property-into-a-limited-company, $0 ad value, decided by manager ruling (LE-24), Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporation of buy to let business | 10 | 0 | | |
+| incorporating a buy to let business | 0 | 0 | | |
+
+### /for/inherited-property (sales, 10 searches/month)
+
+**inherited rental property**: 10/month, $0 ad value, decided by manager ruling (LE-3), Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| inherited rental property | 10 | 2 | 62.0 | /blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide |
+| inheriting rental property | 10 | 1 | 64.0 | /blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide |
+
 ### /locations/bristol (sales, 10 searches/month)
 
 **property accountant bristol**: 10/month, $0 ad value, decided by WP1 ruling, Google shows mostly service
@@ -1425,6 +1394,30 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | landlord accountant bristol | 0 | 75 | 15.2 | /blog/property-accountant-services/bristol-property-accountant |
 
+### /blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide (guide, 10 searches/month)
+
+**selling rental property tax deductions**: 10/month, hands readers to /for/selling-a-buy-to-let, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| selling rental property tax deductions | 10 | 0 | | |
+
+### /blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide (guide, 10 searches/month)
+
+**spv incorporation**: 10/month, hands readers to /for/property-spv-set-up, $0 ad value, decided by judgment (medium), LE-19, Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| spv incorporation | 10 | 4 | 16.3 | /blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide |
+
+### /for/gifting-property-to-family (sales, 0 searches/month)
+
+**gifting buy-to-let property to child uk**: 0/month, $0 ad value, decided by judgment (high)
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| gifting buy-to-let property to child uk | 0 | 1 | 66.0 | /for/gifting-property-to-family |
+
 ### /for/hmo-and-multi-let-landlords (sales, 0 searches/month)
 
 **hmo accountants**: 0/month, $0 ad value, decided by WP1 ruling
@@ -1439,6 +1432,49 @@ Every commercial search in the map, grouped under the one page that should rank 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | hmo landlord tax planning | 0 | 125 | 22.7 | /blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant |
+
+### /for/moving-property-into-a-limited-company (sales, 0 searches/month)
+
+**incorporating a property portfolio uk**: 0/month, $0 ad value, decided by judgment (high)
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| incorporate property portfolio | 0 | 0 | | |
+| incorporating a property portfolio | 0 | 1 | 6.0 | /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords |
+| incorporating a property portfolio uk | 0 | 152 | 40.0 | /blog/incorporation-existing-portfolios-phased-approach |
+| is incorporation right for my property portfolio | 0 | 3 | 16.0 | /blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio |
+| property portfolio incorporation services | 0 | 4 | 53.3 | /blog/incorporation-existing-portfolios-phased-approach |
+| should i incorporate my property portfolio | 0 | 31 | 21.5 | /blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio |
+
+**landlord portfolio incorporation uk**: 0/month, $0 ad value, decided by judgment (high)
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| landlord portfolio incorporation uk | 0 | 159 | 43.2 | /blog/incorporation-existing-portfolios-phased-approach |
+
+**portfolio incorporation guidance**: 0/month, $0 ad value, decided by judgment (high)
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| portfolio incorporation guidance | 0 | 6 | 32.2 | /blog/incorporation-existing-portfolios-phased-approach |
+
+**property incorporation capital gains tax**: 0/month, $0 ad value, decided by manager ruling (LE-9)
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| property incorporation capital gains tax | 0 | 149 | 64.3 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
+
+**property incorporation tax advice**: 0/month, $0 ad value, decided by WP1 ruling
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| property incorporation tax advice | 0 | 77 | 70.5 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
+
+**tax benefits of property incorporation**: 0/month, $0 ad value, decided by judgment (low, 2 readers agree)
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| tax benefits of property incorporation | 0 | 4 | 17.2 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk |
 
 ### /for/landlord-self-assessment-and-mtd (sales, 0 searches/month)
 
@@ -1457,3 +1493,4 @@ Every commercial search in the map, grouped under the one page that should rank 
 - /for/couples-splitting-rental-income
 - /for/first-time-and-accidental-landlords
 - /for/property-company-profit-extraction
+- /landed-estates

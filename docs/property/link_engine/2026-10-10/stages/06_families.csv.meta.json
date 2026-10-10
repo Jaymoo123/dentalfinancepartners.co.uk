@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T15:15:25+00:00",
+  "pulled_at": "2026-10-10T15:21:43+00:00",
   "source": "06_families + judgments/*.jsonl",
   "applied": {
     "judgment (medium)": 45,
@@ -20,7 +20,9 @@
     "manager ruling (LE-9)": 3,
     "manager ruling (LE-14)": 7,
     "manager ruling (LE-12)": 1,
-    "LE-19 guide_owner": 2
+    "LE-19 guide_owner": 31,
+    "LE-19 gap_guide_needed": 1,
+    "LE-19 keep_sales_page": 1
   },
   "refused": 0,
   "site": "property",
@@ -33,5 +35,5 @@
     "2026-10-10"
   ],
   "rows": 244,
-  "sha256": "bdea36c355876ee6658c52bf999c2ce06cc51bf4efdc4682a08cbcfc71811c5d"
+  "sha256": "b0dd04b88d9a06f8df33a1b4c2deb79d025591903b3151b88df7aa8912b9c991"
 }
