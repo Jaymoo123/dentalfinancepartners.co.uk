@@ -1,16 +1,16 @@
 {
-  "pulled_at": "2026-10-10T01:59:52+00:00",
+  "pulled_at": "2026-10-10T14:05:33+00:00",
   "source": "02_metrics + 04_serp, deterministic union-find (see module docstring)",
   "site": "property",
   "data_through": "2026-10-10",
   "serp_join_min_shared": 4,
-  "n_families": 226,
-  "n_with_serp": 339,
+  "n_families": 234,
+  "n_with_serp": 349,
   "assigned_by": {
-    "lexical": 347,
-    "singleton": 146,
-    "serp": 46,
-    "overlap": 39
+    "lexical": 358,
+    "singleton": 149,
+    "serp": 50,
+    "overlap": 41
   },
   "script": "cluster.py",
   "args": [
@@ -20,5 +20,5 @@
     "2026-10-10"
   ],
   "rows": 16,
-  "sha256": "dc90ce7541b511a4a8f3478358d360f1f363c8d5d6beffa07f14937b4207856a"
+  "sha256": "5a2a1f02d5d7dc89b7a5f91cd6a976cd8cf65742b62511019432828718792486"
 }

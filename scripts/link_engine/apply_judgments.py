@@ -93,6 +93,8 @@ def main() -> None:
             if not line.strip():
                 continue
             v = json.loads(line)
+            if "decision" not in v and "family_id" not in v:
+                continue                      # another schema in the same folder (page-assignment verdicts, assign_*.jsonl)
             if v.get("decision") in ("merge", "split"):
                 conflict_v[v.get("input_sha256") or ("pair", frozenset((v.get("keyword"), v.get("other_keyword"))))].append(v)
             elif v.get("decision") not in ("owner", "gap") or v.get("confidence") not in CONF_ORDER:
@@ -196,6 +198,15 @@ def main() -> None:
     write_csv(st / "07_disagreements.csv", disagreements, DIS, {"source": "judgments reader1 vs reader2", **meta})
     write_csv(st / "07_rejudge_needed.csv", rejudge, ["family_id", "action", "reason"],
               {"source": "judgments whose input_sha256 no longer matches", **meta})
+    stale = {x["family_id"] for x in rejudge if x["action"] == "rejudge"}
+    new = sorted((r for r in fams if r["owner_basis"] == "needs judgment"), key=lambda r: -float(r["value_usd_month"] or 0))
+    write_csv(st / "06_new_families_since_judgment.csv",
+              [{"family_id": r["family_id"], "head": r["head"], "demand_volume": r["demand_volume"],
+                "value_usd_month": r["value_usd_month"], "top_keywords": r["top_keywords"],
+                "status": "verdict stale (see 07_rejudge_needed.csv)" if r["family_id"] in stale else "new family, no verdict"}
+               for r in new],
+              ["family_id", "head", "demand_volume", "value_usd_month", "top_keywords", "status"],
+              {"source": "families still 'needs judgment' after applying judgments/*.jsonl", **meta})
     print(f"applied {dict(applied)}; disagreements {Counter(d['kind'] for d in disagreements)}; "
           f"rejudge {Counter(r['action'] for r in rejudge)}; refused {len(refused)}")
     for x in refused:

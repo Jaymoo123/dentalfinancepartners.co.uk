@@ -1,0 +1,14 @@
+{
+  "pulled_at": "2026-10-10T13:57:05+00:00",
+  "site": "property",
+  "script": "accuracy_coverage.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "source": "01_universe not_commercial_intent with provider word AND property word",
+  "rows": 33,
+  "sha256": "f864be0eb9834fdb226cba230d8aa68c918a3ab28391a5bba9e6bbdc109ed1f6"
+}

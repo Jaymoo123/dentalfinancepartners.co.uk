@@ -1,0 +1,41 @@
+family_id,verdict,misfits,reason
+tax-on-selling-second-home,coherent,,same intent and scope; one page serves all
+non-resident-landlord-application-for-an-individual,coherent,,same intent and scope; one page serves all
+non-resident-landlord-scheme-application,coherent,,same intent and scope; one page serves all
+landlord-accountant-preston,coherent,,same intent and scope; one page serves all
+inherited-property,coherent,,same intent and scope; one page serves all
+property-tax-specialist-cardiff,coherent,,same intent and scope; one page serves all
+stamp-duty-on-transfer-of-property,coherent,,same intent and scope; one page serves all
+non-resident-landlord-tax-return,mixed,non resident landlord tax services,hire/service intent vs tax-return explainer
+capital-gains-tax-on-house-sale-2026,coherent,,same intent and scope; one page serves all
+capital-gains-tax-on-commercial-property-sale,coherent,,same intent and scope; one page serves all
+landlord-accountant,mixed,accountant for landlord dorset | accountant for landlords ec1 | accountants for landlords wirral | landlord accountant cannock | landlord accountant wallington | landlord accountants oxfordshire | buy to let accountant fees | landlord accountant uk pay,local variants belong on city pages; fee/cost queries want a pricing page
+property-accountant-sheffield,coherent,,same intent and scope; one page serves all
+property-accountant-surrey,coherent,,same intent and scope; one page serves all
+non-resident-landlord-scheme,mixed,non resident landlord application | apply for non resident landlord scheme | non resident landlord scheme registration | non resident landlord tax returns | hmrc self assessment non resident landlord | non resident landlord withholding tax,application/registration and tax-return tasks are separate intents (separate families exist); withholding is agent/tenant side
+incorporation-relief-property-business,coherent,,same intent and scope; one page serves all
+capital-gains-tax-on-property-sale,mixed,property incorporation capital gains tax,CGT on incorporation is a different decision (incorporation relief)
+buy-to-let-accountant-leeds,coherent,,same intent and scope; one page serves all
+property-accountant-birmingham,coherent,,same intent and scope; one page serves all
+inheritance-tax-on-property,coherent,,same intent and scope; one page serves all
+property-accountants-northampton,coherent,,same intent and scope; one page serves all
+property-accountant-kent,coherent,,same intent and scope; one page serves all
+landlord-tax-advice,mixed,expat landlord tax advice | non-resident landlord tax advice,"non-resident audience faces a different regime (NRLS, NRCGT)"
+cost-of-accountant-for-rental-property,coherent,,same intent and scope; one page serves all
+selling-property-abroad-capital-gains-tax,coherent,,same intent and scope; one page serves all
+capital-gains-tax-on-gifting-property,mixed,gift a property,"generic how-to/legal process, not CGT-specific"
+landlord-accountants-in-nottingham,coherent,,same intent and scope; one page serves all
+capital-gains-tax-property-accountant,coherent,,same intent and scope; one page serves all
+property-accountant-nottingham,coherent,,same intent and scope; one page serves all
+bristol-property-partnership,coherent,,"coherent as a group, but it is another business brand, not commercial for us"
+incorporation-relief-buy-to-let,coherent,,same intent and scope; one page serves all
+inherited-rental-property,coherent,,same intent and scope; one page serves all
+capital-gains-tax-on-home-sale,mixed,capital gains tax on btl sale uk,landlord BTL disposal vs homeowner main-residence question
+landlord-accounting-service,coherent,,same intent and scope; one page serves all
+incorporating-a-property-portfolio-uk,coherent,,"decision page with service CTA serves both ""should I"" and ""services"" searchers"
+hmo-accountants,coherent,,same intent and scope; one page serves all
+landlord-accountant-london,coherent,,same intent and scope; one page serves all
+stamp-duty-on-property-incorporation-uk,coherent,,same intent and scope; one page serves all
+property-tax-accountant-milton-keynes,coherent,,same intent and scope; one page serves all
+buy-to-let-tax-accountants,mixed,buy to let accountant wallington,city-specific vs national
+accountant-for-letting-agents-leicester,mixed,property tax advisors leicester,letting-agent business accounting vs landlord tax advice: different audience

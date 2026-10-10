@@ -1,0 +1,41 @@
+keyword,intent_class,google_ads_volume,bing_monthly,bing_broad_monthly,bing_weeks_with_data_13w,bing_last_week,ratio,ratio_vs_median,flag
+capital gains tax on home sale,decision,1300.0,1.0,1.0,2,2026-09-26,0.0008,0.14,bing_low
+capital gains tax on house sale,decision,1300.0,2.0,2.0,1,2026-06-06,0.0015,0.26,bing_low
+declaration of trust property,decision,1000.0,0.0,0.0,0,,0.0,,bing_no_data
+inheritance tax on property,decision,1000.0,0.0,0.0,0,,0.0,,bing_no_data
+capital gain tax on sale of property,decision,1000.0,1.0,1.0,2,2026-07-18,0.001,0.18,bing_low
+capital gains on inherited property,decision,1000.0,1.7,1.7,3,2026-09-19,0.0017,0.3,bing_low
+capital gains tax for property sale,decision,1000.0,0.0,0.0,0,,0.0,,bing_no_data
+capital gains tax on property sale,decision,1000.0,22.7,22.7,7,2026-09-26,0.0227,3.98,bing_high
+non resident landlord scheme,decision,880.0,87.0,87.0,11,2026-10-03,0.0989,17.35,bing_high
+non resident landlords scheme,decision,880.0,0.0,0.0,0,,0.0,,bing_no_data
+non-resident landlord scheme,decision,880.0,0.0,0.0,0,,0.0,,bing_no_data
+property accountant,hire,720.0,7.0,7.0,5,2026-10-03,0.0097,1.7,
+property accountants,hire,720.0,0.0,31.3,12,2026-10-03,0.0,,bing_no_data
+accountant for property,hire,720.0,0.0,0.0,0,,0.0,,bing_no_data
+accountant property,hire,720.0,0.0,0.0,0,,0.0,,bing_no_data
+accountants for property,hire,720.0,0.0,0.0,0,,0.0,,bing_no_data
+accountants property,hire,720.0,0.0,0.0,0,,0.0,,bing_no_data
+tax when selling a house,decision,720.0,0.0,0.0,0,,0.0,,bing_no_data
+national trust rental properties,decision,590.0,0.0,0.0,0,,0.0,,bing_no_data
+bristol property partnership,decision,590.0,0.0,0.0,0,,0.0,,bing_no_data
+hmrc inheritance tax property valuation,decision,480.0,0.0,0.0,0,,0.0,,bing_no_data
+uk property accountants,hire,480.0,31.3,31.3,12,2026-10-03,0.0652,11.44,bing_high
+property incorporation,decision,480.0,0.0,0.0,0,,0.0,,bing_no_data
+landlord accountant,hire,390.0,0.0,0.0,0,,0.0,,bing_no_data
+transfer property to limited company,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+buy to let limited company,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+landlord accountants,hire,390.0,0.0,0.0,0,,0.0,,bing_no_data
+landlords accountant,hire,390.0,0.0,0.0,0,,0.0,,bing_no_data
+capital gains tax on selling a property,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+selling property capital gains tax,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+tax on house sale,decision,390.0,0.0,2.0,1,2026-06-06,0.0,,bing_no_data
+transfer property into limited company,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+transferring a property into a limited company,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+transferring properties to a limited company,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+transferring property to a limited company,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+transferring property to limited company,decision,390.0,0.0,0.0,0,,0.0,,bing_no_data
+property tax advice,hire,320.0,0.0,0.0,0,,0.0,,bing_no_data
+property investment accountant,hire,320.0,0.0,0.0,0,,0.0,,bing_no_data
+accountant for property investors,hire,320.0,0.0,0.0,0,,0.0,,bing_no_data
+accountant property investment,hire,320.0,0.0,0.0,0,,0.0,,bing_no_data

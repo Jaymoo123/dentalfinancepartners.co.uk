@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T14:06:12+00:00",
+  "source": "families still 'needs judgment' after applying judgments/*.jsonl",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "apply_judgments.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 0,
+  "sha256": "69130e4e89e3e5f3c9e0883ca328ed1a387e76b61416442d99df37425f5133d8"
+}

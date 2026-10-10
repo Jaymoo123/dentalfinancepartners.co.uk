@@ -1,0 +1,27 @@
+{
+  "_note": "Locked regression fixture. Each run date supplies its own expected values; selftest.py reads the run named by --run (default: latest key). Values drawn from the 2026-10-10 run.",
+  "runs": {
+    "2026-10-10": {
+      "dedupe": {"family_id": "property-accountant", "demand_volume": 2790, "group_volume": 720, "group_count": 1, "note": "2680 -> 2790 on 2026-10-10 accuracy pass: F1 added the property tax accounting group (110/month, blueprint R24 body-copy term); manager-verified"},
+      "wp1_owners": {
+        "property-accountant": "/services/property-accountant",
+        "landlord-accountant": "/services/landlord-accountant",
+        "property-tax-advice": "/services/property-tax-advice"
+      },
+      "link_baseline": {
+        "body_links": {
+          "/services/property-accountant": 38,
+          "/services/landlord-accountant": 35,
+          "/services/property-tax-advice": 36,
+          "/blog/property-accountant-services/what-does-a-property-accountant-do": 90
+        },
+        "source_pages": {"/blog/property-accountant-services/what-does-a-property-accountant-do": 85}
+      },
+      "graph_gate": "PASS",
+      "serp_index_rows_min": 1,
+      "leads": {"total": 206, "value_gbp": 83800},
+      "no_dash_files": ["DEMAND_MAP.md", "GAP_LIST.md"],
+      "route_sentinels": ["none", "GAP", "EXCLUDE"]
+    }
+  }
+}

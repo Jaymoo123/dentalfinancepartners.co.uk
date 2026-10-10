@@ -13,12 +13,12 @@ Built by scripts/link_engine/demand_pack.py from the stage files listed at the e
 | Search volume and cost per click | Google Ads, UK, one source, one date: 2026-10-10 |
 | Live Google results (top 10) | UK desktop, pulled on 2026-10-10 |
 | Leads window | 2026-07-12..2026-10-09 inclusive (90 days) (data through 2026-10-09) |
-| DataForSEO spend this run | $1.14 over 415 paid calls (781 cache hits) |
-| Keywords priced | 578 |
-| Search families in total | 226 |
-| Money families ranked | 149 |
-| Left to the blog engine (informational) | 77 |
-| Excluded (no page wanted) | 8 |
+| DataForSEO spend this run | $1.39 over 451 paid calls (1571 cache hits) |
+| Keywords priced | 598 |
+| Search families in total | 234 |
+| Money families ranked | 166 |
+| Left to the blog engine (informational) | 67 |
+| Excluded (no page wanted) | 10 |
 
 ## 2. Money pages ranked by commercial priority
 
@@ -26,20 +26,21 @@ Priority is ad-market value times winnability (how likely we are to rank). Share
 
 | Owner page | Families | Searches per month | $ per month (ad-market value, USD) | Share of priority | Leads (90 days) | Top 3 search families |
 |---|---|---|---|---|---|---|
-| /services/property-accountant | 5 | 2,830 | 29,915 | 42.3% | 0 | property accountant; real estate accountant; accountant specializing in real estate |
-| /services/landlord-accountant | 11 | 1,380 | 18,161 | 13.4% | 0 | landlord accountant; buy to let tax accountants; accountant fees for rental property |
-| /services/property-tax-advice | 14 | 1,610 | 14,482 | 11.5% | 7 | property tax advice; landlord tax advice; buy-to-let tax advisor |
-| /blog/capital-gains-tax/capital-gains-tax-second-home-sale | 1 | 810 | 10,200 | 7.0% | 1 | tax on selling second home |
-| /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | 7 | 1,040 | 5,091 | 5.2% | 15 | transfer property to limited company without stamp duty; transfer property to limited company; how to transfer property to limited company |
-| /for/moving-property-into-a-limited-company | 15 | 850 | 6,035 | 4.9% | 0 | property incorporation; incorporation relief property; incorporation relief for landlords |
-| /for/gifting-property-to-family | 4 | 1,040 | 6,144 | 4.1% | 0 | capital gains tax on gifting property; cgt on gifted property; gifting property tax |
-| /for/property-spv-set-up | 3 | 490 | 4,385 | 3.1% | 0 | buy to let limited company; spv accountant; spv incorporation |
-| GAP: city page | 39 | 270 | 1,717 | 2.6% | 0 | landlord accountant glasgow; property accountant glasgow; property accountants liverpool |
-| /for/rental-income-disclosure | 2 | 80 | 1,815 | 1.6% | 0 | let property campaign accountant near me; let property campaign accountant cost |
-| /locations/london | 8 | 100 | 786 | 1.1% | 0 | property tax accountant london; landlord accountant london; buy-to-let accountant farringdon |
-| /locations/birmingham | 1 | 20 | 329 | 0.9% | 2 | property accountant birmingham |
-| /for/landlord-retirement-and-succession | 5 | 130 | 547 | 0.8% | 0 | inheritance tax mitigation strategies for landlords; family investment company property; transferring buy-to-let property into trust |
-| Other (12 pages) | 34 | 800 | 1,660 | 1.5% | 4 | - |
+| /services/property-accountant | 8 | 3,800 | 43,064 | 50.0% | 0 | property accountant; property accounting; real estate accountant |
+| /services/landlord-accountant | 16 | 2,140 | 27,440 | 14.3% | 0 | landlord accountant; landlord accounting; rental property accounting |
+| /services/property-tax-advice | 19 | 2,140 | 18,703 | 10.3% | 7 | property tax advice; stamp duty advice; sdlt advice |
+| /blog/capital-gains-tax/capital-gains-tax-second-home-sale | 1 | 810 | 10,200 | 5.0% | 1 | tax on selling second home |
+| /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | 8 | 1,070 | 5,091 | 3.7% | 15 | transfer property to limited company without stamp duty; transfer property to limited company; how to transfer property to limited company |
+| /for/moving-property-into-a-limited-company | 15 | 850 | 6,035 | 3.5% | 0 | property incorporation; incorporation relief property; incorporation relief for landlords |
+| /for/gifting-property-to-family | 4 | 1,040 | 6,144 | 2.9% | 0 | capital gains tax on gifting property; cgt on gifted property; gifting property tax |
+| /for/selling-a-buy-to-let | 10 | 990 | 4,354 | 2.4% | 0 | capital gains tax accountant; capital gains tax specialist near me; capital gains tax selling rental property |
+| /for/property-spv-set-up | 3 | 490 | 4,385 | 2.2% | 0 | buy to let limited company; spv accountant; spv incorporation |
+| GAP: city page | 39 | 280 | 1,717 | 1.8% | 0 | landlord accountant glasgow; property accountant glasgow; property accountants liverpool |
+| /for/rental-income-disclosure | 2 | 80 | 1,815 | 1.1% | 0 | let property campaign accountant near me; let property campaign accountant cost |
+| /locations/london | 9 | 130 | 899 | 0.9% | 0 | property tax accountant london; landlord accountant london; buy-to-let accountant farringdon |
+| /locations/birmingham | 1 | 20 | 329 | 0.6% | 2 | property accountant birmingham |
+| /for/landlord-retirement-and-succession | 5 | 130 | 547 | 0.6% | 0 | inheritance tax mitigation strategies for landlords; family investment company property; transferring buy-to-let property into trust |
+| Other (11 pages) | 26 | 300 | 1,070 | 0.7% | 4 | - |
 
 ## 3. Top 30 search families
 
@@ -47,45 +48,45 @@ Winnability is our position factor times one minus half the share of big-site re
 
 | Rank | Main search | Type | Searches per month | $ per month (ad-market value, USD) | Winnability | Our live Google position | djh.co.uk position | Owner page | Basis | Owner-page leads (90 days) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | property accountant | Hire | 2,680 | 27,846 | 0.378 | not in top 10 (Search Console average 27.6) | rank 9 | /services/property-accountant | WP1 ruling | 0 leads on owner page (shared with 5 families) |
-| 2 | landlord accountant | Hire | 1,310 | 17,830 | 0.19 | not in top 10 (Search Console average 50.5) | not in top 10 | /services/landlord-accountant | WP1 ruling | 0 leads on owner page (shared with 11 families) |
-| 3 | property tax advice | Hire | 1,180 | 12,567 | 0.2 | not in top 10 (Search Console average 68.7) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
-| 4 | tax on selling second home | Paid decision | 810 | 10,200 | 0.178 | not in top 10 (Search Console average 53.7) | not in top 10 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale | manager ruling (LE-12) | 1 leads on owner page (sole family on this page) |
-| 5 | property incorporation | Paid decision | 480 | 5,472 | 0.2 | not in top 10 (Search Console average 11.0) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 15 families) |
-| 6 | transfer property to limited company without stamp duty | Paid decision | 320 | 2,384 | 0.343 | not in top 10 (Search Console average 46.7) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-14) | 15 leads on owner page (shared with 7 families) |
-| 7 | capital gains tax on gifting property | Paid decision | 650 | 4,070 | 0.178 | not in top 10 (Search Console average 36.0) | not in top 10 | /for/gifting-property-to-family | judgment (medium) | 0 leads on owner page (shared with 4 families) |
-| 8 | buy to let limited company | Paid decision | 390 | 3,838 | 0.178 | not in top 10 (no Search Console data) | not in top 10 | /for/property-spv-set-up | judgment (low, 2 readers agree) | 0 leads on owner page (shared with 3 families) |
-| 9 | transfer property to limited company | Paid decision | 530 | 2,486 | 0.189 | not in top 10 (Search Console average 50.6) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-14) | 15 leads on owner page (shared with 7 families) |
-| 10 | real estate accountant | Hire | 140 | 2,069 | 0.2 | not in top 10 (Search Console average 16.5) | not in top 10 | /services/property-accountant | judgment (medium) | 0 leads on owner page (shared with 5 families) |
-| 11 | cgt on gifted property | Paid decision | 320 | 2,074 | 0.167 | not in top 10 (Search Console average 53.5) | not in top 10 | /for/gifting-property-to-family | judgment (medium) | 0 leads on owner page (shared with 4 families) |
-| 12 | landlord accountant glasgow | Hire | 20 | 330 | 1.0 | live Google rank 8 | not in top 10 | GAP: city page | WP1 ruling | 0 leads on owner page (n/a) |
-| 13 | let property campaign accountant near me | Hire | 50 | 1,552 | 0.2 | not in top 10 (Search Console average 21.0) | not in top 10 | /for/rental-income-disclosure | WP1 ruling | 0 leads on owner page (shared with 2 families) |
-| 14 | property tax accountant london | Hire | 60 | 786 | 0.356 | not in top 10 (Search Console average 30.6) | not in top 10 | /locations/london | WP1 ruling | 0 leads on owner page (shared with 8 families) |
-| 15 | property accountant birmingham | Hire | 20 | 329 | 0.7 | not in top 10 (Search Console average 14.8) | not in top 10 | /locations/birmingham | WP1 ruling | 2 leads on owner page (sole family on this page) |
-| 16 | inheritance tax mitigation strategies for landlords | Paid decision | 110 | 546 | 0.4 | not in top 10 (Search Console average 34.5) | not in top 10 | /for/landlord-retirement-and-succession | judgment (medium) | 0 leads on owner page (shared with 5 families) |
-| 17 | landlord tax advice | Hire | 180 | 993 | 0.189 | not in top 10 (Search Console average 78.7) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
-| 18 | incorporation relief property | Paid decision | 220 | 425 | 0.356 | not in top 10 (Search Console average 21.6) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 15 families) |
-| 19 | buy-to-let tax advisor | Hire | 20 | 126 | 1.0 | live Google rank 4 | rank 6 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
-| 20 | capital gains tax selling rental property | Paid decision | 470 | 658 | 0.189 | not in top 10 (no Search Console data) | not in top 10 | /for/selling-a-buy-to-let | manager ruling (LE-10) | 0 leads on owner page (shared with 8 families) |
-| 21 | spv accountant | Hire | 90 | 547 | 0.2 | not in top 10 (Search Console average 58.3) | not in top 10 | /for/property-spv-set-up | WP1 ruling | 0 leads on owner page (shared with 3 families) |
-| 22 | let property campaign accountant cost | Hire | 30 | 263 | 0.4 | not in top 10 (Search Console average 20.2) | not in top 10 | /for/rental-income-disclosure | WP1 ruling | 0 leads on owner page (shared with 2 families) |
-| 23 | property accountant glasgow | Hire | 10 | 97 | 1.0 | live Google rank 7 | not in top 10 | GAP: city page | WP1 ruling | 0 leads on owner page (n/a) |
-| 24 | property accountant manchester | Hire | 10 | 121 | 0.7 | not in top 10 (Search Console average 15.8) | not in top 10 | /locations/manchester | WP1 ruling | 2 leads on owner page (shared with 2 families) |
-| 25 | property development accountant | Hire | 90 | 377 | 0.2 | not in top 10 (Search Console average 29.9) | not in top 10 | GAP: new page needed | judgment (high) | 0 leads on owner page (n/a) |
-| 26 | property tax planning | Hire | 10 | 390 | 0.189 | not in top 10 (Search Console average 2.7) | not in top 10 | /services/property-tax-advice | judgment (high) | 7 leads on owner page (shared with 14 families) |
-| 27 | small landlord tax advice | Hire | 170 | 406 | 0.178 | not in top 10 (Search Console average 70.0) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 14 families) |
-| 28 | property accountants liverpool | Hire | 20 | 378 | 0.189 | not in top 10 (Search Console average 54.8) | rank 1 | GAP: city page | WP1 ruling | 0 leads on owner page (n/a) |
-| 29 | holiday letting tax advice | Hire | 10 | 355 | 0.189 | not in top 10 (Search Console average 24.0) | not in top 10 | /for/holiday-let-and-serviced-accommodation | WP1 ruling | 0 leads on owner page (shared with 4 families) |
-| 30 | how to transfer property to limited company | Paid decision | 70 | 183 | 0.325 | not in top 10 (Search Console average 47.9) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-4) | 15 leads on owner page (shared with 7 families) |
+| 1 | property accountant | Hire | 2,790 | 30,243 | 0.378 | not in top 10 (Search Console average 27.6) | rank 9 | /services/property-accountant | WP1 ruling | 0 leads on owner page (shared with 8 families) |
+| 2 | property accounting | Hire | 720 | 8,683 | 0.7 | not in top 10 (Search Console average 19.7) | not in top 10 | /services/property-accountant | WP1 ruling | 0 leads on owner page (shared with 8 families) |
+| 3 | landlord accountant | Hire | 1,530 | 18,920 | 0.19 | not in top 10 (Search Console average 50.5) | not in top 10 | /services/landlord-accountant | WP1 ruling | 0 leads on owner page (shared with 16 families) |
+| 4 | property tax advice | Hire | 1,180 | 12,567 | 0.2 | not in top 10 (Search Console average 68.7) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 19 families) |
+| 5 | tax on selling second home | Paid decision | 810 | 10,200 | 0.178 | not in top 10 (Search Console average 53.7) | not in top 10 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale | manager ruling (LE-12) | 1 leads on owner page (sole family on this page) |
+| 6 | landlord accounting | Hire | 390 | 6,650 | 0.2 | not in top 10 (Search Console average 48.7) | not in top 10 | /services/landlord-accountant | WP1 ruling | 0 leads on owner page (shared with 16 families) |
+| 7 | property incorporation | Paid decision | 480 | 5,472 | 0.2 | not in top 10 (Search Console average 11.0) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 15 families) |
+| 8 | transfer property to limited company without stamp duty | Paid decision | 320 | 2,384 | 0.343 | not in top 10 (Search Console average 46.7) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-14) | 15 leads on owner page (shared with 8 families) |
+| 9 | capital gains tax on gifting property | Paid decision | 650 | 4,070 | 0.178 | not in top 10 (Search Console average 36.0) | not in top 10 | /for/gifting-property-to-family | judgment (medium) | 0 leads on owner page (shared with 4 families) |
+| 10 | buy to let limited company | Paid decision | 390 | 3,838 | 0.178 | not in top 10 (no Search Console data) | not in top 10 | /for/property-spv-set-up | judgment (low, 2 readers agree) | 0 leads on owner page (shared with 3 families) |
+| 11 | capital gains tax accountant | Hire | 360 | 2,622 | 0.2 | not in top 10 (no Search Console data) | not in top 10 | /for/selling-a-buy-to-let | WP1 ruling | 0 leads on owner page (shared with 10 families) |
+| 12 | transfer property to limited company | Paid decision | 530 | 2,486 | 0.189 | not in top 10 (Search Console average 50.6) | not in top 10 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | manager ruling (LE-14) | 15 leads on owner page (shared with 8 families) |
+| 13 | stamp duty advice | Hire | 210 | 2,216 | 0.189 | not in top 10 (Search Console average 88.0) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 19 families) |
+| 14 | real estate accountant | Hire | 140 | 2,069 | 0.2 | not in top 10 (Search Console average 16.5) | not in top 10 | /services/property-accountant | judgment (medium) | 0 leads on owner page (shared with 8 families) |
+| 15 | real estate accounting | Hire | 140 | 2,069 | 0.2 | not in top 10 (no Search Console data) | not in top 10 | /services/property-accountant | manager ruling (LE-18) | 0 leads on owner page (shared with 8 families) |
+| 16 | cgt on gifted property | Paid decision | 320 | 2,074 | 0.167 | not in top 10 (Search Console average 53.5) | not in top 10 | /for/gifting-property-to-family | judgment (medium) | 0 leads on owner page (shared with 4 families) |
+| 17 | landlord accountant glasgow | Hire | 20 | 330 | 1.0 | live Google rank 8 | not in top 10 | GAP: city page | WP1 ruling | 0 leads on owner page (n/a) |
+| 18 | property tax accountant london | Hire | 90 | 899 | 0.356 | not in top 10 (Search Console average 30.6) | not in top 10 | /locations/london | WP1 ruling | 0 leads on owner page (shared with 9 families) |
+| 19 | let property campaign accountant near me | Hire | 50 | 1,552 | 0.2 | not in top 10 (Search Console average 21.0) | not in top 10 | /for/rental-income-disclosure | WP1 ruling | 0 leads on owner page (shared with 2 families) |
+| 20 | sdlt advice | Hire | 210 | 1,520 | 0.189 | not in top 10 (no Search Console data) | not in top 10 | /services/property-tax-advice | manager ruling (LE-18) | 7 leads on owner page (shared with 19 families) |
+| 21 | rental property accounting | Hire | 110 | 1,451 | 0.178 | not in top 10 (Search Console average 28.8) | not in top 10 | /services/landlord-accountant | WP1 ruling | 0 leads on owner page (shared with 16 families) |
+| 22 | property accountant birmingham | Hire | 20 | 329 | 0.7 | not in top 10 (Search Console average 14.8) | not in top 10 | /locations/birmingham | WP1 ruling | 2 leads on owner page (sole family on this page) |
+| 23 | inheritance tax mitigation strategies for landlords | Paid decision | 110 | 546 | 0.4 | not in top 10 (Search Console average 34.5) | not in top 10 | /for/landlord-retirement-and-succession | judgment (medium) | 0 leads on owner page (shared with 5 families) |
+| 24 | capital gains tax specialist near me | Hire | 110 | 1,071 | 0.2 | not in top 10 (Search Console average 29.0) | not in top 10 | /for/selling-a-buy-to-let | WP1 ruling | 0 leads on owner page (shared with 10 families) |
+| 25 | landlord tax advice | Hire | 190 | 993 | 0.189 | not in top 10 (Search Console average 78.7) | not in top 10 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 19 families) |
+| 26 | incorporation relief property | Paid decision | 220 | 425 | 0.356 | not in top 10 (Search Console average 21.6) | not in top 10 | /for/moving-property-into-a-limited-company | judgment (medium) | 0 leads on owner page (shared with 15 families) |
+| 27 | buy-to-let tax advisor | Hire | 20 | 126 | 1.0 | live Google rank 4 | rank 6 | /services/property-tax-advice | WP1 ruling | 7 leads on owner page (shared with 19 families) |
+| 28 | capital gains tax selling rental property | Paid decision | 470 | 658 | 0.189 | not in top 10 (no Search Console data) | not in top 10 | /for/selling-a-buy-to-let | manager ruling (LE-10) | 0 leads on owner page (shared with 10 families) |
+| 29 | spv accountant | Hire | 90 | 547 | 0.2 | not in top 10 (Search Console average 58.3) | not in top 10 | /for/property-spv-set-up | WP1 ruling | 0 leads on owner page (shared with 3 families) |
+| 30 | let property campaign accountant cost | Hire | 30 | 263 | 0.4 | not in top 10 (Search Console average 20.2) | not in top 10 | /for/rental-income-disclosure | WP1 ruling | 0 leads on owner page (shared with 2 families) |
 
 ## 4. Gaps: demand with no page to own it
 
-- **City pages not built:** 39 search families across 24 named cities (bournemouth, brighton, cardiff, coventry, derby, edinburgh, glasgow, kent, leicester, liverpool, milton keynes, newcastle, northampton, nottingham, oxford, peterborough, preston, sheffield, slough, southampton, surrey, swansea, wolverhampton, york), 270 searches per month, $ 1,717 per month (ad-market value, USD).
+- **City pages not built:** 39 search families across 24 named cities (bournemouth, brighton, cardiff, coventry, derby, edinburgh, glasgow, kent, leicester, liverpool, milton keynes, newcastle, northampton, nottingham, oxford, peterborough, preston, sheffield, slough, southampton, surrey, swansea, wolverhampton, york), 280 searches per month, $ 1,717 per month (ad-market value, USD).
 
 | Rank | Search family | Searches per month | $ per month (ad-market value, USD) | Page needed |
 |---|---|---|---|---|
-| 25 | property development accountant | 90 | 377 | Property developers choosing an accountant for development projects (trading stock, VAT, SDLT on sites); head: property development accountant. Held under R21 until the firm confirms it offers development work. |
-| 81 | property development tax planning | 10 | 0 | Property development accountant page, held under R21 until the firm confirms development work. |
+| 34 | property development accountant | 90 | 377 | Property developers choosing an accountant for development projects (trading stock, VAT, SDLT on sites); head: property development accountant. Held under R21 until the firm confirms it offers development work. |
+| 96 | property development tax planning | 10 | 0 | Property development accountant page, held under R21 until the firm confirms development work. |
 
 ## 5. Leads cross-check
 
@@ -93,8 +94,8 @@ Leads belong to the page that owns a family, never to the family itself, and sit
 
 | Owner page | Share of priority | Families | Leads (90 days) | Est. lead value (GBP) | Flag | Note |
 |---|---|---|---|---|---|---|
-| /services/property-accountant | 42.3% | 5 | 0 | 0 | demand without leads | page rewritten 2026-10-09, maturing |
-| /services/landlord-accountant | 13.4% | 11 | 0 | 0 | demand without leads | page rewritten 2026-10-09, maturing |
+| /services/property-accountant | 50.0% | 8 | 0 | 0 | demand without leads | page rewritten 2026-10-09, maturing |
+| /services/landlord-accountant | 14.3% | 16 | 0 | 0 | demand without leads | page rewritten 2026-10-09, maturing |
 
 Entry pages with 3 or more leads that own no ranked family:
 
@@ -111,20 +112,20 @@ Entry pages with 3 or more leads that own no ranked family:
 
 ## 6. Left to the blog engine
 
-77 families (14,980 searches per month, $ 38,580 per month ad-market value, USD) are informational: advertisers pay a lot for them but the typical searcher wants a fact or a calculation and rarely hires. They stay with the blog guides and are not ranked. A further 8 families are excluded because no page is wanted.
+67 families (12,030 searches per month, $ 30,627 per month ad-market value, USD) are informational: advertisers pay a lot for them but the typical searcher wants a fact or a calculation and rarely hires. They stay with the blog guides and are not ranked. A further 10 families are excluded because no page is wanted.
 
 | Search family | Searches per month | $ per month (ad-market value, USD) | Owner guide | Why |
 |---|---|---|---|---|
-| capital gains tax on home sale | 2,350 | 7,900 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk | Home sellers mostly want to know whether main-residence relief leaves any tax, which is a fact the complete CGT guide answers and they rarely hire for it. |
 | capital gains on inherited property | 1,000 | 7,660 | /blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost | The probate-value uplift usually leaves a small or nil gain so most searchers want the base-cost rule, which the probate base cost guide answers directly; /for/inherited-property is the commercial alternative if the owner reads this as paid advice. |
-| capital gains tax on property sale | 1,420 | 6,806 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk | LE-1: both readers informational; guide choice does not affect the money map; complete guide (ranks ~6) owns. |
+| capital gains tax on property sale | 1,390 | 6,740 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk | LE-1 reissued after re-cluster: both readers informational; complete CGT guide owns. |
 | declaration of trust property | 1,000 | 3,990 | /blog/landlord-tax-essentials/declaration-of-trust | Most searchers want to know what a declaration of trust is and a solicitor drafts it, so the declaration-of-trust explainer owns it rather than the couples audience page. |
 | inheritance tax on property | 1,260 | 2,600 | /blog/landlord-tax-essentials/inheritance-tax-and-the-family-home | LE-1: both readers informational; family-home IHT guide matches the homeowner majority. |
+| tax on property sale | 530 | 2,019 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk | LE-1/LE-13: generic sale-tax question, mostly homeowners; complete CGT guide. |
 | furnished holiday let tax | 110 | 1,751 | /blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions | LE-2: fit judged on head and majority volume; head asks what changed after FHL abolition. Advice forms inside the family are carried by links from the guide to /for/holiday-let-and-serviced-accommodation. |
-| tax when selling a house | 720 | 1,699 | /blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk | LE-1: both informational; main-home sellers rarely owe tax. |
 | inherited property | 210 | 1,128 | /blog/landlord-tax-essentials/inheriting-a-house-in-the-uk | LE-2: vague post-inheritance head; majority wants the facts. |
 | how to avoid capital gains tax on inherited property uk | 320 | 1,002 | /blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost | The usual answer is the probate-value uplift and selling promptly, a rule the probate base cost guide explains; it reads as fact-seeking rather than a hire. |
 | bristol property partnership | 630 | 952 | EXCLUDE (no page) | The searcher wants a named company, not a property accountant in Bristol, so no page of ours should own it. |
+| cgt on inherited property uk | 110 | 762 | /blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost | The guide is written for exactly this query and already ranks for it. |
 
 ## 7. How to re-derive
 
@@ -134,24 +135,34 @@ Run in order: gsc_pull, universe, metrics, serp, cluster, families, apply_judgme
 |---|---|---|---|
 | inputs/dfs_cache_commercial.csv | 1524 | d11aadb88f12b19a153b91f6f5a48ca0d4262ee7a8f94e38f455a6b7af90d71c | no hash in sidecar (computed now) |
 | inputs/leads_by_entry_page.csv | 75 | 8a3f0f28f58379e1cfeaa076e684d65707579a437444a70f56874b77c2819d96 | no hash in sidecar (computed now) |
-| stages/01_universe.csv | 11118 | 145eccb82b35fef183ccd1bb6110a611c9be10c42b34b2173903874d3858132b | ok |
-| stages/02_metrics.csv | 578 | b0fa6b9869c5ce4cd50aedf3a61483f9e906f75997d18f8dd13bbcfb118035c7 | ok |
-| stages/02_metrics_rejects.csv | 14 | e01bd770998edabd030c80e1e9324cb7c51202a02c1706594f4cb354bb096df3 | ok |
+| stages/01_universe.csv | 11593 | e68bc30a398c0b25f54c5182ff32eb7f91cff1393236cca43c67b0543667a448 | ok |
+| stages/02_metrics.csv | 598 | a5321a5907182e1a031aa1f4cdca22ac0a71259d36dfcf6265248dd8dafa7fe0 | ok |
+| stages/02_metrics_rejects.csv | 8 | 9240cdeca88beb3b7df7065a62cf4731dbb806dfcbb9be94aa1ccf2bae7db834 | ok |
 | stages/03_bing_page.csv | 1915 | 1397d63cb978d2c30f23fa941c746dc7f78840161d21e3b49bf0dd47c989d2b6 | ok |
 | stages/03_bing_query.csv | 2000 | 621f1936dfa9670de2ce86198d83abf508ceb3789678953e5700c0bbfc27a0c9 | ok |
 | stages/03_gsc_page.csv | 1019 | e479ad913410eca774b38909d5338b919bc0d1392e15af9717eec61a7de6c3d2 | ok |
 | stages/03_gsc_query_page.csv | 12036 | cc928470dd1588d5dcd41b097c7e43e2171997e1d00b8898331445984231c03a | ok |
-| stages/04_serp.csv | 3491 | 11b8a6050e80a69a41a729e6af968e8e0e277ccafddc275879eb54427d7dfa48 | ok |
+| stages/04_serp.csv | 3601 | 04c0d84c9c63eddc76aa04264e15afdefa23f449486327fc29f8660357def84b | ok |
 | stages/04_serp_skipped.csv | 0 | 35786edf03b5205f46bd7ec2386c49759d602de5920015796f2225f13f1a29b1 | ok |
-| stages/04_serp_summary.csv | 393 | 96330bc84d721c3ed7cd141facf8d636d2b24b5ed479dbeac0cf0ab84be4a957 | ok |
-| stages/05_cluster_conflicts.csv | 16 | dc90ce7541b511a4a8f3478358d360f1f363c8d5d6beffa07f14937b4207856a | ok |
-| stages/05_clusters.csv | 578 | ac6e6c0d3cab911eb4ebc8b4c43986fed34b202ba2bf34c17ef705c16f0c4a1d | ok |
-| stages/06_families.csv | 226 | 3530385baf5d46d65dc560d09771afae9ccf7e669b6874a5102c76debbb18988 | ok |
-| stages/06_owner_queue.csv | 142 | ee7fc0261eaf9f3f165dd9aada628b9fbdad7f56daed7298960a5a7bd6767fdc | ok |
-| stages/06_owner_rollup.csv | 25 | c08fcb1fd90116765af5ab82a40a5165a8b705d7894fe342a7927a49d5dcbbe8 | ok |
+| stages/04_serp_summary.csv | 406 | 0d17687a433617fd98e529f92292ebd314effa3c04b41fd1027db2436b54fa0c | ok |
+| stages/05_cluster_conflicts.csv | 16 | 5a2a1f02d5d7dc89b7a5f91cd6a976cd8cf65742b62511019432828718792486 | ok |
+| stages/05_clusters.csv | 598 | 9e6ec854014c67ab3a35ee026bc19aedd09c2e521e2af4915d4b8ea76ea587d6 | ok |
+| stages/06_families.csv | 234 | 439d7d069d711e388aa76ad9df54e7b281573781f2481264c7bb7d4a5fdc9e3c | ok |
+| stages/06_new_families_since_judgment.csv | 0 | 69130e4e89e3e5f3c9e0883ca328ed1a387e76b61416442d99df37425f5133d8 | ok |
+| stages/06_owner_queue.csv | 140 | 0a40e9ac1544e72ef5132d58c837be0114002fff622c4e4868e55b0ba4a410eb | ok |
+| stages/06_owner_rollup.csv | 25 | 6a85722ea39d7e8505d49641f4c4d5157164d428d5beba123238c8925a8d882e | ok |
 | stages/07_disagreements.csv | 0 | ac13e8e3b4b21a7e76577852206f59299dc24ca1844f94619df0bb5006f4d40d | ok |
-| stages/07_rejudge_needed.csv | 4 | 1bea02c299f6106073985b047ac3e82497baf82ff01da08b762eb2d715a15b69 | ok |
-| stages/08_edges_html.csv | 133767 | 2baea7a611fa4a3749480db97e53f60d5f6c1cf549cf4d24326bb7b94def498e | ok |
-| stages/08_pages.csv | 898 | 2a74c126428f222948b2f90005affc5e4e5a79f67bd70782792777c7579dbd1b | ok |
-| stages/09_edges_source.csv | 7512 | 4a559d2f51a4bbc7667f6923adc8ff36ed605c7b126fbc0d15665f8a361d90b1 | ok |
-| stages/09_edges_source_excluded.csv | 200 | 6171ef30d3942e710918df87ba2b5ddd6c099e3e1ea56bbf3bba15096929e5b0 | ok |
+| stages/07_rejudge_needed.csv | 20 | 6cd75e67e0f9c53b69ca3c3ceb0a57084f6a88756eab5328692a20b3add695ac | ok |
+| stages/08_edges_html.csv | 133767 | 1801fcc6ebee89f2f2a2fd6758cebb8acb97c8d09e698b23dbcdf7022868e2e9 | ok |
+| stages/08_pages.csv | 898 | 932095015f22b870b4db9316e03bff8b974d8ff868e811d90a3343d53bf1661c | ok |
+| stages/09_compare.csv | 6 | 81599bf13c32b295e207a7c143d476e71e6383ef1279976e933f9a3df77a5478 | ok |
+| stages/09_edges_source.csv | 7474 | b1b2c61467ec42e8f30b87da9841fa5f8becb16de8b70c4c6e0dcb9d833c54c1 | ok |
+| stages/09_edges_source_excluded.csv | 237 | b6a7cf0b0f6c2a26917e342e41d479226f583b30fdd2556df696c879204dd2d2 | ok |
+| stages/10_assign_disagreements.csv | 0 | 2cb6ad81eafe40a80daaf0096d8e368ad213372edfa5d455dd7dbe9219ebeff1 | ok |
+| stages/10_assign_queue.csv | 28 | 36594fa53892f6c849d0392582c01e79e721e0298ba96f4eeeaf3c9e4ca4b3d7 | ok |
+| stages/10_assign_rejudge.csv | 0 | c0f72356b96419c5817b4f84218f9ad8fdb84d73ec417eea4313fe7dcf1ef144 | ok |
+| stages/10_assignments.csv | 866 | 1812e29ef213755928daad8071dae61e8f4be6b2448e7a30b9a08ee9007ea8a5 | ok |
+| stages/10_auto_audit_sample.csv | 28 | 09099d34e6aa3b8b749ca3d61f6bbc49be5e82825732a8be7234e58b0e6dd390 | ok |
+| stages/11_budget.csv | 28 | 6733c66483d50ce2a701e0dad786f804b68c69a27d4556acd8b281cbfecf7307 | ok |
+| stages/11_secondary_plan.csv | 52 | c3bd2532100ffb16d175b1fe4432e225faefd7efbc2b426f8aefab1498e78a75 | ok |
+| stages/12_gaps.csv | 1011 | 06247a8b05240e0ae35b190513440baf0b1c42e2f34741fc17e08fd5394bd3c9 | ok |

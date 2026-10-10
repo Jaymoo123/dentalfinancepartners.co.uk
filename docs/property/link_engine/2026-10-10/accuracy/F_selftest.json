@@ -1,0 +1,105 @@
+{
+  "site": "property",
+  "run": "2026-10-10",
+  "ran_at": "2026-10-10T14:06:14+00:00",
+  "result": "PASS",
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "check": "1 close-variant dedupe",
+      "pass": true,
+      "expected": {
+        "family_id": "property-accountant",
+        "demand_volume": 2790,
+        "group_volume": 720,
+        "group_count": 1,
+        "note": "2680 -> 2790 on 2026-10-10 accuracy pass: F1 added the property tax accounting group (110/month, blueprint R24 body-copy term); manager-verified"
+      },
+      "recomputed_demand": 2790,
+      "families_csv": "2790",
+      "groups_of_720": 1
+    },
+    {
+      "check": "2 WP1 owners",
+      "pass": true,
+      "expected": {
+        "property-accountant": "/services/property-accountant",
+        "landlord-accountant": "/services/landlord-accountant",
+        "property-tax-advice": "/services/property-tax-advice"
+      },
+      "actual": {
+        "property-accountant": "/services/property-accountant",
+        "landlord-accountant": "/services/landlord-accountant",
+        "property-tax-advice": "/services/property-tax-advice"
+      }
+    },
+    {
+      "check": "3 link baseline",
+      "pass": true,
+      "expected_links": {
+        "/services/property-accountant": 38,
+        "/services/landlord-accountant": 35,
+        "/services/property-tax-advice": 36,
+        "/blog/property-accountant-services/what-does-a-property-accountant-do": 90
+      },
+      "actual_links": {
+        "/services/property-accountant": 38,
+        "/services/landlord-accountant": 35,
+        "/services/property-tax-advice": 36,
+        "/blog/property-accountant-services/what-does-a-property-accountant-do": 90
+      },
+      "expected_sources": {
+        "/blog/property-accountant-services/what-does-a-property-accountant-do": 85
+      },
+      "actual_sources": {
+        "/blog/property-accountant-services/what-does-a-property-accountant-do": 85
+      }
+    },
+    {
+      "check": "4 graph gate",
+      "pass": true,
+      "expected": "PASS",
+      "actual": "PASS"
+    },
+    {
+      "check": "5 store integrity",
+      "pass": true,
+      "rows": 444,
+      "min_rows": 1,
+      "missing": [],
+      "n_missing": 0
+    },
+    {
+      "check": "6 leads",
+      "pass": true,
+      "expected": {
+        "total": 206,
+        "value_gbp": 83800
+      },
+      "actual": {
+        "total": 206,
+        "value_gbp": 83800
+      }
+    },
+    {
+      "check": "7 built routes",
+      "pass": true,
+      "sentinels": [
+        "none",
+        "GAP",
+        "EXCLUDE"
+      ],
+      "unbuilt": [],
+      "n_unbuilt": 0
+    },
+    {
+      "check": "8 no em-dash",
+      "pass": true,
+      "em_dash_counts": {
+        "DEMAND_MAP.md": 0,
+        "GAP_LIST.md": 0
+      }
+    }
+  ]
+}

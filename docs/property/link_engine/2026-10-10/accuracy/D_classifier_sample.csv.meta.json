@@ -1,0 +1,16 @@
+{
+  "pulled_at": "2026-10-10T13:55:55+00:00",
+  "source": "04_serp.csv",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "accuracy_intent.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "seed": 10,
+  "rows": 30,
+  "sha256": "2302f2c1815f4e81b246c9eca18a97e961394723c4b98926c3705cad3c100c75"
+}

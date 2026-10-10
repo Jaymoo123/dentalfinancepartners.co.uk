@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T13:57:41+00:00",
+  "site": "property",
+  "script": "accuracy_coverage.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "source": "Bing Webmaster GetKeywordStats gb/en-GB, sum of weekly Impressions in the 91 days to the last data week / 3",
+  "note": "flag = ratio more than 2x or less than 0.5x the median ratio of the 40; DFS clickstream not bought",
+  "rows": 40,
+  "sha256": "c683d984ce139d71737f1f4411abb9de6ff89c2c9290d182a842a00f36efa4bd"
+}

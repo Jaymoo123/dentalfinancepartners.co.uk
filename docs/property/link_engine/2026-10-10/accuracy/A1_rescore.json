@@ -1,0 +1,203 @@
+{
+  "sample": "accuracy/A1_classification_key.csv ids (150) scored against the label column of A1_blind_labels.csv (labels read, not edited)",
+  "method": "engine class from stages/01_universe.csv (excluded counted as not_commercial); exact = three-way match; commercial-vs-not = hire/decision vs not",
+  "before": {
+    "exact": 115,
+    "commercial_vs_not": 118,
+    "n": 150
+  },
+  "pass1": {
+    "exact": 124,
+    "commercial_vs_not": 127,
+    "n": 150
+  },
+  "after": {
+    "exact": 124,
+    "commercial_vs_not": 127,
+    "n": 150
+  },
+  "still_disagreeing": [
+    {
+      "id": "2",
+      "query": "selling property abroad capital gains tax",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "12",
+      "query": "making tax digital landlords help",
+      "blind": "hire",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "23",
+      "query": "non resident company landlord",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "28",
+      "query": "non resident landlord tax exemption",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "34",
+      "query": "non resident landlord quarterly return",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "39",
+      "query": "stamp duty on a gifted property",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "46",
+      "query": "non resident landlord tax",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "50",
+      "query": "sdlt on gifted property",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "52",
+      "query": "rental income from property held in trust uk",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "53",
+      "query": "inheritance tax planning",
+      "blind": "decision",
+      "engine": "excluded",
+      "reason": "no_property_context"
+    },
+    {
+      "id": "61",
+      "query": "non resident landlord scheme uk",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "70",
+      "query": "non resident landlord scheme application",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "92",
+      "query": "hmrc non-resident landlord scheme",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "98",
+      "query": "inheritance tax planning liverpool",
+      "blind": "hire",
+      "engine": "excluded",
+      "reason": "no_property_context"
+    },
+    {
+      "id": "102",
+      "query": "income tax benefit on commercial property sale",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "104",
+      "query": "if you sell a second home do i pay tax",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "106",
+      "query": "nrl landlord",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "115",
+      "query": "property portfolio incorporation services",
+      "blind": "hire",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "121",
+      "query": "inherited house",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "134",
+      "query": "uk non-resident landlord scheme",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "135",
+      "query": "let property campaign penalties",
+      "blind": "decision",
+      "engine": "excluded",
+      "reason": "not_commercial_intent"
+    },
+    {
+      "id": "137",
+      "query": "best way to produce rent statements for tenants and accountants",
+      "blind": "not_commercial",
+      "engine": "hire",
+      "reason": ""
+    },
+    {
+      "id": "141",
+      "query": "tax on selling property",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "143",
+      "query": "incorporation relief corporate partner",
+      "blind": "decision",
+      "engine": "excluded",
+      "reason": "not_commercial_intent"
+    },
+    {
+      "id": "144",
+      "query": "non resident landlord withholding tax",
+      "blind": "not_commercial",
+      "engine": "decision",
+      "reason": ""
+    },
+    {
+      "id": "149",
+      "query": "property portfolio tax planning",
+      "blind": "decision",
+      "engine": "hire",
+      "reason": ""
+    }
+  ]
+}

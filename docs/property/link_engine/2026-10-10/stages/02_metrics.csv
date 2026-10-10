@@ -1,6 +1,4 @@
 query,intent_class,geo,volume,cpc,cpc_currency,competition,metric_source,metric_date,prior_volume,prior_cpc,prior_source,prior_date
-capital gains tax on home sale,decision,,1300,4.03,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-capital gains tax on house sale,decision,,1300,4.03,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 declaration of trust property,decision,,1000,3.99,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 inheritance tax on property,decision,,1000,2.21,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,1300,2.24,dfs_cache:keyword_ideas/live,2026-08-21
 capital gain tax on sale of property,decision,,1000,4.1,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -10,39 +8,43 @@ capital gains tax on property sale,decision,,1000,4.1,"USD (DataForSEO conventio
 non resident landlord scheme,decision,,880,0.32,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,880,0.4,dfs_cache:keyword_ideas/live,2026-08-15
 non resident landlords scheme,decision,,880,0.32,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non-resident landlord scheme,decision,,880,0.32,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property accountant,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,720,12.06,qry_c_2026-10-07,2026-10-07
-property accountants,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,720,12.06,qry_c_2026-10-07,2026-10-07
+property accountant,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,720,12.0600004196167,ranked_keywords,2026-10-10
+property accountants,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,390,13.130000114440918,ranked_keywords,2026-10-10
 accountant for property,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,720,12.06,qry_c_2026-10-07,2026-10-07
 accountant property,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,720,12.06,qry_c_2026-10-07,2026-10-07
 accountants for property,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,720,12.06,qry_c_2026-10-07,2026-10-07
 accountants property,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,720,12.06,qry_c_2026-10-07,2026-10-07
-tax when selling a house,decision,,720,2.36,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
+property accounting,hire,,720,12.06,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 national trust rental properties,decision,,590,0.36,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 bristol property partnership,decision,bristol,590,1.35,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 hmrc inheritance tax property valuation,decision,,480,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,480,,dfs_cache:keyword_ideas/live,2026-08-21
-uk property accountants,hire,,480,9.13,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,480,9.13,qry_c_2026-10-07,2026-10-07
+uk property accountants,hire,,480,9.13,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,480,9.130000114440918,ranked_keywords,2026-10-10
 property incorporation,decision,,480,11.4,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 landlord accountant,hire,,390,17.05,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,390,17.05,qry_c_2026-10-07,2026-10-07
 transfer property to limited company,decision,,390,5.57,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,480,4.48,dfs_cache:keyword_ideas/live,2026-08-15
 buy to let limited company,decision,,390,9.84,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,480,7.08,dfs_cache:keyword_suggestions/live,2026-08-15
 landlord accountants,hire,,390,17.05,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,390,17.05,qry_c_2026-10-07,2026-10-07
 landlords accountant,hire,,390,17.05,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,390,17.05,qry_c_2026-10-07,2026-10-07
+landlord accounting,hire,,390,17.05,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
+accounting for landlords,hire,,390,17.05,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on selling a property,decision,,390,6.77,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 selling property capital gains tax,decision,,390,6.77,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-tax on house sale,decision,,390,1.33,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transfer property into limited company,decision,,390,5.57,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transferring a property into a limited company,decision,,390,5.57,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transferring properties to a limited company,decision,,390,5.57,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transferring property to a limited company,decision,,390,5.57,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transferring property to limited company,decision,,390,5.57,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property tax advice,hire,,320,11.33,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property investment accountant,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.85,qry_c_2026-10-07,2026-10-07
-accountant for property investors,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.85,qry_c_2026-10-07,2026-10-07
-accountant property investment,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.85,qry_c_2026-10-07,2026-10-07
-accountants for property investors,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.85,qry_c_2026-10-07,2026-10-07
-investment property accountant,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,30,,wp1_assignment,2026-10-09
-property investment accountants,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.85,qry_c_2026-10-07,2026-10-07
-tax advice property,hire,,320,11.33,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
+property tax advice,hire,,320,11.33,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,320,11.329999923706055,ranked_keywords,2026-10-10
+property investment accountant,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
+accountant for property investors,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
+accountant property investment,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
+accountants for property investors,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
+investment property accountant,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,30,,ranked_keywords,2026-10-10
+property investment accountants,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
+tax advice property,hire,,320,11.33,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,320,11.329999923706055,ranked_keywords,2026-10-10
+accountant for property investment,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
+accountant investment property,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
+investment property accountants,hire,,320,9.85,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,320,9.850000381469727,ranked_keywords,2026-10-10
 capital gains tax on gifting property,decision,,320,6.48,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 cgt on gifted property,decision,,320,6.48,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 how to avoid capital gains tax on inherited property uk,decision,,320,3.13,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -57,15 +59,18 @@ accountant for landlord,hire,,260,16.82,"USD (DataForSEO convention, unverified)
 accountant landlord,hire,,260,16.82,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,260,16.82,qry_c_2026-10-07,2026-10-07
 accountant landlords,hire,,260,16.82,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,260,16.82,qry_c_2026-10-07,2026-10-07
 accountants for landlord,hire,,260,16.82,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,260,16.82,qry_c_2026-10-07,2026-10-07
-accountants for landlords,hire,,260,16.82,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,260,16.82,qry_c_2026-10-07,2026-10-07
+accountants for landlords,hire,,260,16.82,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,260,16.81999969482422,ranked_keywords,2026-10-10
 gift a property,decision,,260,6.77,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord,decision,,260,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlords,decision,,260,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non-resident landlord,decision,,260,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property tax accountant,hire,,210,14.76,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,14.76,qry_c_2026-10-07,2026-10-07
-property tax specialist,hire,,210,11.9,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,11.9,qry_c_2026-10-07,2026-10-07
+property tax accountant,hire,,210,14.76,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,14.760000228881836,ranked_keywords,2026-10-10
+property tax specialist,hire,,210,11.9,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,11.899999618530273,ranked_keywords,2026-10-10
+stamp duty advice,hire,,210,10.55,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,210,8.19,dfs_cache:keyword_ideas/live,2026-08-15
+sdlt advice,hire,,210,7.24,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax selling rental property,decision,,210,2.51,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property tax accountants,hire,,210,14.76,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,14.76,qry_c_2026-10-07,2026-10-07
+capital gains tax accountant,hire,,210,8.87,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,8.87,qry_c_2026-10-07,2026-10-07
+property tax accountants,hire,,210,14.76,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,110,21.790000915527344,ranked_keywords,2026-10-10
 property tax specialists,hire,,210,11.9,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,11.9,qry_c_2026-10-07,2026-10-07
 tax accountant property,hire,,210,14.76,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,210,14.76,qry_c_2026-10-07,2026-10-07
 capital gains tax on selling a second home,decision,,210,22.67,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -74,37 +79,44 @@ inherited property,decision,,210,5.37,"USD (DataForSEO convention, unverified)",
 stamp duty on a gifted property,decision,,210,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 tax on selling property,decision,,210,2.53,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property tax advisor,hire,,170,13.92,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,40,14.87,qry_c_2026-10-07,2026-10-07
-accountant property specialist,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.14,qry_c_2026-10-07,2026-10-07
-property accountant near me,hire,,170,8.71,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,170,8.71,qry_c_2026-10-07,2026-10-07
-property accountant specialist,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.14,qry_c_2026-10-07,2026-10-07
-property accountants near me,hire,,170,8.71,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,170,8.71,qry_c_2026-10-07,2026-10-07
+accountant property specialist,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.140000343322754,ranked_keywords,2026-10-10
+property accountant near me,hire,,170,8.71,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,170,8.710000038146973,ranked_keywords,2026-10-10
+property accountant specialist,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.140000343322754,ranked_keywords,2026-10-10
+property accountants near me,hire,,170,8.71,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,880,11.65999984741211,ranked_keywords,2026-10-10
 property specialist accountant,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.14,qry_c_2026-10-07,2026-10-07
 property specialist accountants,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.14,qry_c_2026-10-07,2026-10-07
 property tax adviser,hire,,170,13.92,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,40,14.87,qry_c_2026-10-07,2026-10-07
-property tax advisors,hire,,170,13.92,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,40,14.87,qry_c_2026-10-07,2026-10-07
+property tax advisors,hire,,170,13.92,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,90,13.9399995803833,ranked_keywords,2026-10-10
 specialist property accountant,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.14,qry_c_2026-10-07,2026-10-07
-specialist property accountants,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.14,qry_c_2026-10-07,2026-10-07
+specialist property accountants,hire,,170,11.14,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,170,11.140000343322754,ranked_keywords,2026-10-10
 small landlord tax advice,hire,,170,2.39,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,,,,
-do you have to pay tax on a house sale,decision,,170,1.32,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 inherited house,decision,,170,4.41,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 accountant in real estate,hire,,140,14.78,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,140,14.78,qry_c_2026-10-07,2026-10-07
-property tax specialist near me,hire,,140,9.73,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,140,9.73,qry_c_2026-10-07,2026-10-07
-property tax specialists near me,hire,,140,9.73,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,140,9.73,qry_c_2026-10-07,2026-10-07
+capital gains tax accountant near me,hire,,140,4.68,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,140,4.68,qry_c_2026-10-07,2026-10-07
+property tax specialist near me,hire,,140,9.73,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,140,9.729999542236328,ranked_keywords,2026-10-10
+property tax specialists near me,hire,,140,9.73,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,140,9.729999542236328,ranked_keywords,2026-10-10
 real estate accountant,hire,,140,14.78,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,140,14.78,qry_c_2026-10-07,2026-10-07
 real estate accountants,hire,,140,14.78,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,140,14.78,qry_c_2026-10-07,2026-10-07
 landlord tax advice,hire,,140,5.52,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 tax advice for landlords,hire,,140,5.52,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 tax advice landlords,hire,,140,5.52,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
+real estate accounting,hire,,140,14.78,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,140,14.779999732971191,ranked_keywords,2026-10-10
 capital gains tax on sale of second home,decision,,140,22.1,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on second home sale,decision,,140,22.1,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 buy to let accountant,hire,,110,4.95,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,4.95,qry_c_2026-10-07,2026-10-07
-rental property accountant,hire,,110,13.19,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,110,13.19,qry_c_2026-10-07,2026-10-07
+rental property accountant,hire,,110,13.19,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,110,13.1899995803833,ranked_keywords,2026-10-10
 incorporation relief property,decision,,110,3.86,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,110,5.15,dfs_cache:keyword_suggestions/live,2026-08-15
 property incorporation relief,decision,,110,3.86,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,110,5.15,dfs_cache:keyword_suggestions/live,2026-08-15
 accountant for rental property,hire,,110,13.19,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,110,13.19,qry_c_2026-10-07,2026-10-07
 accountant rental property,hire,,110,13.19,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,110,13.19,qry_c_2026-10-07,2026-10-07
-buy to let accountants,hire,,110,4.95,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,4.95,qry_c_2026-10-07,2026-10-07
-property tax advisor near me,hire,,110,10.26,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,110,10.26,qry_c_2026-10-07,2026-10-07
+buy to let accountants,hire,,110,4.95,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,4.949999809265137,ranked_keywords,2026-10-10
+property tax advisor near me,hire,,110,10.26,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,110,10.260000228881836,ranked_keywords,2026-10-10
+rental property accounting,hire,,110,13.19,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,,,,
+property tax accounting,hire,,110,21.79,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
+accounting for property tax,hire,,110,21.79,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
+accounting for property taxes,hire,,110,21.79,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
+buy-to let accountants,hire,,110,4.95,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,4.949999809265137,ranked_keywords,2026-10-10
+buy-to-let accountant,hire,,110,4.95,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,4.949999809265137,ranked_keywords,2026-10-10
 cgt on inherited property uk,decision,,110,6.93,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 excluded property trust,decision,,110,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 excluded property trusts,decision,,110,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -120,16 +132,16 @@ selling rented property tax,decision,,90,0.72,"USD (DataForSEO convention, unver
 tax on selling a rental property,decision,,90,0.72,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,2.5,dfs_cache:keyword_ideas/live,2026-08-15
 tax on selling a rented property,decision,,90,0.72,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,2.5,dfs_cache:keyword_ideas/live,2026-08-15
 tax on selling rental property,decision,,90,0.72,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,110,2.5,dfs_cache:keyword_ideas/live,2026-08-15
-property development accountant,hire,,90,4.19,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,90,4.19,qry_c_2026-10-07,2026-10-07
-property development accountants,hire,,90,4.19,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,90,4.19,qry_c_2026-10-07,2026-10-07
-property tax accountant near me,hire,,90,9.84,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,90,9.84,qry_c_2026-10-07,2026-10-07
+property development accountant,hire,,90,4.19,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,90,4.190000057220459,ranked_keywords,2026-10-10
+property development accountants,hire,,90,4.19,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,90,4.190000057220459,ranked_keywords,2026-10-10
+property tax accountant near me,hire,,90,9.84,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,90,9.84000015258789,ranked_keywords,2026-10-10
 spv accountants,hire,,90,6.08,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
+property accountant position,hire,,90,0.3,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,90,0.30000001192092896,ranked_keywords,2026-10-10
 sell rental property tax,decision,,90,0.72,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 selling a rental property tax,decision,,90,0.72,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 selling rental property tax,decision,,90,0.72,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
-tax on house sale uk,decision,,90,1.3,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 tax on sale of second home,decision,,90,8.67,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-landlord accountant near me,hire,,70,9.27,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,70,9.27,qry_c_2026-10-07,2026-10-07
+landlord accountant near me,hire,,70,9.27,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,70,9.270000457763672,ranked_keywords,2026-10-10
 gifted property tax,decision,,70,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 gifting property tax,decision,,70,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 gifting property uk,decision,,70,3.38,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -139,15 +151,17 @@ non resident landlord application for an individual,decision,,70,,"USD (DataForS
 non-resident landlord application for an individual,decision,,70,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 stamp duty for transfer of property,decision,,70,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 stamp duty on transfer of property,decision,,70,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-tax implications of selling a house below market value uk,decision,,70,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transferring a property to a limited company,decision,,70,,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property tax consultant,hire,,50,7.99,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
+property tax consultant,hire,,50,7.99,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,50,7.989999771118164,ranked_keywords,2026-10-10
 inheritance tax business property relief,decision,,50,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,50,4.89,dfs_cache:keyword_ideas/live,2026-08-21
+stamp duty experts,hire,,50,9.7,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,50,11.96,dfs_cache:keyword_ideas/live,2026-08-15
+capital gains tax specialist near me,hire,,50,12.12,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,50,12.12,qry_c_2026-10-07,2026-10-07
 landlord tax accountant,hire,,50,28.09,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,50,28.09,qry_c_2026-10-07,2026-10-07
-landlord tax accountants,hire,,50,28.09,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,50,28.09,qry_c_2026-10-07,2026-10-07
+landlord tax accountants,hire,,50,28.09,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,50,28.09000015258789,ranked_keywords,2026-10-10
 let property campaign accountant near me,hire,,50,31.04,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,50,31.04,qry_c_2026-10-07,2026-10-07
-property tax advice near me,hire,,50,5.07,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,50,5.07,qry_c_2026-10-07,2026-10-07
+property tax advice near me,hire,,50,5.07,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,50,5.070000171661377,ranked_keywords,2026-10-10
 property tax consultants,hire,,50,7.99,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,50,24.66,qry_c_2026-10-07,2026-10-07
+cgt advisor,hire,,50,,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,50,,ranked_keywords,2026-10-10
 capital gains tax on sale of second property,decision,,50,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on second property sale,decision,,50,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 hmrc non resident landlord scheme,decision,,50,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -164,7 +178,7 @@ accountants for buy-to-let landlords,hire,,40,13.6,"USD (DataForSEO convention, 
 landlord accountants near me,hire,,40,16.63,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,40,16.63,qry_c_2026-10-07,2026-10-07
 rental income accountant,hire,,40,10.95,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,40,10.95,qry_c_2026-10-07,2026-10-07
 property accounting services,hire,,40,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property tax expert,hire,,40,6.73,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,,,,
+property tax expert,hire,,40,6.73,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,40,6.730000019073486,ranked_keywords,2026-10-10
 property tax experts,hire,,40,6.73,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,,,,
 bristol property partnership ltd,decision,bristol,40,3.89,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on commercial property sale,decision,,40,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -174,6 +188,7 @@ rental income from property held in trust uk,decision,,40,2.4,"USD (DataForSEO c
 transferring property into a limited company,decision,,40,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 uk non resident landlord scheme,decision,,40,1.41,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 uk non-resident landlord scheme,decision,,40,1.41,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
+cgt accountant,hire,,30,9.88,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 agricultural property relief iht,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,30,,dfs_cache:keyword_ideas/live,2026-08-21
 agricultural property relief inheritance tax,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,30,6.78,dfs_cache:keyword_ideas/live,2026-08-21
 iht agricultural property relief,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,30,,dfs_cache:keyword_ideas/live,2026-08-21
@@ -182,20 +197,20 @@ non resident landlord quarterly return,decision,,30,,"USD (DataForSEO convention
 s162 incorporation relief property,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,20,,dfs_cache:keyword_suggestions/live,2026-08-15
 transfer rental property to limited company,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,30,1.39,dfs_cache:keyword_ideas/live,2026-08-15
 buy to let accountant near me,hire,,30,9.7,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,30,9.7,qry_c_2026-10-07,2026-10-07
+capital gains tax accountant london,hire,london,30,3.74,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,30,3.74,qry_c_2026-10-07,2026-10-07
+cgt accountant near me,hire,,30,5.63,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,30,5.63,qry_c_2026-10-07,2026-10-07
 let property campaign accountant cost,hire,,30,8.78,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,30,8.78,qry_c_2026-10-07,2026-10-07
 property tax accountant london,hire,london,30,13.7,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,30,13.7,qry_c_2026-10-07,2026-10-07
 property tax accountants london,hire,london,30,13.7,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,30,13.7,qry_c_2026-10-07,2026-10-07
 property tax specialist uk,hire,,30,14.68,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,30,14.68,qry_c_2026-10-07,2026-10-07
 property tax specialists uk,hire,,30,14.68,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,30,14.68,qry_c_2026-10-07,2026-10-07
+uk property tax specialists,hire,,30,14.68,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,30,14.680000305175781,ranked_keywords,2026-10-10
 gifting property to limited company,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-how much is capital gains tax on a house sale,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-how much is capital gains tax on house sale,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord application,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord tax return,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord tax returns,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 nrl landlord,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 sale of foreign property capital gains tax,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-selling a house in scotland tax,decision,,30,2.73,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 stamp duty on transfer of property to limited company,decision,,30,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 tax implications of selling a second home,decision,,30,2.75,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transfer property to ltd company,decision,,30,10.45,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -225,9 +240,9 @@ property tax experts near me,hire,,20,5.33,"USD (DataForSEO convention, unverifi
 rental accountant,hire,,20,1.11,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,20,1.11,qry_c_2026-10-07,2026-10-07
 uk property accountant,hire,,20,26.44,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,20,26.44,qry_c_2026-10-07,2026-10-07
 uk property tax accountants,hire,,20,7.19,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,20,7.19,qry_c_2026-10-07,2026-10-07
+accounting for letting agents,hire,,20,3.54,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property tax advice uk,hire,,20,,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,,,,
 apply for non resident landlord scheme,decision,,20,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-how much is capital gains tax when selling a house,decision,,20,3.31,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 if you sell a second home do i pay tax,decision,,20,1.66,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 incorporating a rental business,decision,,20,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord registration,decision,,20,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -242,6 +257,8 @@ property tax planning,hire,,10,39.01,"USD (DataForSEO convention, unverified)",M
 selling buy to let tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property partnership incorporation,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 family investment company property,decision,,10,0.14,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
+accounting for buy-to let properties,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
+accounting for buy-to-let properties,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
 avoid tax selling rental property,decision,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
 buy to let property tax advisors,hire,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
 do i need an accountant for my rental property,hire,,10,,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
@@ -267,7 +284,6 @@ property business incorporation relief,decision,,10,2.93,"USD (DataForSEO conven
 rental property tax accountant,hire,,10,,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
 revenue non resident landlord,decision,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
 selling a buy to let tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
-selling a rental property in bc tax implications,decision,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
 selling a rental property tax uk,decision,,10,0.11,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,10,1.81,dfs_cache:keyword_ideas/live,2026-08-15
 selling rental property tax deductions,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
 should landlord incorporate,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,10,,dfs_cache:keyword_ideas/live,2026-08-15
@@ -300,6 +316,8 @@ buy to let specialist accountant,hire,,10,,"USD (DataForSEO convention, unverifi
 buy to let tax advisor,hire,,10,6.3,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,10,6.3,qry_c_2026-10-07,2026-10-07
 buy-to-let property accountants,hire,,10,5.07,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,10,5.07,qry_c_2026-10-07,2026-10-07
 buy-to-let tax advisor,hire,,10,6.3,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,10,6.3,qry_c_2026-10-07,2026-10-07
+capital gains tax accountant swansea,hire,swansea,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
+capital gains tax accountant uk,hire,,10,10.4,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,10,10.4,qry_c_2026-10-07,2026-10-07
 how much do property tax consultants charge,hire,,10,,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
 landlord accountant derby,hire,derby,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
 landlord accountant fees,hire,,10,,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
@@ -354,44 +372,39 @@ rental property tax accountant near me,hire,,10,,"USD (DataForSEO convention, un
 residential property accountant,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
 tax accountant for rental properties,hire,,10,,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,10,,wp1_assignment,2026-10-09
 holiday letting tax advice,hire,,10,35.5,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,,,,
+btl accounting,hire,,10,9.01,"USD (DataForSEO convention, unverified)",HIGH,dfs_search_volume_2026-10-10,2026-10-10,,,,
 landlord accounting service,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+tax accounting for rental property,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property investment tax advice,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property tax advice stourport,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 can undivided share of property be gifted,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-capital gains tax on house sale 2026,decision,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on inherited farm property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on sale of leasehold property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax selling house under 2 years,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-do you pay tax on profit from sale of house,decision,,10,0.64,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 exempt property unit trust,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-first home sale capital gains tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 gift of undivided share in property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 hmrc self assessment non resident landlord,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-how much is capital gains tax on gifted property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-how much is capital gains tax on sale of property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 how to reduce capital gains tax on property sale,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 if i inherit a rental property is it taxable,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-if i sell my second house do i pay tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 inherited rental property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 inheriting rental property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
+landlord tax return advice,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord corporation tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord scheme application,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non-resident landlord nrl scheme,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
-paying capital gains tax when selling a house,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property development tax planning,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 register as a non resident landlord,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 register for non resident landlord scheme,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 rental property inheritance tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 spv incorporation,decision,,10,,"USD (DataForSEO convention, unverified)",MEDIUM,dfs_search_volume_2026-10-10,2026-10-10,,,,
-tax implications of selling a house below market value,decision,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 tax planning for holiday lets,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+tax return advice for landlords,hire,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 tax return for non resident landlord,decision,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transfer residential property to limited company,decision,,10,3.8,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 transferring property ownership to a limited company 2017,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 trust property tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 uk capital gains tax on sale of overseas property,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 uk inheritance tax on landlords,decision,,10,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
-when selling a house how much is capital gains tax,decision,,10,,"USD (DataForSEO convention, unverified)",LOW,dfs_search_volume_2026-10-10,2026-10-10,,,,
 hmo accountant,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property company accountant,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 limited company landlord accountant,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -402,6 +415,8 @@ inheritance tax advice property,hire,,0,,"USD (DataForSEO convention, unverified
 incorporate property portfolio,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 gifting property to children tax,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident capital gains tax uk property,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+sdlt multiple dwellings,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+stamp duty on transfer to company,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 making tax digital landlords help,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 buy to let incorporation relief,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 buy to let property in trust,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -421,6 +436,7 @@ non resident landlord company,decision,,0,,"USD (DataForSEO convention, unverifi
 non resident landlord company hmrc,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord scheme company,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord travel expenses,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+stamp duty specialist uk,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 accountant for landlord bournemouth,hire,bournemouth,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 accountant for landlord dorset,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 accountant for landlord london,hire,london,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -487,7 +503,7 @@ property accountant westminster,hire,,0,,"USD (DataForSEO convention, unverified
 property accountant wolverhampton,hire,wolverhampton,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property accountants in london,hire,london,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property accountants leeds,hire,leeds,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
-property accountants london,hire,london,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+property accountants london,hire,london,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,50,9.75,ranked_keywords,2026-10-10
 property accountants northampton,hire,northampton,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property income accountant,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property investment accountant in london,hire,london,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -531,18 +547,23 @@ tax advice for hmo landlords,hire,,0,,"USD (DataForSEO convention, unverified)",
 property incorporation tax advice,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 landlord tax advice leeds,hire,leeds,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property accountancy leeds,hire,leeds,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+rental property accounting in london,hire,london,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+capital gains tax advice manchester,hire,manchester,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 landlord accounting services uk,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 landlord accountancy services,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 accountants for landlords near me,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non resident landlord tax services,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 non-resident landlord tax advice,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 accounting services for property owners,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+multi-property portfolio accounting,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+accounting for property companies,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+accounting web let property campaign,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 best way to produce rent statements for tenants and accountants,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property accountant coventry,hire,coventry,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 property tax advice surrey,hire,surrey,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on btl sale uk,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 capital gains tax on gift of property to child uk,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
-capital gains tax on home sale 2026,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
+cgt advice property hammersmith,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 gifting buy-to-let property to child uk,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 gifting property tax or gifting property uk,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 gifting property tax uk,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
@@ -553,7 +574,6 @@ incorporating a property portfolio,decision,,0,,"USD (DataForSEO convention, unv
 incorporating a property portfolio uk,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 inheritance tax on buy to let,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 inheritance tax planning for landlords,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
-inherited property landlord advice,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 investment portfolio tax planning,hire,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 is incorporation right for my property portfolio,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,
 landlord portfolio incorporation uk,decision,,0,,"USD (DataForSEO convention, unverified)",,dfs_search_volume_2026-10-10,2026-10-10,,,,

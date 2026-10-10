@@ -1,0 +1,16 @@
+{
+  "pulled_at": "2026-10-10T13:57:05+00:00",
+  "site": "property",
+  "script": "accuracy_coverage.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "source": "GSC/assignment/Bing/DFS ranked_keywords vs 01_universe",
+  "data_through": "2026-10-07",
+  "note": "rows not included in universe; volume = source volume, else 02_metrics/store/universe cache, else monthly-ised impressions (volume_basis)",
+  "rows": 2100,
+  "sha256": "dfb01bd4a3559f0f1def89d909befca3fbf59cad9006f29a2ee59e864be89f4a"
+}

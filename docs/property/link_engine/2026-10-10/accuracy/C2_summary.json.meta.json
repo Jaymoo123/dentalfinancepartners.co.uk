@@ -1,0 +1,11 @@
+{
+  "site": "property",
+  "script": "accuracy_coverage.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "pulled_at": "2026-10-10T13:57:41+00:00"
+}

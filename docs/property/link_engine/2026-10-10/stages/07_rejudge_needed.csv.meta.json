@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T11:37:09+00:00",
+  "pulled_at": "2026-10-10T14:06:12+00:00",
   "source": "judgments whose input_sha256 no longer matches",
   "site": "property",
   "data_through": "2026-10-10",
@@ -10,6 +10,6 @@
     "--run",
     "2026-10-10"
   ],
-  "rows": 4,
-  "sha256": "1bea02c299f6106073985b047ac3e82497baf82ff01da08b762eb2d715a15b69"
+  "rows": 20,
+  "sha256": "6cd75e67e0f9c53b69ca3c3ceb0a57084f6a88756eab5328692a20b3add695ac"
 }

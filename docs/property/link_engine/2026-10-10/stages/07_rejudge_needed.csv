@@ -1,5 +1,21 @@
 family_id,action,reason
+capital-gains-tax-on-home-sale,superseded,family no longer exists
+capital-gains-tax-on-house-sale-2026,superseded,family no longer exists
 capital-gains-tax-selling-second-home,superseded,family merged into tax-on-selling-second-home
+do-you-have-to-pay-tax-on-a-house-sale,superseded,family no longer exists
+first-home-sale-capital-gains-tax,superseded,family no longer exists
 gift-a-property,superseded,family merged into capital-gains-tax-on-gifting-property
+how-much-is-capital-gains-tax-on-gifted-property,superseded,family no longer exists
+how-much-is-capital-gains-tax-on-sale-of-property,superseded,family no longer exists
+if-i-sell-my-second-house-do-i-pay-tax,superseded,family no longer exists
+inherited-property-landlord-advice,superseded,family no longer exists
 non-resident-landlord,superseded,family merged into non-resident-landlord-scheme
+paying-capital-gains-tax-when-selling-a-house,superseded,family no longer exists
+selling-a-house-in-scotland-tax,superseded,family no longer exists
+selling-a-rental-property-in-bc-tax-implications,superseded,family no longer exists
+tax-implications-of-selling-a-house-below-market-value-uk,superseded,family no longer exists
 tax-on-selling-rental-property,superseded,family merged into capital-gains-tax-selling-rental-property
+tax-when-selling-a-house,superseded,family no longer exists
+,rejudge,conflict row changed or gone (sha not in 05_cluster_conflicts.csv)
+capital gains tax on home sale,rejudge,conflict row changed or gone (sha not in 05_cluster_conflicts.csv)
+capital gains tax on home sale,rejudge,conflict row changed or gone (sha not in 05_cluster_conflicts.csv)

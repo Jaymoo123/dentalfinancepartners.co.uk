@@ -1,0 +1,79 @@
+{
+  "sources": {
+    "a_gsc": {
+      "n_candidates": 1604,
+      "n_in_universe_included": 396,
+      "n_excluded": 1208,
+      "n_absent": 0,
+      "n_looks_commercial": 982,
+      "commercial_included": 390,
+      "commercial_excluded": 592,
+      "commercial_absent": 0,
+      "volume_weighted_capture_share": 0.6527,
+      "commercial_volume_total": 49091.1,
+      "count_capture_share": 0.3971
+    },
+    "b_assignment": {
+      "n_candidates": 329,
+      "n_in_universe_included": 277,
+      "n_excluded": 52,
+      "n_absent": 0,
+      "n_looks_commercial": 302,
+      "commercial_included": 277,
+      "commercial_excluded": 25,
+      "commercial_absent": 0,
+      "volume_weighted_capture_share": 0.9515,
+      "commercial_volume_total": 16870.4,
+      "count_capture_share": 0.9172
+    },
+    "c_bing": {
+      "n_candidates": 390,
+      "n_in_universe_included": 18,
+      "n_excluded": 8,
+      "n_absent": 364,
+      "n_looks_commercial": 298,
+      "commercial_included": 18,
+      "commercial_excluded": 2,
+      "commercial_absent": 278,
+      "volume_weighted_capture_share": 0.956,
+      "commercial_volume_total": 3578.2,
+      "count_capture_share": 0.0604
+    },
+    "d_djh": {
+      "n_candidates": 63,
+      "n_in_universe_included": 35,
+      "n_excluded": 0,
+      "n_absent": 28,
+      "n_looks_commercial": 52,
+      "commercial_included": 35,
+      "commercial_excluded": 0,
+      "commercial_absent": 17,
+      "volume_weighted_capture_share": 0.7202,
+      "commercial_volume_total": 10400.0,
+      "count_capture_share": 0.6731
+    },
+    "d_ukpa": {
+      "n_candidates": 499,
+      "n_in_universe_included": 0,
+      "n_excluded": 52,
+      "n_absent": 447,
+      "n_looks_commercial": 3,
+      "commercial_included": 0,
+      "commercial_excluded": 1,
+      "commercial_absent": 2,
+      "volume_weighted_capture_share": 0.0,
+      "commercial_volume_total": 33200.0,
+      "count_capture_share": 0.0
+    }
+  },
+  "ranked_notes": {
+    "d_djh": "63 items",
+    "d_ukpa": "500 items"
+  },
+  "dry_run": false,
+  "targeted_not_commercial_with_provider_and_property": 33,
+  "n_missing_rows": 2100,
+  "n_missing_looks_commercial": 895,
+  "run_spend_usd": 1.23156,
+  "weights": "volume = source volume, else google ads (metrics/store/cache), else monthly-ised impressions proxy"
+}

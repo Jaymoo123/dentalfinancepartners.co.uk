@@ -1,0 +1,11 @@
+{
+  "source": "sites/property_selftest.json + run files",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "pulled_at": "2026-10-10T14:06:14+00:00",
+  "script": "selftest.py",
+  "args": [
+    "--site",
+    "property"
+  ]
+}

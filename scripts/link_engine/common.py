@@ -129,6 +129,8 @@ def estimate_cost(endpoint: str, payload: list[dict]) -> float:
         return sum(0.01 + 0.0001 * int(t.get("limit", 100)) for t in payload)
     if "serp/google/organic" in endpoint:
         return 0.002 * len(payload)
+    if endpoint.endswith("ranked_keywords/live"):
+        return sum(0.01 + 0.0001 * int(t.get("limit", 100)) for t in payload)
     raise ValueError(f"no cost estimate for endpoint {endpoint}")
 
 
@@ -203,9 +205,11 @@ STORE = REPO / "docs" / "_engines" / "link_engine_store"
 SV = "keywords_data/google_ads/search_volume/live"
 SERP = "serp/google/organic/live/advanced"
 IDEAS = "dataforseo_labs/google/keyword_ideas/live"
+RANKED = "dataforseo_labs/google/ranked_keywords/live"
 KM_FIELDS = ["keyword", "location_code", "language_code", "search_volume", "cpc", "competition", "competition_index",
              "monthly_searches", "endpoint", "fetched_on", "source_response_sha256"]
 SERP_FIELDS = ["keyword", "location", "device", "fetched_on", "path", "n_results"]
+RANKED_FIELDS = ["key_sha1", "target", "filters", "location", "language", "limit", "fetched_on", "path", "n_items"]
 IDEAS_FIELDS = ["seeds_sha1", "n_seeds", "location", "language", "limit", "fetched_on", "path", "n_items"]
 
 
@@ -353,6 +357,32 @@ def ideas_store_write(task: dict, body: dict, fetched_on: str) -> None:
                 "n_items": n}])
 
 
+def ranked_key(task: dict) -> str:
+    spec = {k: task.get(k) for k in ("target", "filters", "limit", "offset", "order_by")}
+    spec["loc"], spec["lang"] = task.get("location_code", UK_LOCATION), task.get("language_code", LANG)
+    return hashlib.sha1(json.dumps(spec, sort_keys=True).encode()).hexdigest()
+
+
+def ranked_store_lookup(task: dict):
+    """Stored ranked_keywords body for this exact task (within 90 days), else None."""
+    k = ranked_key(task)
+    for r in reversed(_csv_rows(STORE / "ranked_keywords_index.csv")):
+        if r["key_sha1"] == k and _age_ok(r["fetched_on"], CACHE_MAX_AGE_DAYS) and (REPO / r["path"]).exists():
+            return _gz_read(REPO / r["path"])
+    return None
+
+
+def ranked_store_write(task: dict, body: dict, fetched_on: str) -> None:
+    k = ranked_key(task)
+    p = STORE / "ranked_keywords" / f"{k}.json.gz"
+    _gz_write(p, body)
+    n = sum(len(res.get("items") or []) for t in body.get("tasks") or [] for res in t.get("result") or [])
+    _csv_append(STORE / "ranked_keywords_index.csv", RANKED_FIELDS, [{"key_sha1": k, "target": task.get("target"),
+                "filters": json.dumps(task.get("filters")), "location": task.get("location_code", UK_LOCATION),
+                "language": task.get("language_code", LANG), "limit": task.get("limit"), "fetched_on": fetched_on,
+                "path": str(p.relative_to(REPO)).replace("\\", "/"), "n_items": n}])
+
+
 def dfs_post(endpoint: str, payload: list[dict], site: str, run: str) -> dict:
     """Paid DataForSEO call, store first. Per keyword for search_volume and serp, per seed set for keyword_ideas:
     (a) look the keyword up in the committed store, (b) send only what is missing, (c) append the paid result to
@@ -407,6 +437,15 @@ def dfs_post(endpoint: str, payload: list[dict], site: str, run: str) -> dict:
         body = _dfs_post_raw(endpoint, payload, site, run)
         if body.get("status_code") == 20000:
             ideas_store_write(payload[0], body, today)
+        return body
+    if endpoint == RANKED and len(payload) == 1:
+        body = ranked_store_lookup(payload[0])
+        if body is not None:
+            _ledger_append(site, run, endpoint, int(payload[0].get("limit", 100)), 0.0, True)
+            return body
+        body = _dfs_post_raw(endpoint, payload, site, run)
+        if body.get("status_code") == 20000:
+            ranked_store_write(payload[0], body, today)       # append first, process later
         return body
     return _dfs_post_raw(endpoint, payload, site, run)
 

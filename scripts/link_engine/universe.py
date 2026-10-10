@@ -5,6 +5,7 @@ Inputs (run dir unless noted):
   inputs/dfs_cache_commercial.csv  (keyword,endpoint,search_volume,cpc,competition,keyword_difficulty,date_pulled)
   prior_universe (QRY_C: volume, cpc dated 2026-10-07) and prior_assignment (WP1: volume only)
   stages/03_gsc_query_page.csv  (fresh GSC queries; optional)
+  docs/_engines/link_engine_store/ranked_keywords/ (competitor keywords, flag 'competitor'; optional)
 Output: stages/01_universe.csv, one row per normalised query, ALL candidates kept;
   intent_class is hire | decision | excluded, with excluded_reason.
 Cost: free (no API calls).
@@ -22,7 +23,8 @@ import re
 import time
 from collections import OrderedDict
 
-from common import REPO, load_site, norm_query, read_csv, run_dir, script_meta, write_csv
+from common import (REPO, STORE, _csv_rows, _gz_read, load_site, norm_query, read_csv, run_dir, script_meta,
+                    write_csv)
 
 FIELDS = ["query", "source_flags", "intent_class", "excluded_reason", "geo",
           "cached_volume", "cached_cpc", "cached_date", "cached_source"]
@@ -33,11 +35,11 @@ CONTEXT = (r"\b(propert(y|ies)|landlords?|buy to let|btl|rental|hmo|holiday lets
            r"cgt|capital gains|stamp duty|sdlt|inheritance|iht|non[ -]resident|expat)\b")
 NON_UK = (r"\b(usa|us|u s|america|american|australia|canada|canadian|india|dubai|uae|new york|"
           r"california|texas|florida|new zealand|south africa|singapore|hong kong|germany|spain|"
-          r"portugal|cyprus|thailand|ireland|irish)\b")
+          r"portugal|cyprus|thailand|ireland|irish|bc|british columbia|swiss|switzerland)\b")
 # Decision rows need a property-context word SEPARATE from the decision-topic word, so bare
 # "inheritance tax" / "inheritance estate tax" do not qualify (they dominated the first run).
 DECISION_CONTEXT = (r"\b(propert(y|ies)|landlords?|buy to let|btl|rental|rent|let|lettings?|hmo|holiday lets?|spv|"
-                    r"portfolio|house|flat|real estate)\b")
+                    r"portfolio|house|flat|real estate|stamp duty|sdlt|lbtt|ltt)\b")     # F2: stamp duty taxes are property context
 HOME_CONTEXT = r"\bhome\b"                      # counts only alongside a sell/gift/inherit topic word
 HOME_TOPICS = r"\b(sell\w*|sale|gift\w*|inherit\w*|iht)\b"
 # Narrow topic-word patterns (each match gives a span the context word must not overlap).
@@ -59,6 +61,33 @@ DECISION_TOPIC_RULES = [
     ("restructure", [r"\brestructur\w*"]), ("partnership", [r"\bpartnership\b"]),
     ("fic", [r"\bfamily investment company\b"]), ("trust", [r"\btrusts?\b"]),
 ]
+
+
+# F3: any adviser-type word is a provider word when a property-context word is also present.
+PROVIDER_ANY = (r"\b(accountants?|accountancy|accounting|advice|advis[eo]rs?|specialists?|experts?|consultants?|planners?|"
+                r"tax planning)\b")
+# F3 tightened: adviser-type words (not accountants) count as hire only beside a tax word; otherwise they are estate-agency /
+# investment-adviser searches ("property consultant", "property advisor", "financial advice property").
+ACCT_PROVIDER = r"\b(accountants?|accountancy|accounting|tax planning)\b"
+SOFT_PROVIDER = r"\b(advice|advis[eo]rs?|specialists?|experts?|consultants?|planners?)\b"
+TAX_WORD = (r"\b(tax|taxes|cgt|capital gains|sdlt|stamp duty|lbtt|vat|iht|inheritance|self assessment|accounts|accounting|"
+            r"incorporation|section 24|mtd)\b")
+FINANCIAL_ADVICE = r"\bfinancial (advice|advis[eo]rs?|planners?|planning)\b"
+FORUM_NAV = r"\b(citizens advice|helplines?|advice lines?|forums?)\b"               # F3 exceptions: navigational / forum chatter
+ACCT_SOFTWARE = r"\b(software|systems?|apps?|spreadsheets?|templates?|excel|quickbooks|xero)\b"   # F1 exceptions
+ACCT_REFERENCE = r"\b(tips|standards?|ifrs|frs|definition|meaning)\b"
+CGT = r"\b(cgt|capital gains( tax)?)\b"                                                 # F4
+CGT_PROVIDER = r"\b(accountants?|accountancy|advis[eo]rs?|advice|specialists?)\b"
+LANDLORD_WORD = r"\b(landlords?|rental|rented|buy to let|btl|second home|letting|lettings|hmo|holiday lets?)\b"
+HOMEOWNER_FACT = (r"\bhow much (is|tax)\b|\bdo (i|you) (need to )?pay\b|\bif (you|i) sell\b|\bwhen selling a house\b|"
+                  r"\bhouse sale\b|\bhome sale\b|\bselling (a|my) house\b")
+
+
+def malformed(raw: str, q: str) -> bool:
+    """F5: pasted CSV/URL text, not a search (real GSC rows exist like 'accounting for landlords 1 1 260 28 https www ...')."""
+    toks = q.split()
+    return bool("http" in raw or "www" in raw or (".com" in raw and re.search(r"\d", raw))
+                or sum(t.isdigit() for t in toks) >= 4 or len(toks) > 15)
 
 
 BORROW = r"\b(mortgages?|remortgag\w*|loans?|lenders?|brokers?|bridging|equity release)\b"
@@ -88,13 +117,20 @@ RULES = [
     ("seed_hire", lambda r, q, s: s == "hire" and ctx_hit(q), "hire", ""),
     ("seed_decision", lambda r, q, s: s == "decision" and ctx_hit(q), "decision", ""),
     # 2 operator queries are research probes, not demand
+    # 1b F5: pasted text (URLs, runs of numbers, over 15 words) is not a search
+    ("malformed_query", lambda r, q, s: malformed(r, q), "excluded", "malformed_query"),
     ("site_operator", lambda r, q, s: "site:" in r, "excluded", "site_operator"),
     # 3 our brand and competitor brands (navigational)
-    ("brand", None, "excluded", "brand"),
+    ("brand", None, "excluded", "brand"),          # includes Money Saving Expert (config brand_terms)
+    # 3b F3 exception: citizens advice, helplines and forums are navigational chatter, not a hire search
+    ("forum_helpline", lambda r, q, s: bool(re.search(FORUM_NAV, q)), "excluded", "forum_helpline_navigational"),
     # 4 careers and training: searcher wants a job or a qualification, not an accountant
     ("career", lambda r, q, s: bool(re.search(r"\b(jobs?|careers?|salary|salaries|vacanc\w+|apprentice\w*|courses?|training|qualifications?|become an?|how to become)\b", q)), "excluded", "career_jobs_training"),
     # 5 software and apps: buying a tool, not an adviser
     ("software", lambda r, q, s: bool(re.search(r"\b(software|apps?|platform|spreadsheets?)\b", q)), "excluded", "software_app"),
+    # 5a F1 exceptions: "accounting" beside software/system/excel/template words is a tool search; beside tips/standards/ifrs a reference search
+    ("accounting_software", lambda r, q, s: bool(re.search(r"\baccounting\b", q) and re.search(ACCT_SOFTWARE, q)), "excluded", "software_app"),
+    ("accounting_reference", lambda r, q, s: bool(re.search(r"\baccounting\b", q) and re.search(ACCT_REFERENCE, q)), "excluded", "reference_informational"),
     # 5b borrowing intent: wants a lender or broker, not an adviser (unless an accountant/adviser word is present)
     ("borrower_intent", lambda r, q, s: bool(re.search(BORROW, q) and not re.search(PROVIDER, q)), "excluded", "borrower_intent"),
     # 6 non-UK geography ("ireland" allowed when non resident; northern ireland is UK)
@@ -105,10 +141,18 @@ RULES = [
     ("gov_navigational", lambda r, q, s: bool(re.search(r"\bgov uk\b|\bhmrc\b.*\b(phone|contact|number|helpline|email|address)\b|\b(phone|contact|number|helpline)\b.*\bhmrc\b", q)), "excluded", "gov_hmrc_navigational"),
     # 9 reference question shapes (COMMERCIAL_INTENT_DEMAND section 1)
     ("reference", lambda r, q, s: bool(re.search(r"^(what|whats) (is|are|does|do)\b|^how (does|do|did)\b.*\b(work|works)\b|^how does\b|^when (is|do|does|are|can)\b|\bexplained\b|\brules$|\bmeaning\b|\bdefinition\b|^can i\b(?!.*\b(afford|claim|cost)\b)", q)), "excluded", "reference_informational"),
-    # 10 hire: provider word AND a property-context word (same list as decision)
-    ("hire_provider_context", lambda r, q, s: bool(re.search(PROVIDER, q) and ctx_hit(q)), "hire", ""),
-    # 10b provider + only a tax-topic word (cgt, inheritance, sdlt...) is not a property hire query
-    ("no_property_context", lambda r, q, s: bool(re.search(PROVIDER, q) and re.search(CONTEXT, q)), "excluded", "no_property_context"),
+    # 10 hire (F1 + F3): any provider word (accountant, accounting, advice, adviser, specialist, expert, consultant, planner)
+    #    AND a property-context word (now including stamp duty / sdlt / lbtt / ltt)
+    ("financial_advice", lambda r, q, s: bool(re.search(FINANCIAL_ADVICE, q)), "excluded", "no_tax_context"),
+    ("hire_provider_context", lambda r, q, s: bool(ctx_hit(q) and (re.search(ACCT_PROVIDER, q) or (re.search(SOFT_PROVIDER, q) and re.search(TAX_WORD, q)))), "hire", ""),
+    ("no_tax_context", lambda r, q, s: bool(ctx_hit(q) and re.search(SOFT_PROVIDER, q) and not re.search(TAX_WORD, q)), "excluded", "no_tax_context"),
+    # 10a F4: capital gains tax / cgt beside accountant, adviser, advice or specialist is hire even without a property word
+    #     (CGT for individuals is predominantly property; the owner page is judged later)
+    ("cgt_provider", lambda r, q, s: bool(re.search(CGT, q) and re.search(CGT_PROVIDER, q)), "hire", ""),
+    # 10b provider + only a tax-topic word (inheritance, iht, non resident...) and no property word is not a property hire query
+    ("no_property_context", lambda r, q, s: bool(re.search(PROVIDER_ANY, q) and re.search(CONTEXT, q)), "excluded", "no_property_context"),
+    # 10c homeowner fact patterns ("how much tax", "do I pay", "house sale") are reference searches unless a landlord/rental/second-home word is present
+    ("homeowner_fact", lambda r, q, s: bool(re.search(HOMEOWNER_FACT, q) and not re.search(LANDLORD_WORD, q)), "excluded", "reference_informational"),
     # 11 decision: a paid-advice decision topic AND a property-context word separate from it
     ("decision_topic", lambda r, q, s: decision_hit(q), "decision", ""),
     # 12 everything else is not a commercial search
@@ -140,8 +184,8 @@ def geo_of(q: str, cities: list[str]) -> str:
 
 def num(v):
     try:
-        return float(v) if str(v).strip() != "" else None
-    except ValueError:
+        return float(v) if v is not None and str(v).strip() != "" else None
+    except (ValueError, TypeError):
         return None
 
 
@@ -186,6 +230,22 @@ def main() -> None:
         add(r["query"], "qry_c", metric=("2026-10-07", "qry_c_2026-10-07", num(r.get("volume")), num(r.get("cpc")), 2))
     for r in read_csv(REPO / le["prior_assignment"]):
         add(r["query"], "wp1_assignment", metric=("2026-10-09", "wp1_assignment", num(r.get("monthly_volume")), None, 0))
+    # F6: competitor keywords from the stored ranked_keywords responses (djh /specialisms/property, ukpropertyaccountants),
+    #     same classifier as everything else. Read from the committed store only; no API call here.
+    n_comp = 0
+    for r in _csv_rows(STORE / "ranked_keywords_index.csv"):
+        p = REPO / r["path"]
+        if not p.exists():
+            continue
+        for t in _gz_read(p).get("tasks") or []:
+            for res in t.get("result") or []:
+                for it in res.get("items") or []:
+                    kd = it.get("keyword_data") or {}
+                    ki = kd.get("keyword_info") or {}
+                    if kd.get("keyword"):
+                        add(kd["keyword"], "competitor", metric=(r["fetched_on"][:10], "ranked_keywords", num(ki.get("search_volume")),
+                                                                 num(ki.get("cpc")), 3))
+                        n_comp += 1
     gsc = rd / "stages" / "03_gsc_query_page.csv"
     n_gsc = 0
     if gsc.exists():
@@ -209,7 +269,7 @@ def main() -> None:
     write_csv(rd / "stages" / "01_universe.csv", rows, FIELDS,
               {"source": "seeds + dfs_cache_commercial.csv + QRY_C + WP1 assignment + stage 03 GSC",
                "site": a.site, "data_through": a.run, "gsc_included": gsc.exists(),
-               "gsc_query_page_rows_read": n_gsc, **script_meta()})
+               "gsc_query_page_rows_read": n_gsc, "competitor_rows_read": n_comp, **script_meta()})
     from collections import Counter
     print(Counter(r["intent_class"] for r in rows))
     print(Counter(r["excluded_reason"] for r in rows if r["intent_class"] == "excluded").most_common(10))

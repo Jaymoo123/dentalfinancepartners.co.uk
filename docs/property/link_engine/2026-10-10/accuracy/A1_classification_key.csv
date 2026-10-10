@@ -1,0 +1,151 @@
+id,query,engine_class,engine_reason
+0,what about lighting,excluded,not_commercial_intent
+1,buy-to-let incorporation relief,decision,
+2,selling property abroad capital gains tax,decision,
+3,nrl1 form hmrc,excluded,calculator_rates_forms
+4,incorporation relief property partnership,decision,
+5,buy-to-let accountant farringdon,hire,
+6,accountant landlord,hire,
+7,property tax accountant near me,hire,
+8,btl yield calculator uk,excluded,calculator_rates_forms
+9,northern ireland rates single person discount,excluded,calculator_rates_forms
+10,transfer property to ltd company,decision,
+11,transferring a property into a limited company,decision,
+12,making tax digital landlords help,decision,
+13,buy to let accountant wallington,hire,
+14,landlord accountants london,hire,
+15,scotland lbtt bands,excluded,not_commercial_intent
+16,sell buy to let property tax,decision,
+17,commercial mortgage terms,excluded,borrower_intent
+18,tax advice for hmo landlords,hire,
+19,accountant for buy to let,hire,
+20,transfer buy to let to limited company,decision,
+21,accountant specialising in property investment near me,hire,
+22,specialist property accountants near me,hire,
+23,non resident company landlord,decision,
+24,mortgages for portfolio landlords,excluded,borrower_intent
+25,real estate accountants,hire,
+26,how much is capital gains tax on a house sale,decision,
+27,brother and sister,excluded,not_commercial_intent
+28,non resident landlord tax exemption,decision,
+29,landlord tax accountant farringdon,hire,
+30,married couples,excluded,not_commercial_intent
+31,what is ltt,excluded,reference_informational
+32,should landlord incorporate,decision,
+33,property tax accountants cardiff,hire,
+34,non resident landlord quarterly return,decision,
+35,property accountant oxfordshire,hire,
+36,gifting property tax uk,decision,
+37,uk capital gains tax residential property rates 2026,excluded,calculator_rates_forms
+38,non-resident landlord accountant lond,hire,
+39,stamp duty on a gifted property,decision,
+40,buy to let accountant preston,hire,
+41,property accountant sheffield,hire,
+42,buy to let limited company accountant cost,hire,
+43,uk rental property australia,excluded,non_uk_geo
+44,inheriting rental property,decision,
+45,inheritance tax rules,excluded,reference_informational
+46,non resident landlord tax,decision,
+47,property accountant york,hire,
+48,yes please to the last question,excluded,not_commercial_intent
+49,property accountant specialist,hire,
+50,sdlt on gifted property,decision,
+51,tax advice property,hire,
+52,rental income from property held in trust uk,decision,
+53,inheritance tax planning,excluded,no_property_context
+54,can i market my own property,excluded,reference_informational
+55,land sold,excluded,not_commercial_intent
+56,section 142 of the inheritance tax act 1984,excluded,not_commercial_intent
+57,incorporating a rental business,decision,
+58,capital gains tax accountant property,hire,
+59,selling a rental property in bc tax implications,decision,
+60,incorporating a property portfolio uk,decision,
+61,non resident landlord scheme uk,decision,
+62,property development accountant,hire,
+63,500 000 stamp duty,excluded,not_commercial_intent
+64,tax software for landlords,excluded,software_app
+65,gifting property to children tax,decision,
+66,accelerated rent,excluded,not_commercial_intent
+67,inheritance tax farmers protest,excluded,not_commercial_intent
+68,landlord tax advice,hire,
+69,landlord tax advice uk,hire,
+70,non resident landlord scheme application,decision,
+71,property accountant west midlands,hire,
+72,its on line,excluded,not_commercial_intent
+73,property accountant bristol,hire,
+74,landlord compliance,excluded,not_commercial_intent
+75,transferring buy-to-let to limited company,decision,
+76,revolut uk automatic exchange of information crs hmrc reporting,excluded,not_commercial_intent
+77,capital gains tax accountant,excluded,no_property_context
+78,do i need to pay tax in the uk if i sell a swiss property,decision,
+79,specialist property tax advisors,hire,
+80,property tax expert,hire,
+81,accountants for property company,hire,
+82,gifting buy-to-let property to child uk,decision,
+83,landlord accountants near me,hire,
+84,section 455 cta 2010 rate 33 75 2025 hmrc guidance,excluded,calculator_rates_forms
+85,property accountants,hire,
+86,how much tax do you pay when selling a house uk,decision,
+87,what do they look like,excluded,reference_informational
+88,property accountant birmingham,hire,
+89,stamp duty scotland 2018,excluded,not_commercial_intent
+90,property accountant oxford,hire,
+91,group relief,excluded,not_commercial_intent
+92,hmrc non-resident landlord scheme,decision,
+93,property accountants nottingham,hire,
+94,landlord accountant bristol,hire,
+95,rental property tax accountant,hire,
+96,what is capital gains on a house sale,excluded,reference_informational
+97,incorporation relief property portfolio,decision,
+98,inheritance tax planning liverpool,excluded,no_property_context
+99,private transfers westbury-on-trym,excluded,not_commercial_intent
+100,buy to let accountant london,hire,
+101,property investment accountant in london,hire,
+102,income tax benefit on commercial property sale,decision,
+103,buy to let mortgage criteria for limited company,excluded,borrower_intent
+104,if you sell a second home do i pay tax,decision,
+105,property incorporation relief,decision,
+106,nrl landlord,decision,
+107,when is the property tax due for 2026,excluded,reference_informational
+108,transferring property to a limited company,decision,
+109,inheritance tax advice property,hire,
+110,property accountant edinburgh,hire,
+111,capital gains deadline,excluded,calculator_rates_forms
+112,let property campaign accountants,hire,
+113,landlord accountant manchester,hire,
+114,property tax experts,hire,
+115,property portfolio incorporation services,decision,
+116,property specialist accountant,hire,
+117,capital gains tax on gifting property,decision,
+118,what do bridging loans cost,excluded,borrower_intent
+119,capital gains tax on house sale,decision,
+120,cgt accountant,excluded,no_property_context
+121,inherited house,decision,
+122,buy to let property trust,decision,
+123,capital gains tax on home sale 2026,decision,
+124,buy to let mortgage through a limited company,excluded,borrower_intent
+125,tax liability selling rental property,decision,
+126,gifted property tax,decision,
+127,australia,excluded,non_uk_geo
+128,property accountant manchester,hire,
+129,capital gains tax advice manchester,excluded,no_property_context
+130,best buy to let,excluded,not_commercial_intent
+131,selling a buy to let tax,decision,
+132,gifting property uk,decision,
+133,property accountants uk,hire,
+134,uk non-resident landlord scheme,decision,
+135,let property campaign penalties,excluded,not_commercial_intent
+136,buy to let income tax calculator,excluded,calculator_rates_forms
+137,best way to produce rent statements for tenants and accountants,hire,
+138,typical commercial mortgage interest rates,excluded,borrower_intent
+139,letting agent accounting services,hire,
+140,accountant for property developers west midlands,hire,
+141,tax on selling property,decision,
+142,buy to-let mortgage broker limited company,excluded,borrower_intent
+143,incorporation relief corporate partner,excluded,not_commercial_intent
+144,non resident landlord withholding tax,decision,
+145,uk capital gains tax on foreign property,excluded,not_commercial_intent
+146,transfer residential property to limited company,decision,
+147,marginal relief calculator,excluded,calculator_rates_forms
+148,property accounting software uk,excluded,software_app
+149,property portfolio tax planning,hire,
