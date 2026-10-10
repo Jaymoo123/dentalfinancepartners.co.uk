@@ -143,10 +143,22 @@ He is the CEO. He is often away from the keyboard and has less context than you.
   IS the ranking strategy. *(LOCKED 2026-06-04.)*
 - Original verifiable data, zero fabrication; every published number
   re-derivable. Genuine E-E-A-T only, never fake signals.
-- **A "rewrite" is a full overhaul**, never a light de-stale: the page's GSC +
-  Bing query set drives the new outline, dominant-query intent owns the H1,
-  plus comparison tables, worked examples with real figures, FAQ, current facts
-  per `house_positions.md`. Always `depth=full`.
+- **Protect what already earns traffic, then improve.** Before any rewrite,
+  check the page's Google AND Bing performance. A page that earns real traffic
+  on either engine (it is on the protected register,
+  `scripts/link_engine/protect_register.py`) gets a **preserve-and-extend
+  refresh**: a protect list of every query it earns, the headings, tables and
+  FAQ entries that earn them kept or deliberately improved, gaps added, stale
+  facts fixed, and a check afterwards that no protected query lost its answer.
+  A **full overhaul** (`depth=full`: the GSC + Bing query set drives a new
+  outline, dominant-query intent owns the H1, comparison tables, worked examples
+  with real figures, FAQ, current facts per `house_positions.md`) is for pages
+  with little traffic to lose, never a light de-stale. Any removal of protected
+  content needs a stated reason. *(2026-10-10: the CGT gifting and "tax when
+  selling a rental" guides were queued for a full overhaul because Google had
+  dropped them; Bing showed them at positions 1 to 3 with about 625 clicks
+  between them. The overhaul would have risked that traffic to fix a Google
+  crawl problem. Owner: "that would have been a humongous booboo".)*
 - **Reasoning-first, never scripted.** Every rewrite and every meta title and
   description is written by an LLM reading that specific page with fresh query
   data. No grep/sed bulk edits, no templated formula, no generated-and-committed
