@@ -2,14 +2,14 @@
 
 Every commercial search in the map, grouped under the one page that should rank for it. Searches per month are Google Ads figures with close variants counted once per group (a wording's own figure may be shared with its variants). Impressions and position are our own Search Console data, 90 days to 2026-10-07 (before the 9 October service page rewrite). 'Google shows' is the page type Google ranks for the main search in the live top 10 pulled 2026-10-10.
 
-**23 money pages** (21 sales pages, 2 guides) plus 2 gap groups own 13,070 searches a month across 176 search groups.
+**24 money pages** (21 sales pages, 3 guides) plus 2 gap groups own 13,070 searches a month across 176 search groups.
 
 ## Summary
 
 | # | Page | Type | Searches/month | Wordings | Our impressions on these searches | Share shown on this page | Who Google shows us instead |
 |---|---|---|---|---|---|---|---|
 | 1 | /services/property-accountant | sales | 2,940 | 68 | 3,355 | 0% | how-to-become-property-accountant (971); bristol (519); birmingham (391); manchester (380) |
-| 2 | /services/property-tax-advice | sales | 2,290 | 52 | 1,176 | 15% | landlord-tax (307); birmingham (180); manchester-property-accountant (128) |
+| 2 | /services/property-tax-advice | sales | 1,930 | 44 | 806 | 22% | birmingham (180); manchester-property-accountant (128); belfast-property-accountant-specialist-tax-services (79) |
 | 3 | /services/landlord-accountant | sales | 1,630 | 64 | 1,624 | 7% | birmingham (669); belfast-property-accountant-specialist-tax-services (240); manchester (219); how-much-does-a-property-accountant-cost (164) |
 | 4 | /blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk | guide | 1,070 | 22 | 388 | 90% | moving-property-into-a-limited-company (27); transfer-property-to-limited-company-conveyancing (9); section-162-incorporation-relief-property-landlords (1) |
 | 5 | /for/gifting-property-to-family | sales | 1,040 | 11 | 23 | 73% | gifting-property-and-deed-of-gift-tax-implications (3); capital-gains-tax-property-complete-guide-uk (1); gift-with-reservation-of-benefit (1) |
@@ -17,22 +17,23 @@ Every commercial search in the map, grouped under the one page that should rank 
 | 7 | /for/moving-property-into-a-limited-company | sales | 850 | 37 | 696 | 0% | incorporation-existing-portfolios-phased-approach (256); how-to-transfer-property-into-limited-company-uk (207); section-162-incorporation-relief-property-landl |
 | 8 | /blog/capital-gains-tax/capital-gains-tax-second-home-sale | guide | 810 | 9 | 15 | 93% | capital-gains-tax-property-complete-guide-uk (1) |
 | 9 | /for/property-spv-set-up | sales | 490 | 4 | 10 | 40% | spv-property-investment-special-purpose-vehicle-guide (3); spv-company (2); extraction-while-incorporating-phase-2-acquisition-funded-by-personal-funds (1) |
-| 10 | GAP: city page | gap | 280 | 77 | 613 | 0% | birmingham (208); property-accountant-oxford-guide-local-landlords (140); property-accountant-leicester (120); property-accountant-preston-expert-tax-services-l |
-| 11 | /locations/london | sales | 130 | 46 | 705 | 52% | london-property-accountant (311); how-much-does-a-property-accountant-cost (10); / (9) |
-| 12 | /for/landlord-retirement-and-succession | sales | 130 | 7 | 160 | 0% | inheritance-tax-rental-property-uk-guide (158); multi-property-landlord-tax-planning-strategies-5-plus-properties (2) |
-| 13 | GAP: new page needed | gap | 100 | 3 | 10 | 0% | what-does-a-property-accountant-do (4); how-much-does-a-property-accountant-cost (3); london-property-accountant (2); multi-property-landlord-tax-planning-strat |
-| 14 | /for/rental-income-disclosure | sales | 80 | 4 | 33 | 3% | how-much-does-a-property-accountant-cost (27); birmingham (4); let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026 (1) |
-| 15 | /landed-estates | sales | 60 | 3 | 0 | 0% |  |
-| 16 | /for/holiday-let-and-serviced-accommodation | sales | 40 | 6 | 17 | 0% | how-much-tax-holiday-let-property-uk (17) |
-| 17 | /services/non-resident-landlord | sales | 40 | 8 | 32 | 28% | non-resident-landlord-scheme-uk-complete-guide (12); non-resident-landlords (4); london (4) |
-| 18 | /for/inherited-property | sales | 30 | 3 | 4 | 0% | inheritance-tax-rental-property-uk-guide (4) |
-| 19 | /locations/birmingham | sales | 20 | 2 | 116 | 88% | birmingham-property-accountant (12); how-much-does-a-property-accountant-cost (1) |
-| 20 | /for-letting-agents | sales | 20 | 2 | 7 | 0% | landlord-accountant (6); bristol (1) |
-| 21 | /locations/manchester | sales | 10 | 5 | 555 | 49% | manchester-property-accountant (277); / (1) |
-| 22 | /locations/leeds | sales | 10 | 8 | 1,212 | 82% | leeds-property-accountant-specialist-tax-services (195); / (10); sunderland-property-accountant-specialist-tax-services (4) |
-| 23 | /locations/bristol | sales | 10 | 3 | 150 | 33% | bristol-property-accountant (100) |
-| 24 | /for/hmo-and-multi-let-landlords | sales | 0 | 3 | 161 | 2% | hmo-tax-guide-rental-income-deductions-multi-tenant (95); birmingham-property-accountant (24); hmo-vs-standard-buy-to-let-tax-comparison (21); bristol-property- |
-| 25 | /for/landlord-self-assessment-and-mtd | sales | 0 | 1 | 0 | 0% |  |
+| 10 | /landlord-tax | guide | 360 | 8 | 370 | 82% | landlord-accountant (24); / (22); hmo-tax-guide-rental-income-deductions-multi-tenant (13) |
+| 11 | GAP: city page | gap | 280 | 77 | 613 | 0% | birmingham (208); property-accountant-oxford-guide-local-landlords (140); property-accountant-leicester (120); property-accountant-preston-expert-tax-services-l |
+| 12 | /locations/london | sales | 130 | 46 | 705 | 52% | london-property-accountant (311); how-much-does-a-property-accountant-cost (10); / (9) |
+| 13 | /for/landlord-retirement-and-succession | sales | 130 | 7 | 160 | 0% | inheritance-tax-rental-property-uk-guide (158); multi-property-landlord-tax-planning-strategies-5-plus-properties (2) |
+| 14 | GAP: new page needed | gap | 100 | 3 | 10 | 0% | what-does-a-property-accountant-do (4); how-much-does-a-property-accountant-cost (3); london-property-accountant (2); multi-property-landlord-tax-planning-strat |
+| 15 | /for/rental-income-disclosure | sales | 80 | 4 | 33 | 3% | how-much-does-a-property-accountant-cost (27); birmingham (4); let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026 (1) |
+| 16 | /landed-estates | sales | 60 | 3 | 0 | 0% |  |
+| 17 | /for/holiday-let-and-serviced-accommodation | sales | 40 | 6 | 17 | 0% | how-much-tax-holiday-let-property-uk (17) |
+| 18 | /services/non-resident-landlord | sales | 40 | 8 | 32 | 28% | non-resident-landlord-scheme-uk-complete-guide (12); non-resident-landlords (4); london (4) |
+| 19 | /for/inherited-property | sales | 30 | 3 | 4 | 0% | inheritance-tax-rental-property-uk-guide (4) |
+| 20 | /locations/birmingham | sales | 20 | 2 | 116 | 88% | birmingham-property-accountant (12); how-much-does-a-property-accountant-cost (1) |
+| 21 | /for-letting-agents | sales | 20 | 2 | 7 | 0% | landlord-accountant (6); bristol (1) |
+| 22 | /locations/manchester | sales | 10 | 5 | 555 | 49% | manchester-property-accountant (277); / (1) |
+| 23 | /locations/leeds | sales | 10 | 8 | 1,212 | 82% | leeds-property-accountant-specialist-tax-services (195); / (10); sunderland-property-accountant-specialist-tax-services (4) |
+| 24 | /locations/bristol | sales | 10 | 3 | 150 | 33% | bristol-property-accountant (100) |
+| 25 | /for/hmo-and-multi-let-landlords | sales | 0 | 3 | 161 | 2% | hmo-tax-guide-rental-income-deductions-multi-tenant (95); birmingham-property-accountant (24); hmo-vs-standard-buy-to-let-tax-comparison (21); bristol-property- |
+| 26 | /for/landlord-self-assessment-and-mtd | sales | 0 | 1 | 0 | 0% |  |
 
 ## Page by page
 
@@ -131,7 +132,7 @@ Every commercial search in the map, grouped under the one page that should rank 
 |---|---|---|---|---|
 | multi-property portfolio accounting | 0 | 2 | 29.0 | /blog/portfolio-management/property-portfolio-accounting-tracking-profitability |
 
-### /services/property-tax-advice (sales, 2,290 searches/month)
+### /services/property-tax-advice (sales, 1,930 searches/month)
 
 **property tax advice**: 1,180/month, $12,567 ad value, decided by WP1 ruling, Google shows mostly service
 
@@ -173,24 +174,6 @@ Every commercial search in the map, grouped under the one page that should rank 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | sdlt advice | 210 | 0 | | |
-
-**landlord tax advice**: 190/month, $993 ad value, decided by WP1 ruling, Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| landlord tax advice | 140 | 136 | 74.0 | /landlord-tax |
-| tax advice for landlords | 140 | 125 | 82.2 | /landlord-tax |
-| tax advice landlords | 140 | 15 | 91.3 | /landlord-tax |
-| landlord tax advice uk | 40 | 71 | 77.5 | /landlord-tax |
-| landlord tax return advice | 10 | 1 | 96.0 | /landlord-tax |
-| tax return advice for landlords | 10 | 5 | 100.0 | /landlord-tax |
-| tax advice for hmo landlords | 0 | 13 | 45.0 | /blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant |
-
-**small landlord tax advice**: 170/month, $406 ad value, decided by WP1 ruling, Google shows mostly guide **(Google prefers guides here)**
-
-| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
-|---|---|---|---|---|
-| small landlord tax advice | 170 | 4 | 70.0 | /landlord-tax |
 
 **property tax services**: 140/month, $1,397 ad value, decided by manager ruling (LE-18), Google shows mostly gov
 
@@ -751,6 +734,26 @@ Every commercial search in the map, grouped under the one page that should rank 
 | Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
 |---|---|---|---|---|
 | spv incorporation | 10 | 4 | 16.3 | /blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide |
+
+### /landlord-tax (guide, 360 searches/month)
+
+**landlord tax advice**: 190/month, hands readers to /services/property-tax-advice, $993 ad value, decided by manager ruling (LE-20), Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| landlord tax advice | 140 | 136 | 74.0 | /landlord-tax |
+| tax advice for landlords | 140 | 125 | 82.2 | /landlord-tax |
+| tax advice landlords | 140 | 15 | 91.3 | /landlord-tax |
+| landlord tax advice uk | 40 | 71 | 77.5 | /landlord-tax |
+| landlord tax return advice | 10 | 1 | 96.0 | /landlord-tax |
+| tax return advice for landlords | 10 | 5 | 100.0 | /landlord-tax |
+| tax advice for hmo landlords | 0 | 13 | 45.0 | /blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant |
+
+**small landlord tax advice**: 170/month, hands readers to /services/property-tax-advice, $406 ad value, decided by manager ruling (LE-20), Google shows mostly guide
+
+| Wording | Searches/month | Our impressions | Our avg position | Our page shown most |
+|---|---|---|---|---|
+| small landlord tax advice | 170 | 4 | 70.0 | /landlord-tax |
 
 ### GAP: city page (gap, 280 searches/month)
 

@@ -1,26 +1,27 @@
-owner_page,n_families,demand_volume,value_usd_month,priority_sum,share_of_priority,leads_90d,lead_value_gbp_90d,lead_signal,lead_note,top3_family_heads
-/services/property-accountant,5,2940,32312.1,11839.61,0.4111,0,0,demand without leads,"page rewritten 2026-10-09, maturing",property accountant; real estate accountant; accountant specializing in real estate
-/services/property-tax-advice,21,2290,20100.5,3915.34,0.136,7,0,,,property tax advice; stamp duty advice; sdlt advice
-/services/landlord-accountant,11,1630,19339.7,3675.74,0.1276,0,0,demand without leads,"page rewritten 2026-10-09, maturing",landlord accountant; buy to let tax accountants; accountant fees for rental property
-/blog/capital-gains-tax/capital-gains-tax-second-home-sale,1,810,10199.8,1813.52,0.063,1,0,,,tax on selling second home
-/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,8,1070,5091.2,1352.75,0.047,15,9500,,,transfer property to limited company without stamp duty; transfer property to limited company; how to transfer property to limited company
-/for/moving-property-into-a-limited-company,17,850,6035.4,1277.95,0.0444,0,0,,,property incorporation; incorporation relief property; incorporation relief for landlords
-/for/gifting-property-to-family,4,1040,6144.0,1069.39,0.0371,0,0,,,capital gains tax on gifting property; cgt on gifted property; gifting property tax
-/for/selling-a-buy-to-let,10,990,4354.0,863.47,0.03,0,0,,,capital gains tax accountant; capital gains tax specialist near me; capital gains tax selling rental property
-/for/property-spv-set-up,3,490,4384.8,791.77,0.0275,0,0,,,buy to let limited company; spv accountant; spv incorporation
-GAP: city page,46,280,1716.9,678.59,0.0236,0,0,,,landlord accountant glasgow; property accountant glasgow; property accountants liverpool
-/for/rental-income-disclosure,2,80,1815.4,415.76,0.0144,0,0,,,let property campaign accountant near me; let property campaign accountant cost
-/locations/london,13,130,898.6,319.54,0.0111,0,0,,,property tax accountant london; landlord accountant london; accountant for landlords ec1
-/locations/birmingham,1,20,329.2,230.44,0.008,2,450,,,property accountant birmingham
-/for/landlord-retirement-and-succession,5,130,547.0,218.52,0.0076,0,0,,,inheritance tax mitigation strategies for landlords; family investment company property; transferring buy-to-let property into trust
-/for/holiday-let-and-serviced-accommodation,4,40,710.0,134.12,0.0047,0,0,,,tax planning for holiday lets; holiday letting tax advice; holiday let accountant
-/locations/manchester,2,10,121.1,84.77,0.0029,2,0,,,property accountant manchester; landlord accountant manchester
-GAP: new page needed,2,100,377.1,75.42,0.0026,0,0,,,property development accountant; property development tax planning
-/for/inherited-property,2,30,145.8,25.52,0.0009,0,0,,,renting out inherited property; inherited rental property
-/for-letting-agents,2,20,70.8,14.16,0.0005,0,0,,,accounting for letting agents; letting agent accounting services
-/landed-estates,1,60,0.0,0.0,0.0,0,0,,,agricultural property relief iht
-/services/non-resident-landlord,7,40,0.0,0.0,0.0,2,0,,,non resident landlord tax return; expat landlord tax advice; non resident capital gains tax uk property
-/locations/leeds,4,10,0.0,0.0,0.0,0,0,,,buy to let accountant leeds; property accountancy leeds; rental accountant headingley
-/locations/bristol,2,10,0.0,0.0,0.0,0,0,,,property accountant bristol; landlord accountant bristol
-/for/hmo-and-multi-let-landlords,2,0,0.0,0.0,0.0,0,0,,,hmo accountants; hmo landlord tax planning
-/for/landlord-self-assessment-and-mtd,1,0,0.0,0.0,0.0,0,0,,,making tax digital landlords help
+owner_page,conversion_pages,n_families,demand_volume,value_usd_month,priority_sum,share_of_priority,leads_90d,lead_value_gbp_90d,lead_signal,lead_note,top3_family_heads
+/services/property-accountant,/services/property-accountant (5),5,2940,32312.1,11839.61,0.4111,0,0,demand without leads,"page rewritten 2026-10-09, maturing",property accountant; real estate accountant; accountant specializing in real estate
+/services/landlord-accountant,/services/landlord-accountant (11),11,1630,19339.7,3675.74,0.1276,0,0,demand without leads,"page rewritten 2026-10-09, maturing",landlord accountant; buy to let tax accountants; accountant fees for rental property
+/services/property-tax-advice,/services/property-tax-advice (19),19,1930,18701.4,3655.56,0.1269,7,0,,,property tax advice; stamp duty advice; sdlt advice
+/blog/capital-gains-tax/capital-gains-tax-second-home-sale,/blog/capital-gains-tax/capital-gains-tax-second-home-sale (1),1,810,10199.8,1813.52,0.063,1,0,,,tax on selling second home
+/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk,/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk (8),8,1070,5091.2,1352.75,0.047,15,9500,,,transfer property to limited company without stamp duty; transfer property to limited company; how to transfer property to limited company
+/for/moving-property-into-a-limited-company,/for/moving-property-into-a-limited-company (17),17,850,6035.4,1277.95,0.0444,0,0,,,property incorporation; incorporation relief property; incorporation relief for landlords
+/for/gifting-property-to-family,/for/gifting-property-to-family (4),4,1040,6144.0,1069.39,0.0371,0,0,,,capital gains tax on gifting property; cgt on gifted property; gifting property tax
+/for/selling-a-buy-to-let,/for/selling-a-buy-to-let (10),10,990,4354.0,863.47,0.03,0,0,,,capital gains tax accountant; capital gains tax specialist near me; capital gains tax selling rental property
+/for/property-spv-set-up,/for/property-spv-set-up (3),3,490,4384.8,791.77,0.0275,0,0,,,buy to let limited company; spv accountant; spv incorporation
+GAP: city page,GAP: city page (46),46,280,1716.9,678.59,0.0236,0,0,,,landlord accountant glasgow; property accountant glasgow; property accountants liverpool
+/for/rental-income-disclosure,/for/rental-income-disclosure (2),2,80,1815.4,415.76,0.0144,0,0,,,let property campaign accountant near me; let property campaign accountant cost
+/locations/london,/locations/london (13),13,130,898.6,319.54,0.0111,0,0,,,property tax accountant london; landlord accountant london; accountant for landlords ec1
+/landlord-tax,/services/property-tax-advice (2),2,360,1399.1,259.78,0.009,0,0,,,landlord tax advice; small landlord tax advice
+/locations/birmingham,/locations/birmingham (1),1,20,329.2,230.44,0.008,2,450,,,property accountant birmingham
+/for/landlord-retirement-and-succession,/for/landlord-retirement-and-succession (5),5,130,547.0,218.52,0.0076,0,0,,,inheritance tax mitigation strategies for landlords; family investment company property; transferring buy-to-let property into trust
+/for/holiday-let-and-serviced-accommodation,/for/holiday-let-and-serviced-accommodation (4),4,40,710.0,134.12,0.0047,0,0,,,tax planning for holiday lets; holiday letting tax advice; holiday let accountant
+/locations/manchester,/locations/manchester (2),2,10,121.1,84.77,0.0029,2,0,,,property accountant manchester; landlord accountant manchester
+GAP: new page needed,GAP: new page needed (2),2,100,377.1,75.42,0.0026,0,0,,,property development accountant; property development tax planning
+/for/inherited-property,/for/inherited-property (2),2,30,145.8,25.52,0.0009,0,0,,,renting out inherited property; inherited rental property
+/for-letting-agents,/for-letting-agents (2),2,20,70.8,14.16,0.0005,0,0,,,accounting for letting agents; letting agent accounting services
+/landed-estates,/landed-estates (1),1,60,0.0,0.0,0.0,0,0,,,agricultural property relief iht
+/services/non-resident-landlord,/services/non-resident-landlord (7),7,40,0.0,0.0,0.0,2,0,,,non resident landlord tax return; expat landlord tax advice; non resident capital gains tax uk property
+/locations/leeds,/locations/leeds (4),4,10,0.0,0.0,0.0,0,0,,,buy to let accountant leeds; property accountancy leeds; rental accountant headingley
+/locations/bristol,/locations/bristol (2),2,10,0.0,0.0,0.0,0,0,,,property accountant bristol; landlord accountant bristol
+/for/hmo-and-multi-let-landlords,/for/hmo-and-multi-let-landlords (2),2,0,0.0,0.0,0.0,0,0,,,hmo accountants; hmo landlord tax planning
+/for/landlord-self-assessment-and-mtd,/for/landlord-self-assessment-and-mtd (1),1,0,0.0,0.0,0.0,0,0,,,making tax digital landlords help

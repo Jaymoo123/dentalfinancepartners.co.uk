@@ -103,15 +103,23 @@ def main() -> None:
           "Share is of the total across ranked families. Searches are per month with close variants counted once.", ""]
     big = [r for r in roll if r["share_of_priority"] != "" and f(r["share_of_priority"]) >= 0.005]
     small = [r for r in roll if r not in big]
-    rows = [[r["owner_page"], r["n_families"], n(r["demand_volume"]), n(r["value_usd_month"]),
+    rows = [[r["owner_page"], r["conversion_pages"], r["n_families"], n(r["demand_volume"]), n(r["value_usd_month"]),
              f"{f(r['share_of_priority']) * 100:.1f}%", r["leads_90d"], r["top3_family_heads"]] for r in big]
     if small:
-        rows.append([f"Other ({len(small)} pages)", sum(int(f(r["n_families"])) for r in small),
+        rows.append([f"Other ({len(small)} pages)", "", sum(int(f(r["n_families"])) for r in small),
                      n(sum(f(r["demand_volume"]) for r in small)), n(sum(f(r["value_usd_month"]) for r in small)),
                      f"{sum(f(r['share_of_priority']) for r in small) * 100:.1f}%",
                      sum(int(f(r["leads_90d"])) for r in small), ""])
-    L += table(["Owner page", "Families", "Searches per month", "$ per month (ad-market value, USD)", "Share of priority",
+    L += table(["Ranking owner page", "Conversion pages (where readers hire)", "Families", "Searches per month", "$ per month (ad-market value, USD)", "Share of priority",
                 "Leads (90 days)", "Top 3 search families"], rows)
+
+    conv = read_csv(st / "06_conversion_rollup.csv")
+    L += ["Where readers are sent to hire (ruling LE-19: a guide may rank for a search and hand readers to a sales page):", ""]
+    L += table(["Conversion page", "Families", "Searches per month", "$ per month (ad-market value, USD)", "Share of priority",
+                "Leads (90 days)", "Ranking pages"],
+               [[r["conversion_page"], r["n_families"], n(r["demand_volume"]), n(r["value_usd_month"]),
+                 f"{f(r['share_of_priority']) * 100:.1f}%" if r["share_of_priority"] != "" else "-", r["leads_90d"], r["ranking_owners"]]
+                for r in conv if r["share_of_priority"] != "" and f(r["share_of_priority"]) >= 0.005])
 
     # 3 top 30
     L += ["## 3. Top 30 search families", "",

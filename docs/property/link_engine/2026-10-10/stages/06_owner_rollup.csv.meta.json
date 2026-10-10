@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T14:16:24+00:00",
+  "pulled_at": "2026-10-10T15:15:25+00:00",
   "source": "06_families (informational_with_ad_spend and excluded left out)",
   "site": "property",
   "data_through": "2026-10-10",
@@ -10,6 +10,6 @@
     "--run",
     "2026-10-10"
   ],
-  "rows": 25,
-  "sha256": "53085bcddef4a616f049c88a2690efd0895d4723ac3d70773535410d5cb6c9c1"
+  "rows": 26,
+  "sha256": "48633ab9c034848113b117dc5ff2970ecf1800ef42c08e06ad872fa74126d472"
 }

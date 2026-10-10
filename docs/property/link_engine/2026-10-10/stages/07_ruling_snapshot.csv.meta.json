@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-10-10T14:16:24+00:00",
+  "pulled_at": "2026-10-10T15:15:25+00:00",
   "source": "head and deduped demand at the time each manager/owner ruling matched its queue row",
   "site": "property",
   "data_through": "2026-10-10",
@@ -10,6 +10,6 @@
     "--run",
     "2026-10-10"
   ],
-  "rows": 46,
-  "sha256": "103c7dd705a17cd5b4f4b349e9d79b58eb962ceab8e87a8910cfb0310b3304a8"
+  "rows": 48,
+  "sha256": "f7d0519ca09ee4ccd4329912d183da239cb90e591903068e4d00dd8cfaeabb72"
 }

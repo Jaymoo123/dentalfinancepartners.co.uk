@@ -60,7 +60,7 @@ FIELDS = ["rank", "family_id", "head", "intent_class", "geo", "n_keywords", "n_v
           "top_keywords", "demand_volume", "demand_volume_raw", "value_usd_month", "weighted_cpc", "gsc_impressions_90d", "gsc_clicks_90d", "gsc_pos_family_weighted",
           "our_top_page", "our_top_page_impr", "yardstick_position", "serp_rank_us_head", "gsc_pos_head",
           "gsc_impr_head", "pos_basis", "hard_share", "hard_basis", "serp_pulled", "winnability", "confidence_note",
-          "priority_raw", "priority", "owner_page", "owner_basis", "owner_leads_90d", "owner_lead_value_gbp_90d", "lead_sharing",
+          "priority_raw", "priority", "owner_page", "conversion_page", "le19_decision", "owner_basis", "owner_leads_90d", "owner_lead_value_gbp_90d", "lead_sharing",
           "gap_brief", "judgment_reason", "commercial_fit"]
 QUEUE = ["family_id", "head", "intent_class", "geo", "demand_volume", "value_usd_month", "top_keywords",
          "gsc_impressions_90d", "our_top_page", "yardstick_position", "winnability", "pos_basis", "confidence_note", "commercial_fit"] + \
@@ -243,7 +243,7 @@ def rerank(rows: list[dict]) -> list[dict]:
     return live + skipped
 
 
-ROLLUP = ["owner_page", "n_families", "demand_volume", "value_usd_month", "priority_sum", "share_of_priority",
+ROLLUP = ["owner_page", "conversion_pages", "n_families", "demand_volume", "value_usd_month", "priority_sum", "share_of_priority",
           "leads_90d", "lead_value_gbp_90d", "lead_signal", "lead_note", "top3_family_heads"]
 
 
@@ -272,7 +272,9 @@ def rollup(rows: list[dict], leads: dict, cfg: dict) -> list[dict]:
                 sig = "demand without leads"
                 if o in rewritten:
                     note = f"page rewritten {rewritten[o]}, maturing"
-        out.append({"owner_page": o, "n_families": len(m), "demand_volume": int(sum(fnum(r["demand_volume"]) for r in m)),
+        conv = Counter(r.get("conversion_page") or r["owner_page"] for r in m)
+        out.append({"owner_page": o, "conversion_pages": "; ".join(f"{p} ({n})" for p, n in conv.most_common()),
+                    "n_families": len(m), "demand_volume": int(sum(fnum(r["demand_volume"]) for r in m)),
                     "value_usd_month": round(sum(fnum(r["value_usd_month"]) for r in m), 2), "priority_sum": round(ps, 2),
                     "share_of_priority": share, "leads_90d": nl,
                     "lead_value_gbp_90d": int(fnum(L["est_value_gbp"])) if L else 0, "lead_signal": sig, "lead_note": note,
@@ -288,6 +290,35 @@ def override_mult(head: str, cfg: dict) -> float:
         if any(t in h for t in o["match_head"]):
             m *= float(o["multiplier"])
     return m
+
+
+CONV_ROLLUP = ["conversion_page", "n_families", "demand_volume", "value_usd_month", "priority_sum", "share_of_priority",
+               "leads_90d", "lead_value_gbp_90d", "ranking_owners", "top3_family_heads"]
+
+
+def conversion_rollup(rows: list[dict], leads: dict, cfg: dict) -> list[dict]:
+    """The same ranked families grouped by conversion_page (where a reader is sent to hire), with the pages that rank for them
+    (ranking_owners: owner_page counts, 'self' when the conversion page also ranks). LE-19 splits the two."""
+    sitewide = set(cfg.get("sitewide_pages", []))
+    by = defaultdict(list)
+    for r in rows:
+        if not unranked(r):
+            by[r.get("conversion_page") or r["owner_page"] or "needs judgment"].append(r)
+    total = sum(fnum(r["priority"]) for o, m in by.items() if o != "needs judgment" for r in m)
+    out = []
+    for o, m in by.items():
+        ps = sum(fnum(r["priority"]) for r in m)
+        m.sort(key=lambda r: -fnum(r["priority"]))
+        L = None if o in sitewide or o.startswith(("GAP", "needs")) else leads.get(o)
+        own = Counter("self" if r["owner_page"] == o else r["owner_page"] for r in m)
+        out.append({"conversion_page": o, "n_families": len(m), "demand_volume": int(sum(fnum(r["demand_volume"]) for r in m)),
+                    "value_usd_month": round(sum(fnum(r["value_usd_month"]) for r in m), 2), "priority_sum": round(ps, 2),
+                    "share_of_priority": "" if o == "needs judgment" or not total else round(ps / total, 4),
+                    "leads_90d": int(fnum(L["leads"])) if L else 0, "lead_value_gbp_90d": int(fnum(L["est_value_gbp"])) if L else 0,
+                    "ranking_owners": "; ".join(f"{p} ({n})" for p, n in own.most_common()),
+                    "top3_family_heads": "; ".join(r["head"] for r in m[:3])})
+    out.sort(key=lambda r: -r["priority_sum"])
+    return out
 
 
 def pos_factor(p) -> float:
@@ -418,7 +449,7 @@ def main() -> None:
                                                         "no SERP for head" if not hs else "") if n),
                "priority_raw": round(val * win, 2),
                "priority": round(val * win * override_mult(head, le), 2),
-               "owner_page": owner, "owner_basis": obasis}
+               "owner_page": owner, "conversion_page": owner, "le19_decision": "", "owner_basis": obasis}
         # leads
         rows.append(row)
         if obasis == "needs judgment":
@@ -472,6 +503,7 @@ def main() -> None:
     write_csv(st / "06_families.csv", rows, FIELDS, meta)
     write_csv(st / "06_owner_queue.csv", q_rows, QUEUE, meta)
     write_csv(st / "06_owner_rollup.csv", rollup(rows, leads, le), ROLLUP, meta)
+    write_csv(st / "06_conversion_rollup.csv", conversion_rollup(rows, leads, le), CONV_ROLLUP, meta)
     print(f"{len(rows)} families; owner basis {dict(Counter(r['owner_basis'] for r in rows))}; owner queue {len(q_rows)}; "
           f"routes {len(route_info)}; lead flags {dict(Counter(r['lead_signal'] for r in rollup(rows, leads, le)))}")
 

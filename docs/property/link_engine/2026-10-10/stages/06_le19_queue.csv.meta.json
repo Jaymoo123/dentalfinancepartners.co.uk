@@ -1,0 +1,16 @@
+{
+  "pulled_at": "2026-10-10T15:15:25+00:00",
+  "source": "06_families + D_intent flags + GSC + TF-IDF over indexable non-sales pages (ruling LE-19)",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "n_guides_considered": 840,
+  "script": "le19.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 31,
+  "sha256": "fa1ab10f54177bce11375d0ec590cb07e2551012dcc68ff28e395e2a7791f595"
+}

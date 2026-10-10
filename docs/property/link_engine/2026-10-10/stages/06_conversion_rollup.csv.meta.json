@@ -1,0 +1,15 @@
+{
+  "pulled_at": "2026-10-10T15:15:25+00:00",
+  "source": "06_families grouped by conversion_page (LE-19)",
+  "site": "property",
+  "data_through": "2026-10-10",
+  "script": "apply_judgments.py",
+  "args": [
+    "--site",
+    "property",
+    "--run",
+    "2026-10-10"
+  ],
+  "rows": 25,
+  "sha256": "46b2d588f53054cd10feec580d2040279efa572faaa93dba984e0819aeaa046e"
+}
